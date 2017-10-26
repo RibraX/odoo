@@ -3,17 +3,18 @@
 # * website_blog
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2016
-# Yenthe Van Ginneken <yenthespam@gmail.com>, 2016
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2016
-# Cas Vissers <casvissers@brahoo.nl>, 2016
+# Martin Trigaux <mat@odoo.com>, 2017
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Cas Vissers <casvissers@brahoo.nl>, 2017
+# Gunther Clauwaert <gclauwae@hotmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2016-10-10 08:44+0000\n"
-"Last-Translator: Cas Vissers <casvissers@brahoo.nl>, 2016\n"
+"POT-Creation-Date: 2017-10-02 11:27+0000\n"
+"PO-Revision-Date: 2017-10-02 11:27+0000\n"
+"Last-Translator: Gunther Clauwaert <gclauwae@hotmail.com>, 2017\n"
 "Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -261,7 +262,7 @@ msgid "Blog Name"
 msgstr "Blognaam"
 
 #. module: website_blog
-#: code:addons/website_blog/models/website.py:23
+#: code:addons/website_blog/models/website.py:22
 #: model:ir.model,name:website_blog.model_blog_post
 #: model:ir.ui.view,arch_db:website_blog.view_blog_post_form
 #: model:ir.ui.view,arch_db:website_blog.view_blog_post_search
@@ -270,7 +271,7 @@ msgid "Blog Post"
 msgstr "Blogbericht"
 
 #. module: website_blog
-#: code:addons/website_blog/models/website.py:27
+#: code:addons/website_blog/models/website.py:26
 #, python-format
 msgid "Blog Post <b>%s</b> seems to have a link to this page !"
 msgstr "Blog bericht <b>%s</b> lijkt een link te hebben naar deze pagina!"
@@ -330,7 +331,7 @@ msgstr "Bouw uw bedrijfswebsite en verkoop uw producten eenvoudig online."
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 #, python-format
 msgid "Change Cover"
-msgstr "Verander cover"
+msgstr "Cover wijzigen"
 
 #. module: website_blog
 #. openerp-web
@@ -359,7 +360,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:40
 #, python-format
 msgid "Click on <b>Save</b> to set the picture as cover."
-msgstr "Klik op de <b>Opslaan</b> knop om deze foto als omslag in te stellen."
+msgstr "Klik op de <b>Opslaan</b> knop om deze foto als cover in te stellen."
 
 #. module: website_blog
 #: model:ir.actions.act_window,help:website_blog.action_blog_post
@@ -375,7 +376,7 @@ msgstr "Inhoud"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_cover_properties
 msgid "Cover Properties"
-msgstr "Omslageigenschappen"
+msgstr "Cover eigenschappen"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog_create_uid
@@ -393,6 +394,7 @@ msgstr "Aangemaakt op"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_mail_compose_message_path
+#: model:ir.model.fields,field_description:website_blog.field_mail_mail_path
 #: model:ir.model.fields,field_description:website_blog.field_mail_message_path
 #: model:ir.model.fields,field_description:website_blog.field_survey_mail_compose_message_path
 msgid "Discussion Path"
@@ -403,22 +405,12 @@ msgstr "Discussie pad"
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_display_name
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag_display_name
 msgid "Display Name"
-msgstr "Weergave naam"
+msgstr "Schermnaam"
 
 #. module: website_blog
-#: model:ir.ui.view,arch_db:website_blog.blog_post_complete
+#: model:ir.ui.view,arch_db:website_blog.blog_edit_options
 msgid "Duplicate"
 msgstr "Dupliceer"
-
-#. module: website_blog
-#: model:ir.model,name:website_blog.model_mail_compose_message
-msgid "Email composition wizard"
-msgstr "E-mail samenstellen wizard"
-
-#. module: website_blog
-#: model:ir.model,name:website_blog.model_survey_mail_compose_message
-msgid "Email composition wizard for Survey"
-msgstr "E-mail opmaak wizard voor enquête"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -601,7 +593,7 @@ msgstr "Laatst bijgewerkt op"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.latest_blogs
 msgid "Latest Posts"
-msgstr "Laatste postings"
+msgstr "Laatste Berichten"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
@@ -612,7 +604,7 @@ msgid ""
 msgstr ""
 "Zoals veel moderne website editors kan u met Odoo de\n"
 "inhoud in-line wijzigen, wat u toestaat om te zien wat er\n"
-"exact veranderd en verzeker u ervan dat uw wijzigingen bij de context past."
+"exact gewijzigd is en verzeker u ervan dat uw wijzigingen bij de context past."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -622,7 +614,7 @@ msgstr "Laag"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Medium"
-msgstr "Kanaal"
+msgstr "Gemiddeld"
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_mail_message
@@ -678,7 +670,7 @@ msgstr "Smal"
 
 #. module: website_blog
 #. openerp-web
-#: code:addons/website_blog/static/src/js/website_blog.editor.js:21
+#: code:addons/website_blog/static/src/js/website_blog.editor.js:37
 #: model:ir.ui.view,arch_db:website_blog.content_new_blogpost
 #, python-format
 msgid "New Blog Post"
@@ -697,7 +689,7 @@ msgstr "Nieuws"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 msgid "No Cover"
-msgstr "Geen omslag"
+msgstr "Geen cover"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -778,10 +770,10 @@ msgstr ""
 "documenten toevoegen is enorm snel."
 
 #. module: website_blog
-#: code:addons/website_blog/controllers/main.py:263
+#: code:addons/website_blog/controllers/main.py:270
 #, python-format
 msgid "Public user cannot post comments on blog post."
-msgstr "Publieke gebruiker kan geen reacties plaatsen op blogbericht."
+msgstr "Openbare gebruiker kan geen reacties plaatsen op blogbericht."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_status
@@ -800,14 +792,14 @@ msgid "Published Post"
 msgstr "Gepubliceerd bericht"
 
 #. module: website_blog
-#: model:ir.model.fields,field_description:website_blog.field_blog_post_post_date
-msgid "Published date"
-msgstr "Datum gepubliceerd"
-
-#. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.view_blog_post_form
 msgid "Publishing Options"
 msgstr "Publicatie opties"
+
+#. module: website_blog
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_post_date
+msgid "Publishing date"
+msgstr "Datum gepubliceerd"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -881,7 +873,7 @@ msgstr ""
 
 #. module: website_blog
 #. openerp-web
-#: code:addons/website_blog/models/website_blog.py:103
+#: code:addons/website_blog/models/website_blog.py:123
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:52
 #, python-format
 msgid "Start writing here..."
@@ -956,6 +948,15 @@ msgid "The Future of Emails"
 msgstr "De toekomst van e-mails"
 
 #. module: website_blog
+#: model:ir.model.fields,help:website_blog.field_blog_post_post_date
+msgid ""
+"The blog post will be visible for your visitors as of this date on the "
+"website if it is set as published."
+msgstr ""
+"Het blogbericht zal zichtbaar zijn op uw website voor uw bezoekers vanaf "
+"deze datum indien het ingesteld is als gepubliceerd."
+
+#. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.latest_blogs
 msgid ""
 "This page is great to improve your <strong>Search Engine Optimization</strong>;\n"
@@ -1026,6 +1027,7 @@ msgstr "Gebruikt in:"
 
 #. module: website_blog
 #: model:ir.model.fields,help:website_blog.field_mail_compose_message_path
+#: model:ir.model.fields,help:website_blog.field_mail_mail_path
 #: model:ir.model.fields,help:website_blog.field_mail_message_path
 #: model:ir.model.fields,help:website_blog.field_survey_mail_compose_message_path
 msgid ""
@@ -1087,7 +1089,7 @@ msgid ""
 "                   <span class=\"text-muted\">This box will not be visible to your visitors.</span>"
 msgstr ""
 "U zou een <strong>banner een bovenkant</strong> moeten toevoegen omdat dit vaak de eerste pagina is voor nieuwe bezoekers.\n"
-"<span class=\"text-muted\">Dit vakje zal niet zichtbaar zijn voor uw bezoekers.</span>"
+"<span class=\"text-muted\">Dit vak zal niet zichtbaar zijn voor uw bezoekers.</span>"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
@@ -1105,6 +1107,11 @@ msgstr "opmerking"
 #: model:ir.ui.view,arch_db:website_blog.latest_blogs
 msgid "comments"
 msgstr "opmerkingen"
+
+#. module: website_blog
+#: model:blog.tag,name:website_blog.blog_tag_1
+msgid "functional"
+msgstr "functioneel"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
@@ -1131,3 +1138,8 @@ msgstr "weergave"
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "views"
 msgstr "weergaven"
+
+#. module: website_blog
+#: model:blog.tag,name:website_blog.blog_tag_2
+msgid "website"
+msgstr "website"

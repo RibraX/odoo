@@ -3,20 +3,19 @@
 # * account_voucher
 # 
 # Translators:
-# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2016
-# Martin Trigaux <mat@odoo.com>, 2016
-# William Surya Permana <zarambie_game@yahoo.com>, 2016
-# Febrasari Almania <febrasari.almania@gmail.com>, 2016
-# Andhitia Rama <andhitia.r@gmail.com>, 2016
-# Deddy Ddr <deddy.ddr@gmail.com>, 2016
-# Lorenz Adam Damara <lorenzrenz@gmail.com>, 2016
+# Bonny Useful <bonny.useful@gmail.com>, 2017
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Lorenz Damara <lorenzrenz@gmail.com>, 2017
+# William Surya Permana <zarambie_game@yahoo.com>, 2017
+# Febrasari Almania <febrasari.almania@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0c\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-09-07 08:56+0000\n"
-"Last-Translator: Lorenz Adam Damara <lorenzrenz@gmail.com>, 2016\n"
+"POT-Creation-Date: 2017-09-20 09:52+0000\n"
+"PO-Revision-Date: 2017-09-20 09:52+0000\n"
+"Last-Translator: Febrasari Almania <febrasari.almania@gmail.com>, 2017\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,6 +31,10 @@ msgid ""
 " * The 'Posted' status is used when user create voucher,a voucher number is generated and voucher entries are created in account.\n"
 " * The 'Cancelled' status is used when user cancel voucher."
 msgstr ""
+"* Status 'Konsep' digunakan ketika pengguna meng-encode Voucher baru dan belum dikonfirmasi.\n"
+"* Status 'Pro-forma' digunakan ketika voucher tidak memiliki nomer voucher.\n"
+"* Status 'Posted' digunakan ketika pengguna membuat voucher, kemudian menghasilkan nomor voucher dan pencatatan voucher terbuat di akun.\n"
+"* Status 'Dibatalkan' digunakan ketika pengguna membatalkan voucher."
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_account_id
@@ -75,7 +78,7 @@ msgstr "Apakah Anda yakin mau membatalkan penerimaan ini?"
 #: model:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Bill Date"
-msgstr "Tanggal tagihan"
+msgstr "Tanggal Tagihan"
 
 #. module: account_voucher
 #: model:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
@@ -90,7 +93,7 @@ msgstr ""
 #. module: account_voucher
 #: model:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Cancel"
-msgstr "Batalkan"
+msgstr "Batal"
 
 #. module: account_voucher
 #: model:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
@@ -163,7 +166,7 @@ msgstr "Tanggal"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_name
 msgid "Description"
-msgstr "Keterangan"
+msgstr "Deskripsi"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_display_name
@@ -177,7 +180,7 @@ msgstr "Nama Tampilan"
 #: model:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Draft"
-msgstr "Konsep"
+msgstr "Draft"
 
 #. module: account_voucher
 #: model:ir.ui.view,arch_db:account_voucher.view_voucher_filter
@@ -224,7 +227,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Internal Notes"
-msgstr "Catatan internal"
+msgstr "Catatan Internal"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_journal_id
@@ -261,7 +264,7 @@ msgstr "Terakhir diperbarui oleh"
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_write_date
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_write_date
 msgid "Last Updated on"
-msgstr "Terakhir Diperbaharui pada"
+msgstr "Terakhir diperbarui pada"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_narration
@@ -436,12 +439,12 @@ msgstr "Pajak"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_tax_amount
-msgid "Tax amount"
-msgstr ""
+msgid "Tax Amount"
+msgstr "Jumlah pajak"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_tax_correction
-msgid "Tax correction"
+msgid "Tax Correction"
 msgstr ""
 
 #. module: account_voucher
@@ -555,7 +558,7 @@ msgid ""
 msgstr ""
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:361
+#: code:addons/account_voucher/models/account_voucher.py:377
 #, python-format
 msgid "You must first select a partner!"
 msgstr "Anda harus memilih dulu mitra!"

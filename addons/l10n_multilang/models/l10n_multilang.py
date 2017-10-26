@@ -63,30 +63,36 @@ class AccountChartTemplate(models.Model):
                     for company in company_ids:
                         # write account.account translations in the real COA
                         chart_template_id._process_accounts_translations(company.id, langs, 'name')
-                        # copy account.tax translations
+                        # copy account.tax name translations
                         chart_template_id._process_taxes_translations(company.id, langs, 'name')
+                        # copy account.tax description translations
+                        chart_template_id._process_taxes_translations(company.id, langs, 'description')
                         # copy account.fiscal.position translations
                         chart_template_id._process_fiscal_pos_translations(company.id, langs, 'name')
         return True
 
     @api.multi
     def _process_accounts_translations(self, company_id, langs, field):
-        in_ids = self.env['account.account.template'].search([('chart_template_id', '=', self.id)], order='id')
-        out_ids = self.env['account.account'].search([('company_id', '=', company_id)], order='id')
+        in_ids, out_ids = self._get_template_from_model(company_id, 'account.account')
         return self.process_translations(langs, field, in_ids, out_ids)
 
     @api.multi
     def _process_taxes_translations(self, company_id, langs, field):
-        in_ids = self.env['account.tax.template'].search([('chart_template_id', '=', self.id)], order='id')
-        out_ids = self.env['account.tax'].search([('company_id', '=', company_id)], order='id')
+        in_ids, out_ids = self._get_template_from_model(company_id, 'account.tax')
         return self.process_translations(langs, field, in_ids, out_ids)
 
     @api.multi
     def _process_fiscal_pos_translations(self, company_id, langs, field):
-        in_ids = self.env['account.fiscal.position.template'].search([('chart_template_id', '=', self.id)], order='id')
-        out_ids = self.env['account.fiscal.position'].search([('company_id', '=', company_id)], order='id')
+        in_ids, out_ids = self._get_template_from_model(company_id, 'account.fiscal.position')
         return self.process_translations(langs, field, in_ids, out_ids)
 
+    def _get_template_from_model(self, company_id, model):
+        out_data = self.env['ir.model.data'].search([('model', '=', model), ('name', '=like', str(company_id)+'\_%')])
+        out_ids = self.env[model].search([('id', 'in', out_data.mapped('res_id'))], order='id')
+        in_xml_id_names = [xml_id.partition(str(company_id) + '_')[-1] for xml_id in out_data.mapped('name')]
+        in_xml_ids = self.env['ir.model.data'].search([('model', '=', model+'.template'), ('name', 'in', in_xml_id_names)])
+        in_ids = self.env[model+'.template'].search([('id', 'in', in_xml_ids.mapped('res_id'))], order='id')
+        return (in_ids, out_ids)
 
 class BaseLanguageInstall(models.TransientModel):
     """ Install Language"""
@@ -109,8 +115,10 @@ class BaseLanguageInstall(models.TransientModel):
                 for company in self.env['res.company'].search([('chart_template_id', '=', coa.id)]):
                     # write account.account translations in the real COA
                     coa._process_accounts_translations(company.id, [self.lang], 'name')
-                    # copy account.tax translations
+                    # copy account.tax name translations
                     coa._process_taxes_translations(company.id, [self.lang], 'name')
+                    # copy account.tax description translations
+                    coa._process_taxes_translations(company.id, [self.lang], 'description')
                     # copy account.fiscal.position translations
                     coa._process_fiscal_pos_translations(company.id, [self.lang], 'name')
         return res

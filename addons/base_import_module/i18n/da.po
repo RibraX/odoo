@@ -3,17 +3,19 @@
 # * base_import_module
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2016
-# jonas jensen <j.jensen@tcomp.dk>, 2016
-# Morten Schou <ms@msteknik.dk>, 2016
-# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Sanne Kristensen <sanne@vkdata.dk>, 2017
+# jonas jensen <j.jensen@tcomp.dk>, 2017
+# Morten Schou <ms@msteknik.dk>, 2017
+# Jesper Carstensen <jc@danodoo.dk>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0c\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2016-09-07 08:56+0000\n"
-"Last-Translator: Jesper Carstensen <jc@danodoo.dk>, 2016\n"
+"POT-Creation-Date: 2017-09-20 09:53+0000\n"
+"PO-Revision-Date: 2017-09-20 09:53+0000\n"
+"Last-Translator: Jesper Carstensen <jc@danodoo.dk>, 2017\n"
 "Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +26,7 @@ msgstr ""
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Cancel"
-msgstr "Annuller"
+msgstr "Annullér"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
@@ -35,7 +37,7 @@ msgstr "Luk"
 #: code:addons/base_import_module/controllers/main.py:31
 #, python-format
 msgid "Could not select database '%s'"
-msgstr ""
+msgstr "Kunne ikke vælge database '%s'"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_create_uid
@@ -53,16 +55,16 @@ msgid "Display Name"
 msgstr "Vis navn"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:96
+#: code:addons/base_import_module/models/ir_module.py:101
 #, python-format
 msgid "File '%s' exceed maximum allowed file size"
-msgstr ""
+msgstr "Fil '%s'  overskrider den maksimum tilladte fil størrelse  "
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:88
+#: code:addons/base_import_module/models/ir_module.py:93
 #, python-format
 msgid "File is not a zip file!"
-msgstr ""
+msgstr "Filen er ikke en zip fil!"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_force
@@ -83,6 +85,11 @@ msgstr "ID"
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import App"
+msgstr "Importer App"
+
+#. module: base_import_module
+#: model:ir.model.fields,field_description:base_import_module.field_base_import_module_import_message
+msgid "Import Message"
 msgstr ""
 
 #. module: base_import_module
@@ -91,22 +98,17 @@ msgstr ""
 #: model:ir.ui.menu,name:base_import_module.menu_view_base_module_import
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import Module"
-msgstr ""
-
-#. module: base_import_module
-#: model:ir.model.fields,field_description:base_import_module.field_base_import_module_import_message
-msgid "Import message"
-msgstr ""
+msgstr "Importer modul"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import module"
-msgstr ""
+msgstr "Importer modul"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_ir_module_module_imported
 msgid "Imported Module"
-msgstr ""
+msgstr "Importeret modul"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module___last_update
@@ -131,29 +133,29 @@ msgstr "Modul"
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_module_file
 msgid "Module .ZIP file"
-msgstr ""
+msgstr "Modul .ZIP fil"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:86
+#: code:addons/base_import_module/models/ir_module.py:91
 #, python-format
 msgid "No file sent."
-msgstr ""
+msgstr "Ingen fil sendt."
 
 #. module: base_import_module
 #: code:addons/base_import_module/controllers/main.py:25
 #, python-format
 msgid "Only administrators can upload a module"
-msgstr ""
+msgstr "Kun administratorer kan uploade et modul "
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Open Modules"
-msgstr ""
+msgstr "Åbn moduler"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Select module package to import (.zip file):"
-msgstr ""
+msgstr "Vælg en modulpakke for at importere (.zip fil):"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_state
@@ -161,7 +163,7 @@ msgid "Status"
 msgstr "Status"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:35
+#: code:addons/base_import_module/models/ir_module.py:36
 #, python-format
 msgid "Unmet module dependencies: %s"
 msgstr ""
@@ -175,3 +177,8 @@ msgstr "Udført"
 #: selection:base.import.module,state:0
 msgid "init"
 msgstr "init"
+
+#. module: base_import_module
+#: model:ir.model,name:base_import_module.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"

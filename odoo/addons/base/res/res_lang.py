@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
+import json
 import locale
 import logging
 import re
@@ -21,7 +22,7 @@ class Lang(models.Model):
     _description = "Languages"
     _order = "active desc,name"
 
-    _disallowed_datetime_patterns = tools.DATETIME_FORMATS_MAP.keys()
+    _disallowed_datetime_patterns = list(tools.DATETIME_FORMATS_MAP)
     _disallowed_datetime_patterns.remove('%y') # this one is in fact allowed, just not good practice
 
     name = fields.Char(required=True)
@@ -69,7 +70,7 @@ class Lang(models.Model):
                     'Provided as the thousand separator in each case.')
         for lang in self:
             try:
-                if not all(isinstance(x, int) for x in safe_eval(lang.grouping)):
+                if not all(isinstance(x, int) for x in json.loads(lang.grouping)):
                     raise ValidationError(warning)
             except Exception:
                 raise ValidationError(warning)
@@ -124,7 +125,7 @@ class Lang(models.Model):
             # For some locales, nl_langinfo returns a D_FMT/T_FMT that contains
             # unsupported '%-' patterns, e.g. for cs_CZ
             format = format.replace('%-', '%')
-            for pattern, replacement in tools.DATETIME_FORMATS_MAP.iteritems():
+            for pattern, replacement in tools.DATETIME_FORMATS_MAP.items():
                 format = format.replace(pattern, replacement)
             return str(format)
 
@@ -162,10 +163,10 @@ class Lang(models.Model):
         lang = self.search([('code', '=', lang_code)])
         if not lang:
             self.load_lang(lang_code)
-        IrValues = self.env['ir.values']
-        default_value = IrValues.get_defaults('res.partner', condition=False)
-        if not default_value:
-            IrValues.set_default('res.partner', 'lang', lang_code, condition=False)
+        IrDefault = self.env['ir.default']
+        default_value = IrDefault.get('res.partner', 'lang')
+        if default_value is None:
+            IrDefault.set('res.partner', 'lang', lang_code)
             # set language of main company, created directly by db bootstrap SQL
             partner = self.env.user.company_id.partner_id
             if not partner.lang:
@@ -215,10 +216,15 @@ class Lang(models.Model):
         lang_codes = self.mapped('code')
         if 'code' in vals and any(code != vals['code'] for code in lang_codes):
             raise UserError(_("Language code cannot be modified."))
-        if vals.get('active') == False and self.env['res.users'].search([('lang', 'in', lang_codes)]):
-            raise UserError(_("Cannot unactivate a language that is currently used by users."))
+        if vals.get('active') == False:
+            if self.env['res.users'].search([('lang', 'in', lang_codes)]):
+                raise UserError(_("Cannot unactivate a language that is currently used by users."))
+            # delete linked ir.default specifying default partner's language
+            self.env['ir.default'].discard_values('res.partner', 'lang', lang_codes)
+
+        res = super(Lang, self).write(vals)
         self.clear_caches()
-        return super(Lang, self).write(vals)
+        return res
 
     @api.multi
     def unlink(self):
@@ -250,7 +256,7 @@ class Lang(models.Model):
 
             if percent[-1] in 'eEfFgG':
                 parts = formatted.split('.')
-                parts[0], _ = intersperse(parts[0], eval_lang_grouping, thousands_sep)
+                parts[0] = intersperse(parts[0], eval_lang_grouping, thousands_sep)[0]
 
                 formatted = decimal_point.join(parts)
 
@@ -307,5 +313,5 @@ def intersperse(string, counts, separator=''):
     left, rest, right = intersperse_pat.match(string).groups()
     def reverse(s): return s[::-1]
     splits = split(reverse(rest), counts)
-    res = separator.join(map(reverse, reverse(splits)))
+    res = separator.join(reverse(s) for s in reverse(splits))
     return left + res + right, len(splits) > 0 and len(splits) -1 or 0

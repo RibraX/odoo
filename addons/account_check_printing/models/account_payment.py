@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-import math
-
 from odoo import models, fields, api, _
-from odoo.tools import amount_to_text_en, float_round
 from odoo.exceptions import UserError, ValidationError
 
 
@@ -29,16 +26,10 @@ class AccountRegisterPayments(models.TransientModel):
     def _onchange_amount(self):
         if hasattr(super(AccountRegisterPayments, self), '_onchange_amount'):
             super(AccountRegisterPayments, self)._onchange_amount()
-        # TODO: merge, refactor and complete the amount_to_text and amount_to_text_en classes
-        check_amount_in_words = amount_to_text_en.amount_to_text(math.floor(self.amount), lang='en', currency='')
-        check_amount_in_words = check_amount_in_words.replace(' and Zero Cent', '') # Ugh
-        decimals = self.amount % 1
-        if decimals >= 10**-2:
-            check_amount_in_words += _(' and %s/100') % str(int(round(float_round(decimals*100, precision_rounding=1))))
-        self.check_amount_in_words = check_amount_in_words
+        self.check_amount_in_words = self.currency_id.amount_to_text(self.amount)
 
-    def get_payment_vals(self):
-        res = super(AccountRegisterPayments, self).get_payment_vals()
+    def _prepare_payment_vals(self, invoices):
+        res = super(AccountRegisterPayments, self)._prepare_payment_vals(invoices)
         if self.payment_method_id == self.env.ref('account_check_printing.account_payment_method_check'):
             res.update({
                 'check_amount_in_words': self.check_amount_in_words,
@@ -63,16 +54,11 @@ class AccountPayment(models.Model):
         if self.journal_id.check_manual_sequencing:
             self.check_number = self.journal_id.check_sequence_id.number_next_actual
 
-    @api.onchange('amount')
+    @api.onchange('amount','currency_id')
     def _onchange_amount(self):
-        if hasattr(super(AccountPayment, self), '_onchange_amount'):
-            super(AccountPayment, self)._onchange_amount()
-        check_amount_in_words = amount_to_text_en.amount_to_text(math.floor(self.amount), lang='en', currency='')
-        check_amount_in_words = check_amount_in_words.replace(' and Zero Cent', '') # Ugh
-        decimals = self.amount % 1
-        if decimals >= 10**-2:
-            check_amount_in_words += _(' and %s/100') % str(int(round(float_round(decimals*100, precision_rounding=1))))
-        self.check_amount_in_words = check_amount_in_words
+        res = super(AccountPayment, self)._onchange_amount()
+        self.check_amount_in_words = self.currency_id.amount_to_text(self.amount)
+        return res
 
     def _check_communication(self, payment_method_id, communication):
         super(AccountPayment, self)._check_communication(payment_method_id, communication)
@@ -88,7 +74,7 @@ class AccountPayment(models.Model):
                 and vals.get('check_manual_sequencing'):
             sequence = self.env['account.journal'].browse(vals['journal_id']).check_sequence_id
             vals.update({'check_number': sequence.next_by_id()})
-        return super(AccountPayment, self.sudo()).create(vals)
+        return super(AccountPayment, self).create(vals)
 
     @api.multi
     def print_checks(self):
@@ -123,7 +109,6 @@ class AccountPayment(models.Model):
             }
         else:
             self.filtered(lambda r: r.state == 'draft').post()
-            self.write({'state': 'sent'})
             return self.do_print_checks()
 
     @api.multi

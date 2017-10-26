@@ -8,6 +8,7 @@ import werkzeug
 
 import odoo
 from odoo import http
+from odoo.tools import misc
 
 _logger = logging.getLogger(__name__)
 
@@ -55,12 +56,13 @@ index_template = """
         <p>
         If you need to grant remote debugging access to a developer, you can do it <a href='/remote_connect'>here</a>.
         </p>
+        %s
         <p>
-        The PosBox software installed on this posbox is <b>version 15</b>,
+        The PosBox software installed on this posbox is <b>version 16</b>,
         the posbox version number is independent from Odoo. You can upgrade
         the software on the <a href='/hw_proxy/upgrade/'>upgrade page</a>.
         </p>
-        <p>For any other question, please contact the Odoo support at <a href='mailto:help@odoo.com'>help@odoo.com</a>
+        <p>For any other question, please contact the Odoo support at <a href='http://www.odoo.com/help'>www.odoo.com/help</a>
         </p>
     </body>
 </html>
@@ -69,10 +71,21 @@ index_template = """
 
 
 class PosboxHomepage(odoo.addons.web.controllers.main.Home):
+
+    def get_hw_screen_message(self):
+        return """
+<p>
+    The activate the customer display feature, you will need to reinstall the PosBox software.
+    You can find the latest images on the <a href="http://nightly.odoo.com/master/posbox/">Odoo Nightly builds</a> website.
+    Make sure to download at least the version 16.<br/>
+    Odoo version 11, or above, is required to use the customer display feature.
+</p>
+"""
+
     @http.route('/', type='http', auth='none', website=True)
     def index(self):
         #return request.render('hw_posbox_homepage.index',mimetype='text/html')
-        return index_template
+        return index_template % self.get_hw_screen_message()
 
     @http.route('/wifi', type='http', auth='none', website=True)
     def wifi(self):
@@ -103,7 +116,7 @@ class PosboxHomepage(odoo.addons.web.controllers.main.Home):
             f = open('/tmp/scanned_networks.txt', 'r')
             for line in f:
                 line = line.rstrip()
-                line = werkzeug.utils.escape(line)
+                line = misc.html_escape(line)
                 wifi_template += '<option value="' + line + '">' + line + '</option>\n'
             f.close()
         except IOError:

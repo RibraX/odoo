@@ -50,7 +50,7 @@ class Lead2OpportunityPartner(models.TransientModel):
     ], 'Conversion Action', required=True)
     opportunity_ids = fields.Many2many('crm.lead', string='Opportunities')
     user_id = fields.Many2one('res.users', 'Salesperson', index=True)
-    team_id = fields.Many2one('crm.team', 'Sales Team', oldname='section_id', index=True)
+    team_id = fields.Many2one('crm.team', 'Sales Channel', oldname='section_id', index=True)
 
     @api.onchange('action')
     def onchange_action(self):
@@ -95,7 +95,9 @@ class Lead2OpportunityPartner(models.TransientModel):
 
         leads = self.env['crm.lead'].browse(vals.get('lead_ids'))
         for lead in leads:
-            partner_id = self._create_partner(lead.id, self.action, vals.get('partner_id') or lead.partner_id.id)
+            self_def_user = self.with_context(default_user_id=self.user_id.id)
+            partner_id = self_def_user._create_partner(
+                lead.id, self.action, vals.get('partner_id') or lead.partner_id.id)
             res = lead.convert_opportunity(partner_id, [], False)
         user_ids = vals.get('user_ids')
 
@@ -122,7 +124,9 @@ class Lead2OpportunityPartner(models.TransientModel):
             values['partner_id'] = self.partner_id.id
 
         if self.name == 'merge':
-            leads = self.opportunity_ids.merge_opportunity()
+            leads = self.with_context(active_test=False).opportunity_ids.merge_opportunity()
+            if not leads.active:
+                leads.write({'active': True, 'activity_type_id': False, 'lost_reason': False})
             if leads.type == "lead":
                 values.update({'lead_ids': leads.ids, 'user_ids': [self.user_id.id]})
                 self.with_context(active_ids=leads.ids)._convert_opportunity(values)
@@ -133,9 +137,6 @@ class Lead2OpportunityPartner(models.TransientModel):
             leads = self.env['crm.lead'].browse(self._context.get('active_ids', []))
             values.update({'lead_ids': leads.ids, 'user_ids': [self.user_id.id]})
             self._convert_opportunity(values)
-            for lead in leads:
-                if lead.partner_id and lead.partner_id.user_id != lead.user_id:
-                    self.env['res.partner'].browse(lead.partner_id.id).write({'user_id': lead.user_id.id})
 
         return leads[0].redirect_opportunity_view()
 
@@ -173,7 +174,7 @@ class Lead2OpportunityMassConvert(models.TransientModel):
         return res
 
     user_ids = fields.Many2many('res.users', string='Salesmen')
-    team_id = fields.Many2one('crm.team', 'Sales Team', index=True, oldname='section_id')
+    team_id = fields.Many2one('crm.team', 'Sales Channel', index=True, oldname='section_id')
     deduplicate = fields.Boolean('Apply deduplication', default=True, help='Merge with existing leads/opportunities of each partner')
     action = fields.Selection([
         ('each_exist_or_create', 'Use existing partner or create'),

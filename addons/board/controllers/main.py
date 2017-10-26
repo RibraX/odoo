@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from xml.etree import ElementTree
+from lxml import etree as ElementTree
 
 from odoo.http import Controller, route, request
 
@@ -13,7 +13,7 @@ class Board(Controller):
         # Retrieve the 'My Dashboard' action from its xmlid
         action = request.env.ref('board.open_board_my_dash_action')
 
-        if action and action['res_model'] == 'board.board' and action['views'][0][1] == 'form':
+        if action and action['res_model'] == 'board.board' and action['views'][0][1] == 'form' and action_id:
             # Maybe should check the content instead of model board.board ?
             view_id = action['views'][0][0]
             board = request.env['board.board'].fields_view_get(view_id, 'form')
@@ -29,7 +29,7 @@ class Board(Controller):
                         'domain': str(domain)
                     })
                     column.insert(0, new_action)
-                    arch = ElementTree.tostring(xml, 'utf-8')
+                    arch = ElementTree.tostring(xml, encoding='unicode')
                     request.env['ir.ui.view.custom'].create({
                         'user_id': request.session.uid,
                         'ref_id': view_id,

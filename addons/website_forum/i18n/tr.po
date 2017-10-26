@@ -3,26 +3,20 @@
 # * website_forum
 # 
 # Translators:
-# gezgin biri <gezginbiri@hotmail.com>, 2016
-# Murat Kaplan <muratk@projetgrup.com>, 2016
-# Saban Yildiz <sabany@projetgrup.com>, 2016
-# Martin Trigaux <mat@odoo.com>, 2016
-# Ediz Duman <neps1192@gmail.com>, 2016
-# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2016
-# Esin Kandemir <esaykandemir@gmail.com>, 2016
-# Ramiz Deniz Öner <deniz@denizoner.com>, 2016
-# Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2016
-# selim kartal <kartalselim37@gmail.com>, 2016
-# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2016
-# Doğan Altunbay <doganaltunbay@gmail.com>, 2016
-# Azar Huseynli <azerbay1984@gmail.com>, 2016
+# Murat Kaplan <muratk@projetgrup.com>, 2017
+# Saban Yildiz <sabany@projetgrup.com>, 2017
+# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2017
+# Ediz Duman <neps1192@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2017
+# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2016-10-10 08:44+0000\n"
-"Last-Translator: Azar Huseynli <azerbay1984@gmail.com>, 2016\n"
+"POT-Creation-Date: 2017-09-20 09:54+0000\n"
+"PO-Revision-Date: 2017-09-20 09:54+0000\n"
+"Last-Translator: Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2017\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,17 +68,12 @@ msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:21
+#: code:addons/website_forum/static/src/js/website_forum.js:24
 #, python-format
 msgid ""
 " karma is required to perform this action. You can earn karma by having your"
 " answers upvoted by the community."
 msgstr ""
-
-#. module: website_forum
-#: model:ir.model.fields,field_description:website_forum.field_res_users_task_count
-msgid "# Tasks"
-msgstr "Görev #"
 
 #. module: website_forum
 #: model:mail.template,subject:website_forum.validation_email
@@ -420,7 +409,7 @@ msgstr "Yanıt seçimleri"
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_active
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_active
 msgid "Active"
-msgstr "Etkin"
+msgstr "Aktif"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.user_detail_full
@@ -434,7 +423,7 @@ msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.editor.js:25
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:43
 #, python-format
 msgid "Add page in menu"
 msgstr "Menüde sayfayı ekle"
@@ -447,7 +436,7 @@ msgid ""
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/controllers/main.py:188
+#: code:addons/website_forum/controllers/main.py:187
 #: model:ir.ui.view,arch_db:website_forum.forum_index
 #, python-format
 msgid "All"
@@ -464,7 +453,7 @@ msgid "Answer"
 msgstr "Cevap"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:504
+#: code:addons/website_forum/models/forum.py:501
 #: model:mail.message.subtype,description:website_forum.mt_answer_edit
 #: model:mail.message.subtype,name:website_forum.mt_answer_edit
 #, python-format
@@ -553,7 +542,7 @@ msgstr "Yanıtlar"
 #: model:ir.ui.view,arch_db:website_forum.forum_view_search
 #: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
 msgid "Archived"
-msgstr "Arşiv"
+msgstr "Arşivlendi"
 
 #. module: website_forum
 #: selection:forum.post,post_type:0
@@ -630,7 +619,7 @@ msgstr "Bir soru türü"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
 msgid "Author"
-msgstr "Yazan"
+msgstr "Üretici"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_p_1
@@ -648,8 +637,8 @@ msgid "Back to"
 msgstr "Geri"
 
 #. module: website_forum
-#: code:addons/website_forum/controllers/main.py:323
-#: code:addons/website_forum/controllers/main.py:394
+#: code:addons/website_forum/controllers/main.py:324
+#: code:addons/website_forum/controllers/main.py:395
 #, python-format
 msgid "Bad Request"
 msgstr ""
@@ -791,7 +780,7 @@ msgstr "Baş Yorumcu"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.edit_profile
 msgid "City"
-msgstr "Mahalle"
+msgstr "Semt/İlçe"
 
 #. module: website_forum
 #. openerp-web
@@ -844,9 +833,15 @@ msgstr ""
 #. openerp-web
 #: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:46
 #: selection:forum.post,state:0
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
 #, python-format
 msgid "Close"
 msgstr "Kapat"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Close Post"
+msgstr ""
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_all
@@ -856,6 +851,11 @@ msgstr "Bütün Mesajları kapat"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_own
 msgid "Close own posts"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Close post"
 msgstr ""
 
 #. module: website_forum
@@ -913,11 +913,6 @@ msgid "Comments"
 msgstr "Yorumlar"
 
 #. module: website_forum
-#: model:ir.model.fields,help:website_forum.field_forum_post_website_message_ids
-msgid "Comments on forum post"
-msgstr "Forum sonrası yapılan yorumlar"
-
-#. module: website_forum
 #: model:gamification.challenge,name:website_forum.challenge_configure_profile
 msgid "Complete own biography"
 msgstr "Kendi biyografinizi tamamlayın"
@@ -949,6 +944,16 @@ msgid "Convert all answers to comments and vice versa"
 msgstr "Görüş ve tersi tüm yanıtları dönüştürmek"
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+msgid "Convert as a comment"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+msgid "Convert as an answer"
+msgstr ""
+
+#. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_accept
 msgid "Convert comment to answer"
 msgstr ""
@@ -976,7 +981,7 @@ msgstr "Ülke"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.edit_profile
 msgid "Country..."
-msgstr "Ülke"
+msgstr "Ülke..."
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_create_date
@@ -1034,6 +1039,12 @@ msgid "Default Post"
 msgstr ""
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Delete"
+msgstr "Sil"
+
+#. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_unlink_all
 msgid "Delete all posts"
 msgstr "Tüm mesajları silme"
@@ -1088,7 +1099,7 @@ msgstr "Tartışmalar"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_display_name
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag_display_name
 msgid "Display Name"
-msgstr "Adı Göstermek"
+msgstr "Görünüm Adı"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_user_bio
@@ -1102,6 +1113,8 @@ msgstr "Downvote"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.edit_post
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "Edit"
 msgstr "Düzenle"
 
@@ -1111,14 +1124,14 @@ msgid "Edit Profile"
 msgstr "Profili Düzenle"
 
 #. module: website_forum
-#: model:ir.ui.view,arch_db:website_forum.user_detail_full
-msgid "Edit Your Bio"
-msgstr "Biyografinizi Düzenleyin"
-
-#. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "Edit Your Previous Answer"
 msgstr "Önceki Cevabınızı Düzenleyin"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Edit Your Profile"
+msgstr ""
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_edit_all
@@ -1249,6 +1262,12 @@ msgid "First upvote"
 msgstr ""
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Flag"
+msgstr ""
+
+#. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_flag
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_flag
 msgid "Flag a post as offensive"
@@ -1257,6 +1276,8 @@ msgstr "Saldırgan olarak işaretle"
 #. module: website_forum
 #: selection:forum.post,state:0
 #: model:ir.ui.view,arch_db:website_forum.moderation_queue
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "Flagged"
 msgstr ""
 
@@ -1307,6 +1328,7 @@ msgid "Forum Badge Level"
 msgstr "Forum Rozet Seviye"
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.res_users_view_form_preference
 #: model:ir.ui.view,arch_db:website_forum.view_users_form_forum
 msgid "Forum Karma"
 msgstr "Forum Karma"
@@ -1349,7 +1371,7 @@ msgstr "Forumlar"
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_gamification_badge
 msgid "Gamification badge"
-msgstr "Ödüllendirme Rozeti"
+msgstr "İK Personel Hedefleri"
 
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_gamification_challenge
@@ -1448,6 +1470,14 @@ msgid "Help"
 msgstr "Yardım"
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid ""
+"How to create a physical inventory at an anterior date?, How is the "
+"'remaining hours' field computed on tasks?, How to configure TPS and TVQ's "
+"canadian taxes?"
+msgstr ""
+
+#. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_id
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_id
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_id
@@ -1500,6 +1530,13 @@ msgstr ""
 #: code:addons/website_forum/static/src/js/website_tour_forum.js:43
 #, python-format
 msgid "Insert tags related to your question."
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid ""
+"Inventory Date Problem, Task remaining hours, Can you help solve solve my "
+"tax computation problem in Canada?"
 msgstr ""
 
 #. module: website_forum
@@ -1625,6 +1662,11 @@ msgid "Links"
 msgstr ""
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Mark as offensive"
+msgstr ""
+
+#. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_moderate
 msgid "Moderate posts"
 msgstr ""
@@ -1671,7 +1713,7 @@ msgstr "Benim Oyum"
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag_name
 #: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
 msgid "Name"
-msgstr "Adı"
+msgstr "İsim"
 
 #. module: website_forum
 #: model:mail.message.subtype,description:website_forum.mt_answer_new
@@ -1687,7 +1729,7 @@ msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.editor.js:14
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:32
 #: model:ir.ui.view,arch_db:website_forum.content_new_forum
 #, python-format
 msgid "New Forum"
@@ -1736,20 +1778,20 @@ msgid "Nofollow links"
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:871
-#: code:addons/website_forum/models/forum.py:891
+#: code:addons/website_forum/models/forum.py:870
+#: code:addons/website_forum/models/forum.py:890
 #, python-format
 msgid "Not allowed to vote for its own post"
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:935
+#: code:addons/website_forum/models/forum.py:934
 #, python-format
 msgid "Not enough karma to create a new Tag"
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:494
+#: code:addons/website_forum/models/forum.py:491
 #, python-format
 msgid "Not enough karma to retag."
 msgstr ""
@@ -1792,6 +1834,11 @@ msgid "Offensive"
 msgstr "Saldırgan"
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Offensive Post"
+msgstr ""
+
+#. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_answers
 msgid "On"
 msgstr "Açık"
@@ -1829,7 +1876,7 @@ msgstr "Meslektaş Baskısı"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "Pending"
-msgstr "Bekleyen"
+msgstr "Beklemede"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.header
@@ -1881,15 +1928,15 @@ msgstr "Popüler Soru (500)"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_post_id
-#: model:ir.ui.view,arch_db:website_forum.close_post
 #: model:ir.ui.view,arch_db:website_forum.new_link
 #: model:ir.ui.view,arch_db:website_forum.post_comment
 #: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
 msgid "Post"
-msgstr "İşe"
+msgstr "Onayla"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_answer
+#: model:ir.ui.view,arch_db:website_forum.post_reply
 msgid "Post Answer"
 msgstr ""
 
@@ -1899,14 +1946,10 @@ msgid "Post Closing Reason"
 msgstr "Mesaj Kapanış Nedeni"
 
 #. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
 #: model:ir.ui.view,arch_db:website_forum.post_reply
 msgid "Post Comment"
 msgstr ""
-
-#. module: website_forum
-#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_message_ids
-msgid "Post Messages"
-msgstr "Mesajlar"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.new_link
@@ -1944,7 +1987,7 @@ msgid "Posted 100 comments"
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:438
+#: code:addons/website_forum/models/forum.py:435
 #, python-format
 msgid "Posting answer on a [Deleted] or [Closed] question is not possible"
 msgstr ""
@@ -2000,7 +2043,7 @@ msgid "Question"
 msgstr "Soru"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:507
+#: code:addons/website_forum/models/forum.py:504
 #: model:mail.message.subtype,description:website_forum.mt_question_edit
 #: model:mail.message.subtype,name:website_forum.mt_question_edit
 #, python-format
@@ -2071,10 +2114,15 @@ msgid "Questions"
 msgstr "Sorular"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:525
+#: code:addons/website_forum/models/forum.py:522
 #, python-format
 msgid "Re: %s"
 msgstr "Yanıt: %s"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Reactivate"
+msgstr ""
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.header
@@ -2126,6 +2174,11 @@ msgstr ""
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
 msgid "Relevance Computation"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Reopen"
 msgstr ""
 
 #. module: website_forum
@@ -2244,28 +2297,28 @@ msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:23
+#: code:addons/website_forum/static/src/js/website_forum.js:26
 #, python-format
 msgid "Sorry you must be logged in to perform this action"
 msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:70
+#: code:addons/website_forum/static/src/js/website_forum.js:100
 #, python-format
 msgid "Sorry you must be logged to flag a post"
 msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:118
+#: code:addons/website_forum/static/src/js/website_forum.js:149
 #, python-format
 msgid "Sorry you must be logged to vote"
 msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:168
+#: code:addons/website_forum/static/src/js/website_forum.js:199
 #, python-format
 msgid "Sorry, anonymous users cannot choose correct answer."
 msgstr ""
@@ -2277,7 +2330,7 @@ msgstr "Maalesef, bu soru artık mevcut değildir."
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:113
+#: code:addons/website_forum/static/src/js/website_forum.js:144
 #, python-format
 msgid "Sorry, you cannot vote for your own posts"
 msgstr ""
@@ -2348,11 +2401,6 @@ msgstr "Etiket adı halihazırda mevcut !"
 #: model:ir.ui.view,arch_db:website_forum.tag
 msgid "Tags"
 msgstr "Etiketler"
-
-#. module: website_forum
-#: model:ir.model.fields,field_description:website_forum.field_res_users_task_ids
-msgid "Tasks"
-msgstr "Görevler"
 
 #. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_32
@@ -2445,23 +2493,30 @@ msgid ""
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:414
+#: code:addons/website_forum/models/forum.py:411
 #, python-format
 msgid "This forum does not allow %s"
 msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:80
+#: code:addons/website_forum/static/src/js/website_forum.js:110
 #, python-format
 msgid "This post can not be flagged"
 msgstr ""
 
 #. module: website_forum
 #. openerp-web
-#: code:addons/website_forum/static/src/js/website_forum.js:75
+#: code:addons/website_forum/static/src/js/website_forum.js:105
 #, python-format
 msgid "This post is already flagged"
+msgstr ""
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid ""
+"This post is currently awaiting moderation and not yet published... Do you "
+"want <i>Accept</i> or <i>Reject</i> this post ?"
 msgstr ""
 
 #. module: website_forum
@@ -2477,7 +2532,7 @@ msgstr ""
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_name
 msgid "Title"
-msgstr "Ünvan"
+msgstr "Başlık"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.edit_post
@@ -2486,8 +2541,8 @@ msgid "Title must not be empty"
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/controllers/main.py:323
-#: code:addons/website_forum/controllers/main.py:394
+#: code:addons/website_forum/controllers/main.py:324
+#: code:addons/website_forum/controllers/main.py:395
 #, python-format
 msgid "Title should not be empty."
 msgstr ""
@@ -2517,7 +2572,7 @@ msgstr ""
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_post_type
 msgid "Type"
-msgstr "tip"
+msgstr "Tür"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_content_link
@@ -2662,7 +2717,17 @@ msgstr ""
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.edit_profile
 msgid "Website"
-msgstr "Web Sitesi"
+msgstr "Websitesi"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_message_ids
+msgid "Website Messages"
+msgstr "Websitesi Mesajları"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_website_message_ids
+msgid "Website communication history"
+msgstr "Web Sitesi iletişim geçmişi"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_welcome_message
@@ -2711,7 +2776,7 @@ msgid ""
 msgstr ""
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:139
+#: code:addons/website_forum/models/forum.py:140
 #, python-format
 msgid ""
 "You cannot choose %s as default post since the forum does not allow it."
@@ -2779,7 +2844,7 @@ msgstr "bronz"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_description_full
 msgid "by"
-msgstr "tarafından"
+msgstr "Talebi karşılayan: "
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.forum_index

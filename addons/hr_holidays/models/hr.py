@@ -77,7 +77,7 @@ class Employee(models.Model):
     current_leave_id = fields.Many2one('hr.holidays.status', compute='_compute_leave_status', string="Current Leave Type")
     leave_date_from = fields.Date('From Date', compute='_compute_leave_status')
     leave_date_to = fields.Date('To Date', compute='_compute_leave_status')
-    leaves_count = fields.Integer('Number of Leaves', compute='_compute_leaves_count')
+    leaves_count = fields.Float('Number of Leaves', compute='_compute_leaves_count')
     show_leaves = fields.Boolean('Able to see Remaining Leaves', compute='_compute_show_leaves')
     is_absent_totay = fields.Boolean('Absent Today', compute='_compute_absent_employee', search='_search_absent_employee')
 
@@ -207,7 +207,7 @@ class Employee(models.Model):
         today_date = datetime.datetime.utcnow().date()
         today_start = fields.Datetime.to_string(today_date)  # get the midnight of the current utc day
         today_end = fields.Datetime.to_string(today_date + relativedelta(hours=23, minutes=59, seconds=59))
-        holidays = self.env['hr.holidays'].search([
+        holidays = self.env['hr.holidays'].sudo().search([
             ('employee_id', '!=', False),
             ('state', 'not in', ['cancel', 'refuse']),
             ('date_from', '<=', today_end),

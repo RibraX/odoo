@@ -3,17 +3,18 @@
 # * website_event_questions
 # 
 # Translators:
-# Audrius Palenskis <audrius.palenskis@gmail.com>, 2016
-# Martin Trigaux <mat@odoo.com>, 2016
-# UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2016
-# Monika Raciunaite <monika.raciunaite@gmail.com>, 2016
+# Audrius Palenskis <audrius.palenskis@gmail.com>, 2017
+# digitouch UAB <digitouchagencyeur@gmail.com>, 2017
+# UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Monika Raciunaite <monika.raciunaite@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0c\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-07 08:57+0000\n"
-"PO-Revision-Date: 2016-09-07 08:57+0000\n"
-"Last-Translator: Monika Raciunaite <monika.raciunaite@gmail.com>, 2016\n"
+"POT-Creation-Date: 2017-10-02 11:26+0000\n"
+"PO-Revision-Date: 2017-10-02 11:26+0000\n"
+"Last-Translator: Monika Raciunaite <monika.raciunaite@gmail.com>, 2017\n"
 "Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #. module: website_event_questions
 #: model:ir.ui.view,arch_db:website_event_questions.registration_attendee_details_questions
-msgid "<strong>Common Questions</strong>"
+msgid "<strong>Questions</strong>"
 msgstr ""
 
 #. module: website_event_questions
@@ -48,7 +49,7 @@ msgstr "Atsakymai"
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question_is_individual
 msgid "Ask each attendee"
-msgstr ""
+msgstr "Klausti kiekvieno dalyvio"
 
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_registration
@@ -58,7 +59,7 @@ msgstr "Dalyvis"
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_0_2
 msgid "Bronze"
-msgstr ""
+msgstr "Bronza"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_answer_create_uid
@@ -84,6 +85,7 @@ msgstr "Vaizduojamas pavadinimas"
 
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_event
+#: model:ir.model.fields,field_description:website_event_questions.field_event_question_event_id
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question_report_event_id
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_report_search
 msgid "Event"
@@ -91,28 +93,33 @@ msgstr "Įvykis"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_registration_answer_event_answer_id
-msgid "Event answer id"
+msgid "Event Answer"
 msgstr ""
 
 #. module: website_event_questions
-#: model:ir.model.fields,field_description:website_event_questions.field_event_question_event_id
-msgid "Event id"
-msgstr ""
+#: model:ir.model,name:website_event_questions.model_event_type
+msgid "Event Category"
+msgstr "Įvykio kategorija"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_registration_answer_event_registration_id
-msgid "Event registration id"
-msgstr ""
+msgid "Event Registration"
+msgstr "Įvykio registracija"
+
+#. module: website_event_questions
+#: model:ir.model.fields,field_description:website_event_questions.field_event_question_event_type_id
+msgid "Event Type"
+msgstr "Įvykio tipas"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_event_general_question_ids
 msgid "General Questions"
-msgstr ""
+msgstr "Bendri klausimai"
 
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_0_0
 msgid "Gold"
-msgstr ""
+msgstr "Auksas"
 
 #. module: website_event_questions
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_report_search
@@ -137,7 +144,7 @@ msgstr ""
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_2_1
 msgid "In Charge"
-msgstr ""
+msgstr "Atsakingas"
 
 #. module: website_event_questions
 #: model:event.question,title:website_event_questions.event_question_0
@@ -174,9 +181,10 @@ msgstr "Ne"
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_2_0
 msgid "Personal"
-msgstr ""
+msgstr "Asmeninis"
 
 #. module: website_event_questions
+#: model:ir.model.fields,field_description:website_event_questions.field_event_answer_question_id
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question_report_question_id
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_answer_simplified_form
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_form
@@ -185,12 +193,14 @@ msgid "Question"
 msgstr "Klausimas"
 
 #. module: website_event_questions
-#: model:ir.model.fields,field_description:website_event_questions.field_event_answer_question_id
-msgid "Question id"
+#: code:addons/website_event_questions/models/event.py:78
+#, python-format
+msgid "Question should belong to either event category or event but not both"
 msgstr ""
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_event_question_ids
+#: model:ir.model.fields,field_description:website_event_questions.field_event_type_question_ids
 #: model:ir.ui.menu,name:website_event_questions.menu_report_event_questions
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_form_inherit_question
 msgid "Questions"
@@ -202,13 +212,18 @@ msgstr "Klausimai"
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_report_pivot
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_report_search
 msgid "Questions Analysis"
+msgstr "Klausimų analizė"
+
+#. module: website_event_questions
+#: model:ir.model.fields,field_description:website_event_questions.field_event_type_use_questions
+msgid "Questions to Attendees"
 msgstr ""
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question_report_attendee_id
 #: model:ir.ui.view,arch_db:website_event_questions.view_event_question_report_search
 msgid "Registration"
-msgstr ""
+msgstr "Registracija"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_answer_sequence
@@ -219,12 +234,12 @@ msgstr "Seka"
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_0_1
 msgid "Silver"
-msgstr ""
+msgstr "Sidabras"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_event_specific_question_ids
 msgid "Specific Questions"
-msgstr ""
+msgstr "Specifiniai klausimai"
 
 #. module: website_event_questions
 #: model:ir.model.fields,field_description:website_event_questions.field_event_question_title
@@ -234,7 +249,7 @@ msgstr "Antraštė"
 #. module: website_event_questions
 #: model:event.question,title:website_event_questions.event_question_1
 msgid "Veggie"
-msgstr ""
+msgstr "Vegetaras"
 
 #. module: website_event_questions
 #: model:event.answer,name:website_event_questions.event_suggestion_1_0
@@ -244,19 +259,19 @@ msgstr "Taip"
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_answer
 msgid "event.answer"
-msgstr ""
+msgstr "event.answer"
 
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_question
 msgid "event.question"
-msgstr ""
+msgstr "event.question"
 
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_question_report
 msgid "event.question.report"
-msgstr ""
+msgstr "event.question.report"
 
 #. module: website_event_questions
 #: model:ir.model,name:website_event_questions.model_event_registration_answer
 msgid "event.registration.answer"
-msgstr ""
+msgstr "event.registration.answer"

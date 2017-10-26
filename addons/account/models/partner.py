@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from ast import literal_eval
 from operator import itemgetter
 import time
 
@@ -200,21 +201,22 @@ class AccountFiscalPositionAccount(models.Model):
 class ResPartner(models.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
-    _description = 'Partner'
 
     @api.multi
     def _credit_debit_get(self):
         tables, where_clause, where_params = self.env['account.move.line']._query_get()
         where_params = [tuple(self.ids)] + where_params
-        self._cr.execute("""SELECT l.partner_id, act.type, SUM(l.amount_residual)
-                      FROM account_move_line l
-                      LEFT JOIN account_account a ON (l.account_id=a.id)
+        if where_clause:
+            where_clause = 'AND ' + where_clause
+        self._cr.execute("""SELECT account_move_line.partner_id, act.type, SUM(account_move_line.amount_residual)
+                      FROM account_move_line
+                      LEFT JOIN account_account a ON (account_move_line.account_id=a.id)
                       LEFT JOIN account_account_type act ON (a.user_type_id=act.id)
                       WHERE act.type IN ('receivable','payable')
-                      AND l.partner_id IN %s
-                      AND l.reconciled IS FALSE
+                      AND account_move_line.partner_id IN %s
+                      AND account_move_line.reconciled IS FALSE
                       """ + where_clause + """
-                      GROUP BY l.partner_id, act.type
+                      GROUP BY account_move_line.partner_id, act.type
                       """, where_params)
         for pid, type, val in self._cr.fetchall():
             partner = self.browse(pid)
@@ -244,7 +246,7 @@ class ResPartner(models.Model):
         res = self._cr.fetchall()
         if not res:
             return [('id', '=', '0')]
-        return [('id', 'in', map(itemgetter(0), res))]
+        return [('id', 'in', [r[0] for r in res])]
 
     @api.model
     def _credit_search(self, operator, operand):
@@ -266,7 +268,7 @@ class ResPartner(models.Model):
         all_partner_ids = []
         for partner in self:
             # price_total is in the company currency
-            all_partners_and_children[partner] = self.search([('id', 'child_of', partner.id)]).ids
+            all_partners_and_children[partner] = self.with_context(active_test=False).search([('id', 'child_of', partner.id)]).ids
             all_partner_ids += all_partners_and_children[partner]
 
         # searching account.invoice.report via the orm is comparatively expensive
@@ -276,7 +278,7 @@ class ResPartner(models.Model):
 
         # generate where clause to include multicompany rules
         where_query = account_invoice_report._where_calc([
-            ('partner_id', 'in', all_partner_ids), ('state', 'not in', ['draft', 'cancel']), ('company_id', '=', self.env.user.company_id.id),
+            ('partner_id', 'in', all_partner_ids), ('state', 'not in', ['draft', 'cancel']),
             ('type', 'in', ('out_invoice', 'out_refund'))
         ])
         account_invoice_report._apply_ir_rules(where_query, 'read')
@@ -314,17 +316,6 @@ class ResPartner(models.Model):
         if overdue_only:
             domain += overdue_domain
         return domain
-
-    @api.multi
-    def _compute_issued_total(self):
-        """ Returns the issued total as will be displayed on partner view """
-        today = fields.Date.context_today(self)
-        for partner in self:
-            domain = partner.get_followup_lines_domain(today, overdue_only=True)
-            issued_total = 0
-            for aml in self.env['account.move.line'].search(domain):
-                issued_total += aml.amount_residual
-            partner.issued_total = issued_total
 
     @api.one
     def _compute_has_unreconciled_entries(self):
@@ -365,7 +356,7 @@ class ResPartner(models.Model):
     @api.multi
     def mark_as_reconciled(self):
         self.env['account.partial.reconcile'].check_access_rights('write')
-        return self.sudo().write({'last_time_entries_checked': time.strftime(DEFAULT_SERVER_DATETIME_FORMAT)})
+        return self.sudo().with_context(company_id=self.env.user.company_id.id).write({'last_time_entries_checked': time.strftime(DEFAULT_SERVER_DATETIME_FORMAT)})
 
     @api.one
     def _get_company_currency(self):
@@ -386,7 +377,6 @@ class ResPartner(models.Model):
 
     contracts_count = fields.Integer(compute='_journal_item_count', string="Contracts", type='integer')
     journal_item_count = fields.Integer(compute='_journal_item_count', string="Journal Items", type="integer")
-    issued_total = fields.Monetary(compute='_compute_issued_total', string="Journal Items")
     property_account_payable_id = fields.Many2one('account.account', company_dependent=True,
         string="Account Payable", oldname="property_account_payable",
         domain="[('internal_type', '=', 'payable'), ('deprecated', '=', False)]",
@@ -402,7 +392,7 @@ class ResPartner(models.Model):
         help="The fiscal position will determine taxes and accounts used for the partner.", oldname="property_account_position")
     property_payment_term_id = fields.Many2one('account.payment.term', company_dependent=True,
         string='Customer Payment Terms',
-        help="This payment term will be used instead of the default one for sale orders and customer invoices", oldname="property_payment_term")
+        help="This payment term will be used instead of the default one for sales orders and customer invoices", oldname="property_payment_term")
     property_supplier_payment_term_id = fields.Many2one('account.payment.term', company_dependent=True,
          string='Vendor Payment Terms',
          help="This payment term will be used instead of the default one for purchase orders and vendor bills", oldname="property_supplier_payment_term")
@@ -439,11 +429,10 @@ class ResPartner(models.Model):
             ['debit_limit', 'property_account_payable_id', 'property_account_receivable_id', 'property_account_position_id',
              'property_payment_term_id', 'property_supplier_payment_term_id', 'last_time_entries_checked']
 
-    def open_partner_history(self):
-        '''
-        This function returns an action that display invoices/refunds made for the given partners.
-        '''
-        action = self.env.ref('account.action_invoice_refund_out_tree')
-        result = action.read()[0]
-        result['domain'] = [('partner_id', 'in', self.ids)]
-        return result
+    @api.multi
+    def action_view_partner_invoices(self):
+        self.ensure_one()
+        action = self.env.ref('account.action_invoice_refund_out_tree').read()[0]
+        action['domain'] = literal_eval(action['domain'])
+        action['domain'].append(('partner_id', 'child_of', self.id))
+        return action

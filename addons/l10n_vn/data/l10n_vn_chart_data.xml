@@ -1,13 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<menuitem id="account_reports_vn_statements_menu" name="Vietnamese Statements" parent="account.menu_finance_reports" sequence="3" groups="account.group_account_user"/>
-
-<data noupdate="1">
-    <!-- Account types -->
-    <record id="account_type_other" model="account.account.type">
-        <field name="name">X. TÀI KHOẢN NGOÀI BẢNG</field>
-    </record>
-</data>
+<menuitem id="account_reports_vn_statements_menu" name="Vietnam" parent="account.menu_finance_reports" sequence="0" groups="account.group_account_user"/>
 
 <data>
     <record id="transfer_account_id" model="account.account.template">
@@ -817,15 +810,15 @@
         <field name="chart_template_id" ref="vn_template"/>
         <field name="name">Mệnh giá trái phiếu</field>
     </record>
-    <record id="chart343112" model="account.account.template">
-        <field name="code">343112</field>
+    <record id="chart34312" model="account.account.template">
+        <field name="code">34312</field>
         <field name="reconcile" eval="False"/>
         <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
         <field name="chart_template_id" ref="vn_template"/>
         <field name="name">Chiết khấu trái phiếu</field>
     </record>
-    <record id="chart343113" model="account.account.template">
-        <field name="code">343113</field>
+    <record id="chart34313" model="account.account.template">
+        <field name="code">34313</field>
         <field name="reconcile" eval="False"/>
         <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
         <field name="chart_template_id" ref="vn_template"/>
