@@ -321,6 +321,9 @@ class Lead(models.Model):
         # Set date_open to today if it is an opp
         default = default or {}
         default['date_open'] = fields.Datetime.now() if self.type == 'opportunity' else False
+        # Do not assign to an archived user
+        if not self.user_id.active:
+            default['user_id'] = False
         return super(Lead, self.with_context(context)).copy(default=default)
 
     @api.model
@@ -985,7 +988,7 @@ class Lead(models.Model):
                         result['activity']['today'] += 1
                     if date.today() <= date_deadline <= date.today() + timedelta(days=7):
                         result['activity']['next_7_days'] += 1
-                    if date_deadline < date.today() and not opp.date_closed:
+                    if date_deadline < date.today():
                         result['activity']['overdue'] += 1
             # Won in Opportunities
             if opp.date_closed and opp.stage_id.probability == 100:

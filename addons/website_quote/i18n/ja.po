@@ -12,10 +12,10 @@
 # ook rio <riokoko5@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.saas~18\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-02 11:26+0000\n"
-"PO-Revision-Date: 2017-10-02 11:26+0000\n"
+"POT-Creation-Date: 2017-10-24 09:00+0000\n"
+"PO-Revision-Date: 2017-10-24 09:00+0000\n"
 "Last-Translator: ook rio <riokoko5@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -661,7 +661,7 @@ msgstr "見積表示用説明"
 #: model:ir.model.fields,field_description:website_quote.field_product_product_website_description
 #: model:ir.model.fields,field_description:website_quote.field_product_template_website_description
 msgid "Description for the website"
-msgstr "ウェブサイト表示用説明"
+msgstr "ウェブサイト用説明"
 
 #. module: website_quote
 #: model:product.product,quote_description:website_quote.product_product_quote_2
@@ -715,8 +715,13 @@ msgid "Expiration Date:"
 msgstr "有効期日:"
 
 #. module: website_quote
+#: model:ir.model,name:website_quote.model_ir_model_fields
+msgid "Fields"
+msgstr "項目"
+
+#. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_1
-msgid "Follows a tranceparent ranking systemReady - Silver - Gold"
+msgid "Follows a transparent ranking system. Ready - Silver - Gold"
 msgstr ""
 
 #. module: website_quote
@@ -1048,7 +1053,7 @@ msgstr ""
 #: selection:sale.order,require_payment:0
 #: selection:sale.quote.template,require_payment:0
 msgid "Online Payment"
-msgstr ""
+msgstr "オンライン支払"
 
 #. module: website_quote
 #: selection:sale.order,require_payment:0
@@ -1082,7 +1087,7 @@ msgid "Optional Products Lines"
 msgstr "オプション製品明細"
 
 #. module: website_quote
-#: code:addons/website_quote/models/sale_order.py:205
+#: code:addons/website_quote/models/sale_order.py:210
 #, python-format
 msgid "Order paid by %s. Transaction: %s. Amount: %s."
 msgstr "%s によって支払われた注文。 トランザクション：%s。 金額：%s。"
@@ -1141,7 +1146,7 @@ msgstr "支払と確認"
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation
 msgid "Pay with"
-msgstr ""
+msgstr "お支払"
 
 #. module: website_quote
 #: model:ir.ui.menu,name:website_quote.payment_acquirer_menu_sale
@@ -1181,12 +1186,12 @@ msgstr "印刷"
 #: model:ir.ui.view,arch_db:website_quote.optional_products
 #: model:ir.ui.view,arch_db:website_quote.report_saleorder_validity_date
 msgid "Product"
-msgstr "製品"
+msgstr "プロダクト"
 
 #. module: website_quote
 #: model:ir.model,name:website_quote.model_product_template
 msgid "Product Template"
-msgstr "製品テンプレート"
+msgstr "プロダクトテンプレート"
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_default
@@ -1202,12 +1207,12 @@ msgstr ""
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_template
 msgid "Product:"
-msgstr "製品："
+msgstr "プロダクト:"
 
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.pricing
 msgid "Products"
-msgstr "製品"
+msgstr "プロダクト"
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_1

@@ -63,18 +63,19 @@ class ResConfigSettings(models.TransientModel):
     @api.model
     def get_values(self):
         res = super(ResConfigSettings, self).get_values()
-        params = self.env['ir.config_parameter'].sudo()
+        # ONLY FOR v11. DO NOT FORWARD-PORT
+        IrDefault = self.env['ir.default'].sudo()
+        default_sale_tax_id = IrDefault.get('product.template', "taxes_id", company_id=self.company_id.id or self.env.user.company_id.id)
+        default_purchase_tax_id = IrDefault.get('product.template', "supplier_taxes_id", company_id=self.company_id.id or self.env.user.company_id.id)
         res.update(
-            default_purchase_tax_id=int(params.get_param('account.default_purchase_tax_id', default=False)) or False,
-            default_sale_tax_id=int(params.get_param('account.default_sale_tax_id', default=False)) or False
+            default_purchase_tax_id=default_purchase_tax_id[0] if default_purchase_tax_id else False,
+            default_sale_tax_id=default_sale_tax_id[0] if default_sale_tax_id else False,
         )
         return res
 
     @api.multi
     def set_values(self):
         super(ResConfigSettings, self).set_values()
-        self.env['ir.config_parameter'].sudo().set_param("account.default_purchase_tax_id", self.default_purchase_tax_id.id)
-        self.env['ir.config_parameter'].sudo().set_param("account.default_sale_tax_id", self.default_sale_tax_id.id)
         if self.group_multi_currency:
             self.env.ref('base.group_user').write({'implied_ids': [(4, self.env.ref('product.group_sale_pricelist').id)]})
         """ Set the product taxes if they have changed """

@@ -34,13 +34,15 @@
 # Gustavo Orozco H. <gustavo.orozco.h@app-247.com>, 2017
 # juani_aizean <juani@aizean.com>, 2017
 # Sergio Hevia <sah@talleresbernesga.com>, 2017
+# Fernando San Martín Woerner <fsnmartin@gmail.com>, 2017
+# Christopher Ormaza <chris.ormaza@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.saas~18\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-02 11:25+0000\n"
-"PO-Revision-Date: 2017-10-02 11:25+0000\n"
-"Last-Translator: Sergio Hevia <sah@talleresbernesga.com>, 2017\n"
+"POT-Creation-Date: 2017-11-30 13:11+0000\n"
+"PO-Revision-Date: 2017-11-30 13:11+0000\n"
+"Last-Translator: Christopher Ormaza <chris.ormaza@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1013,10 +1015,15 @@ msgid "Active"
 msgstr "Activo"
 
 #. module: project
+#: model:ir.ui.view,arch_db:project.project_planner
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: project
 #: model:ir.actions.act_window,name:project.mail_activity_type_action_config_project_types
 #: model:ir.ui.menu,name:project.project_menu_config_activity_type
 msgid "Activity Types"
-msgstr ""
+msgstr "Tipos de actividad"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.task_type_edit
@@ -1449,11 +1456,6 @@ msgstr ""
 "Configuración."
 
 #. module: project
-#: model:ir.actions.act_window,name:project.project_config_settings_action
-msgid "Configure Project"
-msgstr "Configurar proyecto"
-
-#. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid ""
 "Congratulations on choosing Odoo Project to help running your company more "
@@ -1511,7 +1513,7 @@ msgstr "Crear"
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_project_view_form_simplified
 msgid "Create & Edit"
-msgstr ""
+msgstr "Crear y editar"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_create_date
@@ -2049,7 +2051,7 @@ msgstr "Previsiones"
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Future Activities"
-msgstr ""
+msgstr "Actividades futuras"
 
 #. module: project
 #: model:ir.ui.menu,name:project.menu_tasks_config
@@ -2546,7 +2548,7 @@ msgstr "Última Actualización el"
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Late Activities"
-msgstr ""
+msgstr "Actividades tardías"
 
 #. module: project
 #: model:web.planner,tooltip_planner:project.planner_project
@@ -2674,7 +2676,7 @@ msgstr "Comunicación mas eficiente entre empleados"
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_task_search_form
 msgid "My Activities"
-msgstr ""
+msgstr "Mis actividades"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_project_project_filter
@@ -2689,7 +2691,7 @@ msgstr ""
 #. module: project
 #: model:ir.actions.act_window,name:project.project_task_action_activity
 msgid "My Next Activities"
-msgstr ""
+msgstr "Mis actividades siguientes "
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_task_search_form
@@ -2815,6 +2817,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project_doc_count
 msgid "Number of documents attached"
 msgstr "Número de documentos adjuntos"
+
+#. module: project
+#: model:ir.ui.view,arch_db:project.project_planner
+msgid "Objectives"
+msgstr "Objetivos"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -2964,7 +2971,7 @@ msgid "Planner"
 msgstr "Agenda"
 
 #. module: project
-#: code:addons/project/models/project.py:925
+#: code:addons/project/models/project.py:887
 #, python-format
 msgid ""
 "Please remove existing tasks in the project linked to the accounts you want "
@@ -3015,6 +3022,7 @@ msgstr "Producto o versión de software"
 #: model:ir.ui.menu,name:project.menu_main_pm
 #: model:ir.ui.view,arch_db:project.edit_project
 #: model:ir.ui.view,arch_db:project.project_project_view_form_simplified
+#: model:ir.ui.view,arch_db:project.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:project.view_task_project_user_search
 #: model:ir.ui.view,arch_db:project.view_task_search_form
 #: model:res.request.link,name:project.req_link_project
@@ -3100,6 +3108,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:project.portal_layout
 #: model:ir.ui.view,arch_db:project.portal_my_home
 #: model:ir.ui.view,arch_db:project.portal_my_projects
+#: model:ir.ui.view,arch_db:project.project_planner
 #: model:ir.ui.view,arch_db:project.view_project
 msgid "Projects"
 msgstr "Proyectos"
@@ -3310,7 +3319,7 @@ msgstr "Búsqueda"
 #: code:addons/project/controllers/portal.py:92
 #, python-format
 msgid "Search <span class=\"nolabel\"> (in Content)</span>"
-msgstr ""
+msgstr "Buscar <span class=\"nolabel\"> (en Contenido)</span>"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_project_project_filter
@@ -3321,19 +3330,19 @@ msgstr "Buscar proyecto"
 #: code:addons/project/controllers/portal.py:96
 #, python-format
 msgid "Search in All"
-msgstr ""
+msgstr "Buscar en todos"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:94
 #, python-format
 msgid "Search in Customer"
-msgstr ""
+msgstr "Buscar en clientes"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:93
 #, python-format
 msgid "Search in Messages"
-msgstr ""
+msgstr "Buscar en mensajes"
 
 #. module: project
 #: code:addons/project/controllers/portal.py:95
@@ -3385,6 +3394,7 @@ msgid "Set a Cover Image"
 msgstr "Establecer una imagen de portada"
 
 #. module: project
+#: model:ir.actions.act_window,name:project.project_config_settings_action
 #: model:ir.ui.menu,name:project.project_config_settings_menu_action
 #: model:ir.ui.view,arch_db:project.edit_project
 #: model:ir.ui.view,arch_db:project.view_project_kanban
@@ -3410,6 +3420,8 @@ msgstr "Mostrar el proyecto en el tablero"
 #: model:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Show all records which has next action date is before today"
 msgstr ""
+"Mostrar todos los registros que tienen la próxima fecha de acción antes de "
+"hoy"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -3573,7 +3585,7 @@ msgstr "Tarea"
 #. module: project
 #: model:ir.ui.view,arch_db:project.portal_my_task
 msgid "Task -"
-msgstr ""
+msgstr "Tarea -"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project_tasks
@@ -3822,12 +3834,12 @@ msgstr ""
 #. module: project
 #: model:ir.ui.view,arch_db:project.portal_my_projects
 msgid "There are no projects."
-msgstr ""
+msgstr "No hay proyectos."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.portal_my_tasks
 msgid "There are no tasks."
-msgstr ""
+msgstr "No hay tareas."
 
 #. module: project
 #. openerp-web

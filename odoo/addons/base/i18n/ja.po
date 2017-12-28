@@ -10,14 +10,15 @@
 # NOKA Shigekazu <shigekazu.noka@gmail.com>, 2017
 # Masayuki Takesue <m_takesue@nifty.com>, 2017
 # SHIMIZU Taku <shimizu.taku@gmail.com>, 2017
+# 澤田 拓哉 <takuya@tuntunkun.com>, 2017
 # Manami Hashi <manami@roomsfor.hk>, 2017
 # Takahiro MURAKAMI <murakami@date-yakkyoku.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-10 13:14+0000\n"
-"PO-Revision-Date: 2017-10-10 13:14+0000\n"
+"POT-Creation-Date: 2017-11-08 13:21+0000\n"
+"PO-Revision-Date: 2017-11-08 13:21+0000\n"
 "Last-Translator: Takahiro MURAKAMI <murakami@date-yakkyoku.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -248,6 +249,18 @@ msgid ""
 "and get rewards.\n"
 "\n"
 msgstr ""
+
+#. module: base
+#: code:addons/model.py:136
+#, python-format
+msgid ""
+"\n"
+"\n"
+"[object with reference: %s - %s]"
+msgstr ""
+"\n"
+"\n"
+"[object with reference: %s - %s]"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_invoice_bba
@@ -545,6 +558,8 @@ msgid ""
 "\n"
 "        Make Call from all modules using the VOIP system."
 msgstr ""
+"\n"
+"        VOIPシステムと連携したコール機能"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_quote_subscription
@@ -780,6 +795,9 @@ msgid ""
 "    Resource management for Project\n"
 "    "
 msgstr ""
+"\n"
+"    プロジェクトリソース管理\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_ebay
@@ -2709,14 +2727,14 @@ msgstr ""
 "================\n"
 "\n"
 "このアプリケーションでは、従業員の1日の経費を管理できます。 それはあなたの従業員の手数料ノートにアクセスし、あなたのノートを完了し、検証または拒否する権利を与える与えます。 検証後、従業員の請求書が作成されます。\n"
-"従業員は、独自の経費をコード化することができ、検証フローによって、マネージャによる検証後に自動的に会計処理に反映されます。\n"
+"従業員は、独自の経費をコード化することができ、検証フローによって、マネジャーによる検証後に自動的に会計処理に反映されます。\n"
 "\n"
 "\n"
 "全体の流れは次のように実装されます：\n"
 "---------------------------------\n"
 "*ドラフト経費\n"
-"*従業員がマネージャに提出する\n"
-"*当該従業員のマネージャの承認\n"
+"*従業員がマネジャーに提出する\n"
+"*当該従業員のマネジャーの承認\n"
 "*経理担当者と経理記入項目の作成による検証\n"
 "\n"
 "このモジュールは分析会計も使用し、タイムシートモジュールの請求書と互換性があるため、プロジェクトごとに作業する場合に顧客の経費を自動的に再請求することができます。"
@@ -4794,7 +4812,7 @@ msgstr ""
 "このモジュールにより、経理担当者は分析予算とクロスオーバー予算を管理できます。\n"
 "========================================== ============\n"
 "\n"
-"予算が(請求書/予算/予算で)定義されると、プロジェクトマネージャは、各分析勘定に計画された金額を設定することができます。\n"
+"予算が(請求書/予算/予算で)定義されると、プロジェクトマネジャーは、各分析勘定に計画された金額を設定することができます。\n"
 "\n"
 "経理担当者は、計画全体がこの予算に対して計画したものよりも大きくない/小さくないことを保証するために、各予算について計画された合計額を確認する可能性があります。 \n"
 "レコードの各リストは、そのレコードのグラフィカル表示に切り替えることもできます。\n"
@@ -6537,11 +6555,6 @@ msgid "Add Delivery Costs to Online Sales"
 msgstr "オンライン販売に配送費用を追加します。"
 
 #. module: base
-#: selection:ir.actions.server,state:0
-msgid "Add Followers"
-msgstr "フォロワーを追加"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_transifex
 msgid "Add a link to edit a translation in Transifex"
 msgstr ""
@@ -6559,7 +6572,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode
 msgid "Add barcode scanning facilities to Warehouse Management."
-msgstr ""
+msgstr "倉庫管理にバーコードスキャン機能を追加"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_event_barcode
@@ -6746,7 +6759,7 @@ msgstr "管理"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_N
 msgid "Administrative"
-msgstr ""
+msgstr "総務"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_name
@@ -6764,7 +6777,7 @@ msgstr "モジュールをアンインストールするには管理者アクセ
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_country_form
 msgid "Advanced Address Formatting"
-msgstr ""
+msgstr "アドレスフォーマット設定"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_track
@@ -6792,12 +6805,12 @@ msgstr "Affero GPL-3"
 #. module: base
 #: model:res.country,name:base.af
 msgid "Afghanistan"
-msgstr ""
+msgstr "アフガニスタン"
 
 #. module: base
 #: selection:res.country,name_position:0
 msgid "After Address"
-msgstr ""
+msgstr "アドレスの後"
 
 #. module: base
 #: selection:res.currency,position:0
@@ -6807,7 +6820,7 @@ msgstr "総計後"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_A
 msgid "Agriculture"
-msgstr ""
+msgstr "農業"
 
 #. module: base
 #: model:res.country,name:base.al
@@ -6876,7 +6889,14 @@ msgstr ""
 msgid ""
 "Allows you to create your invoices and track the payments. It is an easier "
 "version of the accounting module for managers who are not accountants."
-msgstr "請求書の作成と支払いの追跡ができます。これは、会計士ではないマネジャのための会計モジュールの簡易バージョンです。"
+msgstr "請求書の作成と支払いの追跡ができます。これは、会計士ではないマネジャーのための会計モジュールの簡易バージョンです。"
+
+#. module: base
+#: model:ir.actions.act_window,help:base.action_attachment
+msgid ""
+"Also you will find here all the related documents and download it by "
+"clicking on any individual document."
+msgstr ""
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:378
@@ -6920,7 +6940,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.ad
 msgid "Andorra"
-msgstr ""
+msgstr "アンドラ"
 
 #. module: base
 #: model:res.country,name:base.ao
@@ -6972,7 +6992,7 @@ msgstr "アプリケーション"
 #: model:ir.ui.view,arch_db:base.user_groups_view
 #, python-format
 msgid "Application Accesses"
-msgstr ""
+msgstr "アプリケーションアクセス"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_planner
@@ -7025,7 +7045,7 @@ msgstr "更新に適用"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_calendar
 msgid "Appointment Scheduling"
-msgstr ""
+msgstr "アポイントメント"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hr_appraisal
@@ -7232,12 +7252,7 @@ msgstr "自動検索"
 #. module: base
 #: model:ir.module.module,summary:base.module_marketing_automation
 msgid "Automate Marketing Campaigns"
-msgstr ""
-
-#. module: base
-#: selection:ir.actions.server,usage:0
-msgid "Automated Action"
-msgstr ""
+msgstr "マーケティングキャンペーン自動化"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_automation
@@ -7346,6 +7361,12 @@ msgstr "B9  23  33 x 62 mm"
 #: selection:res.company,external_report_layout:0
 msgid "Background"
 msgstr "背景"
+
+#. module: base
+#: code:addons/translate.py:1066
+#, python-format
+msgid "Bad file format: %s"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.bs
@@ -7518,12 +7539,19 @@ msgstr "一括預入"
 #. module: base
 #: selection:res.country,name_position:0
 msgid "Before Address"
-msgstr ""
+msgstr "アドレスの前"
 
 #. module: base
 #: selection:res.currency,position:0
 msgid "Before Amount"
 msgstr "金額の前"
+
+#. module: base
+#: code:addons/base/res/res_users.py:954
+#, python-format
+msgid ""
+"Before clicking on 'Change Password', you have to write a new password."
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.by
@@ -7603,7 +7631,7 @@ msgstr "ブータン"
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_plm
 msgid "Bill of Materials, Routings, Versions, Engineering Change Orders"
-msgstr ""
+msgstr "BOM、工順、バージョン、設計変更オーダ"
 
 #. module: base
 #: selection:ir.property,type:0
@@ -7663,7 +7691,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.bq
 msgid "Bonaire, Sint Eustatius and Saba"
-msgstr "Bonaire, Sint Eustatius and Saba"
+msgstr "ボネール、シント・ユースタティウスおよびサバ"
 
 #. module: base
 #: selection:ir.property,type:0
@@ -7678,7 +7706,7 @@ msgstr "Bootswatch テーマ"
 #. module: base
 #: model:res.country,name:base.ba
 msgid "Bosnia and Herzegovina"
-msgstr ""
+msgstr "ボスニア・ヘルツェゴビナ"
 
 #. module: base
 #: model:res.country,name:base.bw
@@ -7834,7 +7862,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.kh
 msgid "Cambodia"
-msgstr ""
+msgstr "カンボジア"
 
 #. module: base
 #: model:res.country,name:base.cm
@@ -7879,6 +7907,7 @@ msgstr "カナダ - 会計"
 #: model:ir.ui.view,arch_db:base.view_base_module_update
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
+#: model:ir.ui.view,arch_db:base.view_company_report_form
 #: model:ir.ui.view,arch_db:base.view_model_menu_create
 #: model:ir.ui.view,arch_db:base.view_users_form_simple_modif
 #: model:ir.ui.view,arch_db:base.wizard_lang_export
@@ -7984,7 +8013,7 @@ msgstr "パスワード変更"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_country_form
 msgid "Change the way addresses are displayed in reports"
-msgstr ""
+msgstr "帳票のアドレス表示はここで調整してください。"
 
 #. module: base
 #: code:addons/base/res/res_partner.py:309
@@ -8131,14 +8160,14 @@ msgstr "中国"
 #: code:addons/base/ir/ir_actions_report.py:685
 #, python-format
 msgid "Choose Your Document Layout"
-msgstr ""
+msgstr "帳票レイアウト選択"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_country_form
 msgid ""
 "Choose a subview of partners that includes only address fields, to change "
 "the way users can input addresses."
-msgstr ""
+msgstr "アドレスの入力順を変えるには、アドレス項目のみ含む取引先のサブビューを選択してください。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server_smtp_encryption
@@ -8182,14 +8211,14 @@ msgid "Clean"
 msgstr ""
 
 #. module: base
-#: model:ir.actions.act_window,help:base.action_attachment
-msgid "Click here to attach a new document."
-msgstr "新しいドキュメントを添付するには、ここをクリックしてください。"
-
-#. module: base
 #: model:ir.actions.act_window,help:base.action_ui_view_custom
 msgid "Click here to create a customized view"
 msgstr "クリックしてカスタマイズビューを作成してください。"
+
+#. module: base
+#: model:ir.actions.act_window,help:base.action_attachment
+msgid "Click here to create new documents."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_update
@@ -8236,7 +8265,6 @@ msgstr "クライアントアクションタグ"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_language_install
 #: model:ir.ui.view,arch_db:base.view_base_module_update
-#: model:ir.ui.view,arch_db:base.view_company_report_form
 #: model:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Close"
 msgstr "閉じる"
@@ -8551,7 +8579,7 @@ msgstr "確認"
 #. module: base
 #: model:res.country,name:base.cg
 msgid "Congo"
-msgstr "コンゴ"
+msgstr "コンゴ共和国"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_proxy
@@ -8603,7 +8631,7 @@ msgstr "同じ名前に関する制約は、モジュールごとに一意です
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_F
 msgid "Construction"
-msgstr ""
+msgstr "建設"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_8
@@ -8790,7 +8818,7 @@ msgstr "国名"
 #. module: base
 #: model:ir.model,name:base.model_res_country_state
 msgid "Country state"
-msgstr "都道府県・州"
+msgstr "都道府県/州"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access_perm_create
@@ -8810,7 +8838,6 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging_create_date
 #: model:ir.model.fields,field_description:base.field_ir_ui_view_create_date
-#: model:ir.model.fields,field_description:base.field_res_users_create_date
 msgid "Create Date"
 msgstr "作成日"
 
@@ -9040,6 +9067,7 @@ msgstr "作成者"
 #: model:ir.model.fields,field_description:base.field_res_partner_industry_create_date
 #: model:ir.model.fields,field_description:base.field_res_partner_title_create_date
 #: model:ir.model.fields,field_description:base.field_res_request_link_create_date
+#: model:ir.model.fields,field_description:base.field_res_users_create_date
 #: model:ir.model.fields,field_description:base.field_res_users_log_create_date
 #: model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create_create_date
 msgid "Created on"
@@ -9087,11 +9115,6 @@ msgid "Croatia - RRIF 2012 COA - Accounting Reports"
 msgstr ""
 
 #. module: base
-#: model:ir.model.fields,field_description:base.field_ir_cron_user_id
-msgid "Cron User"
-msgstr ""
-
-#. module: base
 #: model:res.country,name:base.cu
 msgid "Cuba"
 msgstr "キューバ"
@@ -9099,7 +9122,7 @@ msgstr "キューバ"
 #. module: base
 #: model:res.country,name:base.cw
 msgid "Curaçao"
-msgstr "Curaçao"
+msgstr "キュラソー島"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_currency_all_form
@@ -9142,7 +9165,7 @@ msgstr "為替レート"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_currency_subunit_label
 msgid "Currency Subunit"
-msgstr ""
+msgstr "補助通貨"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency_currency_subunit_label
@@ -9221,7 +9244,7 @@ msgstr "カスタム項目は、'x_' で始まる名前を持つ必要があり�
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_name_position
 msgid "Customer Name Position"
-msgstr ""
+msgstr "顧客名位置"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_portal
@@ -9249,7 +9272,7 @@ msgstr "顧客"
 #. module: base
 #: model:ir.module.module,summary:base.module_contacts
 msgid "Customers, Vendors, Partners,..."
-msgstr "顧客、ベンダー、取引先..."
+msgstr "顧客、仕入先、取引先..."
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ui_view_custom
@@ -9280,7 +9303,7 @@ msgstr "チェコ共和国"
 #. module: base
 #: model:res.country,name:base.ci
 msgid "Côte d'Ivoire"
-msgstr ""
+msgstr "コートジボワール共和国"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_D
@@ -9410,25 +9433,6 @@ msgid "Days"
 msgstr "日"
 
 #. module: base
-#: model:res.company,overdue_msg:base.main_company
-msgid ""
-"Dear Sir/Madam,\n"
-"\n"
-"Our records indicate that some payments on your account are still due. Please find details below.\n"
-"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
-"If you have any queries regarding your account, Please contact us.\n"
-"\n"
-"Thank you in advance for your cooperation.\n"
-"Best Regards,"
-msgstr ""
-"担当者様,\n"
-"\n"
-"未払いがあります。詳細は後に記述します。すでにお支払いの場合は大変失礼しました。\n"
-"ご連絡いただきたくよろしくお願いします。\n"
-"\n"
-"以上よろしくお願いいたします,"
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_debug
 msgid "Debugging"
 msgstr "デバッグ"
@@ -9516,7 +9520,7 @@ msgstr "削除権限"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_barcode
 msgid "Delivery Barcode Scanning"
-msgstr ""
+msgstr "配送バーコードスキャン"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery
@@ -9531,7 +9535,7 @@ msgstr "デモデータ"
 #. module: base
 #: model:res.country,name:base.cd
 msgid "Democratic Republic of the Congo"
-msgstr ""
+msgstr "コンゴ民主共和国"
 
 #. module: base
 #: model:res.country,name:base.dk
@@ -9850,7 +9854,7 @@ msgstr "文書管理"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company_external_report_layout
 msgid "Document Template"
-msgstr "ドキュメントテンプレート"
+msgstr "帳票テンプレート"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:1174 code:addons/base/ir/ir_model.py:1177
@@ -9946,7 +9950,7 @@ msgstr "各モジュールは固有でなければなりません。"
 #. module: base
 #: model:ir.module.module,summary:base.module_web_studio
 msgid "Easily create and customize your applications"
-msgstr ""
+msgstr "アプリを簡単に作成・カスタマイズ"
 
 #. module: base
 #: model:res.country,name:base.ec
@@ -9966,7 +9970,7 @@ msgstr "翻訳を編集"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_P
 msgid "Education"
-msgstr "学歴"
+msgstr "教育"
 
 #. module: base
 #: model:res.country,name:base.eg
@@ -10086,7 +10090,6 @@ msgstr "従業員ディレクトリ"
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_employee_form
 #: model:ir.module.category,name:base.module_category_human_resources
-#: model:ir.ui.view,arch_db:base.user_groups_view
 msgid "Employees"
 msgstr "従業員"
 
@@ -10099,7 +10102,7 @@ msgstr "空の依存関係あり %r"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_D
 msgid "Energy supply"
-msgstr ""
+msgstr "エネルギー"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -10121,7 +10124,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_R
 msgid "Entertainment"
-msgstr ""
+msgstr "娯楽"
 
 #. module: base
 #: model:res.country,name:base.gq
@@ -10213,7 +10216,7 @@ msgstr ""
 #. module: base
 #: model:res.country.group,name:base.europe
 msgid "Europe"
-msgstr ""
+msgstr "ヨーロッパ"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_server_object_lines_type
@@ -10223,17 +10226,17 @@ msgstr "評価タイプ"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event_barcode
 msgid "Event Barcode Scanning"
-msgstr ""
+msgstr "イベントバーコードスキャン"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event_barcode_mobile
 msgid "Event Barcode in Mobile"
-msgstr ""
+msgstr "イベントバーコード (モバイル)"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_event_barcode_mobile
 msgid "Event Barcode scan in Mobile"
-msgstr ""
+msgstr "モバイル端末でのイベントバーコードスキャン"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_event_management
@@ -10486,7 +10489,7 @@ msgstr "フェロー諸島"
 #: model:ir.model.fields,field_description:base.field_res_bank_state
 #: model:ir.model.fields,field_description:base.field_res_company_state_id
 msgid "Fed. State"
-msgstr "都道府県・州"
+msgstr "都道府県/州"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_country_state
@@ -10779,7 +10782,7 @@ msgstr "1ユーザのみに見えるフィルタ"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_K
 msgid "Finance/Insurance"
-msgstr ""
+msgstr "金融・保険"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_accountant
@@ -10814,7 +10817,7 @@ msgstr "Folio 27 210 x 330 mm"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_I
 msgid "Food"
-msgstr ""
+msgstr "食品"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company_report_footer
@@ -10931,7 +10934,7 @@ msgstr "France - FEC"
 #. module: base
 #: model:res.country,name:base.gf
 msgid "French Guiana"
-msgstr ""
+msgstr "フランス領ギアナ"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
@@ -10941,7 +10944,7 @@ msgstr "French Payroll"
 #. module: base
 #: model:res.country,name:base.pf
 msgid "French Polynesia"
-msgstr ""
+msgstr "フランス領ポリネシア"
 
 #. module: base
 #: model:res.country,name:base.tf
@@ -11075,6 +11078,13 @@ msgstr "一般情報"
 #: model:ir.ui.view,arch_db:base.view_window_action_form
 msgid "General Settings"
 msgstr "一般設定"
+
+#. module: base
+#: model:ir.actions.act_window,name:base.action_wizard_update_translations
+#: model:ir.ui.menu,name:base.menu_wizard_update_translations
+#: model:ir.ui.view,arch_db:base.wizard_update_translations
+msgid "Generate Missing Terms"
+msgstr "未生成の翻訳レコードを生成"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_property_view_search
@@ -11340,12 +11350,12 @@ msgstr "グロープ (グループなし = グローバル)"
 #. module: base
 #: model:res.country,name:base.gp
 msgid "Guadeloupe"
-msgstr ""
+msgstr "グアドループ"
 
 #. module: base
 #: model:res.country,name:base.gu
 msgid "Guam"
-msgstr ""
+msgstr "グアム"
 
 #. module: base
 #: model:res.country,name:base.gt
@@ -11370,7 +11380,7 @@ msgstr "ギニア"
 #. module: base
 #: model:res.country,name:base.gw
 msgid "Guinea-Bissau"
-msgstr ""
+msgstr "ギニアビサウ共和国"
 
 #. module: base
 #: model:res.country,name:base.gy
@@ -11455,12 +11465,12 @@ msgstr "ヘッダ間隔"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_Q
 msgid "Health/Social"
-msgstr ""
+msgstr "医療・社会福祉"
 
 #. module: base
 #: model:res.country,name:base.hm
 msgid "Heard Island and McDonald Islands"
-msgstr ""
+msgstr "ハード島とマクドナルド諸島"
 
 #. module: base
 #: selection:ir.translation,type:0
@@ -11673,7 +11683,7 @@ msgstr "時間"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_T
 msgid "Households"
-msgstr ""
+msgstr "家内工業"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_cron_numbercall
@@ -11826,11 +11836,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: base
-#: model:ir.model.fields,help:base.field_ir_act_server_xml_id
-msgid "ID of the action if defined in a XML file"
-msgstr "XMLファイルで定義されている場合、アクションのID"
-
-#. module: base
 #: model:ir.model.fields,help:base.field_ir_model_data_res_id
 msgid "ID of the target record in the database"
 msgstr "データベース内の目的レコードのID"
@@ -11868,7 +11873,7 @@ msgstr "ITサービス"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_J
 msgid "IT/Communication"
-msgstr ""
+msgstr "IT・通信"
 
 #. module: base
 #: model:res.country,name:base.is
@@ -12052,7 +12057,7 @@ msgstr "画像"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "Impacted Apps"
-msgstr "影響を受ける Apps"
+msgstr "影響を受けるアプリ"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_module_uninstall_model_ids
@@ -12127,7 +12132,7 @@ msgstr "関連モジュール"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_iap
 msgid "In-App Purchases"
-msgstr ""
+msgstr "アプリ内課金"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_search
@@ -12271,7 +12276,7 @@ msgstr "インライン編集"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_address_view_id
 msgid "Input View"
-msgstr ""
+msgstr "入力ビュー"
 
 #. module: base
 #: code:addons/base/module/module.py:425
@@ -12421,7 +12426,7 @@ msgid "Introspection report on objects"
 msgstr "オブジェクトのイントロスペクションレポート"
 
 #. module: base
-#: code:addons/models.py:3482
+#: code:addons/models.py:3483
 #, python-format
 msgid ""
 "Invalid \"order\" specified. A valid \"order\" specification is a comma-"
@@ -12728,7 +12733,7 @@ msgstr "クウェート"
 #. module: base
 #: model:res.country,name:base.kg
 msgid "Kyrgyzstan"
-msgstr ""
+msgstr "キルギス共和国"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_L
@@ -12772,7 +12777,7 @@ msgid "Language Name"
 msgstr "言語名"
 
 #. module: base
-#: code:addons/base/module/wizard/base_language_install.py:28
+#: code:addons/base/module/wizard/base_language_install.py:39
 #, python-format
 msgid "Language Pack"
 msgstr "言語パック"
@@ -13081,7 +13086,7 @@ msgstr "ランチパッド"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_address_format
 msgid "Layout in Reports"
-msgstr ""
+msgstr "帳票でのレイアウト"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_lead_automation
@@ -13111,7 +13116,7 @@ msgstr "休暇管理"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays
 msgid "Leave allocations and leave requests"
-msgstr ""
+msgstr "休暇割当、休暇申請"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hr_holidays
@@ -13296,7 +13301,7 @@ msgstr "ライブチャット"
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat
 msgid "Live Chat with Visitors/Customers"
-msgstr ""
+msgstr "ビジター/顧客とのライブチャット"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_currency_rate_live
@@ -13668,7 +13673,7 @@ msgstr "マーシャル諸島"
 #. module: base
 #: model:res.country,name:base.mq
 msgid "Martinique"
-msgstr ""
+msgstr "マルティニーク"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_mass_mailing
@@ -13828,7 +13833,7 @@ msgstr "MIMEタイプ"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_B
 msgid "Mining"
-msgstr ""
+msgstr "鉱業・採石業"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
@@ -13870,7 +13875,7 @@ msgid "Missing document(s)"
 msgstr "ドキュメントがありません"
 
 #. module: base
-#: code:addons/models.py:5134
+#: code:addons/models.py:5135
 #, python-format
 msgid "Missing required value for the field '%s' (%s)"
 msgstr "フィールドに必要な値がありません'%s' (%s)"
@@ -14062,6 +14067,14 @@ msgid "Module exclusion"
 msgstr ""
 
 #. module: base
+#: code:addons/convert.py:829
+#, python-format
+msgid ""
+"Module loading %s failed: file %s could not be processed:\n"
+" %s"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_translation_module
 msgid "Module this term belongs to"
 msgstr "この用語が属するモジュール"
@@ -14080,7 +14093,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.md
 msgid "Moldova"
-msgstr ""
+msgstr "モルドバ共和国"
 
 #. module: base
 #: model:res.country,name:base.mc
@@ -14254,7 +14267,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.nc
 msgid "New Caledonia"
-msgstr ""
+msgstr "ニューカレドニア"
 
 #. module: base
 #: code:addons/base/module/wizard/base_export_language.py:18
@@ -14358,13 +14371,13 @@ msgid "No gap"
 msgstr "ギャップなし"
 
 #. module: base
-#: code:addons/fields.py:2189
+#: code:addons/fields.py:2222
 #, python-format
 msgid "No inverse field %r found for %r"
 msgstr "逆フィールド %r はみつかりませんでした %r"
 
 #. module: base
-#: code:addons/base/module/wizard/base_update_translations.py:33
+#: code:addons/base/module/wizard/base_update_translations.py:26
 #, python-format
 msgid "No language with code \"%s\" exists"
 msgstr "コード %s を持つ言語が存在しません。"
@@ -14502,6 +14515,12 @@ msgstr "OHADA - 会計"
 #: model:ir.ui.view,arch_db:base.view_window_action_form
 msgid "Object"
 msgstr "オブジェクト"
+
+#. module: base
+#: code:addons/model.py:148
+#, python-format
+msgid "Object %s doesn't exist"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_model
@@ -16097,7 +16116,7 @@ msgstr "他の所有"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_S
 msgid "Other Services"
-msgstr ""
+msgstr "その他サービス"
 
 #. module: base
 #: selection:res.partner,type:0
@@ -16466,7 +16485,7 @@ msgstr "PayuMoney 決済サービス"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_appraisal
 msgid "Periodical Appraisal"
-msgstr ""
+msgstr "定期評価"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_calendar
@@ -16514,7 +16533,7 @@ msgstr "電話:"
 #. module: base
 #: model:res.country,name:base.pn
 msgid "Pitcairn Islands"
-msgstr ""
+msgstr "ピトケアン諸島"
 
 #. module: base
 #: selection:ir.actions.act_window.view,view_mode:0
@@ -16953,7 +16972,7 @@ msgstr "パブリック"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_O
 msgid "Public Administration"
-msgstr ""
+msgstr "行政"
 
 #. module: base
 #: model:res.groups,comment:base.group_public
@@ -16972,7 +16991,7 @@ msgstr "団体、グループとメンバーシップの公開"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event
 msgid "Publish Events and Manage Online Registrations on your Website"
-msgstr ""
+msgstr "ウェブサイトでのイベント公開、オンライン参加登録管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_partner_assign
@@ -17065,7 +17084,7 @@ msgstr "カタール"
 #. module: base
 #: model:ir.module.module,summary:base.module_quality
 msgid "Quality Alerts and Control Points"
-msgstr ""
+msgstr "品質アラート、管理ポイント"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_quality
@@ -17144,8 +17163,8 @@ msgstr "読出のみ"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_L
-msgid "Real Estrate"
-msgstr ""
+msgid "Real Estate"
+msgstr "不動産"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_data_form
@@ -17181,7 +17200,7 @@ msgstr ""
 "レコードは今変更することはできません: このクーロン・タスクは、現在実行されているため、変更することはできません。数分後にもう一度お試しください"
 
 #. module: base
-#: code:addons/base/ir/ir_actions.py:230 code:addons/models.py:3875
+#: code:addons/base/ir/ir_actions.py:230 code:addons/models.py:3876
 #, python-format
 msgid "Record does not exist or has been deleted."
 msgstr "レコードが存在しないか、削除されました。"
@@ -17205,7 +17224,7 @@ msgstr "採用プロセス"
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_subscription
 msgid "Recurring invoicing, renewals"
-msgstr ""
+msgstr "繰返請求、契約更新"
 
 #. module: base
 #: code:addons/base/module/module.py:343
@@ -17446,7 +17465,7 @@ msgstr "リソース名"
 #. module: base
 #: model:ir.module.module,summary:base.module_project_forecast
 msgid "Resource management for Project"
-msgstr ""
+msgstr "プロジェクトリソース管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_restaurant
@@ -17476,7 +17495,7 @@ msgstr "小売業"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_timesheet
 msgid "Review and approve employees time reports"
-msgstr ""
+msgstr "従業員時間報告のレビュー・承認"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat_margin_right
@@ -17559,7 +17578,7 @@ msgstr "ルワンダ"
 #. module: base
 #: model:res.country,name:base.re
 msgid "Réunion"
-msgstr ""
+msgstr "レユニオン"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_S
@@ -17624,12 +17643,12 @@ msgstr "聖バルトレミー"
 #. module: base
 #: model:res.country,name:base.sh
 msgid "Saint Helena, Ascension and Tristan da Cunha"
-msgstr ""
+msgstr "セントヘレナ・アセンション およびトリスタンダクーニャ"
 
 #. module: base
 #: model:res.country,name:base.kn
 msgid "Saint Kitts and Nevis"
-msgstr ""
+msgstr "セントクリストファー・ネイビス連邦"
 
 #. module: base
 #: model:res.country,name:base.lc
@@ -17649,7 +17668,7 @@ msgstr "サンピエール島・ミクロン島"
 #. module: base
 #: model:res.country,name:base.vc
 msgid "Saint Vincent and the Grenadines"
-msgstr ""
+msgstr "セントビンセント及びグレナディーン諸島"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_contract_salary
@@ -17792,12 +17811,12 @@ msgstr "添付ファイルのプレフィクス"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_calendar
 msgid "Schedule Appointments with Clients"
-msgstr ""
+msgstr "顧客とのアポイントメント調整"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_maintenance
 msgid "Schedule and manage maintenance on machine and tools."
-msgstr ""
+msgstr "設備/機器の保守管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_timesheet_holidays
@@ -17812,6 +17831,7 @@ msgstr "スケジュールされたアクション"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_cron_act
+#: model:ir.model,name:base.model_ir_cron
 #: model:ir.ui.menu,name:base.menu_ir_cron_act
 #: model:ir.ui.view,arch_db:base.ir_cron_view_calendar
 #: model:ir.ui.view,arch_db:base.ir_cron_view_search
@@ -17820,9 +17840,14 @@ msgid "Scheduled Actions"
 msgstr "スケジュールされたアクション"
 
 #. module: base
+#: model:ir.model.fields,field_description:base.field_ir_cron_user_id
+msgid "Scheduler User"
+msgstr ""
+
+#. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_M
 msgid "Scientific"
-msgstr ""
+msgstr "科学"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_screen
@@ -17888,6 +17913,12 @@ msgid "See all possible values"
 msgstr "利用可能なすべての値を見る"
 
 #. module: base
+#: code:addons/common.py:42
+#, python-format
+msgid "See http://openerp.com"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_report_paperformat_format
 msgid "Select Proper Paper size"
 msgstr "適切な用紙サイズを選択します。"
@@ -17939,11 +17970,6 @@ msgid "Sell based on timesheets"
 msgstr "タイムシートに基づいた販売"
 
 #. module: base
-#: selection:ir.actions.server,state:0
-msgid "Send Email"
-msgstr "Eメール送信"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_account
 #: model:ir.module.module,summary:base.module_account_invoicing
 msgid "Send Invoices and Track Payments"
@@ -17979,7 +18005,7 @@ msgstr ""
 #: model:ir.module.module,summary:base.module_website_sign
 msgid ""
 "Send documents to sign online, receive and archive filled copies (esign)"
-msgstr ""
+msgstr "オンライン署名、署名済ドキュメントの受領・アーカイブ"
 
 #. module: base
 #: model:ir.module.module,description:base.module_calendar_sms
@@ -18166,7 +18192,7 @@ msgstr "共有ユーザ"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_slides
 msgid "Share and Publish Videos, Presentations and Documents"
-msgstr "像、プレゼンテーション、ドキュメントの共有と公開"
+msgstr "ビデオ、プレゼンテーション、ドキュメントの共有・公開"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_filters_view_search
@@ -18351,7 +18377,7 @@ msgid "Sort"
 msgstr "ソート"
 
 #. module: base
-#: code:addons/models.py:3615
+#: code:addons/models.py:3616
 #, python-format
 msgid "Sorting field %s not found on model %s"
 msgstr "ソートフィールド %s がこのモデル %s で見つかりません "
@@ -18384,7 +18410,7 @@ msgstr "南アフリカ"
 #. module: base
 #: model:res.country.group,name:base.south_america
 msgid "South America"
-msgstr ""
+msgstr "南アメリカ"
 
 #. module: base
 #: model:res.country,name:base.gs
@@ -18473,27 +18499,27 @@ msgstr "設定を開始"
 #: model:ir.ui.view,arch_db:base.view_partner_short_form
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "State"
-msgstr "都道府県・州"
+msgstr "都道府県/州"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_code
 msgid "State Code"
-msgstr "都道府県・州コード"
+msgstr "都道府県/州コード"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_name
 msgid "State Name"
-msgstr "都道府県・州名"
+msgstr "都道府県/州名"
 
 #. module: base
 #: model:res.country,name:base.ps
 msgid "State of Palestine"
-msgstr ""
+msgstr "パレスチナ"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_ids
 msgid "States"
-msgstr "都道府県・州"
+msgstr "都道府県/州"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_language_install_state
@@ -18535,7 +18561,7 @@ msgstr "在庫"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_barcode_mobile
 msgid "Stock Barcode in Mobile"
-msgstr ""
+msgstr "在庫バーコード (モバイル)"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_mobile
@@ -18671,7 +18697,7 @@ msgstr "調査"
 #. module: base
 #: model:res.country,name:base.sj
 msgid "Svalbard and Jan Mayen"
-msgstr ""
+msgstr "スヴァールバル諸島およびヤンマイエン島"
 
 #. module: base
 #: model:res.country,name:base.sz
@@ -18714,18 +18740,6 @@ msgid "Synchronization with the external timesheet application"
 msgstr ""
 
 #. module: base
-#: model:ir.actions.act_window,name:base.action_wizard_update_translations
-#: model:ir.ui.menu,name:base.menu_wizard_update_translations
-#: model:ir.ui.view,arch_db:base.wizard_update_translations
-msgid "Synchronize Terms"
-msgstr "用語の同期"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.wizard_update_translations
-msgid "Synchronize Translation"
-msgstr "翻訳を同期"
-
-#. module: base
 #: model:res.country,name:base.sy
 msgid "Syria"
 msgstr "シリア"
@@ -18751,7 +18765,7 @@ msgstr "システム アップデート"
 #. module: base
 #: model:res.country,name:base.st
 msgid "São Tomé and Príncipe"
-msgstr ""
+msgstr "サントメ・プリンシペ民主共和国"
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_T
@@ -18876,7 +18890,6 @@ msgstr "技術名称"
 #. module: base
 #: model:ir.module.category,name:base.module_category_hidden
 #: model:ir.module.category,name:base.module_category_technical_settings
-#: model:ir.ui.view,arch_db:base.user_groups_view
 msgid "Technical Settings"
 msgstr "技術設定"
 
@@ -19037,7 +19050,7 @@ msgstr "言語のコードは固有でなければなりません。"
 #. module: base
 #: sql_constraint:res.country.state:0
 msgid "The code of the state must be unique by country !"
-msgstr "都道府県・州のコードは一意である必要があります！"
+msgstr "都道府県/州のコードは国ごとに一意にしてください。"
 
 #. module: base
 #: sql_constraint:res.company:0
@@ -19244,6 +19257,15 @@ msgid "The only predefined variables are"
 msgstr "事前に定義された変数は、"
 
 #. module: base
+#: code:addons/model.py:121
+#, python-format
+msgid ""
+"The operation cannot be completed, probably due to the following:\n"
+"- deletion: you may be trying to delete a record while other records still reference it\n"
+"- creation/update: a mandatory field is not correctly set"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_domain
 msgid ""
 "The optional domain to restrict possible values for relationship fields, "
@@ -19333,7 +19355,7 @@ msgstr "選択されたモジュールは更新あるいはインストールさ
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_code
 msgid "The state code."
-msgstr "都道府県・州コード"
+msgstr "都道府県/州コード"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:491
@@ -19363,7 +19385,7 @@ msgid ""
 msgstr "このユーザに提供されているプライベートフィルタ。空のままにすると、フィルタは、すべてのユーザへの公開と利用可能です。"
 
 #. module: base
-#: code:addons/models.py:5166
+#: code:addons/models.py:5167
 #, python-format
 msgid ""
 "The value for the field '%s' already exists (this is probably '%s' in the "
@@ -19371,7 +19393,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:5172
+#: code:addons/models.py:5173
 #, python-format
 msgid ""
 "The values for the fields '%s' already exist (they are probably '%s' in the "
@@ -19496,7 +19518,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_livechat
 msgid "Ticketing, Support, Livechat"
-msgstr ""
+msgstr "チケット、サポート、ライブチャット"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_slides
@@ -19549,7 +19571,7 @@ msgstr "タイムゾーンオフセット値"
 #. module: base
 #: model:res.country,name:base.tl
 msgid "Timor-Leste"
-msgstr ""
+msgstr "東ティモール民主共和国"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_title
@@ -19770,7 +19792,7 @@ msgstr "翻訳"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_H
 msgid "Transportation"
-msgstr ""
+msgstr "輸送"
 
 #. module: base
 #: selection:ir.actions.act_window,view_type:0
@@ -20069,6 +20091,13 @@ msgid "Unknown value '%s' for boolean field '%%(field)s', assuming '%s'"
 msgstr "不明な値です '%s' ブール値フィールド '%%(field)s', もしかして '%s'"
 
 #. module: base
+#: code:addons/translate.py:708
+#, python-format
+msgid ""
+"Unrecognized extension: must be one of .csv, .po, or .tgz (received .%s)."
+msgstr ""
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.view_translation_search
 msgid "Untranslated"
 msgstr "未翻訳"
@@ -20308,7 +20337,7 @@ msgstr "ユーザ"
 #. module: base
 #: model:ir.ui.menu,name:base.menu_users
 msgid "Users & Companies"
-msgstr ""
+msgstr "ユーザと会社"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_groups_form
@@ -20444,7 +20473,7 @@ msgstr "Pythonコードでは次の変数が利用可能です:"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_vat_label
 msgid "Vat Label"
-msgstr ""
+msgstr "付加価値税ラベル"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_fleet
@@ -20623,7 +20652,7 @@ msgstr "WMS配送コスト"
 #. module: base
 #: model:res.country,name:base.wf
 msgid "Wallis and Futuna"
-msgstr ""
+msgstr "ウォリス・フツナ諸島"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_warehouse
@@ -20655,7 +20684,7 @@ msgid "Warning!"
 msgstr "警告！"
 
 #. module: base
-#: code:addons/models.py:4884
+#: code:addons/models.py:4885
 #, python-format
 msgid "Warnings"
 msgstr "警告"
@@ -20663,7 +20692,7 @@ msgstr "警告"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_E
 msgid "Water supply"
-msgstr ""
+msgstr "水道"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
@@ -20933,7 +20962,7 @@ msgstr "この項目の値は翻訳される（この項目の翻訳メカニズ
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_G
 msgid "Wholesale/Retail"
-msgstr ""
+msgstr "卸売・小売"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_15
@@ -21508,11 +21537,6 @@ msgstr "ir.autovacuum"
 #: model:ir.model,name:base.model_ir_config_parameter
 msgid "ir.config_parameter"
 msgstr "ir.config_parameter"
-
-#. module: base
-#: model:ir.model,name:base.model_ir_cron
-msgid "ir.cron"
-msgstr "ir.cron"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_default

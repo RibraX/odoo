@@ -665,7 +665,7 @@ class MailThread(models.AbstractModel):
 
         if message.model:
             model_name = self.env['ir.model']._get(message.model).display_name
-            view_title = '%s %s' % (_('View'), model_name)
+            view_title = _('View %s') % model_name
         else:
             view_title = _('View')
 
@@ -958,9 +958,10 @@ class MailThread(models.AbstractModel):
                 obj = self.env[alias.alias_parent_model_id.model].browse(alias.alias_parent_thread_id)
             elif model:
                 obj = self.env[model]
-            if not hasattr(obj, '_alias_check_contact'):
-                obj = self.env['mail.alias.mixin']
-            check_result = obj._alias_check_contact(message, message_dict, alias)
+            if hasattr(obj, '_alias_check_contact'):
+                check_result = obj._alias_check_contact(message, message_dict, alias)
+            else:
+                check_result = self.env['mail.alias.mixin']._alias_check_contact_on_record(obj, message, message_dict, alias)
             if check_result is not True:
                 self._routing_warn(_('alias %s: %s') % (alias.alias_name, check_result.get('error_message', _('unknown error'))), _('skipping'), message_id, route, False)
                 self._routing_create_bounce_email(email_from, check_result.get('error_template', _generic_bounce_body_html), message)
@@ -1370,6 +1371,8 @@ class MailThread(models.AbstractModel):
         mail module, and should not contain security or generic html cleaning.
         Indeed those aspects should be covered by the html_sanitize method
         located in tools. """
+        if not body:
+            return body, attachments
         root = lxml.html.fromstring(body)
         postprocessed = False
         to_remove = []
@@ -1405,7 +1408,7 @@ class MailThread(models.AbstractModel):
         # Content-Type: multipart/related;
         #   boundary="_004_3f1e4da175f349248b8d43cdeb9866f1AMSPR06MB343eurprd06pro_";
         #   type="text/html"
-        if not message.is_multipart() or message.get('content-type', '').startswith("text/"):
+        if message.get_content_maintype() == 'text':
             encoding = message.get_content_charset()
             body = message.get_payload(decode=True)
             body = tools.ustr(body, encoding, errors='replace')

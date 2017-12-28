@@ -17,13 +17,14 @@
 # Zdzisław Krajewski <zdzichucb@gmail.com>, 2017
 # Mikołaj Dziurzyński <mikolaj.dziurzynski@openglobe.pl>, 2017
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2017
+# Andrzej Donczew <a.donczew@hadron.eu.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.saas~18\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-02 11:26+0000\n"
-"PO-Revision-Date: 2017-10-02 11:26+0000\n"
-"Last-Translator: Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2017\n"
+"POT-Creation-Date: 2017-11-16 08:08+0000\n"
+"PO-Revision-Date: 2017-11-16 08:08+0000\n"
+"Last-Translator: Andrzej Donczew <a.donczew@hadron.eu.com>, 2017\n"
 "Language-Team: Polish (https://www.transifex.com/odoo/teams/41243/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,6 +343,14 @@ msgid "<strong>Your Order Reference:</strong>"
 msgstr ""
 
 #. module: purchase
+#: code:addons/purchase/models/stock.py:83
+#, python-format
+msgid ""
+"A sale order that generated this purchase order has been deleted. Check if "
+"an action is needed."
+msgstr ""
+
+#. module: purchase
 #: model:res.groups,name:purchase.group_warning_purchase
 msgid "A warning can be set on a product or a customer (Purchase)"
 msgstr "Ostrzeżenie może być ustawione w produkcie lub u klienta (Zakup)"
@@ -576,11 +585,6 @@ msgid "Configuration"
 msgstr "Konfiguracja"
 
 #. module: purchase
-#: model:ir.actions.act_window,name:purchase.action_purchase_configuration
-msgid "Configure Purchases"
-msgstr "Konfiguruj zakupy"
-
-#. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Confirm Order"
 msgstr "Potwierdź zamówienie"
@@ -761,7 +765,7 @@ msgstr "Rozszerzone filtry"
 #: code:addons/purchase/models/purchase.py:577
 #, python-format
 msgid "Extra line with %s "
-msgstr ""
+msgstr "Extra line with %s "
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
@@ -773,7 +777,7 @@ msgstr "Obszar podatkowy"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Future Activities"
-msgstr ""
+msgstr "Przyszłe czynności"
 
 #. module: purchase
 #: selection:res.company,po_double_validation:0
@@ -876,13 +880,13 @@ msgid "Invoicing"
 msgstr "Fakturowanie"
 
 #. module: purchase
-#: model:ir.model.fields,field_description:purchase.field_res_config_settings_is_installed_sale
-msgid "Is Installed Sale"
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_is_shipped
+msgid "Is Shipped"
 msgstr ""
 
 #. module: purchase
-#: model:ir.model.fields,field_description:purchase.field_purchase_order_is_shipped
-msgid "Is Shipped"
+#: model:ir.model.fields,field_description:purchase.field_res_config_settings_is_installed_sale
+msgid "Is the Sale Module Installed"
 msgstr ""
 
 #. module: purchase
@@ -907,7 +911,7 @@ msgstr "Ostatnia aktualizacja"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Late Activities"
-msgstr ""
+msgstr "Spóźnione czynności"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation
@@ -1038,7 +1042,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "My Activities"
-msgstr "Moje aktywności"
+msgstr "Moje czynności"
 
 #. module: purchase
 #: code:addons/purchase/controllers/portal.py:44
@@ -1159,7 +1163,7 @@ msgstr "Zamówione ilości"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_orderpoint_id
 msgid "Orderpoint"
-msgstr ""
+msgstr "Punkt zamawiania"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -1294,6 +1298,7 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_procurement_management
+#: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Purchase"
 msgstr "Zakup"
@@ -1648,7 +1653,7 @@ msgid ""
 msgstr ""
 "Wybór \"Ostrzeżenie\" spowoduje ostrzeżenie użytkownika informacją. Wybór "
 "\"Informacja blokująca\" spowoduje wyświetlenie wyjątku z tekstem informacji"
-" i zablowowanie dalszego działania. Informację wpisz w następnym polu."
+" i zablokowanie dalszego działania. Informację wpisz w następnym polu."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1678,9 +1683,10 @@ msgstr "Ustaw datę dla wszystkich pozycji zamówienia"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Set to Draft"
-msgstr "Ustaw jako szkic"
+msgstr "Ustaw jako projekt"
 
 #. module: purchase
+#: model:ir.actions.act_window,name:purchase.action_purchase_configuration
 #: model:ir.ui.menu,name:purchase.menu_purchase_general_settings
 msgid "Settings"
 msgstr "Ustawienia"
@@ -1904,7 +1910,7 @@ msgstr "Do aprobaty"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Today Activities"
-msgstr "Dzisiejsze aktywności"
+msgstr "Dzisiejsze czynności"
 
 #. module: purchase
 #: code:addons/purchase/controllers/portal.py:45

@@ -19,13 +19,14 @@
 # Vladimir Lukianov <lvm.mobile@gmail.com>, 2017
 # Роман Яхненко <bsap132@gmail.com>, 2017
 # Артур Чеботарь <artcha.chebotar@gmail.com>, 2017
+# Dimko Pythonic <d.v.selitsky@gmail.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.saas~18\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-02 11:25+0000\n"
-"PO-Revision-Date: 2017-10-02 11:25+0000\n"
-"Last-Translator: Артур Чеботарь <artcha.chebotar@gmail.com>, 2017\n"
+"POT-Creation-Date: 2017-11-16 08:08+0000\n"
+"PO-Revision-Date: 2017-11-16 08:08+0000\n"
+"Last-Translator: Dimko Pythonic <d.v.selitsky@gmail.com>, 2017\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,7 +120,7 @@ msgid ""
 "                                <span>We would be delighted to assist you along the way. Contact us through our\n"
 "                                <a href=\"https://www.odoo.com/help\">support form</a> if you have any question.\n"
 "                                You can also discover how to get the best out of Odoo CRM with our </span>\n"
-"                                <a target=\"_blank\" href=\"https://www.odoo.com/documentation/user/10.0/crm.html\">\n"
+"                                <a target=\"_blank\" href=\"https://www.odoo.com/documentation/user/11.0/crm.html\">\n"
 "                                <span style=\"text-decoration:underline;\">User Documentation</span></a>\n"
 "                                </span><span> or with our </span>\n"
 "                                <a target=\"_blank\" href=\"https://www.odoo.com/documentation\">\n"
@@ -855,7 +856,7 @@ msgstr "Нужно провести мероприятий"
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "Activities Todo"
-msgstr ""
+msgstr "Что сделать"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead_kanban_state
@@ -1307,11 +1308,6 @@ msgid "Configuration options are available in the Settings app."
 msgstr "Параметры конфигурации доступны в приложении настройки."
 
 #. module: crm
-#: model:ir.actions.act_window,name:crm.crm_config_settings_action
-msgid "Configure CRM"
-msgstr ""
-
-#. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_planner
 msgid "Configure the stages of your sales pipeline"
 msgstr "Конфигурация этапов вашей воронки продаж"
@@ -1466,7 +1462,6 @@ msgid "Create a Proof of Concept with consultants"
 msgstr "Создайте доказательство концепции с консультантацией"
 
 #. module: crm
-#: selection:crm.lead.convert2task,action:0
 #: selection:crm.lead2opportunity.partner,action:0
 #: selection:crm.partner.binding,action:0
 msgid "Create a new customer"
@@ -1588,10 +1583,9 @@ msgid "Current Line"
 msgstr "Текущая строка"
 
 #. module: crm
-#: code:addons/crm/models/crm_lead.py:1124
+#: code:addons/crm/models/crm_lead.py:1135
 #: model:ir.model.fields,field_description:crm.field_crm_lead2opportunity_partner_mass_partner_id
 #: model:ir.model.fields,field_description:crm.field_crm_lead2opportunity_partner_partner_id
-#: model:ir.model.fields,field_description:crm.field_crm_lead_convert2task_partner_id
 #: model:ir.model.fields,field_description:crm.field_crm_lead_partner_id
 #: model:ir.model.fields,field_description:crm.field_crm_partner_binding_partner_id
 #: model:ir.ui.view,arch_db:crm.crm_case_form_view_leads
@@ -1759,7 +1753,6 @@ msgid "Display your brochures, product sheets, showcases etc."
 msgstr "Покажите свои проспекты, каталоги и т. п."
 
 #. module: crm
-#: selection:crm.lead.convert2task,action:0
 #: selection:crm.lead2opportunity.partner,action:0
 #: selection:crm.lead2opportunity.partner.mass,action:0
 #: selection:crm.partner.binding,action:0
@@ -2195,7 +2188,7 @@ msgstr "Высокий"
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team_dashboard_graph_group_pipeline
 msgid "How this channel's dashboard graph will group the results."
-msgstr ""
+msgstr "Как график диаграммы этого канала будет группировать результаты."
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_base_partner_merge_automatic_wizard_id
@@ -3568,7 +3561,7 @@ msgstr "Поток продажи"
 #: model:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
 #: model:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "Sales Channel"
-msgstr ""
+msgstr "Канал продаж"
 
 #. module: crm
 #: model:ir.ui.menu,name:crm.crm_team_config
@@ -3740,6 +3733,7 @@ msgstr ""
 "                     Это цель данного руководства."
 
 #. module: crm
+#: model:ir.actions.act_window,name:crm.crm_config_settings_action
 #: model:ir.ui.menu,name:crm.crm_config_settings_menu
 msgid "Settings"
 msgstr "Настройки"

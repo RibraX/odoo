@@ -171,6 +171,8 @@ root can have the following attributes:
 ``create``, ``edit``, ``delete``
     allows *dis*\ abling the corresponding action in the view by setting the
     corresponding attribute to ``false``
+``limit``
+    the default size of a page. It should be a positive integer
 ``on_write``
     only makes sense on an ``editable`` list. Should be the name of a method
     on the list's model. The method will be called with the ``id`` of a record
@@ -277,7 +279,7 @@ Possible children elements of the list view are:
             filled, and a cross if it is not
         ``handle``
             for ``sequence`` fields, instead of displaying the field's value
-            just displays a dra&drop icon
+            just displays a drag&drop icon
     ``sum``, ``avg``
         displays the corresponding aggregate at the bottom of the column. The
         aggregation is only computed on *currently displayed* records. The
@@ -1170,7 +1172,7 @@ Possible children elements of the search view are:
         fields don't generate domains.
 
         .. note:: the domain and context are inclusive and both are generated
-                  if if a ``context`` is specified. To only generate context
+                  if a ``context`` is specified. To only generate context
                   values, set ``filter_domain`` to an empty list:
                   ``filter_domain="[]"``
     ``groups``
