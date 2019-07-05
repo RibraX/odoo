@@ -3,17 +3,38 @@
 # * event
 #
 # Translators:
+<<<<<<< HEAD
 # Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2016
+=======
+# Martin Wilderoth <martin.wilderoth@linserv.se>, 2016
+# Jonathan S <jonathan.c.strom@gmail.com>, 2016
+# Daniel Forslund <daniel.forslund@gmail.com>, 2016
+# Patrik Lermon <patrik.lermon@gmail.com>, 2016
+# Haojun Zou <apollo_zhj@msn.com>, 2016
+# Kristoffer Grundström <hamnisdude@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Frida E, 2017
+# 03992e16f8df6e39b9d1cc0ff635887e, 2017
+# Anders Wallenquist <anders.wallenquist@vertel.se>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-07-12 00:48+0000\n"
 "Last-Translator: Kristoffer Grundström <kristoffer.grundstrom1983@gmail."
 "com>\n"
 "Language-Team: Swedish (http://www.transifex.com/odoo/odoo-9/language/sv/)\n"
 "Language: sv\n"
+=======
+"POT-Creation-Date: 2016-10-10 08:43+0000\n"
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: Anders Wallenquist <anders.wallenquist@vertel.se>, 2019\n"
+"Language-Team: Swedish (https://www.transifex.com/odoo/teams/41243/sv/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -77,6 +98,23 @@ msgstr " # antal preliminära anmälningar"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
 msgid "(stats)"
+<<<<<<< HEAD
+=======
+msgstr "(statistik)"
+
+#. module: event
+#: model:event.event,description:event.event_0
+#: model:event.event,description:event.event_1
+#: model:event.event,description:event.event_3
+msgid "5 Intensive Days"
+msgstr "5 intensiva dagar"
+
+#. module: event
+#: model:event.event,description:event.event_2
+msgid ""
+"<em>(Chamber Works reserves the right to cancel, re-name or re-locate<br>the"
+" event or change the dates on which it is held.)</em>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: event
@@ -210,7 +248,11 @@ msgstr "Aktiv"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Advanced JQuery"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Avancerad JQuery"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: selection:event.mail,interval_type:0
@@ -425,7 +467,7 @@ msgstr "Stängningsdatum kan inte ställas in att vara före startdatumet."
 #: model:ir.model.fields,field_description:event.field_report_event_registration_company_id
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
 msgid "Company"
-msgstr "Företag"
+msgstr "Bolag"
 
 #. module: event
 #: code:addons/event/models/event.py:402
@@ -770,7 +812,7 @@ msgstr "Evenemangsorganisation"
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Event Registration"
-msgstr "Evenemangsregistrering"
+msgstr "Anmälan"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_user_id
@@ -804,7 +846,7 @@ msgstr "Evenemangstyp"
 #: model:ir.ui.view,arch_db:event.report_event_registration_pivot
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
 msgid "Event on Registration"
-msgstr "Evenemang på registreringen"
+msgstr "Arrangemang på anmälan"
 
 #. module: event
 #: model:ir.actions.act_window,name:event.action_event_view
@@ -871,7 +913,7 @@ msgstr "Utökat filter..."
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Finish Event"
-msgstr "Slutför evenemang"
+msgstr "Slutför arrangemang"
 
 #. module: event
 #: model:event.event,description:event.event_2
@@ -884,6 +926,11 @@ msgid ""
 "For each event you can define a maximum registration of seats(number of "
 "attendees), above this numbers the registrations are not accepted."
 msgstr ""
+<<<<<<< HEAD
+=======
+"För varje arrangemang kan du fastställa ett maximalt antal platser(antal "
+"deltagare), utöver detta antal godtages inga fler anmälningar."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_event_seats_min
@@ -892,6 +939,12 @@ msgid ""
 "attendees), if it does not reach the mentioned registrations the event can "
 "not be confirmed (keep 0 to ignore this rule)"
 msgstr ""
+<<<<<<< HEAD
+=======
+"För varje arrangemang kan du fastställa minimum antal platser (antal "
+"deltagare), om detta antal inte uppnås kan arrangemanget inte genomföras "
+"(skriv 0 för att ignorera denna regel)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:event.event,name:event.event_1
@@ -961,6 +1014,13 @@ msgid ""
 "status is set to 'Done'. If event is cancelled the status is set to "
 "'Cancelled'."
 msgstr ""
+<<<<<<< HEAD
+=======
+"Om ett arrangemang har skapats, så sätts status till 'Utkast'. Om datum har "
+"fastställts för ett arrangemanget så sätts status till 'Bekräftat'. Om "
+"arrangemanget är slutfört så sätts status till 'Genomfört'. Om arrangemanget"
+" blivit inställt så sätts status till 'Inställt'."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: selection:event.mail,interval_unit:0
@@ -1255,6 +1315,8 @@ msgid ""
 "emails,\n"
 "    sell tickets, etc."
 msgstr ""
+"Odoo hjälper er att planera dina arrangemang effektivt:\n"
+"Parallella spår, anmälningar och deltagande, automatiseras med epost, försäljning av biljetter etc"
 
 #. module: event
 #: model:event.event,name:event.event_0
@@ -1678,8 +1740,13 @@ msgid ""
 "Warning: This Event has not reached its Minimum Registration Limit. Are you "
 "sure you want to confirm it?"
 msgstr ""
+<<<<<<< HEAD
 "Varning: Denna evenemang har inte nått sin lägsta anmälninggrad. Är du säker "
 "på att du vill bekräfta det?"
+=======
+"Varning: Denna arrangemang har inte nått sin lägsta anmälninggrad. Är du "
+"säker på att du vill bekräfta det?"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: selection:event.mail,interval_unit:0
@@ -1696,7 +1763,7 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_interval_type
 msgid "When to Run "
-msgstr ""
+msgstr "När"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1733,8 +1800,13 @@ msgstr ""
 
 #. module: event
 #: model:mail.template,subject:event.event_subscription
+<<<<<<< HEAD
 msgid "Your subscription at ${object.event_id.name}"
 msgstr ""
+=======
+msgid "Your registration at ${object.event_id.name}"
+msgstr "Din anmälan ${object.event_id.name}"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:mail.template,report_name:event.event_registration_mail_template_badge

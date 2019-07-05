@@ -3,6 +3,7 @@
 # * sale_timesheet
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Kari Lindgren <kari.lindgren@emsystems.fi>, 2017
 # Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2017
@@ -10,6 +11,14 @@
 # Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2017
 # Svante Suominen <svante.suominen@web-veistamo.fi>, 2017
 # Jussi Lehto <jussi@gulfeo.com>, 2017
+=======
+# Martin Trigaux, 2016
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2016
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2016
+# Kari Lindgren <kari.lindgren@emsystems.fi>, 2016
+# Svante Suominen <svante.suominen@web-veistamo.fi>, 2016
+# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -373,6 +382,8 @@ msgstr "Tehtävä"
 msgid ""
 "Task Created (%s): <a href=# data-oe-model=project.task data-oe-id=%d>%s</a>"
 msgstr ""
+"Tehtävä luotu (%s): <a href=# data-oe-model=project.task data-oe-"
+"id=%d>%s</a>"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_sale_order_line_task_id
@@ -405,6 +416,8 @@ msgid ""
 "This task has been created from: <a href=# data-oe-model=sale.order data-oe-"
 "id=%d>%s</a> (%s)"
 msgstr ""
+"Tämä tehtävä on luotu: <a href=# data-oe-model=sale.order data-oe-"
+"id=%d>%s</a> (%s)"
 
 #. module: sale_timesheet
 #: model:ir.ui.view,arch_db:sale_timesheet.timesheet_plan
@@ -412,6 +425,7 @@ msgid "Time and material"
 msgstr ""
 
 #. module: sale_timesheet
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:sale_timesheet.timesheet_plan
 msgid "Time by people"
 msgstr ""
@@ -420,6 +434,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:sale_timesheet.product_template_search_view_sale_timesheet
 msgid "Time-based services"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:sale_timesheet.field_hr_employee_timesheet_cost
+msgid "Timesheet Cost"
+msgstr "Tuntikortin kulu"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_timesheet
 #. openerp-web
@@ -440,12 +459,12 @@ msgstr ""
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_timesheet_count
 msgid "Timesheet activities"
-msgstr ""
+msgstr "Tuntikorttien kirjaukset"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_timesheet_ids
 msgid "Timesheet activities associated to this sale"
-msgstr ""
+msgstr "Tähän myyntitilaukseen kytkeytyvät tuntikortit"
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/controllers/main.py:101

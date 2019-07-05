@@ -3,19 +3,35 @@
 # * point_of_sale
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Iulian Cutui <iulian.cutui@gmail.com>, 2017
 # Dorin Hongu <dhongu@gmail.com>, 2017
 # Cozmin Candea <office@terrabit.ro>, 2017
 # Laurentiu Archip <lauarchipstefan@gmail.com>, 2017
 # Sorin Trifu <sorin.trifu@gmail.com>, 2017
+=======
+# Sorin Trifu <sorin.trifu@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Laurentiu Archip, 2016
+# Cozmin Candea <office@terrabit.ro>, 2017
+# Iulian Cutui <iulian.cutui@gmail.com>, 2017
+# Dorin Hongu <dhongu@gmail.com>, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-10 11:34+0000\n"
 "PO-Revision-Date: 2017-10-10 11:34+0000\n"
 "Last-Translator: Sorin Trifu <sorin.trifu@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:25+0000\n"
+"Last-Translator: Dorin Hongu <dhongu@gmail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -220,7 +236,7 @@ msgstr "<strong>Sold final</strong>:<br/>"
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.report_statement
 msgid "<strong>Journal</strong>:<br/>"
-msgstr "<strong>Registru</strong>:<br/>"
+msgstr "<strong>Jurnalul</strong>:<br/>"
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.report_statement
@@ -352,13 +368,13 @@ msgstr "Informații Contabile"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_invoice_journal_id
 msgid "Accounting journal used to create invoices."
-msgstr "Registrul contabil utilizat la crearea facturilor."
+msgstr "Jurnalul contabil utilizat la crearea facturilor."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_journal_id
 #: model:ir.model.fields,help:point_of_sale.field_pos_order_sale_journal
 msgid "Accounting journal used to post sales entries."
-msgstr "Registru contabil utilizat pentru a înregistra vânzările."
+msgstr "Jurnalul contabil utilizat pentru a înregistra vânzările."
 
 #. module: point_of_sale
 #: model:product.product,name:point_of_sale.partner_product_5
@@ -661,7 +677,7 @@ msgstr "Controlul numerarului"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session_cash_journal_id
 msgid "Cash Journal"
-msgstr "Registru de numerar"
+msgstr "Jurnal de numerar"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session_cash_register_id
@@ -1765,7 +1781,7 @@ msgstr "Factură"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_invoice_journal_id
 #: model:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 msgid "Invoice Journal"
-msgstr "Registru facturi"
+msgstr "Jurnal facturi"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order_invoiced
@@ -1805,7 +1821,7 @@ msgstr "Mere Ionagold"
 #: model:ir.model,name:point_of_sale.model_account_journal
 #: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order_journal_id
 msgid "Journal"
-msgstr "Registru"
+msgstr "Jurnal"
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -1815,9 +1831,17 @@ msgstr "Înregistrari în Registru"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order_account_move
 msgid "Journal Entry"
-msgstr "Înregistrare în Registru"
+msgstr "Notă contabilă"
 
 #. module: point_of_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:point_of_sale.view_pos_config_form
+msgid "Journals"
+msgstr "Jurnale"
+
+#. module: point_of_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_iface_big_scrollbars
 msgid "Large Scrollbars"
 msgstr "Bare de derulare mari"
@@ -2596,7 +2620,18 @@ msgstr ""
 "Vă rugăm să definiți contul de venituri pentru acest produs: \"%s\" (id:%d)."
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: code:addons/point_of_sale/models/pos_order.py:514
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2017
+#, python-format
+msgid "Please print the invoice from the backend"
+msgstr ""
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/models/pos_order.py:446
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Please provide a partner for the sale."
 msgstr "Vă rugăm să furnizați un partener pentru vânzare."
@@ -3097,9 +3132,21 @@ msgstr "Detalii vanzari"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_journal_id
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order_sale_journal
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 msgid "Sales Journal"
 msgstr "Jurnal de vanzari"
+=======
+msgid "Sale Journal"
+msgstr "Jurnal de vânzări"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_day
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_form
+msgid "Sale line"
+msgstr "Linie vânzare"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
@@ -3689,6 +3736,15 @@ msgstr "Comanda nu a putut fi trimisă"
 msgid "The order could not be sent to the server due to an unknown error"
 msgstr ""
 "Comanda nu a putut fi trimisă la server din cauza unei erori necunoscute"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2018
+#, python-format
+msgid ""
+"The order has been synchronized earlier. Please make the invoice from the "
+"backend for the order: "
+msgstr ""
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_iface_precompute_cash
@@ -4508,7 +4564,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/js/popups.js:109
 #, python-format
 msgid "error"
-msgstr ""
+msgstr "eroare"
 
 #. module: point_of_sale
 #. openerp-web

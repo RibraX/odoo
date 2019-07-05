@@ -51,6 +51,32 @@ class SaleOrder(models.Model):
         template = self.env.ref('website_quote.website_quote_template_default', raise_if_not_found=False)
         return template and template.active and template or False
 
+<<<<<<< HEAD
+=======
+    def _default_require_payment(self):
+        default_template = self._get_default_template_id()
+        if self.template_id:
+            return self.template_id.require_payment
+        elif default_template:
+            return default_template.require_payment
+        else:
+            return 0
+
+    @api.model_cr_context
+    def _init_column(self, column_name):
+        if column_name != 'access_token':
+            super(SaleOrder, self)._init_column(column_name)
+        else:
+            query = """UPDATE %(table_name)s
+                          SET %(column_name)s = md5(random()::text || clock_timestamp()::text)::uuid
+                        WHERE %(column_name)s IS NULL
+                    """ % {'table_name': self._table, 'column_name': column_name}
+            self.env.cr.execute(query)
+
+    access_token = fields.Char(
+        'Security Token', copy=False, default=lambda self: str(uuid.uuid4()),
+        required=True)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     template_id = fields.Many2one(
         'sale.quote.template', 'Quotation Template',
         readonly=True,
@@ -65,11 +91,18 @@ class SaleOrder(models.Model):
         'Amount Before Discount', compute='_compute_amount_undiscounted', digits=0)
     quote_viewed = fields.Boolean('Quotation Viewed')
     require_payment = fields.Selection([
+<<<<<<< HEAD
         (0, 'Online Signature'),
         (1, 'Online Payment')], default=0, string='Confirmation Mode',
         help="Choose how you want to confirm an order to launch the delivery process. You can either "
              "request a digital signature or an upfront payment. With a digital signature, you can "
              "request the payment when issuing the invoice.")
+=======
+        (0, 'Not mandatory on website quote validation'),
+        (1, 'Immediate after website order validation'),
+        (2, 'Immediate after website order validation and save a token'),
+    ], 'Payment', help="Require immediate payment by the customer when validating the order from the website quote", default=_default_require_payment)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @api.multi
     def copy(self, default=None):
@@ -270,7 +303,8 @@ class SaleOrderOption(models.Model):
 
         order_line = order.order_line.filtered(lambda line: line.product_id == self.product_id)
         if order_line:
-            order_line[0].product_uom_qty += 1
+            order_line = order_line[0]
+            order_line.product_uom_qty += 1
         else:
             vals = {
                 'price_unit': self.price_unit,

@@ -91,7 +91,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "A new post"
-msgstr ""
+msgstr "Ett nytt inlägg"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_about_us
@@ -142,7 +142,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "Atom Feed"
-msgstr ""
+msgstr "Atom-flöde"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_author_id
@@ -214,7 +214,7 @@ msgstr "Blogg underrubrik"
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_blog_tag
 msgid "Blog Tag"
-msgstr "Blogg tagg"
+msgstr "Bloggtagg"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_tags
@@ -252,13 +252,19 @@ msgstr "Byt omslag"
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:54
 #, python-format
+<<<<<<< HEAD
 msgid "Change and customize your blog post cover."
 msgstr ""
+=======
+msgid "Choose an image from the library."
+msgstr "Välj en bild från biblioteket."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:108
 #, python-format
+<<<<<<< HEAD
 msgid "Check Mobile Preview"
 msgstr "Kontrollera mobilvisning"
 
@@ -275,6 +281,10 @@ msgstr ""
 #, python-format
 msgid "Choose an image from the library."
 msgstr ""
+=======
+msgid "Click here to change your post cover."
+msgstr "Klicka här för att ändra omslagsbilden"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -308,7 +318,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.actions.act_window,help:website_blog.action_blog_post
 msgid "Click to create a new blog post."
-msgstr ""
+msgstr "Klicka för att skapa ett nytt blogginlägg"
 
 #. module: website_blog
 #. openerp-web
@@ -353,7 +363,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_cover_properties
 msgid "Cover Properties"
-msgstr ""
+msgstr "Omslagsegenskaper"
 
 #. module: website_blog
 #. openerp-web
@@ -412,9 +422,15 @@ msgid "Email composition wizard for Survey"
 msgstr ""
 
 #. module: website_blog
+<<<<<<< HEAD
 #: model:blog.post,content:website_blog.blog_post_1
 msgid "Emails are broken."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_blog.website_blog
+msgid "Filter Color"
+msgstr "Filterfärg"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -469,7 +485,7 @@ msgstr ""
 #. module: website_blog
 #: model:blog.blog,subtitle:website_blog.blog_blog_1
 msgid "Get in touch with us"
-msgstr ""
+msgstr "Kom i kontakt med oss"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -669,7 +685,7 @@ msgstr "Inga sökord definierade!"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_visits
 msgid "No of Views"
-msgstr "Antal Visningar"
+msgstr "Antal visningar"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -762,7 +778,16 @@ msgstr ""
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:10
 #, python-format
 msgid "Published"
+<<<<<<< HEAD
 msgstr "Publiserad"
+=======
+msgstr "Publicerad"
+
+#. module: website_blog
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_published_date
+msgid "Published Date"
+msgstr "Publiceringsdatum"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:mail.message.subtype,description:website_blog.mt_blog_blog_published
@@ -771,11 +796,22 @@ msgid "Published Post"
 msgstr "Publicerade inlägg"
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:116
 #, python-format
 msgid "Publishing status"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_post_date
+msgid "Published date"
+msgstr "Publiceringsdatum"
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.view_blog_post_form
+msgid "Publishing Options"
+msgstr "Publiceringsoptioner"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -985,8 +1021,18 @@ msgstr ""
 #: model:blog.post,content:website_blog.blog_post_1
 msgid ""
 "To disrupt emails, you need more than just another user\n"
+<<<<<<< HEAD
 "                interface. We need to rethink the whole communication flow."
 msgstr ""
+=======
+"                    interface. We need to rethink the whole communication flow."
+msgstr ""
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_status
+msgid "Unpublished"
+msgstr "Opublicerad"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1108,12 +1154,16 @@ msgstr "kommentarer"
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 #, fuzzy
 msgid "has been published on the"
+<<<<<<< HEAD
 msgstr "Ett nytt inlägg %s har blivit publicerat på %s bloggen."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "not published"
 msgstr "Ej publicerat"
+=======
+msgstr "har blivit publicerad på"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1122,11 +1172,17 @@ msgid "pull-right"
 msgstr "pull-right"
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:29
 #, python-format
 msgid "to comment."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_blog.blog_post_short
+msgid "unpublished"
+msgstr "opublicerad"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short

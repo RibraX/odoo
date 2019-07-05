@@ -179,9 +179,61 @@ class WebsiteSlides(http.Controller):
         response.mimetype = 'application/pdf'
         return response
 
+<<<<<<< HEAD
     @http.route('''/slides/slide/<model("slide.slide"):slide>/download''', type='http', auth="public", website=True)
     def slide_download(self, slide, sitemap=False):
         if slide.download_security == 'public' or (slide.download_security == 'user' and request.session.uid):
+=======
+    @http.route('''/slides/slide/<model("slide.slide", "[('channel_id.can_see', '=', True)]"):slide>/comment''', type='http', auth="public", methods=['POST'], website=True)
+    def slide_comment(self, slide, **post):
+        """ Controller for message_post. Public user can post; their name and
+        email is used to find or create a partner and post as admin with the
+        right partner. Their comments are unpublished by default. Logged
+        users can post as usual. """
+        # TDE TODO :
+        # - subscribe partner instead of user writing the message ?
+        # - public user -> cannot create mail.message ?
+        if not post.get('comment'):
+            return werkzeug.utils.redirect(request.httprequest.referrer + "#discuss")
+        # public user: check or find author based on email, do not subscribe public user
+        # and do not publish their comments by default to avoid direct spam
+        if request.uid == request.website.user_id.id:
+            if not post.get('email'):
+                return werkzeug.utils.redirect(request.httprequest.referrer + "#discuss")
+            # TDE FIXME: public user has no right to create mail.message, should
+            # be investigated - using SUPERUSER_ID meanwhile
+            contextual_slide = slide.sudo().with_context(mail_create_nosubcribe=True)
+            # TDE FIXME: check in mail_thread, find partner from emails should maybe work as public user
+            partner_id = slide.sudo()._find_partner_from_emails([post.get('email')])[0]
+            if partner_id:
+                partner = request.env['res.partner'].sudo().browse(partner_id)
+            else:
+                partner = request.env['res.partner'].sudo().create({
+                    'name': post.get('name', post['email']),
+                    'email': post['email']
+                })
+            post_kwargs = {
+                'author_id': partner.id,
+                'website_published': False,
+                'email_from': partner.email,
+            }
+        # logged user: as usual, published by default
+        else:
+            contextual_slide = slide
+            post_kwargs = {}
+
+        contextual_slide.message_post(
+            body=post['comment'],
+            message_type='comment',
+            subtype='mt_comment',
+            **post_kwargs
+        )
+        return werkzeug.utils.redirect(request.httprequest.referrer + "#discuss")
+
+    @http.route('''/slides/slide/<model("slide.slide", "[('channel_id.can_see', '=', True), ('download_security', '=', 'public')]"):slide>/download''', type='http', auth="public", website=True)
+    def slide_download(self, slide):
+        if slide.download_security == 'public' or (slide.download_security == 'user' and request.env.user and request.env.user != request.website.user_id):
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             filecontent = base64.b64decode(slide.datas)
             disposition = 'attachment; filename=%s.pdf' % werkzeug.urls.url_quote(slide.name)
             return request.make_response(
@@ -258,9 +310,11 @@ class WebsiteSlides(http.Controller):
 
     @http.route(['/slides/add_slide'], type='json', auth='user', methods=['POST'], website=True)
     def create_slide(self, *args, **post):
-        file_size = len(post['datas']) * 3 / 4; # base64
-        if (file_size / 1024.0 / 1024.0) > 25:
-            return {'error': _('File is too big. File size cannot exceed 25MB')}
+        # check the size only when we upload a file.
+        if post.get('datas'):
+            file_size = len(post['datas']) * 3 / 4 # base64
+            if (file_size / 1024.0 / 1024.0) > 25:
+                return {'error': _('File is too big. File size cannot exceed 25MB')}
 
         values = dict((fname, post[fname]) for fname in [
             'name', 'url', 'tag_ids', 'slide_type', 'channel_id',

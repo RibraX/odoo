@@ -214,6 +214,15 @@ class MaintenanceEquipment(models.Model):
         return super(MaintenanceEquipment, self).write(vals)
 
     @api.model
+    def _message_get_auto_subscribe_fields(self, updated_fields, auto_follow_fields=None):
+        """ mail.thread override so user_id which has no special access allowance is not
+            automatically subscribed.
+        """
+        if auto_follow_fields is None:
+            auto_follow_fields = []
+        return super(MaintenanceEquipment, self)._message_get_auto_subscribe_fields(updated_fields, auto_follow_fields)
+
+    @api.model
     def _read_group_category_ids(self, categories, domain, order):
         """ Read group customization in order to display all the categories in
             the kanban view, even if they are empty.
@@ -335,10 +344,15 @@ class MaintenanceRequest(models.Model):
         if vals and 'kanban_state' not in vals and 'stage_id' in vals:
             vals['kanban_state'] = 'normal'
         res = super(MaintenanceRequest, self).write(vals)
+<<<<<<< HEAD
         if vals.get('owner_user_id') or vals.get('technician_user_id'):
             self._add_followers()
         if self.stage_id.done and 'stage_id' in vals:
             self.write({'close_date': fields.Date.today()})
+=======
+        if 'stage_id' in vals:
+            self.filtered(lambda m: m.stage_id.done).write({'close_date': fields.Date.today()})
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return res
 
     def _add_followers(self):

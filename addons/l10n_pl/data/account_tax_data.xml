@@ -256,8 +256,12 @@
       <field name="type_tax_use">sale</field>
       <field name="refund_account_id" ref="chart22030200"/>
       <field name="account_id" ref="chart22030200"/>
+<<<<<<< HEAD
       <field name="tag_ids" eval="[ref('l10n_pl.tag_pl_08'), ref('l10n_pl.tag_pl_29')]"/>
                 <field name="tax_group_id" ref="tax_group_vat_7"/>
+=======
+      <field name="tag_ids" eval="[(6,0,[ref('l10n_pl.tag_pl_08'), ref('l10n_pl.tag_pl_29')])]"/>
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     </record>
 
     <record id="vs_kraj_5" model="account.tax.template">

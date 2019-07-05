@@ -4,6 +4,7 @@
 # * account
 #
 # Translators:
+<<<<<<< HEAD
 # Daniel C Santos <dcs@thinkopensolutions.pt>, 2015
 # João Pedro Carneiro, 2016
 # José Gomes <jg@opencloud.pro>, 2015
@@ -24,16 +25,37 @@
 # Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2015
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2015
 #, fuzzy
+=======
+# Diogo Duarte <diogocarvalhoduarte@gmail.com>, 2016
+# Nuno Dias <ngalvesdias@mail.com>, 2016
+# Manuela Silva <inactive+alfalb@transifex.com>, 2016
+# José Gomes <jg@opencloud.pro>, 2016
+# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Martin Trigaux, 2017
+# Joao Felix <jrmfelix@gmail.com>, 2018
+# Nuno Silva <nuno.silva@arxi.pt>, 2018
+# MS <manuelarodsilva@gmail.com>, 2018
+# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-05-19 11:23+0000\n"
 "Last-Translator: Manuela Silva <inactive+alfalb@transifex.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/odoo/odoo-9/language/"
 "pt/)\n"
 "Language: pt\n"
+=======
+"POT-Creation-Date: 2017-05-26 08:44+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2018\n"
+"Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -97,6 +119,7 @@ msgid ""
 "related journal entries may or may not be reconciled.\n"
 " * The 'Cancelled' status is used when user cancel invoice."
 msgstr ""
+<<<<<<< HEAD
 " * O estado 'Rascunho' é quando uma Fatura é preenchida e gravada, sem ser "
 "validada.\n"
 " * O estado 'Pró-forma' é quando queremos uma cópia igual á Fatura final, "
@@ -107,6 +130,13 @@ msgstr ""
 " * O estado 'Pago' é definido automaticamente quando a Fatura é paga. As "
 "entradas em diário podem ou não ser reconciliadas.\n"
 " * O estado 'Cancelado' é quando a Fatura, por alguma razão, é cancelada."
+=======
+"Quando o indicador 'Rascunho' é usado ele indica que o utilizador inseriu a fatura sem a confirmar.\n"
+"O indicador 'Pro-forma' é usado quando a fatura não é numerada.\n"
+"O indicador 'Em aberto' é usado quando o utilizador cria uma fatura e a mesma é numerada automaticamente. A fatura fica no modo 'Em aberto' até que o utilizador registe o pagamento da fatura.\n"
+"O indicador 'Paga' é exibido automaticamente após o registo do pagamento da fatura. Os correspondentes registos contabilisticos no diário de contabilidade poderão ou não estar reconciliados.\n"
+"O indicador \"Cancelado\" é exibido após o utilizador cancelar a fatura."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #. openerp-web
@@ -210,7 +240,17 @@ msgstr "5) Para configurar, irá precisar das seguinte informação:"
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid ": General ledger"
+<<<<<<< HEAD
 msgstr ": Razão"
+=======
+msgstr ": Registo Geral"
+
+#. module: account
+#: code:addons/account/models/account.py:397
+#, python-format
+msgid ": Refund"
+msgstr "Reembolso"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_trialbalance
@@ -705,6 +745,8 @@ msgid ""
 "<strong>On-the-fly payment reconciliation:</strong> automatic suggestions of "
 "outstanding payments when creating invoices."
 msgstr ""
+"Reconciliação rápida de pagamentos: sugestão automática de pagamentos "
+"pendentes quando forem criadas faturas."
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -854,6 +896,8 @@ msgid ""
 "<strong>Test the following three scenarios in order to assist you in "
 "familiarizing yourself with Odoo:</strong>"
 msgstr ""
+"<strong>Teste os três cenários seguintes para se familizarizar com o "
+"Odoo:</strong>"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -1473,6 +1517,11 @@ msgid "Address"
 msgstr "Endereço"
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_adjustment_type
+msgid "Adjustment Type"
+msgstr "Tipo de Ajuste"
+
+#. module: account
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 msgid "Advanced Options"
@@ -1516,6 +1565,7 @@ msgid ""
 "you request an interval of 30 days Odoo generates an analysis of creditors "
 "for the past month, past two months, and so on."
 msgstr ""
+<<<<<<< HEAD
 "Saldos Antigos de Parceiros é um relatório mais detalhado dos recebimentos, "
 "por intervalos. Ao abrir esse relatório, o Odoo pergunta o nome da empresa, "
 "o período fiscal e o tamanho do intervalo a ser analisado (em dias). O Odoo "
@@ -1527,6 +1577,13 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.report_agedpartnerbalance
 msgid "Aged Trial Balance"
 msgstr "Balancete de Teste Antigo"
+=======
+"Saldos Vencidos de Parceiros é um relatório mais detalhado dos seus valores "
+"a receber por intervalos. O Odoo calcula uma tabela de saldos de crédito "
+"desde a Data inicial. Deste modo, se selecionar um intervalo de 30 dias, o "
+"Odoo gera uma análise de devedores para o último mês, últimos dois meses, "
+"etc."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #. openerp-web
@@ -2107,6 +2164,12 @@ msgstr "Template de Movimento de Conciliação Bancária"
 #: model:ir.ui.view,arch_db:account.view_bank_statement_search
 msgid "Bank Statement"
 msgstr "Extrato Bancário"
+
+#. module: account
+#: code:addons/account/models/account_bank_statement.py:935
+#, python-format
+msgid "Bank Statement %s"
+msgstr "Linha de Extrato Bancário"
 
 #. module: account
 #: model:ir.model,name:account.model_account_bank_statement_line
@@ -3456,6 +3519,28 @@ msgid "Day(s) after the invoice date"
 msgstr "Dia (s) depois da data da factura"
 
 #. module: account
+#: model:res.company,overdue_msg:base.main_company
+msgid ""
+"Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
+msgstr ""
+"Exmo. Senhor/Senhora,\n"
+"\n"
+"Os nossos registos indicam que alguns pagamentos na sua conta, ainda se encontram por liquidar. Por favor, encontre os detalhes abaixo.\n"
+"Se o valor já tiver sido pago, por favor, ignore este aviso. Caso contrário, por favor, envie-nos o total indicado abaixo.\n"
+"Se tiver quaisquer dúvidas em relação à sua conta, por favor, contacte-nos.\n"
+"\n"
+"Obrigado antecipadamente pela sua colaboração.\n"
+"\n"
+"Melhores Cumprimentos,"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_debit
 #: model:ir.ui.view,arch_db:account.report_financial
 #: model:ir.ui.view,arch_db:account.report_generalledger
@@ -3964,7 +4049,7 @@ msgstr "Saldo Final"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_cashbox_end_id
 msgid "Ending Cashbox"
-msgstr ""
+msgstr "Cashbox Final"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -5287,6 +5372,21 @@ msgstr ""
 "É obrigatório especificar uma conta e um diário para criar uma anluação."
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: code:addons/account/models/account_payment.py:322
+#, python-format
+msgid ""
+"It is not allowed to delete a payment that already created a journal entry "
+"since it would create a gap in the numbering. You should create the journal "
+"entry again and cancel it thanks to a regular revert."
+msgstr ""
+"Não é permitido apagar um pagamento que já criou uma entrada no diário pois "
+"iria criar uma lacuna na numeração. Deve criar a entrada do diário de novo e"
+" cancelá-la usando uma reversão regular."
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:212
 #, python-format
@@ -5306,6 +5406,11 @@ msgid ""
 "                            now, and then move all other accounting "
 "transactions at a later time."
 msgstr ""
+"É prática comum alterar o seu software contabilístico \n"
+"                            no fim do ano fiscal. Isto permite-lhe ter menos \n"
+"                            dados para importar e saldos a definir. Se está a  pensar em fazê-lo, \n"
+"                           , recomendamos que comece a usar o Odoo para faturação e pagamentos primeiro\n"
+"                             e mais tarde proceda às restantes transações contabilísticas."
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -5968,13 +6073,21 @@ msgstr "Id. de débito reconciliados"
 #: model:ir.ui.view,arch_db:account.view_move_line_form
 #, fuzzy
 msgid "Matching"
+<<<<<<< HEAD
 msgstr "Correspondência de Pagamentos"
+=======
+msgstr "Acertos"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_full_reconcile_id
 #, fuzzy
 msgid "Matching Number"
+<<<<<<< HEAD
 msgstr "Número da Conta"
+=======
+msgstr "Número de Acerto"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: selection:res.company,fiscalyear_last_month:0
@@ -6567,6 +6680,23 @@ msgid "Operation Templates"
 msgstr "Modelos de Operação"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: code:addons/account/models/account_bank_statement.py:1000
+#, python-format
+msgid ""
+"Operation not allowed. Since your statement line already received a number, "
+"you cannot reconcile it entirely with existing journal entries otherwise it "
+"would make a gap in the numbering. You should book an entry and make a "
+"regular revert of it in case you want to cancel it."
+msgstr ""
+"Operação não permitida. Como a linha declarativa já recebeu um número, não a"
+" pode reconciliar completamente com entradas existentes no diário, ou então "
+"criava uma lacuna na numeração. Deve marcar uma entrada e fazer uma reversão"
+" regular no caso de a querer cancelar."
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: code:addons/account/wizard/account_reconcile.py:66
 #: code:addons/account/wizard/account_reconcile.py:125
 #, python-format
@@ -8099,6 +8229,19 @@ msgid "Set the default Sales and Purchase taxes"
 msgstr "Defina os impostos por defeito de vendas e compras"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:account.field_account_tax_tax_adjustment
+msgid ""
+"Set this field to true if this tax can be used in the tax adjustment wizard,"
+" used to manually fill some data in the tax declaration"
+msgstr ""
+"Marque este campo como verdadeiro se este imposto puder ser usado no "
+"assistente de ajuste fiscal, usado para inserir alguns dados manualmente na "
+"declaração fiscal"
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:account.field_account_chart_template_visible
 msgid ""
 "Set this to False if you don't want this template to be used actively in the "
@@ -8534,6 +8677,22 @@ msgstr ""
 "revalida-se."
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:account.field_account_bank_statement_line_move_name
+#: model:ir.model.fields,help:account.field_account_payment_move_name
+msgid ""
+"Technical field holding the number given to the journal entry, automatically"
+" set when the statement line is reconciled then stored to set the same "
+"number again if the line is cancelled, set to draft and re-processed again."
+msgstr ""
+"Campo técnico que armazena o número dado à entrada no diário, atribuído "
+"automaticamente quando a linha declarativa é reconciliada e depois "
+"armazenada para atribuir o mesmo número de novo se a linha for cancelada, "
+"marcada como rascunho e processada de novo."
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account.field_account_invoice_refund_refund_only
 msgid "Technical field to hide filter_refund in case invoice is partially paid"
 msgstr ""
@@ -10101,7 +10260,18 @@ msgstr ""
 #: code:addons/account/models/account_payment.py:317
 #, python-format
 msgid "You can not delete a payment that is already posted"
+<<<<<<< HEAD
 msgstr "Não pode apagar um pagamento emitido"
+=======
+msgstr "Não pode eliminar um pagamento que já foi lançado"
+
+#. module: account
+#: code:addons/account/models/account_invoice.py:1360
+#, python-format
+msgid "You can only delete an invoice line if the invoice is in draft state."
+msgstr ""
+"Só pode apagar uma linha da fatura se a fatura estiver no estado 'Rascunho'"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: code:addons/account/models/account_payment.py:128
@@ -10150,7 +10320,20 @@ msgstr ""
 "desreconciliar primeiro as entradas do pagamento relacionado."
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account.py:162
+=======
+#: code:addons/account/models/company.py:118
+#, python-format
+msgid ""
+"You cannot change the currency of the company since some journal items "
+"already exist"
+msgstr ""
+"Não pode alterar a empresa dona de uma conta que já contém itens de diário."
+
+#. module: account
+#: code:addons/account/models/account.py:180
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "You cannot change the owner company of an account that already contains "
@@ -10308,6 +10491,15 @@ msgid "You have"
 msgstr "Você tem"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: code:addons/account/models/account_payment.py:360
+#, python-format
+msgid "You have to define a sequence for %s in your company."
+msgstr "Tem que definir uma sequência para %s na sua empresa."
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: code:addons/account/wizard/account_report_general_ledger.py:21
 #, python-format
 msgid "You must define a Start Date"
@@ -10714,6 +10906,7 @@ msgstr "wizard.multi.charts.accounts"
 msgid "→ Count"
 msgstr "→ Conta"
 
+<<<<<<< HEAD
 #~ msgid "Action Needed"
 #~ msgstr "Ação Necessária"
 
@@ -10814,3 +11007,12 @@ msgstr "→ Conta"
 
 #~ msgid "Website communication history"
 #~ msgstr "Histórico de Comunicação do Website"
+=======
+#. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid ""
+"Currency field should only be set if the journal's currency is different "
+"from the company's. Leave the field blank to use company currency."
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

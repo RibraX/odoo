@@ -3,6 +3,12 @@
 # * payment_authorize
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Manuela Silva <manuela.silva@sky.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -19,9 +25,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,cancel_msg:payment_authorize.payment_acquirer_authorize
 msgid "<span><i>Cancel,</i> Your payment has been cancelled.</span>"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
+msgid "API Login Id"
+msgstr "Id. de Sessão API"
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
+msgid "API Transaction Key"
+msgstr "Código de Transação da API"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:payment.acquirer,done_msg:payment_authorize.payment_acquirer_authorize
@@ -31,12 +48,18 @@ msgid ""
 msgstr ""
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,error_msg:payment_authorize.payment_acquirer_authorize
 msgid ""
 "<span><i>Error,</i> Please be aware that an error occurred during the "
 "transaction. The order has been confirmed but won't be paid. Don't hesitate "
 "to contact us if you have any questions on the status of your order.</span>"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_token_authorize_profile
+msgid "Authorize.net Profile ID"
+msgstr "Id. de Perfil de Authorize.net"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:payment.acquirer,pending_msg:payment_authorize.payment_acquirer_authorize

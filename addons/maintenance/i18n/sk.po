@@ -3,11 +3,21 @@
 # * hr_equipment
 #
 # Translators:
+<<<<<<< HEAD
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2015
+=======
+# Matus Krnac <matus.krnac@gmail.com>, 2017
+# Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
+# Martin Trigaux, 2017
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017
+# Jan Prokop, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2015-12-19 12:53+0000\n"
 "Last-Translator: Pavol Krnáč <pavol.krnac@ekoenergo.sk>\n"
@@ -17,6 +27,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:28+0000\n"
+"PO-Revision-Date: 2016-09-07 09:22+0000\n"
+"Last-Translator: Jan Prokop, 2019\n"
+"Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_kanban
@@ -254,6 +275,7 @@ msgstr "Konfigurovať vybavenia"
 msgid "Configure Equipments Settings"
 msgstr "Nastavenia konfigurácie vybavenia"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_cost
 msgid "Cost"
@@ -265,6 +287,20 @@ msgstr "Cena"
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_create_uid
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_request_create_uid
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_stage_create_uid
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+msgid "Created By"
+msgstr "Vytvoril"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_owner_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_create_uid
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Created by"
 msgstr "Vytvoril"
 
@@ -947,10 +983,28 @@ msgstr ""
 "Nemôžte odstrániť kategóriu vybavenia obsahujúcu vybavenie alebo požiadavky "
 "na údržbu."
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model,name:hr_equipment.model_hr_equipment_config_settings
 msgid "hr.equipment.config.settings"
 msgstr "hr.equipment.config.settings"
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "days"
+msgstr "dni"
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "for"
+msgstr "pre"
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "hours"
+msgstr "hodiny"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_tree

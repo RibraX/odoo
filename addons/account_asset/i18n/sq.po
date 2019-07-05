@@ -3,16 +3,32 @@
 # * account_asset
 #
 # Translators:
+<<<<<<< HEAD
 # Anri Haxhi <anrihaxhi@gmail.com>, 2016
+=======
+# Full Name <endrit.veseli@inveen.com>, 2016
+# artxcenter <artxcenter@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Anri Haxhi <anrihaxhi@gmail.com>, 2016
+# Elona Balla <elona19.balla@gmail.com>, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-05-12 09:34+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Albanian (http://www.transifex.com/odoo/odoo-9/language/sq/)\n"
 "Language: sq\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Elona Balla <elona19.balla@gmail.com>, 2017\n"
+"Language-Team: Albanian (https://www.transifex.com/odoo/teams/41243/sq/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -104,7 +120,7 @@ msgid "Asset Durations to Modify"
 msgstr "Modifikimi i Kohezgjatjes së Asetit"
 
 #. module: account_asset
-#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_start_date
+#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_end_date
 msgid "Asset End Date"
 msgstr "Data Fundit e Asetit"
 
@@ -119,7 +135,7 @@ msgid "Asset Name"
 msgstr "Emri i Asetit"
 
 #. module: account_asset
-#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_end_date
+#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_start_date
 msgid "Asset Start Date"
 msgstr "Data Fillestare e Asetit"
 
@@ -748,6 +764,11 @@ msgid "Next Period Depreciation"
 msgstr "Zhvlerësimi i Periudhës së Ardhshme"
 
 #. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
 msgid "Note"
 msgstr "Shënim"
@@ -949,6 +970,14 @@ msgstr "Sasia e kohës midis dy zhvlerësimeve, në muaj"
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_method_number
 msgid "The number of depreciations needed to depreciate your asset"
 msgstr "Numri i zhvlerësimeve që duhen për zhvlerësuar asetin tuaj"
+
+#. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid ""
+"This depreciation is already linked to a journal entry! Please post or "
+"delete it."
+msgstr ""
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard

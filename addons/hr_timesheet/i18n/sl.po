@@ -4,6 +4,7 @@
 # * hr_timesheet
 #
 # Translators:
+<<<<<<< HEAD
 # Matjaž Mozetič <m.mozetic@matmoz.si>, 2015
 # #-#-#-#-#  sl.po (Odoo 9.0)  #-#-#-#-#
 # Translation of Odoo Server.
@@ -12,10 +13,18 @@
 #
 # Translators:
 #, fuzzy
+=======
+# Martin Trigaux, 2016
+# Dejan Sraka <dejan.sraka@picolabs.si>, 2016
+# Vida Potočnik <vida.potocnik@mentis.si>, 2016
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2015-09-10 15:14+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -31,6 +40,32 @@ msgstr ""
 "#-#-#-#-#  sl.po (Odoo 9.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
+=======
+"POT-Creation-Date: 2016-09-29 13:59+0000\n"
+"PO-Revision-Date: 2016-09-07 09:22+0000\n"
+"Last-Translator: Matjaž Mozetič <m.mozetic@matmoz.si>, 2019\n"
+"Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sl\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+
+#. module: hr_timesheet
+#: model:ir.ui.view,arch_db:hr_timesheet.view_project_kanban_inherited
+msgid "<span class=\"o_label\">Timesheets</span>"
+msgstr ""
+
+#. module: hr_timesheet
+#: model:ir.ui.view,arch_db:hr_timesheet.report_timesheet
+msgid "<span>Timesheet Entries</span>"
+msgstr "<span>Vnosi v časovnice</span>"
+
+#. module: hr_timesheet
+#: model:ir.ui.view,arch_db:hr_timesheet.report_timesheet
+msgid "<strong>Total</strong>"
+msgstr "<strong>Skupno</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_timesheet
 #: model:ir.actions.act_window,name:hr_timesheet.act_hr_timesheet_line
@@ -39,6 +74,25 @@ msgid "Activities"
 msgstr "Aktivnosti"
 
 #. module: hr_timesheet
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:hr_timesheet.menu_hr_activity_analysis
+msgid "Activity Analysis"
+msgstr ""
+
+#. module: hr_timesheet
+#: model:ir.model.fields,field_description:hr_timesheet.field_project_project_allow_timesheets
+#: model:ir.ui.view,arch_db:hr_timesheet.project_invoice_form
+msgid "Allow timesheets"
+msgstr "Omogoči časovnice"
+
+#. module: hr_timesheet
+#: model:ir.model,name:hr_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Analitična postavka"
+
+#. module: hr_timesheet
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_timesheet.field_report_project_task_user_hours_delay
 msgid "Avg. Plan.-Eff."
 msgstr ""
@@ -229,7 +283,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_timesheet.field_project_project_subtask_project_id
 #: model:ir.model.fields,field_description:hr_timesheet.field_project_task_subtask_project_id
 msgid "Sub-task Project"
-msgstr ""
+msgstr "Projekt za podrejena opravila"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_project_task_subtask_count
@@ -240,7 +294,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:hr_timesheet.act_project_task_sub_task
 #: model:ir.ui.view,arch_db:hr_timesheet.view_task_form2_inherited
 msgid "Sub-tasks"
-msgstr ""
+msgstr "Podopravila"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_project_task_children_hours
@@ -259,17 +313,25 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_timesheet.field_account_analytic_line_task_id
 #: model:ir.ui.view,arch_db:hr_timesheet.hr_timesheet_line_search
 msgid "Task"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Opravilo"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_timesheet
 #: model:ir.model,name:hr_timesheet.model_report_project_task_user
 msgid "Tasks by user and project"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: hr_timesheet
 #: model:ir.ui.view,arch_db:hr_timesheet.view_hr_timesheet_report_search
 msgid "This Month"
 msgstr "Ta mesec"
+=======
+msgstr "Opravila po uporabnikih in projektih"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_hr_timesheet_report_quantity
@@ -292,10 +354,17 @@ msgid "Timesheet Activities"
 msgstr "Aktivnosti časovnice"
 
 #. module: hr_timesheet
+<<<<<<< HEAD
 #: model:ir.actions.act_window,name:hr_timesheet.action_hr_timesheet_report_stat_all
 #: model:ir.actions.act_window,name:hr_timesheet.action_hr_timesheet_report_stat_filtered
 msgid "Timesheet Analysis"
 msgstr "Analiza časovnic"
+=======
+#: model:ir.actions.act_window,name:hr_timesheet.project_task_action_view_timesheet
+#: model:ir.actions.report.xml,name:hr_timesheet.timesheet_report
+msgid "Timesheet Entries"
+msgstr "Vnosi v časovnice"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_timesheet
 #: model:ir.ui.view,arch_db:hr_timesheet.hr_timesheet_line_search

@@ -3,22 +3,37 @@
 # * sale_stock
 # 
 # Translators:
+<<<<<<< HEAD
 # Bohdan Lisnenko <lem8r.ka11a@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # ТАрас <tratatuta@i.ua>, 2017
+=======
+# ТАрас <tratatuta@i.ua>, 2016
+# Zoriana Zaiats, 2016
+# Martin Trigaux, 2016
+# Bohdan Lisnenko, 2016
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: ТАрас <tratatuta@i.ua>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:29+0000\n"
+"Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. module: sale_stock
 #: code:addons/sale_stock/models/sale_order.py:170
@@ -31,7 +46,7 @@ msgstr ""
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.report_delivery_document_inherit_sale_stock
 msgid "<strong>Customer Reference:</strong>"
-msgstr ""
+msgstr "<strong>Референс клієнта:</strong>"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.report_invoice_document_inherit_sale_stock
@@ -56,6 +71,8 @@ msgid ""
 "highest customer lead time of products. With this option, you can set a "
 "specific delivery date on orders rather than setting lead times on products."
 msgstr ""
+"Дозвольте змінювати дати замовлення на продаж, щоб відкласти поставки та "
+"закупівлі"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_res_company
@@ -202,8 +219,13 @@ msgstr "Упаковка"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_picking_ids
+<<<<<<< HEAD
 msgid "Pickings"
 msgstr "Відбори"
+=======
+msgid "Picking associated to this sale"
+msgstr "Комплектування, пов’язане з цим замовленням"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_procurement_group_id
@@ -211,9 +233,15 @@ msgid "Procurement Group"
 msgstr "Група забезпечення"
 
 #. module: sale_stock
+<<<<<<< HEAD
 #: model:ir.model,name:sale_stock.model_procurement_group
 msgid "Procurement Requisition"
 msgstr "Замовлення на забезпечення"
+=======
+#: selection:sale.config.settings,module_sale_order_dates:0
+msgid "Procurements and deliveries dates are based on the sales order dates"
+msgstr "Дати закупівель та поставок базуються на датах замовлення на продаж"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_procurement_rule
@@ -285,6 +313,7 @@ msgid "Sales Safety Days"
 msgstr "Дні підстрахування для продажів"
 
 #. module: sale_stock
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_stock
 msgid "Schedule deliveries earlier to avoid delays"
 msgstr ""
@@ -298,6 +327,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_stock.field_res_config_settings_use_security_lead
 msgid "Security Lead Time for Sales"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:sale_stock.field_sale_config_settings_security_lead
+msgid "Sales Safety Days *"
+msgstr " запобіжні дні для продажу *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_stock_location_route_sale_selectable
@@ -340,6 +374,7 @@ msgid "Stock Move"
 msgstr "Переміщення запасів"
 
 #. module: sale_stock
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line_move_ids
 msgid "Stock Moves"
 msgstr "Переміщення запасів"
@@ -358,6 +393,22 @@ msgstr ""
 #, python-format
 msgid "This product is packaged by %.2f %s. You should sell %.2f %s."
 msgstr ""
+=======
+#: code:addons/sale_stock/models/sale_order.py:202
+#, python-format
+msgid "This product is packaged by %.2f %s. You should sell %.2f %s."
+msgstr "Цей товар запакований %.2f %s. Вам потрібно відправити %.2f %s."
+
+#. module: sale_stock
+#: model:ir.model.fields,field_description:sale_stock.field_stock_return_picking_line_to_refund_so
+msgid "To Refund"
+msgstr "Повернути"
+
+#. module: sale_stock
+#: model:ir.model.fields,field_description:sale_stock.field_stock_move_to_refund_so
+msgid "To Refund in SO"
+msgstr "Повернути у замовленнях на продаж"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_picking
@@ -365,6 +416,17 @@ msgid "Transfer"
 msgstr "Переміщення"
 
 #. module: sale_stock
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:sale_stock.field_stock_move_to_refund_so
+#: model:ir.model.fields,help:sale_stock.field_stock_return_picking_line_to_refund_so
+msgid ""
+"Trigger a decrease of the delivered quantity in the associated Sale Order"
+msgstr ""
+"Запустити зменшення кількості доставки у відповідному розпорядженні продажу"
+
+#. module: sale_stock
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_warehouse_id
 #: model:ir.model.fields,field_description:sale_stock.field_sale_report_warehouse_id
 msgid "Warehouse"
@@ -402,6 +464,8 @@ msgstr ""
 msgid ""
 "You plan to sell %s %s but you only have %s %s available in %s warehouse."
 msgstr ""
+"Ви плануєте продати %s %s, але ви маєте лише %s %s в доступності!\n"
+"Запас на руках %s %s."
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_stock

@@ -63,7 +63,7 @@ _unlink = logging.getLogger(__name__ + '.unlink')
 regex_order = re.compile('^(\s*([a-z0-9:_]+|"[a-z0-9:_]+")(\s+(desc|asc))?\s*(,|$))+(?<!,)$', re.I)
 regex_object_name = re.compile(r'^[a-z0-9_.]+$')
 regex_pg_name = re.compile(r'^[a-z_][a-z0-9_$]*$', re.I)
-onchange_v7 = re.compile(r"^(\w+)\((.*)\)$")
+onchange_v7 = re.compile(r"^([a-zA-Z]\w+)\((.*)\)$")
 
 AUTOINIT_RECALCULATE_STORED_FIELDS = 1000
 
@@ -650,6 +650,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             :param fields: list of lists of fields to traverse
             :return: list of lists of corresponding values
         """
+        import_compatible = self.env.context.get('import_compat', True)
         lines = []
         for record in self:
             # main line of record, initially empty
@@ -683,28 +684,25 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     else:
                         primary_done.append(name)
 
-                        # This is a special case, its strange behavior is intended!
-                        if field.type == 'many2many' and len(path) > 1 and path[1] == 'id':
+                        # in import_compat mode, m2m should always be exported as
+                        # a comma-separated list of xids in a single cell
+                        if import_compatible and field.type == 'many2many' and len(path) > 1 and path[1] == 'id':
                             xml_ids = [r.__export_xml_id() for r in value]
                             current[i] = ','.join(xml_ids) or False
                             continue
 
-                        # recursively export the fields that follow name
-                        fields2 = [(p[1:] if p and p[0] == name else []) for p in fields]
+                        # recursively export the fields that follow name; use
+                        # 'display_name' where no subfield is exported
+                        fields2 = [(p[1:] or ['display_name'] if p and p[0] == name else [])
+                                   for p in fields]
                         lines2 = value._export_rows(fields2)
                         if lines2:
                             # merge first line with record's main line
                             for j, val in enumerate(lines2[0]):
                                 if val or isinstance(val, bool):
                                     current[j] = val
-                            # check value of current field
-                            if not current[i] and not isinstance(current[i], bool):
-                                # assign xml_ids, and forget about remaining lines
-                                xml_ids = [item[1] for item in value.name_get()]
-                                current[i] = ','.join(xml_ids)
-                            else:
-                                # append the other lines at the end
-                                lines += lines2[1:]
+                            # append the other lines at the end
+                            lines += lines2[1:]
                         else:
                             current[i] = False
 
@@ -787,7 +785,12 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                 # avoid broken transaction) and keep going
                 cr.execute('ROLLBACK TO SAVEPOINT model_load_save')
             except Exception as e:
+<<<<<<< HEAD
                 message = (_(u'Unknown error during import:') + u' %s: %s' % (type(e), e))
+=======
+                _logger.exception("Error while loading record")
+                message = (_('Unknown error during import:') + ' %s: %s' % (type(e), unicode(e.message or e.name)))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                 moreinfo = _('Resolve other errors first')
                 messages.append(dict(info, type='error', message=message, moreinfo=moreinfo))
                 # Failed for some reason, perhaps due to invalid data supplied,
@@ -971,7 +974,12 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     check(self)
                 except ValidationError as e:
                     raise
+<<<<<<< HEAD
                 except Exception as e:
+=======
+                except Exception, e:
+                    _logger.exception('Exception while validating constraint')
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                     raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
 
     @api.model
@@ -1636,30 +1644,38 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         """
         orderby_terms = []
         groupby_terms = [gb['qualified_field'] for gb in annotated_groupbys]
-        groupby_fields = [gb['groupby'] for gb in annotated_groupbys]
         if not orderby:
             return groupby_terms, orderby_terms
 
         self._check_qorder(orderby)
+
+        # when a field is grouped as 'foo:bar', both orderby='foo' and
+        # orderby='foo:bar' generate the clause 'ORDER BY "foo:bar"'
+        groupby_fields = {
+            gb[key]: gb['groupby']
+            for gb in annotated_groupbys
+            for key in ('field', 'groupby')
+        }
         for order_part in orderby.split(','):
             order_split = order_part.split()
             order_field = order_split[0]
             if order_field == 'id' or order_field in groupby_fields:
-
                 if self._fields[order_field.split(':')[0]].type == 'many2one':
                     order_clause = self._generate_order_by(order_part, query).replace('ORDER BY ', '')
                     if order_clause:
                         orderby_terms.append(order_clause)
                         groupby_terms += [order_term.split()[0] for order_term in order_clause.split(',')]
                 else:
-                    order = '"%s" %s' % (order_field, '' if len(order_split) == 1 else order_split[1])
-                    orderby_terms.append(order)
+                    order_split[0] = '"%s"' % groupby_fields.get(order_field, order_field)
+                    orderby_terms.append(' '.join(order_split))
             elif order_field in aggregated_fields:
-                orderby_terms.append(order_part)
+                order_split[0] = '"%s"' % order_field
+                orderby_terms.append(' '.join(order_split))
             else:
                 # Cannot order by a field that will not appear in the results (needs to be grouped or aggregated)
                 _logger.warn('%s: read_group order by `%s` ignored, cannot sort on empty columns (not grouped/aggregated)',
                              self._name, order_part)
+
         return groupby_terms, orderby_terms
 
     @api.model
@@ -2139,9 +2155,195 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                 if field.manual and not update_custom_fields:
                     continue            # don't update custom fields
 
+<<<<<<< HEAD
                 new = field.update_db(self, columns)
                 if new and field.compute:
                     self.pool.post_init(recompute, field)
+=======
+                if not field.column_type:
+                    # the field is not stored as a column
+                    if field.check_schema(self) and field.compute:
+                        stored_fields.append(field)
+
+                else:
+                    res = column_data.get(name)
+
+                    # The column is not found as-is in database. Check whether
+                    # it exists with an old name, and rename it.
+                    if not res and hasattr(field, 'oldname'):
+                        res = column_data.get(field.oldname)
+                        if res:
+                            cr.execute('ALTER TABLE "%s" RENAME "%s" TO "%s"' % (self._table, field.oldname, name))
+                            res['attname'] = name
+                            _schema.debug("Table '%s': renamed column '%s' to '%s'", self._table, field.oldname, name)
+
+                    # The column already exists in database. Possibly change its
+                    # type, rename it, drop it or change its constraints.
+                    if res:
+                        f_pg_type = res['typname']
+                        f_pg_size = res['size']
+                        f_pg_notnull = res['attnotnull']
+                        column_type = field.column_type
+
+                        if column_type:
+                            converted = False
+                            casts = [
+                                ('text', 'char', column_type[1], '::' + column_type[1]),
+                                ('varchar', 'text', 'TEXT', ''),
+                                ('int4', 'float', column_type[1], '::' + column_type[1]),
+                                ('date', 'datetime', 'TIMESTAMP', '::TIMESTAMP'),
+                                ('timestamp', 'date', 'date', '::date'),
+                                ('numeric', 'float', column_type[1], '::' + column_type[1]),
+                                ('float8', 'float', column_type[1], '::' + column_type[1]),
+                                ('float8', 'monetary', column_type[1], '::' + column_type[1]),
+                            ]
+                            if f_pg_type == 'varchar' and field.type == 'char' and f_pg_size and (field.size is None or f_pg_size < field.size):
+                                try:
+                                    with cr.savepoint():
+                                        cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" TYPE %s' % (self._table, name, column_type[1]), log_exceptions=False)
+                                except psycopg2.NotSupportedError:
+                                    # In place alter table cannot be done because a view is depending of this field.
+                                    # Do a manual copy. This will drop the view (that will be recreated later)
+                                    cr.execute('ALTER TABLE "%s" RENAME COLUMN "%s" TO temp_change_size' % (self._table, name))
+                                    cr.execute('ALTER TABLE "%s" ADD COLUMN "%s" %s' % (self._table, name, column_type[1]))
+                                    cr.execute('UPDATE "%s" SET "%s"=temp_change_size::%s' % (self._table, name, column_type[1]))
+                                    cr.execute('ALTER TABLE "%s" DROP COLUMN temp_change_size CASCADE' % (self._table,))
+                                cr.commit()
+                                _schema.debug("Table '%s': column '%s' (type varchar) changed size from %s to %s",
+                                              self._table, name, f_pg_size or 'unlimited', field.size or 'unlimited')
+                            for c in casts:
+                                if (f_pg_type == c[0]) and (field.type == c[1]):
+                                    if f_pg_type != column_type[0]:
+                                        converted = True
+                                        try:
+                                            with cr.savepoint():
+                                                cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" TYPE %s' % (self._table, name, c[2]), log_exceptions=False)
+                                        except psycopg2.NotSupportedError:
+                                            # can't do inplace change -> use a casted temp column
+                                            cr.execute('ALTER TABLE "%s" RENAME COLUMN "%s" TO __temp_type_cast' % (self._table, name))
+                                            cr.execute('ALTER TABLE "%s" ADD COLUMN "%s" %s' % (self._table, name, c[2]))
+                                            cr.execute('UPDATE "%s" SET "%s"= __temp_type_cast%s' % (self._table, name, c[3]))
+                                            cr.execute('ALTER TABLE "%s" DROP COLUMN  __temp_type_cast CASCADE' % (self._table,))
+                                        cr.commit()
+                                        _schema.debug("Table '%s': column '%s' changed type from %s to %s",
+                                                      self._table, name, c[0], c[1])
+                                    break
+
+                            if f_pg_type != column_type[0]:
+                                if not converted:
+                                    i = 0
+                                    while True:
+                                        newname = name + '_moved' + str(i)
+                                        cr.execute("SELECT count(1) FROM pg_class c,pg_attribute a " \
+                                            "WHERE c.relname=%s " \
+                                            "AND a.attname=%s " \
+                                            "AND c.oid=a.attrelid ", (self._table, newname))
+                                        if not cr.fetchone()[0]:
+                                            break
+                                        i += 1
+                                    if f_pg_notnull:
+                                        cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" DROP NOT NULL' % (self._table, name))
+                                    cr.execute('ALTER TABLE "%s" RENAME COLUMN "%s" TO "%s"' % (self._table, name, newname))
+                                    cr.execute('ALTER TABLE "%s" ADD COLUMN "%s" %s' % (self._table, name, column_type[1]))
+                                    cr.execute("COMMENT ON COLUMN %s.\"%s\" IS %%s" % (self._table, name), (field.string,))
+                                    _schema.warning("Table `%s`: column `%s` has changed type (DB=%s, def=%s), data moved to column `%s`",
+                                                    self._table, name, f_pg_type, field.type, newname)
+
+                            # if the field is required and hasn't got a NOT NULL constraint
+                            if field.required and f_pg_notnull == 0:
+                                if has_rows:
+                                    self._init_column(name)
+                                # add the NOT NULL constraint
+                                try:
+                                    cr.commit()
+                                    cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" SET NOT NULL' % (self._table, name), log_exceptions=False)
+                                    _schema.debug("Table '%s': column '%s': added NOT NULL constraint",
+                                                  self._table, name)
+                                except Exception:
+                                    msg = "Table '%s': unable to set a NOT NULL constraint on column '%s' !\n"\
+                                        "If you want to have it, you should update the records and execute manually:\n"\
+                                        "ALTER TABLE %s ALTER COLUMN %s SET NOT NULL"
+                                    _schema.warning(msg, self._table, name, self._table, name)
+                                cr.commit()
+                            elif not field.required and f_pg_notnull == 1:
+                                cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" DROP NOT NULL' % (self._table, name))
+                                cr.commit()
+                                _schema.debug("Table '%s': column '%s': dropped NOT NULL constraint",
+                                              self._table, name)
+                            # Verify index
+                            indexname = '%s_%s_index' % (self._table, name)
+                            cr.execute("SELECT indexname FROM pg_indexes WHERE indexname = %s and tablename = %s", (indexname, self._table))
+                            res2 = cr.dictfetchall()
+                            if not res2 and field.index:
+                                try:  # DO NOT FORWARD-PORT TO SAAS-15 AND UP (stop at saas-14)
+                                    with cr.savepoint():
+                                        cr.execute('CREATE INDEX "%s_%s_index" ON "%s" ("%s")' % (self._table, name, self._table, name))
+                                except psycopg2.OperationalError as e:
+                                    _schema.error('Unable to add index for %s (%s):\n %s', self._table, name, e.message)
+                                cr.commit()
+                                if field.type == 'text':
+                                    # FIXME: for fields.text columns we should try creating GIN indexes instead (seems most suitable for an ERP context)
+                                    msg = "Table '%s': Adding (b-tree) index for %s column '%s'."\
+                                        "This is probably useless (does not work for fulltext search) and prevents INSERTs of long texts"\
+                                        " because there is a length limit for indexable btree values!\n"\
+                                        "Use a search view instead if you simply want to make the field searchable."
+                                    _schema.warning(msg, self._table, field.type, name)
+                            if res2 and not field.index:
+                                cr.execute('DROP INDEX "%s_%s_index"' % (self._table, name))
+                                cr.commit()
+                                msg = "Table '%s': dropping index for column '%s' of type '%s' as it is not required anymore"
+                                _schema.debug(msg, self._table, name, field.type)
+
+                            if field.type == 'many2one':
+                                comodel = self.env[field.comodel_name]
+                                if comodel._auto and comodel._table != 'ir_actions':
+                                    self._m2o_fix_foreign_key(self._table, name, comodel, field.ondelete)
+
+                    else:
+                        # the column doesn't exist in database, create it
+                        cr.execute('ALTER TABLE "%s" ADD COLUMN "%s" %s' % (self._table, name, field.column_type[1]))
+                        cr.execute("COMMENT ON COLUMN %s.\"%s\" IS %%s" % (self._table, name), (field.string,))
+                        _schema.debug("Table '%s': added column '%s' with definition=%s",
+                                      self._table, name, field.column_type[1])
+
+                        # initialize it
+                        if has_rows:
+                            self._init_column(name)
+
+                        # remember new-style stored fields with compute method
+                        if field.compute:
+                            stored_fields.append(field)
+
+                        # and add constraints if needed
+                        if field.type == 'many2one' and field.store:
+                            if field.comodel_name not in self.env:
+                                raise ValueError(_('There is no reference available for %s') % (field.comodel_name,))
+                            comodel = self.env[field.comodel_name]
+                            # ir_actions is inherited so foreign key doesn't work on it
+                            if comodel._auto and comodel._table != 'ir_actions':
+                                self._m2o_add_foreign_key_checked(name, comodel, field.ondelete)
+                        if field.index:
+                            cr.execute('CREATE INDEX "%s_%s_index" ON "%s" ("%s")' % (self._table, name, self._table, name))
+                        if field.required:
+                            try:
+                                cr.commit()
+                                cr.execute('ALTER TABLE "%s" ALTER COLUMN "%s" SET NOT NULL' % (self._table, name))
+                                _schema.debug("Table '%s': column '%s': added a NOT NULL constraint",
+                                              self._table, name)
+                            except Exception:
+                                msg = "WARNING: unable to set column %s of table %s not null !\n"\
+                                    "Try to re-run: openerp-server --update=module\n"\
+                                    "If it doesn't work, update records and execute manually:\n"\
+                                    "ALTER TABLE %s ALTER COLUMN %s SET NOT NULL"
+                                _logger.warning(msg, name, self._table, self._table, name, exc_info=True)
+                        cr.commit()
+
+        else:
+            cr.execute("SELECT relname FROM pg_class WHERE relkind IN ('r','v') AND relname=%s", (self._table,))
+            create = not bool(cr.fetchone())
+
+        cr.commit()     # start a new transaction
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
         if self._auto:
             self._add_sql_constraints()
@@ -2229,6 +2431,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                 #  - copy inherited fields iff their original field is copied
                 fields[name] = field.new(
                     inherited=True,
+                    inherited_field=field,
                     related=(parent_field, name),
                     related_sudo=False,
                     copy=field.copy,
@@ -2346,7 +2549,11 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             try:
                 field.setup_full(self)
             except Exception:
+<<<<<<< HEAD
                 if not self.pool.loaded and field.manual:
+=======
+                if partial and field.base_field.manual:
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                     # Something goes wrong when setup a manual field.
                     # This can happen with related fields using another manual many2one field
                     # that hasn't been loaded because the comodel does not exist yet.
@@ -2470,9 +2677,13 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             if invalid_fields:
                 _logger.info('Access Denied by ACLs for operation: %s, uid: %s, model: %s, fields: %s',
                     operation, self._uid, self._name, ', '.join(invalid_fields))
-                raise AccessError(_('The requested operation cannot be completed due to security restrictions. '
-                                    'Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % \
-                                  (self._description, operation))
+                raise AccessError(
+                    _(
+                        'The requested operation cannot be completed due to security restrictions. '
+                        'Please contact your system administrator.\n\n(Document type: %s, Operation: %s)'
+                    ) % (self._description, operation)
+                    + ' - ({} {}, {} {})'.format(_('User:'), self._uid, _('Fields:'), ', '.join(invalid_fields))
+                )
 
         return fields
 
@@ -2513,17 +2724,21 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
 
         # retrieve results from records; this takes values from the cache and
         # computes remaining fields
-        result = []
-        name_fields = [(name, self._fields[name]) for name in (stored + inherited + computed)]
+        self = self.with_prefetch(self._prefetch.copy())
+        data = {record: {'id': record.id} for record in self}
+        missing = set()
         use_name_get = (load == '_classic_read')
-        for record in self:
-            try:
-                values = {'id': record.id}
-                for name, field in name_fields:
-                    values[name] = field.convert_to_read(record[name], record, use_name_get)
-                result.append(values)
-            except MissingError:
-                pass
+        for name in (stored + inherited + computed):
+            convert = self._fields[name].convert_to_read
+            # restrict the prefetching of self's model to self; this avoids
+            # computing fields on a larger recordset than self
+            self._prefetch[self._name] = set(self._ids)
+            for record in self:
+                try:
+                    data[record][name] = convert(record[name], record, use_name_get)
+                except MissingError:
+                    missing.add(record)
+        result = [data[record] for record in self if record not in missing]
 
         return result
 
@@ -2679,8 +2894,8 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     (self._name, 'read', ','.join([str(r.id) for r in self][:6]), self._uid))
                 # store an access error exception in existing records
                 exc = AccessError(
-                    _('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % \
-                    (self._name, 'read')
+                    _('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % (self._description, 'read')
+                    + ' - ({} {}, {} {})'.format(_('Records:'), self.ids[:6], _('User:'), self._uid)
                 )
                 self.env.cache.set_failed(forbidden, self._fields.values(), exc)
 
@@ -2764,8 +2979,10 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                 if self._uid == SUPERUSER_ID:
                     return
                 _logger.info('Access Denied by record rules for operation: %s on record ids: %r, uid: %s, model: %s', operation, forbidden_ids, self._uid, self._name)
-                raise AccessError(_('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % \
-                                    (self._description, operation))
+                raise AccessError(
+                    _('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % (self._description, operation)
+                    + ' - ({} {}, {}, {})'.format(_('Records:'), forbidden_ids[:6], _('User:'), self._uid)
+                )
             else:
                 # If we get here, the missing_ids are not in the database
                 if operation in ('read','unlink'):
@@ -2774,7 +2991,13 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     # errors for non-transactional search/read sequences coming from clients
                     return
                 _logger.info('Failed operation on deleted record(s): %s, uid: %s, model: %s', operation, self._uid, self._name)
-                raise MissingError(_('Missing document(s)') + ':' + _('One of the documents you are trying to access has been deleted, please try again after refreshing.'))
+                raise MissingError(
+                    _('Missing document(s)') + ':' + _('One of the documents you are trying to access has been deleted, please try again after refreshing.')
+                    + '\n\n({} {}, {} {}, {} {}, {} {})'.format(
+                        _('Document type:'), self._description, _('Operation:'), operation,
+                        _('Records:'), missing_ids[:6], _('User:'), self._uid,
+                    )
+                )
 
     @api.model
     def check_access_rights(self, operation, raise_exception=True):
@@ -2843,19 +3066,31 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             raise UserError(_('Unable to delete this document because it is used as a default property'))
 
         # Delete the records' properties.
-        self.env['ir.property'].search([('res_id', 'in', refs)]).unlink()
+        with self.env.norecompute():
+            self.delete_workflow()
 
+<<<<<<< HEAD
         self.check_access_rule('unlink')
 
         cr = self._cr
         Data = self.env['ir.model.data'].sudo().with_context({})
         Defaults = self.env['ir.default'].sudo()
         Attachment = self.env['ir.attachment']
+=======
+            self.check_access_rule('unlink')
+            self.env['ir.property'].search([('res_id', 'in', refs)]).sudo().unlink()
 
-        for sub_ids in cr.split_for_in_conditions(self.ids):
-            query = "DELETE FROM %s WHERE id IN %%s" % self._table
-            cr.execute(query, (sub_ids,))
+            cr = self._cr
+            Data = self.env['ir.model.data'].sudo().with_context({})
+            Values = self.env['ir.values']
+            Attachment = self.env['ir.attachment']
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
+            for sub_ids in cr.split_for_in_conditions(self.ids):
+                query = "DELETE FROM %s WHERE id IN %%s" % self._table
+                cr.execute(query, (sub_ids,))
+
+<<<<<<< HEAD
             # Removing the ir_model_data reference if the record being deleted
             # is a record created by xml/csv file, as these are not connected
             # with real database foreign keys, and would be dangling references.
@@ -2884,6 +3119,40 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         # invalidate the *whole* cache, since the orm does not handle all
         # changes made in the database, like cascading delete!
         self.invalidate_cache()
+=======
+                # Removing the ir_model_data reference if the record being deleted
+                # is a record created by xml/csv file, as these are not connected
+                # with real database foreign keys, and would be dangling references.
+                #
+                # Note: the following steps are performed as superuser to avoid
+                # access rights restrictions, and with no context to avoid possible
+                # side-effects during admin calls.
+                data = Data.search([('model', '=', self._name), ('res_id', 'in', sub_ids)])
+                if data:
+                    data.unlink()
+
+                # For the same reason, remove the relevant records in ir_values
+                refs = ['%s,%s' % (self._name, i) for i in sub_ids]
+                values = Values.search(['|', ('value', 'in', refs),
+                                             '&', ('model', '=', self._name),
+                                                  ('res_id', 'in', sub_ids)])
+                if values:
+                    values.unlink()
+
+                # For the same reason, remove the relevant records in ir_attachment
+                # (the search is performed with sql as the search method of
+                # ir_attachment is overridden to hide attachments of deleted
+                # records)
+                query = 'SELECT id FROM ir_attachment WHERE res_model=%s AND res_id IN %s'
+                cr.execute(query, (self._name, sub_ids))
+                attachments = Attachment.browse([row[0] for row in cr.fetchall()])
+                if attachments:
+                    attachments.unlink()
+
+            # invalidate the *whole* cache, since the orm does not handle all
+            # changes made in the database, like cascading delete!
+            self.invalidate_cache()
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
         # recompute new-style fields
         if self.env.recompute and self._context.get('recompute', True):
@@ -3007,19 +3276,37 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         protected_fields = [self._fields[n] for n in new_vals]
         with self.env.protecting(protected_fields, self):
             # write old-style fields with (low-level) method _write
-            if old_vals:
+            if old_vals or new_vals:
+                # if log_access is enabled, this updates 'write_date' and
+                # 'write_uid' and check access rules, even when old_vals is
+                # empty
                 self._write(old_vals)
 
             if new_vals:
-                # put the values of pure new-style fields into cache, and inverse them
+                self.check_field_access_rights('write', list(new_vals))
+
                 self.modified(set(new_vals) - set(old_vals))
-                for record in self:
-                    record._cache.update(record._convert_to_cache(new_vals, update=True))
+
+                # put the values of fields into cache, and inverse them
                 for key in new_vals:
-                    self._fields[key].determine_inverse(self)
+                    field = self._fields[key]
+                    # If a field is not stored, its inverse method will probably
+                    # write on its dependencies, which will invalidate the field
+                    # on all records. We therefore inverse the field one record
+                    # at a time.
+                    batches = [self] if field.store else list(self)
+                    for records in batches:
+                        for record in records:
+                            record._cache.update(
+                                record._convert_to_cache(new_vals, update=True)
+                            )
+                        field.determine_inverse(records)
+
                 self.modified(set(new_vals) - set(old_vals))
+
                 # check Python constraints for inversed fields
                 self._validate_fields(set(new_vals) - set(old_vals))
+
                 # recompute new-style fields
                 if self.env.recompute and self._context.get('recompute', True):
                     self.recompute()
@@ -3098,7 +3385,10 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             for sub_ids in cr.split_for_in_conditions(set(self.ids)):
                 cr.execute(query, params + (sub_ids,))
                 if cr.rowcount != len(sub_ids):
-                    raise MissingError(_('One of the records you are trying to modify has already been deleted (Document type: %s).') % self._description)
+                    raise MissingError(
+                        _('One of the records you are trying to modify has already been deleted (Document type: %s).') % self._description
+                        + '\n\n({} {}, {} {})'.format(_('Records:'), sub_ids[:6], _('User:'), self._uid)
+                    )
 
             # TODO: optimize
             for name in direct:
@@ -3519,6 +3809,15 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     if table not in query.tables:
                         query.tables.append(table)
 
+        if self._transient:
+            # One single implicit access rule for transient models: owner only!
+            # This is ok because we assert that TransientModels always have
+            # log_access enabled, so that 'create_uid' is always there.
+            domain = [('create_uid', '=', self._uid)]
+            tquery = self._where_calc(domain, active_test=False)
+            apply_rule(tquery.where_clause, tquery.where_clause_params, tquery.tables)
+            return
+
         # apply main rules on the object
         Rule = self.env['ir.rule']
         where_clause, where_params, tables = Rule.domain_get(self._name, mode)
@@ -3666,6 +3965,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         """
         self.sudo(access_rights_uid or self._uid).check_access_rights('read')
 
+<<<<<<< HEAD
         # For transient models, restrict access to the current user, except for the super-user
         if self.is_transient() and self._log_access and self._uid != SUPERUSER_ID:
             args = expression.AND(([('create_uid', '=', self._uid)], args or []))
@@ -3674,6 +3974,8 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             # optimization: no need to query, as no record satisfies the domain
             return 0 if count else []
 
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         query = self._where_calc(args)
         self._apply_ir_rules(query, 'read')
         order_by = self._generate_order_by(order, query)
@@ -3846,7 +4148,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         vals = self.copy_data(default)[0]
         # To avoid to create a translation in the lang of the user, copy_translation will do it
         new = self.with_context(lang=None).create(vals)
-        self.copy_translations(new)
+        self.with_context(from_copy_translation=True).copy_translations(new)
         return new
 
     @api.multi
@@ -3873,8 +4175,16 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
         existing = self.browse(ids + new_ids)
         if len(existing) < len(self):
             # mark missing records in cache with a failed value
+<<<<<<< HEAD
             exc = MissingError(_("Record does not exist or has been deleted."))
             self.env.cache.set_failed(self - existing, self._fields.values(), exc)
+=======
+            exc = MissingError(
+                _("Record does not exist or has been deleted.")
+                + '\n\n({} {}, {} {})'.format(_('Records:'), (self - existing).ids[:6], _('User:'), self._uid)
+            )
+            (self - existing)._cache.update(FailedValue(exc))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return existing
 
     @api.multi

@@ -3,15 +3,45 @@
 # * purchase
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Fatma Reda <alex.fatma@gmail.com>, 2016
+# Mohammed Albasha <m.albasha.ma@gmail.com>, 2016
+# Ahmed Salah <a.salah@puzzlewebworx.com>, 2016
+# fares alokeeli <okffok@gmail.com>, 2016
+# hamza tayseer atieh <hamza.atieh@minervadata.com>, 2016
+# Ali zuaby <ali@zuaby.net>, 2016
+# Osama Ahmaro <osamaahmaro@gmail.com>, 2016
+# Mostafa Wahbi <m.wahbi.fms@gmail.com>, 2016
+# Akram Alfusayal <akram_ma@hotmail.com>, 2016
+# hoxhe Aits <hoxhe0@gmail.com>, 2016
+# Mohammed Ibrahim <m.ibrahim@mussder.com>, 2016
+# amrnegm <amrnegm.01@gmail.com>, 2016
+# Martin Trigaux, 2016
+# khalil qandil <khalilqandil@gmail.com>, 2017
+# Shaima Safar <shaima.safar@open-inside.com>, 2017
+# Ahmed AL-Haddad <ahmed@utech-sa.com>, 2017
+# Ali Alrehawi <alrehawi@hotmail.com>, 2018
+# Osoul <baruni@osoul.ly>, 2018
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-07-21 10:49+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Arabic (http://www.transifex.com/odoo/odoo-9/language/ar/)\n"
 "Language: ar\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
+"Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -74,7 +104,11 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_count
+<<<<<<< HEAD
 msgid "# of Invoices"
+=======
+msgid "# of Bills"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr "عدد الفواتير"
 
 #. module: purchase
@@ -96,7 +130,7 @@ msgstr "${object.company_id.name} أمر (Ref ${object.name or 'n/a' })"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "<strong>Date Req.</strong>"
-msgstr ""
+msgstr "<strong>تاريخ الطلب</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
@@ -107,7 +141,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchasequotation_document
 msgid "<strong>Expected Date</strong>"
-msgstr ""
+msgstr "<strong>التاريخ المتوقع</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
@@ -117,12 +151,12 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "<strong>Order Date:</strong>"
-msgstr ""
+msgstr "<strong>تاريخ الأمر:</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "<strong>Our Order Reference:</strong>"
-msgstr ""
+msgstr "<strong>المرجع الخاص بنا:</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
@@ -162,9 +196,15 @@ msgid "<strong>Your Order Reference</strong>"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase.field_account_invoice_purchase_id
 msgid "Add Purchase Order"
 msgstr ""
+=======
+#: model:res.groups,name:purchase.group_warning_purchase
+msgid "A warning can be set on a product or a customer (Purchase)"
+msgstr "يمكن تعيين تحذير على منتج أو عميل معين (الشراء)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_advance_bidding
@@ -182,9 +222,15 @@ msgid "Advanced call for tender (choose products from different RFQ)"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: selection:purchase.config.settings,module_stock_dropshipping:0
 msgid "Allow suppliers to deliver directly to your customers"
 msgstr ""
+=======
+#: selection:res.company,po_lock:0
+msgid "Allow to edit purchase orders"
+msgstr "السماح بتعديل أوامر الشراء"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.config.settings,group_manage_vendor_price:0
@@ -251,7 +297,7 @@ msgstr ""
 msgid ""
 "Associated Purchase Order. Filled in automatically when a PO is chosen on "
 "the vendor bill."
-msgstr ""
+msgstr "طلب شراء مرتبط . يملأ بشكل آلي عند اختيار ال PO  في فاتورة البائع"
 
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_average_delivery_time
@@ -264,12 +310,53 @@ msgid "Average Price"
 msgstr "متوسط السعر"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
+msgid "Bill Lines"
+msgstr "بنود الفاتورة"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
 msgid "Billed Qty"
+msgstr "الكمية المفوترة"
+
+#. module: purchase
+<<<<<<< HEAD
+#: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
 msgstr ""
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
+msgid "Billing Status"
+msgstr "حالة الفاتورة"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
+msgid "Bills"
+msgstr "الفواتير"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+#: selection:purchase.order,invoice_status:0
+msgid "Bills Received"
+msgstr "تم استلام الفاتورة"
+
+#. module: purchase
+#: selection:product.template,purchase_line_warn:0
+#: selection:res.partner,purchase_warn:0
+msgid "Blocking Message"
+msgstr "رسالة حظر"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:796
+#: code:addons/purchase/models/stock.py:81
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:stock.location.route,name:purchase.route_warehouse0_buy
 #, python-format
 msgid "Buy"
@@ -278,7 +365,7 @@ msgstr "شراء"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_stock_warehouse_buy_pull_id
 msgid "Buy rule"
-msgstr ""
+msgstr "قانون الشراء"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_calendar
@@ -357,12 +444,20 @@ msgstr ""
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_rfq
 msgid "Click to create a request for quotation."
-msgstr ""
+msgstr "انقر لإنشاء طلب شراء."
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.actions.act_window,help:purchase.action_invoice_pending
+msgid "Click to create a vendor bill."
+msgstr "انقر لتسجيل فاتورة مورد جديدة."
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
 msgid "Click to define a new product."
-msgstr ""
+msgstr "أنقر هنا لإضافة منتج جديد."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_open_invoice
@@ -417,9 +512,17 @@ msgstr "تأكيد الأمر"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Confirm purchase orders in one step"
-msgstr ""
+msgstr "تأكيد أوامر الشراء في خطوة واحدة"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:res.company,po_lock:0
+msgid "Confirmed purchase orders are not editable"
+msgstr "أوامر الشراء المؤكّدة غير قابلة للتعديل"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_purchase_control
 msgid "Control"
 msgstr ""
@@ -491,7 +594,7 @@ msgstr ""
 msgid ""
 "Depicts the date where the Quotation should be validated and converted into "
 "a purchase order."
-msgstr ""
+msgstr "تمثل تاريخ اعتماد عرض السعر وتحوله لأمر شراء."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_name
@@ -499,9 +602,17 @@ msgid "Description"
 msgstr "الوصف"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "Description for Vendors"
+msgstr "الوصف للموردين"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_default_location_dest_id_usage
 msgid "Destination Location Type"
-msgstr ""
+msgstr "نوع مكان الاستلام"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_display_name
@@ -519,7 +630,7 @@ msgstr "منتهي"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation_amount
 msgid "Double validation amount"
-msgstr ""
+msgstr "مبلغ الاعتماد المزدوج"
 
 #. module: purchase
 #: selection:purchase.order,state:0
@@ -529,12 +640,12 @@ msgstr "طلب شراء 'مسودة'"
 #. module: purchase
 #: selection:purchase.report,state:0
 msgid "Draft RFQ"
-msgstr ""
+msgstr "طلب شراء مسودّة"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_dest_address_id
 msgid "Drop Ship Address"
-msgstr ""
+msgstr "عنوان الشحن المباشر"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_module_stock_dropshipping
@@ -565,6 +676,15 @@ msgid "Extended Filters"
 msgstr "الفلاتر التفصيلية"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: code:addons/purchase/models/purchase.py:559
+#, python-format
+msgid "Extra line with %s "
+msgstr "بند إضافي مع %s "
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_fiscal_position_id
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -574,7 +694,7 @@ msgstr "الوضع المالي"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Get 2 levels of approvals to confirm a purchase order"
-msgstr ""
+msgstr "الحصول علي مستويين موافقة لتأكيد أمر الشراء"
 
 #. module: purchase
 #: model:web.tip,description:purchase.purchase_tip_3
@@ -716,27 +836,40 @@ msgstr "آخر تحديث في"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation
 msgid "Levels of Approvals"
-msgstr ""
+msgstr "مستويات القبول"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_double_validation
+msgid "Levels of Approvals *"
+msgstr "مستويات القبول *"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.view_purchase_configuration
 msgid "Location & Warehouse"
 msgstr "الموقع و المخزن"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
+<<<<<<< HEAD
 msgid "Lock Bills"
 msgstr ""
+=======
+msgid "Lock"
+msgstr "اغلاق"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "Locked"
-msgstr ""
+msgstr "مغلق"
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_manage_vendor_price
 msgid "Manage Vendor Price"
-msgstr ""
+msgstr "إدارة سعر المورد"
 
 #. module: purchase
 #: selection:purchase.config.settings,group_manage_vendor_price:0
@@ -760,11 +893,14 @@ msgid ""
 "Orders for procuring products, they will be scheduled that many days earlier "
 "to cope with unexpected vendor delays."
 msgstr ""
+"هامش الخطأ في مهلة تسليم المورد. عند إنشاء النظام لأوامر الشراء لإعادة تزويد"
+" المنتجات، ستتم جدولة الأوامر مع إضافة هذا الهامش للتعامل مع أي تأخير طارئ "
+"من قبل المورد."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_double_validation_amount
 msgid "Minimum amount for which a double validation is required"
-msgstr ""
+msgstr "أقل مبلغ يحتاج لاعتماد مزدوج"
 
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_monthly_purchases
@@ -802,8 +938,13 @@ msgstr "لم يتم عمل فاتروة لها"
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Not purchased"
 msgstr ""
+=======
+msgid "Nothing to Bill"
+msgstr "لا يوجد شي للفوترة"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -813,7 +954,7 @@ msgstr "الملاحظات"
 #. module: purchase
 #: selection:product.template,purchase_method:0
 msgid "On ordered quantities"
-msgstr ""
+msgstr "حسب الكمية المطلوبة"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_product_product_purchase_method
@@ -826,7 +967,7 @@ msgstr ""
 #. module: purchase
 #: selection:product.template,purchase_method:0
 msgid "On received quantities"
-msgstr ""
+msgstr "حسب الكميات المستلمة"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_date_order
@@ -864,6 +1005,21 @@ msgid "Order of Day"
 msgstr "ترتيب اليوم"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: code:addons/purchase/models/purchase.py:578
+#, python-format
+msgid "Ordered Quantity"
+msgstr "الكميات المطلوبة"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:816
+#, python-format
+msgid "Ordered quantity decreased!"
+msgstr "تم تقليص المكمية المطلوبة!"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Orders"
 msgstr "الطلبيّات"
@@ -909,7 +1065,7 @@ msgstr "حساب تفريق السعر"
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_price_per_supplier
 msgid "Price Per Vendor"
-msgstr ""
+msgstr "السعر لكل مورد"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_config_pricelist
@@ -1006,9 +1162,17 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_double_validation
 msgid "Provide a double validation mechanism for purchases"
-msgstr ""
+msgstr "يوفر آلية الاعتماد المزدوج لأوامر الشراء"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_normal_action_puchased
+msgid "Purchasable Products"
+msgstr "المنتجات القابلة للشراء"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_procurement_management
 msgid "Purchase"
 msgstr "شراء"
@@ -1025,6 +1189,8 @@ msgid ""
 "purchase history and performance. From this menu you can track your "
 "negotiation performance, the delivery performance of your vendors, etc."
 msgstr ""
+"يسمح لك تحليل الشراء بالتحقق من تاريخ مشتريات وأداء مؤسستك وتحليلهما. من هذه"
+" القائمة، يمكنك تتبع أداء عملية المفاوضات وأداء تسليم مورديك، إلخ."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_lead
@@ -1049,12 +1215,12 @@ msgstr "أمر الشراء"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "Purchase Order Confirmation #"
-msgstr ""
+msgstr "تأكيد أمر الشراء #"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Purchase Order Fiscal Position"
-msgstr ""
+msgstr "الموقف الضريبي لأمر الشراء"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_purchase_order_line
@@ -1073,6 +1239,28 @@ msgid "Purchase Order Lines"
 msgstr "خطوط امر الشراءيقبل المورد امر الشراء"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_res_company_po_lock
+msgid "Purchase Order Modification"
+msgstr "تعديل أمر الشراء"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_lock
+msgid "Purchase Order Modification *"
+msgstr "تعديل أمر الشراء *"
+
+#. module: purchase
+#: model:ir.model.fields,help:purchase.field_purchase_config_settings_po_lock
+#: model:ir.model.fields,help:purchase.field_res_company_po_lock
+msgid ""
+"Purchase Order Modification used when you want to purchase order editable "
+"after confirm"
+msgstr ""
+"تعديل أمر الشراء المستخدم عندما ترغب في شراء أمر قابل للتحرير بعد تأكيده"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,name:purchase.purchase_form_action
 #: model:ir.model.fields,field_description:purchase.field_stock_picking_purchase_id
 #: model:ir.ui.menu,name:purchase.menu_purchase_form_action
@@ -1095,6 +1283,14 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+<<<<<<< HEAD
+=======
+msgid "Purchase orders that have been invoiced."
+msgstr "أوامر الشراء التي تم فوترتها"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Purchase orders that include lines not invoiced."
 msgstr "طلبات الشراء التي تحتوي على خطوط (أصناف) لم تفوتر."
 
@@ -1132,6 +1328,8 @@ msgid ""
 "Put an address if you want to deliver directly from the vendor to the "
 "customer. Otherwise, keep empty to deliver to your own company."
 msgstr ""
+"أضف عنوانًا إذا أردت أن يتم التسليم من المورد للعميل مباشرة. وإلا، اترك هذه "
+"الخانة فارغة ليتم التسليم إلى مؤسستك."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_product_qty
@@ -1199,7 +1397,7 @@ msgstr "الكمية المستلمة"
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_picking_count
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_picking_ids
 msgid "Receptions"
-msgstr ""
+msgstr "الاستلامات"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_tree
@@ -1226,6 +1424,8 @@ msgid ""
 "matching when you receive the products as this reference is usually written "
 "on the delivery order sent by your vendor."
 msgstr ""
+"رقم إشارة أمر البيع أو العطاء المرسل من المورد. تستخدم لإجراء المطابقة عند "
+"استلام المنتجات حسب يُذكر عادةً على أمر التسليم المرسل من المورد."
 
 #. module: purchase
 #: model:ir.actions.report.xml,name:purchase.report_purchase_quotation
@@ -1237,7 +1437,7 @@ msgstr "طلب التسعير"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "Request for Quotation #"
-msgstr ""
+msgstr "طلب شراء مبدئي #"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_rfq
@@ -1286,10 +1486,15 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
+<<<<<<< HEAD
 msgid ""
 "Set a purchase order as done if you don't want to receive vendor bills "
 "anymore for this purchase order."
 msgstr ""
+=======
+msgid "Set date to all order lines"
+msgstr "تعيين تاريخ لكافية بنود الأمر"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1304,7 +1509,7 @@ msgstr "الإعدادات"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Shipment"
-msgstr ""
+msgstr "الشحنة الواردة"
 
 #. module: purchase
 #: selection:purchase.config.settings,group_advance_purchase_requisition:0
@@ -1348,7 +1553,7 @@ msgstr "المجموع"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_partner_property_purchase_currency_id
 msgid "Supplier Currency"
-msgstr ""
+msgstr "العملة"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
@@ -1407,13 +1612,16 @@ msgid ""
 "control the receipt\n"
 "                    of the products and the vendor bill."
 msgstr ""
+"طلب عرض السعر هو أولى خطوات عملية تدفق المشتريات. بمجرد\n"
+"                    تحويله لأمر شراء، ستتمكن من التحكم بإيصال\n"
+"                    المنتجات وفواتير المورد."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_product_category_property_account_creditor_price_difference_categ
 msgid ""
 "This account will be used to value price difference between purchase price "
 "and accounting cost."
-msgstr ""
+msgstr "سيستخدم هذا الحساب لاحتساب الفرق بين سعر الشراء والتكلفة المحاسبية."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_product_product_property_account_creditor_price_difference
@@ -1424,13 +1632,59 @@ msgid ""
 msgstr "سوف يستخدم هذا الحساب لتفريق السعر بين قيمة سعر الشراء وسعر التكلفة."
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.purchase_order_form
+msgid "This changes the scheduled date of all order lines to the given date"
+msgstr "يغير هذا تاريخ جدولة كافة بنود الأمر للتاريخ المعطى"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:purchase.field_res_partner_property_purchase_currency_id
 msgid ""
 "This currency will be used, instead of the default one, for purchases from "
 "the current partner"
 msgstr ""
+"سيتم استخدام هذه العملة بدلًا من العملة الافتراضية لإتمام عمليات الشراء من "
+"الشريك الحالي"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "This note will be displayed on requests for quotation."
+msgstr ""
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:973
+#, python-format
+msgid ""
+"This purchase order has been created from: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
+msgstr ""
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:986
+#, python-format
+msgid ""
+"This purchase order has been modified from: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
+msgstr ""
+
+#. module: purchase
+#: code:addons/purchase/models/account_invoice.py:184
+#, python-format
+msgid "This vendor bill has been created from: %s"
+msgstr "تم إنشاء فاتورة هذا المورد من: %s"
+
+#. module: purchase
+#: code:addons/purchase/models/account_invoice.py:198
+#, python-format
+msgid "This vendor bill has been modified from: %s"
+msgstr "تم تعديل فاتورة هذا المورد بواسطة: %s"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
 msgid "This vendor has no purchase order. Click to create a new RfQ."
 msgstr ""
@@ -1505,6 +1759,19 @@ msgid "Units of Measure"
 msgstr "وحدة القياس"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.purchase_order_form
+msgid "Unlock"
+msgstr "إعادة الفتح"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.purchase_order_tree
 msgid "Untaxed"
 msgstr "معفي من الضريبة"
@@ -1527,6 +1794,10 @@ msgid ""
 "            and Odoo will fill the bill automatically according to ordered\n"
 "            or received quantities."
 msgstr ""
+"استخدم هذه القائمة للتحكم في الفواتير التي تتلقاها من\n"
+"            مورديك. عند تسجيل فاتورة جديدة، قم بإعداد أمر الشراء\n"
+"            وسيملأ أودو الفاتورة تلقائيًا حسب الكميات\n"
+"            المطلوبة أو المستلمة."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_form_action
@@ -1579,6 +1850,14 @@ msgid "Vendor Price"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
+msgid "Vendor Pricelists"
+msgstr "قوائم أسعار الموردين"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_partner_ref
 msgid "Vendor Reference"
 msgstr ""
@@ -1591,6 +1870,10 @@ msgid ""
 "                    you receive from your vendor according to the draft\n"
 "                    document in Odoo."
 msgstr ""
+"يمكن إنشاء فواتير الموردين مسبقًا حسب أوامر\n"
+"                    الشراء أو الإيصالات. ويسمح لك هذا بالتحكم في الفواتير\n"
+"                    التي تتلقاها من موردك وفقًا للمستند المسودة\n"
+"                    في أودو."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_volume
@@ -1599,8 +1882,13 @@ msgstr ""
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Waiting Invoices"
 msgstr ""
+=======
+msgid "Waiting Bills"
+msgstr "الفواتير في الانتظار"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_stock_warehouse
@@ -1626,6 +1914,8 @@ msgid ""
 "You can control the invoice from your vendor according to\n"
 "            what you purchased (services) or received (products)."
 msgstr ""
+"يمكنك التحكم في فاتورة موردك حسب ما\n"
+"            اشتريته (الخدمات) أو ما استلمته (المنتجات)."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased

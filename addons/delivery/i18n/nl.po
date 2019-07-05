@@ -3,12 +3,21 @@
 # * delivery
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
 # Volluta <volluta@tutanota.com>, 2017
 # Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
 # Eric Geens <ericgeens@yahoo.com>, 2017
 # Cas Vissers <casvissers@brahoo.nl>, 2017
+=======
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Eric Geens <ericgeens@yahoo.com>, 2016
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2016
+# Cas Vissers <casvissers@brahoo.nl>, 2016
+# Volluta <volluta@tutanota.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -296,7 +305,7 @@ msgstr "Aflever bericht"
 #: model:ir.model.fields,field_description:delivery.field_res_users_property_delivery_carrier_id
 #: model:ir.model.fields,field_description:delivery.field_sale_order_carrier_id
 msgid "Delivery Method"
-msgstr "Leveringsmethode"
+msgstr "Vervoersmethode"
 
 #. module: delivery
 #: model:ir.actions.act_window,name:delivery.action_delivery_carrier_form
@@ -913,6 +922,86 @@ msgid "Weight for Shipping"
 msgstr "Gewicht voor levering"
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_alert_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before an "
+"alert should be notified."
+msgstr ""
+"Wanneer een nieuw partijnummer wordt aangemaakt, is dit het het aantal dagen"
+" voordat een waarschuwing wordt gegeven."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_life_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods may become dangerous and must not be consumed."
+msgstr ""
+"Wanneer een nieuw partijnummer wordt aangemaakt, is dit het aantal dagen "
+"voordat de producten gevaarlijk zijn en niet meer mogen worden geconsumeerd."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_removal_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods should be removed from the stock."
+msgstr ""
+"Wanneer een nieuw partijnummer wordt aangemaakt, is dit het aantal dagen "
+"waarop de producten met dit partijnummer moeten worden verwijderd van de "
+"voorraad."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_use_time
+msgid ""
+"When a new a Serial Number is issued, this is the number of days before the "
+"goods starts deteriorating, without being dangerous yet."
+msgstr ""
+"Wanneer een nieuw partijnummer wordt aangemaakt, is dit het aantal dagen "
+"waarop de producten verminderen in kwaliteit, maar nog niet gevaarlijk zijn "
+"voor de volksgezondheid."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_account_input
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"incoming stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the source location. When not set on the "
+"product, the one from the product category is used."
+msgstr ""
+"Bij het uitvoeren van real-time voorraadwaardering, zullen tegenboekingen "
+"voor alle inkomende voorraad bewegingen worden geboekt op deze rekening, "
+"tenzij er een specifieke waardering rekening is ingesteld op de bronlocatie."
+" Dit is de standaardwaarde voor alle producten in deze categorie. Het kan "
+"ook direct worden ingesteld bij elk product"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_account_output
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"outgoing stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the destination location. When not set on "
+"the product, the one from the product category is used."
+msgstr ""
+"Bij het uitvoeren van real-time voorraadwaardering, zal de tegenpost voor "
+"alle uitgaande voorraadmutaties worden geboekt op deze rekening, tenzij er "
+"een specifieke waarderingsrekening is ingesteld op de bestemmingslocatie. "
+"Dit is de standaardwaarde voor alle producten in deze categorie. Het kan ook"
+" direct worden ingesteld bij een product"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_email_template_id
+msgid ""
+"When validating an invoice, an email will be sent to the customer based on "
+"this template. The customer will receive an email for each product linked to"
+" an email template."
+msgstr ""
+"Wanneer u een factuur bevestigd wordt er een e-mail verzonden naar de klant "
+"gebaseerd op het sjabloon. De klant ontvangt een e-mail voor elk product "
+"gekoppeld aan een e-mailsjabloon."
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:delivery.field_product_packaging_width
 msgid "Width"
 msgstr "Breedte"
@@ -945,8 +1034,8 @@ msgid ""
 "Your delivery method has no redirect on courier provider's website to track "
 "this order."
 msgstr ""
-"Uw leveringsmethode heeft geen doorverwijzing naar de website van de koerier"
-" om dit order te volgen."
+"Uw vervoersmethode heeft geen doorverwijzing naar de website van de koerier "
+"om dit order te volgen."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_zip_from

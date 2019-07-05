@@ -1,48 +1,97 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * rating
-#
+# 
 # Translators:
+# Martin Trigaux, 2018
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2018
+# Michael Yeung, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-10 09:29+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
+=======
+"POT-Creation-Date: 2016-09-29 14:00+0000\n"
+"PO-Revision-Date: 2016-09-29 14:00+0000\n"
+"Last-Translator: Michael Yeung, 2018\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: rating
+<<<<<<< HEAD
+#: model:ir.model.fields,help:rating.field_rating_rating_access_token
+msgid "Access token to set the rating of the value"
+msgstr ""
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid ""
+"<br/>\n"
+"                        on our services on \""
+msgstr ""
+"<br/>\n"
+"                        對我們的服務“"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">by </span>"
+msgstr "<span class=\"text-muted\">由 </span>"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">for </span>"
+msgstr "<span class=\"text-muted\">對於 </span>"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">on </span>"
+msgstr "<span class=\"text-muted\">在 </span>"
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_access_token
 msgid "Access token to set the rating of the value"
-msgstr ""
+msgstr "查看設定值來設定評分的值"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_message_id
 msgid ""
 "Associated message when posting a review. Mainly used in website addons."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "當發佈評論時的相關訊息，主要用在網站插件中"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_partner_id
 msgid "Author of the rating"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "該評分的作者"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_create_uid
 msgid "Created by"
-msgstr "建立者"
+msgstr "創建人"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_create_date
 msgid "Created on"
-msgstr "建立於"
+msgstr "創建時間"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_partner_id
@@ -64,22 +113,82 @@ msgstr "顯示名稱"
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_res_id
 msgid "Document ID"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "文件ID"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_res_model
 msgid "Document Model"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "文件模型"
+
+#. module: rating
+#: model:ir.model.fields,help:rating.field_rating_rating_consumed
+msgid "Enabled if the rating has been filled."
+msgstr "提交評分後該項為啟用。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_feedback
 msgid "Feedback reason"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "回饋理由"
+
+#. module: rating
+#: model:ir.model.fields,field_description:rating.field_rating_rating_consumed
+msgid "Filled Rating"
+msgstr "已填寫的評分"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "Go to our website"
+msgstr "轉到我們的網站"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Group By"
-msgstr "分組方式"
+msgstr "分組"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Happy"
+msgstr "快樂"
+
+#. module: rating
+#. openerp-web
+#: code:addons/rating/static/src/js/rating_common.js:26
+#, python-format
+msgid "I don't like it"
+msgstr "我不喜歡它"
+
+#. module: rating
+#. openerp-web
+#: code:addons/rating/static/src/js/rating_common.js:25
+#, python-format
+msgid "I hate it"
+msgstr "我討厭它"
+
+#. module: rating
+#. openerp-web
+#: code:addons/rating/static/src/js/rating_common.js:28
+#, python-format
+msgid "I like it"
+msgstr "我喜歡它"
+
+#. module: rating
+#. openerp-web
+#: code:addons/rating/static/src/js/rating_common.js:29
+#, python-format
+msgid "I love it"
+msgstr "我愛它"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -118,7 +227,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:rating.field_rating_mixin_id
 #: model:ir.model.fields,field_description:rating.field_rating_rating_id
 msgid "ID"
-msgstr "編號"
+msgstr "ID"
+
+#. module: rating
+#: model:ir.model.fields,help:rating.field_rating_rating_res_id
+msgid "Identifier of the rated object"
+msgstr "被評估對象的標識"
+
+#. module: rating
+#. openerp-web
+#: code:addons/rating/static/src/js/rating_common.js:27
+#, python-format
+msgid "It's okay"
+msgstr "沒有問題的!"
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_id
@@ -141,17 +262,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:rating.field_rating_mixin___last_update
 #: model:ir.model.fields,field_description:rating.field_rating_rating___last_update
 msgid "Last Modified on"
-msgstr "最後修改:"
+msgstr "最後修改日"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_write_uid
 msgid "Last Updated by"
-msgstr "最後更新："
+msgstr "最後更新人"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_write_date
 msgid "Last Updated on"
-msgstr "最後更新於"
+msgstr "最後更新時間"
+
+#. module: rating
+#: model:ir.model.fields,field_description:rating.field_rating_rating_message_id
+msgid "Linked message"
+msgstr "連結信息"
+
+#. module: rating
+#: model:ir.model.fields,help:rating.field_rating_rating_res_model
+msgid "Model name of the rated object"
+msgstr "被評估對象的模型名稱"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_message_id
@@ -170,18 +301,41 @@ msgstr "月"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+<<<<<<< HEAD
 msgid "Okay"
 msgstr ""
+=======
+msgid "My Ratings"
+msgstr "我的評分"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Okay"
+msgstr "Okay"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rated_partner_id
 msgid "Owner of the rated resource"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "被評估對象的所有人"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_rated_partner_id
 msgid "Rated Partner"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "已經被評分的業務夥伴"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Rated User"
+msgstr "已經被評分的使用者"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.actions.act_window,name:rating.action_view_rating
@@ -194,17 +348,35 @@ msgstr ""
 #: model:ir.model.fields,field_description:rating.field_rating_rating_rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Rating"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "評分"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_graph
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_pivot
 msgid "Rating Average"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "平均評分"
+
+#. module: rating
+#: model:ir.model.fields,field_description:rating.field_mail_channel_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_product_template_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_project_issue_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_project_task_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_rating_mixin_rating_last_value
+msgid "Rating Last Value"
+msgstr "最近的評價"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model,name:rating.model_rating_mixin
 msgid "Rating Mixin"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: rating
@@ -216,16 +388,51 @@ msgstr ""
 #: model:ir.model.fields,help:rating.field_rating_rating_rating
 msgid "Rating value"
 msgstr ""
+=======
+msgstr "混合評分"
+
+#. module: rating
+#: model:ir.model.fields,field_description:rating.field_mail_channel_rating_count
+#: model:ir.model.fields,field_description:rating.field_product_template_rating_count
+#: model:ir.model.fields,field_description:rating.field_project_issue_rating_count
+#: model:ir.model.fields,field_description:rating.field_project_task_rating_count
+#: model:ir.model.fields,field_description:rating.field_rating_mixin_rating_count
+msgid "Rating count"
+msgstr "評分數"
+
+#. module: rating
+#: sql_constraint:rating.rating:0
+msgid "Rating should be between 0 to 10"
+msgstr "評分應介於0-10之間"
+
+#. module: rating
+#: model:ir.model.fields,help:rating.field_mail_channel_rating_last_value
+#: model:ir.model.fields,help:rating.field_product_template_rating_last_value
+#: model:ir.model.fields,help:rating.field_project_issue_rating_last_value
+#: model:ir.model.fields,help:rating.field_project_task_rating_last_value
+#: model:ir.model.fields,help:rating.field_rating_mixin_rating_last_value
+#: model:ir.model.fields,help:rating.field_rating_rating_rating
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "評價： 0 = 不滿意，10 = 滿意"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Ratings"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "評分"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_feedback
 msgid "Reason of the rating"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "該評分的理由"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -236,6 +443,46 @@ msgstr "資源"
 #: model:ir.model.fields,field_description:rating.field_rating_rating_res_name
 msgid "Resource Name"
 msgstr "資源名稱"
+
+#. module: rating
+#: model:ir.model.fields,field_description:rating.field_rating_rating_access_token
+msgid "Security Token"
+msgstr "安全Token密鑰"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Send Feedback"
+msgstr "發送回饋"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Thanks! We appreciate your feedback."
+msgstr "謝謝！我們對您的回饋表示感激。"
+
+#. module: rating
+#: model:ir.model.fields,help:rating.field_rating_rating_res_name
+msgid "The name of the rated resource."
+msgstr "被評分對象的名字"
+
+#. module: rating
+#: model:ir.actions.act_window,help:rating.action_view_rating
+msgid "There is no rating for this object at the moment."
+msgstr "這個對象目前沒有評分"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Unhappy"
+msgstr "不快樂"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "We appreciate your feedback!"
+msgstr "感謝您的回饋！"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Would be great if you can provide more information:"
+msgstr "希望您能提供以下信息："
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -275,6 +522,7 @@ msgstr ""
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Year"
+<<<<<<< HEAD
 msgstr "年份"
 
 #. module: rating
@@ -287,3 +535,39 @@ msgstr ""
 #, python-format
 msgid "rated it"
 msgstr ""
+=======
+msgstr "年"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Your rating has been submitted."
+msgstr "您的評分已提交。"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "by"
+msgstr "by"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:21
+#, python-format
+msgid "highly dissatisfied"
+msgstr "非常不滿意"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:20
+#, python-format
+msgid "not satisfied"
+msgstr "不滿意"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:22
+#, python-format
+msgid "satisfied"
+msgstr "滿意"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "you are"
+msgstr "您是"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

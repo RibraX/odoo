@@ -3,10 +3,20 @@
 # * event_sale
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Jaroslav Helemik Nemec <nemec@helemik.cz>, 2016
+# xlu <xlu@seznam.cz>, 2016
+# Martin Trigaux, 2016
+# Michal Veselý <michal@veselyberanek.net>, 2018
+# trendspotter <j.podhorecky@volny.cz>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-05-14 11:47+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -16,6 +26,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
+"Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: code:addons/event_sale/models/event.py:170
@@ -32,7 +53,11 @@ msgstr "Použít"
 #: model:ir.model.fields,field_description:event_sale.field_product_product_asset_category_id
 #, fuzzy
 msgid "Asset Type"
+<<<<<<< HEAD
 msgstr "Typ události"
+=======
+msgstr "Typ aktiva"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_event_registration
@@ -42,24 +67,24 @@ msgstr "Účastník"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_availability
 msgid "Available Seat"
-msgstr ""
+msgstr "Dostupné místo"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_available
 msgid "Available Seats"
-msgstr ""
+msgstr "dostupná místa"
 
 #. module: event_sale
 #: model:ir.ui.view,arch_db:event_sale.view_event_registration_editor_form
 msgid "Before confirming"
-msgstr ""
+msgstr "Před potvrzením"
 
 #. module: event_sale
 #: model:ir.model.fields,help:event_sale.field_sale_order_line_event_id
 msgid ""
 "Choose an event and it will automatically create a registration for this "
 "event."
-msgstr ""
+msgstr "Vyberte událost a to automaticky vytvoří registraci pro tuto událost."
 
 #. module: event_sale
 #: model:ir.model.fields,help:event_sale.field_sale_order_line_event_ticket_id
@@ -100,6 +125,9 @@ msgid ""
 "you will not be able to sell tickets anymore. Set 0 to ignore this rule set "
 "as unlimited."
 msgstr ""
+"Definujte počet dostupných vstupenek. Pokud máte příliš mnoho registrací, "
+"vstupenky již nebudete moci prodávat. Nastavte 0, chcete-li toto pravidlo "
+"ignorovat jako neomezené."
 
 #. module: event_sale
 #: model:ir.model.fields,help:event_sale.field_product_product_event_ok
@@ -135,17 +163,33 @@ msgid "Event"
 msgstr "Událost"
 
 #. module: event_sale
+<<<<<<< HEAD
 #: model:ir.actions.act_window,name:event_sale.action_sale_order_event_registration
 msgid "Event Registrations"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:event_sale.event_ticket_form_view
+msgid "Event Name"
+msgstr "Název události"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_product_product_event_ok
 #: model:ir.model.fields,field_description:event_sale.field_product_template_event_ok
 #: model:product.product,name:event_sale.product_product_event
 #: model:product.template,name:event_sale.product_product_event_product_template
+<<<<<<< HEAD
 msgid "Event Subscription"
 msgstr ""
+=======
+msgid "Event Registration"
+msgstr "Registrace události"
+
+#. module: event_sale
+#: model:ir.actions.act_window,name:event_sale.action_sale_order_event_registration
+msgid "Event Registrations"
+msgstr "Registrace na akci"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_event_event_ticket
@@ -154,7 +198,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_event_ticket_id
 #: model:ir.model.fields,field_description:event_sale.field_sale_order_line_event_ticket_id
 msgid "Event Ticket"
-msgstr ""
+msgstr "Vstupenka na akci"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_product_product_event_ticket_ids
@@ -187,7 +231,7 @@ msgstr "ID"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_is_expired
 msgid "Is Expired"
-msgstr ""
+msgstr "vypršelo"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket___last_update
@@ -213,12 +257,12 @@ msgstr "Naposled upraveno"
 #. module: event_sale
 #: selection:event.event.ticket,seats_availability:0
 msgid "Limited"
-msgstr ""
+msgstr "Omezeno"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_max
 msgid "Maximum Available Seats"
-msgstr ""
+msgstr "Maximum dostupných míst"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_name
@@ -236,7 +280,7 @@ msgstr ""
 #: code:addons/event_sale/models/event.py:153
 #, python-format
 msgid "No more available seats for this ticket"
-msgstr ""
+msgstr "Pro tuto vstupenku již nejsou k dispozici žádná další místa"
 
 #. module: event_sale
 #: model:product.product,name:event_sale.event_0_product
@@ -252,7 +296,7 @@ msgstr "Původ"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_registration_id
 msgid "Original Registration"
-msgstr ""
+msgstr "Původní registrace"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_phone
@@ -267,7 +311,7 @@ msgstr "Cena"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_price_reduce
 msgid "Price Reduce"
-msgstr ""
+msgstr "Snížená cena"
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_product_product
@@ -298,12 +342,12 @@ msgstr ""
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_reserved
 msgid "Reserved Seats"
-msgstr ""
+msgstr "Rezervovaná místa"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_sale_order_id
 msgid "Sale Order"
-msgstr ""
+msgstr "Prodejní objednávka"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_registration_sale_order_line_id
@@ -314,7 +358,7 @@ msgstr ""
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_deadline
 msgid "Sales End"
-msgstr ""
+msgstr "Konec prodeje"
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_sale_order
@@ -381,12 +425,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:event_sale.event_event_report_template_badge
 #: model:ir.ui.view,arch_db:event_sale.view_event_registration_ticket_search
 msgid "Ticket Type"
-msgstr ""
+msgstr "Typ vstupenky"
 
 #. module: event_sale
 #: model:ir.ui.view,arch_db:event_sale.view_event_form_inherit_ticket
 msgid "Tickets"
-msgstr ""
+msgstr "Vstupenky"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_product_product_event_type_id
@@ -397,7 +441,7 @@ msgstr ""
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_unconfirmed
 msgid "Unconfirmed Seat Reservations"
-msgstr ""
+msgstr "Nepotvrzené rezervace místa"
 
 #. module: event_sale
 #: selection:event.event.ticket,seats_availability:0
@@ -409,7 +453,7 @@ msgstr "Neomezeno"
 #: model:event.event.ticket,name:event_sale.event_2_ticket_2
 #: model:event.event.ticket,name:event_sale.event_3_ticket_2
 msgid "VIP"
-msgstr ""
+msgstr "VIP"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_sale_order_line_event_ok
@@ -419,7 +463,7 @@ msgstr ""
 #. module: event_sale
 #: model:ir.ui.view,arch_db:event_sale.view_event_registration_editor_form
 msgid "please give details about the registrations"
-msgstr ""
+msgstr "uveďte podrobnosti o registraci"
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_registration_editor

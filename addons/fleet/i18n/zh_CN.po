@@ -3,6 +3,7 @@
 # * fleet
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Xu Lei <xulei8@qq.com>, 2017
 # Jeffery CHEN <jeffery9@gmail.com>, 2017
@@ -15,13 +16,27 @@
 # 苏州远鼎 <tiexinliu@126.com>, 2017
 # waveyeung <waveyeung@qq.com>, 2017
 # Yaorong Li <55yaorong.li@gmail.com>, 2017
+=======
+# Bo Cao, 2017
+# Martin Trigaux, 2017
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2017
+# e2f <projects@e2f.com>, 2018
+# liAnGjiA <liangjia@qq.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:54+0000\n"
 "PO-Revision-Date: 2017-09-20 09:54+0000\n"
 "Last-Translator: Yaorong Li <55yaorong.li@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:28+0000\n"
+"PO-Revision-Date: 2016-09-07 09:19+0000\n"
+"Last-Translator: liAnGjiA <liangjia@qq.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,8 +53,13 @@ msgstr "%s %s已添加到车队"
 #. module: fleet
 #: code:addons/fleet/models/fleet_vehicle_cost.py:274
 #, python-format
+<<<<<<< HEAD
 msgid "%s contract(s) will expire soon and should be renewed and/or closed!"
 msgstr ""
+=======
+msgid "%s contract(s) need(s) to be renewed and/or closed!"
+msgstr "%s 合同，需续订或关闭！"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_view_form
@@ -256,7 +276,7 @@ msgstr "点击创建一个新标签"
 #. module: fleet
 #: model:ir.actions.act_window,help:fleet.fleet_vehicle_log_contract_action
 msgid "Click to create a new contract."
-msgstr "点击创建一个新的合约"
+msgstr "点击创建一个新的合同"
 
 #. module: fleet
 #: model:ir.actions.act_window,help:fleet.fleet_vehicle_costs_action
@@ -356,7 +376,7 @@ msgstr "配置"
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_log_fuel_contract_id
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_log_services_contract_id
 msgid "Contract"
-msgstr "合约"
+msgstr "合同"
 
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_log_contract_view_graph
@@ -400,7 +420,7 @@ msgstr "合同细节"
 #. module: fleet
 #: model:ir.model,name:fleet.model_fleet_vehicle_log_contract
 msgid "Contract information on a vehicle"
-msgstr "车辆的合约信息"
+msgstr "车辆的合同信息"
 
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_log_contract_view_form
@@ -423,7 +443,7 @@ msgstr "承包人"
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_log_contracts
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_view_form
 msgid "Contracts"
-msgstr "合约"
+msgstr "合同"
 
 #. module: fleet
 #: model:fleet.vehicle.tag,name:fleet.vehicle_tag_convertible
@@ -500,7 +520,7 @@ msgstr "每月的费用"
 msgid ""
 "Costs paid at regular intervals, depending on the cost frequency.If the cost"
 " frequency is set to unique, the cost will be logged at the start date"
-msgstr ""
+msgstr "定期支付费用，这取决于成本的频率。如果成本频率被设置为唯一的，其成本将被记录在开始日期内。"
 
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_log_contract_view_form
@@ -824,7 +844,7 @@ msgstr "有警告"
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_contract_renewal_overdue
 msgid "Has Contracts Overdue"
-msgstr "有逾期合约"
+msgstr "有逾期合同"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_contract_renewal_due_soon
@@ -1061,7 +1081,7 @@ msgstr "车牌：从'%s'到'%s'"
 #. module: fleet
 #: model:ir.model.fields,help:fleet.field_fleet_vehicle_license_plate
 msgid "License plate number of the vehicle (i = plate number for a car)"
-msgstr ""
+msgstr "车辆的牌照号码（i = 汽车车牌号）"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_log_fuel_liter
@@ -1084,7 +1104,7 @@ msgstr "车辆的位置（车库，...）"
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_model_brand_image
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_model_image
 msgid "Logo"
-msgstr "徽标"
+msgstr "Logo"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_image_medium
@@ -1362,8 +1382,13 @@ msgstr "Odoo能帮你管理不同车辆的费用.费用从服务，合同中产�
 #: model:ir.actions.act_window,help:fleet.fleet_vehicle_action
 msgid ""
 "Odoo will warn you when services or contract have to be\n"
+<<<<<<< HEAD
 "            renewed."
 msgstr ""
+=======
+"                renewed."
+msgstr "当服务和合同必须更新时，Odoo会提醒你。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_31
@@ -1425,7 +1450,7 @@ msgstr "对这次的上一级费用成本"
 #. module: fleet
 #: model:ir.model.fields,help:fleet.field_fleet_vehicle_log_contract_purchaser_id
 msgid "Person to which the contract is signed for"
-msgstr "该合约的签署人"
+msgstr "该合同的签署人"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_power
@@ -1457,7 +1482,11 @@ msgstr "价格"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_log_fuel_price_per_liter
+<<<<<<< HEAD
 msgid "Price Per Liter"
+=======
+msgid "Price per liter"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr "每公升价格"
 
 #. module: fleet
@@ -1775,7 +1804,7 @@ msgstr "费用总计(不含税)"
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle_contract_renewal_total
 msgid "Total of contracts due or overdue minus one"
-msgstr "截止或者逾期减一的合约总计"
+msgstr "截止或者逾期减一的合同总计"
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_service_18
@@ -2018,12 +2047,12 @@ msgstr "更换雨刷"
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_log_contract_view_form
 msgid "Write here all other information relative to this contract"
-msgstr "与该合约相关的所有其它信息写于此处。"
+msgstr "与该合同相关的所有其它信息写于此处。"
 
 #. module: fleet
 #: model:ir.model.fields,help:fleet.field_fleet_vehicle_log_contract_notes
 msgid "Write here all supplementary information relative to this contract"
-msgstr ""
+msgstr "在此处输入与此合同相关的所有补充信息"
 
 #. module: fleet
 #: model:ir.ui.view,arch_db:fleet.fleet_vehicle_log_fuel_view_form

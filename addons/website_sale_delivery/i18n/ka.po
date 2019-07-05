@@ -1,25 +1,34 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * website_sale_delivery
-#
+# 
 # Translators:
-#, fuzzy
+# Giorgi Melitauri <gmelitauri@live.com>, 2018
+# Martin Trigaux, 2018
+# Temur, 2018
+# Gvantsa Gvinianidze <gvantsa@live.com>, 2019
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2015-09-08 10:54+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Georgian (http://www.transifex.com/odoo/odoo-9/language/ka/)\n"
 "Language: ka\n"
+=======
+"POT-Creation-Date: 2016-09-19 12:36+0000\n"
+"PO-Revision-Date: 2016-09-07 09:34+0000\n"
+"Last-Translator: Gvantsa Gvinianidze <gvantsa@live.com>, 2019\n"
+"Language-Team: Georgian (https://www.transifex.com/odoo/teams/41243/ka/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"#-#-#-#-#  ka.po (Odoo 9.0)  #-#-#-#-#\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"#-#-#-#-#  ka.po (Odoo 9.0)  #-#-#-#-#\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #. module: website_sale_delivery
 #: model:ir.ui.view,arch_db:website_sale_delivery.cart_delivery
@@ -29,6 +38,25 @@ msgid ""
 msgstr ""
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_description
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr ""
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
+msgid ""
+"Accessories show up when the customer reviews the cart before paying (cross-"
+"sell strategy, e.g. for computers: mouse, keyboard, etc.). An algorithm "
+"figures out a list of accessories based on all the products added to cart."
+msgstr ""
+
+#. module: website_sale_delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_accessory_product_ids
 msgid "Accessory Products"
 msgstr ""
@@ -39,9 +67,15 @@ msgid "Appear on the product page"
 msgstr "წარმოდგენილია პროდუქტის გვერდზე"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
 msgid "Appear on the shopping cart"
 msgstr "წარმოდგენილია კალათაში"
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_availability
+msgid "Availability"
+msgstr "ხელმისაწვდომობა"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_available_in_pos
@@ -70,9 +104,15 @@ msgid "Choose your Delivery Method"
 msgstr ""
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale_delivery.country_state_shipping
 msgid "Country..."
 msgstr "ქვეყანა..."
+=======
+#: model:ir.model,name:website_sale_delivery.model_res_country
+msgid "Country"
+msgstr "ქვეყანა"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_project_id
@@ -122,7 +162,7 @@ msgstr ""
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_attachment_count
 msgid "File"
-msgstr ""
+msgstr "ფაილი"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_sale_order_has_delivery
@@ -158,8 +198,8 @@ msgstr ""
 #: code:addons/website_sale_delivery/models/sale_order.py:138
 #, python-format
 msgid ""
-"No shipping method is available for your current order and shipping address. "
-"Please contact us for more information."
+"No shipping method is available for your current order and shipping address."
+" Please contact us for more information."
 msgstr ""
 
 #. module: website_sale_delivery
@@ -178,6 +218,7 @@ msgid "Procurement"
 msgstr ""
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_optional_product_ids
 msgid "Products to propose when add to cart."
 msgstr ""
@@ -191,11 +232,16 @@ msgstr "პროექტი"
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_purchase_line_warn
 msgid "Purchase Order Line"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_search_inherit_website_sale_delivery
+msgid "Published"
+msgstr "გამოქვეყნებულია"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_ids
 msgid "Rating"
-msgstr ""
+msgstr "შეფასება"
 
 #. module: website_sale_delivery
 #: model:ir.model,name:website_sale_delivery.model_sale_order

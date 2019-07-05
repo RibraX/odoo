@@ -55,9 +55,11 @@ class MigrationManager(object):
         function. Theses files must respect a directory tree structure: A 'migrations' folder
         which containt a folder by version. Version can be 'module' version or 'server.module'
         version (in this case, the files will only be processed by this version of the server).
-        Python file names must start by `pre` or `post` and will be executed, respectively,
-        before and after the module initialisation. `end` scripts are run after all modules have
+        Python file names must start by `pre-` or `post-` and will be executed, respectively,
+        before and after the module initialisation. `end-` scripts are run after all modules have
         been updated.
+        A special folder named `0.0.0` can contain scripts that will be run on any version change.
+        In `pre` stage, `0.0.0` scripts are run first, while in `post` and `end`, they are run last.
         Example:
             <moduledir>
             `-- migrations
@@ -70,6 +72,8 @@ class MigrationManager(object):
                 |-- 9.0.1.1                             # processed only on a 9.0 server
                 |   |-- pre-delete_table_z.py
                 |   `-- post-clean-data.py
+                |-- 0.0.0
+                |   `-- end-invariants.py               # processed on all version update
                 `-- foo.py                              # not processed
     """
 
@@ -116,13 +120,30 @@ class MigrationManager(object):
                 return version  # the version number already containt the server version
             return "%s.%s" % (release.major_version, version)
 
+<<<<<<< HEAD
         def _get_migration_versions(pkg):
             versions = sorted({
+=======
+        def _get_migration_versions(pkg, stage):
+            versions = list(set(
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                 ver
                 for lv in self.migrations[pkg.name].values()
                 for ver, lf in lv.items()
                 if lf
+<<<<<<< HEAD
             }, key=lambda k: parse_version(convert_version(k)))
+=======
+            ))
+            versions.sort(key=lambda k: parse_version(convert_version(k)))
+            if "0.0.0" in versions:
+                # reorder versions
+                versions.remove("0.0.0")
+                if stage == "pre":
+                    versions.insert(0, "0.0.0")
+                else:
+                    versions.append("0.0.0")
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             return versions
 
         def _get_migration_files(pkg, version, stage):
@@ -145,13 +166,15 @@ class MigrationManager(object):
             lst.sort()
             return lst
 
-        parsed_installed_version = parse_version(getattr(pkg, 'load_version', pkg.installed_version) or '')
+        installed_version = getattr(pkg, 'load_version', pkg.installed_version) or ''
+        parsed_installed_version = parse_version(installed_version)
         current_version = parse_version(convert_version(pkg.data['version']))
 
-        versions = _get_migration_versions(pkg)
+        versions = _get_migration_versions(pkg, stage)
 
         for version in versions:
-            if parsed_installed_version < parse_version(convert_version(version)) <= current_version:
+            if ((version == "0.0.0" and parsed_installed_version < current_version)
+               or parsed_installed_version < parse_version(convert_version(version)) <= current_version):
 
                 strfmt = {'addon': pkg.name,
                           'stage': stage,
@@ -164,6 +187,7 @@ class MigrationManager(object):
                         continue
                     mod = None
                     try:
+<<<<<<< HEAD
                         mod = load_script(pyfile, name)
                         _logger.info('module %(addon)s: Running migration %(version)s %(name)s' % dict(strfmt, name=mod.__name__))
                         migrate = mod.migrate
@@ -174,6 +198,27 @@ class MigrationManager(object):
                         _logger.error('module %(addon)s: Each %(stage)s-migration file must have a "migrate(cr, installed_version)" function' % strfmt)
                     else:
                         migrate(self.cr, pkg.installed_version)
+=======
+                        fp, fname = tools.file_open(pyfile, pathinfo=True)
+
+                        if not isinstance(fp, file):
+                            # imp.load_source need a real file object, so we create
+                            # one from the file-like object we get from file_open
+                            fp2 = os.tmpfile()
+                            fp2.write(fp.read())
+                            fp2.seek(0)
+                        try:
+                            mod = imp.load_source(name, fname, fp2 or fp)
+                            _logger.info('module %(addon)s: Running migration %(version)s %(name)s' % dict(strfmt, name=mod.__name__))
+                            migrate = mod.migrate
+                        except ImportError:
+                            _logger.exception('module %(addon)s: Unable to load %(stage)s-migration file %(file)s' % dict(strfmt, file=pyfile))
+                            raise
+                        except AttributeError:
+                            _logger.error('module %(addon)s: Each %(stage)s-migration file must have a "migrate(cr, installed_version)" function' % strfmt)
+                        else:
+                            migrate(self.cr, installed_version)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                     finally:
                         if mod:
                             del mod

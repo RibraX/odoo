@@ -441,7 +441,9 @@ class GoogleCalendar(models.AbstractModel):
                 if google_attendee.get('found'):
                     continue
 
-                attendee = ResPartner.search([('email', '=', google_attendee['email'])], limit=1)
+                attendee = ResPartner.search([('email', '=ilike', google_attendee['email']), ('user_ids', '!=', False)], limit=1)
+                if not attendee:
+                    attendee = ResPartner.search([('email', '=ilike', google_attendee['email'])], limit=1)
                 if not attendee:
                     data = {
                         'email': partner_email,
@@ -842,7 +844,11 @@ class GoogleCalendar(models.AbstractModel):
                         try:
                             # if already deleted from gmail or never created
                             recs.delete_an_event(current_event[0])
+<<<<<<< HEAD
                         except Exception as e:
+=======
+                        except urllib2.HTTPError, e:
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                             if e.code in (401, 410,):
                                 pass
                             else:
@@ -919,8 +925,13 @@ class GoogleCalendar(models.AbstractModel):
         self.env.user.sudo().write(vals)
 
     def get_minTime(self):
+<<<<<<< HEAD
         number_of_week = self.env['ir.config_parameter'].sudo().get_param('calendar.week_synchro', default=13)
         return datetime.now() - timedelta(weeks=number_of_week)
+=======
+        number_of_week = self.env['ir.config_parameter'].get_param('calendar.week_synchro', default=13)
+        return datetime.now() - timedelta(weeks=int(number_of_week))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     def get_need_synchro_attendee(self):
         return self.env['ir.config_parameter'].sudo().get_param('calendar.block_synchro_attendee', default=True)

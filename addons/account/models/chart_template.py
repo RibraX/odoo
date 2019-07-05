@@ -40,8 +40,14 @@ def migrate_tags_on_taxes(cr, registry):
             ('type_tax_use', '=', tax_template.type_tax_use),
             ('description', '=', tax_template.description)
         ])
-        if len(tax_id.ids) == 1:
-            tax_id.sudo().write({'tag_ids': [(6, 0, tax_template.tag_ids.ids)]})
+        tax_id.sudo().write({'tag_ids': [(6, 0, tax_template.tag_ids.ids)]})
+
+def preserve_existing_tags_on_taxes(cr, registry, module):
+    ''' This is a utility function used to preserve existing previous tags during upgrade of the module.'''
+    env = api.Environment(cr, SUPERUSER_ID, {})
+    xml_records = env['ir.model.data'].search([('model', '=', 'account.account.tag'), ('module', 'like', module)])
+    if xml_records:
+        cr.execute("update ir_model_data set noupdate = 't' where id in %s", [tuple(xml_records.ids)])
 
 
 #  ---------------------------------------------------------------
@@ -285,7 +291,8 @@ class AccountChartTemplate(models.Model):
             tmp1, tmp2 = self.parent_id._install_template(company, code_digits=code_digits, transfer_account_id=transfer_account_id, acc_ref=acc_ref, taxes_ref=taxes_ref)
             acc_ref.update(tmp1)
             taxes_ref.update(tmp2)
-        tmp1, tmp2 = self._load_template(company, code_digits=code_digits, transfer_account_id=transfer_account_id, account_ref=acc_ref, taxes_ref=taxes_ref)
+        # Ensure, even if individually, that everything is translated according to the company's language.
+        tmp1, tmp2 = self.with_context(lang=company.partner_id.lang)._load_template(company, code_digits=code_digits, transfer_account_id=transfer_account_id, account_ref=acc_ref, taxes_ref=taxes_ref)
         acc_ref.update(tmp1)
         taxes_ref.update(tmp2)
         return acc_ref, taxes_ref
@@ -851,6 +858,16 @@ class WizardMultiChartsAccounts(models.TransientModel):
         all the provided information to create the accounts, the banks, the journals, the taxes, the
         accounting properties... accordingly for the chosen company.
         '''
+<<<<<<< HEAD
+=======
+        # Ensure everything is translated consitingly to the company's language, not the user's one.
+        self = self.with_context(lang=self.company_id.partner_id.lang)
+        if len(self.env['account.account'].search([('company_id', '=', self.company_id.id)])) > 0:
+            # We are in a case where we already have some accounts existing, meaning that user has probably
+            # created its own accounts and does not need a coa, so skip installation of coa.
+            _logger.info('Could not install chart of account since some accounts already exists for the company (%s)', (self.company_id.id,))
+            return {}
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         if not self.env.user._is_admin():
             raise AccessError(_("Only administrators can change the settings"))
 

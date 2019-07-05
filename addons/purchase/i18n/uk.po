@@ -3,27 +3,46 @@
 # * purchase
 # 
 # Translators:
+<<<<<<< HEAD
 # Bohdan Lisnenko <lem8r.ka11a@gmail.com>, 2017
 # ТАрас <tratatuta@i.ua>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Yaroslav Molochko <onorua@gmail.com>, 2017
+=======
+# Yaroslav Molochko <onorua@gmail.com>, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Martin Trigaux, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # Анатолій Пономаренко <aponomarenko020@gmail.com>, 2017
 # Zoriana Zaiats <sorenabell@quintagroup.com>, 2017
 # Анатолій Пономаренко <Ponomarenkoa@minfin.gov.ua>, 2017
+<<<<<<< HEAD
 # Евгений Жердев <e.v.zherdev@gmail.com>, 2017
+=======
+# Олександр Воронюк <pactallc@gmail.com>, 2017
+# Bohdan Lisnenko, 2017
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Евгений Жердев <e.v.zherdev@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. module: purchase
 #: model:mail.template,body_html:purchase.email_template_edi_purchase
@@ -55,6 +74,27 @@ msgid ""
 "% endif\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>Шановний\n"
+"% if object.partner_id.is_company and object.child_ids:\n"
+"    ${object.partner_id.child_ids[0].name}\n"
+"% else :\n"
+"    ${object.partner_id.name}\n"
+"% endif\n"
+",</p><p>\n"
+"Тут є ${object.state in ('draft', 'sent') and 'request for quotation' or 'purchase order confirmation'} <strong>${object.name}</strong>\n"
+"% if object.partner_ref:\n"
+"    з посиланням: ${object.partner_ref}\n"
+"% endif\n"
+"% if object.origin:\n"
+"    (RFQ origin: ${object.origin})\n"
+"% endif\n"
+"в сумі <strong>${object.amount_total} ${object.currency_id.name}</strong>\n"
+"з ${object.company_id.name}.\n"
+"</p>\n"
+"\n"
+"<p>Якщо у вас є запитання, не соромтеся зконтактувати з нами.</p>\n"
+"<p>З найкращими побажаннями,</p>\n"
 
 #. module: purchase
 #: model:mail.template,body_html:purchase.email_template_edi_purchase_done
@@ -80,9 +120,44 @@ msgid ""
 "<p>You can reply to this email if you have any questions.</p>\n"
 "<p>Thank you,</p>\n"
 msgstr ""
+"\n"
+"<p>Шановний ${object.partner_id.name} \n"
+"% if object.partner_id.parent_id:\n"
+"    (<i>${object.partner_id.parent_id.name}</i>)\n"
+"% endif\n"
+",</p>\n"
+"<p>\n"
+"Будь ласка, знайдіть у вкладці <strong>${object.state in ('draft', 'sent') та 'відповідь на комерційну пропозицію' або 'підтвердження замовлення на закупівлю'} ${object.name}</strong>\n"
+"% if object.partner_ref:\n"
+"    з посиланням: ${object.partner_ref}\n"
+"% endif\n"
+"% if object.origin:\n"
+"    (RFQ origin: ${object.origin})\n"
+"% endif\n"
+"сумування <strong>${object.amount_total} ${object.currency_id.name}</strong>\n"
+"з ${object.company_id.name}.\n"
+"</p>\n"
+"\n"
+"<p>Ви можете відповісти на цей лист, якщо у вас є запитання.</p>\n"
+"<p>Дякуємо,</p>\n"
 
 #. module: purchase
+<<<<<<< HEAD
 #: code:addons/purchase/models/stock.py:79
+=======
+#: model:ir.model.fields,help:purchase.field_purchase_config_settings_module_stock_dropshipping
+msgid ""
+"\n"
+"Creates the dropship Route and add more complex tests\n"
+"-This installs the module stock_dropshipping."
+msgstr ""
+"\n"
+"Створює маршрут дропшипінгу і додає більш складні тести\n"
+"-Це встановлює модуль stock_dropshipping."
+
+#. module: purchase
+#: code:addons/purchase/models/stock.py:87
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid " Buy"
 msgstr " Купити"
@@ -102,7 +177,7 @@ msgstr "К-сть рахунків постачальників"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_count
 msgid "# of Bills"
-msgstr ""
+msgstr "# рахунків"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_nbr_lines
@@ -318,7 +393,7 @@ msgstr ""
 #. module: purchase
 #: model:res.groups,name:purchase.group_warning_purchase
 msgid "A warning can be set on a product or a customer (Purchase)"
-msgstr ""
+msgstr "Застереження може бути встановлене для продукту або клієнта (Купівля)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_account_invoice_purchase_id
@@ -326,15 +401,27 @@ msgid "Add Purchase Order"
 msgstr "Додати замовлення на купівлю"
 
 #. module: purchase
+<<<<<<< HEAD
 #: code:addons/purchase/controllers/portal.py:53
 #, python-format
 msgid "All"
 msgstr "Всі"
+=======
+#: selection:purchase.config.settings,group_warning_purchase:0
+msgid "All the products and the customers can be used in purchase orders"
+msgstr ""
+"Усі продукти та клієнти можуть бути використані в замовленнях на купівлю"
+
+#. module: purchase
+#: selection:purchase.config.settings,module_stock_dropshipping:0
+msgid "Allow suppliers to deliver directly to your customers"
+msgstr "Дозволити постачальникам робити доставку напряму до ваших клієнтів"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:res.company,po_lock:0
 msgid "Allow to edit purchase orders"
-msgstr ""
+msgstr "Дозволити редагувати замовлення на купівлю"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_account
@@ -399,7 +486,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
 msgid "Bill Lines"
-msgstr ""
+msgstr "Рядки рахунку"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
@@ -407,14 +494,21 @@ msgid "Billed Qty"
 msgstr "К-сть в рахунку"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "Billed Quantity:"
 msgstr ""
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
+msgstr "Оплачена кількість"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
 msgid "Billing Status"
-msgstr ""
+msgstr "Статус оплати постачальникам"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
@@ -424,7 +518,7 @@ msgstr "Рахунки"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Bills Received"
-msgstr ""
+msgstr "Отримані рахунки"
 
 #. module: purchase
 #: selection:product.template,purchase_line_warn:0
@@ -465,6 +559,8 @@ msgid ""
 "product if you directly do a Request for Quotation to one vendor or if you "
 "want a Call for Tenders to compare offers from several vendors."
 msgstr ""
+"Запити на участь у тендерах використовуються, коли ви хочете створити запити для комерційних пропозицій декільком постачальникам для певного набору товарів. Ви можете налаштувати для кожного товару, \n"
+"якщо ви безпосередньо робите запит на комерційну пропозицію одному продавцеві або якщо ви хочете, щоб запрошення до участі в тендері порівнював пропозиції від кількох постачальників."
 
 #. module: purchase
 #: code:addons/purchase/models/stock.py:76
@@ -511,7 +607,7 @@ msgstr "Натисніть, щоб створити запит комерцій�
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.action_invoice_pending
 msgid "Click to create a vendor bill."
-msgstr ""
+msgstr "Натисніть, щоб створити рахунок постачальника."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -528,7 +624,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_commercial_partner_id
 msgid "Commercial Entity"
-msgstr "Перспективний"
+msgstr "Юридична особа"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_res_company
@@ -572,7 +668,7 @@ msgstr "Підтвердити замовлення на купівлю за о�
 #. module: purchase
 #: selection:res.company,po_lock:0
 msgid "Confirmed purchase orders are not editable"
-msgstr ""
+msgstr "Підтвердження замовлення на купівлю не можна редагувати"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_res_partner
@@ -697,9 +793,15 @@ msgid "Double validation amount"
 msgstr "Сума подвійного затвердження"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_move_dest_ids
 msgid "Downstream Moves"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_double_validation_amount
+msgid "Double validation amount *"
+msgstr "Сума подвійного завтердження *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.report,state:0
@@ -744,7 +846,7 @@ msgstr "Розширені фільтри"
 #: code:addons/purchase/models/purchase.py:577
 #, python-format
 msgid "Extra line with %s "
-msgstr ""
+msgstr "Окремий рядок з %s "
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
@@ -869,8 +971,13 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_is_shipped
+<<<<<<< HEAD
 msgid "Is Shipped"
 msgstr ""
+=======
+msgid "Is shipped"
+msgstr "Поставлено"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order___last_update
@@ -904,12 +1011,12 @@ msgstr "Рівнів підтвердження"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_po_double_validation
 msgid "Levels of Approvals *"
-msgstr ""
+msgstr "Рівні підтвердження *"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Lock"
-msgstr ""
+msgstr "Заблокувати"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_lock_confirmed_po
@@ -921,7 +1028,7 @@ msgstr ""
 #: selection:purchase.order,state:0
 #, python-format
 msgid "Locked"
-msgstr ""
+msgstr "Заблокований"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -1076,7 +1183,7 @@ msgstr "Примітки"
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
 msgid "Nothing to Bill"
-msgstr ""
+msgstr "Немає нічого для рахунку"
 
 #. module: purchase
 #: selection:product.template,purchase_method:0
@@ -1090,6 +1197,8 @@ msgid ""
 "On ordered quantities: control bills based on ordered quantities.\n"
 "On received quantities: control bills based on received quantity."
 msgstr ""
+"За замовленою кількістю: контрольні рахунки на основі замовлених кількостей.\n"
+"На отриманих кількостях: контрольні рахунки на основі отриманої кількості."
 
 #. module: purchase
 #: selection:product.template,purchase_method:0
@@ -1284,6 +1393,14 @@ msgid "Provide a double validation mechanism for purchases"
 msgstr "Використовувати механізм подвійного підтвердження для закупівель."
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_normal_action_puchased
+msgid "Purchasable Products"
+msgstr "Купівельні товари"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_procurement_management
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Purchase"
@@ -1317,9 +1434,15 @@ msgid "Purchase Analytics"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Purchase Bills"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_lead
+msgid "Purchase Lead Time *"
+msgstr "Час виконання купівлі *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_lead
@@ -1375,12 +1498,12 @@ msgstr "Рядки замовлення на купівлю"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_lock
 msgid "Purchase Order Modification"
-msgstr ""
+msgstr "Редагування замовлення на купівлю"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_po_lock
 msgid "Purchase Order Modification *"
-msgstr ""
+msgstr "Редагування замовлення на купівлю *"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_lock
@@ -1389,6 +1512,8 @@ msgid ""
 "Purchase Order Modification used when you want to purchase order editable "
 "after confirm"
 msgstr ""
+"Редагування замовлення на купівлю використовується, коли ви хочете "
+"редагувати замовлення на купівлю після підтвердження"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_form_action
@@ -1417,7 +1542,7 @@ msgstr "Статистика замовленнь на купівлю"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Purchase orders that have been invoiced."
-msgstr ""
+msgstr "Замовлення на купівлю, які повинні виставити рахунок."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -1525,9 +1650,16 @@ msgid "Received Qty"
 msgstr "Отримана кількість"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "Received Quantity:"
 msgstr ""
+=======
+#: code:addons/purchase/models/purchase.py:580
+#, python-format
+msgid "Received Quantity"
+msgstr "Отримана кількість"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_open_picking
@@ -1669,7 +1801,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Set date to all order lines"
-msgstr ""
+msgstr "Встановіть дату на всі рядки замовлення"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1690,6 +1822,8 @@ msgstr "Доставка"
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Show all records which has next action date is before today"
 msgstr ""
+"Деякі товари можуть бути продані або придбані в різних одиницях виміру "
+"(розширено)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_origin
@@ -1754,9 +1888,20 @@ msgid "Terms and Conditions"
 msgstr "Терміни та умови"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,help:purchase.field_purchase_order_website_url
 msgid "The full URL to access the document through the website."
 msgstr "URL-адреса повністю, для доступу до документації через сайт"
+=======
+#: code:addons/purchase/models/purchase.py:574
+#, python-format
+msgid ""
+"The ordered quantity has been decreased. Do not forget to take it into "
+"account on your bills and receipts."
+msgstr ""
+"Замовлену кількість було зменшено. Не забувайте враховувати її на ваші "
+"рахунки та квитанції."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_product_action
@@ -1765,6 +1910,9 @@ msgid ""
 "                purchase process: prices, procurement logistics, accounting data,\n"
 "                available vendors, etc."
 msgstr ""
+"Картка товару містить детальну інформацію для процес закупівель: \n"
+"ціни, правила поповнень запасів, бухгалтерські налаштування, наявні\n"
+"постачальники, тощо."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -1846,7 +1994,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "This changes the scheduled date of all order lines to the given date"
-msgstr ""
+msgstr "Це змінює заплановану дату всіх рядків замовлення до вказаної дати"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_partner_property_purchase_currency_id
@@ -1859,29 +2007,43 @@ msgstr ""
 "постачальника."
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,help:purchase.field_res_config_settings_default_purchase_method
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "This note will be displayed on requests for quotation."
+msgstr "Це не буде відображатися у відповідях на комерційні пропозиції."
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:973
+#, python-format
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "This default value is applied to any new product created. This can be "
 "changed in the product detail form."
 msgstr ""
+"Це замовлення на продаж було створене з: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "This note will show up on purchase orders."
 msgstr ""
+"Це замовлення на продаж було змінене з: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:203
 #, python-format
 msgid "This vendor bill has been created from: %s"
-msgstr ""
+msgstr "Цей рахунок постачальника було створено з: %s"
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:217
 #, python-format
 msgid "This vendor bill has been modified from: %s"
-msgstr ""
+msgstr "Цей рахунок постачальника було змінено з: %s"
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
@@ -1952,6 +2114,8 @@ msgid ""
 "Unable to cancel this purchase order. You must first cancel related vendor "
 "bills."
 msgstr ""
+"Неможливо скасувати це замовлення на купівлю. Спочатку вам необхідно "
+"скасувати пов’язані рахунки постачальника."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_price_unit
@@ -1971,7 +2135,7 @@ msgstr "Одиниці виміру"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Unlock"
-msgstr ""
+msgstr "Розблокувати"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -2001,6 +2165,10 @@ msgid ""
 "            and Odoo will fill the bill automatically according to ordered\n"
 "            or received quantities."
 msgstr ""
+"Використовуйте цей пункт меню, щоб контролювати надходження\n"
+"рахунків від ваших постачальників. Коли ви створите новий рахунок, \n"
+"вкажіть відповідне замовлення на купівлю і рахунок буде заповнено \n"
+"відповідно до замовлених або отриманих кількостей товару. "
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_form_action
@@ -2049,7 +2217,7 @@ msgstr "Рахунки постачальників"
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_group_manage_vendor_price
 #: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
 msgid "Vendor Pricelists"
-msgstr ""
+msgstr "Прайс-листи постачальника"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_partner_ref
@@ -2083,7 +2251,7 @@ msgstr "Об'єм"
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 #: selection:purchase.order,invoice_status:0
 msgid "Waiting Bills"
-msgstr ""
+msgstr "Очікувані рахунки"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_stock_warehouse
@@ -2107,12 +2275,12 @@ msgstr "Попередження для %s"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_partner_view_purchase_buttons
 msgid "Warning on the Purchase Order"
-msgstr ""
+msgstr "Очікування на замовленні на купівлю"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Warning when Purchasing this Product"
-msgstr ""
+msgstr "Попередження при купівлі цього товару"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_group_warning_purchase
@@ -2125,9 +2293,20 @@ msgid "Website URL"
 msgstr "URL сайту"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,help:purchase.field_stock_warehouse_buy_to_resupply
 msgid "When products are bought, they can be delivered to this warehouse"
 msgstr "При купівлі товари можуть бути доставлені на цей склад."
+=======
+#: code:addons/purchase/models/purchase.py:770
+#, python-format
+msgid ""
+"You are decreasing the ordered quantity!\n"
+"You must update the quantities on the reception and/or bills."
+msgstr ""
+"Ви зменшуєте замовлену кількість!\n"
+"Ви повинні оновити кількість на рецепції та/або рахунках."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_open_invoice
@@ -2145,6 +2324,9 @@ msgid ""
 "                it's a physical product, a consumable or services you buy to\n"
 "                subcontractors."
 msgstr ""
+"Ви повинні визначити товар для всього, що ви купуєте, будь то\n"
+"фізичний товар, витратні матеріали або послуги, які ви купуєте\n"
+"для субпідряду."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -2153,6 +2335,9 @@ msgid ""
 "            it's a physical product, a consumable or services you buy to\n"
 "            subcontractors."
 msgstr ""
+"Ви повинні визначити товар для всього, що ви купуєте, будь то\n"
+"фізичний товар, витратні матеріали або послуги, які ви купуєте\n"
+"для субпідряду."
 
 #. module: purchase
 #: code:addons/purchase/models/purchase.py:395

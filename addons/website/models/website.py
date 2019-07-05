@@ -63,7 +63,12 @@ class Website(models.Model):
     google_management_client_id = fields.Char('Google Client ID')
     google_management_client_secret = fields.Char('Google Client Secret')
 
+<<<<<<< HEAD
     user_id = fields.Many2one('res.users', string='Public User', default=lambda self: self.env.ref('base.public_user').id)
+=======
+    user_id = fields.Many2one('res.users', string='Public User', required=True, default=lambda self: self.env.ref('base.public_user').id)
+    compress_html = fields.Boolean('Compress HTML') # TODO: REMOVE ME IN SAAS-14
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     cdn_activated = fields.Boolean('Activate CDN for assets')
     cdn_url = fields.Char('CDN Base URL', default='')
     cdn_filters = fields.Text('CDN Filters', default=lambda s: '\n'.join(DEFAULT_CDN_FILTERS), help="URL matching those filters will be rewritten using the CDN Base URL")

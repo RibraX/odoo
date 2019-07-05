@@ -5,6 +5,7 @@
 #
 # Translators:
 # Aboubakar Youssoufa <sasocda@gmail.com>, 2016
+<<<<<<< HEAD
 # Fahad Saeed <fsaeed667@gmail.com>, 2016
 # fares alokeeli <okffok@gmail.com>, 2016
 # HaNi alakkad <haniakad@gmail.com>, 2016
@@ -47,15 +48,64 @@
 # ThaniAldawood <taldawood@hotmail.com>, 2016
 # Walid Baruni <baroni@osoul.ly>, 2016
 #, fuzzy
+=======
+# Nan noa <anntesting123@yahoo.com>, 2016
+# Mohamed Hamdy <medo_boy1104@yahoo.com>, 2016
+# morheb bek <morhebbek@gmail.com>, 2016
+# Mohammed Dawood <mohammed.a.dawood@icloud.com>, 2016
+# hamad helal <hdd4004@gmail.com>, 2016
+# fares alokeeli <okffok@gmail.com>, 2016
+# mohammed rabea <moh.rabea@gmail.com>, 2016
+# shaklawoon <shakla78@gmail.com>, 2016
+# Ali zuaby <ali@zuaby.net>, 2016
+# Osoul <baruni@osoul.ly>, 2016
+# HaNi alakkad <haniakad@gmail.com>, 2016
+# hamza tayseer atieh <hamza.atieh@minervadata.com>, 2016
+# Khaled Menof <kifcaliph@hotmail.com>, 2016
+# Osama Ahmaro <osamaahmaro@gmail.com>, 2016
+# Walid Baruni <baroni@osoul.ly>, 2016
+# Mazen Abu Ghali <mabughali@yahoo.com>, 2016
+# Mohammed Ibrahim <m.ibrahim@mussder.com>, 2016
+# ThaniAldawood <taldawood@hotmail.com>, 2016
+# Mohammed Albasha <m.albasha.ma@gmail.com>, 2016
+# Akram Alfusayal <akram_ma@hotmail.com>, 2016
+# Abd El-Rahman Ali <abdelrahman.ali.242@gmail.com>, 2016
+# Hossam Esam <hossamesam17@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Khalid Aljahil <khalid@tarkeeb.sa>, 2016
+# Amer Hazaa <eng.amer.it@gmail.com>, 2017
+# Mustafa Rawi <mustafa@cubexco.com>, 2017
+# Hear Here <hearherebox@gmail.com>, 2017
+# khalil qandil <khalilqandil@gmail.com>, 2017
+# hoxhe Aits <hoxhe0@gmail.com>, 2017
+# Ghaith Gammar <g.gammar@saharaifs.net>, 2017
+# Shaima Safar <shaima.safar@open-inside.com>, 2017
+# Islam Eldeeb <islameldeb@gmail.com>, 2017
+# Mustafa J. Kadhem <safi2266@gmail.com>, 2017
+# Yihya Hugirat <hugirat@gmail.com>, 2017
+# Abdulaziz Ayed <aalayed@kacst.edu.sa>, 2018
+# MOATAZ NAFIE <zizoom@outlook.com>, 2018
+# abdullah alsabi <alsabi.abdullah@gmail.com>, 2018
+# amrnegm <amrnegm.01@gmail.com>, 2018
+# Ahmed AlThuhaibi <ahmedth@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-07-21 10:49+0000\n"
 "Last-Translator: Khaled Menof <kifcaliph@hotmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/odoo/odoo-9/language/ar/)\n"
 "Language: ar\n"
+=======
+"POT-Creation-Date: 2017-05-26 08:44+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Ahmed AlThuhaibi <ahmedth@gmail.com>, 2019\n"
+"Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -230,7 +280,17 @@ msgstr "5) لغرض الإعدادات، ستحتاج المعلومات الت�
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid ": General ledger"
+<<<<<<< HEAD
 msgstr ": الأستاذ العام"
+=======
+msgstr "الأستاذ العام:"
+
+#. module: account
+#: code:addons/account/models/account.py:397
+#, python-format
+msgid ": Refund"
+msgstr "الرجيع :"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_trialbalance
@@ -1455,6 +1515,19 @@ msgid "Address"
 msgstr "العنوان"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_tax_id
+msgid "Adjustment Tax"
+msgstr "تسوية الضرائب"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_adjustment_type
+msgid "Adjustment Type"
+msgstr "نوع التسوية "
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 msgid "Advanced Options"
@@ -2065,6 +2138,12 @@ msgid "Bank Statement"
 msgstr "كشف الحساب البنكي"
 
 #. module: account
+#: code:addons/account/models/account_bank_statement.py:935
+#, python-format
+msgid "Bank Statement %s"
+msgstr "كشف حساب بنكي"
+
+#. module: account
 #: model:ir.model,name:account.model_account_bank_statement_line
 msgid "Bank Statement Line"
 msgstr "بند كشف الحساب البنكي"
@@ -2390,6 +2469,11 @@ msgid ""
 "Cannot refund invoice which is already reconciled, invoice should be "
 "unreconciled first. You can only refund this invoice."
 msgstr ""
+<<<<<<< HEAD
+=======
+"لا يمكن استرداد مبلغ الفاتورة التي تم قد تسويتها بالفعل,  الفاتورة يجب أن "
+"تكون بلا تسوية لكي تتمكن انت من  استرداد هذه الفاتورة ."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: selection:account.bank.accounts.wizard,account_type:0
@@ -3376,6 +3460,27 @@ msgstr ""
 #: selection:account.payment.term.line,option:0
 msgid "Day(s) after the invoice date"
 msgstr ""
+
+#. module: account
+#: model:res.company,overdue_msg:base.main_company
+msgid ""
+"Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
+msgstr ""
+"Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_debit
@@ -9694,7 +9799,19 @@ msgid ""
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account.py:162
+=======
+#: code:addons/account/models/company.py:118
+#, python-format
+msgid ""
+"You cannot change the currency of the company since some journal items "
+"already exist"
+msgstr "انت لاتستطيع تغيير عملة المؤسسة لأن دفتر اليومية موجود بالفعل "
+
+#. module: account
+#: code:addons/account/models/account.py:180
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "You cannot change the owner company of an account that already contains "
@@ -10228,6 +10345,7 @@ msgstr ""
 msgid "→ Count"
 msgstr "إحصاء"
 
+<<<<<<< HEAD
 #~ msgid "Action Needed"
 #~ msgstr "الاجراء المطلوب"
 
@@ -10287,3 +10405,14 @@ msgstr "إحصاء"
 
 #~ msgid "Website communication history"
 #~ msgstr "سجل تواصل الموقع"
+=======
+#. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid ""
+"Currency field should only be set if the journal's currency is different "
+"from the company's. Leave the field blank to use company currency."
+msgstr ""
+"حقل العملة يجب وضعه فقط اذا كانت عملة دفتر اليومية مختلفة عن عملة الشركة. دع"
+" الحقل فارغاً لاستخدام عملة الشركة."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

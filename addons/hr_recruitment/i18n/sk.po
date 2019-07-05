@@ -3,12 +3,22 @@
 # * hr_recruitment
 #
 # Translators:
+<<<<<<< HEAD
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2015-2016
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2016
+=======
+# Matus Krnac <matus.krnac@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017
+# Jan Prokop, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-03-25 17:38+0000\n"
 "Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
@@ -18,6 +28,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:21+0000\n"
+"Last-Translator: Jan Prokop, 2019\n"
+"Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:mail.template,body_html:hr_recruitment.email_template_data_applicant_refuse
@@ -446,12 +467,17 @@ msgstr ""
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_config
+<<<<<<< HEAD
 msgid ""
 "Click here to create a new job. You can remove the \"In Recruitment\" filter "
 "to display all the job positions."
 msgstr ""
 "Kliknite tu pre vytvorenie novej pracovnej pozície. Môžete odstrániť filter "
 "\"V nábore\" pre zobrazenie všetkých pracovných pozícií."
+=======
+msgid "Click here to create a new job position."
+msgstr "Kliknite sem pre vytvorenie novej pracovnej pozície."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_no_employee
@@ -538,6 +564,15 @@ msgid "Create Employee"
 msgstr "Vytvoriť zamestnanca"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
+=======
+#: model:ir.actions.act_window,name:hr_recruitment.create_job_simple
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "Create a Job Position"
+msgstr "Vytvorte pracovnú pozíciu."
+
+#. module: hr_recruitment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_source_tree
 msgid "Create alias"
 msgstr "Vytvoriť alias"
@@ -1026,7 +1061,7 @@ msgstr "Pracovné pozície"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_stage_job_id
 msgid "Job Specific"
-msgstr ""
+msgstr "Špecifické pre pracovné miesto"
 
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
@@ -1092,9 +1127,18 @@ msgid "Last Updated on"
 msgstr "Naposledy upravované"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
 #: model:survey.label,value:hr_recruitment.recruitment_1_2_1
 msgid "Male"
 msgstr "Muž"
+=======
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:16
+#, python-format
+msgid ""
+"Let's have a look at the <b>applications pipeline</b> for this job position."
+msgstr "Pozrime sa <b>na aplikačný kanál</b> pre túto pracovnú pozíciu."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_config_settings_module_document
@@ -1279,9 +1323,15 @@ msgid "Office environment"
 msgstr "Kancelárske prostredie"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
 #: model:survey.label,value:hr_recruitment.rrow_2_1_6
 msgid "Office location"
 msgstr "Lokácia kancelárie"
+=======
+#: model:ir.ui.view,arch_db:hr_recruitment.view_hr_recruitment_report_search
+msgid "Ongoing"
+msgstr "Prebiehajúci"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job_alias_force_thread_id
@@ -1446,7 +1496,11 @@ msgstr "Pravidelné stretnutia"
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
 #, fuzzy
 msgid "Reopen Application"
+<<<<<<< HEAD
 msgstr "Obnoviť žiadosť"
+=======
+msgstr "Znova otvoriť žiadosť"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:ir.ui.menu,name:hr_recruitment.report_hr_recruitment
@@ -1586,6 +1640,8 @@ msgstr "Špecifická emailová adresa"
 #: model:ir.model.fields,help:hr_recruitment.field_hr_recruitment_stage_job_id
 msgid "Specific job that uses this stage. Other jobs will not use this stage."
 msgstr ""
+"Konkrétna práca, ktorá využíva túto fázu. Ostatné pracovné miesta túto fázu "
+"nevyužijú."
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_stage_id
@@ -1733,6 +1789,8 @@ msgid ""
 "These aliases can be emails or urls for every source. When the applicant "
 "arrives here through one of these you'll know where he came from."
 msgstr ""
+"Tieto aliasy môžu byť e-maily alebo adresy URL pre každý zdroj. Keď žiadateľ"
+" zaslal žiadosť cez niektorý z nich, budete vedieť, odkiaľ prišiel."
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_applicant_email_cc
@@ -1836,9 +1894,17 @@ msgid "Very Good"
 msgstr "Veľmi dobré"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
 #: model:survey.label,value:hr_recruitment.rcol_3_1_4
 msgid "Very important"
 msgstr "Veľmi dôležité"
+=======
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:11
+#, python-format
+msgid "Want to <b>start recruiting</b> like a pro? <i>Start here.</i>"
+msgstr "Chcete <b>začať nábor</b> ako profesionál?<i> Začnite tu.</i>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant_email_cc
@@ -1885,6 +1951,14 @@ msgid "e.g. Call for interview"
 msgstr "napr. Výzva na pohovor"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "e.g. Sales Manager"
+msgstr "napr. vedúci predaja"
+
+#. module: hr_recruitment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:hr_recruitment.model_hr_recruitment_config_settings
 msgid "hr.recruitment.config.settings"
 msgstr "hr.recruitment.config.settings"

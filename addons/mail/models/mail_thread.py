@@ -344,7 +344,9 @@ class MailThread(models.AbstractModel):
                         'email_link': email_link
                     }
                 }
-            return "%(static_help)s<p>%(dyn_help)s" % {
+            # do not add alias two times if it was added previously
+            if not help or help.find("oe_view_nocontent_alias") == -1:
+                return '%(static_help)s<p class="oe_view_nocontent_alias">%(dyn_help)s</p>' % {
                     'static_help': help or '',
                     'dyn_help': _("You could also add a new %(document)s by sending an email to: %(email_link)s.") %  {
                         'document': document_name,
@@ -1370,6 +1372,8 @@ class MailThread(models.AbstractModel):
         mail module, and should not contain security or generic html cleaning.
         Indeed those aspects should be covered by the html_sanitize method
         located in tools. """
+        if not body:
+            return body, attachments
         root = lxml.html.fromstring(body)
         postprocessed = False
         to_remove = []
@@ -1405,7 +1409,7 @@ class MailThread(models.AbstractModel):
         # Content-Type: multipart/related;
         #   boundary="_004_3f1e4da175f349248b8d43cdeb9866f1AMSPR06MB343eurprd06pro_";
         #   type="text/html"
-        if not message.is_multipart() or message.get('content-type', '').startswith("text/"):
+        if message.get_content_maintype() == 'text':
             encoding = message.get_content_charset()
             body = message.get_payload(decode=True)
             body = tools.ustr(body, encoding, errors='replace')
@@ -2147,9 +2151,16 @@ class MailThread(models.AbstractModel):
                         new_channels.setdefault(header_follower.channel_id.id, set()).add(new_subtype.id)
 
         # add followers coming from res.users relational fields that are tracked
+<<<<<<< HEAD
         to_add_users = self.env['res.users'].sudo().browse([values[name] for name in user_field_lst if values.get(name)])
         for partner in to_add_users.mapped('partner_id'):
             new_partners.setdefault(partner.id, None)
+=======
+        user_ids = [values[name] for name in user_field_lst if values.get(name)]
+        user_pids = [user.partner_id.id for user in self.env['res.users'].sudo().browse(user_ids) if user.partner_id.active]
+        for partner_id in user_pids:
+            new_partners.setdefault(partner_id, None)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
         for pid, subtypes in new_partners.items():
             subtypes = list(subtypes) if subtypes is not None else None

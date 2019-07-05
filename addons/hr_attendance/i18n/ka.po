@@ -1,20 +1,32 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * hr_attendance
-#
+# 
 # Translators:
+# Martin Trigaux, 2017
+# Saba Khmaladze <skhmaladze@uglt.org>, 2018
+# Giorgi Melitauri <gmelitauri@live.com>, 2018
+# Temur, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-27 15:58+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Georgian (http://www.transifex.com/odoo/odoo-9/language/ka/)\n"
 "Language: ka\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:53+0000\n"
+"PO-Revision-Date: 2016-11-14 15:53+0000\n"
+"Last-Translator: Temur, 2018\n"
+"Language-Team: Georgian (https://www.transifex.com/odoo/teams/41243/ka/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: ka\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr_attendance
@@ -48,9 +60,15 @@ msgid "Action Reason"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_action_reason_action_type
 msgid "Action Type"
 msgstr "ქმედების ტიპი"
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Apply"
+msgstr "გააქტიურება"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_attendance_error_max_delay
@@ -173,8 +191,21 @@ msgid "Date Signed"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.edit_attendance_reason
 msgid "Define attendance reason"
+=======
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_settings
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Configuration"
+msgstr "კონფიგურაცია"
+
+#. module: hr_attendance
+#: model:ir.actions.act_window,help:hr_attendance.hr_employee_attendance_action_kanban
+msgid ""
+"Create a few employees to be able to select an employee here and perform his"
+" check in / check out."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_attendance
@@ -210,8 +241,37 @@ msgid "Employee attendances"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_error_end_date
 msgid "Ending Date"
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_kanban_inherit_hr_attendance
+msgid "Employee's Name"
+msgstr ""
+
+#. module: hr_attendance
+#: model:ir.actions.act_window,name:hr_attendance.hr_employee_attendance_action_kanban
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_employees_kanban
+msgid "Employees"
+msgstr "თანამშრომლები"
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid ""
+"Employees do not need to enter their PIN to check in manually in the \"Kiosk"
+" Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid "Employees must enter their PIN to check in manually in the \"Kiosk Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: model:res.groups,name:hr_attendance.group_hr_attendance_use_pin
+msgid "Enable PIN use"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_attendance
@@ -265,11 +325,27 @@ msgid "Last Updated on"
 msgstr "ბოლოს განახლებულია"
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/attendance.js:39
 #, python-format
 msgid "Last sign in: %s,<br />%s.<br />Click to sign out."
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_last_attendance_id
+msgid "Last attendance id"
+msgstr ""
+
+#. module: hr_attendance
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_manage_attendances
+msgid "Manage Attendances"
+msgstr ""
+
+#. module: hr_attendance
+#: model:res.groups,name:hr_attendance.group_hr_attendance_manager
+msgid "Manager"
+msgstr "მმართველი"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_error_max_delay
@@ -277,9 +353,15 @@ msgid "Maximum Tolerance (in minutes)"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.report_attendanceerrors
 msgid "Min Delay"
 msgstr ""
+=======
+#: model:ir.actions.client,name:hr_attendance.hr_attendance_action_greeting_message
+msgid "Message"
+msgstr "შეტყობინება"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
@@ -347,9 +429,15 @@ msgid "Sign Out"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: selection:hr.action.reason,action_type:0
 msgid "Sign in"
 msgstr "შესვლა"
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Settings"
+msgstr "პარამეტრები"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: selection:hr.action.reason,action_type:0
@@ -374,15 +462,20 @@ msgstr ""
 #. module: hr_attendance
 #: model:ir.actions.act_window,help:hr_attendance.open_view_attendance
 msgid ""
+<<<<<<< HEAD
 "The Time Tracking functionality aims to manage employee attendances from "
 "Sign in/Sign out actions. You can also link this feature to an attendance "
 "device using Odoo's web service features."
+=======
+"The employee will have access to the \"My Attendances\" menu to check in and"
+" out from his session"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
 msgid "Today"
-msgstr ""
+msgstr "დღეს"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_worked_hours
@@ -405,5 +498,26 @@ msgstr ""
 #~ msgid "Time Tracking"
 #~ msgstr "დროის კონტროლი"
 
+<<<<<<< HEAD
 #~ msgid "Timesheets"
 #~ msgstr "დროის აღრიცხვა"
+=======
+#. module: hr_attendance
+#: model:ir.model.fields,help:hr_attendance.field_hr_employee_attendance_ids
+msgid "list of attendances for the employee"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:123
+#, python-format
+msgid "ok"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:14
+#, python-format
+msgid "or"
+msgstr "ან"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

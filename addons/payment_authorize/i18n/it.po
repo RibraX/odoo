@@ -3,24 +3,51 @@
 # * payment_authorize
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Simone Bernini <simone@aperturelabs.it>, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Paolo Valier, 2016
+# Sergio Zanchetta <primes2h@gmail.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-04-20 19:03+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:24+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,cancel_msg:payment_authorize.payment_acquirer_authorize
 msgid "<span><i>Cancel,</i> Your payment has been cancelled.</span>"
 msgstr "<span><i>Cancella,</i> Il tuo pagamento è stato cancellato.</span>"
+=======
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
+msgid "API Login Id"
+msgstr "ID accesso API"
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
+msgid "API Transaction Key"
+msgstr "Chiave transazione API"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:payment.acquirer,done_msg:payment_authorize.payment_acquirer_authorize
@@ -28,6 +55,7 @@ msgid ""
 "<span><i>Done,</i> Your online payment has been successfully processed. "
 "Thank you for your order.</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span><i>Fatto,</i> Il tuo pagamento è stato effettuato correttamente. "
 "Grazie per il tuo ordine.</span>"
 
@@ -42,6 +70,15 @@ msgstr ""
 "durante la transazione. L'ordine è stato confermato ma non pagato. Non "
 "esitare a contattarci se hai qualunque domanda riguardo lo stato del tuo "
 "ordine.</span>"
+=======
+"Messaggi di errore Authorize.Net:\n"
+" %s"
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_token_authorize_profile
+msgid "Authorize.net Profile ID"
+msgstr "ID profilo Authorize.Net"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:payment.acquirer,pending_msg:payment_authorize.payment_acquirer_authorize
@@ -49,6 +86,7 @@ msgid ""
 "<span><i>Pending,</i> Your online payment has been successfully processed. "
 "But your order is not validated yet.</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span><i>In corso,</i> Il tuo pagamento è stato correttamente processato ma "
 "il tuo ordine non ancora convalidato.</span>"
 
@@ -56,6 +94,15 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
 msgid "API Login Id"
 msgstr ""
+=======
+"Authorize: ricevuti dati con riferimento (%s), trans_id (%s) o impronta "
+"digitale (%s) mancante"
+
+#. module: payment_authorize
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "CVC"
+msgstr "CVC"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
@@ -73,20 +120,45 @@ msgid ""
 "How to configure your Authorize.Net account (look for Getting Started "
 "Guide) ?"
 msgstr ""
+"Come configurare l'account Authorize.Net (cercare la guida introduttiva)."
 
 #. module: payment_authorize
 #: model:ir.model,name:payment_authorize.model_payment_acquirer
 msgid "Payment Acquirer"
+<<<<<<< HEAD
 msgstr "Acquirente del pagamento"
+=======
+msgstr "Servizio di pagamento"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:ir.model,name:payment_authorize.model_payment_transaction
 msgid "Payment Transaction"
-msgstr "Transazione Pagamento"
+msgstr "Transazione di pagamento"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,pre_msg:payment_authorize.payment_acquirer_authorize
+=======
+#: code:addons/payment_authorize/models/payment.py:347
+#, python-format
+msgid "The Customer Profile creation in Authorize.NET failed."
+msgstr "Creazione del profilo cliente su Authorize.Net non riuscita."
+
+#. module: payment_authorize
+#: model:ir.model.fields,help:payment_authorize.field_payment_token_authorize_profile
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "You will be redirected to the Authorize website after clicking on the "
 "payment button."
 msgstr ""
+<<<<<<< HEAD
+=======
+"Contiene il riferimento univoco per questa combinazione token "
+"pagamento/partner in Authorize.Net"
+
+#. module: payment_authorize
+#: model:ir.model,name:payment_authorize.model_payment_token
+msgid "payment.token"
+msgstr "payment.token"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

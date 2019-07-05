@@ -3,23 +3,38 @@
 # * sale_stock
 # 
 # Translators:
+<<<<<<< HEAD
 # UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2017
 # digitouch UAB <digitouchagencyeur@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2017
+=======
+# Martin Trigaux, 2016
+# UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2016
+# Audrius Palenskis <audrius.palenskis@gmail.com>, 2016
+# Šarūnas Ažna <sarunas.azna@gmail.com>, 2016
+# digitouch UAB <digitouchagencyeur@gmail.com>, 2017
+# Linas Versada <paulius.sladkevicius@gmail.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Audrius Palenskis <audrius.palenskis@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: Linas Versada <paulius.sladkevicius@gmail.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. module: sale_stock
 #: code:addons/sale_stock/models/sale_order.py:170
@@ -101,7 +116,7 @@ msgstr ""
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_route_so_lines
 msgid "Enable Route on Sales Order Line"
-msgstr ""
+msgstr "Įjungti maršrutą pardavimo užsakymo eilėje"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_account_invoice_incoterms_id
@@ -118,6 +133,9 @@ msgid ""
 "costs and responsibilities between buyer and seller and reflect state-of-"
 "the-art transportation practices."
 msgstr ""
+"Tarptautiniai susitarimai yra pardavimo sąlygų rinkinys. Jie yra naudojami "
+"operacijos kaštų ir atsakomybių pasidalijimui tarp pirkėjo ir pardavėjo ir "
+"transportavimo praktikoms aprašyti."
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_sale_order_incoterm
@@ -165,6 +183,9 @@ msgid ""
 "for procurement and delivery that many days earlier than the actual promised"
 " date, to cope with unexpected delays in the supply chain."
 msgstr ""
+"Klientui pažadėtų datų paklaida. Produktams bus suplanuotas įsigijimas ir "
+"pristatymas tiek dienų anksčiau nei pažadėta data, tam, kad būtų "
+"susitvarkoma su netikėtais vėlavimais tiekimo grandinėje."
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_stock
@@ -275,7 +296,7 @@ msgstr "Pardavimų užsakymų statistika"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_res_company_security_lead
 msgid "Sales Safety Days"
-msgstr ""
+msgstr "Pardavimų saugumo dienos"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_stock
@@ -295,7 +316,7 @@ msgstr ""
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_stock_location_route_sale_selectable
 msgid "Selectable on Sales Order Line"
-msgstr ""
+msgstr "Pasirenkamas pardavimų užsakymų eilutėje"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_sale
@@ -386,6 +407,8 @@ msgid ""
 "You are decreasing the ordered quantity! Do not forget to manually update "
 "the delivery order if needed."
 msgstr ""
+"Mažinate užsakytą kieki! Nepamirškite rankiniu būdu atnaujinti pristatymo "
+"užsakymą, jei to reikia."
 
 #. module: sale_stock
 #: code:addons/sale_stock/models/sale_order.py:166

@@ -369,14 +369,21 @@ class account_payment(models.Model):
                 self.partner_type = 'customer'
             elif self.payment_type == 'outbound':
                 self.partner_type = 'supplier'
+            else:
+                self.partner_type = False
         # Set payment method domain
         res = self._onchange_journal()
         if not res.get('domain', {}):
             res['domain'] = {}
+<<<<<<< HEAD
         jrnl_filters = self._compute_journal_domain_and_types()
         journal_types = jrnl_filters['journal_types']
         journal_types.update(['bank', 'cash'])
         res['domain']['journal_id'] = jrnl_filters['domain'] + [('type', 'in', list(journal_types))]
+=======
+        res['domain']['journal_id'] = self.payment_type == 'inbound' and [('at_least_one_inbound', '=', True)] or self.payment_type == 'outbound' and [('at_least_one_outbound', '=', True)] or []
+        res['domain']['journal_id'].append(('type', 'in', ('bank', 'cash')))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return res
 
     @api.model

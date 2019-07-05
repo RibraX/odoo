@@ -3,6 +3,7 @@
 # * payment
 # 
 # Translators:
+<<<<<<< HEAD
 # Эдуард Манятовский <manyatovskiy@gmail.com>, 2017
 # Максим Дронь <dronmax@gmail.com>, 2017
 # SV <sv@grimmette.ru>, 2017
@@ -14,13 +15,25 @@
 # Max Belyanin <maxbelyanin@gmail.com>, 2017
 # Anishchuk Sergei <anishukserg@l-profit.ru>, 2017
 # Denis Trepalin <zekarious@gmail.com>, 2017
+=======
+# Collex100, 2017
+# Dmitry sky <d.v.selitsky@gmail.com>, 2017
+# Vasiliy Korobatov <korobatov@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:53+0000\n"
 "PO-Revision-Date: 2017-09-20 09:53+0000\n"
 "Last-Translator: Denis Trepalin <zekarious@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:24+0000\n"
+"Last-Translator: Vasiliy Korobatov <korobatov@gmail.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -279,7 +292,27 @@ msgstr "Всегда"
 #: model:ir.ui.view,arch_db:payment.confirm
 #: model:ir.ui.view,arch_db:payment.pay
 msgid "Amount"
+<<<<<<< HEAD
 msgstr "Сумма"
+=======
+msgstr "Количество"
+
+#. module: payment
+#: selection:payment.acquirer,auto_confirm:0
+msgid ""
+"Authorize & capture the amount and confirm the SO on acquirer confirmation"
+msgstr ""
+"Авторизуйте и запишите сумму и подтвердите SO в подтверждении покупателя"
+
+#. module: payment
+#: selection:payment.acquirer,auto_confirm:0
+msgid ""
+"Authorize & capture the amount, confirm the SO and auto-validate the invoice"
+" on acquirer confirmation"
+msgstr ""
+"Авторизуйте и запишите сумму, подтвердите SO и автоматически подтвердите "
+"счет на подтверждение покупателю"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_authorize_implemented
@@ -862,13 +895,13 @@ msgstr "Ok"
 #: code:addons/payment/models/payment_acquirer.py:759
 #, python-format
 msgid "Only transactions in the Authorized status can be captured."
-msgstr ""
+msgstr "Только транзакции в статусе авторизации могут быть захвачены."
 
 #. module: payment
 #: code:addons/payment/models/payment_acquirer.py:766
 #, python-format
 msgid "Only transactions in the Authorized status can be voided."
-msgstr ""
+msgstr "Только транзакции в статусе авторизации могут быть аннулированы."
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_token_partner_id
@@ -1224,6 +1257,8 @@ msgid ""
 "This feature is not available for payment acquirers set to the \"Authorize\" mode.\n"
 "Please use a token from another provider than %s."
 msgstr ""
+"Эта функция недоступна для получателей платежей, для которых установлен режим «Авторизация».\n"
+"Пожалуйста, используйте токен от другого провайдера, отличный от %s."
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_icon_image
@@ -1250,6 +1285,7 @@ msgid ""
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,help:payment.field_payment_acquirer_country_ids
 msgid ""
 "This payment gateway is available for selected countries. If none is "
@@ -1262,6 +1298,12 @@ msgid ""
 "This template renders the acquirer button with all necessary values.\n"
 "                                            It is rendered with qWeb with the following evaluation context:"
 msgstr ""
+=======
+#: code:addons/payment/models/payment_acquirer.py:160
+#, python-format
+msgid "Transaction Authorization is not supported by this payment provider."
+msgstr "Поставщик платежей не поддерживает авторизацию транзакции."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment
 #: model:payment.acquirer,pre_msg:payment.payment_acquirer_transfer

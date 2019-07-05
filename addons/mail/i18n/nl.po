@@ -3,6 +3,7 @@
 # * mail
 # 
 # Translators:
+<<<<<<< HEAD
 # Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
@@ -10,13 +11,29 @@
 # Volluta <volluta@tutanota.com>, 2017
 # Cas Vissers <casvissers@brahoo.nl>, 2017
 # Stephan Van Dyck <stephan.vandyck@vanroey.be>, 2017
+=======
+# Eric Geens <ericgeens@yahoo.com>, 2016
+# Stephan Van Dyck <stephan.vandyck@vanroey.be>, 2016
+# Volluta <volluta@tutanota.com>, 2016
+# Martin Trigaux, 2016
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2016
+# Cas Vissers <casvissers@brahoo.nl>, 2016
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:25+0000\n"
 "PO-Revision-Date: 2017-10-02 11:25+0000\n"
 "Last-Translator: Stephan Van Dyck <stephan.vandyck@vanroey.be>, 2017\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:53+0000\n"
+"PO-Revision-Date: 2016-09-07 09:22+0000\n"
+"Last-Translator: Erwin van der Ploeg <erwin@odooexperts.nl>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -252,7 +269,23 @@ msgstr ""
 "U kunt een standaard antwoord in uw bericht toevoegen door te typen <b>:shortcut</b>.<br>"
 
 #. module: mail
+<<<<<<< HEAD
 #: code:addons/mail/models/mail_channel.py:584
+=======
+#: code:addons/mail/models/mail_channel.py:475
+#, python-format
+msgid ""
+"<div class=\"o_mail_notification\">%(author)s invited %(new_partner)s to <a "
+"href=\"#\" class=\"o_channel_redirect\" data-oe-"
+"id=\"%(channel_id)s\">#%(channel_name)s</a></div>"
+msgstr ""
+"<div class=\"o_mail_notification\">%(author)s uitgenodigd %(new_partner)s "
+"voor <a href=\"#\" class=\"o_channel_redirect\" data-oe-"
+"id=\"%(channel_id)s\">#%(channel_name)s</a></div>"
+
+#. module: mail
+#: code:addons/mail/models/mail_channel.py:550
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "<div class=\"o_mail_notification\">created <a href=\"#\" "
@@ -790,7 +823,7 @@ msgid ""
 "Attachments are linked to a document through model / res_id and to the "
 "message through this field."
 msgstr ""
-"Bijlages zijn gelinkt aan het document via het model / res_id en aan het "
+"Bijlages zijn gekoppeld aan het document via het model / res_id en aan het "
 "bericht via dit veld."
 
 #. module: mail
@@ -1560,7 +1593,7 @@ msgstr "Te betalen in %d dagen"
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.email_template_form
 msgid "Dynamic Placeholder Generator"
-msgstr "Dynamische bladwijze generator"
+msgstr "Dynamische bladwijzer generator"
 
 #. module: mail
 #. openerp-web
@@ -3939,7 +3972,7 @@ msgid ""
 msgstr ""
 "Optionele vertaling (ISO code) welke u kunt selecteren bij het versturen van"
 " een e-mail. Indien niet ingesteld, wordt de Engelse versie gebruikt. "
-"Normaliter is dit een bladwijzen welke de juiste taal aangeeft. Bijv.: "
+"Normaliter is dit een bladwijzer welke de juiste taal aangeeft. Bijv.: "
 "${object.partner_id.lang}."
 
 #. module: mail
@@ -4088,7 +4121,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail.field_mail_message_needaction_partner_ids
 #: model:ir.model.fields,field_description:mail.field_survey_mail_compose_message_needaction_partner_ids
 msgid "Partners with Need Action"
-msgstr "Relaties met Nodige Actie"
+msgstr "Relaties met benodigde actie"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_email_template_preview_auto_delete

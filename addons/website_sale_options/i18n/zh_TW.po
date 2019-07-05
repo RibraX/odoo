@@ -1,24 +1,35 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * website_sale_options
-#
+# 
 # Translators:
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2018
+# Martin Trigaux, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2015-09-08 10:56+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
+=======
+"POT-Creation-Date: 2016-09-29 14:01+0000\n"
+"PO-Revision-Date: 2016-09-29 14:01+0000\n"
+"Last-Translator: Martin Trigaux, 2018\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_sale_options
+<<<<<<< HEAD
 #: code:addons/website_sale_options/models/sale_order.py:44
 #: code:addons/website_sale_options/models/sale_order.py:56
 #, python-format
@@ -31,11 +42,20 @@ msgstr ""
 #: model:product.attribute.value,name:website_sale_options.product_attribute_value_1
 msgid "1 year"
 msgstr ""
+=======
+#: model:product.attribute.value,name:website_sale_options.product_attribute_value_1
+msgid "1 year"
+msgstr "1 年"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:product.attribute.value,name:website_sale_options.product_attribute_value_2
 msgid "2 year"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "2 年"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
@@ -43,6 +63,11 @@ msgid ""
 "<i class=\"fa fa-chevron-left\"/> <span class=\"hidden-xs\">Continue "
 "Shopping</span><span class=\"visible-xs-inline\">Continue</span>"
 msgstr ""
+<<<<<<< HEAD
+=======
+"<i class=\"fa fa-chevron-left\"/> <span class=\"hidden-xs\">繼續購物</span><span"
+" class=\"visible-xs-inline\">繼續</span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
@@ -50,11 +75,20 @@ msgid ""
 "<i class=\"fa fa-shopping-cart fa-fw\"/> <span class=\"hidden-xs\">Proceed "
 "to checkout</span><span class=\"visible-xs-inline\">Checkout</span>"
 msgstr ""
+<<<<<<< HEAD
+=======
+"<i class=\"fa fa-shopping-cart fa-fw\"/> <span class=\"hidden-"
+"xs\">去結帳</span><span class=\"visible-xs-inline\">結帳</span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
 msgid "<small>Remove from cart</small>"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "<small>從購物車移除</small>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
@@ -62,16 +96,59 @@ msgid ""
 "<span class=\"js_item\">1 Item</span><span class=\"js_items hidden\">5 "
 "Items</span><br/>"
 msgstr ""
+<<<<<<< HEAD
+=======
+"<span class=\"js_item\">1 項</span><span class=\"js_items hidden\">5 "
+"項</span><br/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
 msgid "<strong>Add to Cart</strong>"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "<strong>加入購物車</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:product.attribute,name:website_sale_options.product_attribute_1
 msgid "Duration"
-msgstr "持續時間"
+msgstr "有效期"
+
+#. module: website_sale_options
+#: model:ir.model.fields,field_description:website_sale_options.field_sale_order_line_linked_line_id
+msgid "Linked Order Line"
+msgstr "鏈接的訂單明細"
+
+#. module: website_sale_options
+#: code:addons/website_sale_options/models/sale_order.py:46
+#, python-format
+msgid "Option for:"
+msgstr "選擇："
+
+#. module: website_sale_options
+#: code:addons/website_sale_options/models/sale_order.py:48
+#, python-format
+msgid "Option:"
+msgstr "選項："
+
+#. module: website_sale_options
+#: model:ir.model.fields,field_description:website_sale_options.field_product_template_optional_product_ids
+msgid "Optional Products"
+msgstr "可選產品"
+
+#. module: website_sale_options
+#: model:ir.model.fields,help:website_sale_options.field_product_template_optional_product_ids
+msgid ""
+"Optional Products are suggested whenever the customer hits *Add to Cart* "
+"(cross-sell strategy, e.g. for computers: warranty, software, etc.)."
+msgstr "當客戶點選*加入購物車*（交叉銷售策略，例如計算機：保修，軟體等）時，系統將推薦商品或服務。"
+
+#. module: website_sale_options
+#: model:ir.model.fields,field_description:website_sale_options.field_sale_order_line_option_line_ids
+msgid "Options Linked"
+msgstr "連結選項"
 
 #. module: website_sale_options
 #: model:ir.model.fields,field_description:website_sale_options.field_sale_order_line_linked_line_id
@@ -101,7 +178,17 @@ msgstr "產品"
 #. module: website_sale_options
 #: model:ir.model,name:website_sale_options.model_product_template
 msgid "Product Template"
-msgstr "產品範本"
+msgstr "產品模板"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "Product not available"
+msgstr "產品不可用"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "Product to add in your shopping cart"
+msgstr "添加產品到您的購物車"
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
@@ -126,12 +213,17 @@ msgstr "數量"
 #. module: website_sale_options
 #: model:ir.model,name:website_sale_options.model_sale_order
 msgid "Sales Order"
-msgstr "銷貨單"
+msgstr "銷售訂單"
 
 #. module: website_sale_options
 #: model:ir.model,name:website_sale_options.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "銷售訂單細項"
+msgstr "銷售訂單行"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "Select Your Options:"
+msgstr "設定您的選項:"
 
 #. module: website_sale_options
 #: model:ir.ui.view,arch_db:website_sale_options.modal
@@ -144,7 +236,11 @@ msgstr ""
 #: model:product.template,name:website_sale_options.product_product_1_product_template
 #: model:product.template,name:website_sale_options.service_cost_01_product_template
 msgid "Warranty"
+<<<<<<< HEAD
 msgstr "保證"
+=======
+msgstr "保固期間"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_options
 #: model:product.product,description_sale:website_sale_options.product_product_1
@@ -155,6 +251,7 @@ msgid ""
 "Warranty, issued to the purchaser of an article by its manufacturer, "
 "promising to repair or replace it if necessary within a specified period of "
 "time."
+<<<<<<< HEAD
 msgstr ""
 
 #. module: website_sale_options
@@ -163,3 +260,6 @@ msgstr ""
 #, python-format
 msgid "click in modal on 'Proceed to checkout' button"
 msgstr ""
+=======
+msgstr "保固期間，廠家承諾在指定時間內對商品進行維修或更換."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

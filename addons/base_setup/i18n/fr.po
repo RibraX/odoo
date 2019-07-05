@@ -3,10 +3,26 @@
 # * base_setup
 # 
 # Translators:
+<<<<<<< HEAD
 # Florian Hatat <mininet@wanadoo.fr>, 2017
 # Eloïse Stilmant <est@odoo.com>, 2017
 # Olivier Lenoir <olivier.lenoir@free.fr>, 2017
 # zeroheure <xavier@alternatif.org>, 2017
+=======
+# Florian Hatat <mininet@wanadoo.fr>, 2016
+# Xavier Belmere <Info@cartmeleon.com>, 2016
+# Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2016
+# Xavier Symons <xsy@openerp.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Christophe Dubuit <cdubuit@yahoo.com>, 2016
+# Olivier Lenoir <olivier.lenoir@free.fr>, 2016
+# Maxime Solinas <msolinas@t2o.ca>, 2016
+# Guillaume Rancourt <guillaumerancourt971@gmail.com>, 2016
+# Clo <clo@odoo.com>, 2016
+# Fabien Pinckaers <fp@openerp.com>, 2016
+# Olivier Dony <odo@odoo.com>, 2016
+# Xavier Brochard <xavier@alternatif.org>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # Richard Mathot <rim@odoo.com>, 2017
 # Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
@@ -36,8 +52,18 @@ msgstr ""
 msgid ""
 "<strong>Save</strong> this page and come back here to set up the feature."
 msgstr ""
+<<<<<<< HEAD
 "<strong>Sauvegardez</strong> cette page et revenez ici pour configurer la "
 "fonctionnalité."
+=======
+"<span>(*) Cette configuration concerne la société pour le compte de laquelle"
+" vous êtes connecté.</span>"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_module_portal
+msgid "Activate the customer portal"
+msgstr "Activer le portail client"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -45,10 +71,19 @@ msgid "Access Rights"
 msgstr "Droits d'accès"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_google_calendar
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_group_multi_currency
+msgid "Allow multi currencies"
+msgstr "Gérer plusieurs devises"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_module_google_calendar
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Allow the users to synchronize their calendar  with Google Calendar"
 msgstr ""
-"Permet aux utilisateurs de synchroniser leurs calendriers avec Google "
+"Permettre aux utilisateurs de synchroniser leurs calendriers avec Google "
 "Calendar"
 
 #. module: base_setup
@@ -73,9 +108,15 @@ msgid "Attach Google documents to any record"
 msgstr "Attacher des documents Google à n'importe quel enregistrement"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Automate inter-company transactions"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Authentication"
+msgstr "Identification"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -87,8 +128,13 @@ msgstr "Documents commerciaux"
 msgid ""
 "By default, new users get highest access rights for all installed apps."
 msgstr ""
+<<<<<<< HEAD
 "Par défaut, les nouveaux utilisateurs ont les droits d'accès les plus hauts "
 "pour toutes les applications installées."
+=======
+"Cochez cette case pour définir un pied de page personnalisé pour les "
+"rapports. Sinon, il sera automatiquement rempli."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -117,9 +163,15 @@ msgid "Common Contact Book"
 msgstr ""
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Companies"
 msgstr "Sociétés"
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_footer
+msgid "Custom Report Footer *"
+msgstr "Pied de page des rapports personnalisé *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_company_id
@@ -134,6 +186,7 @@ msgid ""
 msgstr ""
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Create and attach Google Drive documents to any record"
 msgstr ""
@@ -145,6 +198,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_report_footer
 msgid "Custom Report Footer"
 msgstr "Pied de page des rapports personnalisé"
+=======
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Edit default access rights for new users"
+msgstr "Modifier les droits d'accès par défaut pour les nouveaux utilisateurs"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_default_user_rights
@@ -176,7 +234,7 @@ msgstr "Extrayez et analysez les données Odoo de Google Spreadsheet"
 #. module: base_setup
 #: model:ir.model.fields,help:base_setup.field_res_config_settings_report_footer
 msgid "Footer text displayed at the bottom of all reports."
-msgstr "Pied de page de tous les rapports."
+msgstr "Texte affiché au pied de tous les rapports."
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -189,9 +247,15 @@ msgid "General Settings"
 msgstr "Paramètres généraux"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Gengo Translations"
 msgstr "Traductions Gengo"
+=======
+#: model:ir.model.fields,help:base_setup.field_base_config_settings_module_portal
+msgid "Give your customers access to their documents."
+msgstr "Donner à vos clients l'accès à leurs documents."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -219,9 +283,20 @@ msgid "Integrations"
 msgstr "Intégrations"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Inter-Company Transactions"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_auth_ldap
@@ -240,9 +315,15 @@ msgid "Manage multiple companies"
 msgstr "Gérer plusieurs sociétés"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Manage multiple legal entities with separate accounting"
 msgstr "Gérez plusieurs entités légales avec une comptabilité séparée"
+=======
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Multi Company"
+msgstr "Multi-sociétés"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_group_multi_currency
@@ -255,9 +336,34 @@ msgid "Multi-company"
 msgstr "Multi-société"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "OAuth Authentification"
 msgstr "Identification OAuth"
+=======
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid ""
+"Once installed, you can configure your API credentials for \"Google "
+"calendar\""
+msgstr ""
+"Une fois l'API installée, vous pouvez la configurer avec les informations "
+"d'identification pour \"Google Calendar\""
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_paper_format
+msgid "Paper Format *"
+msgstr "Format de papier *"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Portal access"
+msgstr "Accès au portail"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Preview RML Report"
+msgstr "Aperçu d'un rapport RML"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_paperformat_id
@@ -270,6 +376,7 @@ msgid "Preview Document"
 msgstr "Prévisualisez le document"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Set custom access rights for new users"
 msgstr ""
@@ -279,6 +386,35 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Set the paper format of printed documents"
 msgstr "Sélectionnez le format des documents imprimés"
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_header3
+msgid "RML Internal Header for Landscape Reports *"
+msgstr "En-tête RML interne pour les rapports au format paysage *"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "RML Report Configuration"
+msgstr "Configuration des rapports RML"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Report Configuration"
+msgstr "Configuration des rapports"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_footer_readonly
+msgid "Report Footer *"
+msgstr "Pied de page des rapports *"
+
+#. module: base_setup
+#: model:ir.model.fields,help:base_setup.field_base_config_settings_font
+msgid ""
+"Set the font into the report header, it will be used as default font in the "
+"RML reports of the user company"
+msgstr ""
+"Définir la police de l'en-tête du rapport. Elle sera utilisée comme police "
+"par défaut dans les rapports RML de la société de l'utilisateur."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.actions.act_window,name:base_setup.action_general_configuration
@@ -330,7 +466,12 @@ msgstr "Utilisez les informations d'identification LDAP pour vous connecter"
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Use external accounts to log in (Google, Facebook, etc.)"
 msgstr ""
+<<<<<<< HEAD
 "Utilisez des comptes externes pour vous connecter (Google, Facebook, etc.)"
+=======
+"Ceci installe le module inter_company_rules.\n"
+"Configurez les règles de votre société pour créer automatiquement des bons de commande d'achats/ventes quand elle vend/achète à une autre de vos sociétés."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_auth_oauth

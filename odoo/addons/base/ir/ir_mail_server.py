@@ -22,6 +22,8 @@ from odoo.tools import ustr, pycompat
 _logger = logging.getLogger(__name__)
 _test_logger = logging.getLogger('odoo.tests')
 
+SMTP_TIMEOUT = 60
+
 
 class MailDeliveryException(except_orm):
     """Specific exception subclass for mail delivery errors"""
@@ -171,12 +173,21 @@ class IrMailServer(models.Model):
                     pass
         raise UserError(_("Connection Test Succeeded! Everything seems properly set up!"))
 
+<<<<<<< HEAD
     def connect(self, host=None, port=None, user=None, password=None, encryption=None,
                 smtp_debug=False, mail_server_id=None):
         """Returns a new SMTP connection to the given SMTP server.
            When running in test mode, this method does nothing and returns `None`.
 
            :param host: host or IP of SMTP server to connect to, if mail_server_id not passed
+=======
+    def connect(self, host, port, user=None, password=None, encryption=False, smtp_debug=False):
+        """Returns a new SMTP connection to the give SMTP server, authenticated
+           with ``user`` and ``password`` if provided, and encrypted as requested
+           by the ``encryption`` parameter.
+
+           :param host: host or IP of SMTP server to connect to
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
            :param int port: SMTP port to connect to
            :param user: optional username to authenticate with
            :param password: optional password to authenticate with
@@ -185,6 +196,7 @@ class IrMailServer(models.Model):
                               will be output in logs)
            :param mail_server_id: ID of specific mail server to use (overrides other parameters)
         """
+<<<<<<< HEAD
         # Do not actually connect while running in test mode
         if getattr(threading.currentThread(), 'testing', False):
             return None
@@ -228,6 +240,15 @@ class IrMailServer(models.Model):
             connection = smtplib.SMTP_SSL(smtp_server, smtp_port)
         else:
             connection = smtplib.SMTP(smtp_server, smtp_port)
+=======
+        if encryption == 'ssl':
+            if not 'SMTP_SSL' in smtplib.__all__:
+                raise UserError(_("Your OpenERP Server does not support SMTP-over-SSL. You could use STARTTLS instead."
+                                  "If SSL is needed, an upgrade to Python 2.6 on the server-side should do the trick."))
+            connection = smtplib.SMTP_SSL(host, port, timeout=SMTP_TIMEOUT)
+        else:
+            connection = smtplib.SMTP(host, port, timeout=SMTP_TIMEOUT)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         connection.set_debuglevel(smtp_debug)
         if smtp_encryption == 'starttls':
             # starttls() will perform ehlo() if needed first
@@ -426,6 +447,7 @@ class IrMailServer(models.Model):
         email_to = message['To']
         email_cc = message['Cc']
         email_bcc = message['Bcc']
+        del message['Bcc']
 
         smtp_to_list = [
             address
@@ -443,7 +465,7 @@ class IrMailServer(models.Model):
             message['To'] = x_forge_to
 
         # Do not actually send emails in testing mode!
-        if getattr(threading.currentThread(), 'testing', False):
+        if getattr(threading.currentThread(), 'testing', False) or self.env.registry.in_test_mode():
             _test_logger.info("skip sending email in test mode")
             return message['Message-Id']
 

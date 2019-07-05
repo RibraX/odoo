@@ -269,7 +269,22 @@ class ProcurementGroup(models.Model):
                 cr = registry(self._cr.dbname).cursor()
                 self = self.with_env(self.env(cr=cr))  # TDE FIXME
 
+<<<<<<< HEAD
             self._run_scheduler_tasks(use_new_cursor=use_new_cursor, company_id=company_id)
+=======
+            # Minimum stock rules
+            self.sudo()._procure_orderpoint_confirm(use_new_cursor=use_new_cursor, company_id=company_id)
+
+            # Search all confirmed stock_moves and try to assign them
+            confirmed_moves = self.env['stock.move'].search([('state', '=', 'confirmed'), ('product_uom_qty', '!=', 0.0)], limit=None, order='priority desc, date_expected asc')
+            for x in xrange(0, len(confirmed_moves.ids), 100):
+                # TDE CLEANME: muf muf
+                self.env['stock.move'].browse(confirmed_moves.ids[x:x + 100]).action_assign()
+                if use_new_cursor:
+                    self._cr.commit()
+            if use_new_cursor:
+                self._cr.commit()
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         finally:
             if use_new_cursor:
                 try:

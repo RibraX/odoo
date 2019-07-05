@@ -6,6 +6,7 @@ import traceback
 import os
 import unittest
 
+import pytz
 import werkzeug
 import werkzeug.routing
 import werkzeug.utils
@@ -14,12 +15,14 @@ import odoo
 from odoo import api, models
 from odoo import SUPERUSER_ID
 from odoo.http import request
-from odoo.tools import config
+from odoo.tools import config, ustr
 from odoo.exceptions import QWebException
 from odoo.tools.safe_eval import safe_eval
 from odoo.osv.expression import FALSE_DOMAIN
 
 from odoo.addons.http_routing.models.ir_http import ModelConverter, _guess_mimetype
+
+from ..geoipresolver import GeoIPResolver
 
 logger = logging.getLogger(__name__)
 
@@ -62,7 +65,7 @@ class Http(models.AbstractModel):
         if not request.session.uid:
             env = api.Environment(request.cr, SUPERUSER_ID, request.context)
             website = env['website'].get_current_website()
-            if website:
+            if website and website.user_id:
                 request.uid = website.user_id.id
         if not request.uid:
             super(Http, cls)._auth_method_public()
@@ -83,6 +86,7 @@ class Http(models.AbstractModel):
             request.website = request.website.with_context(context)
 
     @classmethod
+<<<<<<< HEAD
     def _get_languages(cls):
         if getattr(request, 'website', False):
             return request.website.language_ids
@@ -93,6 +97,28 @@ class Http(models.AbstractModel):
         if request.website:
             return request.website._get_languages()
         return super(Http, cls)._get_language_codes()
+=======
+    def _geoip_setup_resolver(cls):
+        # Lazy init of GeoIP resolver
+        if cls._geoip_resolver is not None:
+            return
+        if odoo._geoip_resolver is not None:
+            cls._geoip_resolver = odoo._geoip_resolver
+            return
+        geofile = config.get('geoip_database')
+        try:
+            odoo._geoip_resolver = GeoIPResolver.open(geofile) or False
+        except Exception as e:
+            logger.warning('Cannot load GeoIP: %s', ustr(e))
+
+    @classmethod
+    def _geoip_resolve(cls):
+        if 'geoip' not in request.session:
+            record = {}
+            if odoo._geoip_resolver and request.httprequest.remote_addr:
+                record = odoo._geoip_resolver.resolve(request.httprequest.remote_addr) or {}
+            request.session['geoip'] = record
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @classmethod
     def _get_default_lang(cls):
@@ -107,8 +133,71 @@ class Http(models.AbstractModel):
         domain = [('url', '=', req_page), '|', ('website_ids', 'in', request.website.id), ('website_ids', '=', False)]
         pages = request.env['website.page'].search(domain)
 
+<<<<<<< HEAD
         if not request.website.is_publisher():
             pages = pages.filtered('is_visible')
+=======
+        # For website routes (only), add website params on `request`
+        cook_lang = request.httprequest.cookies.get('website_lang')
+        if request.website_enabled:
+            try:
+                if func:
+                    cls._authenticate(func.routing['auth'])
+                elif request.uid is None:
+                    cls._auth_method_public()
+            except Exception as e:
+                return cls._handle_exception(e)
+
+            request.redirect = lambda url, code=302: werkzeug.utils.redirect(url_for(url), code)
+            request.website = request.env['website'].get_current_website()  # can use `request.env` since auth methods are called
+            context = dict(request.context)
+            context['website_id'] = request.website.id
+            langs = [lg[0] for lg in request.website.get_languages()]
+            path = request.httprequest.path.split('/')
+            if first_pass:
+                is_a_bot = cls.is_a_bot()
+                nearest_lang = not func and cls.get_nearest_lang(path[1])
+                url_lang = nearest_lang and path[1]
+                preferred_lang = ((cook_lang if cook_lang in langs else False)
+                                  or (not is_a_bot and cls.get_nearest_lang(request.lang))
+                                  or request.website.default_lang_code)
+
+                request.lang = context['lang'] = nearest_lang or preferred_lang
+                # if lang in url but not the displayed or default language --> change or remove
+                # or no lang in url, and lang to dispay not the default language --> add lang
+                # and not a POST request
+                # and not a bot or bot but default lang in url
+                if ((url_lang and (url_lang != request.lang or url_lang == request.website.default_lang_code))
+                        or (not url_lang and request.website_multilang and request.lang != request.website.default_lang_code)
+                        and request.httprequest.method != 'POST') \
+                        and (not is_a_bot or (url_lang and url_lang == request.website.default_lang_code)):
+                    if url_lang:
+                        path.pop(1)
+                    if request.lang != request.website.default_lang_code:
+                        path.insert(1, request.lang)
+                    path = '/'.join(path) or '/'
+                    request.context = context
+                    redirect = request.redirect(path + '?' + request.httprequest.query_string)
+                    redirect.set_cookie('website_lang', request.lang)
+                    return redirect
+                elif url_lang:
+                    request.uid = None
+                    path.pop(1)
+                    request.context = context
+                    return cls.reroute('/'.join(path) or '/')
+            if request.lang == request.website.default_lang_code:
+                context['edit_translations'] = False
+            if not context.get('tz'):
+                context['tz'] = request.session.get('geoip', {}).get('time_zone')
+                try:
+                    pytz.timezone(context['tz'] or '')
+                except pytz.UnknownTimeZoneError:
+                    context.pop('tz')
+
+            # bind modified context
+            request.context = context
+            request.website = request.website.with_context(context)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
         mypage = pages[0] if pages else False
         _, ext = os.path.splitext(req_page)

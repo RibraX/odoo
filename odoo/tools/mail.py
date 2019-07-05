@@ -43,13 +43,24 @@ class _Cleaner(clean.Cleaner):
     _style_re = re.compile('''([\w-]+)\s*:\s*((?:[^;"']|"[^"]*"|'[^']*')+)''')
 
     _style_whitelist = [
+<<<<<<< HEAD
         'font-size', 'font-family', 'font-weight', 'background-color', 'color', 'text-align',
         'line-height', 'letter-spacing', 'text-transform', 'text-decoration',
+=======
+        'font-size', 'font-family', 'font-weight',
+        'background-color', 'color', 'float', 'vertical-align',
+        'line-height', 'text-align', 'text-decoration',
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         'padding', 'padding-top', 'padding-left', 'padding-bottom', 'padding-right',
-        'margin', 'margin-top', 'margin-left', 'margin-bottom', 'margin-right'
+        'margin', 'margin-top', 'margin-left', 'margin-bottom', 'margin-right',
         # box model
+<<<<<<< HEAD
         'border', 'border-color', 'border-radius', 'border-style', 'height',
         'margin', 'padding', 'width', 'max-width', 'min-width',
+=======
+        'border', 'border-color', 'border-style', 'border-radius', 'border-width',
+        'height', 'margin', 'padding', 'width', 'max-width', 'min-width',
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         # tables
         'border-collapse', 'border-spacing', 'caption-side', 'empty-cells', 'table-layout']
 
@@ -154,7 +165,11 @@ class _Cleaner(clean.Cleaner):
                 if style[0].lower() in self._style_whitelist:
                     valid_styles[style[0].lower()] = style[1]
             if valid_styles:
+<<<<<<< HEAD
                 el.attrib['style'] = '; '.join('%s: %s' % (key, val) for (key, val) in valid_styles.items())
+=======
+                el.attrib['style'] = '; '.join('%s:%s' % (key, val) for (key, val) in valid_styles.iteritems())
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             else:
                 del el.attrib['style']
 

@@ -3,17 +3,35 @@
 # * base_setup
 #
 # Translators:
+<<<<<<< HEAD
 # Massimo Bianchi <bianchi.massimo@gmail.com>, 2016
 # Simone Bernini <simone@aperturelabs.it>, 2016
+=======
+# Martin Trigaux, 2016
+# Simone Bernini <simone@aperturelabs.it>, 2016
+# Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+# Massimo Bianchi <bianchi.massimo@gmail.com>, 2016
+# Paolo Valier, 2016
+# p_amoruso <p.amoruso@elvenstudio.it>, 2016
+# Giuliano Lotta <giuliano.lotta@gmail.com>, 2016
+# Léonie Bouchat <lbo@odoo.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-27 21:18+0000\n"
 "Last-Translator: Massimo Bianchi <bianchi.massimo@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-19 12:35+0000\n"
+"PO-Revision-Date: 2016-09-19 12:35+0000\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -109,9 +127,20 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: selection:base.setup.terminology,partner:0
 msgid "Customer"
 msgstr "Cliente"
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_footer
+msgid "Custom Report Footer *"
+msgstr "Report personalizzato Piè di pagina *"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_custom_footer
+msgid "Custom footer *"
+msgstr "Piè di pagina personalizzato *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_base_config_settings_display_name
@@ -121,9 +150,15 @@ msgid "Display Name"
 msgstr "Visualizza Nome"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: selection:base.setup.terminology,partner:0
 msgid "Donor"
 msgstr "Donatore"
+=======
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Edit default access rights for new users"
+msgstr "Modifica i diritti di accesso predefiniti per i nuovi utenti"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration
@@ -227,7 +262,16 @@ msgstr "Multi Company"
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration
 msgid "Multi Currencies"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Multi Valuta"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "New users access rights"
+msgstr "Diritti di accesso per i nuovi utenti"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration
@@ -239,9 +283,15 @@ msgstr ""
 "calendario di Google"
 
 #. module: base_setup
+<<<<<<< HEAD
 #: selection:base.setup.terminology,partner:0
 msgid "Partner"
 msgstr "Partner"
+=======
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_paper_format
+msgid "Paper Format *"
+msgstr "Formato Carta *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: selection:base.setup.terminology,partner:0
@@ -250,8 +300,52 @@ msgstr "Paziente"
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+<<<<<<< HEAD
 msgid "Portal access"
 msgstr "Accesso portale"
+=======
+msgid "Preview RML Report"
+msgstr ""
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_header
+msgid "RML Header *"
+msgstr ""
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_header2
+msgid "RML Internal Header *"
+msgstr ""
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_header3
+msgid "RML Internal Header for Landscape Reports *"
+msgstr ""
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "RML Report Configuration"
+msgstr ""
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.view_general_configuration
+msgid "Report Configuration"
+msgstr "Configurazione Report"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_base_config_settings_rml_footer_readonly
+msgid "Report Footer *"
+msgstr "Report Piè di pagina *"
+
+#. module: base_setup
+#: model:ir.model.fields,help:base_setup.field_base_config_settings_font
+msgid ""
+"Set the font into the report header, it will be used as default font in the "
+"RML reports of the user company"
+msgstr ""
+"Imposta i fonto dentro l'intestazione del report, verranno utlizzati come "
+"font predefinito nel report RML di questa azienda"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.model.fields,help:base_setup.field_base_config_settings_module_share
@@ -322,9 +416,14 @@ msgstr "Utilizza un altra parola per dire \"Cliente\""
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_base_config_settings_module_auth_oauth
+<<<<<<< HEAD
 msgid "Use external authentication providers, sign in with Google..."
 msgstr ""
 "Usa provider di autenticazione esterni, autenticazione tramite Google..."
+=======
+msgid "Use external authentication providers (OAuth)"
+msgstr "Usa provider di autenticazione esterni per connetterti (OAuth)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration

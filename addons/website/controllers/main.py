@@ -65,6 +65,7 @@ class Website(Home):
 
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):
+<<<<<<< HEAD
         homepage = request.website.homepage_id
         if homepage and homepage.url != '/':
             return request.env['ir.http'].reroute(homepage.url)
@@ -79,6 +80,18 @@ class Website(Home):
                 return request.redirect(first_menu.url)
 
         raise request.not_found()
+=======
+        page = 'homepage'
+        main_menu = request.website.menu_id or request.env.ref('website.main_menu', raise_if_not_found=False)
+        if main_menu:
+            first_menu = main_menu.child_id and main_menu.child_id[0]
+            if first_menu:
+                if first_menu.url and (not (first_menu.url.startswith(('/page/', '/?', '/#')) or (first_menu.url == '/'))):
+                    return request.redirect(first_menu.url)
+                if first_menu.url and first_menu.url.startswith('/page/'):
+                    return request.env['ir.http'].reroute(first_menu.url)
+        return self.page(page)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     #------------------------------------------------------
     # Login - overwrite of the web login so that regular users are redirected to the backend
@@ -109,6 +122,36 @@ class Website(Home):
         redirect.set_cookie('frontend_lang', lang)
         return redirect
 
+<<<<<<< HEAD
+=======
+    @http.route('/page/<page:page>', type='http', auth="public", website=True, cache=300)
+    def page(self, page, **opt):
+        values = {
+            'path': page,
+            'deletable': True,  # used to add 'delete this page' in content menu
+        }
+        # /page/website.XXX --> /page/XXX
+        if page.startswith('website.'):
+            url = '/page/' + page[8:]
+            if request.httprequest.query_string:
+                url += '?' + request.httprequest.query_string
+            return request.redirect(url, code=301)
+        elif '.' not in page:
+            page = 'website.%s' % page
+
+        try:
+            request.website.get_template(page)
+        except ValueError, e:
+            # page not found
+            if request.website.is_publisher():
+                values.pop('deletable')
+                page = 'website.page_404'
+            else:
+                return request.env['ir.http']._handle_exception(e, 404)
+
+        return request.render(page, values)
+
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     @http.route(['/website/country_infos/<model("res.country"):country>'], type='json', auth="public", methods=['POST'], website=True)
     def country_infos(self, country, **kw):
         fields = country.get_address_fields()

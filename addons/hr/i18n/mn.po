@@ -3,16 +3,34 @@
 # * hr
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# odmunkh enkh-ochir <odmunkh0609@gmail.com>, 2017
+# Ubuntu Erka <erdenebold10@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Unurjargal Tsoodol <unuruu25@gmail.com>, 2017
+# nasaaskii <nasaaskii@gmail.com>, 2017
+# Otgonbayar.A <gobi.mn@gmail.com>, 2017
+# Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-20 10:36+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Mongolian (http://www.transifex.com/odoo/odoo-9/language/"
 "mn/)\n"
 "Language: mn\n"
+=======
+"POT-Creation-Date: 2016-10-10 08:43+0000\n"
+"PO-Revision-Date: 2016-09-07 09:21+0000\n"
+"Last-Translator: Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2017\n"
+"Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -439,6 +457,14 @@ msgid "Error! You cannot create recursive hierarchy of Employee(s)."
 msgstr "Алдаа! Тойрог хамааралтай ажилчдыг үүсгэх боломжгүй."
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:hr.model_event_event
+msgid "Event"
+msgstr "Арга хэмжээ"
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_recruitment
 msgid "Expected New Employees"
 msgstr "Шинэ ажилтан хүлээгдсэн"
@@ -565,7 +591,7 @@ msgstr "Цалинт ажилтангууд"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_address_home_id
 msgid "Home Address"
-msgstr "Гэрийн хаяг"
+msgstr "Холбоотой харилцагч"
 
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_hr_main
@@ -614,7 +640,7 @@ msgstr "Нээлттэй"
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_job_filter
 msgid "In Recruitment"
-msgstr "Хүний нөөцийн бүрдүүлэлтэд"
+msgstr "Ажилд авч буй"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
@@ -719,7 +745,7 @@ msgstr "Сүүлийн холболт"
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "Launch Recruitment"
-msgstr "Хүний нөөцийн бүрдүүлэлтийг эхлүүлэх"
+msgstr "ХН бүрдүүлэлтийг эхлүүлэх"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_marketing
@@ -971,7 +997,7 @@ msgstr "Хүний нөөцийн бүрдүүлэлт хаагдсан"
 #. module: hr
 #: selection:hr.job,state:0
 msgid "Recruitment in Progress"
-msgstr "Хүнийн нөөцийн бүрдүүлэлт явагдаж байгаа"
+msgstr "ХН бүрдүүлэлт явагдаж байгаа"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -1099,7 +1125,7 @@ msgstr "Төлөв"
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_hr_job_form
 msgid "Stop Recruitment"
-msgstr "Ажилтан авах ажлыг зогсоох"
+msgstr "ХН бүрдүүлэлтийг зогсоох"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.hr_employee_action_subordinate_hierachy
@@ -1134,7 +1160,8 @@ msgstr ""
 #. module: hr
 #: sql_constraint:hr.job:0
 msgid "The name of the job position must be unique per department in company!"
-msgstr "Ажлын байрны нэр нь компаний хэлтэс тус бүрт үл давтагдах байх ёстой!"
+msgstr ""
+"Ажлын байрны нэр нь компанийн хэлтэс тус бүрт үл давтагдах байх ёстой!"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_time_efficiency
@@ -1267,6 +1294,12 @@ msgid ""
 "person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
+<<<<<<< HEAD
+=======
+"Odoo ажилтны дэлгэцийг өнгөц харахад л та хүн болгоны \n"
+"холбогдох мэдээлэл, ажлын байр, боломж, г.м. \n"
+"бүх мэдээллийг хялбархан олох боломжтой."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
@@ -1497,6 +1530,18 @@ msgid ""
 "timesheets,\n"
 "                leaves and holidays, recruitments, etc."
 msgstr ""
+<<<<<<< HEAD
+=======
+"Таны имэйл хаягийг танихгүй байгаа тул таны баримт үүссэнгүй. Ажилтны "
+"мэдээлэл дээр бүртгэгдсэн имэйл хаягаасаа имэйл илгээнэ үү эсвэл ХН "
+"менежертэйгээ холбогдоно уу."
+
+#. module: hr
+#: code:addons/hr/models/mail_thread.py:41
+#, python-format
+msgid "alias %s does not accept unknown employees"
+msgstr "Давхар нэр %s нь мэдэгдэхгүй ажилтныг хүлээн авахгүй"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_department_form

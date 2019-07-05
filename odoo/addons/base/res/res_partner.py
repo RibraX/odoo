@@ -179,7 +179,9 @@ class Partner(models.Model):
         [('contact', 'Contact'),
          ('invoice', 'Invoice address'),
          ('delivery', 'Shipping address'),
-         ('other', 'Other address')], string='Address Type',
+         ('other', 'Other address'),
+         ("private", "Private Address"),
+        ], string='Address Type',
         default='contact',
         help="Used to select automatically the right address according to the context in sales and purchases documents.")
     street = fields.Char()
@@ -200,7 +202,7 @@ class Partner(models.Model):
     # company_type is only an interface field, do not use it in business logic
     company_type = fields.Selection(string='Company Type',
         selection=[('person', 'Individual'), ('company', 'Company')],
-        compute='_compute_company_type', readonly=False)
+        compute='_compute_company_type', inverse='_write_company_type')
     company_id = fields.Many2one('res.company', 'Company', index=True, default=_default_company)
     color = fields.Integer(string='Color Index', default=0)
     user_ids = fields.One2many('res.users', 'partner_id', string='Users', auto_join=True)
@@ -372,6 +374,10 @@ class Partner(models.Model):
         for partner in self:
             partner.company_type = 'company' if partner.is_company else 'person'
 
+    def _write_company_type(self):
+        for partner in self:
+            partner.is_company = partner.company_type == 'company'
+
     @api.onchange('company_type')
     def onchange_company_type(self):
         self.is_company = (self.company_type == 'company')
@@ -418,7 +424,7 @@ class Partner(models.Model):
         as if they were related fields """
         commercial_partner = self.commercial_partner_id
         if commercial_partner != self:
-            sync_vals = commercial_partner._update_fields_values(self._commercial_fields())
+            sync_vals = commercial_partner.with_prefetch()._update_fields_values(self._commercial_fields())
             self.write(sync_vals)
 
     @api.multi
@@ -437,7 +443,7 @@ class Partner(models.Model):
         """ Sync commercial fields and address fields from company and to children after create/update,
         just as if those were all modeled as fields.related to the parent """
         # 1. From UPSTREAM: sync from parent
-        if values.get('parent_id') or values.get('type', 'contact'):
+        if values.get('parent_id') or values.get('type') == 'contact':
             # 1a. Commercial fields: sync if parent changed
             if values.get('parent_id'):
                 self._commercial_sync_from_company()
@@ -505,7 +511,7 @@ class Partner(models.Model):
         result = True
         # To write in SUPERUSER on field is_company and avoid access rights problems.
         if 'is_company' in vals and self.user_has_groups('base.group_partner_manager') and not self.env.uid == SUPERUSER_ID:
-            result = super(Partner, self).sudo().write({'is_company': vals.get('is_company')})
+            result = super(Partner, self.sudo()).write({'is_company': vals.get('is_company')})
             del vals['is_company']
         result = result and super(Partner, self).write(vals)
         for partner in self:
@@ -641,6 +647,7 @@ class Partner(models.Model):
             where_query = self._where_calc(args)
             self._apply_ir_rules(where_query, 'read')
             from_clause, where_clause, where_clause_params = where_query.get_sql()
+            from_str = from_clause if from_clause else 'res_partner'
             where_str = where_clause and (" WHERE %s AND " % where_clause) or ' WHERE '
 
             # search on the name of the contacts and of its company
@@ -652,8 +659,8 @@ class Partner(models.Model):
 
             unaccent = get_unaccent_wrapper(self.env.cr)
 
-            query = """SELECT id
-                         FROM res_partner
+            query = """SELECT res_partner.id
+                         FROM {from_str}
                       {where} ({email} {operator} {percent}
                            OR {display_name} {operator} {percent}
                            OR {reference} {operator} {percent}
@@ -661,13 +668,21 @@ class Partner(models.Model):
                            -- don't panic, trust postgres bitmap
                      ORDER BY {display_name} {operator} {percent} desc,
                               {display_name}
-                    """.format(where=where_str,
+                    """.format(from_str=from_str,
+                               where=where_str,
                                operator=operator,
+<<<<<<< HEAD
                                email=unaccent('email'),
                                display_name=unaccent('display_name'),
                                reference=unaccent('ref'),
                                percent=unaccent('%s'),
                                vat=unaccent('vat'),)
+=======
+                               email=unaccent('res_partner.email'),
+                               display_name=unaccent('res_partner.display_name'),
+                               reference=unaccent('res_partner.ref'),
+                               percent=unaccent('%s'))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
             where_clause_params += [search_name]*5
             if limit:
@@ -697,6 +712,10 @@ class Partner(models.Model):
         return partners.id or self.name_create(email)[0]
 
     def _get_gravatar_image(self, email):
+<<<<<<< HEAD
+=======
+        gravatar_image = False
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         email_hash = hashlib.md5(email.lower().encode('utf-8')).hexdigest()
         url = "https://www.gravatar.com/avatar/" + email_hash
         try:

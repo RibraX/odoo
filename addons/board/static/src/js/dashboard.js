@@ -200,13 +200,24 @@ FormRenderer.include({
             });
             board.columns.push(actions);
         });
+<<<<<<< HEAD
         return board;
+=======
+        var arch = QWeb.render('DashBoard.xml', board);
+        this.rpc('/web/view/edit_custom', { // do not forward-port > saas-15
+            custom_id: this.view.fields_view.custom_view_id, // do not forward-port > saas-15
+            arch: arch
+        }).then(function() {
+            data_manager.invalidate();
+        });
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     },
 
     //--------------------------------------------------------------------------
     // Private
     //--------------------------------------------------------------------------
 
+<<<<<<< HEAD
     /**
      * @private
      * @param {Object} params
@@ -244,6 +255,86 @@ FormRenderer.include({
                         return controller.appendTo(params.$node);
                     });
                 });
+=======
+        if (view_mode && view_mode != action.view_mode) {
+            action.views = _.map(view_mode.split(','), function(mode) {
+                mode = mode === 'tree' ? 'list' : mode;
+                return _(action.views).find(function(view) { return view[1] == mode; })
+                    || [false, mode];
+            });
+        }
+
+        action.flags = {
+            search_view : true, // Required to get the records
+            sidebar : false,
+            views_switcher : false,
+            action_buttons : false,
+            pager: false,
+            headless: true,
+            low_profile: true,
+            display_title: false,
+            search_disable_custom_filters: true,
+            list: {
+                selectable: false
+            }
+        };
+        var am = new ActionManager(this),
+            // FIXME: ideally the dashboard view shall be refactored like kanban.
+            $action = $('#' + this.view.element_id + '_action_' + index);
+        var $action_container = $action.closest('.oe_action');
+        var am_id = _.uniqueId('action_manager_');
+        am.am_id = am_id;
+        $action_container.data({
+            action_attrs: action_attrs,
+            am_id: am_id,
+        });
+        this.action_managers.push(am);
+        am.appendTo($action).then(function () {
+            am.do_action(action).then(function () {
+                if (am.inner_widget) {
+                    var new_form_action = function(id, editable) {
+                        var new_views = [];
+                        _.each(action_orig.views, function(view) {
+                            new_views[view[1] === 'form' ? 'unshift' : 'push'](view);
+                        });
+                        if (!new_views.length || new_views[0][1] !== 'form') {
+                            new_views.unshift([false, 'form']);
+                        }
+                        action_orig.views = new_views;
+                        action_orig.res_id = id;
+                        action_orig.flags = {
+                            form: {
+                                "initial_mode": editable ? "edit" : "view",
+                            }
+                        };
+                        self.do_action(action_orig);
+                    };
+                    var list = am.inner_widget.views.list;
+                    if (list) {
+                        list.loaded.done(function() {
+                            $(list.controller.groups).off('row_link').on('row_link', function(e, id) {
+                                new_form_action(id);
+                            });
+                        });
+                    }
+                    var kanban = am.inner_widget.views.kanban;
+                    if (kanban) {
+                        kanban.loaded.done(function() {
+                            kanban.controller.open_record = function(event, editable) {
+                                new_form_action(event.data.id, editable);
+                            };
+                        });
+                    }
+                    var calendar = am.inner_widget.views.calendar;
+                    if (calendar) {
+                        calendar.loaded.done(function () {
+                            calendar.controller.open_event = function (id, title) {
+                                new_form_action(Number(id));
+                            };
+                        });
+                    }
+                }
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             });
     },
     /**

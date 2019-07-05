@@ -3,16 +3,31 @@
 # * calendar
 #
 # Translators:
+<<<<<<< HEAD
 # Goutoudis Kostas <goutoudis@gmail.com>, 2015-2016
+=======
+# Kostas Goutoudis <goutoudis@gmail.com>, 2016
+# Timos Zacharatos <kokkinopioupiou@hotmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Giota Dandidou <giotadandidou@gmail.com>, 2017
+# George Tarasidis <george_tarasidis@yahoo.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-01-21 10:31+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Greek (http://www.transifex.com/odoo/odoo-9/language/el/)\n"
 "Language: el\n"
+=======
+"POT-Creation-Date: 2016-10-10 08:44+0000\n"
+"PO-Revision-Date: 2016-10-10 08:44+0000\n"
+"Last-Translator: George Tarasidis <george_tarasidis@yahoo.com>, 2017\n"
+"Language-Team: Greek (https://www.transifex.com/odoo/teams/41243/el/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -470,13 +485,21 @@ msgstr "${object.event_id.name} - Υπενθύμιση"
 #: model:mail.template,subject:calendar.calendar_template_meeting_invitation
 #, fuzzy
 msgid "${object.event_id.name} invitation"
+<<<<<<< HEAD
 msgstr "${object.event_id.name}"
+=======
+msgstr "${object.event_id.name} invitation"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: calendar
 #: model:mail.template,subject:calendar.calendar_template_meeting_changedate
 #, fuzzy
 msgid "${object.event_id.name}: Date updated"
+<<<<<<< HEAD
 msgstr "${object.event_id.name} - Ενημερώθηκε η ημερομηνία"
+=======
+msgstr "${object.event_id.name}: Η ημερομηνία ενημερώθηκε"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: calendar
 #: code:addons/calendar/calendar.py:776
@@ -726,8 +749,13 @@ msgstr "Εμφάνιση Ονόματος"
 #. openerp-web
 #: code:addons/calendar/static/src/js/base_calendar.js:168
 #, python-format
+<<<<<<< HEAD
 msgid "Do you really want to delete this filter from favorite?"
 msgstr "Θέλετε σίγουρα να διαγράψετε αυτό το φίλτρο από τα αγαπημένα;"
+=======
+msgid "Do you really want to delete this filter from favorites ?"
+msgstr "Θέλετε πραγματικά να διαγράψετε αυτό το φίλτρο από τα αγαπημένα;"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event_duration
@@ -795,10 +823,26 @@ msgid "Ending at"
 msgstr "Τελειώνει στις"
 
 #. module: calendar
+<<<<<<< HEAD
 #: constraint:calendar.event:0
 msgid "Error ! End date cannot be set before start date."
 msgstr ""
 "Λάθος! Η ημερομηνία λήξης δεν μπορεί να οριστεί πριν την ημερομηνία έναρξης"
+=======
+#: code:addons/calendar/models/calendar.py:821
+#, python-format
+msgid "Ending date cannot be set before starting date."
+msgstr ""
+"Η ημερομηνία λήξης δεν μπορεί να είναι μικρότερη από την ημερομηνία έναρξης."
+
+#. module: calendar
+#: code:addons/calendar/models/calendar.py:819
+#, python-format
+msgid "Ending datetime cannot be set before starting datetime."
+msgstr ""
+"Η ημερομηνία-ώρα λήξης δεν μπορεί να είναι μικρότερη από την ημερομηνία-ώρα "
+"έναρξης."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: calendar
 #: model:ir.model,name:calendar.model_calendar_event
@@ -819,7 +863,7 @@ msgstr "Υπενθύμιση συμβάντος"
 #: code:addons/calendar/calendar.py:1239
 #, python-format
 msgid "Event recurrence interval cannot be negative."
-msgstr ""
+msgstr "Το διάστημα επανάληψης συμβάντος δεν μπορεί να είναι αρνητικό."
 
 #. module: calendar
 #. openerp-web
@@ -933,6 +977,14 @@ msgid "Invitation details"
 msgstr "Λεπτομέρειες πρόσκλησης"
 
 #. module: calendar
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:calendar.invitation_page_anonymous
+msgid "Invitation for"
+msgstr "Πρόσκληση για"
+
+#. module: calendar
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:calendar.view_calendar_event_form
 msgid "Invitations"
 msgstr "Προσκλήσεις"
@@ -1146,6 +1198,14 @@ msgid "Owner"
 msgstr "Ιδιοκτήτης"
 
 #. module: calendar
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:calendar.field_calendar_event_attendee_ids
+msgid "Participant"
+msgstr "Συμμετέχων"
+
+#. module: calendar
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:calendar.model_res_partner
 msgid "Partner"
 msgstr "Συνεργάτης"
@@ -1302,6 +1362,8 @@ msgstr "Ημερομηνία και ώρα Έναρξης"
 #: model:ir.model.fields,help:calendar.field_calendar_event_start
 msgid "Start date of an event, without time for full days events"
 msgstr ""
+"Ημερομηνία έναρξης ενός συμβάντος. Εάν δεν ορισθεί η ώρα το συμβάν θα είναι "
+"για ολόκληρη την ημέρα"
 
 #. module: calendar
 #: model:ir.ui.view,arch_db:calendar.view_calendar_event_form
@@ -1329,6 +1391,8 @@ msgstr "Διακοπή"
 #: model:ir.model.fields,help:calendar.field_calendar_event_stop
 msgid "Stop date of an event, without time for full days events"
 msgstr ""
+"Ημερομηνία λήξης ενός συμβάντος. Εάν δεν ορισθεί η ώρα το συμβάν θα είναι "
+"για ολόκληρη την ημέρα"
 
 #. module: calendar
 #: model:ir.ui.view,arch_db:calendar.view_calendar_event_tree
@@ -1383,7 +1447,7 @@ msgstr "Τρίτο"
 #. module: calendar
 #: model:ir.ui.view,arch_db:calendar.view_calendar_event_form
 msgid "This event is linked to a recurrence...<br/>"
-msgstr ""
+msgstr "Αυτό το συμβάν συνδέεται με μια επανάληψη ...<br/>"
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event_th
@@ -1509,7 +1573,7 @@ msgstr "ενεργό"
 #. module: calendar
 #: model:ir.model,name:calendar.model_calendar_alarm_manager
 msgid "calendar.alarm_manager"
-msgstr ""
+msgstr "calendar.alarm_manager"
 
 #. module: calendar
 #: model:ir.model,name:calendar.model_calendar_contacts

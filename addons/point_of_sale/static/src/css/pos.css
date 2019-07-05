@@ -436,6 +436,8 @@ td {
     display: flex;
     -webkit-flex: 1;
     flex: 1;
+    max-width: -moz-available;
+    max-width: -webkit-fill-available;
 }
 .pos .orders {
     display: -webkit-flex;
@@ -1475,6 +1477,8 @@ td {
     body {
         margin: 0;
         color: white !important;
+        /* avoid black background if backgrounds are printed */
+        background: initial;
     }
     .oe_leftbar,
     .oe_loading,
@@ -2145,12 +2149,27 @@ td {
     font-family: 'Lato';
     font-family: Lato;
 }
+<<<<<<< HEAD
 .pos .modal-dialog .popup-confirm{
     height: 250px;
 }
 .pos .popup-confirm .body {
     overflow: auto;
     height: 120px;
+=======
+.pos .modal-dialog .popup-textinput{
+    display: flex;
+    flex-direction: column;
+}
+.pos .modal-dialog .popup-textinput .title,
+.pos .modal-dialog .popup-textinput .footer{
+    flex: none;
+}
+.pos .modal-dialog .popup-textinput textarea{
+    resize: none;
+    flex: auto;
+    margin: 0 20px 80px;
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 }
 .pos .popup .title {
     background: rgba(255,255,255,0.5);

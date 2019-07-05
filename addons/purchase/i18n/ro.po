@@ -3,18 +3,31 @@
 # * purchase
 # 
 # Translators:
+<<<<<<< HEAD
 # Dorin Hongu <dhongu@gmail.com>, 2017
 # Cozmin Candea <office@terrabit.ro>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Iulian Cutui <iulian.cutui@gmail.com>, 2017
 # sharkutz <sharkutz4life@yahoo.com>, 2017
+=======
+# Martin Trigaux, 2016
+# Cozmin Candea <office@terrabit.ro>, 2017
+# Dorin Hongu <dhongu@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: sharkutz <sharkutz4life@yahoo.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Dorin Hongu <dhongu@gmail.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -399,13 +412,19 @@ msgstr "<strong>Preț unitar</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
+<<<<<<< HEAD
 msgid "<strong>Your Order Reference:</strong>"
 msgstr ""
+=======
+msgid "<strong>Your Order Reference</strong>"
+msgstr "<strong>Referința dvs.</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_warning_purchase
 msgid "A warning can be set on a product or a customer (Purchase)"
 msgstr ""
+"O avertizare poate fi setată pe un produs sau pe un client (Achiziție)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_account_invoice_purchase_id
@@ -653,7 +672,7 @@ msgstr "Confirmă comanda"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Confirm purchase orders in one step"
-msgstr ""
+msgstr "Confirmare comandă de achiziție într-un singur pas"
 
 #. module: purchase
 #: selection:res.company,po_lock:0
@@ -979,12 +998,12 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation
 msgid "Levels of Approvals"
-msgstr ""
+msgstr "Nivelurile de aprobări"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_po_double_validation
 msgid "Levels of Approvals *"
-msgstr ""
+msgstr "Nivelurile de aprobare *"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1096,6 +1115,8 @@ msgid ""
 "Most propositions of purchase orders are created automatically\n"
 "                by Odoo based on inventory needs."
 msgstr ""
+"Cele mai multe propuneri de comenzi de achiziție sunt create automat de "
+"către Odoo pe baza necesarului de stoc."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_stock
@@ -1726,9 +1747,15 @@ msgid "Sequence"
 msgstr "Secvență"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_account
 msgid "Set analytic accounts in purchase orders"
 msgstr ""
+=======
+#: selection:purchase.config.settings,group_costing_method:0
+msgid "Set a fixed cost price on each product"
+msgstr "Stabilire preț fix pe fiecare produs"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1754,6 +1781,8 @@ msgstr "Recepție"
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Show all records which has next action date is before today"
 msgstr ""
+"Anumite produse pot fi vândute/achiziționate în diverse unități de măsură "
+"(avansat) "
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_origin
@@ -1852,6 +1881,8 @@ msgid ""
 "                you had with your vendor. Once confirmed, a request for\n"
 "                quotation is converted into a purchase order."
 msgstr ""
+"Cotația conține istoricul discuțiilor / negocierilor cu furnizorul. După "
+"confirmare o cotație se convertește în comandă de achiziție. "
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
@@ -1921,6 +1952,8 @@ msgstr ""
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "This note will show up on purchase orders."
 msgstr ""
+"Această comandă de achiziție a fost modificată din : <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:203
@@ -1991,6 +2024,8 @@ msgid ""
 "Unable to cancel purchase order %s as some receptions have already been "
 "done."
 msgstr ""
+"Nu se poate anula comanda de achiziție  %s deoarece unele recepții au fost "
+"deja efectuate."
 
 #. module: purchase
 #: code:addons/purchase/models/purchase.py:365
@@ -1999,6 +2034,8 @@ msgid ""
 "Unable to cancel this purchase order. You must first cancel related vendor "
 "bills."
 msgstr ""
+"Nu se poate anula această comandă de achiziție. Trebuie mai întâi să anulați"
+" facturile aferente."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_price_unit
@@ -2048,6 +2085,8 @@ msgid ""
 "            and Odoo will fill the bill automatically according to ordered\n"
 "            or received quantities."
 msgstr ""
+"Utilizați acest meniu pentru a controla facturile de primit de la dvs.\n"
+"  furnizori. Când înregistrați o factură nouă, setați comanda de achiziție și Odoo va completa automat factura conform cantităților comandate sau primite."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_form_action
@@ -2057,6 +2096,10 @@ msgid ""
 "                you can track the related discussion with the vendor, control\n"
 "                the products received and control the vendor bills."
 msgstr ""
+"Utilizați acest meniu pentru a căuta în cadrul comenzilor dvs. de achiziție "
+"după referințe, furnizori, produse etc. Pentru fiecare comandă de achiziție,"
+" puteți urmări discuția cu furnizorul, puteți controla produsele primite și "
+"puteți controla facturile furnizorului."
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_purchase_user
@@ -2176,6 +2219,8 @@ msgid ""
 "You can control the invoice from your vendor according to\n"
 "            what you purchased (services) or received (products)."
 msgstr ""
+"Puteți controla factura de la furnizorul dvs. în funcție de ceea ce ați "
+"achiziționat (servicii) sau ați primit (produse)."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_product_action
@@ -2184,6 +2229,9 @@ msgid ""
 "                it's a physical product, a consumable or services you buy to\n"
 "                subcontractors."
 msgstr ""
+"Trebuie să definiți un produs pentru tot ceea ce achiziționați, indiferent "
+"dacă este vorba de un produs fizic, de un consumabil sau de servicii pe care"
+" le cumpărați subcontractanți."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -2192,6 +2240,9 @@ msgid ""
 "            it's a physical product, a consumable or services you buy to\n"
 "            subcontractors."
 msgstr ""
+"Trebuie să definiți un produs pentru tot ceea ce achiziționați, indiferent "
+"dacă este vorba de un produs fizic, de un consumabil sau de servicii pe care"
+" le cumpărați subcontractanți."
 
 #. module: purchase
 #: code:addons/purchase/models/purchase.py:395

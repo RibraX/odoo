@@ -3,6 +3,15 @@
 # * event
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Martin Trigaux, 2016
+# Hamid Darabi, 2016
+# Zahed Alfak <tamass4116@gmail.com>, 2016
+# ghasem yaghoubi <y.ghasem@gmail.com>, 2016
+# ifaraz ir <ifarazir@gmail.com>, 2016
+# Hamed Mohammadi <hamed@dehongi.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -15,7 +24,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+<<<<<<< HEAD
 "Plural-Forms: nplurals=1; plural=0;\n"
+=======
+"Language: fa\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:mail.template,body_html:event.event_registration_mail_template_badge
@@ -56,6 +70,12 @@ msgid ""
 "<p>If you have any questions, please let us know.</p>\n"
 "<p>Best regards,</p>"
 msgstr ""
+"\n"
+"<p>گرامی ${object.name},</p>\n"
+"<p>تشکر از پاسخ شما.</p>\n"
+"<p>این بج شما برای رویداد ${object.event_id.name} است.</p>\n"
+"<p>اگر هر سوالی دارید لطفا از ما بپرسید.</p>\n"
+"<p>با احترام,</p>"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_cancel_state
@@ -75,18 +95,39 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
 msgid "(stats)"
+<<<<<<< HEAD
+=======
+msgstr "(وضعیت)"
+
+#. module: event
+#: model:event.event,description:event.event_0
+#: model:event.event,description:event.event_1
+#: model:event.event,description:event.event_3
+msgid "5 Intensive Days"
+msgstr " 5 روز پر فشار"
+
+#. module: event
+#: model:event.event,description:event.event_2
+msgid ""
+"<em>(Chamber Works reserves the right to cancel, re-name or re-locate<br>the"
+" event or change the dates on which it is held.)</em>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: event
 #: model:event.event,description:event.event_0
 msgid "3 Intensive Days"
 msgstr ""
+"<font style=\"color: rgb(255, 255, 255); font-size: 24px;\">برای یادگیری "
+"<i>برنامه نویسی اودو</i></font>"
 
 #. module: event
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "5 Intensive Days"
 msgstr ""
+"<font style=\"color: rgb(255, 255, 255); font-size: 24px;\">برای یادگیری "
+"<i>جنبه‌های فنی</i></font>"
 
 #. module: event
 #: model:event.event,description:event.event_2
@@ -94,6 +135,8 @@ msgid ""
 "<em>(Chamber Works reserves the right to cancel, re-name or re-locate<br>the "
 "event or change the dates on which it is held.)</em>"
 msgstr ""
+"<font style=\"font-size: 24px;\">برای یادگیری <i>توسعه نرم‌افزارهای کسب و "
+"کار</i></font>"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
@@ -101,6 +144,8 @@ msgid ""
 "<i class=\"fa fa-clock-o\"/>\n"
 "                                        <b>To</b>"
 msgstr ""
+"<i class=\"fa fa-clock-o\"/>\n"
+"                                        <b>تا</b>"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -131,7 +176,18 @@ msgstr ""
 #: model:ir.ui.view,arch_db:event.event_event_report_template_badge
 #: model:ir.ui.view,arch_db:event.event_registration_report_template_badge
 msgid "<i>to</i>"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "<i>به</i>"
+
+#. module: event
+#: model:event.event,description:event.event_0
+#: model:event.event,description:event.event_1
+#: model:event.event,description:event.event_3
+msgid "<small>John Doe, CEO</small>"
+msgstr "<small>قلی قلی زاده، رئیس</small>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
@@ -156,15 +212,21 @@ msgstr ""
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "<strong>Conference on Business Apps</strong>"
-msgstr ""
+msgstr "<strong>کنفرانس درباره برنامه‌های تجاری</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_0
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid ""
+<<<<<<< HEAD
 "<strong>Having attended this course, participants should be able to:</strong>"
 msgstr ""
+=======
+"<strong>Having attended this course, participants should be able "
+"to:</strong>"
+msgstr "<strong>پس از حضور در این دوره، شرکت کننده باید بتواند:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -172,31 +234,31 @@ msgstr ""
 #: model:event.event,description:event.event_2
 #: model:event.event,description:event.event_3
 msgid "<strong>Objectives:</strong>"
-msgstr ""
+msgstr "<strong>اهداف:</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_0
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "<strong>Our prices include:</strong>"
-msgstr ""
+msgstr "<strong>قیمت ما شاملِ:</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "<strong>Program:</strong>"
-msgstr ""
+msgstr "<strong>برنامه:</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_0
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "<strong>Requirements:</strong>"
-msgstr ""
+msgstr "<strong>نیازمندی‌ها:</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "<strong>Where to find us:</strong>"
-msgstr ""
+msgstr "<strong>کجا ما را بیابید:</strong>"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_active
@@ -212,8 +274,13 @@ msgstr ""
 
 #. module: event
 #: selection:event.mail,interval_type:0
+<<<<<<< HEAD
 msgid "After each subscription"
 msgstr ""
+=======
+msgid "After each registration"
+msgstr "پس از هر ثبت نام"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: selection:event.mail,interval_type:0
@@ -255,24 +322,24 @@ msgstr "بایگانی شده"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Arrays"
-msgstr ""
+msgstr "آرایه‌ها"
 
 #. module: event
 #: selection:event.registration,state:0
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
 #: selection:report.event.registration,registration_state:0
 msgid "Attended"
-msgstr ""
+msgstr "حاضر شده"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration_date_closed
 msgid "Attended Date"
-msgstr ""
+msgstr "تاریخ حضور"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_tree
 msgid "Attended the Event"
-msgstr ""
+msgstr "حاضر شده در رویداد"
 
 #. module: event
 #: model:ir.model,name:event.model_event_registration
@@ -290,7 +357,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:event.field_event_registration_name
 #: model:ir.ui.view,arch_db:event.event_event_report_template_badge
 msgid "Attendee Name"
-msgstr ""
+msgstr "نام شخص حاضر"
 
 #. module: event
 #: model:ir.actions.act_window,name:event.act_event_registration_from_event
@@ -307,14 +374,22 @@ msgid "Auto Confirmation"
 msgstr ""
 
 #. module: event
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:event.field_event_event_seats_available
+msgid "Available Seats"
+msgstr "صندلی‌های موجود"
+
+#. module: event
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:event.field_event_event_badge_back
 msgid "Badge Back"
-msgstr ""
+msgstr "پشت بج"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_badge_front
 msgid "Badge Front"
-msgstr ""
+msgstr "جلو بج"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_badge_innerleft
@@ -355,7 +430,7 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Bring your own laptop."
-msgstr ""
+msgstr "لب تاب خود را بیاورید."
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -380,7 +455,7 @@ msgstr "لغو"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Cancel Event"
-msgstr ""
+msgstr "لغو رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
@@ -408,7 +483,7 @@ msgstr ""
 #. module: event
 #: model:ir.actions.act_window,help:event.action_event_view
 msgid "Click to add a new event."
-msgstr ""
+msgstr "برای افزودن رویداد جدید کلیک کنید."
 
 #. module: event
 #: code:addons/event/models/event.py:206
@@ -433,12 +508,12 @@ msgstr ""
 #. module: event
 #: model:event.type,name:event.event_type_2
 msgid "Conference"
-msgstr ""
+msgstr "کنفرانس"
 
 #. module: event
 #: model:event.event,name:event.event_2
 msgid "Conference on Business Apps"
-msgstr ""
+msgstr "کنفرانس درباره برنامه‌های تجاری"
 
 #. module: event
 #: model:ir.ui.menu,name:event.menu_event_configuration
@@ -459,17 +534,17 @@ msgstr "تایید"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_confirm
 msgid "Confirm Anyway"
-msgstr ""
+msgstr "تایید به هر حال"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Confirm Event"
-msgstr ""
+msgstr "تایید رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_tree
 msgid "Confirm Registration"
-msgstr ""
+msgstr "تایید ثبت نام"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_auto_confirm
@@ -487,12 +562,12 @@ msgstr "تایید شد"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
 msgid "Confirmed attendees"
-msgstr ""
+msgstr "حاضرین تایید شده"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_search
 msgid "Confirmed events"
-msgstr ""
+msgstr "رویدادهای تایید شده"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration_partner_id
@@ -504,7 +579,7 @@ msgstr "تماس"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Controllers and Views"
-msgstr ""
+msgstr "کنترلرها و نماها"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_country_id
@@ -516,7 +591,7 @@ msgstr "کشور"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Course Summary"
-msgstr ""
+msgstr "خلاصه دوره"
 
 #. module: event
 #: model:web.tip,description:event.event_tip_1
@@ -632,14 +707,14 @@ msgstr "نام نمایشی"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_sequence
 msgid "Display order"
-msgstr ""
+msgstr "ترتیب نمایش"
 
 #. module: event
 #: model:event.event,description:event.event_0
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Dive into Strings"
-msgstr ""
+msgstr "پرش به تنظیمات"
 
 #. module: event
 #: selection:event.event,state:0
@@ -668,7 +743,7 @@ msgstr "پست الکترونیک"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Email Schedule"
-msgstr ""
+msgstr "برنامه ریزی ایمیل"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_config_settings_group_email_scheduling
@@ -703,7 +778,7 @@ msgstr "رویداد"
 #. module: event
 #: model:ir.actions.report.xml,name:event.report_event_event_badge
 msgid "Event Badge"
-msgstr ""
+msgstr "بج رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
@@ -711,10 +786,23 @@ msgid "Event Beginning Date"
 msgstr ""
 
 #. module: event
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:event.menu_event_type
+msgid "Event Categories"
+msgstr "طبقه بندی رویداد"
+
+#. module: event
+#: model:ir.ui.view,arch_db:event.view_event_search
+msgid "Event Category"
+msgstr "طبقه بندی رویداد"
+
+#. module: event
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,name:event.action_event_confirm
 #: model:ir.ui.view,arch_db:event.view_event_confirm
 msgid "Event Confirmation"
-msgstr ""
+msgstr "تایید کردن رویداد"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_event_date
@@ -724,27 +812,27 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration_event_end_date
 msgid "Event End Date"
-msgstr ""
+msgstr "تاریخ پایان رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
 msgid "Event Information"
-msgstr ""
+msgstr "اطلاعات رویداد"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_event_logo
 msgid "Event Logo"
-msgstr ""
+msgstr "لوگو رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_mail_form
 msgid "Event Mail Scheduler"
-msgstr ""
+msgstr "برنامه ریز ایمیل رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_mail_tree
 msgid "Event Mail Schedulers"
-msgstr ""
+msgstr "برنامه ریزهای ایمیل رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
@@ -755,19 +843,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:event.field_event_event_name
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Event Name"
-msgstr ""
+msgstr "نام رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_calendar
 msgid "Event Organization"
-msgstr ""
+msgstr "سازمان رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_calendar
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Event Registration"
-msgstr ""
+msgstr "ثبت نام رویداد"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_user_id
@@ -777,7 +865,7 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration_event_begin_date
 msgid "Event Start Date"
-msgstr ""
+msgstr "تاریخ شروع رویداد"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_event_state
@@ -794,7 +882,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:event.view_event_type_tree
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
 msgid "Event Type"
-msgstr ""
+msgstr "نوع رویداد"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.report_event_registration_graph
@@ -813,17 +901,17 @@ msgstr ""
 #: model:ir.ui.view,arch_db:event.view_event_search
 #: model:ir.ui.view,arch_db:event.view_event_tree
 msgid "Events"
-msgstr ""
+msgstr "رویدادها"
 
 #. module: event
 #: model:ir.actions.act_window,name:event.action_report_event_registration
 msgid "Events Analysis"
-msgstr ""
+msgstr "تحلیل رویدادها"
 
 #. module: event
 #: model:ir.actions.act_window,name:event.action_event_mail
 msgid "Events Mail Schedulers"
-msgstr ""
+msgstr "برنامه ریزهای ایمیل رویدادها"
 
 #. module: event
 #: model:ir.actions.act_window,name:event.action_event_type
@@ -833,7 +921,7 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_search
 msgid "Events in New state"
-msgstr ""
+msgstr "رویدادها در حالت جدید"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
@@ -848,17 +936,17 @@ msgstr ""
 #. module: event
 #: model:event.type,name:event.event_type_1
 msgid "Exhibition"
-msgstr ""
+msgstr "نمایشگاه"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Expected"
-msgstr ""
+msgstr "مورد انتظار"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
 msgid "Expected attendees"
-msgstr ""
+msgstr "حاضرین مورد انتظار"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
@@ -868,7 +956,7 @@ msgstr "فیلتر های بسط یافته..."
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Finish Event"
-msgstr ""
+msgstr "پایان دادن رویداد"
 
 #. module: event
 #: model:event.event,description:event.event_2
@@ -924,7 +1012,7 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Hello World"
-msgstr ""
+msgstr "سلام دنیا"
 
 #. module: event
 #: selection:event.mail,interval_unit:0
@@ -936,7 +1024,7 @@ msgstr "ساعت"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "How to Debug"
-msgstr ""
+msgstr "چگونگی خطایابی"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_config_settings_id
@@ -962,7 +1050,7 @@ msgstr ""
 #. module: event
 #: selection:event.mail,interval_unit:0
 msgid "Immediately"
-msgstr ""
+msgstr "فورا"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -991,12 +1079,12 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Integrated Help"
-msgstr ""
+msgstr "کمک ادغام شده"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_interval_nbr
 msgid "Interval"
-msgstr ""
+msgstr "بازه زمانی"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1197,13 +1285,13 @@ msgstr ""
 #: code:addons/event/models/event.py:200
 #, python-format
 msgid "No more available seats."
-msgstr ""
+msgstr "صندلی بیشتری وجود ندارد."
 
 #. module: event
 #: code:addons/event/models/event.py:300
 #, python-format
 msgid "No more seats available for this event."
-msgstr ""
+msgstr "صندلی بیشتری برای این رویداد موجود نیست."
 
 #. module: event
 #: selection:event.config.settings,auto_confirmation:0
@@ -1218,12 +1306,12 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_seats_expected
 msgid "Number of Expected Attendees"
-msgstr ""
+msgstr "تعداد حاضرین مورد انتظار."
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_seats_used
 msgid "Number of Participants"
-msgstr ""
+msgstr "تعداد شرکت کنندگان"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_nbregistration
@@ -1235,14 +1323,14 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Odoo Official Website"
-msgstr ""
+msgstr "وبسایت رسمی اودو"
 
 #. module: event
 #: model:event.event,description:event.event_0
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Odoo Web Client"
-msgstr ""
+msgstr "کلاینت وب اودو"
 
 #. module: event
 #: model:ir.actions.act_window,help:event.action_event_view
@@ -1266,7 +1354,7 @@ msgstr "سازمان‌دهنده"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Participant"
-msgstr ""
+msgstr "شرکت کننده"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_name_registration
@@ -1321,7 +1409,7 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Python Objects"
-msgstr ""
+msgstr "اشیاء پایتون"
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_registration_origin
@@ -1341,7 +1429,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:event.view_event_registration_pivot
 #: model:ir.ui.view,arch_db:event.view_event_registration_tree
 msgid "Registration"
-msgstr ""
+msgstr "ثبت"
 
 #. module: event
 #: model:ir.actions.report.xml,name:event.report_event_registration_badge
@@ -1356,12 +1444,12 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Registration Day"
-msgstr ""
+msgstr "تاریخ ثبت نام"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Registration ID"
-msgstr ""
+msgstr "شناسه ثبت نام"
 
 #. module: event
 #: model:ir.model,name:event.model_event_mail_registration
@@ -1376,7 +1464,7 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
 msgid "Registration Month"
-msgstr ""
+msgstr "ماه ثبت نام"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_report_event_registration_registration_state
@@ -1481,7 +1569,7 @@ msgstr "ارسال شد"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Set To Draft"
-msgstr ""
+msgstr "تعیین به عنوان پیشنویس"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_form
@@ -1516,7 +1604,7 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_search
 msgid "Start Month"
-msgstr ""
+msgstr "ماه شروع"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_state
@@ -1539,7 +1627,7 @@ msgstr ""
 #. module: event
 #: model:event.event,name:event.event_3
 msgid "Technical Training"
-msgstr ""
+msgstr "آموزش فنی"
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_event_reply_to
@@ -1559,7 +1647,7 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_config_settings_module_event_sale
 msgid "Tickets"
-msgstr ""
+msgstr "بلیطها"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_date_tz
@@ -1686,7 +1774,7 @@ msgstr "هفته"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "What you will learn?"
-msgstr ""
+msgstr "چه چیزی می‌اموزید؟"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_interval_type
@@ -1741,7 +1829,7 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "drinks and lunch;"
-msgstr ""
+msgstr "نوشیدنی و ناهار"
 
 #. module: event
 #: model:ir.model,name:event.model_event_config_settings
@@ -1788,6 +1876,7 @@ msgstr ""
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "training material."
+<<<<<<< HEAD
 msgstr ""
 
 #~ msgid "Action Needed"
@@ -1830,3 +1919,6 @@ msgstr ""
 
 #~ msgid "Unread Messages Counter"
 #~ msgstr "شمارنده پیام‌های خوانده‌نشده"
+=======
+msgstr "مواد آموزشی."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

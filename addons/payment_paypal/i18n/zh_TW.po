@@ -1,25 +1,35 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * payment_paypal
-#
+# 
 # Translators:
-# Carson Tsai <Ra661tCat@gmail.com>, 2016
+# Carson Tsai <Ra661tCat@gmail.com>, 2018
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-10 09:38+0000\n"
 "Last-Translator: Carson Tsai <Ra661tCat@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: 敬雲 林 <chingyun@yuanchih-consult.com>, 2018\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: payment_paypal
+<<<<<<< HEAD
 #: model:payment.acquirer,cancel_msg:payment_paypal.payment_acquirer_paypal
 msgid "<span><i>Cancel,</i> Your payment has been cancelled.</span>"
 msgstr "<span><i>取消,</i> 您的付款已取消.</span>"
@@ -52,26 +62,35 @@ msgstr "<span><i>暫停,</i> 您的在線付款已成功進行. 但您的訂單�
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_access_token
 msgid "Access Token"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_access_token
+msgid "Access Token"
+msgstr "訪問Token密鑰"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_access_token_validity
 msgid "Access Token Validity"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: payment_paypal
 #: model:ir.model,name:payment_paypal.model_res_company
 msgid "Companies"
 msgstr "公司"
+=======
+msgstr "訪問Token密鑰的有效性"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_paypal
 #: model:ir.ui.view,arch_db:payment_paypal.acquirer_form_paypal
 msgid "How to configure your paypal account?"
-msgstr "如何設定您的 Paypal 帳戶?"
+msgstr "如何設定您的Paypal帳戶？"
 
 #. module: payment_paypal
 #: model:ir.model,name:payment_paypal.model_payment_acquirer
 msgid "Payment Acquirer"
-msgstr "款項受讓方"
+msgstr "付款方式"
 
 #. module: payment_paypal
 #: model:ir.model,name:payment_paypal.model_payment_transaction
@@ -79,6 +98,7 @@ msgid "Payment Transaction"
 msgstr "付款交易"
 
 #. module: payment_paypal
+<<<<<<< HEAD
 #: model:payment.acquirer,name:payment_paypal.payment_acquirer_paypal
 msgid "Paypal"
 msgstr ""
@@ -87,11 +107,49 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_email_account
 msgid "Paypal Email ID"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_email_account
+msgid "Paypal Email ID"
+msgstr "Paypal 電子郵件位址ID"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_paypal
 #: model:ir.model.fields,help:payment_paypal.field_payment_acquirer_paypal_use_ipn
 msgid "Paypal Instant Payment Notification"
-msgstr "Paypal 即時付款通知"
+msgstr "Paypal 即時支付提醒"
+
+#. module: payment_paypal
+#: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_seller_account
+msgid "Paypal Merchant ID"
+msgstr "Paypal 銷售商 ID"
+
+#. module: payment_paypal
+#: model:ir.ui.view,arch_db:payment_paypal.transaction_form_paypal
+msgid "Paypal TX Details"
+msgstr "Paypal TX 細節"
+
+#. module: payment_paypal
+#: code:addons/payment_paypal/models/payment.py:134
+#, python-format
+msgid "Paypal: received data with missing reference (%s) or txn_id (%s)"
+msgstr "Paypal: 接收到的數據缺失參照 (%s) 或 txn_id (%s)"
+
+#. module: payment_paypal
+#: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_password
+msgid "Rest API Password"
+msgstr "Rest API 密碼"
+
+#. module: payment_paypal
+#: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_username
+msgid "Rest API Username"
+msgstr "重置 API 使用者名"
+
+#. module: payment_paypal
+#: model:ir.model.fields,help:payment_paypal.field_payment_acquirer_paypal_seller_account
+msgid ""
+"The Merchant ID is used to ensure communications coming from Paypal are "
+"valid and secured."
+msgstr "Merchant ID被用於確認來自Paypal的信息是有效且安全的。 "
 
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_seller_account
@@ -134,11 +192,16 @@ msgstr "交易類型"
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_use_ipn
 msgid "Use IPN"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "使用 IPN"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer_paypal_api_enabled
 msgid "Use Rest API"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: payment_paypal
@@ -147,3 +210,6 @@ msgid ""
 "You will be redirected to the Paypal website after clicking on the payment "
 "button."
 msgstr ""
+=======
+msgstr "使用 Rest API"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

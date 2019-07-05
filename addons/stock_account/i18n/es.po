@@ -3,12 +3,27 @@
 # * stock_account
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Miguel Orueta <mo@landoo.es>, 2017
 # Gustavo Valverde <g.valverde02@gmail.com>, 2017
 # Daniel Blanco <daniel@blancomartin.com.ar>, 2017
 # José Vicente <txusev@gmail.com>, 2017
 # Pedro M. Baeza <pedro.baeza@gmail.com>, 2017
+=======
+# Martin Trigaux, 2016
+# Carles Antoli <carlesantoli@hotmail.com>, 2016
+# Miguel Orueta <mo@landoo.es>, 2016
+# José Vicente <txusev@gmail.com>, 2016
+# Luis M. Triana <luis.triana@jarsa.com.mx>, 2016
+# Pedro M. Baeza <pedro.baeza@gmail.com>, 2016
+# Ana Juaristi <ajuaristio@gmail.com>, 2016
+# Luis M. Ontalba <luis.martinez@tecnativa.com>, 2016
+# oihane <oihanecruce@gmail.com>, 2016
+# Ivan Nieto <ivan.n.s@tuta.io>, 2016
+# Mateo Tibaquirá Palacios <nestormateo@gmail.com>, 2016
+# Leonardo Chianea <noamixcontenidos@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # RGB Consulting <odoo@rgbconsulting.com>, 2017
 # Glen Sojo <inactive+glen.sojo@transifex.com>, 2017
 # Luis M. Triana <luis.triana@jarsa.com.mx>, 2017
@@ -219,8 +234,20 @@ msgid "If there are products, you will see its name and valuation."
 msgstr ""
 
 #. module: stock_account
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:stock_account.res_config_settings_view_form
 msgid "Include landed costs in product cost"
+=======
+#: selection:stock.config.settings,module_stock_landed_costs:0
+msgid "Include landed costs in product costing computation"
+msgstr "Incluir costes en destino en el cálculo del coste del producto"
+
+#. module: stock_account
+#: model:ir.model.fields,help:stock_account.field_stock_config_settings_module_stock_landed_costs
+msgid ""
+"Install the module that allows to affect landed costs on pickings, and split"
+" them onto the different products."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: stock_account
@@ -307,9 +334,15 @@ msgid "No difference between standard price and new price!"
 msgstr "¡No hay diferencias entre el precio estándar y el nuevo precio!"
 
 #. module: stock_account
+<<<<<<< HEAD
 #: model:ir.model,name:stock_account.model_stock_move_line
 msgid "Packing Operation"
 msgstr "Operación de empaquetado"
+=======
+#: selection:stock.config.settings,module_stock_landed_costs:0
+msgid "No landed costs"
+msgstr "Sin costes en destino"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: stock_account
 #: selection:product.template,property_valuation:0

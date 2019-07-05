@@ -23,7 +23,6 @@
     'data': [
         'security/project_security.xml',
         'security/ir.model.access.csv',
-        'data/project_data.xml',
         'report/project_report_views.xml',
         'views/project_views.xml',
         'views/res_partner_views.xml',
@@ -32,7 +31,11 @@
         'views/project_portal_templates.xml',
         'data/web_planner_data.xml',
         'data/project_mail_template_data.xml',
+<<<<<<< HEAD
         'wizard/project_task_merge_wizard_views.xml',
+=======
+        'data/project_data.xml',
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     ],
     'qweb': ['static/src/xml/project.xml'],
     'demo': ['data/project_demo.xml'],

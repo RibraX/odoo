@@ -245,7 +245,8 @@ class Project(models.Model):
         project = super(Project, self).copy(default)
         for follower in self.message_follower_ids:
             project.message_subscribe(partner_ids=follower.partner_id.ids, subtype_ids=follower.subtype_ids.ids)
-        self.map_tasks(project.id)
+        if 'tasks' not in default:
+            self.map_tasks(project.id)
         return project
 
     @api.model
@@ -265,6 +266,7 @@ class Project(models.Model):
         if 'active' in vals:
             # archiving/unarchiving a project does it on its tasks, too
             self.with_context(active_test=False).mapped('tasks').write({'active': vals['active']})
+<<<<<<< HEAD
         if vals.get('partner_id') or vals.get('privacy_visibility'):
             for project in self.filtered(lambda project: project.privacy_visibility == 'portal'):
                 project.message_subscribe(project.partner_id.ids)
@@ -305,6 +307,10 @@ class Project(models.Model):
             for channel_id in channel_ids or []:
                 self.mapped('tasks').filtered(lambda task: not task.stage_id.fold and channel_id not in task.message_channel_ids.ids).message_subscribe(
                     partner_ids=None, channel_ids=[channel_id], subtype_ids=None, force=False)
+=======
+            # archiving/unarchiving a project implies that we don't want to use the analytic account anymore
+            self.with_context(active_test=False).mapped('analytic_account_id').write({'active': vals['active']})
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return res
 
     @api.multi
@@ -513,9 +519,15 @@ class Task(models.Model):
         default_partner_id = self.env.context.get('default_partner_id')
         default_partner = self.env['res.partner'].browse(default_partner_id) if default_partner_id else self.env['res.partner']
         if self.project_id:
+<<<<<<< HEAD
             self.partner_id = self.project_id.partner_id or default_partner
             if self.project_id not in self.stage_id.project_ids:
                 self.stage_id = self.stage_find(self.project_id.id, [('fold', '=', False)])
+=======
+            if self.project_id.partner_id:
+                self.partner_id = self.project_id.partner_id
+            self.stage_id = self.stage_find(self.project_id.id, [('fold', '=', False)])
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         else:
             self.partner_id = default_partner
             self.stage_id = False

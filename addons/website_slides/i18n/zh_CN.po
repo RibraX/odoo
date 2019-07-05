@@ -3,6 +3,7 @@
 # * website_slides
 # 
 # Translators:
+<<<<<<< HEAD
 # Jeffery CHEN <jeffery9@gmail.com>, 2017
 # Siyuan Gu <siyuancn@hotmail.com>, 2017
 # fausthuang <faust_huang@hotmail.com>, 2017
@@ -18,13 +19,27 @@
 # 苏州远鼎 <tiexinliu@126.com>, 2017
 # 卓忆科技 <zhanghao@jointd.com>, 2017
 # liulixia <liu.lixia@elico-corp.com>, 2017
+=======
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# 珠海-杜哥 <liangjia@qq.com>, 2016
+# 老窦 北京 <2662059195@qq.com>, 2018
+# e2f_cn c5 <jarvisn@ecinnovations.com>, 2018
+# Martin Trigaux, 2018
+# 李赋 <fu792659@163.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:27+0000\n"
 "PO-Revision-Date: 2017-10-02 11:27+0000\n"
 "Last-Translator: liulixia <liu.lixia@elico-corp.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:28+0000\n"
+"PO-Revision-Date: 2017-06-23 13:28+0000\n"
+"Last-Translator: 李赋 <fu792659@163.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,6 +66,21 @@ msgid ""
 "    </a>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>您好,</p>\n"
+"<p>\n"
+"    ${user.name} 分享 ${object.slide_type} <strong>${object.name}</strong> 给您!\n"
+"</p>\n"
+"<p style=\"text-align: center; margin-top: 10px;\">\n"
+"    <a href=\"${object.website_url}\">\n"
+"        <img alt=\"${object.name}\" src=\"${ctx['base_url']}/web/image/slide.slide/${object.id}/image\" style=\"height:auto; width:150px; background-color: #cccccc; margin: 16px;\">\n"
+"    </a>\n"
+"</p>\n"
+"<p style=\"text-align: center; margin-top: 10px;\">\n"
+"    <a style=\"-webkit-user-select: none; padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#875A7B; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #875A7B; border: 1px solid #875A7B; border-radius:3px\" class=\"o_default_snippet_text\" href=\"${object.website_url}\">\n"
+"        查阅 <strong>${object.name}</strong>\n"
+"    </a>\n"
+"</p>\n"
 
 #. module: website_slides
 #: model:mail.template,body_html:website_slides.slide_template_published
@@ -71,6 +101,21 @@ msgid ""
 "    </a>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>您好,</p>\n"
+"<p>\n"
+"    您有新的 ${object.slide_type} <strong>${object.name}</strong> 已于 ${object.channel_id.name} 发布到 ${format_tz(object.write_date, tz=user.tz)}\n"
+"</p>\n"
+"<p style=\"text-align: center; margin-top: 10px;\">\n"
+"    <a href=\"${object.website_url}\">\n"
+"        <img alt=\"${object.name}\" src=\"${ctx['base_url']}/web/image/slide.slide/${object.id}/image\" style=\"height:auto; width:150px; background-color: #cccccc; margin: 16px;\">\n"
+"    </a>\n"
+"</p>\n"
+"<p style=\"text-align: center; margin-top: 10px;\">\n"
+"    <a style=\"-webkit-user-select: none; padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#875A7B; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #875A7B; border: 1px solid #875A7B; border-radius:3px\" class=\"o_default_snippet_text\" href=\"${object.website_url}\">\n"
+"        请留意查看 <strong>${object.name}</strong>\n"
+"    </a>\n"
+"</p>\n"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_embed_count_views
@@ -97,7 +142,7 @@ msgstr "${user.name} 向你分享了 ${object.slide_type}!"
 msgid ""
 "(Un)archiving a channel automatically (un)archives its slides. Do you want "
 "to proceed?"
-msgstr ""
+msgstr "自动（取消）归档渠道（取消）归档其幻灯片。是否继续？"
 
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.slides_search
@@ -218,17 +263,17 @@ msgstr "<i class=\"fa fa-share-alt\"/> 分享"
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.embed_slide
 msgid "<i class=\"fa fa-spinner fa-spin\"/> Loading ..."
-msgstr "<i class=\"fa fa-spinner fa-spin\"/> 载入 ..."
+msgstr "<i class=\"fa fa-spinner fa-spin\"/> 加载中 ..."
 
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.slide_detail_view
 msgid "<i class=\"fa fa-thumbs-down\"/> Dislikes"
-msgstr "<i class=\"fa fa-thumbs-down\"/> 不喜欢"
+msgstr "<i class=\"fa fa-thumbs-down\"/> 踩"
 
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.slide_detail_view
 msgid "<i class=\"fa fa-thumbs-up\"/> Likes"
-msgstr "<i class=\"fa fa-thumbs-up\"/> 喜欢"
+msgstr "<i class=\"fa fa-thumbs-up\"/> 顶"
 
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.slide_detail_view
@@ -332,17 +377,17 @@ msgstr "这有认证的用户可以"
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_5
 msgid "Awesome Timesheet by Odoo"
-msgstr ""
+msgstr "Odoo作业记录表"
 
 #. module: website_slides
 #: model:slide.tag,name:website_slides.tag1
 msgid "CMS"
-msgstr ""
+msgstr "CMS"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_channel_can_see
 msgid "Can See"
-msgstr "可以看"
+msgstr "可阅"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_channel_can_upload
@@ -438,6 +483,8 @@ msgid ""
 "Could not fetch data from url. Document or access right not available.\n"
 "Here is the received response: %s"
 msgstr ""
+"无法从url 中获取数据。文档或访问权限不可用。\n"
+" 这是已收到的回复：%s"
 
 #. module: website_slides
 #: code:addons/website_slides/models/slides.py:322
@@ -453,6 +500,9 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_slides.res_config_settings_view_form
 msgid "Create a Google Project and Get a Key"
 msgstr ""
+"使用Odoo在您的网站上创建一个漂亮而且专业的电子商务。\n"
+"\n"
+"欲了解更多信息，请访问https://www.odoo.com/page/e-commerce"
 
 #. module: website_slides
 #. openerp-web
@@ -502,6 +552,7 @@ msgstr "说明"
 #: code:addons/website_slides/static/src/xml/website_slides.xml:71
 #, python-format
 msgid "Discard"
+<<<<<<< HEAD
 msgstr "放弃"
 
 #. module: website_slides
@@ -523,6 +574,9 @@ msgstr ""
 #: model:slide.slide,description:website_slides.slide_1
 msgid "Discover the CRM sales people love https://www.odoo.com/page/crm"
 msgstr ""
+=======
+msgstr "取消"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_slides
 #: model:slide.slide,description:website_slides.slide_2
@@ -531,6 +585,9 @@ msgid ""
 "\n"
 "Learn more at https://odoo.com"
 msgstr ""
+"了解适合任何业务规模和用例的一体化业务管理软件解决方案。\n"
+"\n"
+" 欲了解更多内容，请访问 https://odoo.com "
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_slide_dislikes
@@ -586,6 +643,10 @@ msgid ""
 "Chrome: http://bit.ly/2613LcY\n"
 "iOS: http://bit.ly/1ZUZsZD"
 msgstr ""
+"下载 Odoo 超棒的时间表，了解时间跟踪和员工管理可以变得多么轻松！\n"
+"\n"
+"Chrome: http://bit.ly/2613LcY\n"
+"iOS: http://bit.ly/1ZUZsZD"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_slide_download_security
@@ -901,7 +962,7 @@ msgstr "视频数量"
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_2
 msgid "Odoo All-in-One Software Demonstration"
-msgstr ""
+msgstr "Odoo 一体化软件演示"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_1
@@ -920,6 +981,7 @@ msgid "Odoo Inventory"
 msgstr ""
 
 #. module: website_slides
+<<<<<<< HEAD
 #: model:slide.slide,name:website_slides.slide_0
 msgid "Odoo MRP"
 msgstr ""
@@ -933,6 +995,24 @@ msgstr ""
 #: model:slide.slide,name:website_slides.slide_8
 msgid "Odoo Sales"
 msgstr ""
+=======
+#: model:slide.slide,name:website_slides.slide_3
+msgid "Odoo Sign Demonstration"
+msgstr "Odoo标志示范"
+
+#. module: website_slides
+#: model:slide.slide,name:website_slides.slide_1
+msgid "Odoo Website & E-commerce Demonstration"
+msgstr "Odoo网站和电子商务示范"
+
+#. module: website_slides
+#: model:slide.slide,description:website_slides.slide_6
+msgid ""
+"Odoo's fully-integrated marketing app will help you to attract, convert and "
+"close new leads. Check out our three-part video and discover more at "
+"www.odoo.com"
+msgstr "Odoo完全整合的营销应用程序将帮助您吸引，转换和关闭新的潜在客户。 查看我们的三部分视频，并在www.odoo.com上了解更多信息"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_3
@@ -1171,6 +1251,9 @@ msgid ""
 "\n"
 "Discover more at https://www.odoo.com/page/sign"
 msgstr ""
+"告别手动打印和扫描。转投带有 Odoo 标志的电子签名！\n"
+"\n"
+" 欲了解更多内容，请访问 https://www.odoo.com/page/sign"
 
 #. module: website_slides
 #: model:ir.ui.view,arch_db:website_slides.view_slide_tag_form
@@ -1204,7 +1287,7 @@ msgstr "这"
 msgid ""
 "The document type will be set automatically based on the document URL and "
 "properties (e.g. height and width for presentation and document)."
-msgstr ""
+msgstr "将根据文档网址和属性（例如演示文稿的高度和宽度以及文档）自动设置文档类型。"
 
 #. module: website_slides
 #: sql_constraint:slide.slide:0

@@ -3,11 +3,20 @@
 # * rating
 #
 # Translators:
+<<<<<<< HEAD
 #, fuzzy
+=======
+# xlu <xlu@seznam.cz>, 2016
+# Martin Trigaux, 2016
+# Michal Veselý <michal@veselyberanek.net>, 2018
+# trendspotter <j.podhorecky@volny.cz>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2015-10-23 14:09+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -20,6 +29,39 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "#-#-#-#-#  cs.po (Odoo 9.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2016-09-29 14:00+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
+"Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid ""
+"<br/>\n"
+"                        on our services on \""
+msgstr ""
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">by </span>"
+msgstr ""
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">for </span>"
+msgstr ""
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_kanban
+msgid "<span class=\"text-muted\">on </span>"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_access_token
@@ -35,7 +77,7 @@ msgstr ""
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_partner_id
 msgid "Author of the rating"
-msgstr ""
+msgstr "Autor hodnocení"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_create_uid
@@ -67,7 +109,7 @@ msgstr "Zobrazovaný název"
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_res_id
 msgid "Document ID"
-msgstr ""
+msgstr "ID dokumentu"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_res_model
@@ -87,35 +129,35 @@ msgstr "Seskupit podle"
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Happy"
-msgstr ""
+msgstr "V pohodě"
 
 #. module: rating
 #. openerp-web
 #: code:addons/rating/static/src/js/rating_common.js:26
 #, python-format
 msgid "I don't like it"
-msgstr ""
+msgstr "Nelíbí se mi"
 
 #. module: rating
 #. openerp-web
 #: code:addons/rating/static/src/js/rating_common.js:25
 #, python-format
 msgid "I hate it"
-msgstr ""
+msgstr "Vadí mi to."
 
 #. module: rating
 #. openerp-web
 #: code:addons/rating/static/src/js/rating_common.js:28
 #, python-format
 msgid "I like it"
-msgstr ""
+msgstr "líbí se mi to"
 
 #. module: rating
 #. openerp-web
 #: code:addons/rating/static/src/js/rating_common.js:29
 #, python-format
 msgid "I love it"
-msgstr ""
+msgstr "Líbí se mi"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_mixin_id
@@ -138,7 +180,7 @@ msgstr ""
 #: code:addons/rating/static/src/js/rating_common.js:27
 #, python-format
 msgid "It's okay"
-msgstr ""
+msgstr "To je v pořádku"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_mixin___last_update
@@ -159,7 +201,7 @@ msgstr "Naposled upraveno"
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_message_id
 msgid "Linked message"
-msgstr ""
+msgstr "Propojená zpráva"
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_model
@@ -173,13 +215,21 @@ msgstr "Měsíc"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+<<<<<<< HEAD
+=======
+msgid "My Ratings"
+msgstr "Moje hodnocení"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Okay"
 msgstr ""
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rated_partner_id
 msgid "Owner of the rated resource"
-msgstr ""
+msgstr "Majitel ohodnoceného zdroje"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_rated_partner_id
@@ -197,7 +247,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:rating.field_rating_rating_rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Rating"
-msgstr ""
+msgstr "Hodnocení"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_graph
@@ -206,29 +256,61 @@ msgid "Rating Average"
 msgstr ""
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:rating.field_mail_channel_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_product_template_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_project_issue_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_project_task_rating_last_value
+#: model:ir.model.fields,field_description:rating.field_rating_mixin_rating_last_value
+msgid "Rating Last Value"
+msgstr "Hodnocení Poslední hodnoty"
+
+#. module: rating
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:rating.model_rating_mixin
 msgid "Rating Mixin"
 msgstr ""
 
 #. module: rating
+<<<<<<< HEAD
 #: sql_constraint:rating.rating:0
 msgid "Rating should be between -1 to 10"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:rating.field_mail_channel_rating_count
+#: model:ir.model.fields,field_description:rating.field_product_template_rating_count
+#: model:ir.model.fields,field_description:rating.field_project_issue_rating_count
+#: model:ir.model.fields,field_description:rating.field_project_task_rating_count
+#: model:ir.model.fields,field_description:rating.field_rating_mixin_rating_count
+msgid "Rating count"
+msgstr "Počet hodnocení"
+
+#. module: rating
+#: sql_constraint:rating.rating:0
+msgid "Rating should be between 0 to 10"
+msgstr "Hodnocení by mělo být od 0 do 10"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rating
+<<<<<<< HEAD
 msgid "Rating value"
 msgstr ""
+=======
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "Hodnocení: 0 = nešťastný, 10 = šťastný"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Ratings"
-msgstr ""
+msgstr "Hodnocení"
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_feedback
 msgid "Reason of the rating"
-msgstr ""
+msgstr "Důvod hodnocení"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -248,9 +330,10 @@ msgstr "Odpovědný"
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_access_token
 msgid "Security Token"
-msgstr ""
+msgstr "Bezpečnostní token"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Sorry you have already voted !"
 msgstr ""
@@ -259,6 +342,16 @@ msgstr ""
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Thanks for voting !"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Send Feedback"
+msgstr "Poslat zpětnou vazbu"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Thanks! We appreciate your feedback."
+msgstr "Díky! Vážíme si vaší zpětné vazby."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_name
@@ -268,7 +361,7 @@ msgstr ""
 #. module: rating
 #: model:ir.actions.act_window,help:rating.action_view_rating
 msgid "There is no rating for this object at the moment."
-msgstr ""
+msgstr "Momentálně není žádné hodnocení pro tento objekt."
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -276,17 +369,63 @@ msgid "Unhappy"
 msgstr ""
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "We appreciate your feedback!"
+msgstr "Vážíme si vaší zpětné vazby!"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Would be great if you can provide more information:"
+msgstr ""
+
+#. module: rating
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Year"
 msgstr "Rok"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Your vote has been taken into account."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Your rating has been submitted."
+msgstr ""
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "by"
+msgstr "od"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:21
+#, python-format
+msgid "highly dissatisfied"
+msgstr "velmi nespokojen"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:20
+#, python-format
+msgid "not satisfied"
+msgstr "nespokojený"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating
 #: code:addons/rating/models/rating.py:57
 #, python-format
+<<<<<<< HEAD
 msgid "rated it"
 msgstr ""
+=======
+msgid "satisfied"
+msgstr "spokojený"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "you are"
+msgstr "vy jste"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

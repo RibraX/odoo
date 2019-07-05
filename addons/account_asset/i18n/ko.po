@@ -3,15 +3,33 @@
 # * account_asset
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# 방상우 <mrroom@gmail.com>, 2017
+# 종현 엄 <whd5367@naver.com>, 2017
+# Martin Trigaux, 2017
+# Goh Gangtai <gangtai.goh@gmail.com>, 2017
+# JH CHOI <hwangtog@gmail.com>, 2017
+# Linda Stockelova <stockeloval@btlnet.com>, 2018
+# Linkup <link-up@naver.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-05-12 09:34+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "Language: ko\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Linkup <link-up@naver.com>, 2018\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -24,6 +42,15 @@ msgid " (copy)"
 msgstr " (사본)"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: code:addons/account_asset/models/account_asset.py:511
+#, python-format
+msgid " (grouped)"
+msgstr "(분류됨)"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_entry_count
 msgid "# Asset Entries"
 msgstr "#자산 기입항목"
@@ -36,12 +63,12 @@ msgstr "# 감가상각 명세"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_installment_nbr
 msgid "# of Installment Lines"
-msgstr ""
+msgstr "할부 라인 수"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_depreciation_confirmation_wizard_date
 msgid "Account Date"
-msgstr ""
+msgstr "계정 날짜"
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_move
@@ -49,10 +76,40 @@ msgid "Account Entry"
 msgstr "계정 기입 항목"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_active
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_active
 msgid "Active"
 msgstr "활성"
+=======
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_depreciation_id
+msgid "Account used in the depreciation entries, to decrease the asset value."
+msgstr "자산 가치를 낮추기 위해 감가상각 기입에 사용하는 계정입니다."
+
+#. module: account_asset
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_depreciation_expense_id
+msgid ""
+"Account used in the periodical entries, to record a part of the asset as "
+"expense."
+msgstr "자산의 일부를 경비로 기록하기 위해 정기 항목에 사용하는 계정입니다."
+
+#. module: account_asset
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_asset_id
+msgid ""
+"Account used to record the purchase of the asset at its original price."
+msgstr "자산의 정가 구매를 기록하는 데 사용하는 계정입니다."
+
+#. module: account_asset
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_active
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_active
+msgid "Active"
+msgstr "사용"
+
+#. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+msgid "Additional Options"
+msgstr "추가 옵션"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:484
@@ -68,7 +125,7 @@ msgstr "감가상각 명세 합계"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_installment_value
 msgid "Amount of Installment Lines"
-msgstr ""
+msgstr "할부 라인 금액"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_analytic_id
@@ -105,7 +162,7 @@ msgstr "수정할 자산 지속기간"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_start_date
 msgid "Asset End Date"
-msgstr ""
+msgstr "자산 마감일"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_modify_asset_method_time
@@ -120,20 +177,20 @@ msgstr "자산명"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_end_date
 msgid "Asset Start Date"
-msgstr ""
+msgstr "자산 시작일"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_name
 #: model:ir.model.fields,field_description:account_asset.field_product_template_asset_category_id
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Asset Type"
-msgstr ""
+msgstr "자산 종류"
 
 #. module: account_asset
 #: model:ir.actions.act_window,name:account_asset.action_account_asset_asset_list_normal_purchase
 #: model:ir.ui.menu,name:account_asset.menu_action_account_asset_asset_list_normal_purchase
 msgid "Asset Types"
-msgstr ""
+msgstr "자산 종류"
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_asset_category
@@ -147,7 +204,7 @@ msgstr "자산 분류"
 #: code:addons/account_asset/account_asset.py:235
 #, python-format
 msgid "Asset created"
-msgstr ""
+msgstr "자산 생성"
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_asset_depreciation_line
@@ -158,12 +215,12 @@ msgstr "자산 감가상각 라인"
 #: code:addons/account_asset/account_asset.py:268
 #, python-format
 msgid "Asset sold or disposed. Accounting entry awaiting for validation."
-msgstr ""
+msgstr "매각/처분된 자산. 검증을 기다리는 회계 항목입니다."
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_asset_asset
 msgid "Asset/Revenue Recognition"
-msgstr ""
+msgstr "자산/수익 인식"
 
 #. module: account_asset
 #: model:ir.actions.act_window,name:account_asset.action_account_asset_asset_form
@@ -184,9 +241,17 @@ msgid "Assets Analysis"
 msgstr "자산 분석"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_move_asset_depreciation_ids
+msgid "Assets Depreciation Lines"
+msgstr "자산 감가상각 라인"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:account_asset.menu_finance_config_assets
 msgid "Assets and Revenues"
-msgstr ""
+msgstr "자산 및 수익"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_search
@@ -209,6 +274,14 @@ msgid "Assets in running state"
 msgstr "운영 상태인 자산"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_open_asset
+msgid "Auto-confirm Assets"
+msgstr "자동확인 자산"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:account_asset.asset_modify_form
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard
 msgid "Cancel"
@@ -224,7 +297,7 @@ msgstr "분류"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Category of asset"
-msgstr ""
+msgstr "자산 종류"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_open_asset
@@ -234,6 +307,14 @@ msgid ""
 msgstr "송장을 작성할 때 자동으로 이 분류의 자산을 확인하려면 선택하십시오."
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_group_entries
+msgid "Check this if you want to group the generated entries by categories."
+msgstr "생성된 항목을 카테고리별로 그룹화하려면 여기에 표시합니다."
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset_method
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_method
 msgid ""
@@ -302,7 +383,7 @@ msgstr "자산 계산"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Compute Depreciation"
-msgstr ""
+msgstr "감가상각 계산"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
@@ -319,7 +400,7 @@ msgstr "생성한 자산 이동"
 #: code:addons/account_asset/wizard/wizard_asset_compute.py:20
 #, python-format
 msgid "Created Revenue Moves"
-msgstr ""
+msgstr "생성한 수익 이동"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_create_uid
@@ -342,7 +423,7 @@ msgstr "작성일"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_depreciated_value
 msgid "Cumulative Depreciation"
-msgstr ""
+msgstr "누적 감가상각"
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:484
@@ -375,7 +456,7 @@ msgstr "날짜"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Date of asset"
-msgstr ""
+msgstr "자산 날짜"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
@@ -390,18 +471,18 @@ msgstr "감가상각되는 날짜"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Deferred Revenue Account"
-msgstr ""
+msgstr "유예 수익 계정"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_product_template_deferred_revenue_category_id
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Deferred Revenue Type"
-msgstr ""
+msgstr "유예 수익 종류"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_search
 msgid "Deferred Revenues"
-msgstr ""
+msgstr "유예 수익 "
 
 #. module: account_asset
 #: selection:account.asset.asset,method:0
@@ -418,7 +499,7 @@ msgstr "체감 인수"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Depreciation"
-msgstr ""
+msgstr "감가상각 "
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_depreciation_id
@@ -428,7 +509,7 @@ msgstr "감가상각 계정"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Depreciation Asset Account"
-msgstr ""
+msgstr "감가상각 자산 계정"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
@@ -442,6 +523,20 @@ msgid "Depreciation Date"
 msgstr "감가상각 날짜"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_depreciation_id
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
+msgid "Depreciation Entries: Asset Account"
+msgstr "감가상각 기입: 자산 계정"
+
+#. module: account_asset
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_depreciation_expense_id
+msgid "Depreciation Entries: Expense Account"
+msgstr "감가상각 기입: 비용 계정"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_move_id
 msgid "Depreciation Entry"
 msgstr "감가상각 기입"
@@ -449,12 +544,12 @@ msgstr "감가상각 기입"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Depreciation Expense Account"
-msgstr ""
+msgstr "감가상각 비용 계정"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Depreciation Information"
-msgstr ""
+msgstr "감가상각 정보"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_depreciation_line_ids
@@ -481,13 +576,13 @@ msgstr "감가상각명"
 #: code:addons/account_asset/wizard/account_asset_change_duration.py:82
 #, python-format
 msgid "Depreciation board modified"
-msgstr ""
+msgstr "감가상각 기록 수정 "
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:487
 #, python-format
 msgid "Depreciation line posted."
-msgstr ""
+msgstr "전기된 감가상각 라인입니다."
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_display_name
@@ -503,19 +598,19 @@ msgstr "표시 이름"
 #: code:addons/account_asset/account_asset.py:271
 #, python-format
 msgid "Disposal Move"
-msgstr ""
+msgstr "폐기 이동"
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:274
 #, python-format
 msgid "Disposal Moves"
-msgstr ""
+msgstr "폐기 이동"
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:466
 #, python-format
 msgid "Document closed."
-msgstr ""
+msgstr "문서 마감."
 
 #. module: account_asset
 #: selection:account.asset.asset,state:0 selection:asset.asset.report,state:0
@@ -564,11 +659,13 @@ msgid ""
 "            search bar can also be used to personalize your assets "
 "depreciation reporting."
 msgstr ""
+"이 보고서에서 모든 감가상각의 개요를 확인할 수 있습니다.\n"
+"            검색 막대를 사용하여 자산 감가상각 보고를 개인화할 수 있습니다."
 
 #. module: account_asset
 #: model:ir.ui.menu,name:account_asset.menu_asset_depreciation_confirmation_wizard
 msgid "Generate Assets Entries"
-msgstr ""
+msgstr "자산 항목 생성"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard
@@ -588,7 +685,7 @@ msgstr "총 가치"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Gross value of asset"
-msgstr ""
+msgstr "총 자산 가치"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
@@ -602,6 +699,14 @@ msgid "Group By..."
 msgstr "그룹화..."
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_group_entries
+msgid "Group Journal Entries"
+msgstr "분개 그룹화"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_id
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_id
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_id
@@ -622,14 +727,14 @@ msgid ""
 "Indicates that the first depreciation entry for this asset have to be done "
 "from the purchase date instead of the first January / Start date of fiscal "
 "year"
-msgstr ""
+msgstr "이 자산의 첫 번째 감가상각이 회계연도 시작/1월 1일이 아니라 매입일에 분개되었음을 나타냅니다."
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_prorata
 msgid ""
 "Indicates that the first depreciation entry for this asset have to be done "
 "from the purchase date instead of the first of January"
-msgstr ""
+msgstr "이 자산의 첫 번째 감가상각이 1월 1일이 아니라 매입일에 분개되었음을 나타냅니다."
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_account_invoice
@@ -700,6 +805,14 @@ msgid "Linear"
 msgstr "선형"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_move_check
+msgid "Linked"
+msgstr "연결됐다"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:account_asset.asset_modify_form
 msgid "Modify"
 msgstr "수정"
@@ -714,7 +827,7 @@ msgstr "자산 수정"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Modify Depreciation"
-msgstr ""
+msgstr "감가상각 수정"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_search
@@ -724,12 +837,17 @@ msgstr "월"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_mrr
 msgid "Monthly Recurring Revenue"
-msgstr ""
+msgstr "월간 반복 수입"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_remaining_value
 msgid "Next Period Depreciation"
 msgstr "다음 감가상각 기간"
+
+#. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
@@ -748,7 +866,7 @@ msgstr "감가상각 횟수"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Number of Entries"
-msgstr ""
+msgstr "항목 수"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_method_period
@@ -756,7 +874,16 @@ msgid "Number of Months in a Period"
 msgstr "기간 내의 개월 수"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/account_asset.py:486
+=======
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+msgid "One Entry Every"
+msgstr "한번에 하나씩"
+
+#. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:570
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_partner_id
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_partner_id
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
@@ -773,12 +900,12 @@ msgstr "기간 길이"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Periodicity"
-msgstr ""
+msgstr "주기율"
 
 #. module: account_asset
 #: model:ir.actions.act_window,name:account_asset.action_asset_depreciation_confirmation_wizard
 msgid "Post Depreciation Lines"
-msgstr ""
+msgstr "사후 감가상각 명세"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_open_asset
@@ -839,7 +966,7 @@ msgstr "구매월"
 #. module: account_asset
 #: selection:account.asset.category,type:0
 msgid "Purchase: Asset"
-msgstr ""
+msgstr "구매: 자산"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_modify_name
@@ -847,9 +974,18 @@ msgid "Reason"
 msgstr "사유"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_income_recognition_id
+=======
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+msgid "Recognition Account"
+msgstr "인식 계정"
+
+#. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Recognition Income Account"
-msgstr ""
+msgstr "인식 수익 계정"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_code
@@ -875,7 +1011,7 @@ msgstr "실행 중"
 #. module: account_asset
 #: selection:account.asset.category,type:0
 msgid "Sale: Revenue Recognition"
-msgstr ""
+msgstr "판매: 수익 인식"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_search
@@ -895,7 +1031,7 @@ msgstr "자산 분류 검색"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Sell or Dispose"
-msgstr ""
+msgstr "판매 또는 폐기"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_sequence
@@ -935,6 +1071,14 @@ msgid "The number of depreciations needed to depreciate your asset"
 msgstr "자산을 감가상각하는데 필요한 감가상각 횟수"
 
 #. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid ""
+"This depreciation is already linked to a journal entry! Please post or "
+"delete it."
+msgstr "이 감가상각은 이미 분개에 연결되어 있습니다! 전기하거나 삭제해주십시오."
+
+#. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard
 msgid ""
 "This wizard will post installment/depreciation lines for the selected month."
@@ -942,6 +1086,8 @@ msgid ""
 "                        This will generate journal entries for all related "
 "installment lines on this period of asset/revenue recognition as well."
 msgstr ""
+"이 마법사는 선택한 월의 할부/감가상각을 전기합니다.<br/>\n"
+"                        자산/수익 인식 기간의 모든 관련 할부 라인에 대한 분개도 생성됩니다."
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_method_time
@@ -952,7 +1098,7 @@ msgstr "시간 계산법"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "Time Method Based On"
-msgstr ""
+msgstr "시간법 기준"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_type
@@ -966,7 +1112,7 @@ msgstr "유형"
 #: code:addons/account_asset/static/src/js/account_asset.js:24
 #, python-format
 msgid "Unposted"
-msgstr ""
+msgstr "기장하지 않은"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_unposted_value
@@ -977,7 +1123,7 @@ msgstr "기장하지 않은 금액"
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_purchase_tree
 msgid "Vendor"
-msgstr ""
+msgstr "공급업체"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset_state
@@ -1004,40 +1150,40 @@ msgstr "년"
 #: code:addons/account_asset/account_asset.py:96
 #, python-format
 msgid "You cannot delete a document is in %s state."
-msgstr ""
+msgstr "%s 상태의 문서는 삭제할 수 없습니다."
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:98
 #, python-format
 msgid "You cannot delete a document that contains posted entries."
-msgstr ""
+msgstr "전기된 항목이 포함된 문서는 삭제할 수 없습니다."
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:495
 #, python-format
 msgid "You cannot delete posted depreciation lines."
-msgstr ""
+msgstr "전기된 감가상각 라인을 삭제할 수 없습니다."
 
 #. module: account_asset
 #: code:addons/account_asset/account_asset.py:497
 #, python-format
 msgid "You cannot delete posted installment lines."
-msgstr ""
+msgstr "전기된 할부 라인을 삭제할 수 없습니다."
 
 #. module: account_asset
 #: model:ir.model,name:account_asset.model_asset_depreciation_confirmation_wizard
 msgid "asset.depreciation.confirmation.wizard"
-msgstr ""
+msgstr "asset.depreciation.confirmation.wizard"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
 msgid "e.g. Computers"
-msgstr ""
+msgstr "예) 컴퓨터"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "e.g. Laptop iBook"
-msgstr ""
+msgstr "예) 노트북, 아이북"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.asset_modify_form

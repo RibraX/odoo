@@ -3,6 +3,7 @@
 # * account
 # 
 # Translators:
+<<<<<<< HEAD
 # Kari Lindgren <kari.lindgren@emsystems.fi>, 2017
 # Tommi Rintala <tommi.rintala@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
@@ -26,13 +27,45 @@
 # Sanna Edelman <direct@generare.com>, 2017
 # Marko Happonen <marko.happonen@sprintit.fi>, 2017
 # Jan-Erik Finlander <janerik.finlander@gmail.com>, 2017
+=======
+# Mika Karvinen <karvinenm@gmail.com>, 2016
+# Timo Koukkari <ti.ko@netikka.fi>, 2016
+# Sanna Edelman <direct@generare.com>, 2016
+# Kari Lindgren <karisatu@gmail.com>, 2016
+# Jan-Erik Finlander, 2016
+# Marko Happonen <marko.happonen@sprintit.fi>, 2016
+# Pekko Tuomisto <pekko.tuomisto@web-veistamo.fi>, 2016
+# Timo Soronen <tisonen@gmail.com>, 2016
+# Atte Isopuro <atte.isopuro@web-veistamo.fi>, 2016
+# Melina Mäntylä <melina.mantyla@web-veistamo.fi>, 2016
+# Jussi Lehto <jussi@gulfeo.com>, 2016
+# Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2016
+# Svante Suominen <svante.suominen@web-veistamo.fi>, 2016
+# Tommi Rintala <tommi.rintala@gmail.com>, 2017
+# artol <arto.leskinen@tek.fi>, 2017
+# MIka Pakkanen <mika.pakkanen@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Miku Laitinen <miku.laitinen@gmail.com>, 2017
+# Kari Lindgren <kari.lindgren@emsystems.fi>, 2017
+# Mikko Salmela <salmemik@gmail.com>, 2017
+# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2018
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2018
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Jan-Erik Finlander <janerik.finlander@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-05-26 08:44+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Finnish (https://www.transifex.com/odoo/teams/41243/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -430,7 +463,7 @@ msgid ""
 "                                    </span>"
 msgstr ""
 "<span class=\"panel-title\">\n"
-"<strong>Laskuttaja</strong> (rajoitettu köyttö)\n"
+"<strong>Laskuttaja</strong> (rajoitettu käyttö)\n"
 "</span>"
 
 #. module: account
@@ -1665,6 +1698,11 @@ msgid "Adjustment Tax"
 msgstr "OIkaisuvero"
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_adjustment_type
+msgid "Adjustment Type"
+msgstr ""
+
+#. module: account
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 msgid "Advanced Options"
@@ -1923,7 +1961,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_price_subtotal_signed
 msgid "Amount Signed"
-msgstr "Kirjattu määrä"
+msgstr "Etumerkillinen summa"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_tax_amount_total
@@ -2359,6 +2397,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.view_bank_statement_search
 msgid "Bank Statement"
 msgstr "Pankin tiliote"
+
+#. module: account
+#: code:addons/account/models/account_bank_statement.py:935
+#, python-format
+msgid "Bank Statement %s"
+msgstr ""
 
 #. module: account
 #: model:ir.model,name:account.model_account_bank_statement_line
@@ -3437,7 +3481,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.tax_adjustments_wizard
 msgid "Create and post move"
-msgstr ""
+msgstr "Luo ja kirjaa siirto"
 
 #. module: account
 #: code:addons/account/models/account_journal_dashboard.py:285
@@ -3913,9 +3957,32 @@ msgid "Day(s) after the invoice date"
 msgstr "Päivää laskun päiväyksen jälkeen"
 
 #. module: account
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Deactivate setup bar on the dashboard"
 msgstr ""
+=======
+#: model:res.company,overdue_msg:base.main_company
+msgid ""
+"Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
+msgstr ""
+"Arvoisa asiakkaamme,\n"
+"\n"
+"Kirjanpitomme mukaan teillä on myöhässä olevia maksuja, joiden tarkemmat tiedot löydät alapuolelta.\n"
+"Jos puuttuvat laskut on jo maksettu, voitte jättää tämän maksuhuomautuksen huomioimatta. Muussa tapauksessa pyydämme maksamaan heti alla olevat puuttuvat suoritukset.\n"
+"Jos teillä on kysymyksiä liittyen maksuihinne, olkaa yhteydessä meihin.\n"
+"\n"
+"\n"
+"Kiitos yhteistyöstänne jo etukäteen.\n"
+"Parhain terveisin,"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_debit
@@ -4568,7 +4635,11 @@ msgstr "Tuotemallin kustannustili"
 #: model:account.account.type,name:account.data_account_type_expenses
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Expenses"
+<<<<<<< HEAD
 msgstr "Kulut"
+=======
+msgstr "Menot"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_reference
@@ -5799,7 +5870,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_invoice_sent
 msgid "It indicates that the invoice has been sent."
-msgstr ""
+msgstr "Merkitsee, että lasku on lähetetty."
 
 #. module: account
 #: code:addons/account/models/account_move.py:1019
@@ -6746,15 +6817,16 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.view_account_move_filter
 #: model:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Move"
-msgstr "Siirrä"
+msgstr "Siirto"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_move_id
 #: model:ir.model.fields,field_description:account.field_account_payment_move_line_ids
 msgid "Move Line"
-msgstr "Kirjausrivi"
+msgstr "Siirtorivi"
 
 #. module: account
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_move_line_count
 msgid "Move Line Count"
 msgstr ""
@@ -6763,6 +6835,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_account_payment_move_reconciled
 msgid "Move Reconciled"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:account.field_account_payment_move_line_ids
+msgid "Move line ids"
+msgstr "Siirtorivien id:t"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: code:addons/account/models/account_move.py:1322
@@ -6862,7 +6939,7 @@ msgstr "Uusi tapahtuma"
 #: code:addons/account/models/account_move.py:1299
 #, python-format
 msgid "New expected payment date: "
-msgstr ""
+msgstr "Uusi oletettu maksupäivä:"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_sequence_number_next
@@ -7609,7 +7686,7 @@ msgstr "Maksutavat"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_payment_move_line_ids
 msgid "Payment Move Lines"
-msgstr ""
+msgstr "Maksun siirtorivit"
 
 #. module: account
 #: model:ir.actions.report,name:account.action_report_payment_receipt
@@ -8473,7 +8550,7 @@ msgstr "Vastakirjaus"
 #: model:ir.ui.view,arch_db:account.view_account_move_reversal
 #, python-format
 msgid "Reverse Moves"
-msgstr ""
+msgstr "Käänteiset siirrot"
 
 #. module: account
 #: selection:account.financial.report,sign:0
@@ -11165,7 +11242,19 @@ msgstr ""
 "liittyvät täsmäytykset peruuttaa."
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account.py:235
+=======
+#: code:addons/account/models/company.py:118
+#, python-format
+msgid ""
+"You cannot change the currency of the company since some journal items "
+"already exist"
+msgstr ""
+
+#. module: account
+#: code:addons/account/models/account.py:180
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "You cannot change the owner company of an account that already contains "
@@ -11426,6 +11515,9 @@ msgid ""
 "                                waiting for the document to be issued by\n"
 "                                your supplier/customer."
 msgstr ""
+"Sinun on mahdollista muokata ja vahvistaa tämä hyvityslasku\n"
+"                                suoraan tai jättää se luonnostilaan odottamaan\n"
+"                                asiakkaalta/toimittajalta tulevaa dokumenttia."
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -11570,21 +11662,25 @@ msgstr "ensin)"
 #. module: account
 #: model:ir.ui.view,arch_db:account.invoice_form
 msgid "for this customer. You can allocate them to mark this invoice as paid."
-msgstr ""
-"tälle asiakkaalle. Voit pyytää heitä kirjaamaan tämän laskun maksetuksi."
+msgstr "tälle asiakkaalle. Voit kohdistaa niitä tähän laskuun."
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.invoice_supplier_form
 msgid "for this supplier. You can allocate them to mark this bill as paid."
-msgstr ""
-"tälle toimittajalle. Voit pyytää heitä kirjaamaan tämän laskun maksetuksi."
+msgstr "tälle toimittajalle. Voit kohdistaa niitä tähän laskuun."
 
 #. module: account
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:41
 #, python-format
 msgid "o_manual_statement"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:account.account_invoice_report_duplicate
+msgid "invoice"
+msgstr "lasku"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.invoice_supplier_form
@@ -11594,7 +11690,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.invoice_form
 msgid "outstanding payments"
-msgstr ""
+msgstr "täsmäyttämättömiä maksuja"
 
 #. module: account
 #: model:ir.model,name:account.model_report_account_report_agedpartnerbalance
@@ -11717,3 +11813,11 @@ msgstr "wizard.multi.charts.accounts"
 #: model:ir.ui.view,arch_db:account.view_bank_statement_form
 msgid "→ Count"
 msgstr "→ Määrä"
+
+#. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid ""
+"Currency field should only be set if the journal's currency is different "
+"from the company's. Leave the field blank to use company currency."
+msgstr ""

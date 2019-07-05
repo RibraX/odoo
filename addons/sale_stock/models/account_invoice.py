@@ -25,9 +25,13 @@ class AccountInvoiceLine(models.Model):
                 qty_done = sum([x.uom_id._compute_quantity(x.quantity, x.product_id.uom_id) for x in s_line.invoice_lines if x.invoice_id.state in ('open', 'paid')])
                 quantity = self.uom_id._compute_quantity(self.quantity, self.product_id.uom_id)
                 # Put moves in fixed order by date executed
+<<<<<<< HEAD
                 moves = self.env['stock.move']
                 moves |= s_line.move_ids
                 moves.sorted(lambda x: x.date)
+=======
+                moves = s_line.mapped('procurement_ids.move_ids').sorted(lambda x: x.date)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                 # Go through all the moves and do nothing until you get to qty_done
                 # Beyond qty_done we need to calculate the average of the price_unit
                 # on the moves we encounter.
@@ -51,7 +55,12 @@ class AccountInvoiceLine(models.Model):
                 qty_to_consider = invoiced_qty - qty_done
             qty_to_consider = min(qty_to_consider, quantity - qty_delivered)
             qty_delivered += qty_to_consider
+<<<<<<< HEAD
             average_price_unit = (average_price_unit * (qty_delivered - qty_to_consider) + (-1 * move.price_unit) * qty_to_consider) / qty_delivered
+=======
+            if qty_delivered:
+                average_price_unit = (average_price_unit * (qty_delivered - qty_to_consider) + move.price_unit * qty_to_consider) / qty_delivered
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             if qty_delivered == quantity:
                 break
         return average_price_unit

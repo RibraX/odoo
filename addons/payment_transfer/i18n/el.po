@@ -21,13 +21,13 @@ msgstr ""
 #: code:addons/payment_transfer/models/payment_acquirer.py:68
 #, python-format
 msgid "; multiple order found"
-msgstr ""
+msgstr ", βρέθηκαν πολλαπλές παραγγελίες"
 
 #. module: payment_transfer
 #: code:addons/payment_transfer/models/payment_acquirer.py:66
 #, python-format
 msgid "; no order found"
-msgstr ""
+msgstr ", δεν βρέθηκε παραγγελία"
 
 #. module: payment_transfer
 #: model:payment.acquirer,cancel_msg:payment_transfer.payment_acquirer_transfer
@@ -50,10 +50,20 @@ msgid ""
 "transaction. The order has been confirmed but won't be paid. Don't hesitate "
 "to contact us if you have any questions on the status of your order.</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span><i>Σφάλμα,</i> Έχετε υπ 'όψιν ότι παρουσιάστηκε κάποιο σφάλμα κατά τη "
 "διάρκεια της συναλλαγής. Η παραγγελία έχει επιβεβαιωθεί, αλλά δεν θα μπορεί "
 "να πληρωθεί. Μην διστάσετε να επικοινωνήσετε μαζί μας αν έχετε απορίες "
 "σχετικά με την κατάσταση της παραγγελίας σας.</span>"
+=======
+"<div>\n"
+"<h3>Παρακαλώ χρησιμοποιήστε τις παρακάτω λεπτομέρειες για το έμβασμα</h3>\n"
+"<h4>%(bank_title)s</h4>\n"
+"%(bank_accounts)s\n"
+"<h4>Επικοινωνία</h4>\n"
+"<p>Χρησιμοποιήστε το όνομα της παραγγελίας ως αναφορά επικοινωνίας</p>\n"
+"</div>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_transfer
 #: model:payment.acquirer,pending_msg:payment_transfer.payment_acquirer_transfer
@@ -118,4 +128,4 @@ msgstr "Έμβασμα"
 #: code:addons/payment_transfer/models/payment_acquirer.py:64
 #, python-format
 msgid "received data for reference %s"
-msgstr ""
+msgstr "λήφθηκαν δεδομένα αναφοράς %s"

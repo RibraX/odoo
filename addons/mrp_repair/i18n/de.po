@@ -3,6 +3,7 @@
 # * mrp_repair
 # 
 # Translators:
+<<<<<<< HEAD
 # Ermin Trevisan <trevi@twanda.com>, 2017
 # JackTheHunter <Maximilian.N98@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
@@ -21,13 +22,36 @@
 # AppleMentalist <felix.schnatbaum@gmail.com>, 2017
 # Andi <flimflam@salasar.de>, 2017
 # Christopher Bendlin <inactive+cbeodoo@transifex.com>, 2017
+=======
+# Martin Trigaux, 2016
+# Wolfgang Taferner, 2016
+# JackTheHunter <Maximilian.N98@gmail.com>, 2016
+# Renzo Meister, 2016
+# Ralf Hilgenstock <rh@dialoge.info>, 2016
+# Henry Mineehen <info@mineehen.de>, 2016
+# darenkster <inactive+darenkster@transifex.com>, 2016
+# Tina Rittmüller <tr@ife.de>, 2016
+# Philipp Hug <philipp@hug.cx>, 2016
+# Anja Funk <anja.funk@afimage.de>, 2016
+# Ermin Trevisan <trevi@twanda.com>, 2016
+# Thorsten Vocks <thorsten.vocks@openbig.org>, 2016
+# Kontor Consulting <p.becker@kontor.consulting>, 2016
+# Niki Waibel, 2016
+# e2f <projects@e2f.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:27+0000\n"
 "PO-Revision-Date: 2017-10-02 11:27+0000\n"
 "Last-Translator: Christopher Bendlin <inactive+cbeodoo@transifex.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:55+0000\n"
+"PO-Revision-Date: 2016-11-14 15:55+0000\n"
+"Last-Translator: e2f <projects@e2f.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,6 +89,12 @@ msgid ""
 "* The 'Done' status is set when repairing is completed.\n"
 "* The 'Cancelled' status is used when user cancel repair order."
 msgstr ""
+"* Der Status „Entwurf“ wird verwendet, wenn ein Benutzer einen neuen und unbestätigten Reparaturauftrag kodiert.\n"
+"* Der Status „Bestätigt“ wird verwendet, wenn ein Benutzer den Reparaturauftrag bestätigt.\n"
+"* Der Status „Bereit zur Reparatur“ wird verwendet, um mit der Reparatur zu beginnen, der Benutzer kann erst reparieren, wenn der Reparaturauftrag bestätigt wurde.\n"
+"* Der Status „Abrechenbar“ wird verwendet, um vor oder nach der Reparatur die Rechnung zu erstellen.\n"
+"* Der Status „Erledigt“ wird eingestellt, wenn die Reparatur abgeschlossen ist.\n"
+"* Der Status „Storniert“ wird verwendet, wenn Reparaturaufträge von Benutzern storniert werden."
 
 #. module: mrp_repair
 #: model:mail.template,body_html:mrp_repair.mail_template_mrp_repair_quotation
@@ -390,6 +420,9 @@ msgid ""
 "                add or replace and record the time you spent on the different\n"
 "                operations."
 msgstr ""
+"In einem Reparaturauftrag können Sie die Komponenten, die Sie entfernen, \n"
+" hinzufügen oder ersetzen, einzeln aufführen und die Zeit, die Sie für die verschiedenen\n"
+" Vorgänge gebraucht haben, aufzeichnen."
 
 #. module: mrp_repair
 #: code:addons/mrp_repair/models/mrp_repair.py:215
@@ -739,6 +772,8 @@ msgstr "Reparaturen müssen vor Beginn der Reparatur bestätigt werden."
 #, python-format
 msgid "Repair must be repaired in order to make the product moves."
 msgstr ""
+"Die Reparaturen müssen repariert werden, um die Produktschritte zu "
+"vollziehen."
 
 #. module: mrp_repair
 #: code:addons/mrp_repair/models/mrp_repair.py:419
@@ -877,6 +912,9 @@ msgid ""
 "                order to know if whether the repair should be invoiced to the\n"
 "                customer or not."
 msgstr ""
+"Der Reparaturauftrag verwendet das Garantiedatum auf der Seriennummer,\n"
+" um festzustellen, ob die Reparatur dem Kunden\n"
+" in Rechnung gestellt werden soll oder nicht."
 
 #. module: mrp_repair
 #: model:ir.model.fields,help:mrp_repair.field_mrp_repair_line_state
@@ -884,6 +922,8 @@ msgid ""
 "The status of a repair line is set automatically to the one of the linked "
 "repair order."
 msgstr ""
+"Der Status einer Reparaturposition wird automatisch auf die mit dem "
+"Reparaturauftrag verbundene Position festgelegt."
 
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.view_cancel_repair
@@ -982,6 +1022,7 @@ msgid ""
 "You have to select a pricelist in the Repair form !\n"
 " Please set one before choosing a product."
 msgstr ""
+<<<<<<< HEAD
 
 #. module: mrp_repair
 #: model:ir.model,name:mrp_repair.model_stock_traceability_report
@@ -992,3 +1033,7 @@ msgstr ""
 #: model:ir.model,name:mrp_repair.model_stock_warn_insufficient_qty_repair
 msgid "stock.warn.insufficient.qty.repair"
 msgstr ""
+=======
+"Sie müssen eine Preisliste im Reparaturformular auswählen! \n"
+" Bitte wählen Sie eine Preisliste bei der Reparatur aus.Bitte tragen Sie einen Wert vor Ihrer Auswahl ein."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -66,6 +66,7 @@ var PlannerDialog = Dialog.extend({
      * Fetch the planner's rendered template
      */
     willStart: function() {
+<<<<<<< HEAD
         var def = rpc.query({
                 model: 'web.planner',
                 method: 'render',
@@ -77,6 +78,24 @@ var PlannerDialog = Dialog.extend({
             }).bind(this));
 
         return $.when(this._super.apply(this, arguments), def);
+=======
+        var self = this;
+        var context = session.user_context;
+        // fallback context for frontend
+        if(_.isEmpty(context)) {
+            context = {
+                lang: (document.documentElement.getAttribute('lang')||'').replace('-', '_'),
+            };
+        }
+        var res = this._super.apply(this, arguments).then(function() {
+            return (new Model('web.planner')).call('render',
+                [self.planner.view_id[0], self.planner.planner_application],
+                {context: context});
+        }).then(function(template) {
+            self.$res = $(template);
+        });
+        return res;
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     },
     start: function() {
         this.$modal.addClass("o_planner_dialog");

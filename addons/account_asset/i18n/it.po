@@ -3,20 +3,44 @@
 # * account_asset
 #
 # Translators:
+<<<<<<< HEAD
 # Alessandro Forte <a.forte1010@gmail.com>, 2016
 # Francesco Arillotta <frarillotta@gmail.com>, 2016
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2015
 # Massimo Bianchi <bianchi.massimo@gmail.com>, 2016
 # Simone Bernini <simone@aperturelabs.it>, 2016
+=======
+# Luca Tralli, 2016
+# Massimo Bianchi <bianchi.massimo@gmail.com>, 2016
+# Francesco Arillotta <frarillotta@gmail.com>, 2016
+# Alessandro Forte <a.forte1010@gmail.com>, 2016
+# p_amoruso <p.amoruso@elvenstudio.it>, 2016
+# Davide Corio <enlightx@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# Simone Bernini <simone@aperturelabs.it>, 2016
+# Paolo Valier, 2016
+# Federico Castellano <castellano.federico@outlook.com>, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-06-19 22:12+0000\n"
 "Last-Translator: Francesco Arillotta <frarillotta@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -54,13 +78,47 @@ msgid "Account Entry"
 msgstr "Registrazione Contabile"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_depreciation_id
+msgid "Account used in the depreciation entries, to decrease the asset value."
+msgstr ""
+
+#. module: account_asset
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_depreciation_expense_id
+msgid ""
+"Account used in the periodical entries, to record a part of the asset as "
+"expense."
+msgstr ""
+"Conto usato nelle registrazioni periodiche, per registrare una parte "
+"dell'ammortamento come spesa. "
+
+#. module: account_asset
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_account_asset_id
+msgid ""
+"Account used to record the purchase of the asset at its original price."
+msgstr ""
+"Conto usato per registrare l'acquisto di immobilizzazioni al loro prezzo "
+"originale."
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_active
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_active
 msgid "Active"
 msgstr "Attivo"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/account_asset.py:484
+=======
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+msgid "Additional Options"
+msgstr "Opzioni Aggiuntive"
+
+#. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:568
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Amount"
 msgstr "Importo"
@@ -108,7 +166,7 @@ msgid "Asset Durations to Modify"
 msgstr "Durate Immobilizzazione da Modificare"
 
 #. module: account_asset
-#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_start_date
+#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_end_date
 msgid "Asset End Date"
 msgstr "Data finale del bene"
 
@@ -123,7 +181,7 @@ msgid "Asset Name"
 msgstr "Nome Immobilizzazione"
 
 #. module: account_asset
-#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_end_date
+#: model:ir.model.fields,field_description:account_asset.field_account_invoice_line_asset_start_date
 msgid "Asset Start Date"
 msgstr "Data iniziale del bene"
 
@@ -189,6 +247,14 @@ msgid "Assets Analysis"
 msgstr "Analisi Immobilizzazioni"
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_move_asset_depreciation_ids
+msgid "Assets Depreciation Lines"
+msgstr "Riga di ammortamento delle immobilizzazioni"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:account_asset.menu_finance_config_assets
 msgid "Assets and Revenues"
 msgstr "Beni e ricavi"
@@ -241,6 +307,16 @@ msgstr ""
 "categoria quando create dalle fatture."
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:account_asset.field_account_asset_category_group_entries
+msgid "Check this if you want to group the generated entries by categories."
+msgstr ""
+"Seleziona questa casella per raggruppare le registrazioni contabili per "
+"categoria."
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset_method
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_method
 msgid ""
@@ -616,6 +692,14 @@ msgid "Group By..."
 msgstr "Raggruppa per..."
 
 #. module: account_asset
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account_asset.field_account_asset_category_group_entries
+msgid "Group Journal Entries"
+msgstr "Raggruppare le registrazioni contabili"
+
+#. module: account_asset
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_id
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_id
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_id
@@ -750,6 +834,11 @@ msgid "Next Period Depreciation"
 msgstr "Prossimo Periodo di Ammortamento"
 
 #. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
 msgid "Note"
 msgstr "Nota"
@@ -774,7 +863,16 @@ msgid "Number of Months in a Period"
 msgstr "Numero di Mesi in un Periodo"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/account_asset.py:486
+=======
+#: model:ir.ui.view,arch_db:account_asset.view_account_asset_category_form
+msgid "One Entry Every"
+msgstr "Una registrazione ogni"
+
+#. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:570
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_partner_id
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_partner_id
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
@@ -952,6 +1050,14 @@ msgstr "Il periodo tra due ammortamenti, in mesi"
 msgid "The number of depreciations needed to depreciate your asset"
 msgstr ""
 "Il numero di ammortamenti necessari per ammortizzare l'immobilizzazione"
+
+#. module: account_asset
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid ""
+"This depreciation is already linked to a journal entry! Please post or "
+"delete it."
+msgstr ""
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard

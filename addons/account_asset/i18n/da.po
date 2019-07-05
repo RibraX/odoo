@@ -3,6 +3,7 @@
 # * account_asset
 # 
 # Translators:
+<<<<<<< HEAD
 # Morten Schou <ms@msteknik.dk>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # peso <peer.sommerlund@gmail.com>, 2017
@@ -11,13 +12,31 @@
 # Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
 # Jesper Carstensen <info@danodoo.dk>, 2017
 # Jesper Carstensen <jc@danodoo.dk>, 2017
+=======
+# peso <peer.sommerlund@gmail.com>, 2016
+# Morten Schou <ms@msteknik.dk>, 2016
+# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Jesper Carstensen <info@danodoo.dk>, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
+# Sanne Kristensen <sanne@vkdata.dk>, 2017
+# Ejner Sønniksen <ejner@vkdata.dk>, 2017
+# JonathanStein <jstein@image.dk>, 2017
+# Martin Trigaux, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Jesper Carstensen <jc@danodoo.dk>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Martin Trigaux, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,7 +147,7 @@ msgstr "Værdi af afdrags poster"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_account_analytic_id
 msgid "Analytic Account"
-msgstr "Analysekonto"
+msgstr "Analyse konto"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_asset_id
@@ -598,7 +617,7 @@ msgstr "Slut dato"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
 msgid "Extended Filters..."
-msgstr "Udvidede filtre..."
+msgstr "Udvidede filtre"
 
 #. module: account_asset
 #: model:ir.actions.act_window,help:account_asset.action_asset_asset_report
@@ -699,7 +718,7 @@ msgstr "Det er det beløb, du planlægger at få, du ikke kan afskrive."
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_asset_form
 msgid "Items"
-msgstr "Varer"
+msgstr "Emner"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_journal_id
@@ -785,6 +804,11 @@ msgid "Next Period Depreciation"
 msgstr "Næste periode for afskrivning"
 
 #. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
 msgid "Note"
 msgstr "Notat"
@@ -819,7 +843,7 @@ msgstr "En post hver"
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_partner_id
 #, python-format
 msgid "Partner"
-msgstr "Partner"
+msgstr "Kontakt"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_category_method_period
@@ -991,12 +1015,21 @@ msgid "The number of depreciations needed to depreciate your asset"
 msgstr "Antallet af afskrivninger der er nødvendigt for at afskrive dit aktiv"
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/models/account_invoice.py:52
 #, python-format
 msgid ""
 "The number of depreciations or the period length of your asset category "
 "cannot be null."
 msgstr ""
+=======
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid ""
+"This depreciation is already linked to a journal entry! Please post or "
+"delete it."
+msgstr "Afskrivningen er allerede posteret! Bogfør eller slet posteringen."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard

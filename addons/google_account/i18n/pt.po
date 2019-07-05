@@ -52,7 +52,17 @@ msgstr "Última Actualização por"
 #. module: google_account
 #: model:ir.model.fields,field_description:google_account.field_google_service_write_date
 msgid "Last Updated on"
+<<<<<<< HEAD
 msgstr "Última Actualização em"
+=======
+msgstr "Última Atualização em"
+
+#. module: google_account
+#: code:addons/google_account/models/google_service.py:169
+#, python-format
+msgid "Method not supported [%s] not in [GET, POST, PUT, PATCH or DELETE]!"
+msgstr "Método não suportado [%s] not in [GET, POST, PUT, PATCH or DELETE]!"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: google_account
 #: code:addons/google_account/google_account.py:98
@@ -61,6 +71,8 @@ msgid ""
 "Something went wrong during your token generation. Maybe your Authorization "
 "Code is invalid"
 msgstr ""
+"Ocorreu algo deu errado durante a geração da sua senha. O seu 'Código de "
+"Autorização' pode ser inválido ou já expirou"
 
 #. module: google_account
 #: code:addons/google_account/google_account.py:37
@@ -69,6 +81,8 @@ msgid ""
 "Something went wrong during your token generation. Maybe your Authorization "
 "Code is invalid or already expired"
 msgstr ""
+"Ocorreu algo deu errado durante a geração da sua senha. O seu 'Código de "
+"Autorização' pode ser inválido ou já expirou"
 
 #. module: google_account
 #: code:addons/google_account/google_account.py:128
@@ -77,6 +91,8 @@ msgid ""
 "Something went wrong during your token generation. Maybe your Authorization "
 "Code is invalid or already expired [%s]"
 msgstr ""
+"Ocorreu algo deu errado durante a geração da sua senha. O seu 'Código de "
+"Autorização' pode ser inválido ou já expirou [%s]"
 
 #. module: google_account
 #: code:addons/google_account/google_account.py:173

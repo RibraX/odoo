@@ -82,6 +82,8 @@ msgid ""
 "                                    <span class=\"o_following\">Following</"
 "span>"
 msgstr ""
+"<span class=\"o_unfollow\">Άρση Ακολούθησης</span>\n"
+"                                    <span class=\"o_following\">Ακολουθώ</span>"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
@@ -1149,6 +1151,14 @@ msgid "Team spirit and good communication"
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:hr.model_mail_test
+msgid "Test Mail Model"
+msgstr "Δοκιμή μοντέλου Mail"
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: sql_constraint:hr.job:0
 msgid "The name of the job position must be unique per department in company!"
 msgstr ""
@@ -1530,8 +1540,16 @@ msgstr "π.χ. Μερικής Απασχόλησης"
 #~ msgid "Action Needed"
 #~ msgstr "Απαιτείται ενέργεια"
 
+<<<<<<< HEAD
 #~ msgid "Date of the last message posted on the record."
 #~ msgstr "Ημερομηνία του τελευταίου μηνύματος "
+=======
+#. module: hr
+#: code:addons/hr/models/mail_thread.py:41
+#, python-format
+msgid "skipping"
+msgstr "παρακάμπτοντας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Followers (Channels)"
 #~ msgstr "Ακόλουθοι (Κανάλια)"

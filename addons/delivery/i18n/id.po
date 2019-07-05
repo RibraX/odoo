@@ -3,6 +3,7 @@
 # * delivery
 # 
 # Translators:
+<<<<<<< HEAD
 # Bonny Useful <bonny.useful@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017
@@ -19,6 +20,30 @@ msgstr ""
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Andi Fadhel <cliffryu@gmail.com>, 2017\n"
+=======
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# graha hutamawuri <grahehw@yahoo.com>, 2016
+# Febrasari Almania <febrasari.almania@gmail.com>, 2016
+# William Surya Permana <zarambie_game@yahoo.com>, 2016
+# Lorenz Damara <lorenzrenz@gmail.com>, 2016
+# Andhitia Rama <andhitia.r@gmail.com>, 2016
+# Andi Fadhel <cliffryu@gmail.com>, 2016
+# firman firman <firman.olxbpn@gmail.com>, 2016
+# Deddy Ddr <deddy.ddr@gmail.com>, 2016
+# Bonny Useful <bonny.useful@gmail.com>, 2016
+# Edy Kend <edy@azmall.co.id>, 2016
+# Yani Dama Putera <yanidp@gmail.com>, 2016
+# Ryanto The <ry.the77@gmail.com>, 2017
+# Gusti Rini <gustirini@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 08:56+0000\n"
+"Last-Translator: Gusti Rini <gustirini@gmail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,6 +52,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:mail.template,report_name:delivery.mail_template_data_delivery_confirmation
 msgid "${(object.name or '').replace('/','_')}"
 msgstr ""
@@ -122,6 +148,49 @@ msgstr ""
 
 #. module: delivery
 #: code:addons/delivery/models/delivery_carrier.py:76
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_rules_count
+msgid "# Analytic Rules"
+msgstr "# Aturan Analitik"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_bom_count
+msgid "# Bill of Material"
+msgstr "bahan baku"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_num_invoiced
+msgid "# Invoiced in Purchase"
+msgstr "# Faktur dalam pembelian"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_sale_num_invoiced
+msgid "# Invoiced in Sale"
+msgstr "# Faktur dalam penjualan"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_mo_count
+msgid "# Manufacturing Orders"
+msgstr "# Manufacturing Pesanan"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_product_variant_count
+msgid "# Product Variants"
+msgstr "# Varian Produk"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_count
+msgid "# Purchases"
+msgstr "# Pembelian"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_sales_count
+msgid "# Sales"
+msgstr "Penjualan"
+
+#. module: delivery
+#: code:addons/delivery/models/delivery_carrier.py:74
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "<p class=\"oe_view_nocontent\">\n"
@@ -132,7 +201,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.choose_delivery_package_view_form
 msgid "<span>kg</span>"
-msgstr ""
+msgstr "<span>kg</span>"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.report_delivery_document2
@@ -142,7 +211,38 @@ msgstr ""
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.report_delivery_document2
+<<<<<<< HEAD
 msgid "<strong>Tracking Number</strong>"
+=======
+#: model:ir.ui.view,arch_db:delivery.report_shipping2
+msgid "<strong>Weight</strong>"
+msgstr "<strong>Berat </strong>"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_description_sale
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr ""
+"Deskripsi produk yang akan dikomunikasikan ke pelanggan. Deskripsi ini akan "
+"disalin pada setiap Order Penjualan, Pengiriman dan Faktur Penjualan/Faktur "
+"Retur"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_description_purchase
+msgid ""
+"A description of the Product that you want to communicate to your vendors. "
+"This description will be copied to every Purchase Order, Receipt and Vendor "
+"Bill/Refund."
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_description
+msgid ""
+"A precise description of the Product, used only for internal information "
+"purposes."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: delivery
@@ -150,6 +250,10 @@ msgstr ""
 #: model:ir.ui.view,arch_db:delivery.report_shipping2
 msgid "<strong>Weight</strong>"
 msgstr ""
+"Produk stok adalah produk yang Anda kelola stoknya. Aplikasi \"Persediaan\" harus dipasang.\n"
+"Produk konsumsi adalah produk yang tidak dikelola stoknya.\n"
+"Servis adalah produk non-material yang Anda sediakan.\n"
+"Konten digital adalah produk non-material yang Anda jual secara daring. File yang terlampir pada produk adalah barang yang Anda jual seperti ebook, musik, gambar,... Module \"Produk Digital\" harus dipasang."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_integration_level
@@ -256,9 +360,40 @@ msgid "Created on"
 msgstr "Dibuat pada"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_debug_logging
 msgid "Debug logging"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_currency_id
+msgid "Currency"
+msgstr "Mata Uang"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_qty_available
+msgid ""
+"Current quantity of products.\n"
+"In a context with a single Stock Location, this includes goods stored at this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
+"stored in the Stock Location of the Warehouse of this Shop, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' type."
+msgstr ""
+"Saat ini jumlah produk.\n"
+"Dalam konteks dengan lokasi stok tunggal, ini termasuk barang-barang yang disimpan di lokasi ini, atau salah satu anak-anak.\n"
+"Dalam konteks dengan Warehouse tunggal, ini termasuk barang-barang yang disimpan di lokasi Stock gudang ini, atau salah satu anak-anak.\n"
+"disimpan dalam lokasi Stock gudang toko ini, atau salah satu anak-anak.\n"
+"Jika tidak, ini termasuk barang-barang yang disimpan di lokasi stok apapun dengan tipe 'internal'."
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_sale_delay
+msgid "Customer Lead Time"
+msgstr "Pelanggan Lead Time"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_partner_ref
+msgid "Customer Ref"
+msgstr "Ref Pelanggan"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.ui.menu,name:delivery.menu_delivery
@@ -399,10 +534,48 @@ msgid "Fixed Price"
 msgstr "Harga Tetap"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery
 #: model:product.template,name:delivery.product_product_delivery_product_template
-msgid "Free delivery charges"
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_follower_ids
+msgid "Followers"
+msgstr "Pengikut"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_virtual_available
+msgid "Forecast Quantity"
+msgstr "Perkiraan jumlah"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_virtual_available
+msgid ""
+"Forecast quantity (computed as Quantity On Hand - Outgoing + Incoming)\n"
+"In a context with a single Stock Location, this includes goods stored in this location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' type."
 msgstr ""
+"Perkiraan jumlah (dihitung sebagai jumlah di tangan - keluar + masuk) dalam konteks dengan lokasi stok tunggal, ini termasuk barang-barang yang disimpan di lokasi ini, atau salah satu anak-anak.\n"
+"Dalam konteks dengan Warehouse tunggal, ini termasuk barang-barang yang disimpan di lokasi Stock gudang ini, atau salah satu anak-anak.\n"
+"Jika tidak, ini termasuk barang-barang yang disimpan di lokasi stok apapun dengan tipe 'internal'."
+
+#. module: delivery
+#: model:delivery.carrier,name:delivery.free_delivery_carrier
+#: model:product.product,name:delivery.free_delivery_carrier_product_product
+#: model:product.template,name:delivery.free_delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+msgid "Free delivery charges"
+msgstr "Gratis ongkos kirim"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_free_over
@@ -479,6 +652,24 @@ msgid "Invoice Shipping on Delivery"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_state
+msgid "Invoice State"
+msgstr "Faktur negara"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_policy
+msgid "Invoicing Policy"
+msgstr "Kebijakan Penagihan"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_is_follower
+msgid "Is Follower"
+msgstr "Ini Pengikut"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:delivery.field_sale_order_line_is_delivery
 msgid "Is a Delivery"
 msgstr ""
@@ -584,8 +775,24 @@ msgid "No price rule matching this order; delivery cost cannot be computed."
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery_normal
 #: model:product.template,name:delivery.product_product_delivery_normal_product_template
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_normal_cost
+msgid "Normal Cost"
+msgstr "Biaya normal"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_gap
+msgid "Normal Cost - Total Cost"
+msgstr "Biaya normal - Total biaya"
+
+#. module: delivery
+#: model:delivery.carrier,name:delivery.normal_delivery_carrier
+#: model:product.product,name:delivery.normal_delivery_carrier_product_product
+#: model:product.template,name:delivery.normal_delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Normal Delivery Charges"
 msgstr ""
 
@@ -600,7 +807,25 @@ msgid "Operator"
 msgstr "Operator"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:delivery.choose_delivery_package_view_form
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_invoice_policy
+msgid ""
+"Ordered Quantity: Invoice based on the quantity the customer ordered.\n"
+"Delivered Quantity: Invoiced based on the quantity the vendor delivered (time or deliveries)."
+msgstr ""
+"Jumlah Dipesan: Tagih berdasarkan jumlah yang dipesan pelanggan.\n"
+"Jumlah Dikirim: Tagih berdasarkan jumlah yang pemasok kirimkan."
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_outgoing_qty
+msgid "Outgoing"
+msgstr "Barang Keluar"
+
+#. module: delivery
+#: model:ir.ui.view,arch_db:delivery.view_quant_package_form_save
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Package"
 msgstr "Kemasan"
 
@@ -657,6 +882,24 @@ msgid "Price Rules"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_pricelist_id
+msgid "Pricelist"
+msgstr "Harga"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_item_ids
+msgid "Pricelist Items"
+msgstr "Daftar Harga"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_pricelist_item_ids
+msgid "Pricelist item ids"
+msgstr ""
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
 msgid "Pricing"
 msgstr "Harga"
@@ -686,9 +929,66 @@ msgid "Quantity"
 msgstr "Jumlah"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.model,name:delivery.model_sale_order
 msgid "Quotation"
 msgstr "Quotation"
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_qty_available
+msgid "Quantity On Hand"
+msgstr "Kuantitas pada tangan"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_incoming_qty
+msgid ""
+"Quantity of products that are planned to arrive.\n"
+"In a context with a single Stock Location, this includes goods arriving to this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods arriving to the Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods arriving to any Stock Location with 'internal' type."
+msgstr ""
+"Jumlah produk yang direncanakan untuk tiba.\n"
+"Dalam konteks dengan lokasi stok tunggal, ini termasuk barang-barang yang tiba di lokasi ini, atau salah satu anak-anak.\n"
+"Dalam konteks dengan Warehouse tunggal, ini termasuk barang-barang yang tiba di lokasi Stock gudang ini, atau salah satu anak-anak.\n"
+"Jika tidak, ini termasuk barang-barang yang tiba untuk setiap stok lokasi dengan tipe 'internal'."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_outgoing_qty
+msgid ""
+"Quantity of products that are planned to leave.\n"
+"In a context with a single Stock Location, this includes goods leaving this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods leaving the Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods leaving any Stock Location with 'internal' type."
+msgstr ""
+"Jumlah produk yang direncanakan untuk meninggalkan.\n"
+"Dalam konteks dengan lokasi stok tunggal, ini termasuk barang-barang yang meninggalkan lokasi ini, atau salah satu anak-anak.\n"
+"Dalam konteks dengan Warehouse tunggal, ini termasuk barang-barang yang meninggalkan lokasi Stock gudang ini, atau salah satu anak-anak.\n"
+"Jika tidak, ini termasuk barang-barang yang meninggalkan setiap lokasi stok dengan tipe 'internal'."
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_expense_policy
+msgid "Re-Invoice Expenses"
+msgstr "Tagih Ulang Pengeluaran"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_reception_count
+msgid "Receipt"
+msgstr "Penerimaan"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_nbr_reordering_rules
+msgid "Reordering Rules"
+msgstr "Penataan aturan"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_reordering_max_qty
+msgid "Reordering max qty"
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_reordering_min_qty
+msgid "Reordering min qty"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_stock_return_picking
@@ -761,7 +1061,35 @@ msgid "Shipping Weight"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:delivery.field_product_product_hs_code
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_image_small
+msgid "Small-sized image"
+msgstr "Gambar berukuran kecil"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_product_sale_ok
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_ok
+msgid "Specify if the product can be selected in a sales order line."
+msgstr "Tentukan jika produk dapat dipilih dalam garis order penjualan."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_can_be_expensed
+msgid "Specify whether the product can be selected in an HR expense."
+msgstr "Spesifikasikan apakah produk dapat dipilih pada pengeluaran HR."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_cost_method
+msgid ""
+"Standard Price: The cost price is manually updated at the end of a specific period (usually once a year).\n"
+"                Average Price: The cost price is recomputed at each incoming shipment and used for the product valuation.\n"
+"                Real Price: The cost price displayed is the price of the last outgoing product (will be use in case of inventory loss for example)."
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_hs_code
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:delivery.field_product_template_hs_code
 msgid "Standardized code for international shipping and goods declaration"
 msgstr ""
@@ -782,12 +1110,108 @@ msgid "Stock Quant Package"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery_poste
 #: model:product.template,name:delivery.product_product_delivery_poste_product_template
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_stock_quant_ids
+msgid "Stock quant ids"
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_normal_cost
+msgid "Sum of Multiplication of Cost price and quantity of Vendor Bills"
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_turnover
+msgid ""
+"Sum of Multiplication of Invoice price and quantity of Customer Invoices"
+msgstr "Jumlah perkalian faktur harga dan jumlah pelanggan faktur"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_total_cost
+msgid "Sum of Multiplication of Invoice price and quantity of Vendor Bills "
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_expected
+msgid ""
+"Sum of Multiplication of Sale Catalog price and quantity of Customer "
+"Invoices"
+msgstr "Jumlah perkalian dijual Katalog harga dan jumlah pelanggan faktur"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_num_invoiced
+msgid "Sum of Quantity in Customer Invoices"
+msgstr "Jumlah kuantitas di pelanggan faktur"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_num_invoiced
+msgid "Sum of Quantity in Vendor Bills"
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_pricelist_id
+msgid ""
+"Technical field. Used for searching on pricelists, not stored in database."
+msgstr ""
+"Kolom teknis. Digunakan untuk pencarian daftar harga, tidak tersimpan di "
+"database."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_move_ids
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_quant_ids
+msgid "Technical: used to compute quantities."
+msgstr "Teknis: digunakan untuk menghitung kuantitas."
+
+#. module: delivery
+#: model:delivery.carrier,name:delivery.delivery_carrier
+#: model:product.product,name:delivery.delivery_carrier_product_product
+#: model:product.template,name:delivery.delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "The Poste"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_delay
+msgid ""
+"The average delay in days between the confirmation of the customer order and"
+" the delivery of the finished products. It's the time you promise to your "
+"customers."
+msgstr ""
+"Rata-rata keterlambatan dalam hari antara konfirmasi pesanan pelanggan dan "
+"pengiriman produk jadi. Sekarang saatnya Anda berjanji untuk pelanggan Anda."
+
+#. module: delivery
+#: code:addons/delivery/models/sale_order.py:54
+#, python-format
+msgid "The order state have to be draft to add delivery lines."
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_lst_price
+msgid ""
+"The sale price is managed from the product template. Click on the 'Variant "
+"Prices' button to set the extra attribute prices."
+msgstr ""
+"Harga jual dikelola dari template produk. Klik tombol 'Harga Varian' untuk "
+"menyetel harga atribut tambahan."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_volume
+msgid "The volume in m3."
+msgstr "Volume m3."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_weight
+msgid "The weight of the contents in Kg, not including any packaging, etc."
+msgstr "Berat dari isinya dalam Kg, tidak termasuk bungkus, dll."
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,help:delivery.action_delivery_carrier_form
 msgid ""
 "These methods allow to automatically compute the delivery price\n"
@@ -807,6 +1231,74 @@ msgid "This percentage will be added to the shipping price."
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_production
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for stock moves generated by manufacturing orders."
+msgstr ""
+"Lokasi ini stok akan digunakan, bukan default satu, seperti lokasi sumber "
+"untuk stok bergerak yang dihasilkan oleh manufaktur pesanan."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_procurement
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for stock moves generated by procurements."
+msgstr ""
+"Lokasi ini stok akan digunakan, bukan default satu, seperti lokasi sumber "
+"untuk stok bergerak dihasilkan oleh pengadaan."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_inventory
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for stock moves generated when you do an inventory."
+msgstr ""
+"Lokasi ini stok akan digunakan, bukan default satu, seperti lokasi sumber "
+"untuk stok bergerak dihasilkan ketika Anda melakukan inventarisasi."
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_pos_categ_id
+msgid "Those categories are used to group similar products for point of sale."
+msgstr ""
+"Kategori tersebut digunakan untuk kelompok produk yang sama untuk titik "
+"penjualan."
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_to_weight
+msgid "To Weigh With Scale"
+msgstr "Skala elektronik"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_total_cost
+msgid "Total Cost"
+msgstr "Total biaya"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_total_margin
+msgid "Total Margin"
+msgstr "Total Margin"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_total_margin_rate
+msgid "Total Margin Rate(%)"
+msgstr "Jumlah Margin Rate(%)"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_total_margin_rate
+msgid "Total margin * 100 / Turnover"
+msgstr "Total margin * 100 / omset"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_track_service
+msgid "Track Service"
+msgstr "Telusuri Servis"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_tracking
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:delivery.view_picking_withcarrier_out_form
 msgid "Tracking"
 msgstr "pelacakan"
@@ -853,6 +1345,29 @@ msgid "Variable Factor"
 msgstr "Faktor Variasi"
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_image_variant
+msgid "Variant Image"
+msgstr "Varian gambar"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_price_extra
+msgid "Variant Price Extra"
+msgstr "Tambahan Harga Varian"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_supplier_taxes_id
+msgid "Vendor Taxes"
+msgstr "Penjual pajak"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_seller_ids
+msgid "Vendors"
+msgstr "Vendor"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: selection:delivery.price.rule,variable:0
 #: selection:delivery.price.rule,variable_factor:0
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_volume

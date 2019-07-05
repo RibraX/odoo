@@ -3,16 +3,29 @@
 # * rating_project
 #
 # Translators:
+<<<<<<< HEAD
 # Arma Gedonsky <armagedonsky@hot.ee>, 2016
+=======
+# Arma Gedonsky <armagedonsky@hot.ee>, 2017
+# Martin Trigaux, 2017
+# Eneli Õigus <enelioigus@gmail.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-03-12 20:20+0000\n"
 "Last-Translator: Arma Gedonsky <armagedonsky@hot.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/odoo/odoo-9/language/et/)\n"
 "Language: et\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Eneli Õigus <enelioigus@gmail.com>, 2017\n"
+"Language-Team: Estonian (https://www.transifex.com/odoo/teams/41243/et/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -93,13 +106,30 @@ msgid ""
 msgstr ""
 
 #. module: rating_project
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:rating_project.field_project_project_is_visible_happy_customer
 msgid "Customer Satisfaction"
 msgstr "Kliendi rahulolu"
+=======
+#: model:ir.actions.act_window,name:rating_project.rating_rating_action_project
+#: model:ir.actions.act_window,name:rating_project.rating_rating_action_task
+#: model:ir.ui.menu,name:rating_project.rating_rating_menu_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
+msgid "Customer Ratings"
+msgstr "Kliendi hinnangud"
+
+#. module: rating_project
+#: model:ir.actions.act_window,help:rating_project.rating_rating_action_task
+msgid ""
+"Customer ratings on tasks. If you have no rating, change your project "
+"Settings to activate it."
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating_project
 #: model:ir.model.fields,help:rating_project.field_project_project_is_visible_happy_customer
 msgid ""
+<<<<<<< HEAD
 "Display information about rating of the project on kanban and form view. "
 "This buttons will only be displayed if at least a rating exists."
 msgstr ""
@@ -113,6 +143,92 @@ msgstr ""
 #: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
 msgid "Percentage of happy people about this project"
 msgstr ""
+=======
+"Customer ratings on tasks/issues. If you have no rating, change your project"
+" Settings to activate it."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_rating_status
+msgid "Customer(s) Ratings"
+msgstr "Klientide hinnangud"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Daily"
+msgstr "Igapäevaselt"
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_form
+msgid ""
+"Edit project's stages and set an email template\n"
+"                            on the stages on which you want to activate the rating."
+msgstr ""
+"Muuda projekti etappe ja määra e-kirja põhi\n"
+"                            etappidele, mille juures tahad aktiveerida hindamise."
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_project
+msgid "Happy % on Project"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_task
+msgid "Happy % on Task"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,help:rating_project.field_project_project_rating_status
+msgid ""
+"How to get the customer's feedbacks?\n"
+"- Rating when changing stage: Email will be sent when a task/issue is pulled in another stage\n"
+"- Periodical Rating: Email will be sent periodically\n"
+"\n"
+"Don't forget to set up the mail templates on the stages for which you want to get the customer's feedbacks."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Higly Dissatisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Not Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status:0
+msgid "No rating"
+msgstr "Ei hinnata"
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
+msgid "No rating yet"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Once a Month"
+msgstr "Kord kuus"
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
+msgid ""
+"Percentage of happy ratings over the past 30 days. Get rating details from "
+"the More menu."
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status:0
+msgid "Periodical Rating"
+msgstr "Perioodiline hindamine"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating_project
 #: model:ir.model,name:rating_project.model_project_project
@@ -120,16 +236,48 @@ msgid "Project"
 msgstr "Projekt"
 
 #. module: rating_project
+<<<<<<< HEAD
 #: model:ir.model,name:rating_project.model_rating_rating
+=======
+#: selection:project.project,rating_status_period:0
+msgid "Quarterly"
+msgstr "Kord kvartalis"
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_form_inherit_rating
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Rating"
 msgstr "Hinnang"
 
 #. module: rating_project
 #: model:ir.model.fields,field_description:rating_project.field_project_task_type_rating_template_id
 msgid "Rating Email Template"
+msgstr "Hinnangute e-kirja põhi"
+
+#. module: rating_project
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:rating_project.field_project_project_rating_status_period
+msgid "Rating Frequency"
+msgstr "Hindamise sagedus"
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_rating_request_deadline
+msgid "Rating request deadline"
 msgstr ""
 
 #. module: rating_project
+#: selection:project.project,rating_status:0
+msgid "Rating when changing stage"
+msgstr "Hinnang etapi muutmisel"
+
+#. module: rating_project
+#: model:mail.message.subtype,description:rating_project.mt_task_rating
+msgid "Ratings"
+msgstr "Hinnangud"
+
+#. module: rating_project
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:rating_project.field_project_task_type_rating_template_id
 msgid ""
 "Select an email template. An email will be sent to the customer when the "
@@ -144,4 +292,23 @@ msgstr "Ülesanne"
 #. module: rating_project
 #: model:ir.model,name:rating_project.model_project_task_type
 msgid "Task Stage"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Ülesande etapp"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Twice a Month"
+msgstr "Kaks korda kuus"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Weekly"
+msgstr "Iganädalane"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Yearly"
+msgstr "Iga-aastaselt"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -3,21 +3,34 @@
 # * payment_stripe
 # 
 # Translators:
+<<<<<<< HEAD
 # Bohdan Lisnenko <lem8r.ka11a@gmail.com>, 2017
 # LoganDowns <k0mna80@gmail.com>, 2017
+=======
+# Bohdan Lisnenko, 2016
+# Zoriana Zaiats, 2016
+# LoganDowns <k0mna80@gmail.com>, 2016
+# Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:53+0000\n"
 "PO-Revision-Date: 2017-09-20 09:53+0000\n"
 "Last-Translator: LoganDowns <k0mna80@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. module: payment_stripe
 #. openerp-web
@@ -33,14 +46,18 @@ msgid ""
 "product. As defined in your Stripe profile. See: "
 "https://stripe.com/docs/checkout"
 msgstr ""
+"Відносна або абсолютна URL-адреса, що вказує на квадратне зображення вашого "
+"бренду або товару. Як визначено у вашому профілі Stripe. Переглянути: "
+"https://stripe.com/docs/checkout"
 
 #. module: payment_stripe
 #: model:ir.ui.view,arch_db:payment_stripe.stripe_s2s_form
 msgid "CVC"
-msgstr ""
+msgstr "CVC"
 
 #. module: payment_stripe
 #: model:ir.ui.view,arch_db:payment_stripe.stripe_s2s_form
+<<<<<<< HEAD
 msgid "Card number"
 msgstr "Номер картки"
 
@@ -48,11 +65,20 @@ msgstr "Номер картки"
 #: model:ir.ui.view,arch_db:payment_stripe.stripe_s2s_form
 msgid "Cardholder name"
 msgstr ""
+=======
+msgid "Card Holder Name"
+msgstr "Ім'я власника картки"
+
+#. module: payment_stripe
+#: model:ir.ui.view,arch_db:payment_stripe.stripe_s2s_form
+msgid "Card Number"
+msgstr "Номер картки"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_stripe
 #: model:ir.model.fields,field_description:payment_stripe.field_payment_acquirer_stripe_image_url
 msgid "Checkout Image URL"
-msgstr ""
+msgstr "URL-адреса зображення для оформлення замовлення"
 
 #. module: payment_stripe
 #. openerp-web
@@ -88,10 +114,11 @@ msgstr "Платіжні операції"
 #: code:addons/payment_stripe/static/src/js/stripe.js:38
 #, python-format
 msgid "Payment error"
-msgstr ""
+msgstr "Помилка платежу"
 
 #. module: payment_stripe
 #: model:ir.model.fields,field_description:payment_stripe.field_payment_acquirer_stripe_publishable_key
+<<<<<<< HEAD
 msgid "Stripe Publishable Key"
 msgstr ""
 
@@ -99,12 +126,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment_stripe.field_payment_acquirer_stripe_secret_key
 msgid "Stripe Secret Key"
 msgstr ""
+=======
+msgid "Stripe publishable key"
+msgstr "Опублікований ключ Stripe"
+
+#. module: payment_stripe
+#: model:ir.model.fields,field_description:payment_stripe.field_payment_acquirer_stripe_secret_key
+msgid "Stripe secret key"
+msgstr "Секретний ключ Stripe"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_stripe
 #: code:addons/payment_stripe/models/payment.py:171
 #, python-format
 msgid "Stripe: %s orders found for reference %s"
-msgstr ""
+msgstr "Stripe: %s замовлення для довідки %s"
 
 #. module: payment_stripe
 #: code:addons/payment_stripe/models/payment.py:161
@@ -113,14 +149,16 @@ msgid ""
 "Stripe: invalid reply received from provider, missing reference. Additional "
 "message: %s"
 msgstr ""
+"Stripe: неправильна відповідь, отримана від провайдера, відсутній довідник. "
+"Додаткове повідомлення:%s"
 
 #. module: payment_stripe
 #: code:addons/payment_stripe/models/payment.py:167
 #, python-format
 msgid "Stripe: no order found for reference %s"
-msgstr ""
+msgstr "Stripe: замовлення не знайдено для довідки %s"
 
 #. module: payment_stripe
 #: model:ir.model,name:payment_stripe.model_payment_token
 msgid "payment.token"
-msgstr ""
+msgstr "payment.token"

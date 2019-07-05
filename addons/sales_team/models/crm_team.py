@@ -31,6 +31,15 @@ class CrmTeam(models.Model):
         ], limit=1)
         if not team_id and 'default_team_id' in self.env.context:
             team_id = self.env['crm.team'].browse(self.env.context.get('default_team_id'))
+<<<<<<< HEAD
+=======
+        if not team_id or not team_id.exists():
+            company_id = self.sudo(user_id).env.user.company_id.id
+            team_id = self.env['crm.team'].sudo().search([
+                '|', ('user_id', '=', user_id), ('member_ids', '=', user_id),
+                '|', ('company_id', '=', False), ('company_id', 'child_of', [company_id])
+            ], limit=1)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         if not team_id:
             default_team_id = self.env.ref('sales_team.team_sales_department', raise_if_not_found=False)
             if default_team_id and (self.env.context.get('default_type') != 'lead' or default_team_id.use_leads):

@@ -3,11 +3,18 @@
 # * account_cancel
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Quentin THEURET <odoo@kerpeo.com>, 2017
 # Eloïse Stilmant <est@odoo.com>, 2017
 # Florian Hatat <mininet@wanadoo.fr>, 2017
 # Florent de Labarre <florent@iguanayachts.com>, 2017
+=======
+# Martin Trigaux <mat@odoo.com>, 2016
+# Quentin THEURET <odoo@kerpeo.com>, 2016
+# Xavier Belmere <Info@cartmeleon.com>, 2016
+# Florian Hatat <mininet@wanadoo.fr>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -44,6 +51,7 @@ msgid "Cancel Invoice"
 msgstr "Annuler la facture"
 
 #. module: account_cancel
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:account_cancel.bank_statement_draft_form_inherit
 msgid "Reset to New"
 msgstr "Remettre à l'état nouveau"
@@ -52,3 +60,15 @@ msgstr "Remettre à l'état nouveau"
 #: model:ir.ui.view,arch_db:account_cancel.bank_statement_cancel_form_inherit
 msgid "Revert reconciliation"
 msgstr "Annuler le lettrage"
+=======
+#: code:addons/account_cancel/models/account_bank_statement.py:28
+#, python-format
+msgid "Please set the bank statement to New before canceling."
+msgstr ""
+"Veuillez remettre le relevé bancaire à l'état Nouveau avant de l'annuler."
+
+#. module: account_cancel
+#: model:ir.ui.view,arch_db:account_cancel.bank_statement_draft_form_inherit
+msgid "Reset to New"
+msgstr "Remettre à l'état Nouveau"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

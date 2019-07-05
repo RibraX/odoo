@@ -12,6 +12,7 @@ odoo.define('website_form.animation', function (require) {
     sAnimation.registry.form_builder_send = sAnimation.Class.extend({
         selector: '.s_website_form',
 
+<<<<<<< HEAD
         willStart: function () {
             var def;
             if (!$.fn.datetimepicker) {
@@ -24,6 +25,16 @@ odoo.define('website_form.animation', function (require) {
             var self = this;
             qweb.add_template('/website_form/static/src/xml/website_form.xml');
             this.$target.find('.o_website_form_send').on('click',function (e) {self.send(e);});
+=======
+        start: function(editable_mode) {
+            if (editable_mode) {
+                this.stop();
+                return;
+            }
+            var self = this;
+            this.templates_loaded = ajax.loadXML('/website_form/static/src/xml/website_form.xml', qweb);
+            this.$target.find('.o_website_form_send').on('click',function(e) {self.send(e);});
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
             // Initialize datetimepickers
             var l10n = _t.database.parameters;
@@ -58,7 +69,7 @@ odoo.define('website_form.animation', function (require) {
 
         send: function (e) {
             e.preventDefault();  // Prevent the default submit behavior
-            this.$target.find('.o_website_form_send').off();  // Prevent users from crazy clicking
+            this.$target.find('.o_website_form_send').off().addClass('disabled');  // Prevent users from crazy clicking
 
             var self = this;
 
@@ -230,10 +241,20 @@ odoo.define('website_form.animation', function (require) {
 
         update_status: function (status) {
             var self = this;
+<<<<<<< HEAD
             if (status !== 'success') {  // Restore send button behavior if result is an error
                 this.$target.find('.o_website_form_send').on('click',function (e) {self.send(e);});
             }
             this.$target.find('#o_website_form_result').replaceWith(qweb.render("website_form.status_" + status));
+=======
+            if (status != 'success') {  // Restore send button behavior if result is an error
+                this.$target.find('.o_website_form_send').on('click',function(e) {self.send(e);}).removeClass('disabled');
+            }
+            var $result = this.$('#o_website_form_result');
+            this.templates_loaded.done(function () {
+                $result.replaceWith(qweb.render("website_form.status_" + status));
+            });
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         },
     });
 });

@@ -63,9 +63,32 @@ class AccountAnalyticLine(models.Model):
             sudo_self._timesheet_compute_theorical_revenue()
         return values
 
+<<<<<<< HEAD
     @api.multi
     def _timesheet_compute_theorical_revenue(self):
         """ This method set the theorical revenue on the current timesheet lines.
+=======
+    def _get_timesheet_cost(self, values):
+        values = values if values is not None else {}
+        if values.get('project_id') or self.project_id:
+            if values.get('amount'):
+                return {}
+            unit_amount = values.get('unit_amount', 0.0) or self.unit_amount
+            user_id = values.get('user_id') or self.user_id.id or self._default_user()
+            user = self.env['res.users'].browse([user_id])
+            emp = self.env['hr.employee'].search([('user_id', '=', user_id), ('company_id', '=', user.company_id.id)], limit=1)
+            if not emp:
+                emp = self.env['hr.employee'].search([('user_id', '=', user_id)], limit=1).sudo()
+            cost = emp and emp.timesheet_cost or 0.0
+            uom = (emp or user).company_id.project_time_mode_id
+            # Nominal employee cost = 1 * company project UoM (project_time_mode_id)
+            return {
+                'amount': -unit_amount * cost,
+                'product_uom_id': uom.id,
+                'account_id': values.get('account_id') or self.account_id.id or emp.account_id.id,
+            }
+        return {}
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
             If invoice on delivered quantity:
                 timesheet hours * (SO Line Price) * (1- discount),

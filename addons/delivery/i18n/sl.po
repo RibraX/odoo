@@ -3,16 +3,31 @@
 # * delivery
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Vida Potočnik <vida.potocnik@mentis.si>, 2016
+# Martin Trigaux, 2016
+# matjaz k <matjaz@mentis.si>, 2018
+# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-03-27 18:43+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Slovenian (http://www.transifex.com/odoo/odoo-9/language/"
 "sl/)\n"
 "Language: sl\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: Matjaz Mozetic <m.mozetic@matmoz.si>, 2019\n"
+"Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -62,7 +77,7 @@ msgstr "# različic proizvoda"
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_quant_package_form_save
 msgid "<span>kg</span>"
-msgstr ""
+msgstr "<span>kg</span>"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.report_delivery_document2
@@ -112,7 +127,16 @@ msgstr "Natančen opis proizvoda v namene internega informiranja."
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction
 msgid "Action Needed"
+<<<<<<< HEAD
 msgstr "Potreben je ukrep"
+=======
+msgstr "Potreba po ukrepu"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_integration_level
+msgid "Action while validating Delivery Orders"
+msgstr "Akcija ob overjanju dobavnih nalogov"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_active
@@ -167,7 +191,7 @@ msgstr "Pov. cena na računih kupca"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_avg_price
 msgid "Avg. Price in Vendor Bills "
-msgstr ""
+msgstr "Povp. cena na računih dobavitelja"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_avg_price
@@ -463,7 +487,7 @@ msgstr "Opis"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_description_picking
 msgid "Description on Picking"
-msgstr ""
+msgstr "Opis na zbirniku"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
@@ -617,6 +641,7 @@ msgstr ""
 #. module: delivery
 #: model:delivery.carrier,name:delivery.free_delivery_carrier
 #: model:product.product,name:delivery.free_delivery_carrier_product_product
+#: model:product.template,name:delivery.free_delivery_carrier_product_template
 msgid "Free delivery charges"
 msgstr ""
 
@@ -789,7 +814,7 @@ msgstr "Status računa"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_policy
 msgid "Invoicing Policy"
-msgstr ""
+msgstr "Obračunska politika"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_is_follower
@@ -988,6 +1013,7 @@ msgstr "Normalna cena - Skupna cna"
 #. module: delivery
 #: model:delivery.carrier,name:delivery.normal_delivery_carrier
 #: model:product.product,name:delivery.normal_delivery_carrier_product_product
+#: model:product.template,name:delivery.normal_delivery_carrier_product_template
 msgid "Normal Delivery Charges"
 msgstr ""
 
@@ -1017,6 +1043,8 @@ msgid ""
 "On ordered quantities: Invoice this product based on ordered quantities.\n"
 "On received quantities: Invoice this product based on received quantity."
 msgstr ""
+"Po naročeni količini: nadzor prejetih računov na osnovi naročenih količin.\n"
+"Po prejeti količini: nadzor prejetih računov na osnovi prejetih količin."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_operator
@@ -1031,6 +1059,8 @@ msgid ""
 "Reinvoice Costs: Invoice with some additional charges (product transfer, "
 "labour charges,...)"
 msgstr ""
+"Naročena količina: obračun na osnovi količine, ki jo je kupec naročil.\n"
+"Dobavljena količina: obračun na osnovi količine, ki jo je dobavitelj dobavil (čas ali dobave)."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_outgoing_qty
@@ -1455,7 +1485,7 @@ msgstr "Vsota prodajne cene in količin na računih kupcev"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_total_cost
 msgid "Sum of Multiplication of Invoice price and quantity of Vendor Bills "
-msgstr ""
+msgstr "Vsota prodajne cene in količin na računih dobaviteljev"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_expected
@@ -1481,6 +1511,7 @@ msgstr "Ime predloge"
 #. module: delivery
 #: model:delivery.carrier,name:delivery.delivery_carrier
 #: model:product.product,name:delivery.delivery_carrier_product_product
+#: model:product.template,name:delivery.delivery_carrier_product_template
 msgid "The Poste"
 msgstr ""
 
@@ -1629,7 +1660,11 @@ msgstr "Sledenje"
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_carrier_tracking_ref
 #, fuzzy
 msgid "Tracking Reference"
+<<<<<<< HEAD
 msgstr "Interni sklic"
+=======
+msgstr "Sledilni sklic"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_stock_picking
@@ -1722,13 +1757,17 @@ msgstr "Slika različice"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_supplier_taxes_id
 msgid "Vendor Taxes"
-msgstr ""
+msgstr "Nabavni davki"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_seller_ids
 #, fuzzy
 msgid "Vendors"
+<<<<<<< HEAD
 msgstr "Prodajalec"
+=======
+msgstr "Dobavitelji"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: selection:delivery.price.rule,variable:0

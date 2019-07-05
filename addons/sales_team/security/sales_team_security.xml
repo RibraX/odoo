@@ -22,6 +22,7 @@
             <field name="users" eval="[(4, ref('base.user_root'))]"/>
         </record>
 
+<<<<<<< HEAD
         <record id="crm_rule_all_salesteam" model="ir.rule">
             <field name="name">All Salesteam</field>
             <field ref="sales_team.model_crm_team" name="model_id"/>
@@ -29,6 +30,8 @@
             <field name="groups" eval="[(4, ref('sales_team.group_sale_salesman_all_leads'))]"/>
         </record>
 
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         <record model="ir.rule" id="sale_team_comp_rule">
             <field name="name">Sales Channel multi-company</field>
             <field name="model_id" ref="model_crm_team"/>

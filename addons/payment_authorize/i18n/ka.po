@@ -1,20 +1,30 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * payment_authorize
-#
+# 
 # Translators:
+# Saba Khmaladze <skhmaladze@uglt.org>, 2018
+# Temur, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2015-11-25 07:35+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Georgian (http://www.transifex.com/odoo/odoo-9/language/ka/)\n"
 "Language: ka\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: Temur, 2018\n"
+"Language-Team: Georgian (https://www.transifex.com/odoo/teams/41243/ka/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: ka\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: payment_authorize
@@ -30,6 +40,7 @@ msgid ""
 msgstr ""
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,error_msg:payment_authorize.payment_acquirer_authorize
 msgid ""
 "<span><i>Error,</i> Please be aware that an error occurred during the "
@@ -48,6 +59,37 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
 msgid "API Login Id"
 msgstr ""
+=======
+#: code:addons/payment_authorize/models/authorize_request.py:66
+#, python-format
+msgid ""
+"Authorize.net Error Message(s):\n"
+" %s"
+msgstr ""
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_token_authorize_profile
+msgid "Authorize.net Profile ID"
+msgstr ""
+
+#. module: payment_authorize
+#: code:addons/payment_authorize/models/payment.py:167
+#, python-format
+msgid ""
+"Authorize: received data with missing reference (%s) or trans_id (%s) or "
+"fingerprint (%s)"
+msgstr ""
+
+#. module: payment_authorize
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "CVC"
+msgstr ""
+
+#. module: payment_authorize
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "Card number"
+msgstr "ბარათის ნომერი"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
@@ -55,18 +97,37 @@ msgid "API Transaction Key"
 msgstr ""
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,name:payment_authorize.payment_acquirer_authorize
 msgid "Authorize.Net"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "Expires"
+msgstr "ვადის გასვლის თარიღი"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:ir.ui.view,arch_db:payment_authorize.acquirer_form_authorize
 msgid ""
-"How to configure your Authorize.Net account (look for Getting Started "
-"Guide) ?"
+"How to configure your Authorize.Net account (look for Getting Started Guide)"
+" ?"
 msgstr ""
 
 #. module: payment_authorize
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "MM / YY"
+msgstr "MM / YY"
+
+#. module: payment_authorize
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "Name"
+msgstr "სახელი"
+
+#. module: payment_authorize
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:payment_authorize.model_payment_acquirer
 msgid "Payment Acquirer"
 msgstr "გადახდის ოპერატორი"
@@ -77,7 +138,17 @@ msgid "Payment Transaction"
 msgstr "გადახდის ტრანზაქცია"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,pre_msg:payment_authorize.payment_acquirer_authorize
+=======
+#: code:addons/payment_authorize/models/payment.py:347
+#, python-format
+msgid "The Customer Profile creation in Authorize.NET failed."
+msgstr ""
+
+#. module: payment_authorize
+#: model:ir.model.fields,help:payment_authorize.field_payment_token_authorize_profile
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "You will be redirected to the Authorize website after clicking on the "
 "payment button."

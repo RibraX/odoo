@@ -1077,11 +1077,8 @@ def formatLang(env, value, digits=None, grouping=True, monetary=False, dp=False,
     if isinstance(value, pycompat.string_types) and not value:
         return ''
 
-    lang = env.user.company_id.partner_id.lang or 'en_US'
-    lang_objs = env['res.lang'].search([('code', '=', lang)])
-    if not lang_objs:
-        lang_objs = env['res.lang'].search([], limit=1)
-    lang_obj = lang_objs[0]
+    lang = env.context.get('lang') or env.user.company_id.partner_id.lang or 'en_US'
+    lang_obj = env['res.lang']._lang_get(lang)
 
     res = lang_obj.format('%.' + str(digits) + 'f', value, grouping=grouping, monetary=monetary)
 
@@ -1129,6 +1126,7 @@ def _consteq(str1, str2):
 
 consteq = getattr(passlib.utils, 'consteq', _consteq)
 
+<<<<<<< HEAD
 # forbid globals entirely: str/unicode, int/long, float, bool, tuple, list, dict, None
 class Unpickler(pickle_.Unpickler, object):
     find_global = None # Python 2
@@ -1146,3 +1144,45 @@ pickle.load = _pickle_load
 pickle.loads = lambda text: _pickle_load(io.BytesIO(text))
 pickle.dump = pickle_.dump
 pickle.dumps = pickle_.dumps
+=======
+class Pickle(object):
+    @classmethod
+    def load(cls, stream, errors=False):
+        unpickler = cPickle.Unpickler(stream)
+        # pickle builtins: str/unicode, int/long, float, bool, tuple, list, dict, None
+        unpickler.find_global = None
+        try:
+            return unpickler.load()
+        except Exception:
+            _logger.warning('Failed unpickling data, returning default: %r', errors, exc_info=True)
+            return errors
+
+    @classmethod
+    def loads(cls, text):
+        return cls.load(StringIO(text))
+
+    dumps = cPickle.dumps
+    dump = cPickle.dump
+
+pickle = Pickle
+
+def wrap_module(module, attr_list):
+    """Helper for wrapping a package/module to expose selected attributes
+
+       :param Module module: the actual package/module to wrap, as returned by ``import <module>``
+       :param iterable attr_list: a global list of attributes to expose, usually the top-level
+            attributes and their own main attributes. No support for hiding attributes in case
+            of name collision at different levels.
+    """
+    attr_list = set(attr_list)
+    class WrappedModule(object):
+        def __getattr__(self, attrib):
+            if attrib in attr_list:
+                target = getattr(module, attrib)
+                if isinstance(target, types.ModuleType):
+                    return wrap_module(target, attr_list)
+                return target
+            raise AttributeError(attrib)
+    # module and attr_list are in the closure
+    return WrappedModule()
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

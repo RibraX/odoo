@@ -20,11 +20,18 @@ class Event(models.Model):
 
     is_participating = fields.Boolean("Is Participating", compute="_compute_is_participating")
 
+<<<<<<< HEAD
     website_menu = fields.Boolean(
         'Dedicated Menu', compute='_compute_website_menu', inverse='_set_website_menu',
         help="Creates menus Introduction, Location and Register on the page "
              " of the event on the website.", store=True)
     menu_id = fields.Many2one('website.menu', 'Event Menu')
+=======
+    show_menu = fields.Boolean('Dedicated Menu', compute='_get_show_menu', inverse='_set_show_menu',
+                               help="Creates menus Introduction, Location and Register on the page "
+                                    " of the event on the website.", store=True)
+    menu_id = fields.Many2one('website.menu', 'Event Menu', copy=False)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     def _compute_is_participating(self):
         # we don't allow public user to see participating label

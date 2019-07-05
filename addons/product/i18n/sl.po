@@ -3,17 +3,37 @@
 # * product
 #
 # Translators:
+<<<<<<< HEAD
 # leo <sp9leonardo@gmail.com>, 2015
+=======
+# Leo S. <inactive+sp9leonardo@transifex.com>, 2016
+# Vida Potočnik <vida.potocnik@mentis.si>, 2016
+# Martin Trigaux, 2016
+# jl2035 <jaka.luthar@gmail.com>, 2016
+# Simon Gorše <simon@gorse.org>, 2016
+# matjaz k <matjaz@mentis.si>, 2018
+# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# Boris Kodelja <boris@hbs.si>, 2019
+# Tadej Lupšina <tadej@hbs.si>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-03-27 18:43+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Slovenian (http://www.transifex.com/odoo/odoo-9/language/"
 "sl/)\n"
 "Language: sl\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:26+0000\n"
+"Last-Translator: Tadej Lupšina <tadej@hbs.si>, 2019\n"
+"Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -142,7 +162,7 @@ msgstr ""
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "<span>kg</span>"
-msgstr ""
+msgstr "<span>kg</span>"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.report_pricelist
@@ -928,7 +948,7 @@ msgstr "Končni datum"
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo_date_end
 msgid "End date for this vendor price"
-msgstr ""
+msgstr "Končni datum za ceno tega dobavitelja"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_date_end
@@ -1039,7 +1059,7 @@ msgstr ""
 #: model:product.product,description:product.product_product_2
 #: model:product.template,description:product.product_product_2_product_template
 msgid "Example of product to invoice based on delivery."
-msgstr ""
+msgstr "Primer proizvoda z obračunom na osnovi dobave."
 
 #. module: product
 #: model:product.product,description:product.service_order_01
@@ -1051,13 +1071,13 @@ msgstr ""
 #: model:product.product,description:product.service_cost_01
 #: model:product.template,description:product.service_cost_01_product_template
 msgid "Example of products to invoice based on cost."
-msgstr ""
+msgstr "Primer proizvoda z obračunom na osnovi stroškov."
 
 #. module: product
 #: model:product.product,description:product.product_product_1
 #: model:product.template,description:product.product_product_1_product_template
 msgid "Example of products to invoice based on delivery."
-msgstr ""
+msgstr "Primer proizvodov z obračunom na osnovi dobave."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_name
@@ -1354,7 +1374,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_product_supplierinfo
 msgid "Information about a product vendor"
-msgstr ""
+msgstr "Podatki o dobavitelju proizvoda"
 
 #. module: product
 #: model:product.product,website_description:product.product_product_7
@@ -2002,7 +2022,16 @@ msgstr "Vrsta izdelka"
 #. module: product
 #: model:ir.model,name:product.model_product_uom
 msgid "Product Unit of Measure"
+<<<<<<< HEAD
 msgstr "Enota mere izdelka"
+=======
+msgstr "Merska enota izdelka"
+
+#. module: product
+#: model:ir.model,name:product.model_product_uom_categ
+msgid "Product UoM Categories"
+msgstr "Kategorije EM proizvoda"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_id
@@ -2323,7 +2352,7 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_base_config_settings_company_share_product
 msgid "Share product to all companies"
-msgstr ""
+msgstr "Souporaba izdelkov z vsemi družbami"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_base_config_settings_company_share_product
@@ -2334,6 +2363,9 @@ msgid ""
 " * Unchecked : Each company can see only its product (product where company "
 "is defined). Product not related to a company are visible for all companies."
 msgstr ""
+"Souporaba izdelkov z vsemi družbami določenimi v instanci.\n"
+" * Označeno : izdelki so vidni vsem družbam, čeprav je družba določena med partnerji.\n"
+" * Neoznačeno : vsaka družba vidi le svoje izdelke (izdelki, kjer je določena družba). Izdelki, ki niso povezani z določeno družbo, so vidni vsem družbam."
 
 #. module: product
 #: model:product.product,name:product.membership_1
@@ -2445,7 +2477,7 @@ msgstr "Začetni daum"
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo_date_start
 msgid "Start date for this vendor price"
-msgstr ""
+msgstr "Začetni datum za ceno tega dobavitelja"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_date_start
@@ -2900,7 +2932,7 @@ msgstr ""
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "Validity"
-msgstr ""
+msgstr "Velja do"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_value_name
@@ -2950,40 +2982,48 @@ msgstr "Različice"
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_name
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "Vendor"
-msgstr "Prodajalec"
+msgstr "Dobavitelj"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_tree_view
 msgid "Vendor Information"
-msgstr ""
+msgstr "Podatki o dobavitelju"
 
 #. module: product
+<<<<<<< HEAD
+=======
+#: model:ir.actions.act_window,name:product.product_supplierinfo_type_action
+msgid "Vendor Pricelists"
+msgstr "Ceniki dobaviteljev"
+
+#. module: product
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_code
 msgid "Vendor Product Code"
-msgstr ""
+msgstr "Dobaviteljeva koda proizvoda"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_name
 msgid "Vendor Product Name"
-msgstr ""
+msgstr "Dobaviteljev naziv proizvoda"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_product_uom
 msgid "Vendor Unit of Measure"
-msgstr ""
+msgstr "Dobaviteljeva enota mere"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo_name
 msgid "Vendor of this product"
-msgstr ""
+msgstr "Dobavitelj proizvoda"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_seller_ids
 #: model:ir.model.fields,field_description:product.field_product_template_seller_ids
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Vendors"
-msgstr "Prodajalci"
+msgstr "Dobavitelji"
 
 #. module: product
 #: selection:product.category,type:0

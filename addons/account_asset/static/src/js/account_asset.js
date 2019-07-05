@@ -45,6 +45,7 @@ var AccountAssetWidget = AbstractField.extend({
         }
         var $button = $('<button/>', {
             type: 'button',
+<<<<<<< HEAD
             title: title,
             disabled: disabled,
         }).addClass('btn btn-sm btn-link fa fa-circle o_deprec_lines_toggler ' + className);
@@ -68,6 +69,12 @@ var AccountAssetWidget = AbstractField.extend({
             },
             record: this.record,
         });
+=======
+            title: (this.is_posted)? _t('Posted') : _t('Unposted'),
+            disabled: row_data.move_check.value,
+            'class': 'btn btn-sm btn-link fa fa-circle o_widgetonbutton ' + class_color,
+        }) : '').html();
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     },
 });
 

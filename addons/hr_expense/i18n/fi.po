@@ -3,6 +3,7 @@
 # * hr_expense
 # 
 # Translators:
+<<<<<<< HEAD
 # Tommi Rintala <tommi.rintala@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2017
@@ -15,6 +16,21 @@
 # Kari Lindgren <karisatu@gmail.com>, 2017
 # Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2017
 # Iipponen <erno@web-veistamo.fi>, 2017
+=======
+# Svante Suominen <svante.suominen@web-veistamo.fi>, 2016
+# Martin Trigaux, 2016
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2016
+# Kari Lindgren <kari.lindgren@emsystems.fi>, 2016
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2016
+# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2016
+# Marko Happonen <marko.happonen@sprintit.fi>, 2016
+# Mikko Salmela <salmemik@gmail.com>, 2016
+# Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2016
+# Kari Lindgren <karisatu@gmail.com>, 2016
+# Miku Laitinen <miku.laitinen@gmail.com>, 2016
+# Iipponen <erno@web-veistamo.fi>, 2016
+# Tommi Rintala <tommi.rintala@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # artol <arto.leskinen@tek.fi>, 2017
 # Marko Happonen <marko.happonen@sprintit.fi>, 2017
 msgid ""
@@ -83,6 +99,9 @@ msgstr ""
 #, python-format
 msgid "<p>Click here to create your first expense and add it under here.</p>"
 msgstr ""
+"<p>Esimiehet voivat hyväksyä tai hylätä kuluraportin.</p><p>Jos hylkäät "
+"kuluraportin, kerro hylkäämisen perustelut lisäämällä <i>Uusi viesti</i> "
+"alareunassa.</p>"
 
 #. module: hr_expense
 #. openerp-web
@@ -310,7 +329,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_analytic_account_id
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Analytic Account"
+<<<<<<< HEAD
 msgstr "Analyyttinen tili"
+=======
+msgstr "Kustannuspaikka"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Apply"
+msgstr "Käytä"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
@@ -1159,9 +1187,22 @@ msgid ""
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 msgid "Other Info"
 msgstr "Muut tiedot"
+=======
+#: code:addons/hr_expense/models/hr_expense.py:537
+#, python-format
+msgid "Only HR Officers can approve expenses"
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:528
+#, python-format
+msgid "Only HR Officers can refuse expenses"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: selection:hr.expense.sheet,state:0
@@ -1737,7 +1778,17 @@ msgid "You cannot report expenses for different employees in the same report!"
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: code:addons/hr_expense/models/hr_expense.py:109
+=======
+#: code:addons/hr_expense/models/hr_expense.py:605
+#, python-format
+msgid "You cannot report expenses with different payment modes."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:105
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "You cannot report twice the same line!"
 msgstr ""

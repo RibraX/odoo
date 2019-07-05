@@ -3,6 +3,7 @@
 # * mrp
 # 
 # Translators:
+<<<<<<< HEAD
 # Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2017
 # Yoshi Tashiro <tashiro@roomsfor.hk>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
@@ -15,6 +16,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
+=======
+# Martin Trigaux, 2016
+# Yoshi Tashiro <tashiro@roomsfor.hk>, 2016
+# SHIMIZU Taku <shimizu.taku@gmail.com>, 2016
+# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2016
+# Kohji Katayama <kohji.katayama@dreamyard.co.jp>, 2016
+# 高木正勝 <masakatsu.takagi@pro-spire.co.jp>, 2016
+# Takahiro MURAKAMI <murakami@date-yakkyoku.com>, 2016
+# Manami Hashi <manami@roomsfor.hk>, 2016
+# NOKA Shigekazu <shigekazu.noka@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-10 11:34+0000\n"
 "PO-Revision-Date: 2017-10-10 11:34+0000\n"
@@ -2327,6 +2342,11 @@ msgid "Quantity To Produce"
 msgstr "生産予定量"
 
 #. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_stock_move_quantity_done_store
+msgid "Quantity done store"
+msgstr ""
+
+#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter_batch_size
 msgid "Quantity to Process"
 msgstr "作業予定量"
@@ -3038,7 +3058,15 @@ msgid ""
 msgstr "分刻みの時間です。この時間はマニュアルモード、もしくは今まで一度も作業オーダがなかった初めての実時間作業の場合使用します。"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_product_produce_line_qty_to_consume
+=======
+#: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
+msgid "Time the currently logged user spent on this workorder."
+msgstr ""
+
+#. module: mrp
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
 #: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
 msgid "To Consume"

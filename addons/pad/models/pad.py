@@ -119,6 +119,7 @@ class PadCommon(models.AbstractModel):
 
     # Set the pad content in vals
     def _set_pad_value(self, vals):
+<<<<<<< HEAD
 
         # Update the pad if the `pad_content_field` is modified
         for k, field in self._fields.items():
@@ -131,6 +132,10 @@ class PadCommon(models.AbstractModel):
         # Update the `pad_content_field` if the pad is modified
         for k, v in list(vals.items()):
             field = self._fields[k]
+=======
+        for k, v in vals.items():
+            field = self._fields.get(k)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             if hasattr(field, 'pad_content_field'):
                 vals[field.pad_content_field] = self.pad_get_content(v)
 

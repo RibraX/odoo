@@ -3,6 +3,7 @@
 # * hr_expense
 # 
 # Translators:
+<<<<<<< HEAD
 # Morten Schou <ms@msteknik.dk>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Sanne Kristensen <sanne@vkdata.dk>, 2017
@@ -14,13 +15,33 @@
 # Ronni Poulsen <rp@flexonet.dk>, 2017
 # Hans Henrik Gabelgaard <hhg@gabelgaard.org>, 2017
 # Jarnhold Nattestad <nattestads@gmail.com>, 2017
+=======
+# Martin Trigaux, 2016
+# Hans Henrik Gabelgaard <hhg@gabelgaard.org>, 2016
+# peso <peer.sommerlund@gmail.com>, 2016
+# Jesper Carstensen <info@danodoo.dk>, 2016
+# Sanne Kristensen <sanne@vkdata.dk>, 2016
+# Morten Schou <ms@msteknik.dk>, 2016
+# Ronni Poulsen <rp@flexonet.dk>, 2016
+# Ejner Sønniksen <ejner@vkdata.dk>, 2016
+# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Jarnhold Nattestad <nattestads@gmail.com>, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
+# lhmflexerp <lhm@flexerp.dk>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-10 11:34+0000\n"
 "PO-Revision-Date: 2017-10-10 11:34+0000\n"
 "Last-Translator: Jarnhold Nattestad <nattestads@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: lhmflexerp <lhm@flexerp.dk>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,6 +78,9 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "2 ways to record expenses:"
 msgstr ""
+"<b>Bemærk:</b> Opsæt den samme e-mailadresse ved din ansatte som\n"
+"                            den, der kommer til at stå i feltet \"Fra:\". Ellers\n"
+"                            vil omkostningen ikke blive accepteret på e-mail."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
@@ -64,6 +88,8 @@ msgid ""
 "<i class=\"text-muted oe_edit_only\">Use [Reference] as a subject prefix for"
 " incoming receipts</i>"
 msgstr ""
+"<i class=\"text-muted oe_edit_only\">Brug [Reference] i begyndelsen af emnet"
+" ved indkomne kvitteringer</i>"
 
 #. module: hr_expense
 #. openerp-web
@@ -112,6 +138,8 @@ msgid ""
 "<p>The accountant receive approved expense reports.</p><p>He can post "
 "journal entries in one click if taxes and accounts are right.</p>"
 msgstr ""
+"<p>Bogholderen kan modtage udgiftsrapporter.</p><p>Han kan bogføre "
+"journalposteringer med et klik hvis moms og konti er korrekte.</p>"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -166,6 +194,8 @@ msgid ""
 "                                        <span class=\"small\">Advised if few expenses</span>\n"
 "                                    </span>"
 msgstr ""
+"<strong class=\"text-info\">[PRODUKTKODE]</strong> fritekst <strong class"
+"=\"text-primary\">PRIS</strong>"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
@@ -187,7 +217,7 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
 msgid "<strong>Employee:</strong>"
-msgstr ""
+msgstr "<strong>Medarbejder:</strong>"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -211,7 +241,7 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
 msgid "<strong>Payment By:</strong>"
-msgstr ""
+msgstr "<strong>Betaling Af:</strong>"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -233,11 +263,17 @@ msgid "<strong>Total</strong>"
 msgstr "<strong>Total</strong>"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid ""
 "<strong>Travel with Personal Car</strong><br/>\n"
 "                                    Cost: 0.30 <i>(the price per mile reimbursed by the company is fixed)</i>"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Validated By:</strong>"
+msgstr "<strong>Bekræftet af:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
@@ -251,6 +287,8 @@ msgid ""
 "A payment of %s %s with the reference <a href='/mail/view?%s'>%s</a> related"
 " to your expense %s has been made."
 msgstr ""
+"En betaling af %s %s med reference <a href='/mail/view?%s'>%s</a> relateret "
+"til din regning %s er gennemført."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_account_id
@@ -268,9 +306,20 @@ msgid "Accounting"
 msgstr "Regnskab"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "Accounting: Accountant or Adviser"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_accounting_date
+msgid "Accounting Date"
+msgstr "Bogføringsdato"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+msgid "Accounting Entries"
+msgstr "Finans poster"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
@@ -291,14 +340,20 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_all
 msgid "All Expense Reports"
-msgstr ""
+msgstr "Alle udgiftsrapporter"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_all
 msgid "All Expenses"
-msgstr ""
+msgstr "Alle omkostninger"
 
 #. module: hr_expense
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_account_id
+msgid "An expense account is expected"
+msgstr "En udgiftskonto er forventet"
+
+#. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_account_id
 msgid "An expense account is expected"
 msgstr ""
@@ -308,6 +363,17 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Analytic Account"
 msgstr "Analysekonto"
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_analytic_account_id
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Analytic Account"
+msgstr "Analyse konto"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Apply"
+msgstr "Anvend"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
@@ -345,7 +411,7 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_bank_journal_id
 msgid "Bank Journal"
-msgstr ""
+msgstr "Bankjournal"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_reference
@@ -392,25 +458,25 @@ msgstr ""
 #: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_post
 #: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_my_all
 msgid "Click here to create a new expense report."
-msgstr ""
+msgstr "Klik her for at oprette en ny udgiftsrapport."
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.action_request_approve_expense_sheet
 #: model:ir.actions.act_window,help:hr_expense.action_request_to_pay_expense_sheet
 #: model:ir.actions.act_window,help:hr_expense.action_request_to_post_expense_sheet
 msgid "Click here to create new expenses."
-msgstr ""
+msgstr "Klik her for at oprette ny omkostninger."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:343
 #, python-format
 msgid "Click to add a new expense,"
-msgstr ""
+msgstr "Klik for at tilføje en ny udgift,"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_product
 msgid "Click to create a new expense category."
-msgstr ""
+msgstr "Klik her for at oprette en ny udgiftskategori."
 
 #. module: hr_expense
 #: selection:hr.expense,payment_mode:0
@@ -451,7 +517,7 @@ msgstr "Tillykke, du er færdig!"
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 msgid "Create a new expense.<br>"
-msgstr ""
+msgstr "Opret en ny udgift.<br>"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -495,7 +561,7 @@ msgstr "Dato"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_res_config_settings_expense_alias_prefix
 msgid "Default Alias Name for Expenses"
-msgstr ""
+msgstr "Standard Alias Navn for Udgifter"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_department_id
@@ -530,12 +596,12 @@ msgstr "Dokumenter"
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "Don't hesitate to"
-msgstr "Tøv ikke med at"
+msgstr "Forhast ikke at"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_sheet_register_payment_view_form
 msgid "Draft Payment"
-msgstr ""
+msgstr "Kladde Betaling"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
@@ -558,12 +624,12 @@ msgstr "Medarbejder"
 #. module: hr_expense
 #: selection:hr.expense,payment_mode:0
 msgid "Employee (to reimburse)"
-msgstr ""
+msgstr "Ansat (som skal tilbagebetales)"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_address_id
 msgid "Employee Home Address"
-msgstr ""
+msgstr "Medarbejder Hjemmeadresse"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -591,17 +657,23 @@ msgstr "Udgifts dato"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_name
 msgid "Expense Description"
-msgstr ""
+msgstr "Beskrivelse af Udgift"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "Expense Flow"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Expense Email Alias"
+msgstr "Omkostninger e-mail-alias"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_journal_id
 msgid "Expense Journal"
-msgstr ""
+msgstr "Udgiftsjournal"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_expense_line_ids
@@ -614,13 +686,13 @@ msgstr "Udgifts linier"
 #: model:ir.ui.menu,name:hr_expense.menu_hr_product
 #: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
 msgid "Expense Products"
-msgstr ""
+msgstr "Omkostninger"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_expense_sheet
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_id
 msgid "Expense Report"
-msgstr ""
+msgstr "Udgiftsrapport"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_expense_sheet_register_payment_wizard
@@ -635,7 +707,7 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_name
 msgid "Expense Report Summary"
-msgstr ""
+msgstr "Sammendrag af udgiftsrapport"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_my_reports
@@ -643,40 +715,40 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_tree
 msgid "Expense Reports"
-msgstr ""
+msgstr "Udgiftsrapporter"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_department_filtered
 msgid "Expense Reports Analysis"
-msgstr ""
+msgstr "Analyse af udgiftsrapporter"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_approve
 msgid "Expense Reports To Approve"
-msgstr ""
+msgstr "Udgiftsrapporter til godkendelse"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_pay
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_pay
 msgid "Expense Reports To Pay"
-msgstr ""
+msgstr "Udgiftsrapporter til betaling"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_post
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_post
 msgid "Expense Reports To Post"
-msgstr ""
+msgstr "Udgiftsrapporter til bogføring"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_approve
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_department_to_approve
 msgid "Expense Reports to Approve"
-msgstr ""
+msgstr "Udgiftsrapporter til godkendelse"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_tree
 msgid "Expense Sheet"
-msgstr ""
+msgstr "Udgiftsark"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -696,7 +768,7 @@ msgstr ""
 #. module: hr_expense
 #: model:mail.message.subtype,description:hr_expense.mt_expense_approved
 msgid "Expense report approved"
-msgstr ""
+msgstr "Udgiftsrapport godkendt"
 
 #. module: hr_expense
 #: model:mail.message.subtype,description:hr_expense.mt_expense_paid
@@ -755,7 +827,7 @@ msgstr "Udgifts måned"
 #: model:ir.actions.report,name:hr_expense.action_report_hr_expense_sheet
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
 msgid "Expenses Report"
-msgstr ""
+msgstr "Udgiftsrapport"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_all
@@ -765,12 +837,12 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_department_expense_sheets_to_approve_count
 msgid "Expenses Reports to Approve"
-msgstr ""
+msgstr "Udgiftsrapport til godkendelse"
 
 #. module: hr_expense
 #: model:mail.message.subtype,name:hr_expense.mt_department_expense_confirmed
 msgid "Expenses To Approve"
-msgstr ""
+msgstr "Omkostninger som skal godkendes"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
@@ -787,7 +859,7 @@ msgstr ""
 #: code:addons/hr_expense/models/hr_expense.py:438
 #, python-format
 msgid "Expenses must belong to the same Employee."
-msgstr ""
+msgstr "Udgifter skal tilhøre den samme Medarbejder."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:566
@@ -796,18 +868,20 @@ msgid ""
 "Expenses must have an expense journal specified to generate accounting "
 "entries."
 msgstr ""
+"Udgifter skal have angivet en udgiftsjournal for at kunne generere "
+"regnskabsposteringer."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:442
 #, python-format
 msgid "Expenses must have been paid by the same entity (Company or employee)"
-msgstr ""
+msgstr "Udgifter skal være betalt af den samme (Virksomhed eller medarbejder)"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
 msgid "Expenses of Your Team Member"
-msgstr ""
+msgstr "Udgifter for Dine Teammedlemmer"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
@@ -817,12 +891,12 @@ msgstr "Udgifter til fakturering"
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses_to_submit
 msgid "Expenses to Submit"
-msgstr ""
+msgstr "Udgifter til indsendelse"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 msgid "Expenses will go through these steps:"
-msgstr ""
+msgstr "Udgifter vil gå igennem disse trin:"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -847,7 +921,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
 msgid "Former Employees"
-msgstr ""
+msgstr "Tidligere ansatte"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.action_approved_expense
@@ -855,6 +929,8 @@ msgid ""
 "From here the accountant will be able to approve as well as refuse the "
 "expenses which are verified by the HR Manager."
 msgstr ""
+"Herfra kan bogholderen godkende og afvise udgifterne, som er bekræftede af "
+"HR Lederen."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
@@ -870,8 +946,13 @@ msgstr ""
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+<<<<<<< HEAD
 msgid "Grant such accountants with following access rights:"
 msgstr ""
+=======
+msgid "From: Your Email"
+msgstr "Fra: Din e-mail"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -880,8 +961,13 @@ msgstr ""
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+<<<<<<< HEAD
 msgid "Grant this user with “Manager” rights for Expense app"
 msgstr ""
+=======
+msgid "Get Mobile"
+msgstr "Bliv mobil"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
@@ -897,7 +983,7 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "Have a wonderful day,<br/>- The Odoo Team"
-msgstr ""
+msgstr "Hav en god dag!<br/>- Odoo-holdet"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_register_payment_wizard_hide_payment_method
@@ -1003,7 +1089,7 @@ msgstr "Leder"
 #: code:addons/hr_expense/static/src/js/tour.js:60
 #, python-format
 msgid "Managers can get all reports to approve from this menu."
-msgstr ""
+msgstr "Ledere kan få alle rapporter til godkendelse fra denne menu."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_register_payment_wizard_communication
@@ -1019,7 +1105,7 @@ msgstr "Mine udgifter"
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_my_unsubmitted
 msgid "My Expenses to Submit"
-msgstr ""
+msgstr "Mine udgifter til indsendelse"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_my_refused
@@ -1030,17 +1116,17 @@ msgstr ""
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_my_all
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
 msgid "My Reports"
-msgstr ""
+msgstr "Mine rapporter"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "My Team Expenses"
-msgstr ""
+msgstr "Mit teams udgifter"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
 msgid "My Team Reports"
-msgstr ""
+msgstr "Mine Team Rapporter"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
@@ -1065,18 +1151,21 @@ msgid ""
 "No Expense account found for the product %s (or for its category), please "
 "configure one."
 msgstr ""
+"Der blev ikke fundet nogen konto til udgifter for varen %s (eller for dens "
+"kategori), indstil venligst en."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:231
 #, python-format
 msgid "No Home Address found for the employee %s, please configure one."
 msgstr ""
+"Ingen Hjemmeadresse fundet for denne medarbejder %s, konfigurer venligst en."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:210
 #, python-format
 msgid "No credit account found for the %s journal, please configure one."
-msgstr ""
+msgstr "Ingen kreditkonto fundet for %s journalen, konfigurér venligst en."
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_my_refused
@@ -1086,18 +1175,18 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Not Refused"
-msgstr ""
+msgstr "Ikke afvist"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "Notes..."
-msgstr ""
+msgstr "Noter..."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_attachment_number
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_attachment_number
 msgid "Number of Attachments"
-msgstr ""
+msgstr "Antal Vedhæftninger"
 
 #. module: hr_expense
 #: model:res.groups,name:hr_expense.group_hr_expense_user
@@ -1112,12 +1201,12 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
 msgid "Once approved, your expense report, goes to the accounting,"
-msgstr ""
+msgstr "Når udgiftsrapporten er godkendt, går den videre til bogføring,"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 msgid "Once approved, your expenses report goes to the accounting,"
-msgstr ""
+msgstr "Når udgiftsrapporten er godkendt, går den videre til bogføring,"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1146,6 +1235,8 @@ msgid ""
 "Once you have created your expense, submit it to your manager who will "
 "validate it."
 msgstr ""
+"Når du har oprettet din udgift, skal du sende den til din leder, som skal "
+"godkende den."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1155,9 +1246,22 @@ msgid ""
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 msgid "Other Info"
 msgstr "Anden info"
+=======
+#: code:addons/hr_expense/models/hr_expense.py:537
+#, python-format
+msgid "Only HR Officers can approve expenses"
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:528
+#, python-format
+msgid "Only HR Officers can refuse expenses"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: selection:hr.expense.sheet,state:0
@@ -1179,7 +1283,7 @@ msgstr "Betalingsbeløb"
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_payment_mode
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_payment_mode
 msgid "Payment By"
-msgstr ""
+msgstr "Betalt af"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_register_payment_wizard_payment_date
@@ -1200,7 +1304,7 @@ msgstr "Betalingstype"
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
 msgid "Periodically, you submit expenses report to your manager,"
-msgstr ""
+msgstr "Med jævne mellemrum sender du en udgiftsrapport til din leder,"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_web_planner
@@ -1284,6 +1388,7 @@ msgstr ""
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_refuse_wizard_view_form
+<<<<<<< HEAD
 msgid "Reason to refuse Expense"
 msgstr ""
 
@@ -1301,6 +1406,10 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "Recording Mode"
 msgstr ""
+=======
+msgid "Reason to refuse expense."
+msgstr "Grund til afslag på udgift."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
@@ -1316,7 +1425,7 @@ msgstr "Afslå"
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_refuse_wizard_action
 msgid "Refuse Expense"
-msgstr ""
+msgstr "Afslå udgift"
 
 #. module: hr_expense
 #: selection:hr.expense,state:0 selection:hr.expense.sheet,state:0
@@ -1328,7 +1437,7 @@ msgstr "Afvist"
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Refused Expenses"
-msgstr ""
+msgstr "Afviste udgifter"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_my_reports_refused
@@ -1357,7 +1466,7 @@ msgstr "Rapport"
 #: selection:hr.expense,state:0
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Reported"
-msgstr ""
+msgstr "Indberettet"
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_reports
@@ -1367,22 +1476,22 @@ msgstr "Rapportering"
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_request_approve_expense_sheet
 msgid "Reports to Approve"
-msgstr ""
+msgstr "Rapporter til Godkendelse"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_request_to_pay_expense_sheet
 msgid "Reports to Pay"
-msgstr ""
+msgstr "Rapporter til Betaling"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_request_to_post_expense_sheet
 msgid "Reports to Post"
-msgstr ""
+msgstr "Rapporter til Bogføring"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 msgid "Resubmit"
-msgstr ""
+msgstr "Genindsend"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1420,7 +1529,7 @@ msgstr ""
 #. module: hr_expense
 #: model:web.planner,tooltip_planner:hr_expense.planner_hr_expense
 msgid "Send receipts by email to create expenses efficiently."
-msgstr ""
+msgstr "Send kvitteringer med email for effektivt at oprette udgifter."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1434,8 +1543,13 @@ msgstr ""
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+<<<<<<< HEAD
 msgid "Set an email alias"
 msgstr ""
+=======
+msgid "Setup"
+msgstr "Opsætning"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1474,11 +1588,20 @@ msgstr "Status"
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_state
 msgid "Status of the expense."
-msgstr ""
+msgstr "Status på udgiften"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+<<<<<<< HEAD
 msgid "Submit for Approval"
+=======
+msgid "Subject:"
+msgstr "Emne:"
+
+#. module: hr_expense
+#: model:ir.actions.server,name:hr_expense.hr_expense_submit_action_server
+msgid "Submit To Manager"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_expense
@@ -1490,7 +1613,7 @@ msgstr "Send til leder"
 #: selection:hr.expense.sheet,state:0
 #: model:mail.message.subtype,name:hr_expense.mt_expense_confirmed
 msgid "Submitted"
-msgstr ""
+msgstr "Sendt"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_untaxed_amount
@@ -1509,26 +1632,43 @@ msgid ""
 "Technical field used to hide the payment method if the selected journal has "
 "only one available which is 'manual'"
 msgstr ""
-"Teknisk felt som bruges til at skjule betalingsmetoden, hvis den valgte "
-"journal kun har en tilgængelig, som er 'manuel'"
+"Teknisk felt bruges til at skjule betalingsmetoden, hvis den valgte journal "
+"kun har en tilgængelig, som er 'manuel'"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid ""
+"The <strong class=\"text-info\">PRODUCT CODE</strong> is optional and should be the\n"
+"                            internal code of one of your expense product. This\n"
+"                            will set the right product automatically on your\n"
+"                            expense Odoo."
+msgstr ""
+"<strong class=\"text-info\">PRODUKTKODEN</strong> er valgfri og skal være en\n"
+"                            intern kode tilknyttet et af dine produkter, som er oprettet under omkostninger. Dette\n"
+"                            vil angive det rigtige produkt automatisk på din\n"
+"                            Odoo-omkostning."
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/hr_expense/static/src/js/tour.js:56
 #, python-format
 msgid ""
 "The accountant can register a payment to reimburse the employee directly."
 msgstr ""
+"Bogholderen kan registrere en betaling og refundere medarbejderen direkte."
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
 msgid "The accountant validates entries and reimburse you."
-msgstr ""
+msgstr "Bogholderen bogfører posteringer og tilbagebetaler til dig."
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 msgid "The accountant validates journal entries and reimburse you."
-msgstr ""
+msgstr "Bogholderen bogfører journalposteringer og tilbagebetaler til dig."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1554,7 +1694,7 @@ msgstr "Betalingsbeløbet skal være positivt."
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_sheet_bank_journal_id
 msgid "The payment method used when the expense is paid by the company."
-msgstr ""
+msgstr "Den anvendte betalingsmetode når udgiften betales af virksomheden."
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
@@ -1565,13 +1705,23 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "This guide helps you start with Odoo Expenses."
 msgstr ""
+"Fotografiet af kvitteringen og friteksten i e-mailens emne vil\n"
+"                            blive vedhæftet ved omkostningen. På denne måde vil du få alt vedhæftet,\n"
+"                            så du kan udfylde de resterende felter senere."
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
 msgid ""
 "This installs the Sales Management app.                             Expenses"
 " can be invoiced to customers from sales orders."
 msgstr ""
+=======
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "The steps to process expenses are:"
+msgstr "Fremgangsmåden for at behandle udgifter er:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_to_approve
@@ -1599,6 +1749,9 @@ msgstr "Skal indsendes"
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "To do:"
 msgstr ""
+"For at oprette udgifter på e-mail skal du tage et foto af dine\n"
+"                            kvitteringer og sende dem på e-mail med følgende\n"
+"                            information:"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_total_amount
@@ -1651,17 +1804,17 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
 msgid "View Attached Documents"
-msgstr ""
+msgstr "Vis Vedhæftede Dokumenter"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 msgid "View Attachments"
-msgstr ""
+msgstr "Vis Vedhæftninger"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "View Report"
-msgstr ""
+msgstr "Vis Rapport"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1677,6 +1830,8 @@ msgstr "Velkommen"
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid "What it covers and what are the limits"
 msgstr ""
+"Vi håber, at denne vejledning hjalp dig til at styre dine omkostninger "
+"effektivt."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1687,14 +1842,21 @@ msgstr ""
 #. openerp-web
 #: code:addons/hr_expense/static/src/js/tour.js:26
 #, python-format
+<<<<<<< HEAD
 msgid "Write the name of the product, or select an existing one."
 msgstr ""
+=======
+msgid "You can only generate accounting entry for approved expense(s)."
+msgstr "Du kan kun generere regnskabsposter for godkendte udgifter."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:563
 #, python-format
 msgid "You can only generate accounting entry for approved expense(s)."
 msgstr ""
+"Du kan desuden angive en <strong class=\"text-primary\">PRIS</strong>\n"
+"                            som afslutningen på din e-mails emne."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
@@ -1705,46 +1867,64 @@ msgid ""
 "between brackets, the product will be set automatically. Type the expense "
 "amount in the mail subject to set it on the expense too."
 msgstr ""
+"Du kan opsætte et fælles e-mail-alias for let at kunne oprette\n"
+"                                    indkomne omkostninger. Skriv en e-mail, hvor kvitteringen\n"
+"                                    er vedhæftet, for at oprette en udgiftslinje med ét klik. Hvis e-mailens\n"
+"                                    emne indeholder produktets interne reference i parentes,\n"
+"                                    vil produktet blive angivet automatisk. Skriv desuden udgiftsbeløbet\n"
+"                                    i e-mailens emne for også at få dette noteret i omkostningerne."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:598
 #, python-format
 msgid "You cannot add expense lines of another employee."
-msgstr ""
+msgstr "Du kan ikke tilføje udgiftslinjer, som er tilknyttet en anden ansat."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:315
 #, python-format
 msgid "You cannot delete a posted expense."
-msgstr ""
+msgstr "Du kan ikke slette en bogført udgift."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:469
 #, python-format
 msgid "You cannot delete a posted or paid expense."
-msgstr ""
+msgstr "Du kan ikke slette en bogført eller betalt udgift."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:111
 #, python-format
 msgid "You cannot report expenses for different employees in the same report!"
 msgstr ""
+"Du kan ikke rapportere udgifter for forskellige medarbejdere i den samme "
+"rapport!"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: code:addons/hr_expense/models/hr_expense.py:109
+=======
+#: code:addons/hr_expense/models/hr_expense.py:605
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+#, python-format
+msgid "You cannot report expenses with different payment modes."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:105
 #, python-format
 msgid "You cannot report twice the same line!"
-msgstr ""
+msgstr "Du kan ikke rapportere den samme linje to gange!"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
 msgid "You record expenses"
-msgstr ""
+msgstr "Du angiver udgifter"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
 msgid "You record expenses,"
-msgstr ""
+msgstr "Du angiver udgifter,"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_template_refuse_reason
@@ -1758,8 +1938,13 @@ msgstr "og"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+<<<<<<< HEAD
 msgid "approval process"
 msgstr ""
+=======
+msgid "Your Email Address"
+msgstr "Din e-mailadresse"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
@@ -1779,17 +1964,17 @@ msgstr ""
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
 msgid "e.g. Lunch"
-msgstr ""
+msgstr "fx Middag"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "e.g. Lunch with Customer"
-msgstr ""
+msgstr "fx Middag med kunde"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
 msgid "e.g. Trip to NY"
-msgstr ""
+msgstr "fx Rejse til New York"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_template_refuse_reason
@@ -1800,7 +1985,7 @@ msgstr ""
 #: code:addons/hr_expense/models/hr_expense.py:344
 #, python-format
 msgid "or send receipts by email to %s."
-msgstr ""
+msgstr "eller send kvitteringer på e-mail til %s."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner

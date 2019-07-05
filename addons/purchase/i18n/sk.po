@@ -3,12 +3,24 @@
 # * purchase
 #
 # Translators:
+<<<<<<< HEAD
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2015
+=======
+# Stefan Stieranka <stieranka@itec.sk>, 2017
+# Matus Krnac <matus.krnac@gmail.com>, 2017
+# gebri <gebri@inmail.sk>, 2017
+# Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
+# Martin Trigaux, 2017
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017
+# Jan Prokop, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-22 09:11+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -18,6 +30,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Jan Prokop, 2018\n"
+"Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:mail.template,body_html:purchase.email_template_edi_purchase
@@ -167,6 +190,14 @@ msgid "<strong>Your Order Reference</strong>"
 msgstr "<strong>Vaša referencia objednávky</strong>"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:res.groups,name:purchase.group_warning_purchase
+msgid "A warning can be set on a product or a customer (Purchase)"
+msgstr "Na produkt alebo zákazníka (Nákup) môže byť nastavené varovanie"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_account_invoice_purchase_id
 msgid "Add Purchase Order"
 msgstr "Pridať nákupnú objednávku"
@@ -192,6 +223,14 @@ msgid "Allow suppliers to deliver directly to your customers"
 msgstr "Povoliť dodávateľom doručenie priamo vašim zákazníkom"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:res.company,po_lock:0
+msgid "Allow to edit purchase orders"
+msgstr "Povoliť zmenu nákupnej objednávky"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: selection:purchase.config.settings,group_manage_vendor_price:0
 msgid "Allow using and importing vendor pricelists"
 msgstr "Povoliť používanie a importovanie cenníkov predajcu"
@@ -275,12 +314,53 @@ msgid "Average Price"
 msgstr "Priemerná cena"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
+msgid "Bill Lines"
+msgstr "Riadky účtenky"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
 msgid "Billed Qty"
 msgstr "Účtované množ."
 
 #. module: purchase
+<<<<<<< HEAD
 #: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
+msgstr ""
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
+msgid "Billing Status"
+msgstr "Stav účtovania"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
+msgid "Bills"
+msgstr "Účtenky"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+#: selection:purchase.order,invoice_status:0
+msgid "Bills Received"
+msgstr "Prijaté účtenky"
+
+#. module: purchase
+#: selection:product.template,purchase_line_warn:0
+#: selection:res.partner,purchase_warn:0
+msgid "Blocking Message"
+msgstr "Blokovacia správa"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:796
+#: code:addons/purchase/models/stock.py:81
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:stock.location.route,name:purchase.route_warehouse0_buy
 #, python-format
 msgid "Buy"
@@ -442,6 +522,14 @@ msgid "Confirm purchase orders in one step"
 msgstr "Potvrdiť nákupné objednávky v jednom kroku"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:res.company,po_lock:0
+msgid "Confirmed purchase orders are not editable"
+msgstr "Potvrdené nákupné objednávky nie je možné zmeniť"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_purchase_control
 msgid "Control"
 msgstr "Kontrola"
@@ -591,6 +679,15 @@ msgid "Extended Filters"
 msgstr "Rozšírené filtre"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: code:addons/purchase/models/purchase.py:559
+#, python-format
+msgid "Extra line with %s "
+msgstr "Zvláštny riadok s %s "
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_fiscal_position_id
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -750,20 +847,33 @@ msgid "Levels of Approvals"
 msgstr "Úrovne schvaľovania"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_double_validation
+msgid "Levels of Approvals *"
+msgstr "Úrovne schvaľovania *"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.view_purchase_configuration
 msgid "Location & Warehouse"
 msgstr "Lokácia & Skladisko"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
+<<<<<<< HEAD
 #, fuzzy
 msgid "Lock Bills"
 msgstr "Účtenky predajcu"
+=======
+msgid "Lock"
+msgstr "Zamknúť"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "Locked"
-msgstr ""
+msgstr "Uzamknuté"
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_manage_vendor_price
@@ -841,6 +951,7 @@ msgstr "Nefakturované"
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Not purchased"
 msgstr "Nenakúpený"
 
@@ -848,6 +959,10 @@ msgstr "Nenakúpený"
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Notes"
 msgstr "Poznámky"
+=======
+msgid "Nothing to Bill"
+msgstr "Nič na účtovanie"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:product.template,purchase_method:0
@@ -1117,6 +1232,27 @@ msgid "Purchase Order Lines"
 msgstr "Riadky nákupnej objednávky"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_res_company_po_lock
+msgid "Purchase Order Modification"
+msgstr "Úprava nákupnej objednávky"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_lock
+msgid "Purchase Order Modification *"
+msgstr "Úprava nákupnej objednávky *"
+
+#. module: purchase
+#: model:ir.model.fields,help:purchase.field_purchase_config_settings_po_lock
+#: model:ir.model.fields,help:purchase.field_res_company_po_lock
+msgid ""
+"Purchase Order Modification used when you want to purchase order editable "
+"after confirm"
+msgstr ""
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,name:purchase.purchase_form_action
 #: model:ir.model.fields,field_description:purchase.field_stock_picking_purchase_id
 #: model:ir.ui.menu,name:purchase.menu_purchase_form_action
@@ -1192,6 +1328,14 @@ msgid "Quotations"
 msgstr "Cenové ponuky"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:purchase.order,state:0
+msgid "RFQ"
+msgstr "RFQ"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:mail.message.subtype,name:purchase.mt_rfq_approved
 msgid "RFQ Approved"
 msgstr "RFQ schválené"
@@ -1338,6 +1482,7 @@ msgstr "Nastaviť pevnú cenu nákladov na každý produkt"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
+<<<<<<< HEAD
 #, fuzzy
 msgid ""
 "Set a purchase order as done if you don't want to receive vendor bills "
@@ -1345,6 +1490,10 @@ msgid ""
 msgstr ""
 "Ak sa urobí nákupná objednávka, už ju nemôžete manuálne upravovať. Nebudete "
 "schopný viac príjmať faktúry pre túto nákupnú objednávku."
+=======
+msgid "Set date to all order lines"
+msgstr "Nastav dátum pre všetky riadky objednávky"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1582,6 +1731,19 @@ msgid "Units of Measure"
 msgstr "Merné jednotky"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.purchase_order_form
+msgid "Unlock"
+msgstr "Odomkni"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+msgid "Unread Messages"
+msgstr "Neprečítané správy"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.purchase_order_tree
 msgid "Untaxed"
 msgstr "Základ"
@@ -1666,6 +1828,14 @@ msgid "Vendor Price"
 msgstr "Cena predajcu"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
+msgid "Vendor Pricelists"
+msgstr "Dodávateľský cenník"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_partner_ref
 msgid "Vendor Reference"
 msgstr "Referencia predajcu"
@@ -1690,8 +1860,13 @@ msgstr ""
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Waiting Invoices"
 msgstr "Čakajúce faktúry"
+=======
+msgid "Waiting Bills"
+msgstr "Čakajúce účtenky"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_stock_warehouse

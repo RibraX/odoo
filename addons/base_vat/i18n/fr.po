@@ -3,10 +3,16 @@
 # * base_vat
 # 
 # Translators:
+<<<<<<< HEAD
 # Olivier Lenoir <olivier.lenoir@free.fr>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Eloïse Stilmant <est@odoo.com>, 2017
 # Florian Hatat <mininet@wanadoo.fr>, 2017
+=======
+# Florian Hatat <mininet@wanadoo.fr>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Adriana Ierfino <adriana.ierfino@savoirfairelinux.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -27,9 +33,20 @@ msgid "Companies"
 msgstr "Sociétés"
 
 #. module: base_vat
+<<<<<<< HEAD
 #: model:ir.model,name:base_vat.model_res_partner
 msgid "Contact"
 msgstr "Contact"
+=======
+#: model:ir.model.fields,help:base_vat.field_res_company_vat_check_vies
+msgid ""
+"If checked, Partners VAT numbers will be fully validated against EU's VIES "
+"service rather than via a simple format validation (checksum)."
+msgstr ""
+"Si coché, les numéros de TVA des partenaires  seront validés avec le système"
+" d'échange d'informations sur la TVA automatisé de l'Union Européenne "
+"(V.I.E.S.) plutôt que par un simple calcul de clé."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_vat
 #: model:ir.ui.view,arch_db:base_vat.res_config_settings_view_form
@@ -46,7 +63,7 @@ msgid ""
 "Note: the expected format is %s"
 msgstr ""
 "Le numéro de TVA [%s] pour le partenaire [%s] semble invalide.\n"
-"Remarque : le format attendu est %s"
+"Remarque : le format attendu est %s."
 
 #. module: base_vat
 #: code:addons/base_vat/models/res_partner.py:133
@@ -55,8 +72,8 @@ msgid ""
 "The VAT number [%s] for partner [%s] either failed the VIES VAT validation "
 "check or did not respect the expected format %s."
 msgstr ""
-"Le numéro de TVA [%s] pour le partenaire [%s]  n'est pas valide d'après "
-"VIES, ou bien ne respecte pas le format attendu %s."
+"Le numéro de TVA [%s] pour le partenaire [%s] n'est pas valide d'après VIES,"
+" ou bien ne respecte pas le format attendu %s."
 
 #. module: base_vat
 #: model:ir.ui.view,arch_db:base_vat.view_partner_form

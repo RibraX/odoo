@@ -3,17 +3,36 @@
 # * base_import
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Paolo Valier, 2016
+# Martin Trigaux, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
 # Simone Bernini <simone@aperturelabs.it>, 2016
+<<<<<<< HEAD
+=======
+# p_amoruso <p.amoruso@elvenstudio.it>, 2016
+# Matteo Boscolo <matteo.boscolo.76@gmail.com>, 2016
+# Léonie Bouchat <lbo@odoo.com>, 2018
+# Petra <bop@odoo.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-18 15:38+0000\n"
 "Last-Translator: Simone Bernini <simone@aperturelabs.it>\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Petra <bop@odoo.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -100,6 +119,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:87
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Because CSV files are used internally and in\n"
 "                        multiple external processes, interoperability is a\n"
@@ -107,11 +127,16 @@ msgid ""
 "                        interpretation of data, they are strictly limited\n"
 "                        to dates following"
 msgstr ""
+=======
+msgid "Column %s contains incorrect values (value: %s)"
+msgstr "La colonna %s contiene valori errati (valore: %s)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:106
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "By default the Import preview is set on commas as \n"
 "                        field separators and quotation marks as text \n"
@@ -120,6 +145,10 @@ msgid ""
 "                        (displayed under the Browse CSV file bar after you \n"
 "                        select your file)."
 msgstr ""
+=======
+msgid "Column %s contains incorrect values. Error in line %d: %s"
+msgstr "La colonna %s contiene valori errati. Errore nella riga %d: %s"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
@@ -263,8 +292,13 @@ msgstr "Creato il"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:244
 #, python-format
+<<<<<<< HEAD
 msgid "Customers and their respective contacts"
 msgstr "Clienti e rispettivi contatti"
+=======
+msgid "Datetime Format:"
+msgstr "Formato di Date e d'Ora:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: code:addons/base_import/models.py:149 code:addons/base_import/models.py:155
@@ -299,16 +333,38 @@ msgstr "Non importare"
 
 #. module: base_import
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/base_import/static/src/js/import.js:91
+=======
+#: code:addons/base_import/static/src/js/base_import.js:264
+#: code:addons/base_import/static/src/js/base_import.js:282
+#, python-format
+msgid "Dot"
+msgstr "Punto"
+
+#. module: base_import
+#. openerp-web
+#: code:addons/base_import/static/src/js/base_import.js:120
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Encoding:"
 msgstr "Codifica:"
 
 #. module: base_import
+<<<<<<< HEAD
 #: code:addons/base_import/models.py:228
+=======
+#: code:addons/base_import/models/base_import.py:621
+#, python-format
+msgid "Error Parsing Date [%s:L%d]: %s"
+msgstr "Errore nel Parsing della Data [%s:L%d]: %s"
+
+#. module: base_import
+#: code:addons/base_import/models/base_import.py:234
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Error cell found while reading XLS/XLSX file: %s"
-msgstr ""
+msgstr "Cella errata trovata durante la lettura del file XLS/XLSX: %s"
 
 #. module: base_import
 #. openerp-web
@@ -369,7 +425,7 @@ msgstr ""
 #. module: base_import
 #: model:ir.model.fields,help:base_import.field_base_import_import_file
 msgid "File to check and/or import, raw binary (not base64)"
-msgstr ""
+msgstr "File da controllare e/o importare, riga binaria (not base64)"
 
 #. module: base_import
 #. openerp-web
@@ -383,7 +439,7 @@ msgstr "File:"
 #: code:addons/base_import/static/src/xml/import.xml:384
 #, python-format
 msgid "For CSV files, the issue could be an incorrect encoding."
-msgstr ""
+msgstr "Per i file CSV, il problema potrebbe essere una codifica errata."
 
 #. module: base_import
 #. openerp-web
@@ -652,6 +708,11 @@ msgid ""
 "in \n"
 "                        the fields relative to the order."
 msgstr ""
+"Se il modello è dotato di una cronologia delle conversazioni,"
+"                            esso registrerà le modifiche apportate"
+"                             durante l'importazione, terrà conto delle "
+"sottoscrizioni automatiche e invierà le notifiche corrispondenti. Ciò "
+"potrebbe rallentare l'importazione. "
 
 #. module: base_import
 #. openerp-web
@@ -758,6 +819,7 @@ msgstr "Mappa i tuoi dati in Odoo"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:130
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Microsoft Excel will allow \n"
 "                        you to modify only the encoding when saving \n"
@@ -768,6 +830,10 @@ msgstr ""
 "di modificare solo la codifica quando salvate \n"
 "(nella videata 'salva con nome' cliccare sull'elenco a discese 'strumenti' \n"
 "> Scheda Codifica)."
+=======
+msgid "Map your columns to import"
+msgstr "Abbinare le colonne da importare"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_res_model
@@ -797,6 +863,7 @@ msgstr "Campi Normali"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:111
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Note that if your CSV file \n"
 "                        has a tabulation as separator, Odoo will not \n"
@@ -806,6 +873,10 @@ msgid ""
 "application. \n"
 "                        See the following question."
 msgstr ""
+=======
+msgid "Options…"
+msgstr "Opzioni..."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview_othervalue
@@ -866,6 +937,16 @@ msgid "Separator:"
 msgstr "Separatore:"
 
 #. module: base_import
+<<<<<<< HEAD
+=======
+#. openerp-web
+#: code:addons/base_import/static/src/xml/base_import.xml:72
+#, python-format
+msgid "Show fields of relation fields (advanced)"
+msgstr "Visualizzare i campi di relazione (avanzato)"
+
+#. module: base_import
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview_somevalue
 msgid "Some Value"
 msgstr "Qualche valore"
@@ -979,6 +1060,7 @@ msgstr "Questo comando SQL creerà il seguente file CSV:"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:260
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "This feature \n"
 "                        allows you to use the Import/Export tool of Odoo "
@@ -987,6 +1069,10 @@ msgid ""
 "spreadsheet \n"
 "                        application."
 msgstr ""
+=======
+msgid "Text Delimiter:"
+msgstr "Delimitatore di Testo:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
@@ -998,14 +1084,20 @@ msgid ""
 "in \n"
 "                        PSQL:"
 msgstr ""
+<<<<<<< HEAD
 "Per creare file CSV per persone, collegate ad\n"
 "aziende, utilizzeremo il seguente comando SQL in\n"
 "PSQL:"
+=======
+"La prima riga\n"
+"                 contiene l'etichetta della colonna"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:291
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "To manage relations between tables, \n"
 "                        you can use the \"External ID\" facilities of "
@@ -1020,6 +1112,10 @@ msgid ""
 "or \n"
 "                        table. (like 'company_1', 'person_1' instead of '1')"
 msgstr ""
+=======
+msgid "Thousands Separator:"
+msgstr "Separatore delle Migliaia:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web

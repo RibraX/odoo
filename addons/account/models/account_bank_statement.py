@@ -339,7 +339,7 @@ class AccountBankStatement(models.Model):
     def link_bank_to_partner(self):
         for statement in self:
             for st_line in statement.line_ids:
-                if st_line.bank_account_id and st_line.partner_id and st_line.bank_account_id.partner_id != st_line.partner_id:
+                if st_line.bank_account_id and st_line.partner_id and not st_line.bank_account_id.partner_id:
                     st_line.bank_account_id.partner_id = st_line.partner_id
 
 
@@ -894,8 +894,14 @@ class AccountBankStatementLine(models.Model):
         # Fully reconciled moves are just linked to the bank statement
         total = self.amount
         for aml_rec in payment_aml_rec:
+<<<<<<< HEAD
             total -= aml_rec.debit - aml_rec.credit
             aml_rec.write({'statement_line_id': self.id})
+=======
+            total -= aml_rec.debit-aml_rec.credit
+            aml_rec.with_context(check_move_validity=False).write({'statement_id': self.statement_id.id})
+            aml_rec.move_id.write({'statement_line_id': self.id})
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             counterpart_moves = (counterpart_moves | aml_rec.move_id)
 
         # Create move line(s). Either matching an existing journal entry (eg. invoice), in which
@@ -934,7 +940,7 @@ class AccountBankStatementLine(models.Model):
                     'currency_id': currency.id,
                     'amount': abs(total),
                     'communication': self._get_communication(payment_methods[0] if payment_methods else False),
-                    'name': self.statement_id.name,
+                    'name': self.statement_id.name or _("Bank Statement %s") %  self.date,
                 })
 
             # Complete dicts to create both counterpart move lines and write-offs

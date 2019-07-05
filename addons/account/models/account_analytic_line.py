@@ -44,7 +44,11 @@ class AccountAnalyticLine(models.Model):
         # Compute based on pricetype
         amount_unit = self.product_id.price_compute('standard_price', uom=unit)[self.product_id.id]
         amount = amount_unit * self.unit_amount or 0.0
+<<<<<<< HEAD
         result = self.currency_id.round(amount) * -1
+=======
+        result = round(amount, self.currency_id.decimal_places if self.currency_id else 2) * -1
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         self.amount = result
         self.general_account_id = account
         self.product_uom_id = unit

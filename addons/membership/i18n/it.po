@@ -3,18 +3,39 @@
 # * membership
 #
 # Translators:
+<<<<<<< HEAD
 # Alessandro Forte <a.forte1010@gmail.com>, 2016
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
 # Simone Bernini <simone@aperturelabs.it>, 2016
+=======
+# Massimo Bianchi <bianchi.massimo@gmail.com>, 2016
+# Luca Tralli, 2016
+# Simone Bernini <simone@aperturelabs.it>, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# p_amoruso <p.amoruso@elvenstudio.it>, 2016
+# Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+# Alessandro Forte <a.forte1010@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Paolo Valier, 2018
+# mymage <stefano.consolaro@mymage.it>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-04-20 19:37+0000\n"
 "Last-Translator: Alessandro Forte <a.forte1010@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:23+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -40,7 +61,13 @@ msgstr "# In attesa"
 msgid ""
 "A member with whom you want to associate your membership.It will consider "
 "the membership state of the associated member."
+<<<<<<< HEAD
 msgstr "Un membro a cui associare la tua iscrizione"
+=======
+msgstr ""
+"Un socio a cui si vuole collegare la propria iscrizione. Verrà preso in "
+"considerazione lo stato dell'iscrizione del socio collegato."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line_account_invoice_line
@@ -349,6 +376,13 @@ msgid ""
 "                        -Paid Member: A member who has paid the membership "
 "amount."
 msgstr ""
+"Indica lo stato dell'iscrizione.\n"
+"-Non richiesta: un socio che non ha richiesto nessuna iscrizione.\n"
+"-Cancellata: un socio che ha cancellato la sua iscrizione.\n"
+"-Scaduta: un socio la cui iscrizione è scaduta.\n"
+"-Da fatturare: un socio che ha richiesto l'iscrizione e la cui fattura deve essere creata.\n"
+"-Fatturata: un socio la cui fattura è stata creata.\n"
+"-Pagata: un socio che ha pagato la quota di iscrizione."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line_date
@@ -511,6 +545,8 @@ msgid ""
 "                 Current Membership Status, Discussions and History of "
 "Membership, etc."
 msgstr ""
+"Odoo consente di tracciare le attività relative a un socio: \n"
+"                 Stato attuale iscrizione, discussioni e storico iscrizione, ecc."
 
 #. module: membership
 #: selection:membership.membership_line,state:0
@@ -567,7 +603,7 @@ msgstr "Reports"
 #. module: membership
 #: model:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "Revenue Done"
-msgstr ""
+msgstr "Entrata registrata"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership_user_id
@@ -614,12 +650,12 @@ msgstr "Questa nota verrà mostrata all'interno dei preventivi..."
 #. module: membership
 #: model:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "This will display paid, old and total earned columns"
-msgstr ""
+msgstr "Visualizza le colonne pagato, anno precedente e totale incassato"
 
 #. module: membership
 #: model:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "This will display waiting, invoiced and total pending columns"
-msgstr ""
+msgstr "Visualizza le colonne «in attesa», «fatturate» e «totale in sospeso»"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line_date_to

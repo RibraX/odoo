@@ -21,7 +21,31 @@ class StockMove(models.Model):
         for move in self.filtered(lambda moves: moves.product_id.weight > 0.00):
             move.weight = (move.product_qty * move.product_id.weight)
 
+<<<<<<< HEAD
     def _get_new_picking_values(self):
         vals = super(StockMove, self)._get_new_picking_values()
         vals['carrier_id'] = self.sale_line_id.order_id.carrier_id.id
         return vals
+=======
+    @api.multi
+    def action_confirm(self):
+        """
+            Pass the carrier to the picking from the sales order
+            (Should also work in case of Phantom BoMs when on explosion the original move is deleted)
+        """
+        procs_to_check = []
+        for move in self:
+            if move.procurement_id and move.procurement_id.sale_line_id and move.procurement_id.sale_line_id.order_id.carrier_id:
+                procs_to_check += [move.procurement_id]
+        res = super(StockMove, self).action_confirm()
+        for proc in procs_to_check:
+            pickings = (proc.move_ids.mapped('picking_id')).filtered(lambda record: not record.carrier_id)
+            if pickings:
+                pickings.write({
+                    'carrier_id': proc.sale_line_id.order_id.carrier_id.id,
+                })
+                # Get correct carrier price
+                for picking in pickings:
+                    picking.onchange_carrier()
+        return res
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -3,16 +3,32 @@
 # * purchase
 #
 # Translators:
+<<<<<<< HEAD
 # Kostas Goutoudis <goutoudis@gmail.com>, 2015-2016
+=======
+# Kostas Goutoudis <goutoudis@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Timos Zacharatos <kokkinopioupiou@hotmail.com>, 2016
+# Stefanos Nikou <stefanos.nikou@gmail.com>, 2016
+# Giota Dandidou <giotadandidou@gmail.com>, 2017
+# George Tarasidis <george_tarasidis@yahoo.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-22 09:11+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Greek (http://www.transifex.com/odoo/odoo-9/language/el/)\n"
 "Language: el\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: George Tarasidis <george_tarasidis@yahoo.com>, 2017\n"
+"Language-Team: Greek (https://www.transifex.com/odoo/teams/41243/el/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -70,7 +86,7 @@ msgstr "# Αγορών"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_partner_supplier_invoice_count
 msgid "# Vendor Bills"
-msgstr ""
+msgstr "# Τιμολόγια Προμηθευτών"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_count
@@ -102,7 +118,7 @@ msgstr "<strong>Ημερομηνία Αιτ.</strong>"
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 #: model:ir.ui.view,arch_db:purchase.report_purchasequotation_document
 msgid "<strong>Description</strong>"
-msgstr ""
+msgstr "<strong>Περιγραφή</strong>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchasequotation_document
@@ -267,12 +283,53 @@ msgid "Average Price"
 msgstr "Μέση Τιμή"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
+msgid "Bill Lines"
+msgstr "Γραμμές Λογαριασμού"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
 msgid "Billed Qty"
+msgstr "Τιμολογημένη Ποσότητα"
+
+#. module: purchase
+<<<<<<< HEAD
+#: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
 msgstr ""
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
+msgid "Billing Status"
+msgstr "Κατάσταση Χρέωσης"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
+msgid "Bills"
+msgstr "Λογαριασμοί"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+#: selection:purchase.order,invoice_status:0
+msgid "Bills Received"
+msgstr "Ληφθέντα Τιμολόγια"
+
+#. module: purchase
+#: selection:product.template,purchase_line_warn:0
+#: selection:res.partner,purchase_warn:0
+msgid "Blocking Message"
+msgstr "Μπλοκαρισμένο Μήνυμα"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:796
+#: code:addons/purchase/models/stock.py:81
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:stock.location.route,name:purchase.route_warehouse0_buy
 #, python-format
 msgid "Buy"
@@ -361,7 +418,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.purchase_rfq
 msgid "Click to create a request for quotation."
-msgstr ""
+msgstr "Κάντε κλικ για να δημιουργήσετε ένα αίτημα για προσφορά."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -534,7 +591,7 @@ msgstr "Πρόχειρη ΠΑ"
 #. module: purchase
 #: selection:purchase.report,state:0
 msgid "Draft RFQ"
-msgstr ""
+msgstr "Πρόχειρη Αίτηση"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_dest_address_id
@@ -570,6 +627,15 @@ msgid "Extended Filters"
 msgstr "Εκτεταμένα Φίλτρα"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: code:addons/purchase/models/purchase.py:559
+#, python-format
+msgid "Extra line with %s "
+msgstr "Επιπλέον γραμμή με %s"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_fiscal_position_id
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -731,13 +797,18 @@ msgstr "Τοποθεσία & Αποθήκη"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
+<<<<<<< HEAD
 msgid "Lock Bills"
 msgstr ""
+=======
+msgid "Lock"
+msgstr "Κλείδωμα"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "Locked"
-msgstr ""
+msgstr "Κλειδωμένο"
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_manage_vendor_price
@@ -783,6 +854,8 @@ msgid ""
 "Most propositions of purchase orders are created automatically\n"
 "                by Odoo based on inventory needs."
 msgstr ""
+"Οι περισσότερες προσφορές παραγγελιών αγοράς δημιουργούνται αυτόματα \n"
+"                από την Odoo με βάση τις ανάγκες αποθέματος."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -808,8 +881,13 @@ msgstr "Μη Τιμολογημένα"
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Not purchased"
 msgstr ""
+=======
+msgid "Nothing to Bill"
+msgstr "Τίποτα για Τιμολόγηση"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1017,6 +1095,14 @@ msgid "Provide a double validation mechanism for purchases"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_normal_action_puchased
+msgid "Purchasable Products"
+msgstr "Είδη για Αγορά"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_procurement_management
 msgid "Purchase"
 msgstr "Αγορά"
@@ -1171,7 +1257,7 @@ msgstr "ΑγΠ Ολοκληρώθηκε"
 #. module: purchase
 #: selection:purchase.order,state:0 selection:purchase.report,state:0
 msgid "RFQ Sent"
-msgstr ""
+msgstr "Αποστολή Αίτησης"
 
 #. module: purchase
 #: model:mail.template,report_name:purchase.email_template_edi_purchase
@@ -1208,7 +1294,7 @@ msgstr "Παραληφθείσα Ποσ."
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_picking_count
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_picking_ids
 msgid "Receptions"
-msgstr ""
+msgstr "Κρατήσεις"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_tree
@@ -1279,6 +1365,22 @@ msgid "Search Purchase Order"
 msgstr "Αναζήτηση Παραγγελίας Αγοράς"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:purchase.field_product_product_purchase_line_warn
+#: model:ir.model.fields,help:purchase.field_product_template_purchase_line_warn
+#: model:ir.model.fields,help:purchase.field_res_partner_purchase_warn
+#: model:ir.model.fields,help:purchase.field_res_users_purchase_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"Εάν επιλέξετε την \"Προειδοποίηση\" θα ειδοποιήσει το χρήστη με το μήνυμα.\n"
+"Εάν επιλέξετε το \"Μήνυμα αποκλεισμού\" η διαδικασία θα διακοπεί και θα εμφανιστεί ένα μήνυμα. Γράψτε το μήνυμα στο επόμενο πεδίο."
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Send PO by Email"
 msgstr "Αποστολή ΠΑ με Email"
@@ -1313,7 +1415,7 @@ msgstr "Ρυθμίσεις"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Shipment"
-msgstr ""
+msgstr "Μεταφορά"
 
 #. module: purchase
 #: selection:purchase.config.settings,group_advance_purchase_requisition:0
@@ -1408,6 +1510,9 @@ msgid ""
 "                you had with your vendor. Once confirmed, a request for\n"
 "                quotation is converted into a purchase order."
 msgstr ""
+"Η αίτηση περιέχει την ιστορία της συζήτησης / διαπραγμάτευσης\n"
+"                που είχατε με τον προμηθευτή σας. Μόλις επιβεβαιωθεί, ένα αίτημα για\n"
+"                προσφορά μετατρέπεται σε εντολή αγοράς."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
@@ -1446,6 +1551,8 @@ msgstr ""
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
 msgid "This vendor has no purchase order. Click to create a new RfQ."
 msgstr ""
+"Αυτός ο προμηθευτής δεν έχει εντολή αγοράς. Κάντε κλικ για να δημιουργήσετε "
+"μια νέα Αίτηση."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_picking_type_id
@@ -1515,7 +1622,21 @@ msgstr "Κατηγορίες Μονάδων Μέτρησης"
 #: model:ir.ui.menu,name:purchase.menu_purchase_unit_measure_purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_uom_form_action
 msgid "Units of Measure"
+<<<<<<< HEAD
 msgstr "Μονάδες μέτρησης"
+=======
+msgstr "Μονάδες Μέτρησης"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.purchase_order_form
+msgid "Unlock"
+msgstr "Ξεκλείδωμα"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+msgid "Unread Messages"
+msgstr "Μη αναγνωσμένα Μηνύματα"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_tree
@@ -1612,8 +1733,13 @@ msgstr ""
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
+<<<<<<< HEAD
 msgid "Waiting Invoices"
 msgstr "Τιμολόγια σε Αναμονή"
+=======
+msgid "Waiting Bills"
+msgstr "Αναμενόμενα Τιμολόγια"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_stock_warehouse
@@ -1643,6 +1769,8 @@ msgid ""
 "You can control the invoice from your vendor according to\n"
 "            what you purchased (services) or received (products)."
 msgstr ""
+"Μπορείτε να ελέγξετε το τιμολόγιο από τον προμηθευτή σας σύμφωνα με\n"
+"            τι έχετε αγοράσει ή παραλάβει"
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased

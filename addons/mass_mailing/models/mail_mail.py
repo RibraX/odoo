@@ -92,7 +92,11 @@ class MailMail(models.Model):
     def send_get_email_dict(self, partner=None):
         # TDE: temporary addition (mail was parameter) due to semi-new-API
         res = super(MailMail, self).send_get_email_dict(partner)
+<<<<<<< HEAD
         base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
+=======
+        base_url = self.env['ir.config_parameter'].get_param('web.base.url').rstrip('/')
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         if self.mailing_id and res.get('body') and res.get('email_to'):
             emails = tools.email_split(res.get('email_to')[0])
             email_to = emails and emails[0] or False

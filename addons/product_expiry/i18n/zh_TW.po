@@ -1,44 +1,79 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * product_expiry
-#
+# 
 # Translators:
+# amos lin <seeing@edirect168.com>, 2018
+# Jason Wu <jaronemo@msn.com>, 2018
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2018
+# Martin Trigaux, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2015-12-04 06:06+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-9/"
 "language/zh_TW/)\n"
 "Language: zh_TW\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: Martin Trigaux, 2018\n"
+"Language-Team: Chinese (Taiwan) (https://www.transifex.com/odoo/teams/41243/zh_TW/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: product_expiry
+<<<<<<< HEAD
+#: model:ir.model.fields,field_description:product_expiry.field_stock_production_lot_alert_date
+msgid "Alert Date"
+msgstr ""
+=======
+#: model:ir.ui.view,arch_db:product_expiry.report_delivery_document_inherit_product_expiry
+msgid "<span class=\"pull-right\">Expiry Date</span>"
+msgstr "<span class=\"pull-right\">過期日期</span>"
 
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_stock_production_lot_alert_date
 msgid "Alert Date"
-msgstr ""
+msgstr "警示日期"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_stock_production_lot_use_date
 msgid "Best before Date"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "最佳日期"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:product.product,name:product_expiry.product_product_pain
 #: model:product.template,name:product_expiry.product_product_pain_product_template
 msgid "Bread"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "麵包"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:product.product,name:product_expiry.product_product_lait
 #: model:product.template,name:product_expiry.product_product_lait_product_template
 msgid "Cow milk"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "牛奶"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.ui.view,arch_db:product_expiry.view_move_form_expiry
@@ -48,19 +83,31 @@ msgstr "日期"
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_stock_production_lot_life_date
 msgid "End of Life Date"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "產品有效日期"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:product.product,name:product_expiry.product_product_jambon
 #: model:product.template,name:product_expiry.product_product_jambon_product_template
 msgid "French cheese Camembert"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "法式奶油蛋糕"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:product.product,name:product_expiry.product_product_from
 #: model:product.template,name:product_expiry.product_product_from_product_template
 msgid "Ham"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "火腿"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model,name:product_expiry.model_stock_production_lot
@@ -70,22 +117,39 @@ msgstr "批次/序列號"
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_product_template_alert_time
 msgid "Product Alert Time"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "產品警示時間"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_product_template_life_time
 msgid "Product Life Time"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "產品可用時間"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_product_template_removal_time
 msgid "Product Removal Time"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "產品下架時間"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model,name:product_expiry.model_product_template
 msgid "Product Template"
-msgstr "產品範本"
+msgstr "產品模板"
+
+#. module: product_expiry
+#: model:ir.model.fields,field_description:product_expiry.field_product_template_use_time
+msgid "Product Use Time"
+msgstr "最佳使用時間"
 
 #. module: product_expiry
 #: model:ir.model.fields,field_description:product_expiry.field_product_template_use_time
@@ -101,20 +165,29 @@ msgstr "份"
 #: model:ir.model.fields,field_description:product_expiry.field_stock_production_lot_removal_date
 #: model:ir.model.fields,field_description:product_expiry.field_stock_quant_removal_date
 msgid "Removal Date"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "下架日期"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_stock_production_lot_alert_date
 msgid ""
 "This is the date on which an alert should be notified about the goods with "
 "this Serial Number."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "此為通知該產品序列號的警報的日期。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_stock_production_lot_life_date
 msgid ""
 "This is the date on which the goods with this Serial Number may become "
 "dangerous and must not be consumed."
+<<<<<<< HEAD
 msgstr ""
 
 #. module: product_expiry
@@ -123,20 +196,39 @@ msgid ""
 "This is the date on which the goods with this Serial Number should be "
 "removed from the stock."
 msgstr ""
+=======
+msgstr "此為有此序列號的貨物可能變得危險並且不能被消耗的日期。"
+
+#. module: product_expiry
+#: model:ir.model.fields,help:product_expiry.field_stock_production_lot_removal_date
+#: model:ir.model.fields,help:product_expiry.field_stock_quant_removal_date
+msgid ""
+"This is the date on which the goods with this Serial Number should be "
+"removed from the stock."
+msgstr "此為這個序列號貨物應於庫存中搬離的日期。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_stock_production_lot_use_date
 msgid ""
 "This is the date on which the goods with this Serial Number start "
 "deteriorating, without being dangerous yet."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "此為該序列號的商品開始變質的日期（未變危險）。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_product_template_alert_time
 msgid ""
 "When a new a Serial Number is issued, this is the number of days before an "
 "alert should be notified."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "當發出新的序列號時，這是通知警報之前的天數。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_product_template_life_time
@@ -144,17 +236,31 @@ msgid ""
 "When a new a Serial Number is issued, this is the number of days before the "
 "goods may become dangerous and must not be consumed."
 msgstr ""
+<<<<<<< HEAD
+=======
+"此處表明當新序列號生成時，商品變危險以至於不能使用前的天數。When a new a Serial Number is issued, this is "
+"the number of days before the goods may become dangerous and must not be "
+"consumed."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_product_template_removal_time
 msgid ""
 "When a new a Serial Number is issued, this is the number of days before the "
 "goods should be removed from the stock."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "此處表明當新序列號生成時，商品需要提前多少天從庫存移除。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_expiry
 #: model:ir.model.fields,help:product_expiry.field_product_template_use_time
 msgid ""
 "When a new a Serial Number is issued, this is the number of days before the "
 "goods starts deteriorating, without being dangerous yet."
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "此處表明當新序列號生成時，商品變質前（未變危險）的天數。"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

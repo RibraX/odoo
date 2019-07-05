@@ -16,8 +16,12 @@ invoices from picking, the system is able to add and compute the shipping line.
     'depends': ['sale_stock', 'sale_management'],
     'data': [
         'security/ir.model.access.csv',
+<<<<<<< HEAD
         'security/delivery_carrier_security.xml',
         'views/product_packaging_view.xml',
+=======
+        'security/delivery_security.xml',
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         'views/delivery_view.xml',
         'views/partner_view.xml',
         'views/product_template_view.xml',

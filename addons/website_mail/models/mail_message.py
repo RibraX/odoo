@@ -54,10 +54,21 @@ class MailMessage(models.Model):
         if self.user_has_groups('base.group_public'):
             self.env.cr.execute('SELECT id FROM "%s" WHERE website_published IS FALSE AND id = ANY (%%s)' % (self._table), (self.ids,))
             if self.env.cr.fetchall():
-                raise AccessError(_('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % (self._description, operation))
+                raise AccessError(
+                    _('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % (self._description, operation)
+                    + ' - ({} {}, {} {})'.format(_('Records:'), self.ids[:6], _('User:'), self._uid)
+                )
         return super(MailMessage, self).check_access_rule(operation=operation)
 
+<<<<<<< HEAD
     @api.multi
     def _portal_message_format(self, fields_list):
         fields_list += ['website_published']
         return super(MailMessage, self)._portal_message_format(fields_list)
+=======
+
+class MailThread(models.AbstractModel):
+    _inherit = 'mail.thread'
+
+    _mail_post_token_field = 'access_token' # token field for external posts, to be overridden
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

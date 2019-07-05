@@ -22,13 +22,13 @@ msgstr ""
 #: code:addons/payment_ogone/models/ogone.py:241
 #, python-format
 msgid "; multiple order found"
-msgstr ""
+msgstr ", βρέθηκαν πολλαπλές παραγγελίες"
 
 #. module: payment_ogone
 #: code:addons/payment_ogone/models/ogone.py:239
 #, python-format
 msgid "; no order found"
-msgstr ""
+msgstr ", δεν βρέθηκε παραγγελία"
 
 #. module: payment_ogone
 #: model:payment.acquirer,cancel_msg:payment_ogone.payment_acquirer_ogone
@@ -78,12 +78,12 @@ msgstr "Κωδικός Πρόσβασης χρήστη API"
 #. module: payment_ogone
 #: model:ir.model.fields,field_description:payment_ogone.field_payment_acquirer_ogone_alias_usage
 msgid "Alias Usage"
-msgstr ""
+msgstr "Χρήση Ψευδώνυμου"
 
 #. module: payment_ogone
 #: model:ir.ui.view,arch_db:payment_ogone.ogone_s2s_form
 msgid "CVC"
-msgstr ""
+msgstr "CVC"
 
 #. module: payment_ogone
 #: model:ir.ui.view,arch_db:payment_ogone.ogone_s2s_form
@@ -103,7 +103,7 @@ msgstr "Λήξη"
 #. module: payment_ogone
 #: model:ir.ui.view,arch_db:payment_ogone.acquirer_form_ogone
 msgid "How to configure your Ogone account?"
-msgstr ""
+msgstr "Πως να ρυθμίσετε τον Ogone λογαριασμό σας;"
 
 #. module: payment_ogone
 #: model:ir.model.fields,help:payment_ogone.field_payment_acquirer_ogone_alias_usage
@@ -116,6 +116,9 @@ msgid ""
 "                                                                keep his "
 "payment data"
 msgstr ""
+"Αν θέλετε να χρησιμοποιήσετε τα Ψευδώνυμα Alias, αυτή η προεπιλεγμένη Χρήση "
+"Ψευδώνυμου θα παρουσιαστεί στον πελάτη ως λόγος που θέλετε να διατηρήσετε τα"
+" δεδομένα πληρωμής του"
 
 #. module: payment_ogone
 #: model:ir.ui.view,arch_db:payment_ogone.ogone_s2s_form
@@ -137,12 +140,14 @@ msgstr ""
 #, python-format
 msgid "Ogone: invalid shasign, received %s, computed %s, for data %s"
 msgstr ""
+"Ogone: μη έγκυρη υπογραφή sha, λήφθηκε %s, υπολογισμένο %s, για τα δεδομένα "
+"%s"
 
 #. module: payment_ogone
 #: code:addons/payment_ogone/models/ogone.py:237
 #, python-format
 msgid "Ogone: received data for reference %s"
-msgstr ""
+msgstr "Ogone: λήφθηκαν δεδομένα αναφοράς %s"
 
 #. module: payment_ogone
 #: code:addons/payment_ogone/models/ogone.py:230
@@ -151,11 +156,13 @@ msgid ""
 "Ogone: received data with missing reference (%s) or pay_id (%s) or shasign "
 "(%s)"
 msgstr ""
+"Ogone: λήφθηκαν δεδομένα αλλά λείπει η αναφοράς (%s) ή pay_id (%s) ή "
+"υπογραφή sha (%s)"
 
 #. module: payment_ogone
 #: model:ir.model.fields,field_description:payment_ogone.field_payment_acquirer_ogone_pspid
 msgid "PSPID"
-msgstr ""
+msgstr "PSPID"
 
 #. module: payment_ogone
 #: model:ir.model,name:payment_ogone.model_payment_acquirer
@@ -170,14 +177,15 @@ msgstr "Συναλλαγή Πληρωμής"
 #. module: payment_ogone
 #: model:ir.model.fields,field_description:payment_ogone.field_payment_acquirer_ogone_shakey_in
 msgid "SHA Key IN"
-msgstr ""
+msgstr "SHA Key IN"
 
 #. module: payment_ogone
 #: model:ir.model.fields,field_description:payment_ogone.field_payment_acquirer_ogone_shakey_out
 msgid "SHA Key OUT"
-msgstr ""
+msgstr "SHA Key OUT"
 
 #. module: payment_ogone
+<<<<<<< HEAD
 #: model:payment.acquirer,pre_msg:payment_ogone.payment_acquirer_ogone
 msgid ""
 "You will be redirected to the Ogone website after clicking on the payment "
@@ -188,3 +196,8 @@ msgstr ""
 #: model:ir.model,name:payment_ogone.model_payment_method
 msgid "payment.method"
 msgstr ""
+=======
+#: model:ir.model,name:payment_ogone.model_payment_token
+msgid "payment.token"
+msgstr "payment.token"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

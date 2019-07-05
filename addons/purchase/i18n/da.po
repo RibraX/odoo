@@ -3,23 +3,44 @@
 # * purchase
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Sanne Kristensen <sanne@vkdata.dk>, 2017
 # Ejner Sønniksen <ejner@vkdata.dk>, 2017
 # Morten Schou <ms@msteknik.dk>, 2017
+=======
+# Martin Trigaux, 2016
+# Sanne Kristensen <sanne@vkdata.dk>, 2016
+# Ejner Sønniksen <ejner@vkdata.dk>, 2016
+# peso <peer.sommerlund@gmail.com>, 2016
+# Jesper Carstensen <info@danodoo.dk>, 2016
+# Morten Schou <ms@msteknik.dk>, 2016
+# Jesper Carstensen <jc@danodoo.dk>, 2016
+# Pernille Kristensen <pernillekristensen1994@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # Kenneth Hansen <kenneth@vkdata.dk>, 2017
 # Jesper Carstensen <info@danodoo.dk>, 2017
 # peso <peer.sommerlund@gmail.com>, 2017
 # Hans Henrik Gabelgaard <hhg@gabelgaard.org>, 2017
+<<<<<<< HEAD
 # Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
 # Jesper Carstensen <jc@danodoo.dk>, 2017
+=======
+# lhmflexerp <lhm@flexerp.dk>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Jesper Carstensen <jc@danodoo.dk>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: lhmflexerp <lhm@flexerp.dk>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -129,7 +150,11 @@ msgstr "# Fakturaer"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_nbr_lines
 msgid "# of Lines"
+<<<<<<< HEAD
 msgstr "af linjer"
+=======
+msgstr "Antal linjer"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_partner_purchase_order_count
@@ -312,6 +337,7 @@ msgid "<strong>Taxes</strong>"
 msgstr "<strong>Moms</strong>"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "<strong>The ordered quantity has been updated.</strong>"
 msgstr ""
@@ -320,6 +346,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:purchase.portal_my_purchase_order
 msgid "<strong>Total:</strong>"
 msgstr "<strong>Total:</strong>"
+=======
+#: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
+msgid "<strong>Total Without Taxes</strong>"
+msgstr "<strong>Total ekskl. moms </strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
@@ -340,30 +371,91 @@ msgstr ""
 #. module: purchase
 #: model:res.groups,name:purchase.group_warning_purchase
 msgid "A warning can be set on a product or a customer (Purchase)"
-msgstr ""
+msgstr "En advarsel kan sættes på et produkt eller en kunde (Indkøb)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_account_invoice_purchase_id
 msgid "Add Purchase Order"
-msgstr ""
+msgstr "Tilføj indkøbsordre"
 
 #. module: purchase
+<<<<<<< HEAD
 #: code:addons/purchase/controllers/portal.py:53
 #, python-format
 msgid "All"
 msgstr "Alle"
+=======
+#: selection:purchase.config.settings,group_warning_purchase:0
+msgid "All the products and the customers can be used in purchase orders"
+msgstr "Alle produkter og kunder kan bruges i indkøbsordrer"
+
+#. module: purchase
+#: selection:purchase.config.settings,module_stock_dropshipping:0
+msgid "Allow suppliers to deliver directly to your customers"
+msgstr "Tillad leverandører at levere direkte til dine kunder"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:res.company,po_lock:0
 msgid "Allow to edit purchase orders"
-msgstr ""
+msgstr "Tillad at redigere indkøbsordrer"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_account
+=======
+#: selection:purchase.config.settings,group_manage_vendor_price:0
+msgid "Allow using and importing vendor pricelists"
+msgstr "Tillad at bruge og importere prislister for leverandører"
+
+#. module: purchase
+#: selection:purchase.config.settings,module_purchase_requisition:0
+msgid ""
+"Allow using call for tenders to get quotes from multiple suppliers "
+"(advanced)"
+msgstr ""
+"Tillad brug af udbud for at få tilbud fra flere leverandører (avanceret)"
+
+#. module: purchase
+#: model:ir.model.fields,help:purchase.field_purchase_config_settings_group_costing_method
+msgid "Allows you to compute product cost price based on average cost."
+msgstr ""
+"Gør det muligt at danne varens kostpris ud fra gennemsnitlig kostpris."
+
+#. module: purchase
+#: model:ir.model.fields,help:purchase.field_purchase_config_settings_group_uom
+msgid ""
+"Allows you to select and maintain different units of measure for products."
+msgstr ""
+"Giver dig mulighed for at vælge og angive forskellige enheder for produkter."
+
+#. module: purchase
+#: model:ir.model.fields,help:purchase.field_account_config_settings_group_analytic_account_for_purchases
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Allows you to specify an analytic account on purchase order lines."
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.purchase_order_form
+msgid ""
+"An administrator can set up default Terms and conditions in your Company "
+"settings."
+msgstr ""
+"En administrator kan oprette standardindstillinger for vilkår og betingelser"
+" i indstillinger."
+
+#. module: purchase
+#: selection:purchase.config.settings,group_warning_purchase:0
+msgid ""
+"An informative or blocking warning can be set on a product or a customer"
+msgstr ""
+"En informativ eller blokerende advarsel kan opsættes på et produkt eller en "
+"kunde"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_account_analytic_id
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_account_analytic_id
 msgid "Analytic Account"
@@ -421,22 +513,29 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
 msgid "Bill Lines"
-msgstr ""
+msgstr "Fakturalinjer"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
 msgid "Billed Qty"
-msgstr ""
+msgstr "Faktureret mængde"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "Billed Quantity:"
 msgstr ""
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
+msgstr "Faktureret antal"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
 msgid "Billing Status"
-msgstr ""
+msgstr "Fakturastatus"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
@@ -446,7 +545,7 @@ msgstr "Fakturaer"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Bills Received"
-msgstr ""
+msgstr "Regninger modtaget"
 
 #. module: purchase
 #: selection:product.template,purchase_line_warn:0
@@ -467,12 +566,23 @@ msgid "Buy rule"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 msgid ""
 "By default, vendor prices can be set manually in the product detail form. If"
 " your vendors provide you with pricelist files, this option allows you to "
 "easily import them into the system from ‘Purchase > Vendor Pricelists’ menu."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:purchase.purchase_order_calendar
+msgid "Calendar View"
+msgstr "Kalendervisning"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_module_purchase_requisition
+msgid "Calls for Tenders"
+msgstr "Udbud"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_calendar
@@ -587,12 +697,12 @@ msgstr "Bekræft ordre"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Confirm purchase orders in one step"
-msgstr ""
+msgstr "Bekræft indkøbsordrer i et trin"
 
 #. module: purchase
 #: selection:res.company,po_lock:0
 msgid "Confirmed purchase orders are not editable"
-msgstr ""
+msgstr "Bekræftede indkøbsordrer kan ikke redigeres"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_res_partner
@@ -611,9 +721,15 @@ msgid "Control Policy"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase.field_stock_move_created_purchase_line_id
 msgid "Created Purchase Order Line"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_group_costing_method
+msgid "Costing Methods"
+msgstr "Omkostningsberegninger"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_create_uid
@@ -768,16 +884,19 @@ msgstr "Ekstra linje med %s "
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Fiscal Position"
 msgstr "Bogføringsgruppe"
+<<<<<<< HEAD
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Future Activities"
 msgstr ""
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Get 2 levels of approvals to confirm a purchase order"
-msgstr ""
+msgstr "Købsordren skal godkendes to gange, før den er bekræftet"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -912,12 +1031,12 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation
 msgid "Levels of Approvals"
-msgstr ""
+msgstr "Niveauer af godkendelser"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_po_double_validation
 msgid "Levels of Approvals *"
-msgstr ""
+msgstr "Niveauer af godkendelser *"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1029,6 +1148,8 @@ msgid ""
 "Most propositions of purchase orders are created automatically\n"
 "                by Odoo based on inventory needs."
 msgstr ""
+"De fleste forslag om købsordre er genereret automatisk\n"
+"                af Odoo baseret på inventarbehov."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_stock
@@ -1144,7 +1265,7 @@ msgstr "Ordre status"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Order of Day"
-msgstr "Daglige order"
+msgstr "Ordre dag"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
@@ -1170,9 +1291,18 @@ msgstr "Ordrer"
 #. module: purchase
 #: model:mail.template,report_name:purchase.email_template_edi_purchase_done
 msgid "PO_${(object.name or '').replace('/','_')}"
-msgstr ""
+msgstr "PO_${(object.name or '').replace('/','_')}"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "Packaging"
+msgstr "Emballering"
+
+#. module: purchase
+#: model:ir.model,name:purchase.model_res_partner
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_partner_id
 msgid "Partner"
 msgstr "Partner"
@@ -1202,7 +1332,7 @@ msgstr "Konto for prisdifferencer"
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_price_per_supplier
 msgid "Price Per Vendor"
-msgstr "Pris per leverandør"
+msgstr "Pris pr. leverandør"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1213,11 +1343,14 @@ msgstr "Print RFQ"
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_group_id
 msgid "Procurement Group"
 msgstr "Indkøbsgruppe"
+<<<<<<< HEAD
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_procurement_group
 msgid "Procurement Requisition"
 msgstr "Indkøbsrekvisition"
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_procurement_rule
@@ -1243,12 +1376,16 @@ msgstr "Varekategorier"
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_category_id
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Product Category"
+<<<<<<< HEAD
 msgstr "Produktkategori"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_product_image
 msgid "Product Image"
 msgstr ""
+=======
+msgstr "Produkt kategori"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_unit_quantity
@@ -1284,7 +1421,7 @@ msgstr "Produkter"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_price_standard
 msgid "Products Value"
-msgstr "Vare værdi"
+msgstr "Produktværdi"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_double_validation
@@ -1353,7 +1490,7 @@ msgstr "Indkøbsordre"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "Purchase Order Confirmation #"
-msgstr ""
+msgstr "Bekræftelse af indkøbsordre #"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -1375,17 +1512,17 @@ msgstr "Indkøbsordrelinie"
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 #: model:ir.ui.view,arch_db:purchase.purchase_order_line_tree
 msgid "Purchase Order Lines"
-msgstr "Indkøbsordrelinier"
+msgstr "Indkøbsordrelinjer"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_lock
 msgid "Purchase Order Modification"
-msgstr ""
+msgstr "Ændring af indkøbsordre"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_po_lock
 msgid "Purchase Order Modification *"
-msgstr ""
+msgstr "Ændring af indkøbsordre*"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_lock
@@ -1430,6 +1567,15 @@ msgid "Purchase orders that include lines not invoiced."
 msgstr "Indkøbsordrer som indeholder ikke-bogførte linjer."
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:purchase.config.settings,module_purchase_requisition:0
+msgid ""
+"Purchase propositions trigger draft purchase orders to a single supplier"
+msgstr "Købsforslag udløser udkast til indkøbsordrer til en enkelt leverandør"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_stock_warehouse_buy_to_resupply
 msgid "Purchase to resupply this warehouse"
 msgstr "Indkøb for at forsyne dette lager"
@@ -1459,6 +1605,8 @@ msgid ""
 "Put an address if you want to deliver directly from the vendor to the "
 "customer. Otherwise, keep empty to deliver to your own company."
 msgstr ""
+"Indsæt en adresse hvis du ønsker at levere direkte fra leverandøren til "
+"kunden. Hold den ellers tom hvis du ønsker levering til din egen virksomhed."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -1479,27 +1627,27 @@ msgstr "Tilbud"
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "RFQ"
-msgstr "Anmodning om tilbud"
+msgstr "Forespørgsel om tilbud"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_approved
 msgid "RFQ Approved"
-msgstr "Tilbudsanmodning godkendt"
+msgstr "Tilbudsforespørgsel godkendt"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_confirmed
 msgid "RFQ Confirmed"
-msgstr "Tilbudsanmodning bekræftet"
+msgstr "Tilbudsforespørgsel bekræftet"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_done
 msgid "RFQ Done"
-msgstr "Tilbudsanmodning færdigt"
+msgstr "Tilbudsforespørgsel færdigt"
 
 #. module: purchase
 #: selection:purchase.order,state:0 selection:purchase.report,state:0
 msgid "RFQ Sent"
-msgstr "Tilbudsanmodning sendt"
+msgstr "Tilbudsforespørgsel sendt"
 
 #. module: purchase
 #: model:mail.template,report_name:purchase.email_template_edi_purchase
@@ -1509,17 +1657,17 @@ msgstr "RFQ_${(object.name or '').replace('/','_')}"
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.act_res_partner_2_purchase_order
 msgid "RFQs and Purchases"
-msgstr "Anmodning om tilbud og indkøb"
+msgstr "Forespørgsler på tilbud og indkøb"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Re-Send RFQ by Email"
-msgstr "Gensend anmodning om tilbud per email"
+msgstr "Gensend forespørgsel om tilbud pr. e-mail"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Receive Products"
-msgstr "Modtag varer"
+msgstr "Modtag produkter"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_received
@@ -1574,12 +1722,12 @@ msgstr "Rapportering"
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 #: model:ir.ui.view,arch_db:purchase.report_purchasequotation_document
 msgid "Request for Quotation"
-msgstr "Anmodning om tilbud"
+msgstr "Forespørgsel om tilbud"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "Request for Quotation #"
-msgstr "Anmodning om tilbud #"
+msgstr "Forespørgsel om tilbud #"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -1590,7 +1738,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:purchase.purchase_rfq
 #: model:ir.ui.menu,name:purchase.menu_purchase_rfq
 msgid "Requests for Quotation"
-msgstr "Forespørgsel"
+msgstr "Forespørgsel om tilbud"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_move_ids
@@ -1643,8 +1791,8 @@ msgid ""
 msgstr ""
 "Hvis du vælger indstillingen \"Advarsel\", vises meddelelsen til brugeren. "
 "Hvis du vælger \"Blokerende meddelelse\", vil der blive sendt en undtagelse "
-"sammen med meddelelsen og blokere flowet. Meddelelsen skal skrives i det "
-"næste felt."
+"sammen meddelelsen og blokere flowet. Meddelelsen skal skrives i det næste "
+"felt."
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1654,7 +1802,7 @@ msgstr "Send PO per email"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Send RFQ by Email"
-msgstr "Send forespørgsel på email"
+msgstr "Send forespørgsel på e-mail"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_sequence
@@ -1662,9 +1810,15 @@ msgid "Sequence"
 msgstr "Rækkefølge"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_account
 msgid "Set analytic accounts in purchase orders"
 msgstr ""
+=======
+#: selection:purchase.config.settings,group_costing_method:0
+msgid "Set a fixed cost price on each product"
+msgstr "Angiv en fast kostpris på hvert produkt"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1690,6 +1844,7 @@ msgstr "Levering"
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Show all records which has next action date is before today"
 msgstr ""
+"Nogle produkter kan sælges / købes i forskellige måleenheder (avanceret)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_origin
@@ -1707,12 +1862,12 @@ msgstr "Status"
 #. module: purchase
 #: model:ir.model,name:purchase.model_stock_move
 msgid "Stock Move"
-msgstr "Lagerflytning"
+msgstr "Lager flytning"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_line_form2
 msgid "Stock Moves"
-msgstr "Lagerflytninger"
+msgstr "Lagerflytning"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_price_subtotal
@@ -1736,16 +1891,19 @@ msgstr "Moms"
 #: model:ir.ui.view,arch_db:purchase.report_purchaseorder_document
 msgid "Taxes"
 msgstr "Moms"
+<<<<<<< HEAD
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.portal_my_purchase_order
 msgid "Taxes:"
 msgstr "Moms:"
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_default_location_dest_id_usage
 msgid "Technical field used to display the Drop Ship Address"
-msgstr ""
+msgstr "Teknisk felt til visning af dropshipping adressen"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_notes
@@ -1788,6 +1946,9 @@ msgid ""
 "                you had with your vendor. Once confirmed, a request for\n"
 "                quotation is converted into a purchase order."
 msgstr ""
+"Forespørgslen indeholder den forhandling,\n"
+"                du havde med din leverandør. Når den er bekræftet, vil\n"
+"                forespørgslen konverteres til en indkøbsordre."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
@@ -1843,36 +2004,52 @@ msgid ""
 "This currency will be used, instead of the default one, for purchases from "
 "the current partner"
 msgstr ""
+"Denne valuta vil blive anvendt frem for standardvalutaen ved indkøb fra den "
+"aktuelle partner"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,help:purchase.field_res_config_settings_default_purchase_method
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "This note will be displayed on requests for quotation."
+msgstr "Denne besked vil blive vist på forespørgsler om tilbud."
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:973
+#, python-format
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "This default value is applied to any new product created. This can be "
 "changed in the product detail form."
 msgstr ""
+"Denne indkøbsordre er blevet oprettet fra: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "This note will show up on purchase orders."
 msgstr ""
+"Denne indkøbsordre er blevet ændret fra: <a href=# data-oe-"
+"model=procurement.order data-oe-id=%d>%s</a>"
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:203
 #, python-format
 msgid "This vendor bill has been created from: %s"
-msgstr ""
+msgstr "Denne leverandørregning er oprettet fra:%s"
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:217
 #, python-format
 msgid "This vendor bill has been modified from: %s"
-msgstr ""
+msgstr "Denne leverandørregning er blevet ændret fra: %s"
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
 msgid "This vendor has no purchase order. Click to create a new RfQ."
-msgstr ""
+msgstr "Denne leverandør har ingen indkøbsordre. Klik for at oprette en ny."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_picking_type_id
@@ -1934,6 +2111,8 @@ msgid ""
 "Unable to cancel this purchase order. You must first cancel related vendor "
 "bills."
 msgstr ""
+"Ikke muligt at annullere denne indkøbsordre. Du skal første annullere "
+"tilknyttede leverandørfakturaer."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_price_unit
@@ -1971,9 +2150,15 @@ msgid "Untaxed Amount"
 msgstr "Beløb før moms"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.portal_my_purchase_order
 msgid "Untaxed Amount:"
 msgstr "Momsfrit beløb:"
+=======
+#: selection:purchase.config.settings,group_costing_method:0
+msgid "Use a 'Fixed', 'Real' or 'Average' price costing method"
+msgstr "Brug en \"fast\", \"seneste\" eller \"gennemsnitlig\" pris metode"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.action_invoice_pending
@@ -1992,6 +2177,10 @@ msgid ""
 "                you can track the related discussion with the vendor, control\n"
 "                the products received and control the vendor bills."
 msgstr ""
+"Brug denne menu til at gennemse dine købsordrer efter\n"
+"                referencer, forhandlere, produkter, osv. For hver enkelt købsordre,\n"
+"                kan du søge efter den relaterede forhandling med forhandleren, \n"
+"                kontrollere modtagne produkter og kvitteringer."
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_purchase_user
@@ -2110,6 +2299,8 @@ msgid ""
 "You can control the invoice from your vendor according to\n"
 "            what you purchased (services) or received (products)."
 msgstr ""
+"Du kan styre fakturaen fra din leverandør i henhold til\n"
+"            hvad du har købt (tjenesteydelser) eller modtaget (produkter)."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_product_action
@@ -2118,6 +2309,9 @@ msgid ""
 "                it's a physical product, a consumable or services you buy to\n"
 "                subcontractors."
 msgstr ""
+"Du skal definere et produkt for alt, du køber, uanset om\n"
+"                det er en fysisk vare, et forbrugsgode eller en serviceydelse, du køber til\n"
+"                underleverandører."
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_normal_action_puchased
@@ -2126,12 +2320,15 @@ msgid ""
 "            it's a physical product, a consumable or services you buy to\n"
 "            subcontractors."
 msgstr ""
+"Du skal definere et produkt for alt, du køber, uanset om\n"
+"                det er en fysisk vare, et forbrugsgode eller en serviceydelse, du køber til\n"
+"                underleverandører."
 
 #. module: purchase
 #: code:addons/purchase/models/purchase.py:395
 #, python-format
 msgid "You must set a Vendor Location for this partner %s"
-msgstr ""
+msgstr "Du skal angive en Leverandørlokation for denne partner %s"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_stock

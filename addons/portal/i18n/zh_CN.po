@@ -3,6 +3,7 @@
 # * portal
 # 
 # Translators:
+<<<<<<< HEAD
 # Jeffery CHEN <jeffery9@gmail.com>, 2017
 # liAnGjiA <liangjia@qq.com>, 2017
 # Xu Lei <xulei8@qq.com>, 2017
@@ -17,13 +18,23 @@
 # glovebx <ruinning@163.com>, 2017
 # Gary Wei <Gary.wei@elico-corp.com>, 2017
 # 钟小华 <mackz@sina.com>, 2017
+=======
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# 珠海-杜哥 <liangjia@qq.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:27+0000\n"
 "PO-Revision-Date: 2017-10-02 11:27+0000\n"
 "Last-Translator: 钟小华 <mackz@sina.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: 珠海-杜哥 <liangjia@qq.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,6 +69,29 @@ msgid ""
 "<p>\n"
 "${object.wizard_id.welcome_message or ''}"
 msgstr ""
+"\n"
+"<p>\n"
+"    尊敬的 ${object.user_id.name or ''},\n"
+"</p>\n"
+"<p>\n"
+"    您已获得访问 ${user.company_id.name}'s ${object.wizard_id.portal_id.name}的权限。\n"
+"</p>\n"
+"<p>\n"
+"    您的登录账户信息是：\n"
+"</p>\n"
+"<ul>\n"
+"    <li>用户名： ${object.user_id.login or ''}</li>\n"
+"    <li>门户： <a href=\"${'portal_url' in ctx and ctx['portal_url'] or ''}\">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"\t<li>数据库： ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"\t您可以通过以下 URL 设置或更改密码：\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.user_id.signup_url}\">${object.user_id.signup_url}</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"${object.wizard_id.welcome_message or ''}"
 
 #. module: portal
 #: model:ir.ui.view,arch_db:portal.portal_show_sign_in
@@ -190,7 +224,7 @@ msgstr "Email线程"
 #: code:addons/portal/wizard/portal_wizard.py:130
 #, python-format
 msgid "Group %s is not a portal"
-msgstr ""
+msgstr "群组 %s 不是门户"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_mixin_id

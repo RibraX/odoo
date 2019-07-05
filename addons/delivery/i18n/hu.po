@@ -3,18 +3,33 @@
 # * delivery
 # 
 # Translators:
+<<<<<<< HEAD
 # krnkris <krnkris@freemail.hu>, 2017
 # Kovács Tibor <kovika@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Kisrobert <kisrobi@gmail.com>, 2017
 # gezza <geza.nagy@oregional.hu>, 2017
+=======
+# krnkris, 2016
+# Martin Trigaux, 2016
+# Kisrobert <kisrobi@gmail.com>, 2016
+# Kovács Tibor <kovika@gmail.com>, 2016
+# Ákos Nagy <akos.nagy@oregional.hu>, 2016
+# gezza <geza.nagy@oregional.hu>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: gezza <geza.nagy@oregional.hu>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 08:56+0000\n"
+"Last-Translator: gezza <geza.nagy@oregional.hu>, 2016\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -407,8 +422,47 @@ msgid "Fixed Price"
 msgstr "Rögzített ár"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery
 #: model:product.template,name:delivery.product_product_delivery_product_template
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_follower_ids
+msgid "Followers"
+msgstr "Követők"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Követők (Csatornák)"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Követők (Partnerek)"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_virtual_available
+msgid "Forecast Quantity"
+msgstr "Jelezze előre a mennyiséget"
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_virtual_available
+msgid ""
+"Forecast quantity (computed as Quantity On Hand - Outgoing + Incoming)\n"
+"In a context with a single Stock Location, this includes goods stored in this location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' type."
+msgstr ""
+"Mennyiség előrejelzése (Készlet mennyiség - Kimenő + Bejövő képlet alapján)\n"
+"Egy meglévő raktár hellyel összefüggésben, itt beleértve az ezen a raktáron raktározott termékeket, vagy bármely az alaktárain lévőket.\n"
+"Egy meglévő raktár épület összefüggésben, itt beleértve az ebben a raktárépületben lévő raktár helyen raktározott termékeket, vagy bármely az alaktárain lévőket.\n"
+"Egyéb esetben , beleértve azokat a termékeket, melyek bármely raktár helyen tároltak a 'belső' típussal megjelölve."
+
+#. module: delivery
+#: model:delivery.carrier,name:delivery.free_delivery_carrier
+#: model:product.product,name:delivery.free_delivery_carrier_product_product
+#: model:product.template,name:delivery.free_delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Free delivery charges"
 msgstr "Ingyenes szállítás"
 
@@ -592,8 +646,14 @@ msgid "No price rule matching this order; delivery cost cannot be computed."
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery_normal
 #: model:product.template,name:delivery.product_product_delivery_normal_product_template
+=======
+#: model:delivery.carrier,name:delivery.normal_delivery_carrier
+#: model:product.product,name:delivery.normal_delivery_carrier_product_product
+#: model:product.template,name:delivery.normal_delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Normal Delivery Charges"
 msgstr "Normál szállítási költségek"
 
@@ -792,8 +852,20 @@ msgid "Stock Quant Package"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:product.product,name:delivery.product_product_delivery_poste
 #: model:product.template,name:delivery.product_product_delivery_poste_product_template
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_move_ids
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_quant_ids
+msgid "Technical: used to compute quantities."
+msgstr "Műszaki: mennyiségek számolására használt."
+
+#. module: delivery
+#: model:delivery.carrier,name:delivery.delivery_carrier
+#: model:product.product,name:delivery.delivery_carrier_product_product
+#: model:product.template,name:delivery.delivery_carrier_product_template
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "The Poste"
 msgstr "A posta"
 

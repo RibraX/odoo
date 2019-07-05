@@ -599,6 +599,7 @@ var BasicComposer = Widget.extend(chat_mixin, {
                 'url': '',
                 'upload': true,
                 'mimetype': '',
+<<<<<<< HEAD
             };
         });
         attachments = attachments.concat(upload_attachments);
@@ -623,6 +624,27 @@ var BasicComposer = Widget.extend(chat_mixin, {
                         'filename': file.filename,
                         'mimetype': file.mimetype,
                         'url': session.url('/web/content', {'id': file.id, download: true}),
+=======
+            });
+            this.set('attachment_ids', attachments);
+            event.target.value = "";
+        }
+    },
+    on_attachment_loaded: function(event, result) {
+        var attachment_ids = [];
+        if (result.error || !result.id ) {
+            this.do_warn(result.error);
+            attachment_ids = _.filter(this.get('attachment_ids'), function (val) { return !val.upload; });
+        } else {
+            _.each(this.get('attachment_ids'), function(a) {
+                if (a.filename === result.filename && a.upload) {
+                    attachment_ids.push({
+                        'id': result.id,
+                        'name': result.name || result.filename,
+                        'filename': result.filename,
+                        'mimetype': result.mimetype,
+                        'url': session.url('/web/content', {'id': result.id, download: true}),
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                     });
                 }
             }

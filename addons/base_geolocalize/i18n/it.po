@@ -3,17 +3,33 @@
 # * base_geolocalize
 #
 # Translators:
+<<<<<<< HEAD
 # Anna Maglia <angiolettachit92@gmail.com>, 2016
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+=======
+# Christian <chris@effeci.info>, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+# Paolo Valier, 2016
+# Sergio Zanchetta <primes2h@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-07-19 14:18+0000\n"
 "Last-Translator: Anna Maglia <angiolettachit92@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:17+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2019\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -35,29 +51,59 @@ msgid "<span> ;  Long:  </span>"
 msgstr "<span> ; Long: </span>"
 
 #. module: base_geolocalize
+<<<<<<< HEAD
 #: code:addons/base_geolocalize/models/res_partner.py:17
 #, fuzzy, python-format
+=======
+#: code:addons/base_geolocalize/models/res_partner.py:18
+#, python-format
+msgid ""
+"API key for GeoCoding (Places) required.\n"
+"\n"
+"                          Save this key in System Parameters with key: google.api_key_geocode, value: <your api key>\n"
+"                          Visit https://developers.google.com/maps/documentation/geocoding/get-api-key for more information.\n"
+"                          "
+msgstr ""
+"È richiesta la chiave API per la geocodifica (luoghi).\n"
+"\n"
+"                          Salvare questa chiave nei parametri di sistema con chiave: google.api_key_geocode, valore: <your api key>\n"
+"                          Consultare https://developers.google.com/maps/documentation/geocoding/get-api-key per maggiori informazioni.\n"
+"                          "
+
+#. module: base_geolocalize
+#: code:addons/base_geolocalize/models/res_partner.py:29
+#, python-format
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "Cannot contact geolocation servers. Please make sure that your Internet "
 "connection is up and running (%s)."
 msgstr ""
+<<<<<<< HEAD
 "Impossibile contattare i server di geolocalizzazione. Assicurati che la tua "
 "connessione a internet sia attiva e funzionante (%s)."
+=======
+"Impossibile raggiungere il server di geolocalizzazione. Controllare che la "
+"connessione internet sia operativa (%s)."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_geolocalize
 #: model:ir.model.fields,field_description:base_geolocalize.field_res_partner_partner_latitude
 msgid "Geo Latitude"
-msgstr "Geo Latitudine"
+msgstr "Latitudine geo"
 
 #. module: base_geolocalize
 #: model:ir.model.fields,field_description:base_geolocalize.field_res_partner_partner_longitude
 msgid "Geo Longitude"
-msgstr "Geo Longitudine"
+msgstr "Longitudine geo"
 
 #. module: base_geolocalize
 #: model:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Geolocate"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Geolocalizza"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_geolocalize
 #: model:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
@@ -69,7 +115,11 @@ msgstr "Data geo localizzazione"
 #: model:ir.model.fields,field_description:base_geolocalize.field_res_partner_date_localization
 #, fuzzy
 msgid "Geolocation Date"
+<<<<<<< HEAD
 msgstr "Data geo localizzazione"
+=======
+msgstr "Data geolocalizzazione"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_geolocalize
 #: model:ir.model,name:base_geolocalize.model_res_partner
@@ -79,7 +129,25 @@ msgstr "Partner"
 #. module: base_geolocalize
 #: model:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Partner Assignation"
+<<<<<<< HEAD
 msgstr "Assegnazione Partner"
 
 #~ msgid "Geo Localize"
 #~ msgstr "Geo localizzazione"
+=======
+msgstr "Assegnazione partner"
+
+#. module: base_geolocalize
+#: code:addons/base_geolocalize/models/res_partner.py:34
+#, python-format
+msgid ""
+"Unable to geolocate, received the error:\n"
+"%s\n"
+"\n"
+"Google made this a paid feature.\n"
+"You should first enable billing on your Google account.\n"
+"Then, go to Developer Console, and enable the APIs:\n"
+"Geocoding, Maps Static, Maps Javascript.\n"
+"error_message"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

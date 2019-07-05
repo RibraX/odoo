@@ -3,22 +3,37 @@
 # * auth_oauth
 # 
 # Translators:
+<<<<<<< HEAD
 # Bohdan Lisnenko <lem8r.ka11a@gmail.com>, 2017
 # ТАрас <tratatuta@i.ua>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
+=======
+# Bohdan Lisnenko, 2016
+# Martin Trigaux, 2016
+# ТАрас <tratatuta@i.ua>, 2016
+# Анатолій Пономаренко <aponomarenko020@gmail.com>, 2017
+# Анатолій Пономаренко <Ponomarenkoa@minfin.gov.ua>, 2017
+# Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:53+0000\n"
 "PO-Revision-Date: 2017-09-20 09:53+0000\n"
 "Last-Translator: Martin Trigaux <mat@odoo.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 08:56+0000\n"
+"Last-Translator: Alina Semeniuk <alinasemeniuk1@gmail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.res_config_settings_view_form
@@ -62,15 +77,52 @@ msgid "CSS class"
 msgstr "Клас CSS"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Check that the application type is set on <b>Web Application</b>. \n"
+"                                        Now configure the allowed pages on which you will be redirected."
+msgstr ""
+"Перевірте, чи тип додатку встановлений на <b>Веб-додатку</b>. \n"
+"                                      Тепер налаштуйте дозволені сторінки, на які вас буде перенаправлено."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Click on <b>Create Project</b> and enter the project name and \n"
+"                                        other details."
+msgstr ""
+"Натисніть на <b>Створити проект</b>, введіть назву проекту та \n"
+"                                       інші деталі."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Click on <b>Use Google APIs</b>"
+msgstr "Натисніть <b>Використовувати Google APIs</b>"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_client_id
 #: model:ir.model.fields,field_description:auth_oauth.field_res_config_settings_auth_oauth_google_client_id
 msgid "Client ID"
 msgstr "ID клієнта"
 
 #. module: auth_oauth
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:auth_oauth.res_config_settings_view_form
 msgid "Client ID:"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "Компанії, що стосуються партнера"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Connect to your Google account and go to"
+msgstr "Підключіться до вашого облікового запису Google та перейдіть до"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_create_uid
@@ -96,8 +148,28 @@ msgstr "Назва для відображення"
 #: model:ir.ui.view,arch_db:auth_oauth.res_config_settings_view_form
 msgid "Google Authentification"
 msgstr ""
+"Заповніть вашу адресу, email та назву товару (наприклад, odoo) \n"
+"                                       та збережіть."
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "Схема оподаткування"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Google Client ID:"
+msgstr "Google ID клієнта:"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "Має неузгоджені записи"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_id
 msgid "ID"
 msgstr "ІД"
@@ -120,7 +192,7 @@ msgstr "Останнє оновлення"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_access_token
 msgid "OAuth Access Token"
-msgstr ""
+msgstr "Токен доступу OAuth"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_provider_id
@@ -136,12 +208,12 @@ msgstr "Провайдери OAuth"
 #. module: auth_oauth
 #: sql_constraint:res.users:0
 msgid "OAuth UID must be unique per provider"
-msgstr ""
+msgstr "OAuth UID повинен бути унікальним для кожного постачальника"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_uid
 msgid "OAuth User ID"
-msgstr ""
+msgstr "OAuth ID користувача"
 
 #. module: auth_oauth
 #: model:ir.model,name:auth_oauth.model_auth_oauth_provider
@@ -151,14 +223,42 @@ msgstr "Провайдер OAuth2"
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_users_form
 msgid "Oauth"
-msgstr ""
+msgstr "Oauth"
 
 #. module: auth_oauth
 #: model:ir.model.fields,help:auth_oauth.field_res_users_oauth_uid
 msgid "Oauth Provider user_id"
-msgstr ""
+msgstr "Oauth Provider user_id"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"On the left side menu, select the sub menu <b>Credentials</b> \n"
+"                                        (from <b>API Manager</b>) then select <b>OAuth consent screen</b>."
+msgstr ""
+"З лівого боку меню, оберіть підменю <b>Облікові дані</b> \n"
+"                                        (з <b>Менеджера API</b>) потім оберіть <b>зображення згоди OAuth</b>."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Once done, you receive two information (your <b>Client ID</b> and <b>\n"
+"                                        Client Secret</b>). You have to insert your <b>Client ID</b> in \n"
+"                                        the field below."
+msgstr ""
+"Після цього ви отримуєте два види інформації (ваш <b>ID клієнта</b> та <b>\n"
+"                                        Прихований клієнт</b>). Ви повинні вставити <b>ID клієнта</b> у \n"
+"                                       у полі нижче."
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "Ліміт заборгованості"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_name
 msgid "Provider name"
 msgstr "Назва полвайдера"
@@ -169,6 +269,14 @@ msgid "Providers"
 msgstr "Провайдери"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Return to Top"
+msgstr "Повернутися нагору"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_scope
 msgid "Scope"
 msgstr "Сфера"
@@ -181,15 +289,136 @@ msgstr "Послідовність"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_config_settings_server_uri_google
 msgid "Server uri"
-msgstr ""
+msgstr "uri сервера"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Show Tutorial"
+msgstr "Показати інструктаж"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_base_config_settings_auth_oauth_tutorial_enabled
+msgid "Show tutorial"
+msgstr "Показати інструкцію"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: code:addons/auth_oauth/controllers/main.py:97
 #, python-format
 msgid "Sign up is not allowed on this database."
-msgstr ""
+msgstr "Вхід не дозволено у цій базі даних."
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr ""
+"Схема оподаткування визначає податки та рахунки проведень для партнера."
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr ""
+"Партнер має щонайменше один неузгоджений запис від останнього узгодження "
+"рахунків та платежів."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Then click on <b>Add Credentials</b> and select the second option \n"
+"                                        (OAuth 2.0 Client ID)."
+msgstr ""
+"Натисніть <b>Додати облікові дані</b> та оберіть другу опцію \n"
+"                                        (OAuth 2.0 Client ID)."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Then click on <b>Create</b>."
+msgstr "Потім натисніть <b>Створити</b>."
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "Цей рахунок буде використовуватися як типовий рахунок кредитора."
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "Цей рахунок буде використовуватися як типовий рахунок дебітора."
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"Цей платіжний термін використовуватиметься замість замовчуванням для "
+"замовлень на купівлю та рахунків постачальників"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr ""
+"Цей платіжний термін буде використано замість замовчуванням для замовлень на"
+" продаж та рахунків-фактур клієнтів"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"To achieve this, complete the field <b>Authorized redirect URIs</b>.\n"
+"                                        Copy paste the following link in the box"
+msgstr ""
+"Щоби продовжити, заповніть поле <b>Авторизувати перенаправлені URI</b>.\n"
+"                                        Скопіюйте та вставте обране посилання у вікні"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"To setup the sign in process with Google, you have to perform \n"
+"                                    the following steps first."
+msgstr ""
+"Щоб налаштувати процес входу в Google, ви повинні виконати \n"
+"                                    наступні кроки."
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "Всього по рахунку"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_debit
+msgid "Total Payable"
+msgstr "Кредиторська заборгованість"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_credit
+msgid "Total Receivable"
+msgstr "Дебіторський борг"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr " Загальна сума, яку цей клієнт повинен заплатити вам"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr " Загальна сума, яку ви повинні заплатити цьому постачальнику"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:auth_oauth.model_res_users
 msgid "Users"
 msgstr "Користувачі"
@@ -207,19 +436,30 @@ msgid ""
 "Please ask for an invitation and be sure to follow the link in your "
 "invitation email."
 msgstr ""
+"Ви не маєте доступу до цієї бази даних або термін дії вашого запрошення "
+"минув. Будь ласка, запросіть запрошення та обов'язково перейдіть за "
+"посиланням у своєму електронному листі запрошенні."
 
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_oauth_provider_form
 #: model:ir.ui.view,arch_db:auth_oauth.view_oauth_provider_tree
 msgid "arch"
-msgstr ""
+msgstr "арка"
 
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.res_config_settings_view_form
 msgid "e.g. 1234-xyz.apps.googleusercontent.com"
-msgstr ""
+msgstr "e.g. 1234-xyz.apps.googleusercontent.com"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "https://console.developers.google.com/"
+msgstr "https://console.developers.google.com/"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:auth_oauth.model_ir_config_parameter
 msgid "ir.config_parameter"
 msgstr "ir.config_parameter"

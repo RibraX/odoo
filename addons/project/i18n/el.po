@@ -3,16 +3,32 @@
 # * project
 #
 # Translators:
+<<<<<<< HEAD
 # Goutoudis Kostas <goutoudis@gmail.com>, 2015-2016
+=======
+# Kostas Goutoudis <goutoudis@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Alex Yo <omikr0n@hotmail.com>, 2016
+# Stefanos Nikou <stefanos.nikou@gmail.com>, 2016
+# Giota Dandidou <giotadandidou@gmail.com>, 2017
+# George Tarasidis <george_tarasidis@yahoo.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-02-20 10:42+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Greek (http://www.transifex.com/odoo/odoo-9/language/el/)\n"
 "Language: el\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:26+0000\n"
+"PO-Revision-Date: 2017-06-23 13:26+0000\n"
+"Last-Translator: George Tarasidis <george_tarasidis@yahoo.com>, 2017\n"
+"Language-Team: Greek (https://www.transifex.com/odoo/teams/41243/el/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -238,6 +254,49 @@ msgid ""
 msgstr ""
 
 #. module: project
+<<<<<<< HEAD
+=======
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:72
+#, python-format
+msgid ""
+"<b>Assign the task</b> to someone. <i>You can create and invite a new user "
+"on the fly.</i>"
+msgstr ""
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:83
+#, python-format
+msgid "<b>Click the save button</b> to apply your changes to the task."
+msgstr ""
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:48
+#, python-format
+msgid "<b>Drag &amp; drop tasks</b> between columns as you work on them."
+msgstr ""
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:97
+#, python-format
+msgid ""
+"<b>Invite coworkers</b> via email.<br/><i>Enter one email per line.</i>"
+msgstr ""
+"<b>Προσκαλέστε συναδέλφους</b> μέσω email.<br/> <i>Εισαγάγετε ένα email ανά "
+"γραμμή.</i>"
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:54
+#, python-format
+msgid "<b>Star tasks</b> to mark team priorities."
+msgstr ""
+
+#. module: project
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "<i class=\"fa fa-user\"/> Person Responsible"
 msgstr ""
@@ -589,7 +648,7 @@ msgstr ""
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "<strong>Billing</strong>"
-msgstr ""
+msgstr "<strong>Τιμολόγηση</strong>"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -959,6 +1018,11 @@ msgid "Active"
 msgstr "Ενεργό"
 
 #. module: project
+#: model:ir.ui.view,arch_db:project.project_planner
+msgid "Activities"
+msgstr "Δραστηριότητες"
+
+#. module: project
 #: model:ir.ui.view,arch_db:project.task_type_edit
 msgid "Add a description..."
 msgstr ""
@@ -1091,7 +1155,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user_user_id
 msgid "Assigned To"
-msgstr ""
+msgstr "Ανατεθειμένο σε"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_user_id
@@ -1254,7 +1318,7 @@ msgstr ""
 #: code:addons/project/static/src/js/web_planner_project.js:54
 #, python-format
 msgid "Clear description and purpose"
-msgstr ""
+msgstr "Καθαρή περιγραφή και σκοπός"
 
 #. module: project
 #: model:ir.actions.act_window,help:project.project_tags_action
@@ -1272,9 +1336,20 @@ msgid "Click to add/remove from favorite"
 msgstr ""
 
 #. module: project
+<<<<<<< HEAD
 #: model:web.tip,description:project.project_tip_1
 msgid "Click to view all the tasks related to this project."
 msgstr ""
+=======
+#: model:ir.actions.act_window,help:project.project_tags_action
+msgid "Click to add a new tag."
+msgstr "Κάντε κλικ για να προσθέσετε μια νέα ετικέτα."
+
+#. module: project
+#: model:ir.actions.act_window,help:project.open_task_type_form
+msgid "Click to add a stage in the task pipeline."
+msgstr "Κάντε κλικ για να προσθέσετε ένα στάδιο στη Ροή Πληροφοριών."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: project
 #: selection:project.project,state:0
@@ -1322,7 +1397,18 @@ msgstr ""
 #: model:ir.ui.menu,name:project.menu_project_config
 #: model:ir.ui.view,arch_db:project.edit_project
 msgid "Configuration"
+<<<<<<< HEAD
 msgstr "Ρυθμίσεις"
+=======
+msgstr "Διαμόρφωση"
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:93
+#, python-format
+msgid "Configuration options are available in the Settings app."
+msgstr "Οι επιλογές διαμόρφωσης είναι διαθέσιμες στην εφαρμογή Ρυθμίσεις."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: project
 #: model:ir.actions.act_window,name:project.action_config_settings
@@ -1381,10 +1467,18 @@ msgid "Create a Gantt chart with your projects tasks and deadlines"
 msgstr ""
 
 #. module: project
+<<<<<<< HEAD
 #: model:ir.actions.act_window,help:project.open_view_project_all
+=======
+#: model:ir.actions.act_window,name:project.open_create_project
+msgid "Create a Project"
+msgstr "Δημιουργία ενός Έργου"
+
+#. module: project
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,help:project.open_view_project_all_config
 msgid "Create a new project."
-msgstr ""
+msgstr "Δημιουργία ενός νέου έργου."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -1920,6 +2014,8 @@ msgid ""
 "For the Odoo Team,<br/>\n"
 "                            Fabien Pinckaers, Founder"
 msgstr ""
+"Για την Ομάδα Odoo,<br/>\n"
+"                            Fabien Pinckaers, Ιδρυτής"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -2202,6 +2298,8 @@ msgid ""
 "Internal notes are messages that will appear in the Chatter but will not be "
 "notified in Odoo's Inbox."
 msgstr ""
+"Οι εσωτερικές σημειώσεις είναι μηνύματα που θα εμφανιστούν στον συνομιλητή "
+"αλλά δεν θα εμφανιστούν στα Εισερχόμενα."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -2470,9 +2568,14 @@ msgstr ""
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_project_project_filter
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:project.view_task_history_search
 msgid "My Projects"
 msgstr "Τα Έργα μου"
+=======
+msgid "My Favorites"
+msgstr "Τα Αγαπημένα μου"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_task_history_search
@@ -2536,7 +2639,7 @@ msgstr "Κανονικό"
 #. module: project
 #: model:project.task.type,legend_blocked:project.project_stage_0
 msgid "Not validated"
-msgstr ""
+msgstr "Μη Επικυρωμένο"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_notes
@@ -2562,6 +2665,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:project.field_project_project_doc_count
 msgid "Number of documents attached"
 msgstr ""
+
+#. module: project
+#: model:ir.ui.view,arch_db:project.project_planner
+msgid "Objectives"
+msgstr "Στόχοι"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -2747,11 +2855,18 @@ msgid ""
 "- followers: only followers of the related document or members of following "
 "channels\n"
 msgstr ""
+<<<<<<< HEAD
 "Πολιτική για να δημοσιεύσετε ένα μήνυμα σχετικά με το έγγραφο "
 "χρησιμοποιώντας το mailgateway.\n"
 "- Ο καθένας: ο καθένας μπορεί να δημοσιεύσει\n"
 "- Συνεργάτες: Μόνο πιστοποιημένοι συνεργάτες\n"
 "- Ακόλουθοι: μόνο οι ακόλουθοι του σχετικού εγγράφου\n"
+=======
+"Πολιτική για τη αποστολή μηνύματος στο έγγραφο χρησιμοποιώντας το mailgateway.\n"
+"- όλοι: ο καθένας μπορεί να αποστείλει\n"
+"- συνεργάτες: μόνο οι επικυρωμένοι συνεργάτες \n"
+"- ακόλουθοι: μόνο οι ακόλουθοι του σχετικού εγγράφου ή μέλη των παρακάτω καναλιών\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -2828,12 +2943,12 @@ msgstr "Όνομα Έργου"
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "Project Settings"
-msgstr ""
+msgstr "Ρυθμίσεις Έργου"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "Project Settings."
-msgstr ""
+msgstr "Ρυθμίσεις Έργου."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_project_task_graph
@@ -2863,7 +2978,11 @@ msgstr "Εργασίες Έργου"
 #: model:ir.ui.menu,name:project.menu_projects_config
 #: model:ir.ui.menu,name:project.portal_services_projects
 #: model:ir.ui.view,arch_db:project.analytic_account_inherited_form
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:project.task_company
+=======
+#: model:ir.ui.view,arch_db:project.project_planner
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:project.view_project
 #, python-format
 msgid "Projects"
@@ -2943,7 +3062,7 @@ msgstr ""
 #. module: project
 #: model:mail.template,subject:project.mail_template_data_project_task
 msgid "Reception of ${object.name}"
-msgstr ""
+msgstr "Λήψη από ${object.name}"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project_alias_force_thread_id
@@ -3055,7 +3174,7 @@ msgstr "Αναζήτηση"
 #. module: project
 #: model:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Search Project"
-msgstr ""
+msgstr "Αναζήτηση στα Έργα"
 
 #. module: project
 #. openerp-web
@@ -3145,7 +3264,7 @@ msgstr "Προδιαγραφή"
 #: code:addons/project/static/src/js/web_planner_project.js:23
 #, python-format
 msgid "Specification is validated"
-msgstr ""
+msgstr "Η προδιαγραφή είναι επικυρωμένη"
 
 #. module: project
 #. openerp-web
@@ -3709,6 +3828,27 @@ msgid ""
 msgstr ""
 
 #. module: project
+<<<<<<< HEAD
+=======
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:106
+#, python-format
+msgid ""
+"Use the <b>implementation guide</b> to setup Project Management in your "
+"company."
+msgstr ""
+
+#. module: project
+#. openerp-web
+#: code:addons/project/static/src/js/tour.js:88
+#, python-format
+msgid "Use the breadcrumbs to <b>go back to your tasks pipeline</b>."
+msgstr ""
+"Χρησιμοποιήστε τα ίχνοι πλοήγησης για να <b>επιστρέψετε στην Ροή Πληροφοριών"
+" των εργασιών</b>."
+
+#. module: project
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:project.task.type,legend_priority:project.project_stage_0
 msgid "Use the priority for tasks related to gold customers"
 msgstr ""
@@ -3946,7 +4086,7 @@ msgstr ""
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "etc.."
-msgstr ""
+msgstr "κτλ."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner

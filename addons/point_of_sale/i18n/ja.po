@@ -3,6 +3,7 @@
 # * point_of_sale
 # 
 # Translators:
+<<<<<<< HEAD
 # Yoshi Tashiro <tashiro@roomsfor.hk>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2017
@@ -20,6 +21,26 @@ msgstr ""
 "POT-Creation-Date: 2017-10-10 11:34+0000\n"
 "PO-Revision-Date: 2017-10-10 11:34+0000\n"
 "Last-Translator: Manami Hashi <manami@roomsfor.hk>, 2017\n"
+=======
+# NOKA Shigekazu <shigekazu.noka@gmail.com>, 2016
+# Manami Hashi <manami@roomsfor.hk>, 2016
+# SHIMIZU Taku <shimizu.taku@gmail.com>, 2016
+# Katsumi ISHIDA <isis331@gmail.com>, 2016
+# Kohji Katayama <kohji.katayama@dreamyard.co.jp>, 2016
+# Takahiro MURAKAMI <murakami@date-yakkyoku.com>, 2016
+# 高木正勝 <masakatsu.takagi@pro-spire.co.jp>, 2016
+# Martin Trigaux, 2016
+# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2017
+# Yoshi Tashiro <tashiro@roomsfor.hk>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:25+0000\n"
+"Last-Translator: Yoshi Tashiro <tashiro@roomsfor.hk>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2535,9 +2556,21 @@ msgid "Picking Count"
 msgstr ""
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
 msgid "Picking Errors"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:point_of_sale.field_pos_config_picking_type_id
+#: model:ir.model.fields,field_description:point_of_sale.field_pos_order_picking_type_id
+msgid "Picking Type"
+msgstr "ピッキングタイプ"
+
+#. module: point_of_sale
+#: model:ir.model.fields,field_description:point_of_sale.field_pos_session_picking_count
+msgid "Picking count"
+msgstr "ピッキング件数"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: point_of_sale
 #. openerp-web
@@ -2553,7 +2586,18 @@ msgid "Please define income account for this product: \"%s\" (id:%d)."
 msgstr ""
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: code:addons/point_of_sale/models/pos_order.py:514
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2017
+#, python-format
+msgid "Please print the invoice from the backend"
+msgstr ""
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/models/pos_order.py:446
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Please provide a partner for the sale."
 msgstr "販売のためのパートナを提供して下さい。"
@@ -2673,7 +2717,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.product_pos_category_form_view
 msgid "Pos Categories"
-msgstr ""
+msgstr "POSカテゴリ"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_details_wizard_pos_config_ids
@@ -3089,7 +3133,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/js/chrome.js:397
 #, python-format
 msgid "Scale"
-msgstr ""
+msgstr "スケール"
 
 #. module: point_of_sale
 #. openerp-web
@@ -3173,7 +3217,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/js/screens.js:2078
 #, python-format
 msgid "Select tax"
-msgstr ""
+msgstr "税選択"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/models/pos_order.py:236
@@ -3210,7 +3254,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/js/screens.js:2018
 #, python-format
 msgid "Server Error"
-msgstr ""
+msgstr "サーバーエラー"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/models/pos_config.py:447
@@ -3632,6 +3676,15 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/js/screens.js:2024
 #, python-format
 msgid "The order could not be sent to the server due to an unknown error"
+msgstr ""
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2018
+#, python-format
+msgid ""
+"The order has been synchronized earlier. Please make the invoice from the "
+"backend for the order: "
 msgstr ""
 
 #. module: point_of_sale

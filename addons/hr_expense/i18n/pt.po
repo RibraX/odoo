@@ -3,17 +3,35 @@
 # * hr_expense
 #
 # Translators:
+<<<<<<< HEAD
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2015
+=======
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Manuela Silva <manuela.silva@sky.com>, 2016
+# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
+# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2016
+# José Gomes <jg@opencloud.pro>, 2016
+# Ricardo Correia <rcorreiavv@gmail.com>, 2016
+# Nuno Silva <nuno.silva@arxi.pt>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-20 10:40+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Portuguese (http://www.transifex.com/odoo/odoo-9/language/"
 "pt/)\n"
 "Language: pt\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Nuno Silva <nuno.silva@arxi.pt>, 2018\n"
+"Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -60,13 +78,47 @@ msgid "Air Flight"
 msgstr "Air Flight"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_config_settings_alias_domain
+msgid "Alias Domain"
+msgstr "Domínio Apelido"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_all
+msgid "All Expense Reports"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_all_expenses
+msgid "All Expenses"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_account_id
+msgid "An expense account is expected"
+msgstr ""
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_analytic_account_id
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Analytic Account"
 msgstr "Conta de Analítica"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
+=======
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Approve"
 msgstr "Aprovar"
 
@@ -115,6 +167,7 @@ msgid "Click here to create new expenses."
 msgstr "Clique aqui para criar novas despesas."
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_my_tree
 #: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
 msgid "Click here to refuse"
@@ -124,6 +177,12 @@ msgstr "Clique aqui para recusar"
 #: model:web.tip,description:hr_expense.expense_tip_2
 msgid "Click on Action to submit multiple expenses to your manager."
 msgstr ""
+=======
+#: code:addons/hr_expense/models/hr_expense.py:304
+#, python-format
+msgid "Click to add a new expense,"
+msgstr "Clique para adicionar uma nova despesa,"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_product
@@ -148,6 +207,20 @@ msgid "Confirmed Expenses"
 msgstr "Despesas Confirmada"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Congratulations, you're done!"
+msgstr "Parabéns, terminou!"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+msgid "Create a new expense.<br>"
+msgstr "Crie uma nova despesa.<br>"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_config_settings_create_uid
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_create_uid
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_refuse_wizard_create_uid
 msgid "Created by"
@@ -471,7 +544,31 @@ msgid ""
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: selection:hr.expense,state:0
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid ""
+"Once your email gateway is configured, come back to this screen\n"
+"                            to setup the next steps."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:537
+#, python-format
+msgid "Only HR Officers can approve expenses"
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:528
+#, python-format
+msgid "Only HR Officers can refuse expenses"
+msgstr ""
+
+#. module: hr_expense
+#: selection:hr.expense.sheet,state:0
+#: model:mail.message.subtype,name:hr_expense.mt_expense_paid
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Paid"
 msgstr "Pago"
 
@@ -567,9 +664,40 @@ msgstr ""
 "Medida do produto"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "Set to Draft"
 msgstr "Definir para Rascunho"
+=======
+#: code:addons/hr_expense/models/hr_expense.py:88
+#, python-format
+msgid ""
+"Selected Unit of Measure does not belong to the same category as the product"
+" Unit of Measure"
+msgstr ""
+"A Unidade de Medida selecionada não pertence à mesma categoria da Unidade de"
+" Medida do produto"
+
+#. module: hr_expense
+#: model:web.planner,tooltip_planner:hr_expense.planner_hr_expense
+msgid "Send receipts by email to create expenses efficiently."
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_global_settings
+msgid "Settings"
+msgstr "Configurações"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Setup"
+msgstr "Configuração"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Setup your domain alias"
+msgstr "Estabeleça o seu pseudónimo de domínio"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_product_template_can_be_expensed
@@ -673,11 +801,27 @@ msgid "UoM"
 msgstr "UdM"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:web.tip,description:hr_expense.expense_tip_3
 msgid ""
 "Use the messaging tool to log a note and attach a document to the expense. "
 "(e.g. scan of the bill)"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_register_payment_view_form
+msgid "Validate"
+msgstr "Validar"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_responsible_id
+msgid "Validation By"
+msgstr "Validada por"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
+msgid "View Attached Documents"
+msgstr "Ver Documentos Anexados"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: selection:hr.expense,state:0
@@ -743,8 +887,22 @@ msgstr ""
 #~ msgid "<strong>Validated By:</strong>"
 #~ msgstr "<strong>Validado Por:</strong>"
 
+<<<<<<< HEAD
 #~ msgid "Action Needed"
 #~ msgstr "Ação Necessária"
+=======
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:605
+#, python-format
+msgid "You cannot report expenses with different payment modes."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:105
+#, python-format
+msgid "You cannot report twice the same line!"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Date of the last message posted on the record."
 #~ msgstr "Data da Ultmia Mensagem Inserida no Registo"

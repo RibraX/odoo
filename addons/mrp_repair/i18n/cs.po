@@ -3,11 +3,20 @@
 # * mrp_repair
 #
 # Translators:
+<<<<<<< HEAD
 # Jakub Lohnisky <jakub@lepremier.cz>, 2016
+=======
+# xlu <xlu@seznam.cz>, 2016
+# Jakub Lohnisky <jakub@lepremier.cz>, 2016
+# Martin Trigaux, 2016
+# trendspotter <j.podhorecky@volny.cz>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-05-23 12:24+0000\n"
 "Last-Translator: Jakub Lohnisky <jakub@lepremier.cz>\n"
@@ -17,6 +26,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:55+0000\n"
+"PO-Revision-Date: 2016-09-07 09:23+0000\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
+"Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mrp_repair
 #: model:ir.model.fields,help:mrp_repair.field_mrp_repair_state
@@ -91,7 +111,11 @@ msgstr "Položky k opravě"
 #: model:ir.ui.view,arch_db:mrp_repair.report_mrprepairorder
 #, fuzzy
 msgid "<strong>Shipping address :</strong>"
+<<<<<<< HEAD
 msgstr "Datum tisku"
+=======
+msgstr "<strong>Dodací adresa:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.report_mrprepairorder
@@ -158,6 +182,15 @@ msgid "Cancelled"
 msgstr "Zrušeno"
 
 #. module: mrp_repair
+<<<<<<< HEAD
+=======
+#: code:addons/mrp_repair/models/mrp_repair.py:221
+#, python-format
+msgid "Cannot cancel completed repairs."
+msgstr "Nelze zrušit dokončené opravy."
+
+#. module: mrp_repair
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:mrp_repair.field_mrp_repair_partner_id
 msgid "Choose partner for whom the order will be invoiced and delivered."
 msgstr "Vyberte partnera, kterému bude objednávka fakturována a doručena."
@@ -376,7 +409,7 @@ msgstr "Fakturační adresa"
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.report_mrprepairorder
 msgid "Invoice and shipping address:"
-msgstr ""
+msgstr "Fakturační a dodací adresa:"
 
 #. module: mrp_repair
 #: model:ir.model.fields,field_description:mrp_repair.field_mrp_repair_fee_invoiced
@@ -547,7 +580,7 @@ msgstr "Výrobek k opravě"
 #. module: mrp_repair
 #: model:ir.model.fields,help:mrp_repair.field_mrp_repair_lot_id
 msgid "Products repaired are all belonging to this lot"
-msgstr ""
+msgstr "Opravené výrobky patří k této šarži"
 
 #. module: mrp_repair
 #: model:ir.model.fields,field_description:mrp_repair.field_mrp_repair_fee_product_uom_qty
@@ -634,7 +667,7 @@ msgstr "Příkazy opravy"
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.report_mrprepairorder
 msgid "Repair Quotation #:"
-msgstr ""
+msgstr "Oprava nabídky číslo:"
 
 #. module: mrp_repair
 #: model:ir.model.fields,field_description:mrp_repair.field_mrp_repair_name
@@ -642,7 +675,35 @@ msgid "Repair Reference"
 msgstr "Reference opravy"
 
 #. module: mrp_repair
+<<<<<<< HEAD
 #: code:addons/mrp_repair/mrp_repair.py:285
+=======
+#: code:addons/mrp_repair/models/mrp_repair.py:194
+#, python-format
+msgid "Repair must be canceled in order to reset it to draft."
+msgstr ""
+
+#. module: mrp_repair
+#: code:addons/mrp_repair/models/mrp_repair.py:343
+#, python-format
+msgid "Repair must be confirmed before starting reparation."
+msgstr "Oprava musí být potvrzena před zahájením opravy."
+
+#. module: mrp_repair
+#: code:addons/mrp_repair/models/mrp_repair.py:371
+#, python-format
+msgid "Repair must be repaired in order to make the product moves."
+msgstr "Oprava musí být vpořádku, aby se produkt posunul dál."
+
+#. module: mrp_repair
+#: code:addons/mrp_repair/models/mrp_repair.py:354
+#, python-format
+msgid "Repair must be under repair in order to end reparation."
+msgstr "Oprava musí být pod objednávkou, aby mohlo být opravování ukončeno."
+
+#. module: mrp_repair
+#: code:addons/mrp_repair/models/mrp_repair.py:223
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Repair order is already invoiced."
 msgstr "Oprava již byla vyfakturována."
@@ -667,7 +728,7 @@ msgstr ""
 #. module: mrp_repair
 #: model:ir.ui.menu,name:mrp_repair.menu_repair_order
 msgid "Repairs"
-msgstr ""
+msgstr "Opravy"
 
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.view_repair_order_form
@@ -679,7 +740,11 @@ msgstr "Příkazy opravy"
 #: model:ir.ui.view,arch_db:mrp_repair.view_repair_order_form_filter
 #, fuzzy
 msgid "Search Repair Orders"
+<<<<<<< HEAD
 msgstr "Hledat příkazy opravy"
+=======
+msgstr "Vyhledávání objednávek opravy"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mrp_repair
 #: model:ir.model.fields,help:mrp_repair.field_mrp_repair_invoice_method
@@ -750,7 +815,7 @@ msgstr "Měrná jednotka výrobku je jiné kategorie než ve formuláři výrobk
 #. module: mrp_repair
 #: sql_constraint:mrp.repair:0
 msgid "The name of the Repair Order must be unique!"
-msgstr ""
+msgstr "Název objednávky opravy musí být jedinečný!"
 
 #. module: mrp_repair
 #: model:ir.actions.act_window,help:mrp_repair.action_repair_order_tree
@@ -767,6 +832,8 @@ msgid ""
 "The status of a repair line is set automatically to the one of the linked "
 "repair order."
 msgstr ""
+"Stav řádku pro opravy se automaticky nastaví na stav, v jakém je propojená "
+"objednávka."
 
 #. module: mrp_repair
 #: model:ir.ui.view,arch_db:mrp_repair.view_cancel_repair

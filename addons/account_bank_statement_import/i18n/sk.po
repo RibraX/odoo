@@ -3,11 +3,20 @@
 # * account_bank_statement_import
 #
 # Translators:
+<<<<<<< HEAD
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+=======
+# Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
+# Martin Trigaux, 2017
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2017
+# Jan Prokop, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-01-31 20:44+0000\n"
 "Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
@@ -17,6 +26,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Jan Prokop, 2019\n"
+"Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:236
@@ -106,7 +126,7 @@ msgstr "Riadok bankového výpisu"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_belongs_to_company
 msgid "Belong to the user's current company"
-msgstr ""
+msgstr "Priradené k aktuálnej spoločnosti užívateľa"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
@@ -429,12 +449,19 @@ msgid ""
 "payments.\n"
 "Select 'General' for miscellaneous operations journals."
 msgstr ""
+<<<<<<< HEAD
 "Vyberte 'Predaj' pre zákaznícke faktúry v účtovných knihách. Vyberte 'Nákup' "
 "pre účtovné knihyúčtenie predajcov. Vyberte 'Hotovosť'alebo'Banka'pre "
 "účtovné knihy, ktoré sa používajú u zákazníckých alebo predajcovkých "
 "platieb. Vyberte 'Všeobecné', pre rôzne operácie účtovných kníh. Vyberte "
 "'Otváranie / zatváranie situácie' pre položky vytvorené pre nové fiškálne "
 "roky."
+=======
+"Vyberte 'Predaj' pre zákaznícke faktúry v účtovných knihách.\n"
+"Vyberte 'Nákup' pre účtenky dodávateľov v účtovných knihách.\n"
+"Vyberte 'Hotovosť'alebo'Banka'pre účtovné knihy, ktoré sa používajú u zákazníckých alebo dodávateľských platieb.\n"
+"Vyberte 'Všeobecné', pre rôzne operácie účtovných kníh."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
@@ -566,6 +593,19 @@ msgid "You have already imported that file."
 msgstr "Ten súbor už bol importovaný. "
 
 #. module: account_bank_statement_import
+<<<<<<< HEAD
+=======
+#: code:addons/account_bank_statement_import/account_bank_statement_import.py:47
+#, python-format
+msgid ""
+"You have to set a Default Debit Account and a Default Credit Account for the"
+" journal: %s"
+msgstr ""
+"Nastavili ste predvolený debetný účet a predvolený kreditný účet v účtovnej "
+"knihe: %s"
+
+#. module: account_bank_statement_import
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 msgid "_Import"
 msgstr "_Import"

@@ -3,8 +3,22 @@
 # * sale_stock
 # 
 # Translators:
+<<<<<<< HEAD
 # lap.odoo <lap@odoo.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
+=======
+# Martin Trigaux <mat@odoo.com>, 2016
+# Florian Hatat <mininet@wanadoo.fr>, 2016
+# Fabien Pinckaers <fp@openerp.com>, 2016
+# Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2016
+# Melanie Bernard <mbe@odoo.com>, 2016
+# Simon CARRIER <carrier.sim@gmail.com>, 2016
+# Nancy Bolognesi <nb@microcom.ca>, 2016
+# Xavier Symons <xsy@openerp.com>, 2016
+# Leo Schmitt <inactive+lschmitt@transifex.com>, 2016
+# Saad Thaifa <saad.thaifa@gmail.com>, 2016
+# Xavier Belmere <Info@cartmeleon.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # Sébastien Le Ray <sebastien-github@orniz.org>, 2017
 # Eloïse Stilmant <est@odoo.com>, 2017
 # Fabien Pinckaers <fp@openerp.com>, 2017
@@ -81,12 +95,12 @@ msgstr "Sociétés"
 #. module: sale_stock
 #: selection:sale.order,picking_policy:0
 msgid "Deliver all products at once"
-msgstr "Livre tous les articles en une fois"
+msgstr "Livrer tous les articles en une fois"
 
 #. module: sale_stock
 #: selection:sale.order,picking_policy:0
 msgid "Deliver each product when available"
-msgstr "Livrer chaque article dès disponibilité"
+msgstr "Livrer chaque article dès qu'il est disponible"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.view_order_form_inherit_sale_stock
@@ -282,7 +296,7 @@ msgstr "Bon de commande"
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Ligne de bons de commande"
+msgstr "Ligne de bon de commande"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.stock_location_route_view_form_inherit_sale_stock
@@ -320,9 +334,15 @@ msgid "Selectable on Sales Order Line"
 msgstr "Sélectionnable dans les lignes de ventes"
 
 #. module: sale_stock
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:sale_stock.res_config_settings_view_form_sale
 msgid "Set a delivery date on orders"
 msgstr "Indiquer une date de livraison sur les bons de commande"
+=======
+#: selection:sale.config.settings,default_picking_policy:0
+msgid "Ship all products at once, without back orders"
+msgstr "Livrer tous les articles en une fois, sans reliquat"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sale_stock
 #: selection:res.config.settings,default_picking_policy:0
@@ -347,7 +367,7 @@ msgstr ""
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_picking_policy
 msgid "Shipping Policy"
-msgstr "Politique d'expédition"
+msgstr "Politique de livraison"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move

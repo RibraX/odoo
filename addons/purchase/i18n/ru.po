@@ -3,6 +3,7 @@
 # * purchase
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Эдуард Манятовский <manyatovskiy@gmail.com>, 2017
 # Максим Дронь <dronmax@gmail.com>, 2017
@@ -19,13 +20,27 @@
 # Gennady Marchenko <gennadym@gmail.com>, 2017
 # Denis Baranov <baranov@itlibertas.com>, 2017
 # Василий Коробатов <boxat@mail.ru>, 2017
+=======
+# Collex100, 2017
+# Sergey Vilizhanin, 2017
+# Viktor Pogrebniak <vp@aifil.ru>, 2017
+# sergeiruzkiicode <sergei.ruzki@icode.by>, 2018
+# Vasiliy Korobatov <korobatov@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Василий Коробатов <boxat@mail.ru>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Vasiliy Korobatov <korobatov@gmail.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,10 +72,31 @@ msgid ""
 "\n"
 "<p>Do not hesitate to contact us, further you have any question.</p>\n"
 "<p>Best regards,</p>\n"
+<<<<<<< HEAD
 "<p style=\"color:#888888;\">\n"
 "% if object.user_id and object.user_id.signature:\n"
 "    ${object.user_id.signature | safe}\n"
 "% endif\n"
+=======
+msgstr ""
+"\n"
+"<p>Дорогой\n"
+"% if object.partner_id.is_company and object.child_ids:\n"
+"    ${object.partner_id.child_ids[0].name}\n"
+"% else :\n"
+"    ${object.partner_id.name}\n"
+"% endif\n"
+",</p><p>\n"
+"Здесь есть ${object.state in ('draft', 'sent') and 'запрос цен' or 'подтверждение заказа на покупку'} <strong>${object.name}</strong>\n"
+"% if object.partner_ref:\n"
+"    с учетом: ${object.partner_ref}\n"
+"% endif\n"
+"% if object.origin:\n"
+"    (Источник запроса цены: ${object.origin})\n"
+"% endif\n"
+"на сумму <strong>${object.amount_total} ${object.currency_id.name}</strong>\n"
+"из ${object.company_id.name}.\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "</p>\n"
 msgstr ""
 
@@ -95,15 +131,15 @@ msgstr ""
 "% endif\n"
 ",</p>\n"
 "<p>\n"
-"Пожалуйста надите вложение <strong>${object.state in ('draft', 'sent') and 'request for quotation' or 'purchase order confirmation'} ${object.name}</strong>\n"
+"Пожалуйста найдите вложение <strong>${object.state in ('draft', 'sent') and 'запрос цен' or 'подтверждение заказа на покупку'} ${object.name}</strong>\n"
 "% if object.partner_ref:\n"
-"    with reference: ${object.partner_ref}\n"
+"    с учетом: ${object.partner_ref}\n"
 "% endif\n"
 "% if object.origin:\n"
-"    (RFQ origin: ${object.origin})\n"
+"    (Источник запроса цены: ${object.origin})\n"
 "% endif\n"
-"amounting <strong>${object.amount_total} ${object.currency_id.name}</strong>\n"
-"from ${object.company_id.name}.\n"
+"сумма <strong>${object.amount_total} ${object.currency_id.name}</strong>\n"
+"из ${object.company_id.name}.\n"
 "</p>\n"
 "\n"
 "<p>Вы можете ответить на это письмо, если у вас есть вопросы.</p>\n"
@@ -113,7 +149,7 @@ msgstr ""
 #: code:addons/purchase/models/stock.py:79
 #, python-format
 msgid " Buy"
-msgstr "Покупка"
+msgstr " Покупка"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_product_product_purchase_count
@@ -438,7 +474,7 @@ msgstr "Позволить редактировать заказы на пост
 #: model:ir.ui.view,arch_db:purchase.res_config_settings_view_form_account
 msgid "Allows you to specify an analytic account on purchase order lines."
 msgstr ""
-"Разрешить использование аналитических счетов в позициях заказов на закупку"
+"Разрешить использование аналитических счетов в позициях заказов на закупку."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_account_analytic_id
@@ -462,6 +498,14 @@ msgid "Analytic accounting for purchases"
 msgstr "Аналитический учет закупок"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.view_purchase_configuration
+msgid "Apply"
+msgstr "Применить"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_date_approve
 msgid "Approval Date"
 msgstr "Дата Утверждения"
@@ -498,7 +542,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
 msgid "Bill Lines"
-msgstr "строки счёта"
+msgstr "Cтроки счёта"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
@@ -506,9 +550,16 @@ msgid "Billed Qty"
 msgstr "Кол-во по счёту"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "Billed Quantity:"
 msgstr ""
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
+msgstr "Выставленное количество"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
@@ -808,7 +859,7 @@ msgstr "Черновик запроса цены"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_dest_address_id
 msgid "Drop Ship Address"
-msgstr "Адрес Дроп-Шиппинг доставки:"
+msgstr "Адрес Дроп-Шиппинг доставки"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_module_stock_dropshipping
@@ -843,7 +894,7 @@ msgstr "Расширенные фильтры"
 #: code:addons/purchase/models/purchase.py:577
 #, python-format
 msgid "Extra line with %s "
-msgstr ""
+msgstr "К %s "
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_fiscal_position_id
@@ -1624,9 +1675,16 @@ msgid "Received Qty"
 msgstr "Полученное кол-во"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase.track_po_line_template
 msgid "Received Quantity:"
 msgstr ""
+=======
+#: code:addons/purchase/models/purchase.py:580
+#, python-format
+msgid "Received Quantity"
+msgstr "Полученное количество"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_open_picking
@@ -1852,9 +1910,20 @@ msgid "Terms and Conditions"
 msgstr "Правила и условия"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,help:purchase.field_purchase_order_website_url
 msgid "The full URL to access the document through the website."
 msgstr "Полный URL-адрес для доступа к документу через веб-сайт."
+=======
+#: code:addons/purchase/models/purchase.py:574
+#, python-format
+msgid ""
+"The ordered quantity has been decreased. Do not forget to take it into "
+"account on your bills and receipts."
+msgstr ""
+"Заказанное количество было уменьшено. Не забудьте учесть это в своих счетах "
+"и квитанциях."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.product_product_action
@@ -2151,7 +2220,20 @@ msgid "Vendor Bills"
 msgstr "Счета от поставщиков"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings_group_manage_vendor_price
+=======
+#: model:ir.ui.view,arch_db:purchase.res_partner_view_purchase_account_buttons
+msgid "Vendor Bills."
+msgstr "Счета Поставщиков."
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_group_manage_vendor_price
+msgid "Vendor Price"
+msgstr "Цена Поставщика"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
 msgid "Vendor Pricelists"
 msgstr "Прайс-листы производителя"

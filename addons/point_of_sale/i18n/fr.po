@@ -3,6 +3,7 @@
 # * point_of_sale
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Xavier Belmere <Info@cartmeleon.com>, 2017
 # Clo <clo@odoo.com>, 2017
@@ -52,13 +53,35 @@
 # fr rev <e2ffr04@hotmail.com>, 2017
 # user 2 odoo <user2odoo@gmail.com>, 2017
 # Richard Mathot <rim@odoo.com>, 2017
+=======
+# zoe <yann.hoareau@migs.re>, 2016
+# Xavier Symons <xsy@openerp.com>, 2016
+# Fabri Yohann <psn@fabri.pw>, 2016
+# Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2016
+# Clo <clo@odoo.com>, 2016
+# Félix Desjardins <felixinx@gmail.com>, 2016
+# Olivier Dony <odo@odoo.com>, 2016
+# matthieu gaillet <matthieu.gaillet@lebrass.be>, 2017
+# Mohammed SK <medkamar@blutec.ma>, 2017
+# Martin Trigaux, 2017
+# Eloïse Stilmant <est@odoo.com>, 2017
+# e2f <projects@e2f.com>, 2018
+# Mohamed BENKIRANE <benkirane.med.ali@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-10 11:34+0000\n"
 "PO-Revision-Date: 2017-10-10 11:34+0000\n"
 "Last-Translator: Richard Mathot <rim@odoo.com>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:25+0000\n"
+"Last-Translator: Mohamed BENKIRANE <benkirane.med.ali@gmail.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1369,14 +1392,14 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1355
 #, python-format
 msgid "Download Paid Orders"
-msgstr ""
+msgstr "Télécharger les commandes payées"
 
 #. module: point_of_sale
 #. openerp-web
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1357
 #, python-format
 msgid "Download Unpaid Orders"
-msgstr ""
+msgstr "Télécharger les commandes non payées"
 
 #. module: point_of_sale
 #. openerp-web
@@ -1647,7 +1670,18 @@ msgstr ""
 
 #. module: point_of_sale
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1369
+=======
+#: code:addons/point_of_sale/static/src/js/models.js:135
+#, python-format
+msgid "HTTPS connection to IoT Box failed"
+msgstr "La connexion HTTPS au boitier IOT a échouée"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:1322
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Hardware Events"
 msgstr "Évènements matériels"
@@ -2019,6 +2053,7 @@ msgid "Make Payment"
 msgstr "Exécuter le paiement"
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_available_pricelist_ids
 msgid ""
 "Make several pricelists available in the Point of Sale. You can also apply a"
@@ -2031,6 +2066,21 @@ msgstr ""
 #: model:ir.ui.view,arch_db:point_of_sale.customer_facing_display_html
 #: model:pos.config,customer_facing_display_html:point_of_sale.pos_config_main
 msgid "Malibu Drink"
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/models.js:137
+#, python-format
+msgid ""
+"Make sure you are using IoT Box v18.12 or higher. Navigate to %s to accept "
+"the certificate of your IoT Box."
+msgstr ""
+"Assurez-vous d'utiliser la version v18.12 ou supérieur du boitier IoT. "
+"Rendez-vous sur %s afin d'accepter le certificat de votre boitier IoT."
+
+#. module: point_of_sale
+#: model:ir.ui.view,arch_db:point_of_sale.view_sale_config_settings_form_pos
+msgid "Manage loyalty program with points and rewards for customers"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: point_of_sale
@@ -2649,7 +2699,18 @@ msgid "Please define income account for this product: \"%s\" (id:%d)."
 msgstr "Veuillez définir un compte de revenu pour cet article : \"%s\" (id. : %d)"
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: code:addons/point_of_sale/models/pos_order.py:514
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2017
+#, python-format
+msgid "Please print the invoice from the backend"
+msgstr "Imprimer s'il vous plait la facture depuis le backend"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/models/pos_order.py:446
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Please provide a partner for the sale."
 msgstr "Veuiller renseigner un client"
@@ -3745,6 +3806,17 @@ msgstr ""
 "inconnue"
 
 #. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2018
+#, python-format
+msgid ""
+"The order has been synchronized earlier. Please make the invoice from the "
+"backend for the order: "
+msgstr ""
+"La commande a été synchronisée plus tôt. Veuillez établir la facture à "
+"partir du backend pour la commande : "
+
+#. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_iface_precompute_cash
 msgid ""
 "The payment input will behave similarily to bank payment input, and will be "
@@ -4408,7 +4480,7 @@ msgstr ""
 #: code:addons/point_of_sale/models/pos_session.py:26
 #, python-format
 msgid "You have to set a Sale Journal for the POS:%s"
-msgstr ""
+msgstr "Vous devez définir un journal des ventes pour le PdV %s"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_details.py:48

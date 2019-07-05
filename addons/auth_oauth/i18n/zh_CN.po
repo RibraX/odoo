@@ -3,12 +3,17 @@
 # * auth_oauth
 # 
 # Translators:
+<<<<<<< HEAD
 # Jeffery CHEN <jeffery9@gmail.com>, 2017
 # waveyeung <waveyeung@qq.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # Si Ling Lau <happy8645@hotmail.com>, 2017
 # liAnGjiA <liangjia@qq.com>, 2017
 # Xu Lei <xulei8@qq.com>, 2017
+=======
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# liAnGjiA <liangjia@qq.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # 老窦 北京 <2662059195@qq.com>, 2017
 msgid ""
 msgstr ""
@@ -72,9 +77,26 @@ msgid "Client ID"
 msgstr "客户端 ID"
 
 #. module: auth_oauth
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:auth_oauth.res_config_settings_view_form
 msgid "Client ID:"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "指业务伙伴的公司"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Connect to your Google account and go to"
+msgstr "连接你的google账户并转到"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "合同"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_create_uid
@@ -163,6 +185,34 @@ msgid "Oauth Provider user_id"
 msgstr "Oauth服务商user_id"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"On the left side menu, select the sub menu <b>Credentials</b> \n"
+"                                        (from <b>API Manager</b>) then select <b>OAuth consent screen</b>."
+msgstr ""
+"在左侧菜单中, 选择子菜单 <b> Credentials </b> (从 <b>API Manager</b>)开始\n"
+",然后选择 <b>OAuth consent screen</b>."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Once done, you receive two information (your <b>Client ID</b> and <b>\n"
+"                                        Client Secret</b>). You have to insert your <b>Client ID</b> in \n"
+"                                        the field below."
+msgstr ""
+"完成后，你将收到两条信息 ( <b>客户端 ID</b> 和 <b>\n"
+"                                        客户端密钥</b>). 你需要填写这2个字段 <b>客户端 ID</b>填到  \n"
+"                                         以下字段中."
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "应付限额"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_name
 msgid "Provider name"
 msgstr "服务商名称"
@@ -194,6 +244,105 @@ msgid "Sign up is not allowed on this database."
 msgstr "此数据库不允许注册"
 
 #. module: auth_oauth
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr "财政状况将确定用于业务伙伴的税金和科目。"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr "自动上次这个业务伙伴的发票和付款完全一致。这个业务伙伴至少有一个未调节的借方和贷方"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"Then click on <b>Add Credentials</b> and select the second option \n"
+"                                        (OAuth 2.0 Client ID)."
+msgstr ""
+"点击 <b>添加证书</b> 然后选择第二个选项 \n"
+"                                        (OAuth 2.0 客户端 ID)."
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid "Then click on <b>Create</b>."
+msgstr "然后点击<b>创建</b>"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "这个科目被用来代替当前业务伙伴的默认的应付科目"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "这个科目被用来替代当前业务伙伴的默认的应收科目"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr "该付款条款江北用来代替采购订单或者供应商账单中默认的付款条款"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr "在销售订单和客户发票上，该付款方式将替换默认付款方式。"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"To achieve this, complete the field <b>Authorized redirect URIs</b>.\n"
+"                                        Copy paste the following link in the box"
+msgstr ""
+"为了实现这个, 完成此字段<b>Authorized redirect URIs</b>.复制\n"
+"粘贴下列连接"
+
+#. module: auth_oauth
+#: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
+msgid ""
+"To setup the sign in process with Google, you have to perform \n"
+"                                    the following steps first."
+msgstr "设置使用Google认证，首先你必须执行以下步骤。"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "已开票总计"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_debit
+msgid "Total Payable"
+msgstr "应付总计"
+
+#. module: auth_oauth
+#: model:ir.model.fields,field_description:auth_oauth.field_res_users_credit
+msgid "Total Receivable"
+msgstr "应收总计"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "这个客户欠款的总数量"
+
+#. module: auth_oauth
+#: model:ir.model.fields,help:auth_oauth.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "你需要付给这个供应商的总数量"
+
+#. module: auth_oauth
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:auth_oauth.model_res_users
 msgid "Users"
 msgstr "用户"

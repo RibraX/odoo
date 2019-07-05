@@ -14,6 +14,7 @@ class ResPartner(models.Model):
     sale_warn_msg = fields.Text('Message for Sales Order')
 
     def _compute_sale_order_count(self):
+<<<<<<< HEAD
         sale_data = self.env['sale.order'].read_group(domain=[('partner_id', 'child_of', self.ids)],
                                                       fields=['partner_id'], groupby=['partner_id'])
         # read to keep the child/parent relation while aggregating the read_group result in the loop
@@ -25,3 +26,19 @@ class ResPartner(models.Model):
             partner_ids = [partner.id] + item.get('child_ids')
             # then we can sum for all the partner's child
             partner.sale_order_count = sum(mapped_data.get(child, 0) for child in partner_ids)
+=======
+        # retrieve all children partners and prefetch 'parent_id' on them
+        all_partners = self.search([('id', 'child_of', self.ids)])
+        all_partners.read(['parent_id'])
+
+        sale_order_groups = self.env['sale.order'].read_group(
+            domain=[('partner_id', 'in', all_partners.ids)],
+            fields=['partner_id'], groupby=['partner_id']
+        )
+        for group in sale_order_groups:
+            partner = self.browse(group['partner_id'][0])
+            while partner:
+                if partner in self:
+                    partner.sale_order_count += group['partner_id_count']
+                partner = partner.parent_id
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

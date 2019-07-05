@@ -34,6 +34,7 @@ class AuthSignupHome(Home):
         if 'error' not in qcontext and request.httprequest.method == 'POST':
             try:
                 self.do_signup(qcontext)
+<<<<<<< HEAD
                 # Send an account creation confirmation email
                 if qcontext.get('token'):
                     user_sudo = request.env['res.users'].sudo().search([('login', '=', qcontext.get('login'))])
@@ -48,6 +49,10 @@ class AuthSignupHome(Home):
             except UserError as e:
                 qcontext['error'] = str(e)
             except (SignupError, AssertionError) as e:
+=======
+                return self.web_login(*args, **kw)
+            except (SignupError, AssertionError), e:
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                 if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login"))]):
                     qcontext["error"] = _("Another user is already registered using this email address.")
                 else:
@@ -67,7 +72,7 @@ class AuthSignupHome(Home):
             try:
                 if qcontext.get('token'):
                     self.do_signup(qcontext)
-                    return super(AuthSignupHome, self).web_login(*args, **kw)
+                    return self.web_login(*args, **kw)
                 else:
                     login = qcontext.get('login')
                     assert login, _("No login provided.")

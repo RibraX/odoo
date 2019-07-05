@@ -3,6 +3,17 @@
 # * hr_attendance
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Martin Trigaux, 2016
+# Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2016
+# Anders Wallenquist <anders.wallenquist@vertel.se>, 2016
+# Christelle Wehbe <libanon_cristelle@hotmail.com>, 2016
+# Patrik Lermon <patrik.lermon@gmail.com>, 2016
+# Jonathan S <jonathan.c.strom@gmail.com>, 2016
+# Haojun Zou <apollo_zhj@msn.com>, 2016
+# Daniel Forslund <daniel.forslund@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -26,9 +37,30 @@ msgid ""
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.report_attendanceerrors
 msgid "<strong>Total period</strong>"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Apply"
+msgstr "Verkställ"
+
+#. module: hr_attendance
+#: model:ir.actions.client,name:hr_attendance.hr_attendance_action_my_attendances
+#: model:ir.model,name:hr_attendance.model_hr_attendance
+#: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_attendance_state
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_graph
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_pivot
+msgid "Attendance"
+msgstr "Närvaro"
+
+#. module: hr_attendance
+#: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action_graph
+#: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action_graph_filtered
+msgid "Attendance Analysis"
+msgstr "Närvaroanalys"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: selection:hr.employee,state:0
@@ -42,10 +74,20 @@ msgid "Action"
 msgstr "Åtgärd"
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model,name:hr_attendance.model_hr_action_reason
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_action_desc
 msgid "Action Reason"
 msgstr "Åtgärdsorsak"
+=======
+#: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action
+#: model:ir.actions.client,name:hr_attendance.hr_attendance_action_kiosk_mode
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_root
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_attendances
+#: model:ir.ui.view,arch_db:hr_attendance.hr_department_view_kanban
+msgid "Attendances"
+msgstr "Närvarande"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_action_reason_action_type
@@ -130,8 +172,13 @@ msgstr "Avbryt"
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/attendance.js:41
 #, python-format
+<<<<<<< HEAD
 msgid "Click to Sign In at %s."
 msgstr "Klicka för instämpling vid %s."
+=======
+msgid "Company Logo"
+msgstr "Bolagslogo"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_config
@@ -155,7 +202,7 @@ msgstr "Skapad den"
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
 msgid "Current Month"
-msgstr "Aktuell Månad"
+msgstr "Aktuell månad"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_name
@@ -289,8 +336,14 @@ msgid "Month"
 msgstr "Månad"
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
 msgid "My Attendance"
+=======
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_my_attendances
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
+msgid "My Attendances"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr "Min närvaro"
 
 #. module: hr_attendance
@@ -300,9 +353,15 @@ msgid "No records are found for your selection!"
 msgstr "Rader saknas för urvalet!"
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.report_attendanceerrors
 msgid "Operation"
 msgstr "Åtgärd"
+=======
+#: model:res.groups,name:hr_attendance.group_hr_attendance_user
+msgid "Officer"
+msgstr "Tjänsteman"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: selection:hr.employee,state:0
@@ -387,6 +446,34 @@ msgid "Today"
 msgstr "Idag"
 
 #. module: hr_attendance
+<<<<<<< HEAD
+=======
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:102
+#, python-format
+msgid ""
+"Warning! Last check in was over 12 hours ago.<br/>If this isn't right, "
+"please contact Human Resources."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:25
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:46
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:112
+#, python-format
+msgid "Welcome"
+msgstr "Välkommen"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:11
+#, python-format
+msgid "Welcome to"
+msgstr "Välkommen till"
+
+#. module: hr_attendance
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_worked_hours
 msgid "Worked Hours"
 msgstr "Arbetstimmar"
@@ -406,8 +493,17 @@ msgstr ""
 msgid "report.hr_attendance.report_attendanceerrors"
 msgstr ""
 
+<<<<<<< HEAD
 #~ msgid "Time Tracking"
 #~ msgstr "Tidrapporter"
+=======
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:123
+#, python-format
+msgid "ok"
+msgstr "ok"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Timesheets"
 #~ msgstr "Tidrapporter"

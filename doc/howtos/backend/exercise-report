@@ -5,8 +5,21 @@ Index: addons/openacademy/__manifest__.py
 ===================================================================
 --- addons.orig/openacademy/__manifest__.py	2014-08-29 08:39:43.975536806 +0200
 +++ addons/openacademy/__manifest__.py	2014-08-29 08:39:52.000000000 +0200
+<<<<<<< HEAD
 @@ -30,6 +30,7 @@
          'templates.xml',
+=======
+@@ -21,7 +21,7 @@
+     'version': '0.1',
+
+     # any module necessary for this one to work correctly
+-    'depends': ['base'],
++    'depends': ['base', 'report'],
+
+     # always loaded
+     'data': [
+@@ -31,6 +31,7 @@
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
          'views/openacademy.xml',
          'views/partner.xml',
 +        'reports.xml',

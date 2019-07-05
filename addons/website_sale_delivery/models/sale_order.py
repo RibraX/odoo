@@ -26,7 +26,10 @@ class SaleOrder(models.Model):
     @api.depends('order_line.price_unit', 'order_line.tax_id', 'order_line.discount', 'order_line.product_uom_qty')
     def _compute_amount_delivery(self):
         for order in self:
-            order.amount_delivery = sum(order.order_line.filtered('is_delivery').mapped('price_subtotal'))
+            if self.env.user.has_group('sale.group_show_price_subtotal'):
+                order.amount_delivery = sum(order.order_line.filtered('is_delivery').mapped('price_subtotal'))
+            else:
+                order.amount_delivery = sum(order.order_line.filtered('is_delivery').mapped('price_total'))
 
     @api.depends('order_line.is_delivery')
     def _compute_has_delivery(self):
@@ -72,8 +75,56 @@ class SaleOrder(models.Model):
         return bool(carrier)
 
     def _get_delivery_methods(self):
+<<<<<<< HEAD
         address = self.partner_shipping_id
         return self.env['delivery.carrier'].sudo().search([('website_published', '=', True)]).available_carriers(address)
+=======
+        """Return the available and published delivery carriers"""
+        self.ensure_one()
+        available_carriers = DeliveryCarrier = self.env['delivery.carrier']
+        # Following loop is done to avoid displaying delivery methods who are not available for this order
+        # This can surely be done in a more efficient way, but at the moment, it mimics the way it's
+        # done in delivery_set method of sale.py, from delivery module
+        carrier_ids = DeliveryCarrier.sudo().search(
+            [('website_published', '=', True)]).ids
+        for carrier_id in carrier_ids:
+            carrier = DeliveryCarrier.browse(carrier_id)
+            try:
+                _logger.debug("Checking availability of carrier #%s" % carrier_id)
+                available = carrier.with_context(order_id=self.id).read(fields=['available'])[0]['available']
+                if available:
+                    available_carriers += carrier
+            except ValidationError as e:
+                # RIM TODO: hack to remove, make available field not depend on a SOAP call to external shipping provider
+                # The validation error is used in backend to display errors in fedex config, but should fail silently in frontend
+                _logger.debug("Carrier #%s removed from e-commerce carrier list. %s" % (carrier_id, e))
+        return available_carriers
+
+    @api.model
+    def _get_errors(self, order):
+        # Do not Forward port in v11.0 as the API was refactored by f9a8c53e485445bc8e3474eb3978b0f83d5645c7
+        has_stockable_products = any(order.order_line.filtered(lambda line: line.product_id.type in ['consu', 'product']))
+        errors = super(SaleOrder, self)._get_errors(order)
+        if not order._get_delivery_methods() and has_stockable_products:
+            errors.append(
+                (_('Sorry, we are unable to ship your order'),
+                 _('No shipping method is available for your current order and shipping address. '
+                   'Please contact us for more information.')))
+        return errors
+
+    @api.model
+    def _get_website_data(self, order):
+        """ Override to add delivery-related website data. """
+        values = super(SaleOrder, self)._get_website_data(order)
+        # We need a delivery only if we have stockable products
+        has_stockable_products = any(order.order_line.filtered(lambda line: line.product_id.type in ['consu', 'product']))
+        if not has_stockable_products:
+            return values
+
+        delivery_carriers = order._get_delivery_methods()
+        values['deliveries'] = delivery_carriers.sudo().with_context(order_id=order.id)
+        return values
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @api.multi
     def _cart_update(self, product_id=None, line_id=None, add_qty=0, set_qty=0, **kwargs):

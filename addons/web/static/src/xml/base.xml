@@ -794,9 +794,15 @@
     </div>
 </t>
 <t t-name="FieldMany2One">
+<<<<<<< HEAD
     <t t-if="widget.mode === 'readonly'">
         <a t-if="!widget.nodeOptions.no_open" class="o_form_uri" href="#"/>
         <span t-if="widget.nodeOptions.no_open"/>
+=======
+    <t t-if="widget.get('effective_readonly')">
+        <a t-if="!widget.options.no_open" t-att-tabindex="widget.node.attrs.tabindex" class="o_form_uri" href="#"/>
+        <span t-if="widget.options.no_open"/>
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     </t>
     <div t-if="widget.mode === 'edit'" class="o_field_widget o_field_many2one">
         <div class="o_input_dropdown">

@@ -133,12 +133,38 @@
         .o_td_label {
             border-right: 1px solid #ddd;
         }
+<<<<<<< HEAD
         .o_td_label + td {
             padding: 2px 36px 2px 8px;
         }
         .o_field_widget.o_text_overflow {
             width: 1px!important; // hack to make the table layout believe it is a small element (so that the table does not grow too much) ...
             min-width: 100%;      // ... but in fact it takes the whole table space
+=======
+    }
+
+    // All required form fields
+    .o-input-required-style() {
+        background-color: #D2D2FF;
+    }
+    .o_form_required {
+        &.o_form_input, .o_form_input, textarea.o_form_textarea {
+            .o-input-required-style();
+        }
+    }
+    textarea.o_form_textarea.o_form_required {
+        .o-input-required-style();
+    }
+
+    .o_form_field.o_form_field_many2one .o_external_button {
+        padding: 0;
+        margin-left: 2px;
+        font-size: 19px;
+        color: #7C7BAD;
+        border: none;
+        &:hover {
+            background-color: transparent;
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         }
     }
 

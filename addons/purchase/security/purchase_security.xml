@@ -51,6 +51,7 @@
         <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
     </record>
 
+<<<<<<< HEAD
     <record id="portal_purchase_order_user_rule" model="ir.rule">
         <field name="name">Portal Purchase Orders</field>
         <field name="model_id" ref="purchase.model_purchase_order"/>
@@ -68,5 +69,14 @@
         <field name="domain_force">[('order_id.message_partner_ids','child_of',[user.commercial_partner_id.id])]</field>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
     </record>
+=======
+    <record model="ir.rule" id="purchase_order_report_comp_rule">
+        <field name="name">Purchase Order Report multi-company</field>
+        <field name="model_id" ref="model_purchase_report"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 </data>
 </odoo>

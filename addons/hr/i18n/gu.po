@@ -1,27 +1,39 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * hr
-#
+# 
 # Translators:
+# Martin Trigaux, 2018
+# Turkesh Patel <turkesh4friends@gmail.com>, 2018
+# Dharmraj Jhala <dja@openerp.com>, 2018
+# Spellbound Soft Solutions <jeel.spellbound@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-20 10:36+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Gujarati (http://www.transifex.com/odoo/odoo-9/language/gu/)\n"
 "Language: gu\n"
+=======
+"POT-Creation-Date: 2016-10-10 08:43+0000\n"
+"PO-Revision-Date: 2016-10-10 08:43+0000\n"
+"Last-Translator: Spellbound Soft Solutions <jeel.spellbound@gmail.com>, 2018\n"
+"Language-Team: Gujarati (https://www.transifex.com/odoo/teams/41243/gu/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: gu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: hr
 #: code:addons/hr/hr.py:120
 #, python-format
 msgid "%s (copy)"
-msgstr "% s (નકલ)"
+msgstr "%s (નકલ)"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
@@ -64,8 +76,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
 msgid ""
 "<span class=\"o_unfollow\">Unfollow</span>\n"
-"                                    <span class=\"o_following\">Following</"
-"span>"
+"                                    <span class=\"o_following\">Following</span>"
 msgstr ""
 
 #. module: hr
@@ -76,7 +87,7 @@ msgstr ""
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
 msgid "<span>To Approve</span>"
-msgstr ""
+msgstr "મંજૂર"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
@@ -120,6 +131,15 @@ msgid "Analyse needs, write specification documents and quotation"
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:hr.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "વિશ્લેષણાત્મક ખાતું"
+
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_department_filter
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 msgid "Archived"
 msgstr ""
@@ -127,7 +147,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_bank_account_id
 msgid "Bank Account Number"
-msgstr ""
+msgstr "બેન્ક ખાતા નંબર"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_cto
@@ -146,8 +166,8 @@ msgstr ""
 #: model:hr.job,website_description:hr.job_marketing
 msgid ""
 "Because of our constant growth, we're now looking for people to reinforce "
-"our team of enthusiastic developers. So if working on an open source project "
-"in a friendly and cooperative atmosphere sounds like fun to you, read on..."
+"our team of enthusiastic developers. So if working on an open source project"
+" in a friendly and cooperative atmosphere sounds like fun to you, read on..."
 msgstr ""
 
 #. module: hr
@@ -161,7 +181,7 @@ msgstr ""
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Birth"
-msgstr ""
+msgstr "જન્મ"
 
 #. module: hr
 #: model:hr.job,name:hr.job_ceo
@@ -229,7 +249,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr.field_hr_employee_coach_id
 #: model:ir.ui.view,arch_db:hr.view_employee_filter
 msgid "Coach"
-msgstr ""
+msgstr "કોચ"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_code
@@ -290,7 +310,7 @@ msgstr "તમારા વિભાગો બનાવો"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_create_uid
 #: model:ir.model.fields,field_description:hr.field_hr_job_create_uid
 msgid "Created by"
-msgstr ""
+msgstr "બનાવનાર"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_create_date
@@ -303,7 +323,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_employee
 msgid "Current Number of Employees"
-msgstr ""
+msgstr "કર્મચારીઓની વર્તમાન સંખ્યા"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_birthday
@@ -355,7 +375,7 @@ msgstr "વિભાગો"
 #: model:ir.model.fields,field_description:hr.field_hr_employee_display_name
 #: model:ir.model.fields,field_description:hr.field_hr_job_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "પ્રદર્શન નામ"
 
 #. module: hr
 #: selection:hr.employee,marital:0
@@ -368,6 +388,19 @@ msgid "Efficiency Factor"
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:hr.model_mail_alias
+msgid "Email Aliases"
+msgstr "ઇમેઇલ ઉપનામ"
+
+#. module: hr
+#: model:ir.model,name:hr.model_mail_thread
+msgid "Email Thread"
+msgstr ""
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:hr.model_hr_employee
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Employee"
@@ -376,7 +409,7 @@ msgstr "કર્મચારી"
 #. module: hr
 #: model:ir.model,name:hr.model_hr_employee_category
 msgid "Employee Category"
-msgstr ""
+msgstr "કર્મચારીનું કેટેગરી"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_category_name
@@ -393,7 +426,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_bank_account_id
 msgid "Employee bank salary account"
-msgstr ""
+msgstr "કર્મચારી બેંક પગાર એકાઉન્ટ"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -418,7 +451,7 @@ msgstr "કર્મચારીઓ"
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_employee_tree
 msgid "Employees Structure"
-msgstr ""
+msgstr "કર્મચારી માળખું"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_category_list
@@ -438,15 +471,23 @@ msgid "Error! You cannot create recursive hierarchy of Employee(s)."
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:hr.model_event_event
+msgid "Event"
+msgstr "ઘટના"
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr.field_hr_job_no_of_recruitment
 msgid "Expected New Employees"
-msgstr ""
+msgstr "અપેક્ષિત ન્યૂ કર્મચારીઓ"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job_expected_employees
 msgid ""
 "Expected number of employees for this job position after new recruitment."
-msgstr ""
+msgstr "નવા ભરતી પછી આ નોકરીની સ્થિતિ માટે કર્મચારીઓની અપેક્ષિત સંખ્યા."
 
 #. module: hr
 #: model:hr.job,name:hr.job_developer
@@ -461,7 +502,7 @@ msgstr "સ્ત્રી"
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
 msgid "Follow"
-msgstr ""
+msgstr "અનુસરો"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_consultant
@@ -471,7 +512,7 @@ msgstr ""
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_kanban_view_employees
 msgid "Followers"
-msgstr ""
+msgstr "અનુયાયીઓ"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_gender
@@ -572,7 +613,7 @@ msgstr "માનવ સંશાધન"
 #. module: hr
 #: model:hr.job,name:hr.job_hrm
 msgid "Human Resources Manager"
-msgstr ""
+msgstr "માનવ સંશાધન અધિકારી"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_id
@@ -593,6 +634,8 @@ msgid ""
 "If the active field is set to False, it will allow you to hide the resource "
 "record without removing it."
 msgstr ""
+"જો સક્રિય ફીલ્ડ ફોલ્સ પર સેટ કરેલી છે, તો તે તમને તેને દૂર કર્યા વગર સ્રોત "
+"રેકોર્ડને છુપાવવા માટે પરવાનગી આપશે."
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
@@ -658,16 +701,14 @@ msgstr ""
 #: model:ir.ui.menu,name:hr.menu_hr_job_position
 #: model:ir.ui.menu,name:hr.menu_hr_job_position_config
 msgid "Job Positions"
-msgstr ""
+msgstr "નોક્રી સ્થિતિ"
 
 #. module: hr
 #: model:ir.actions.act_window,help:hr.action_hr_job
 msgid ""
 "Job Positions are used to define jobs and their requirements.\n"
-"                You can keep track of the number of employees you have per "
-"job\n"
-"                position and follow the evolution according to what you "
-"planned\n"
+"                You can keep track of the number of employees you have per job\n"
+"                position and follow the evolution according to what you planned\n"
 "                for the future."
 msgstr ""
 
@@ -773,7 +814,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_image_medium
 msgid "Medium-sized photo"
-msgstr ""
+msgstr "મધ્યમ કદના ફોટો"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee_image_medium
@@ -833,6 +874,14 @@ msgid "Nice to have"
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: selection:hr.job,state:0
+msgid "Not Recruiting"
+msgstr "ભરતી નથી"
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr.field_hr_department_note
 msgid "Note"
 msgstr "નોંધ"
@@ -856,7 +905,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job_no_of_recruitment
 msgid "Number of new employees you expect to recruit."
-msgstr ""
+msgstr "નવા કર્મચારીઓની સંખ્યા કે જે તમે ભરતી કરવાની અપેક્ષા રાખે છે."
 
 #. module: hr
 #: model:ir.actions.act_window,help:hr.open_module_tree_department
@@ -867,9 +916,17 @@ msgid ""
 msgstr ""
 
 #. module: hr
+<<<<<<< HEAD
+=======
+#: model:res.groups,name:hr.group_hr_user
+msgid "Officer"
+msgstr "અધિકારી"
+
+#. module: hr
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: selection:hr.employee,gender:0
 msgid "Other"
-msgstr ""
+msgstr "અન્ય"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -890,12 +947,12 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department_parent_id
 msgid "Parent Department"
-msgstr ""
+msgstr "પિતૃ વિભાગ"
 
 #. module: hr
 #: model:ir.model,name:hr.model_res_partner
 msgid "Partner"
-msgstr ""
+msgstr "ભાગીદાર"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_developer
@@ -905,7 +962,7 @@ msgstr ""
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_passport_id
 msgid "Passport No"
-msgstr ""
+msgstr "પાસપોર્ટ નંબર"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
@@ -915,7 +972,7 @@ msgstr "અંગત માહિતી"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_image
 msgid "Photo"
-msgstr ""
+msgstr "ફોટો"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
@@ -1053,7 +1110,7 @@ msgstr "અપરિણીત"
 #: model:hr.job,website_description:hr.job_marketing
 #: model:hr.job,website_description:hr.job_trainee
 msgid "Skills"
-msgstr ""
+msgstr "કુશળતાઓ"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_image_small
@@ -1064,8 +1121,8 @@ msgstr ""
 #: model:ir.model.fields,help:hr.field_hr_employee_image_small
 msgid ""
 "Small-sized photo of the employee. It is automatically resized as a 64x64px "
-"image, with aspect ratio preserved. Use this field anywhere a small image is "
-"required."
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
 msgstr ""
 
 #. module: hr
@@ -1130,8 +1187,8 @@ msgstr ""
 msgid ""
 "This field depict the efficiency of the resource to complete tasks. e.g  "
 "resource put alone on a phase of 5 days with 5 tasks assigned to him, will "
-"show a load of 100% for this phase by default, but if we put a efficiency of "
-"200%, then his load will only be 50%."
+"show a load of 100% for this phase by default, but if we put a efficiency of"
+" 200%, then his load will only be 50%."
 msgstr ""
 
 #. module: hr
@@ -1177,12 +1234,12 @@ msgstr "વપરાશકર્તાઓ"
 #. module: hr
 #: model:hr.job,website_description:hr.job_consultant
 msgid ""
-"We are looking for a motivated and results-driven Functional Consultant! You "
-"will take part in the consulting services we provide to our partners and "
+"We are looking for a motivated and results-driven Functional Consultant! You"
+" will take part in the consulting services we provide to our partners and "
 "customers, on the functional side. Your job start from the quotation to the "
-"customer to the delivery to the customer. You listen the customer and try to "
-"give him the best service. You report to the head of consulting service and "
-"will be coached by a senior consultant."
+"customer to the delivery to the customer. You listen the customer and try to"
+" give him the best service. You report to the head of consulting service and"
+" will be coached by a senior consultant."
 msgstr ""
 
 #. module: hr
@@ -1190,23 +1247,24 @@ msgstr ""
 msgid ""
 "We are looking for a passionated Human Resources Manager to help us make "
 "products people love to use. We need someone who is ambitious, passionated, "
-"and ..... not afraid to start new things, a lot of new things and scale them."
+"and ..... not afraid to start new things, a lot of new things and scale "
+"them."
 msgstr ""
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_ceo
 msgid ""
 "We are looking for a passionated executive manager to help us make products "
-"people love to use. We need someone who is ambitious, passionated, and ..... "
-"not afraid to start new things, a lot of new things and scale them."
+"people love to use. We need someone who is ambitious, passionated, and ....."
+" not afraid to start new things, a lot of new things and scale them."
 msgstr ""
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_marketing
 msgid ""
 "We are looking for a passionated marketer manager to help us make products "
-"people love to use. We need someone who is ambitious, passionated, and ..... "
-"not afraid to start new things, a lot of new things and scale them."
+"people love to use. We need someone who is ambitious, passionated, and ....."
+" not afraid to start new things, a lot of new things and scale them."
 msgstr ""
 
 #. module: hr
@@ -1246,8 +1304,7 @@ msgstr ""
 #: model:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
 "With just a quick glance on the Odoo employee screen, you\n"
-"                can easily find all the information you need for each "
-"person;\n"
+"                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
 
@@ -1298,7 +1355,7 @@ msgstr ""
 #. module: hr
 #: model:hr.job,website_description:hr.job_marketing
 msgid "Write attractive content"
-msgstr ""
+msgstr "મનમોહક વિષય લખાણ લખો"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_hrm
@@ -1313,7 +1370,7 @@ msgstr ""
 #. module: hr
 #: model:hr.job,website_description:hr.job_consultant
 msgid "You are a quick and autonomous learner"
-msgstr ""
+msgstr "તમે ઝડપી અને જાતે શીખનાર છો"
 
 #. module: hr
 #: model:hr.job,website_description:hr.job_consultant
@@ -1355,8 +1412,7 @@ msgstr ""
 #: model:ir.actions.act_window,help:hr.action_hr_job
 msgid ""
 "You can attach a survey to a job position. It will be used in\n"
-"                the recruitment process to evaluate the applicants for this "
-"job\n"
+"                the recruitment process to evaluate the applicants for this job\n"
 "                position."
 msgstr ""
 
@@ -1404,8 +1460,8 @@ msgstr ""
 msgid ""
 "You will be responsible for developing and improving applications. You will "
 "work autonomously as well as                     coordinate and supervise "
-"small distributed development teams for specific projects. You will become a "
-"technical                 expert of the product."
+"small distributed development teams for specific projects. You will become a"
+" technical                 expert of the product."
 msgstr ""
 
 #. module: hr
@@ -1484,12 +1540,37 @@ msgstr ""
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_department_form
 msgid "department"
-msgstr ""
+msgstr "વિભાગ"
 
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "e.g. Part Time"
 msgstr ""
 
+<<<<<<< HEAD
 #~ msgid "Update Date"
 #~ msgstr "અદ્યતન(અપડેટ) તારીખ"
+=======
+#. module: hr
+#: model:ir.ui.view,arch_db:hr.view_hr_job_form
+msgid "e.g. Sales Manager"
+msgstr ""
+
+#. module: hr
+#: code:addons/hr/models/mail_thread.py:41
+#, python-format
+msgid "skipping"
+msgstr ""
+
+#. module: hr
+#: model:res.groups,comment:hr.group_hr_user
+msgid "the user will be able to approve document created by employees."
+msgstr ""
+
+#. module: hr
+#: model:res.groups,comment:hr.group_hr_manager
+msgid ""
+"the user will have an access to the human resources configuration as well as"
+" statistic reports."
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

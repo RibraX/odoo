@@ -63,7 +63,12 @@ class Shell(Command):
 
     def console(self, local_vars):
         if not os.isatty(sys.stdin.fileno()):
+<<<<<<< HEAD
             exec(sys.stdin.read(), local_vars)
+=======
+            local_vars['__name__'] = '__main__'
+            exec sys.stdin in local_vars
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         else:
             if 'env' not in local_vars:
                 print('No environment set, use `%s shell -d dbname` to get one.' % sys.argv[0])

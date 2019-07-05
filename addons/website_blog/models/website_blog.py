@@ -151,7 +151,7 @@ class BlogPost(models.Model):
     write_date = fields.Datetime('Last Modified on', index=True, readonly=True)
     write_uid = fields.Many2one('res.users', 'Last Contributor', index=True, readonly=True)
     author_avatar = fields.Binary(related='author_id.image_small', string="Avatar")
-    visits = fields.Integer('No of Views')
+    visits = fields.Integer('No of Views', copy=False)
     ranking = fields.Float(compute='_compute_ranking', string='Ranking')
 
     @api.multi
@@ -162,10 +162,14 @@ class BlogPost(models.Model):
                 blog_post.teaser = blog_post.teaser_manual
             else:
                 content = html2plaintext(blog_post.content).replace('\n', ' ')
+<<<<<<< HEAD
                 blog_post.teaser = ' '.join(itertools.islice(
                     (c for c in content.split(' ') if c),
                     50
                 )) + '...'
+=======
+                blog_post.teaser = content[:150] + '...'
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @api.multi
     def _set_teaser(self):
@@ -207,11 +211,20 @@ class BlogPost(models.Model):
 
     @api.multi
     def write(self, vals):
+<<<<<<< HEAD
         self.ensure_one()
         if 'website_published' in vals and 'published_date' not in vals:
             if (self.published_date or '') <= fields.Datetime.now():
                 vals['published_date'] = vals['website_published'] and fields.Datetime.now()
         result = super(BlogPost, self).write(vals)
+=======
+        result = True
+        for post in self:
+            copy_vals = dict(vals)
+            if 'website_published' in vals and 'published_date' not in vals and post.published_date <= fields.Datetime.now():
+                copy_vals['published_date'] = vals['website_published'] and fields.Datetime.now() or False
+            result &= super(BlogPost, self).write(copy_vals)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         self._check_for_publication(vals)
         return result
 

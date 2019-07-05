@@ -45,7 +45,11 @@ On Linux, using an installer
 
   .. code-block:: console
 
+<<<<<<< HEAD
     $ python3 /usr/bin/odoo.py -d <database_name> -i web_enterprise --stop-after-init
+=======
+    $ python /usr/bin/odoo-bin -d <database_name> -i web_enterprise --stop-after-init
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 * You should be able to connect to your Odoo Enterprise instance using your usual mean of identification.
   You can then link your database with your Odoo Enterprise Subscription by entering the code you received

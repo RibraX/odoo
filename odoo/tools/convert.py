@@ -179,16 +179,25 @@ def _eval_xml(self, node, env):
             return res
     elif node.tag == "function":
         args = []
+<<<<<<< HEAD
         a_eval = node.get('eval')
+=======
+        a_eval = node.get('eval','')
+        model_str = node.get('model', '')
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         # FIXME: should probably be exclusive
         if a_eval:
-            self.idref['ref'] = self.id_get
-            args = safe_eval(a_eval, self.idref)
+            idref2 = _get_idref(self, env, model_str, self.idref)
+            args = safe_eval(a_eval, idref2)
         for n in node:
             return_val = _eval_xml(self, n, env)
             if return_val is not None:
                 args.append(return_val)
+<<<<<<< HEAD
         model = env[node.get('model')]
+=======
+        model = env[model_str]
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         method = node.get('name')
         # this one still depends on the old API
         return odoo.api.call_kw(model, method, args, {})

@@ -3,15 +3,34 @@
 # * payment
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# oihane <oihanecruce@gmail.com>, 2017
+# Esther Martín Menéndez <esthermartin001@gmail.com>, 2017
+# ibinka lete <ilete@fpbidasoa.net>, 2017
+# Martin Trigaux, 2017
+# Gorka Toledo <gorka.toledo@gmail.com>, 2017
+# Ainara Galdona Usatorre <ainaragaldona@avanzosc.es>, 2017
+# Eneko <eastigarraga@codesyntax.com>, 2018
+# Mikel Lizarralde <mikellizarralde@gmail.com>, 2018
+# Naomi Hidalgo <naomihid96@gmail.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-12 10:24+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Basque (http://www.transifex.com/odoo/odoo-9/language/eu/)\n"
 "Language: eu\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Naomi Hidalgo <naomihid96@gmail.com>, 2018\n"
+"Language-Team: Basque (https://www.transifex.com/odoo/teams/41243/eu/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -109,7 +128,7 @@ msgstr "Gaituta"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_fees_active
 msgid "Add Extra Fees"
-msgstr ""
+msgstr "Ordainsari berriak gehitu"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_address
@@ -123,6 +142,14 @@ msgid "Adyen"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
+=======
+#: selection:payment.acquirer,save_token:0
+msgid "Always"
+msgstr "Beti"
+
+#. module: payment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_amount
 #: model:ir.model.fields,help:payment.field_payment_transaction_amount
 msgid "Amount"
@@ -144,7 +171,17 @@ msgid "Authorize.Net"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:payment.field_account_config_settings_module_payment_buckaroo
+=======
+#: selection:payment.transaction,state:0
+msgid "Authorized"
+msgstr "Baimendua"
+
+#. module: payment
+#: model:payment.acquirer,name:payment.payment_acquirer_buckaroo
+#: selection:payment.acquirer,provider:0
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Buckaroo"
 msgstr ""
 
@@ -156,7 +193,7 @@ msgstr ""
 #. module: payment
 #: selection:payment.transaction,state:0
 msgid "Canceled"
-msgstr ""
+msgstr "Baliogabetua "
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_city
@@ -180,9 +217,21 @@ msgid "Configure payment acquiring methods"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:payment.field_res_partner_payment_method_count
 msgid "Count Payment Method"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment.field_payment_acquirer_module_id
+msgid "Corresponding Module"
+msgstr ""
+
+#. module: payment
+#: model:ir.model.fields,field_description:payment.field_res_partner_payment_token_count
+#: model:ir.model.fields,field_description:payment.field_res_users_payment_token_count
+msgid "Count Payment Token"
+msgstr "Ordainketa kontuaren fitxa"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_country_id
@@ -224,6 +273,14 @@ msgid "Currency"
 msgstr "Moneta"
 
 #. module: payment
+<<<<<<< HEAD
+=======
+#: model:payment.acquirer,name:payment.payment_acquirer_custom
+msgid "Custom"
+msgstr "Pertsonalizatu"
+
+#. module: payment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:payment.transaction_form
 msgid "Customer Details"
 msgstr ""
@@ -258,7 +315,7 @@ msgstr "Zirriborroa"
 #. module: payment
 #: model:ir.ui.view,arch_db:payment.transaction_form
 msgid "E-mail"
-msgstr ""
+msgstr "E-posta"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_email
@@ -268,7 +325,7 @@ msgstr "Emaila"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_environment
 msgid "Environment"
-msgstr ""
+msgstr "Ingurumena"
 
 #. module: payment
 #: selection:payment.transaction,state:0
@@ -278,7 +335,7 @@ msgstr "Errorea!"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_error_msg
 msgid "Error Message"
-msgstr ""
+msgstr "Errorea mezuan"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_fees
@@ -357,7 +414,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment.field_payment_method___last_update
 #: model:ir.model.fields,field_description:payment.field_payment_transaction___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Azken aldaketa"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_write_uid
@@ -474,7 +531,7 @@ msgstr "Kidea"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_name
 msgid "Partner Name"
-msgstr ""
+msgstr "Kidearen izena"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_acquirer
@@ -490,6 +547,7 @@ msgid "Payment Acquirers"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_payment_method_id
 msgid "Payment Method"
 msgstr ""
@@ -501,11 +559,30 @@ msgstr ""
 #: model:ir.ui.view,arch_db:payment.payment_method_view_search
 msgid "Payment Methods"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:payment.field_payment_acquirer_journal_id
+msgid "Payment Journal"
+msgstr "Ordainketa Egunkaria"
+
+#. module: payment
+#: model:ir.model.fields,field_description:payment.field_payment_transaction_payment_token_id
+msgid "Payment Token"
+msgstr ""
+
+#. module: payment
+#: model:ir.model.fields,field_description:payment.field_res_partner_payment_token_ids
+#: model:ir.model.fields,field_description:payment.field_res_users_payment_token_ids
+#: model:ir.ui.view,arch_db:payment.payment_token_form_view
+#: model:ir.ui.view,arch_db:payment.payment_token_tree_view
+#: model:ir.ui.view,arch_db:payment.payment_token_view_search
+msgid "Payment Tokens"
+msgstr "Ordainketa fitxa"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_transaction
 msgid "Payment Transaction"
-msgstr ""
+msgstr "Ordainketa transakzioa"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_transaction
@@ -519,6 +596,16 @@ msgid "Payment Transactions"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
+=======
+#: code:addons/payment/models/account_payment.py:60
+#, python-format
+msgid "Payment transaction failed (%s)"
+msgstr "Ordainketa transakzioa huts egin du (%s)"
+
+#. module: payment
+#: model:ir.model,name:payment.model_account_payment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:payment.root_payment_menu
 #: model:ir.ui.view,arch_db:payment.acquirer_form
 #: model:ir.ui.view,arch_db:payment.payment_method_form_view
@@ -554,7 +641,7 @@ msgstr "Produkzioa"
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_provider
 #: model:ir.ui.view,arch_db:payment.acquirer_search
 msgid "Provider"
-msgstr ""
+msgstr "Hornitzailea "
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_reference
@@ -605,7 +692,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_image_small
 msgid "Small-sized image"
-msgstr ""
+msgstr "Tamaina txikiko irudia "
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_image_small
@@ -628,7 +715,7 @@ msgstr ""
 #. module: payment
 #: selection:payment.acquirer,environment:0
 msgid "Test"
-msgstr ""
+msgstr "Proba"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_post_msg

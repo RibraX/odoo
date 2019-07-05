@@ -3,6 +3,7 @@
 # * account_bank_statement_import
 # 
 # Translators:
+<<<<<<< HEAD
 # Bonny Useful <bonny.useful@gmail.com>, 2017
 # Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017
 # Febrasari Almania <febrasari.almania@gmail.com>, 2017
@@ -13,13 +14,34 @@
 # Azhe 403 <azhe403@gmail.com>, 2017
 # Yani Dama Putera <yanidp@gmail.com>, 2017
 # Rizki Mudhar <mudharrizki@gmail.com>, 2017
+=======
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Febrasari Almania <febrasari.almania@gmail.com>, 2016
+# Yani Dama Putera <yanidp@gmail.com>, 2016
+# William Surya Permana <zarambie_game@yahoo.com>, 2016
+# Lorenz Damara <lorenzrenz@gmail.com>, 2016
+# Andhitia Rama <andhitia.r@gmail.com>, 2016
+# Deddy Ddr <deddy.ddr@gmail.com>, 2016
+# Rizki Mudhar <mudharrizki@gmail.com>, 2017
+# Bonny Useful <bonny.useful@gmail.com>, 2017
+# Ryanto The <ry.the77@gmail.com>, 2017
+# Gusti Rini <gustirini@gmail.com>, 2017
+# Ikhsanul Wirsa <iwirsa02@outlook.co.id>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:53+0000\n"
 "PO-Revision-Date: 2017-09-20 09:53+0000\n"
 "Last-Translator: Rizki Mudhar <mudharrizki@gmail.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 08:56+0000\n"
+"Last-Translator: Ikhsanul Wirsa <iwirsa02@outlook.co.id>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,12 +59,12 @@ msgstr "%d transaksi sudah diimpor dan diabaikan."
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:241
 #, python-format
 msgid "1 transaction had already been imported and was ignored."
-msgstr ""
+msgstr "1 transaksi sudah diimpor dan diabaikan"
 
 #. module: account_bank_statement_import
 #: sql_constraint:account.bank.statement.line:0
 msgid "A bank account transactions can be imported only once !"
-msgstr ""
+msgstr "Sebuah transaksi akun bank hanya dapat diimpor sekali saja!"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_bank_acc_number
@@ -73,7 +95,7 @@ msgstr "Memungkinkan membatalkan entri"
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:243
 #, python-format
 msgid "Already imported items"
-msgstr ""
+msgstr "Barang yang sudah diimpor"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_at_least_one_inbound
@@ -105,12 +127,12 @@ msgstr "Bank feed"
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
 msgid "Bank Journal Name"
-msgstr ""
+msgstr "Nama jurnal bank"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_data_file
 msgid "Bank Statement File"
-msgstr ""
+msgstr "Arsip Buku Bank"
 
 #. module: account_bank_statement_import
 #: model:ir.model,name:account_bank_statement_import.model_account_bank_statement_line
@@ -140,6 +162,8 @@ msgid ""
 "Cannot find in which journal import this statement. Please manually select a"
 " journal."
 msgstr ""
+"Tidak dapat menemukan dari jurnal mana laporan ini diimpor. Mohon pilih "
+"jurnal secara manual."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation_refund_sequence
@@ -160,7 +184,7 @@ msgstr ""
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 msgid "Choose a file to import..."
-msgstr ""
+msgstr "Pilih file yang akan diimpor"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_color
@@ -184,6 +208,8 @@ msgid ""
 "Could not make sense of the given file.\n"
 "Did you install the module to support this type of file ?"
 msgstr ""
+"File yang diberikan tidak dapat dimengerti. Apakah Anda memasang modul untuk"
+" mendukung jenis file ini."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_create_uid
@@ -244,6 +270,7 @@ msgid ""
 "Download a bank statement from your bank and import it here. Supported "
 "formats:"
 msgstr ""
+"Unduh transaksi rekening bank anda dan impor di sini. Format yang didukung:"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_sequence_id
@@ -253,7 +280,7 @@ msgstr "Urutan Masukan"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_filename
 msgid "Filename"
-msgstr ""
+msgstr "Nama file"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_data_file
@@ -261,6 +288,8 @@ msgid ""
 "Get you bank statements in electronic format from your bank and select them "
 "here."
 msgstr ""
+"Mintalah rekening koran dalam format elektronik dari bank Anda dan pilih "
+"berkas tersebut disini."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_group_invoice_lines
@@ -295,22 +324,22 @@ msgstr "Memasukan Rekening Koran"
 #. module: account_bank_statement_import
 #: model:ir.model,name:account_bank_statement_import.model_account_bank_statement_import_journal_creation
 msgid "Import Bank Statement Journal Creation Wizard"
-msgstr ""
+msgstr "Impor Wizard Pembuatan Jurnal Rekening Koran"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 msgid "Import Bank Statements"
-msgstr ""
+msgstr "Impor Rekening Koran"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_line_unique_import_id
 msgid "Import ID"
-msgstr ""
+msgstr "Impor ID"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.journal_dashboard_view_inherit
 msgid "Import Statement"
-msgstr ""
+msgstr "Impor Laporan"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation_default_credit_account_id
@@ -333,7 +362,7 @@ msgstr "Jurnal"
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
 #, python-format
 msgid "Journal Creation"
-msgstr ""
+msgstr "Pembuatan Jurnal"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_name
@@ -346,6 +375,8 @@ msgid ""
 "Just click OK to create the account/journal and finish the import. If this "
 "was a mistake, hit cancel to abort the import."
 msgstr ""
+"Klik OK untuk membuat rekening/jurnal dan selesaikan impor. Jika ada "
+"kesalahan, tekan batal untuk membatalkan impor."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_kanban_dashboard
@@ -405,7 +436,7 @@ msgstr "Jumlah Berikutnya"
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:138
 #, python-format
 msgid "No currency found matching '%s'."
-msgstr ""
+msgstr "Tidak ada mata uang yang cocok '%s'."
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
@@ -430,11 +461,16 @@ msgid ""
 "Select 'Cash' or 'Bank' for journals that are used in customer or vendor payments.\n"
 "Select 'General' for miscellaneous operations journals."
 msgstr ""
+"Pilih 'Penjualan' untuk jurnal faktur pelanggan.\n"
+"Pilih 'Pembelian' untuk jurnal tagihan pemasok.\n"
+"Pilih 'Kas' atau 'Bank' untuk jurnal yang digunakan dalam pembayaran pelanggan atau pemasok.\n"
+"Pilih 'Umum' untuk jurnal operasi lainnya.\n"
+"Pilih 'Situasi pembukaan/penutupan' untuk entri yang dihasilkan untuk tahun fiskal baru."
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 msgid "Select a bank statement file to import"
-msgstr ""
+msgstr "Pilih berkas rekening koran untuk diimpor"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_sequence
@@ -468,6 +504,8 @@ msgid ""
 "In order to proceed with the import, you need to create a bank journal for "
 "this account."
 msgstr ""
+"Rekening dari laporan yang Anda impor belum direkam dalam Odoo. Untuk "
+"memproses impor, Anda perlu membuat jurnal bank untuk rekening ini."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:153
@@ -475,6 +513,7 @@ msgstr ""
 msgid ""
 "The account of this statement (%s) is not the same as the journal (%s)."
 msgstr ""
+"Rekening dari laporan ini (%s) tidak sama dengan yang ada di jurnal (%s)."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:163
@@ -483,6 +522,7 @@ msgid ""
 "The currency of the bank statement (%s) is not the same as the currency of "
 "the journal (%s) !"
 msgstr ""
+"Mata uang rekening koran Anda (%s) tidak sama dengan mata uang jurnal (%s) !"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation_currency_id
@@ -524,13 +564,13 @@ msgstr ""
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:113
 #, python-format
 msgid "This file doesn't contain any statement."
-msgstr ""
+msgstr "Berkas ini tidak berisi laporan apapun."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:121
 #, python-format
 msgid "This file doesn't contain any transaction."
-msgstr ""
+msgstr "Berkas ini tidak berisi transaksi apapun."
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_type
@@ -569,7 +609,7 @@ msgstr "Apakah jurnal ini harus ditampilkan di dasbor atau tidak"
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:233
 #, python-format
 msgid "You have already imported that file."
-msgstr ""
+msgstr "Anda telah mengimpor berkas ini."
 
 #. module: account_bank_statement_import
 #: code:addons/account_bank_statement_import/account_bank_statement_import.py:47
@@ -578,6 +618,8 @@ msgid ""
 "You have to set a Default Debit Account and a Default Credit Account for the"
 " journal: %s"
 msgstr ""
+"Anda harus menentukan Rekening Debit Default dan Rekening Kredit Default "
+"untuk jurnal: %s"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view

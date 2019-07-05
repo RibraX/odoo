@@ -123,7 +123,11 @@ class IntegerConverter(models.AbstractModel):
 
     @api.model
     def value_to_html(self, value, options):
+<<<<<<< HEAD
         return pycompat.to_text(self.user_lang().format('%d', value, grouping=True).replace(r'-', u'\u2011'))
+=======
+        return unicodifier(self.user_lang().format('%d', value, grouping=True).replace(r'-', u'-\N{ZERO WIDTH NO-BREAK SPACE}'))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 
 class FloatConverter(models.AbstractModel):
@@ -143,7 +147,7 @@ class FloatConverter(models.AbstractModel):
             value = float_utils.float_round(value, precision_digits=precision)
             fmt = '%.{precision}f'.format(precision=precision)
 
-        formatted = self.user_lang().format(fmt, value, grouping=True).replace(r'-', u'\u2011')
+        formatted = self.user_lang().format(fmt, value, grouping=True).replace(r'-', u'-\N{ZERO WIDTH NO-BREAK SPACE}')
 
         # %f does not strip trailing zeroes. %g does but its precision causes
         # it to switch to scientific notation starting at a million *and* to
@@ -168,7 +172,29 @@ class DateConverter(models.AbstractModel):
 
     @api.model
     def value_to_html(self, value, options):
+<<<<<<< HEAD
         return format_date(self.env, value, date_format=(options or {}).get('format'))
+=======
+        if not value or len(value) < 10:
+            return ''
+        lang = self.user_lang()
+        locale = babel.Locale.parse(lang.code)
+
+        if isinstance(value, basestring):
+            if len(value) > 10:  # datetime to be displayed as date
+                value = fields.Datetime.from_string(value)
+                value = fields.Datetime.context_timestamp(self, value)
+            else:
+                value = fields.Datetime.from_string(value)
+
+        if options and 'format' in options:
+            pattern = options['format']
+        else:
+            strftime_pattern = lang.date_format
+            pattern = posix_to_ldml(strftime_pattern, locale=locale)
+
+        return babel.dates.format_date(value, format=pattern, locale=locale)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 
 class DateTimeConverter(models.AbstractModel):
@@ -313,7 +339,7 @@ class MonetaryConverter(models.AbstractModel):
 
         lang = self.user_lang()
         formatted_amount = lang.format(fmt, display_currency.round(value),
-                                grouping=True, monetary=True).replace(r' ', u'\N{NO-BREAK SPACE}').replace(r'-', u'\u2011')
+                                grouping=True, monetary=True).replace(r' ', u'\N{NO-BREAK SPACE}').replace(r'-', u'-\N{ZERO WIDTH NO-BREAK SPACE}')
 
         pre = post = u''
         if display_currency.position == 'before':

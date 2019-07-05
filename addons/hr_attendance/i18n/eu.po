@@ -3,16 +3,33 @@
 # * hr_attendance
 #
 # Translators:
+<<<<<<< HEAD
 # ibinka lete <ilete@fpbidasoa.net>, 2016
+=======
+# oihane <oihanecruce@gmail.com>, 2017
+# Martin Trigaux, 2017
+# ibinka lete <ilete@fpbidasoa.net>, 2017
+# Esther Martín Menéndez <esthermartin001@gmail.com>, 2017
+# Eneko <eastigarraga@codesyntax.com>, 2018
+# Mikel Lizarralde <mikellizarralde@gmail.com>, 2018
+# Naomi Hidalgo <naomihid96@gmail.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-09 16:38+0000\n"
 "Last-Translator: ibinka lete <ilete@fpbidasoa.net>\n"
 "Language-Team: Basque (http://www.transifex.com/odoo/odoo-9/language/eu/)\n"
 "Language: eu\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:53+0000\n"
+"PO-Revision-Date: 2016-11-14 15:53+0000\n"
+"Last-Translator: Naomi Hidalgo <naomihid96@gmail.com>, 2018\n"
+"Language-Team: Basque (https://www.transifex.com/odoo/teams/41243/eu/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -49,9 +66,24 @@ msgid "Action Reason"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_action_reason_action_type
 msgid "Action Type"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Apply"
+msgstr "Aplikatu"
+
+#. module: hr_attendance
+#: model:ir.actions.client,name:hr_attendance.hr_attendance_action_my_attendances
+#: model:ir.model,name:hr_attendance.model_hr_attendance
+#: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_attendance_state
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_graph
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_pivot
+msgid "Attendance"
+msgstr "Bertaraturikoak"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_attendance_error_max_delay
@@ -75,9 +107,19 @@ msgid "Attendance"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_attendance_access
 msgid "Attendance Access"
 msgstr ""
+=======
+#: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action
+#: model:ir.actions.client,name:hr_attendance.hr_attendance_action_kiosk_mode
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_root
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_attendances
+#: model:ir.ui.view,arch_db:hr_attendance.hr_department_view_kanban
+msgid "Attendances"
+msgstr "Bertaraturikoak"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.action_hr_attendance_graph
@@ -211,8 +253,106 @@ msgid "Employee attendances"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_error_end_date
 msgid "Ending Date"
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_kanban_inherit_hr_attendance
+msgid "Employee's Name"
+msgstr "Langilearen izena "
+
+#. module: hr_attendance
+#: model:ir.actions.act_window,name:hr_attendance.hr_employee_attendance_action_kanban
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_employees_kanban
+msgid "Employees"
+msgstr "Langileak"
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid ""
+"Employees do not need to enter their PIN to check in manually in the \"Kiosk"
+" Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid "Employees must enter their PIN to check in manually in the \"Kiosk Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: model:res.groups,name:hr_attendance.group_hr_attendance_use_pin
+msgid "Enable PIN use"
+msgstr ""
+
+#. module: hr_attendance
+#: model:ir.model.fields,help:hr_attendance.field_base_config_settings_group_attendance_use_pin
+msgid "Enable or disable employee PIN identification at check in"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/my_attendances.js:29
+#, python-format
+msgid "Error : Could not find employee linked to user"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:35
+#, python-format
+msgid "Error : Could not find employee linked to user."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:81
+#, python-format
+msgid "Error: could not find corresponding employee."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:70
+#, python-format
+msgid "First come, first served"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:85
+#, python-format
+msgid "Glad to have you back, it's been a while!"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:76
+#, python-format
+msgid "Good afternoon"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:78
+#, python-format
+msgid "Good evening"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:73
+#, python-format
+msgid "Good morning"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:64
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:80
+#, python-format
+msgid "Good night"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_attendance
@@ -247,9 +387,15 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_last_sign
 msgid "Last Sign"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance___last_update
+msgid "Last Modified on"
+msgstr "Azken aldaketa"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_action_reason_write_uid
@@ -278,9 +424,20 @@ msgid "Maximum Tolerance (in minutes)"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_attendance.report_attendanceerrors
 msgid "Min Delay"
 msgstr ""
+=======
+#: model:res.groups,name:hr_attendance.group_hr_attendance_manager
+msgid "Manager"
+msgstr "Gerentea"
+
+#. module: hr_attendance
+#: model:ir.model.fields,field_description:hr_attendance.field_hr_employee_manual_attendance
+msgid "Manual Attendance"
+msgstr "Eskuzko asistentzia "
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
@@ -348,9 +505,15 @@ msgid "Sign Out"
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: selection:hr.action.reason,action_type:0
 msgid "Sign in"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_config
+msgid "Settings"
+msgstr "Ezarpenak"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: selection:hr.action.reason,action_type:0
@@ -383,7 +546,36 @@ msgstr ""
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
 msgid "Today"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Gaur"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:102
+#, python-format
+msgid ""
+"Warning! Last check in was over 12 hours ago.<br/>If this isn't right, "
+"please contact Human Resources."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:25
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:46
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:112
+#, python-format
+msgid "Welcome"
+msgstr "Ongi etorri"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:11
+#, python-format
+msgid "Welcome to"
+msgstr "Ongi etorri "
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_worked_hours
@@ -399,6 +591,21 @@ msgid ""
 msgstr ""
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model,name:hr_attendance.model_report_hr_attendance_report_attendanceerrors
 msgid "report.hr_attendance.report_attendanceerrors"
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:123
+#, python-format
+msgid "ok"
+msgstr "ados"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:14
+#, python-format
+msgid "or"
+msgstr "edo"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

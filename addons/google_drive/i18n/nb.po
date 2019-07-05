@@ -3,16 +3,32 @@
 # * google_drive
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Martin Trigaux <mat@odoo.com>, 2016
+# Aleksander <aleksander@provendo.no>, 2016
+# Joachim Flottorp <joachimflottorp@gmail.com>, 2016
+# Mari Løken <inactive+mari123@transifex.com>, 2016
+# Jan Vidar Strømsvold <OdooTransifex@stromsvold.be>, 2016
+# Jorunn D. Newth <jdn@eyenetworks.no>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-04-30 18:51+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/odoo/odoo-9/"
 "language/nb/)\n"
 "Language: nb\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 08:56+0000\n"
+"Last-Translator: Jorunn D. Newth <jdn@eyenetworks.no>, 2017\n"
+"Language-Team: Norwegian Bokmål (https://www.transifex.com/odoo/teams/41243/nb/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -51,7 +67,7 @@ msgstr ""
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_base_config_settings_google_drive_authorization_code
 msgid "Authorization Code"
-msgstr ""
+msgstr "Autorisasjonskode"
 
 #. module: google_drive
 #: model:ir.model.fields,help:google_drive.field_google_drive_config_name_template
@@ -63,7 +79,7 @@ msgstr ""
 #. module: google_drive
 #: model:ir.actions.act_window,help:google_drive.action_google_drive_users_config
 msgid "Click to add a new template."
-msgstr ""
+msgstr "Klikk for å legge til en ny mal."
 
 #. module: google_drive
 #: model:ir.ui.view,arch_db:google_drive.inherited_google_view_general_configuration
@@ -84,7 +100,7 @@ msgstr "Opprettet den"
 #: code:addons/google_drive/google_drive.py:141
 #, python-format
 msgid "Creating google drive may only be done by one at a time."
-msgstr ""
+msgstr "Du kan bare opprette én Google Drive av gangen"
 
 #. module: google_drive
 #: model:ir.filters,name:google_drive.filter_partner
@@ -106,12 +122,17 @@ msgstr "Filter"
 #: code:addons/google_drive/google_drive.py:73
 #, python-format
 msgid "Go to the configuration panel"
-msgstr ""
+msgstr "Gå til konfigurasjonspanelet"
 
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_google_drive_config_google_drive_client_id
+<<<<<<< HEAD
 msgid "Google Client "
 msgstr ""
+=======
+msgid "Google Client"
+msgstr "Google-klient"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: google_drive
 #: model:ir.ui.menu,name:google_drive.menu_google_drive_config
@@ -122,24 +143,24 @@ msgstr "Google Drive"
 #: model:ir.ui.view,arch_db:google_drive.view_google_drive_config_form
 #: model:ir.ui.view,arch_db:google_drive.view_google_drive_config_tree
 msgid "Google Drive Configuration"
-msgstr ""
+msgstr "Google Drive-oppsett"
 
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_google_drive_config_name_template
 msgid "Google Drive Name Pattern"
-msgstr ""
+msgstr "Google Drive-navnemønster"
 
 #. module: google_drive
 #: code:addons/google_drive/google_drive.py:55
 #: code:addons/google_drive/google_drive.py:75
 #, python-format
 msgid "Google Drive is not yet configured. Please contact your administrator."
-msgstr ""
+msgstr "Google Drive er ikke satt opp enda. Ta kontakt med administrator."
 
 #. module: google_drive
 #: model:ir.model,name:google_drive.model_google_drive_config
 msgid "Google Drive templates config"
-msgstr ""
+msgstr "Maloppsett for Google Drive"
 
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_google_drive_config_id
@@ -178,10 +199,17 @@ msgid "Model"
 msgstr "Modell"
 
 #. module: google_drive
+<<<<<<< HEAD
 #: constraint:google.drive.config:0
 msgid ""
 "Model of selected filter is not matching with model of current template."
 msgstr ""
+=======
+#: code:addons/google_drive/models/google_drive.py:201
+#, python-format
+msgid "Please enter a valid Google Document URL."
+msgstr "Legg inn en gyldig Google Document-URL"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: google_drive
 #: code:addons/google_drive/google_drive.py:173
@@ -205,12 +233,12 @@ msgstr ""
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_google_drive_config_name
 msgid "Template Name"
-msgstr ""
+msgstr "Malnavn"
 
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_google_drive_config_google_drive_template_url
 msgid "Template URL"
-msgstr ""
+msgstr "Mal-URL"
 
 #. module: google_drive
 #: model:ir.actions.act_window,name:google_drive.action_google_drive_users_config
@@ -222,12 +250,12 @@ msgstr "Maler"
 #: code:addons/google_drive/google_drive.py:90
 #, python-format
 msgid "The Google Template cannot be found. Maybe it has been deleted."
-msgstr ""
+msgstr "Google-malen ble ikke funnet. Kanskje har den blitt slettet?"
 
 #. module: google_drive
 #: model:ir.model.fields,help:google_drive.field_base_config_settings_google_drive_uri
 msgid "The URL to generate the authorization code from Google"
-msgstr ""
+msgstr "URL for å generere autorisasjonskode fra Google"
 
 #. module: google_drive
 #: model:ir.ui.view,arch_db:google_drive.view_google_drive_config_form
@@ -252,7 +280,7 @@ msgstr ""
 #. module: google_drive
 #: model:ir.model.fields,field_description:google_drive.field_base_config_settings_google_drive_uri
 msgid "URI"
-msgstr ""
+msgstr "URI"
 
 #. module: google_drive
 #: code:addons/google_drive/google_drive.py:52

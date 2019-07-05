@@ -105,8 +105,82 @@ var PartnerInviteDialog = Dialog.extend({
 
 var ChatAction = Widget.extend(ControlPanelMixin, {
     template: 'mail.client_action',
+<<<<<<< HEAD
     custom_events: {
         search: '_onSearch',
+=======
+
+    events: {
+        "click .o_mail_chat_channel_item": function (event) {
+            event.preventDefault();
+            var channel_id = this.$(event.currentTarget).data('channel-id');
+            this.set_channel(chat_manager.get_channel(channel_id));
+        },
+        "click .o_mail_sidebar_title .o_add": function (event) {
+            event.preventDefault();
+            var type = $(event.target).data("type");
+            this.$('.o_mail_add_channel[data-type=' + type + ']')
+                .show()
+                .find("input").focus();
+        },
+        "blur .o_mail_add_channel input": function () {
+            this.$('.o_mail_add_channel')
+                .hide();
+        },
+        "click .o_mail_partner_unpin": function (event) {
+            event.stopPropagation();
+            var channel_id = $(event.target).data("channel-id");
+            chat_manager.unsubscribe(chat_manager.get_channel(channel_id));
+        },
+        "click .o_snackbar_undo": function (event) {
+            event.preventDefault();
+            var channel = this.channel;
+            this.$snackbar.remove();
+            this.clear_needactions_def.then(function (msgs_ids) {
+                chat_manager.undo_mark_as_read(msgs_ids, channel);
+            });
+        },
+        "click .o_mail_annoying_notification_bar .fa-close": function () {
+            this.$(".o_mail_annoying_notification_bar").slideUp();
+        },
+        "click .o_mail_request_permission": function (event) {
+            event.preventDefault();
+            this.$(".o_mail_annoying_notification_bar").slideUp();
+            var def = window.Notification && window.Notification.requestPermission();
+            if (def) {
+                def.then(function (value) {
+                    if (value === 'granted') {
+                        utils.send_notification(_t('Permission granted'), _t('Odoo has now the permission to send you native notifications on this device.'));
+                    } else {
+                        utils.send_notification(_t('Permission denied'), _t('Odoo will not have the permission to send native notifications on this device.'));
+                    }
+                });
+            }
+        },
+        "keydown": function (event) {
+            if (event.which === $.ui.keyCode.ESCAPE && this.selected_message) {
+                this.unselect_message();
+            }
+        },
+        "click .o_mail_open_channels": function () {
+            this.do_action({
+                name: _t('Public Channels'),
+                type: 'ir.actions.act_window',
+                res_model: "mail.channel",
+                views: [[false, 'kanban'], [false, 'form']],
+                domain: [['public', '!=', 'private']],
+            }, {
+                on_reverse_breadcrumb: this.on_reverse_breadcrumb,
+            });
+        },
+    },
+
+    on_attach_callback: function () {
+        chat_manager.bus.trigger('client_action_open', true);
+        if (this.channel) {
+            this.thread.scroll_to({offset: this.channels_scrolltop[this.channel.id]});
+        }
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     },
     events: {
         'blur .o_mail_add_channel input': '_onAddChannelBlur',
@@ -162,6 +236,7 @@ var ChatAction = Widget.extend(ControlPanelMixin, {
                               chat_manager.get_channel('channel_inbox');
         this.basic_composer = new composer.BasicComposer(this, {mention_partners_restricted: true});
         this.extended_composer = new composer.ExtendedComposer(this, {mention_partners_restricted: true});
+<<<<<<< HEAD
         this.basic_composer.on('post_message', this, this._onPostMessage);
         this.basic_composer.on('input_focused', this, this._onComposerFocused);
         this.extended_composer.on('post_message', this, this._onPostMessage);
@@ -177,6 +252,60 @@ var ChatAction = Widget.extend(ControlPanelMixin, {
         return $.when.apply($, defs)
             .then(this._setChannel.bind(this, default_channel))
             .then(this._updateChannels.bind(this))
+=======
+        this.thread = new ChatThread(this, {
+            display_help: true,
+        });
+
+        this.$buttons = $(QWeb.render("mail.chat.ControlButtons", {}));
+        this.$buttons.find('button').css({display:"inline-block"});
+        this.$buttons.on('click', '.o_mail_chat_button_invite', this.on_click_button_invite);
+        this.$buttons.on('click', '.o_mail_chat_button_unsubscribe', this.on_click_button_unsubscribe);
+        this.$buttons.on('click', '.o_mail_chat_button_settings', this.on_click_button_settings);
+        this.$buttons.on('click', '.o_mail_toggle_channels', function () {
+            self.$('.o_mail_chat_sidebar').slideToggle(200);
+        });
+        this.$buttons.on('click', '.o_mail_chat_button_mark_read', function () {
+            chat_manager.mark_all_as_read(self.channel, self.domain);
+        });
+        this.$buttons.on('click', '.o_mail_chat_button_unstar_all', chat_manager.unstar_all);
+
+        this.thread.on('redirect', this, function (res_model, res_id) {
+            chat_manager.redirect(res_model, res_id, this.set_channel.bind(this));
+        });
+        this.thread.on('redirect_to_channel', this, function (channel_id) {
+            chat_manager.join_channel(channel_id).then(this.set_channel.bind(this));
+        });
+        this.thread.on('load_more_messages', this, this.load_more_messages);
+        this.thread.on('mark_as_read', this, function (message_id) {
+            chat_manager.mark_as_read([message_id]);
+        });
+        this.thread.on('toggle_star_status', this, function (message_id) {
+            chat_manager.toggle_star_status(message_id);
+        });
+        this.thread.on('select_message', this, this.select_message);
+        this.thread.on('unselect_message', this, this.unselect_message);
+
+        this.basic_composer.on('post_message', this, this.on_post_message);
+        this.basic_composer.on('input_focused', this, this.on_composer_input_focused);
+        this.extended_composer.on('post_message', this, this.on_post_message);
+        this.extended_composer.on('input_focused', this, this.on_composer_input_focused);
+
+        var def1 = this.thread.appendTo(this.$('.o_mail_chat_content'));
+        var def2 = this.basic_composer.appendTo(this.$('.o_mail_chat_content'));
+        var def3 = this.extended_composer.appendTo(this.$('.o_mail_chat_content'));
+        var def4 = this.searchview.appendTo($("<div>")).then(function () {
+            self.$searchview_buttons = self.searchview.$buttons.contents();
+            // manually call do_search to generate the initial domain and filter
+            // the messages in the default channel
+            self.searchview.do_search();
+        });
+
+        this.render_sidebar();
+
+        return $.when(def1, def2, def3, def4)
+            .then(this.set_channel.bind(this, default_channel))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             .then(function () {
                 self._startListening();
                 self.thread.$el.on("scroll", null, _.debounce(function () {
@@ -741,6 +870,7 @@ var ChatAction = Widget.extend(ControlPanelMixin, {
         this._updateChannels();
         delete this.channels_scrolltop[channel_id];
     },
+<<<<<<< HEAD
     /**
      * @private
      */
@@ -785,6 +915,20 @@ var ChatAction = Widget.extend(ControlPanelMixin, {
         this._updateChannels();
         if (channel.autoswitch) {
             this._setChannel(channel);
+=======
+
+    on_search: function (domains) {
+        var result = pyeval.sync_eval_domains_and_contexts({
+            domains: domains
+        });
+
+        this.domain = result.domain;
+        if (this.channel) {
+            // initially (when do_search is called manually), there is no
+            // channel set yet, so don't try to fetch and render the thread as
+            // this will be done as soon as the default channel is set
+            this.fetch_and_render_thread();
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         }
     },
     /**

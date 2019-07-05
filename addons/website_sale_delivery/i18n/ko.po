@@ -3,15 +3,30 @@
 # * website_sale_delivery
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Martin Trigaux, 2017
+# JH CHOI <hwangtog@gmail.com>, 2017
+# Link Up링크업 <linkup.way@gmail.com>, 2018
+# Linkup <link-up@naver.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2015-09-08 10:54+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "Language: ko\n"
+=======
+"POT-Creation-Date: 2016-09-19 12:36+0000\n"
+"PO-Revision-Date: 2016-09-07 09:34+0000\n"
+"Last-Translator: Linkup <link-up@naver.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,14 +40,46 @@ msgid ""
 msgstr ""
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_description
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr "고객에게 전달하고자 하는 상품 설명. 이 설명은 모든 판매 주문, 배송 주문 및 고객 송장/환불에 복사됩니다"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
+msgid ""
+"Accessories show up when the customer reviews the cart before paying (cross-"
+"sell strategy, e.g. for computers: mouse, keyboard, etc.). An algorithm "
+"figures out a list of accessories based on all the products added to cart."
+msgstr ""
+"액세서리는 지불 전에 고객이 장바구니를 리뷰 할 때 표시됩니다 (예 : 컴퓨터 : 마우스, 키보드 등 교차 판매 전략). 알고리즘은 "
+"장바구니에 추가 된 모든 제품을 기반으로 액세서리 목록을 산출합니다."
+
+#. module: website_sale_delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_accessory_product_ids
 msgid "Accessory Products"
 msgstr "액세서리 상품"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alternative_product_ids
 msgid "Appear on the product page"
 msgstr "상품 페이지 표시"
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_availability
+msgid "Adds an availability status on the web product page."
+msgstr ""
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid "Alternative Products"
+msgstr "대체 상품"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
@@ -52,6 +99,7 @@ msgstr "운송회사"
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_to_weight
 msgid ""
+<<<<<<< HEAD
 "Check if the product should be weighted using the hardware scale integration"
 msgstr "제품이 하드웨어 규모의 통합 사용에 가중치를 두려면 확인하세요."
 
@@ -59,6 +107,15 @@ msgstr "제품이 하드웨어 규모의 통합 사용에 가중치를 두려면
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_available_in_pos
 msgid "Check if you want this product to appear in the Point of Sale"
 msgstr "점포판매시스템에 이 제품을 표시하려면 확인하세요."
+=======
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+"카테고리는 Shop 페이지(온라인 카달로그 그리드)에 게시되어 고객이 카테고리 내의 모든 항목을 찾을 수 있습니다. 카테고리를 "
+"공개하려면, Shop 페이지로 가서 커스터마이즈를 누르고 *상품 카테고리*를 켜십시요. 상품은 여러 카테고리에 속할 수 있습니다."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.ui.view,arch_db:website_sale_delivery.payment_delivery
@@ -131,6 +188,14 @@ msgid "Has delivery"
 msgstr ""
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_product_image_ids
+msgid "Images"
+msgstr "이미지"
+
+#. module: website_sale_delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_intrastat_id
 msgid "Intrastat code"
 msgstr "인트라스탯 코드"
@@ -193,9 +258,10 @@ msgstr "구매 주문 명세"
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_ids
 msgid "Rating"
-msgstr ""
+msgstr "평가"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model,name:website_sale_delivery.model_sale_order
 msgid "Sales Order"
 msgstr "판매 주문"
@@ -209,6 +275,16 @@ msgstr "판매 주문 명세"
 #: model:ir.ui.view,arch_db:website_sale_delivery.country_state_shipping
 msgid "Select..."
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_last_value
+msgid "Rating Last Value"
+msgstr "최근 값 평가"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_count
+msgid "Rating count"
+msgstr "평가 수 "
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_purchase_line_warn
@@ -254,9 +330,17 @@ msgid "Styles"
 msgstr "스타일"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alternative_product_ids
 msgid "Suggested Products"
 msgstr ""
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid ""
+"Suggest more expensive alternatives to your customers (upsell strategy). "
+"Those products show up on the product page."
+msgstr "고객에게 보다 비싼 대안을 제시하십시오(상향판매 전략). 해당 상품은 상품 페이지에 표시됩니다."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_sale_order_amount_delivery
@@ -279,6 +363,7 @@ msgid "To Weigh With Scale"
 msgstr "규모 무게"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale_delivery.shipping_tracking
 msgid "Tracking:"
 msgstr ""
@@ -287,6 +372,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_public_categ_ids
 msgid "Website Product Category"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_public_categ_ids
+msgid "Website Product Category"
+msgstr "웹 사이트 상품 카테고리"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_sequence
+msgid "Website Sequence"
+msgstr "웹 사이트 순서"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_description
@@ -303,8 +398,15 @@ msgstr "웹사이트 메타 핵심어"
 msgid "Website meta title"
 msgstr "웹사이트 메타 제목"
 
+<<<<<<< HEAD
 #~ msgid "Visible in Website"
 #~ msgstr "웹사이트 표시"
+=======
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_price
+msgid "Website price"
+msgstr "웹 사이트 가격"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Website Comments"
 #~ msgstr "웹사이트 의견"

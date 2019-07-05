@@ -3,11 +3,17 @@
 # * product_extended
 #
 # Translators:
+<<<<<<< HEAD
 #, fuzzy
+=======
+# Martin Trigaux, 2016
+# Jiří P., 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2015-10-23 14:09+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -20,6 +26,17 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "#-#-#-#-#  cs.po (Odoo 9.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: Jiří P., 2018\n"
+"Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_extended
 #: code:addons/product_extended/wizard/wizard_price.py:24
@@ -29,6 +46,7 @@ msgid "Active ID is not set in Context."
 msgstr "Aktivní ID není nastaveno v kontextu."
 
 #. module: product_extended
+<<<<<<< HEAD
 #: model:ir.model,name:product_extended.model_mrp_bom
 msgid "Bill of Material"
 msgstr "Kusovník"
@@ -52,6 +70,12 @@ msgstr "Změnit běžnou cenu"
 #: model:ir.model.fields,field_description:product_extended.field_wizard_price_recursive
 msgid "Change prices of child BoMs too"
 msgstr ""
+=======
+#: model:ir.model.fields,help:product_extended.field_product_product_to_weight
+msgid ""
+"Check if the product should be weighted using the hardware scale integration"
+msgstr "Zkontrolujte, zda má být produkt zvážen pomocí zabudované váhy"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product_extended
 #: model:ir.actions.act_window,name:product_extended.action_view_compute_price_wizard
@@ -62,7 +86,7 @@ msgstr ""
 #. module: product_extended
 #: model:ir.ui.view,arch_db:product_extended.product_product_ext_form_view2
 msgid "Compute from BOM"
-msgstr ""
+msgstr "Vypočítat z BOM"
 
 #. module: product_extended
 #: model:ir.ui.view,arch_db:product_extended.product_product_ext_form_view2
@@ -70,6 +94,8 @@ msgid ""
 "Compute the price of the product using products and operations of related "
 "bill of materials, for manufactured products only."
 msgstr ""
+"Vypočítat cenu produktu za použití produktů a operací souvisejícího výpisu "
+"materiálu pouze pro vyráběné výrobky."
 
 #. module: product_extended
 #: model:ir.model.fields,field_description:product_extended.field_wizard_price_create_uid
@@ -130,6 +156,7 @@ msgstr "Šablona výrobku"
 #: model:ir.ui.view,arch_db:product_extended.view_compute_price_wizard
 msgid "Set price on BoM"
 msgstr ""
+"Tyto kategorie se používají ke skupině podobných výrobků pro prodejní místo."
 
 #. module: product_extended
 #: model:ir.model.fields,field_description:product_extended.field_mrp_bom_standard_price

@@ -3,16 +3,28 @@
 # * website_payment
 # 
 # Translators:
+<<<<<<< HEAD
 # Jeffery CHEN <jeffery9@gmail.com>, 2017
 # waveyeung <waveyeung@qq.com>, 2017
 # niulin lnc. <admin@niulin.net>, 2017
+=======
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# 珠海-杜哥 <liangjia@qq.com>, 2016
+# keecome <7017511@qq.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-09-20 09:54+0000\n"
 "PO-Revision-Date: 2017-09-20 09:54+0000\n"
 "Last-Translator: niulin lnc. <admin@niulin.net>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 08:57+0000\n"
+"Last-Translator: keecome <7017511@qq.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +35,7 @@ msgstr ""
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.website_settings_payment
 msgid "Configure payment acquirers"
-msgstr "配置付款托收方"
+msgstr "配置支付方式"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.website_settings_payment
@@ -31,6 +43,42 @@ msgid "E-Commerce"
 msgstr "电子商务"
 
 #. module: website_payment
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_payment.confirm
+msgid "From"
+msgstr "从"
+
+#. module: website_payment
+#: model:ir.ui.view,arch_db:website_payment.pay_meth_link
+msgid "Manage your payment methods"
+msgstr "管理你的付款方式"
+
+#. module: website_payment
+#: code:addons/website_payment/controllers/main.py:82
+#, python-format
+msgid "Oops! There was a problem with your payment."
+msgstr "哎呀！你的付款发现小问题了哟。"
+
+#. module: website_payment
+#: code:addons/website_payment/controllers/main.py:45
+#, python-format
+msgid "Pay Now"
+msgstr "现在付款"
+
+#. module: website_payment
+#: model:ir.ui.view,arch_db:website_payment.confirm
+#: model:ir.ui.view,arch_db:website_payment.pay
+msgid "Payment"
+msgstr "付款"
+
+#. module: website_payment
+#: model:ir.model,name:website_payment.model_payment_acquirer
+msgid "Payment Acquirer"
+msgstr "收单"
+
+#. module: website_payment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_payment.header_footer_custom_payment
 msgid "Payment Icons"
 msgstr ""
@@ -39,3 +87,25 @@ msgstr ""
 #: model:ir.model,name:website_payment.model_website
 msgid "Website"
 msgstr "网站"
+<<<<<<< HEAD
+=======
+
+#. module: website_payment
+#: code:addons/website_payment/controllers/main.py:82
+#, python-format
+msgid ""
+"Your payment was successful! It may take some time to be validated on our "
+"end."
+msgstr "您的付款成功了！我们可能需要一些时间来验证。"
+
+#. module: website_payment
+#: model:ir.model,name:website_payment.model_account_config_settings
+msgid "account.config.settings"
+msgstr "account.config.settings"
+
+#. module: website_payment
+#: model:ir.ui.view,arch_db:website_payment.confirm
+#: model:ir.ui.view,arch_db:website_payment.pay
+msgid "payment_provider_logo"
+msgstr "payment_provider_logo"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

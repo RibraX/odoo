@@ -61,6 +61,14 @@ class MercuryTransaction(models.Model):
             'SOAPAction': 'http://www.mercurypay.com/CreditTransaction',
         }
 
+<<<<<<< HEAD
+=======
+        url = 'https://w1.mercurypay.com/ws/ws.asmx'
+        if self.env['ir.config_parameter'].sudo().get_param('pos_mercury.enable_test_env'):
+            url = 'https://w1.mercurycert.net/ws/ws.asmx'
+
+        r = urllib2.Request(url, data=xml_transaction, headers=headers)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         try:
             r = requests.post('https://w1.mercurypay.com/ws/ws.asmx', data=xml_transaction, headers=headers, timeout=65)
             r.raise_for_status()

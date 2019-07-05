@@ -3,6 +3,7 @@
 # * point_of_sale
 #
 # Translators:
+<<<<<<< HEAD
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -12,6 +13,30 @@ msgstr ""
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "Language: ko\n"
+=======
+# 방상우 <mrroom@gmail.com>, 2017
+# 종현 엄 <whd5367@naver.com>, 2017
+# Jongkwan, Yeom <jongkwanyeom@gmail.com>, 2017
+# 경민기 <moonend@gmail.com>, 2017
+# Hwang, Geon Gu <under_09@naver.com>, 2017
+# Goh Gangtai <gangtai.goh@gmail.com>, 2017
+# Spike Lee <rurouni24@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Link Up링크업 <linkup.way@gmail.com>, 2018
+# Linda Stockelova <stockeloval@btlnet.com>, 2018
+# Mark Lee <odoos@soti.33mail.com>, 2018
+# Linkup <link-up@naver.com>, 2019
+# JH CHOI <hwangtog@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:25+0000\n"
+"Last-Translator: JH CHOI <hwangtog@gmail.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -21,7 +46,7 @@ msgstr ""
 #: code:addons/point_of_sale/models/pos_order.py:642
 #, python-format
 msgid " REFUND"
-msgstr ""
+msgstr "환불"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_res_users_supplier_invoice_count
@@ -112,7 +137,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban
 msgid "<span>View</span>"
-msgstr ""
+msgstr "<span>보기</span>"
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.report_statement
@@ -255,6 +280,14 @@ msgid "ABC"
 msgstr "ABC"
 
 #. module: point_of_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:point_of_sale.model_account_bank_statement_cashbox
+msgid "Account Bank Statement Cashbox Details"
+msgstr "계좌 은행 명세서 현금 보관함 세부 정보"
+
+#. module: point_of_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_pos_form
 msgid "Accounting Information"
 msgstr "회계 정보"
@@ -310,7 +343,7 @@ msgstr "모든 판매 항목"
 #. module: point_of_sale
 #: selection:pos.config.settings,module_pos_reprint:0
 msgid "Allow cashier to reprint receipts"
-msgstr ""
+msgstr "계산원이 영수증을 재 인쇄하도록 허용"
 
 #. module: point_of_sale
 #: selection:pos.config.settings,module_pos_discount:0
@@ -450,7 +483,7 @@ msgstr "바코드"
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_barcode_nomenclature_all
 msgid "Barcode Nomenclatures"
-msgstr ""
+msgstr "바코드 명명법"
 
 #. module: point_of_sale
 #. openerp-web
@@ -607,7 +640,7 @@ msgstr "금전등록기"
 #: code:addons/point_of_sale/models/barcode_rule.py:19
 #, python-format
 msgid "Cashier"
-msgstr ""
+msgstr "계산원"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,help:point_of_sale.product_pos_category_action
@@ -726,7 +759,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.actions.act_window,help:point_of_sale.product_pos_category_action
 msgid "Click to define a new category."
-msgstr ""
+msgstr "새 카테고리를 정의하려면 클릭하십시오."
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,help:point_of_sale.action_pos_session
@@ -1096,7 +1129,7 @@ msgstr "할인 :"
 #: code:addons/point_of_sale/models/barcode_rule.py:17
 #, python-format
 msgid "Discounted Product"
-msgstr ""
+msgstr "할인 상품"
 
 #. module: point_of_sale
 #. openerp-web
@@ -1325,7 +1358,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_config_form
 msgid "Footer"
-msgstr ""
+msgstr "꼬리말"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_iface_big_scrollbars
@@ -1404,7 +1437,18 @@ msgstr ""
 
 #. module: point_of_sale
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1181
+=======
+#: code:addons/point_of_sale/static/src/js/models.js:135
+#, python-format
+msgid "HTTPS connection to IoT Box failed"
+msgstr ""
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:1322
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Hardware Events"
 msgstr "하드웨어 이벤트"
@@ -1731,7 +1775,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_settings_module_pos_loyalty
 msgid "Loyalty Program"
-msgstr ""
+msgstr "포인트 프로그램"
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_payment
@@ -1739,9 +1783,18 @@ msgid "Make Payment"
 msgstr "결제하기"
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: model:product.product,name:point_of_sale.malibu
 #: model:product.template,name:point_of_sale.malibu_product_template
 msgid "Malibu"
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/models.js:137
+#, python-format
+msgid ""
+"Make sure you are using IoT Box v18.12 or higher. Navigate to %s to accept "
+"the certificate of your IoT Box."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: point_of_sale
@@ -1867,6 +1920,14 @@ msgid "More <i class=\"fa fa-caret-down\"/>"
 msgstr "더 보기 <i class=\"fa fa-caret-down\"/>"
 
 #. module: point_of_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:point_of_sale.view_sale_config_settings_form_pos
+msgid "More Info"
+msgstr "더 많은 정보"
+
+#. module: point_of_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:point_of_sale.view_report_pos_order_search
 msgid "My Sales"
 msgstr "내 판매"
@@ -2360,7 +2421,18 @@ msgid "Please define income account for this product: \"%s\" (id:%d)."
 msgstr "해당 상품의 손익 계정을 정의하세요 : \"%s\" (id:%d)."
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: code:addons/point_of_sale/models/pos_order.py:437
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2017
+#, python-format
+msgid "Please print the invoice from the backend"
+msgstr ""
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/models/pos_order.py:446
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Please provide a partner for the sale."
 msgstr "이 판매의 파트너를 입력하십시오."
@@ -2519,7 +2591,7 @@ msgstr "가격"
 #: code:addons/point_of_sale/models/barcode_rule.py:16
 #, python-format
 msgid "Priced Product"
-msgstr ""
+msgstr "가격이 책정된 제품"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_pricelist_id
@@ -2697,7 +2769,7 @@ msgstr "보고서"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_settings_module_pos_reprint
 msgid "Reprints"
-msgstr ""
+msgstr "재인쇄"
 
 #. module: point_of_sale
 #. openerp-web
@@ -2714,7 +2786,7 @@ msgstr "담당자"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_settings_module_pos_restaurant
 msgid "Restaurant"
-msgstr "레스토랑"
+msgstr "식당"
 
 #. module: point_of_sale
 #: selection:pos.config.settings,module_pos_restaurant:0
@@ -3295,6 +3367,15 @@ msgid "The order could not be sent to the server due to an unknown error"
 msgstr ""
 
 #. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/screens.js:2018
+#, python-format
+msgid ""
+"The order has been synchronized earlier. Please make the invoice from the "
+"backend for the order: "
+msgstr ""
+
+#. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_iface_precompute_cash
 msgid ""
 "The payment input will behave similarily to bank payment input, and will be "
@@ -3743,7 +3824,7 @@ msgstr ""
 #: code:addons/point_of_sale/models/barcode_rule.py:15
 #, python-format
 msgid "Weighted Product"
-msgstr ""
+msgstr "중량이 있는 상품"
 
 #. module: point_of_sale
 #. openerp-web
@@ -3976,7 +4057,7 @@ msgstr "성공확률"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_barcode_rule
 msgid "barcode.rule"
-msgstr ""
+msgstr "barcode.rule"
 
 #. module: point_of_sale
 #. openerp-web
@@ -4001,12 +4082,12 @@ msgstr "[caps lock]"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_cash_box_in
 msgid "cash.box.in"
-msgstr ""
+msgstr "cash.box.in"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_cash_box_out
 msgid "cash.box.out"
-msgstr ""
+msgstr "cash.box.out"
 
 #. module: point_of_sale
 #. openerp-web

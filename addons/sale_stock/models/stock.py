@@ -59,6 +59,11 @@ class ProcurementRule(models.Model):
             result['sale_line_id'] = values['sale_line_id']
         return result
 
+    def _prepare_move_split_vals(self, defaults):
+        defaults = super(StockMove, self)._prepare_move_split_vals(defaults)
+        defaults['to_refund_so'] = self.to_refund_so
+        return defaults
+
 
 class StockPicking(models.Model):
     _inherit = 'stock.picking'

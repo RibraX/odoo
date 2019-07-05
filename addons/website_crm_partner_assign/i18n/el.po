@@ -4,6 +4,7 @@
 # * website_crm_partner_assign
 #
 # Translators:
+<<<<<<< HEAD
 # Goutoudis Kostas <goutoudis@gmail.com>, 2015
 # #-#-#-#-#  el.po (Odoo 9.0)  #-#-#-#-#
 # Translation of Odoo Server.
@@ -13,6 +14,11 @@
 # Translators:
 # Goutoudis Kostas <goutoudis@gmail.com>, 2015-2016
 #, fuzzy
+=======
+# Martin Trigaux, 2016
+# Kostas Goutoudis <goutoudis@gmail.com>, 2016
+# Stefanos Nikou <stefanos.nikou@gmail.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -31,7 +37,166 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: website_crm_partner_assign
+<<<<<<< HEAD
 #: code:addons/website_crm_partner_assign/controllers/main.py:60
+=======
+#: model:mail.template,body_html:website_crm_partner_assign.email_template_lead_forward_mail
+msgid ""
+"\n"
+"<p>Hello,</p>\n"
+"\n"
+"\n"
+"<p>We have been contacted by those prospects that are in your region. Thus, the following leads have been assigned to ${ctx['partner_id'].name}:</p>\n"
+"\n"
+"<ol>\n"
+"% for lead in ctx['partner_leads']:\n"
+"     <li><a href=\"${lead.lead_link}\">${lead.lead_id.name or 'Subject Undefined'}</a>, ${lead.lead_id.partner_name or lead.lead_id.contact_name or 'Contact Name Undefined'}, ${lead.lead_id.country_id and lead.lead_id.country_id.name or 'Country Undefined' }, ${lead.lead_id.email_from or 'Email Undefined'}, ${lead.lead_id.phone or ''} </li></br>\n"
+"% endfor\n"
+"</ol>\n"
+"\n"
+"% if ctx.get('partner_in_portal'):\n"
+"<p>Please connect to your <a href=\"${object.get_portal_url()}\">Partner Portal</a> to get details. On each lead are two buttons on the top left corner that you should press after having contacted the lead: \"I'm interested\" & \"I'm not interested\".</p>\n"
+"% else:\n"
+"<p>\n"
+"    You do not have yet a portal access to our database. Please contact \n"
+"    ${ctx['partner_id'].user_id and ctx['partner_id'].user_id.email and 'your account manager %s (%s)' % (ctx['partner_id'].user_id.name,ctx['partner_id'].user_id.email) or 'us'}.\n"
+"</p>\n"
+"% endif\n"
+"<p>The lead will be sent to another partner if you do not contact the lead before 20 days.</p>\n"
+"\n"
+"<p>Thanks,</p>\n"
+"\n"
+"${ctx['partner_id'].user_id and ctx['partner_id'].user_id.signature or '' | safe}\n"
+"\n"
+"% if not ctx['partner_id'].user_id:\n"
+"PS: It looks like you do not have an account manager assigned to you, please contact us.\n"
+"% endif\n"
+"            "
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_nbr_cases
+msgid "# of Cases"
+msgstr "# από Υποθέσεις"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_partner_report_assign_nbr_opportunities
+msgid "# of Opportunity"
+msgstr "# της Ευκαιρίας"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "&amp;times;"
+msgstr "&amp;φορές"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "<i class=\"fa fa-file-text-o\"/> I'm interested"
+msgstr "<i class=\"fa fa-file-text-o\"/> Ενδιαφέρομαι"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "<i class=\"fa fa-fw fa-times\"/> I'm not interested"
+msgstr "<i class=\"fa fa-fw fa-times\"/>Δεν Ενδιαφέρομαι"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:192
+#, python-format
+msgid "<p>I am interested by this lead.</p>"
+msgstr "<p>Ενδιαφέρομαι για αυτήν την Σύσταση.</p>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_lead_geo_assign_form
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_opportunity_geo_assign_form
+msgid ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&lt;=',0)]}\">N </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&gt;=',0)]}\">S </span>"
+msgstr ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&lt;=',0)]}\">Β </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&gt;=',0)]}\">Ν </span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_lead_geo_assign_form
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_opportunity_geo_assign_form
+msgid ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&lt;=',0)]}\">E </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&gt;=',0)]}\">W </span>\n"
+"                                <span class=\"oe_grey\">) </span>"
+msgstr ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&lt;=',0)]}\">Α </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&gt;=',0)]}\">Δ </span>\n"
+"                                <span class=\"oe_grey\">) </span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid ""
+"<span class=\"text-danger error_partner_assign_desinterested\" "
+"style=\"display:none;\">You need to fill up the next action and contact the "
+"customer before accepting the lead</span>"
+msgstr ""
+"<span class=\"text-danger error_partner_assign_desinterested\" "
+"style=\"display:none;\">Θα πρέπει να συμπληρώσετε την επόμενη ενέργεια και "
+"να επικοινωνήσετε με τον πελάτη προτού αποδεχτείτε τη σύσταση</span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid ""
+"<span class=\"text-danger error_partner_assign_interested\" "
+"style=\"display:none;\">You need to fill up the next action and contact the "
+"customer before accepting the lead</span>"
+msgstr ""
+"<span class=\"text-danger error_partner_assign_interested\" "
+"style=\"display:none;\">Θα πρέπει να συμπληρώσετε την επόμενη ενέργεια και "
+"να επικοινωνήσετε με τον πελάτη προτού αποδεχτείτε τη σύσταση</span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "<span>at </span>"
+msgstr "<span>στο </span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>Ιστορικό μηνυμάτων και επικοινωνίας</strong>"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_partner_report_assign_activation
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_activation
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_users_activation
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.res_partner_activation_form
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.res_partner_activation_tree
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_res_partner_filter_assign
+msgid "Activation"
+msgstr "Ενεργοποίηση"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_active
+msgid "Active"
+msgstr "Ενεργή"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:235
+#, python-format
+msgid "Activity Done"
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Address"
+msgstr "Διεύθυνση"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/controllers/main.py:94
+#, python-format
+msgid "All"
+msgstr "Όλα"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/controllers/main.py:206
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "All Categories"
 msgstr "Όλες οι κατηγορίες"
@@ -48,6 +213,7 @@ msgid "Contact a reseller"
 msgstr "Επικοινωνήστε με έναν μεταπωλητή"
 
 #. module: website_crm_partner_assign
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
 msgid "Filter by Country"
 msgstr "Φίλτρο ανά χώρα"
@@ -56,6 +222,97 @@ msgstr "Φίλτρο ανά χώρα"
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
 msgid "Filter by Level"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_forward_to_partner_body
+msgid "Contents"
+msgstr "Περιεχόμενα"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Countries..."
+msgstr "Χώρες..."
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_country_id
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_partner_report_assign_country_id
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_report_crm_lead_assign_filter
+msgid "Country"
+msgstr "Χώρα"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_create_date
+msgid "Create Date"
+msgstr "Δημιουργία Ημερομηνίας"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_assignation_create_uid
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_forward_to_partner_create_uid
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_activation_create_uid
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_create_uid
+msgid "Created by"
+msgstr "Δημιουργήθηκε από"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_assignation_create_date
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_forward_to_partner_create_date
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_activation_create_date
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_create_date
+msgid "Created on"
+msgstr "Δημιουργήθηκε στις"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunities
+msgid "Current stage of the opp"
+msgstr "Τρέχον στάδιο ευκαιρίας"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_partner_id
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Customer"
+msgstr "Πελάτης"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Customer Name"
+msgstr "Όνομα Πελάτη"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_leads
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunities
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_report_crm_partner_assign_filter
+msgid "Date Partnership"
+msgstr "Ημερομηνία Συνεργασίας"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_report_crm_partner_assign_filter
+msgid "Date Review"
+msgstr "Ημερομηνία Αναθεώρησης"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Deadline:"
+msgstr "Προθεσμία:"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_delay_open
+msgid "Delay to Assign"
+msgstr "Καθυστέρηση εκχώρησης"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_delay_close
+msgid "Delay to Close"
+msgstr "Καθυστέρηση για Κλείσιμο"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Details Next Activity"
+msgstr "Λεπτομέρειες Επόμενης Δραστηριότητας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
@@ -63,6 +320,7 @@ msgid "Looking For a Local Store?"
 msgstr "Αναζητάτε ένα τοπικό κατάστημα;"
 
 #. module: website_crm_partner_assign
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
 msgid "No result found"
 msgstr "Δεν βρέθηκε αποτέλεσμα"
@@ -71,6 +329,16 @@ msgstr "Δεν βρέθηκε αποτέλεσμα"
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.partner
 msgid "Our Partners"
 msgstr "Οι Συνεργάτες μας"
+=======
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Edit Contact"
+msgstr "Επεξεργασία Επαφής"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Edit Opportunity"
+msgstr "Επεξεργασία Ευκαιρίας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.grade_in_detail
@@ -88,10 +356,16 @@ msgid "References"
 msgstr "Παραπομπές"
 
 #. module: website_crm_partner_assign
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.footer_custom
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.layout
 msgid "Resellers"
 msgstr "Μεταπωλητές"
+=======
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Expected Closing:"
+msgstr "Αναμενόμενο Κλείσιμο:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
@@ -110,8 +384,13 @@ msgstr "έλξη προς αριστερά"
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
+<<<<<<< HEAD
 msgid "reference(s)"
 msgstr "αναφορά(ες)"
+=======
+msgid "Filter by Level"
+msgstr "Φίλτρο ανά Επίπεδο"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_crm_partner_assign
 #: model:ir.model,name:website_crm_partner_assign.model_res_partner_grade
@@ -155,11 +434,28 @@ msgstr "res.partner.grade"
 #~ msgid "Assign Month"
 #~ msgstr "Ανάθεση Μήνα"
 
+<<<<<<< HEAD
 #~ msgid "Assign salesman of assigned partner"
 #~ msgstr "Ανάθεση πωλητή από ανατεθειμένο συνεργάτη."
 
 #~ msgid "Assignation Date"
 #~ msgstr "Ημερομηνία Ανάθεσης"
+=======
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:203
+#, python-format
+msgid "I am not interested by this lead. I contacted the lead."
+msgstr ""
+"Δεν ενδιαφέρομαι για αυτήν την σύσταση. Έχω επικοινωνήσει με την σύσταση."
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:205
+#, python-format
+msgid "I am not interested by this lead. I have not contacted the lead."
+msgstr ""
+"Δεν ενδιαφέρομαι για αυτήν την σύσταση. Δεν έχω επικοινωνήσει με την "
+"σύσταση."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Assigned"
 #~ msgstr "Ανατεθειμένη"
@@ -191,8 +487,15 @@ msgstr "res.partner.grade"
 #~ msgid "Cancel"
 #~ msgstr "Ακύρωση"
 
+<<<<<<< HEAD
 #~ msgid "Categorization"
 #~ msgstr "Κατηγοριοποίηση"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "Lead -"
+msgstr "Σύσταση -"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Close Date"
 #~ msgstr "Ημερομηνία Ολοκλήρωσης"
@@ -203,8 +506,15 @@ msgstr "res.partner.grade"
 #~ msgid "Communication"
 #~ msgstr "Επικοινωνία"
 
+<<<<<<< HEAD
 #~ msgid "Company"
 #~ msgstr "Εταιρεία"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_assignation_lead_link
+msgid "Lead Single Links"
+msgstr "Ενιαίος Σύνδεσμος Σύστασης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Confirm"
 #~ msgstr "Επιβεβαίωση"
@@ -218,11 +528,25 @@ msgstr "res.partner.grade"
 #~ msgid "Country"
 #~ msgstr "Χώρα"
 
+<<<<<<< HEAD
 #~ msgid "Create Date"
 #~ msgstr "Ημερομηνία Δημιουργίας"
 
 #~ msgid "Created by"
 #~ msgstr "Δημιουργήθηκε από"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_name
+msgid "Level Name"
+msgstr "Όνομα Επιπέδου"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_partner_weight
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_partner_weight
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_users_partner_weight
+msgid "Level Weight"
+msgstr "Βαρύτητα Επιπέδου"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Created on"
 #~ msgstr "Δημιουργήθηκε στις"
@@ -266,8 +590,15 @@ msgstr "res.partner.grade"
 #~ msgid "Extended Filters..."
 #~ msgstr "Εκτεταμένα Φίλτρα..."
 
+<<<<<<< HEAD
 #~ msgid "Forward Leads To"
 #~ msgstr "Προώθηση Συστάσεων σε"
+=======
+#. module: website_crm_partner_assign
+#: model:crm.lead.tag,name:website_crm_partner_assign.tag_portal_lead_partner_unavailable
+msgid "No more partner available"
+msgstr "Δεν υπάρχει πλέον διαθέσιμος συνεργάτης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Forward selected leads to"
 #~ msgstr "Προώθηση επιλεγμένων Συστάσεων σε"
@@ -300,8 +631,15 @@ msgstr "res.partner.grade"
 #~ msgid "Group By"
 #~ msgstr "Ομαδοποίηση Ανά"
 
+<<<<<<< HEAD
 #~ msgid "High"
 #~ msgstr "Υψηλή"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Opportunity -"
+msgstr "Ευκαιρία -"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "I'm interested"
 #~ msgstr "Ενδιαφέρομαι"
@@ -333,10 +671,22 @@ msgstr "res.partner.grade"
 #~ msgid "Last Updated on"
 #~ msgstr "Τελευταία Ενημέρωση στις"
 
+<<<<<<< HEAD
 #~ msgid "Last date this case was forwarded/assigned to a partner"
 #~ msgstr ""
 #~ "Τελευταία ημερομηνία αυτή η υπόθεση είχε προωθηθεί/ανατεθεί σε ένα "
 #~ "συνεργάτη"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_report_crm_partner_assign_filter
+msgid "Partner assigned Analysis"
+msgstr "Ανάλυση Ανάθεσης Συνεργατών"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_partner_declined_ids
+msgid "Partner not interested"
+msgstr "Ο συνεργάτης δεν ενδιαφέρεται"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Latest Partner Review"
 #~ msgstr "Τελευταία Αναθεώρηση Συνεργάτη"
@@ -350,8 +700,15 @@ msgstr "res.partner.grade"
 #~ msgid "Lead Assign"
 #~ msgstr "Ανάθεση Σύστασης"
 
+<<<<<<< HEAD
 #~ msgid "Lead Feedback"
 #~ msgstr "Ανατροφοδότηση Σύστασης"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.menu,name:website_crm_partner_assign.menu_report_crm_partner_assign_tree
+msgid "Partnerships"
+msgstr "Συνεργασίες"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Lead Location"
 #~ msgstr "Τοποθεσία Σύστασης"
@@ -359,14 +716,28 @@ msgstr "res.partner.grade"
 #~ msgid "Lead/Opportunity"
 #~ msgstr "Σύσταση/Ευκαιρία"
 
+<<<<<<< HEAD
 #~ msgid "Leads"
 #~ msgstr "Συστάσεις"
+=======
+#. module: website_crm_partner_assign
+#: model:res.partner.grade,name:website_crm_partner_assign.res_partner_grade_platinium
+msgid "Platinum"
+msgstr "Πλατινένιος"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Leads & Opportunities"
 #~ msgstr "Συστάσεις & Ευκαιρίες"
 
+<<<<<<< HEAD
 #~ msgid "Leads Analysis"
 #~ msgstr "Ανάλυση Ευκαιριών"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Priority:"
+msgstr "Προτεραιότητα:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Level"
 #~ msgstr "Επίπεδο"
@@ -407,23 +778,51 @@ msgstr "res.partner.grade"
 #~ msgid "Opp. Assignment Analysis"
 #~ msgstr "Ανάλυση Ανάθεσης Ευκαιριών"
 
+<<<<<<< HEAD
 #~ msgid "Opportunities"
 #~ msgstr "Ευκαιρίες"
 
 #~ msgid "Opportunities Assignment Analysis"
 #~ msgstr "Ανάλυση Ανάθεσης Ευκαιριών"
+=======
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/wizard/crm_forward_to_partner.py:72
+#, python-format
+msgid "Set an email address for the partner %s"
+msgstr "Ορίστε ένα email για τον συνεργάτη %s"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/wizard/crm_forward_to_partner.py:70
+#, python-format
+msgid "Set an email address for the partner(s): %s"
+msgstr "Ορίστε ένα email για τον συνεργάτη(ες): %s"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Opportunity"
 #~ msgstr "Ευκαιρία"
 
+<<<<<<< HEAD
 #~ msgid "Overpassed Deadline"
 #~ msgstr "Περασμένη Προθεσμία"
+=======
+#. module: website_crm_partner_assign
+#: model:crm.lead.tag,name:website_crm_partner_assign.tag_portal_lead_is_spam
+msgid "Spam"
+msgstr "Spam"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Partner Activation"
 #~ msgstr "Ενεργοποίηση Συνεργάτη"
 
+<<<<<<< HEAD
 #~ msgid "Partner Activations"
 #~ msgstr "Ενεργοποιήσεις Συνεργάτη"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "States..."
+msgstr "Καταστάσεις..."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Partner Assignation"
 #~ msgstr "Ανάθεση Συνεργάτη"
@@ -443,17 +842,36 @@ msgstr "res.partner.grade"
 #~ msgid "Partner assigned Analysis"
 #~ msgstr "Ανάλυση Ανάθεσης Συνεργατών"
 
+<<<<<<< HEAD
 #~ msgid "Partner this case has been forwarded/assigned to."
 #~ msgstr "Συνεργάτης αυτής της υπόθεσης που έχει προωθηθεί/ανατεθεί."
 
 #~ msgid "Partnership Analysis"
 #~ msgstr "Αναλυση Συνεργασιών"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_leads
+msgid "There are no leads."
+msgstr "Δεν υπάρχουν συστάσεις."
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunities
+msgid "There are no opportunities."
+msgstr "Δεν υπάρχουν ευκαιρίες."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Partnership Date"
 #~ msgstr "Ημερομηνία Συνεργασίας"
 
+<<<<<<< HEAD
 #~ msgid "Planned Revenue"
 #~ msgstr "Προγραμματισμένα Έσοδα"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "This lead is a spam"
+msgstr "Αυτή η σύσταση είναι spam"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Priority"
 #~ msgstr "Προτεραιότητα"
@@ -488,8 +906,15 @@ msgstr "res.partner.grade"
 #~ msgid "The CRM Channel Interested Action is missing"
 #~ msgstr "Λείπει το CRM κανάλι 'Ενδιαφερόμενοι για Ενέργεια'"
 
+<<<<<<< HEAD
 #~ msgid "The Forward Email Template is not in the database"
 #~ msgstr "Το πρότυπο προώθησης email δεν είναι στην βάση δεδομένων"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "The Portal group cannot be found"
 #~ msgstr "Η Ομάδα Πύλη δεμ μπορεί να βρεθεί"
@@ -506,6 +931,7 @@ msgstr "res.partner.grade"
 #~ msgid "Type"
 #~ msgstr "Τύπος"
 
+<<<<<<< HEAD
 #~ msgid "Type is used to separate Leads and Opportunities"
 #~ msgstr ""
 #~ "Ο Τύπος χρησιμοποιήτε για να ξεχωρίσει τους Πιθανούς Πελάτες από τις "
@@ -516,6 +942,22 @@ msgstr "res.partner.grade"
 
 #~ msgid "Very High"
 #~ msgstr "Πολύ υψηλή"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model,name:website_crm_partner_assign.model_crm_lead_assignation
+msgid "crm.lead.assignation"
+msgstr "crm.lead.assignation"
+
+#. module: website_crm_partner_assign
+#: model:ir.model,name:website_crm_partner_assign.model_crm_lead_forward_to_partner
+msgid "crm.lead.forward.to.partner"
+msgstr "crm.lead.forward.to.partner"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_partner_grade_form
+msgid "e.g. Gold Partner"
+msgstr "π.χ. Χρυσός Συνεργάτης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "What are the elements that have led to this decision?"
 #~ msgstr "Ποια είναι τα στοιχεία που οδήγησαν σε αυτή την απόφαση;"

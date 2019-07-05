@@ -3,16 +3,35 @@
 # * hr_expense
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Joachim Flottorp (Joachim flottorp) <joachimflottorp@gmail.com>, 2016
+# Mari Løken <inactive+mari123@transifex.com>, 2016
+# Roy Edvard Ellingsen <roy@royedvard.com>, 2016
+# Henrik Norlin <henrik@appstogrow.net>, 2016
+# Aleksander, 2016
+# Martin Trigaux, 2016
+# Jorunn D. Newth, 2018
+# Marius Stedjan <marius@stedjan.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-05-31 12:30+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/odoo/odoo-9/"
 "language/nb/)\n"
 "Language: nb\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:21+0000\n"
+"Last-Translator: Marius Stedjan <marius@stedjan.com>, 2019\n"
+"Language-Team: Norwegian Bokmål (https://www.transifex.com/odoo/teams/41243/nb/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,15 +44,45 @@ msgid "<strong>Currency:</strong>"
 msgstr "<strong>Beløp</strong>"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
-msgid "<strong>Employee:</strong>"
-msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Dato:</strong>"
 
 #. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Description:</strong>"
+msgstr "<strong>Beskrivelse:</strong>"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+msgid "<strong>Employee:</strong>"
+msgstr "<strong>Ansatt:</strong>"
+
+#. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
 #, fuzzy
 msgid "<strong>Manager:</strong>"
 msgstr "<strong>Beløp</strong>"
+=======
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Payment By:</strong>"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totalbeløp</strong>"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "<strong>Validated By:</strong>"
+msgstr "<strong>Validert av:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
@@ -49,6 +98,34 @@ msgstr "<strong>Beløp</strong>"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_account_id
 msgid "Account"
+<<<<<<< HEAD
+=======
+msgstr "Konto."
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_accountant
+msgid "Accountant"
+msgstr "Regnskapsfører"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
+msgid "Accounting"
+msgstr "Regnskap"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_accounting_date
+msgid "Accounting Date"
+msgstr "Konteringsdato"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+msgid "Accounting Entries"
+msgstr "Regnskapspostene"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Actual expense sheets, not the refused ones"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: hr_expense
@@ -58,6 +135,7 @@ msgid "Air Flight"
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_analytic_account_id
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Analytic Account"
@@ -65,6 +143,42 @@ msgstr ""
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_config_settings_alias_domain
+msgid "Alias Domain"
+msgstr "Aliasdomene"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_all
+msgid "All Expense Reports"
+msgstr "Alle utleggsrapporter"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_all_expenses
+msgid "All Expenses"
+msgstr "Alle utlegg"
+
+#. module: hr_expense
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_account_id
+msgid "An expense account is expected"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_analytic_account_id
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Analytic Account"
+msgstr "Analytisk konto."
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Apply"
+msgstr "Bruk"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Approve"
 msgstr "Godkjenne."
 
@@ -101,18 +215,29 @@ msgid "Certified honest and conform,<br/>(Date and signature).<br/><br/>"
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_my_tree
 #: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
 msgid "Click here to approve"
 msgstr ""
+=======
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_all
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_approve
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_pay
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_post
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_my_all
+msgid "Click here to create a new expense report."
+msgstr "Klikk her for å opprette en ny utleggsrapport"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.action_request_approve_expense
 #: model:ir.actions.act_window,help:hr_expense.expense_all
 msgid "Click here to create new expenses."
-msgstr ""
+msgstr "Klikk her for å opprette nye utlegg."
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_my_tree
 #: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
 msgid "Click here to refuse"
@@ -122,6 +247,17 @@ msgstr ""
 #: model:web.tip,description:hr_expense.expense_tip_2
 msgid "Click on Action to submit multiple expenses to your manager."
 msgstr ""
+=======
+#: code:addons/hr_expense/models/hr_expense.py:304
+#, python-format
+msgid "Click to add a new expense,"
+msgstr "Klikk for å legge til et nytt utlegg,"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_product
+msgid "Click to create a new expense category."
+msgstr "Klikk for å opprette en ny utleggskategori"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.hr_expense_product
@@ -146,6 +282,20 @@ msgid "Confirmed Expenses"
 msgstr "Bekreftede utgifter."
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Congratulations, you're done!"
+msgstr "Gratulerer, du er ferdig!"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+msgid "Create a new expense.<br>"
+msgstr "Opprett et nytt utlegg.<br>"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_config_settings_create_uid
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_create_uid
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_refuse_wizard_create_uid
 msgid "Created by"
@@ -193,6 +343,19 @@ msgid "Documents"
 msgstr "Dokumenter"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Don't hesitate to"
+msgstr "Ikke nøl med"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_register_payment_view_form
+msgid "Draft Payment"
+msgstr "Betalingsutkast"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_employee_id
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Employee"
@@ -204,10 +367,21 @@ msgid "Employee (to reimburse)"
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.actions.act_window,name:hr_expense.action_approved_expense
 #: model:ir.ui.menu,name:hr_expense.menu_expense_approved
 msgid "Employee Expenses"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_address_id
+msgid "Employee Home Address"
+msgstr "Ansattes hjemmeadresse"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "End"
+msgstr "Slutt"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_expense
@@ -218,20 +392,21 @@ msgstr "Utgift"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_name
 msgid "Expense Description"
-msgstr ""
+msgstr "Utleggsbeskrivelse"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_journal_id
 msgid "Expense Journal"
-msgstr ""
+msgstr "Utleggsjournal"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_product
 #: model:ir.ui.menu,name:hr_expense.menu_hr_product
 msgid "Expense Products"
-msgstr ""
+msgstr "Utleggsprodukter"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:mail.message.subtype,description:hr_expense.mt_expense_approved
 msgid "Expense approved"
 msgstr ""
@@ -240,16 +415,94 @@ msgstr ""
 #: model:mail.message.subtype,description:hr_expense.mt_expense_confirmed
 msgid "Expense confirmed, waiting confirmation"
 msgstr ""
+=======
+#: model:ir.model,name:hr_expense.model_hr_expense_sheet
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_id
+msgid "Expense Report"
+msgstr "Utleggsrapport"
+
+#. module: hr_expense
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_sheet_state
+msgid "Expense Report State"
+msgstr "Utleggsrapportstatus"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_name
+msgid "Expense Report Summary"
+msgstr "Sammendrag av utleggsrapport"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_my_reports
+#: model:ir.ui.view,arch_db:hr_expense.hr_department_view_kanban
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_tree
+msgid "Expense Reports"
+msgstr "Utleggsrapporter"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_department_filtered
+msgid "Expense Reports Analysis"
+msgstr "Analyse av utleggsrapporter"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_approve
+msgid "Expense Reports To Approve"
+msgstr "Utleggsrapporter til godkjenning"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_pay
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_pay
+msgid "Expense Reports To Pay"
+msgstr "Utleggsrapporter å betale"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_post
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all_to_post
+msgid "Expense Reports To Post"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all_to_approve
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_department_to_approve
+msgid "Expense Reports to Approve"
+msgstr "Utleggsrapporter å godkjenne"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_tree
+msgid "Expense Sheet"
+msgstr "Utleggsskjema"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_refuse_wizard_view_form
 msgid "Expense refuse reason"
-msgstr ""
+msgstr "Årsak til avvisning av utlegg"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:mail.message.subtype,description:hr_expense.mt_expense_refused
 msgid "Expense refused"
 msgstr ""
+=======
+#: model:mail.message.subtype,description:hr_expense.mt_expense_approved
+msgid "Expense report approved"
+msgstr "Utleggsrapport godkjent"
+
+#. module: hr_expense
+#: model:mail.message.subtype,description:hr_expense.mt_expense_paid
+msgid "Expense report paid"
+msgstr "Utleggsrapport betalt"
+
+#. module: hr_expense
+#: model:mail.message.subtype,description:hr_expense.mt_expense_refused
+msgid "Expense report refused"
+msgstr "Utleggsrapport avvist"
+
+#. module: hr_expense
+#: model:mail.message.subtype,description:hr_expense.mt_expense_confirmed
+msgid "Expense report submitted, waiting approval"
+msgstr "Utleggsrapport sendt, avventer godkjenning"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense_root
@@ -273,23 +526,37 @@ msgstr "Utgifter analyse."
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Expenses Month"
-msgstr ""
+msgstr "Utlegg måned"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.actions.report.xml,name:hr_expense.action_report_hr_expense_sheet
+#: model:ir.ui.view,arch_db:hr_expense.report_expense_sheet
+msgid "Expenses Report"
+msgstr "Utleggsrapport"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_department_expense_sheets_to_approve_count
+msgid "Expenses Reports to Approve"
+msgstr "Utleggsrapporter å godkjenne"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:mail.message.subtype,name:hr_expense.mt_department_expense_confirmed
 msgid "Expenses To Approve"
-msgstr ""
+msgstr "Utlegg å godkjenne"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Expenses by Month"
-msgstr ""
+msgstr "Utlegg etter måned"
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:209
 #, python-format
 msgid "Expenses must belong to the same Employee."
-msgstr ""
+msgstr "Utlegg må tilhøre samme ansatt."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:212
@@ -300,11 +567,21 @@ msgid ""
 msgstr ""
 
 #. module: hr_expense
-#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
-msgid "Expenses of Your Team Member"
-msgstr ""
+<<<<<<< HEAD
+=======
+#: code:addons/hr_expense/models/hr_expense.py:403
+#, python-format
+msgid "Expenses must have been paid by the same entity (Company or employee)"
+msgstr "Utlegg må være betalt av den samme (firma eller ansatt)"
 
 #. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Expenses of Your Team Member"
+msgstr "Utlegg fra ditt teammedlem"
+
+#. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.actions.act_window,name:hr_expense.action_request_approve_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_action_from_department
 #: model:ir.model.fields,field_description:hr_expense.field_hr_department_expense_to_approve_count
@@ -315,11 +592,26 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Expenses to Invoice"
 msgstr "Utgifter til faktura."
+=======
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
+msgid "Expenses to Invoice"
+msgstr "Utgifter til faktura"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses_to_submit
+msgid "Expenses to Submit"
+msgstr "Utlegg å sende inn"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+msgid "Expenses will go through these steps:"
+msgstr "Utlegg vil gå gjennom disse stegene:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "Former Employees"
-msgstr ""
+msgstr "Tidligere ansatte"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,help:hr_expense.action_approved_expense
@@ -327,6 +619,8 @@ msgid ""
 "From here the accountant will be able to approve as well as refuse the "
 "expenses which are verified by the HR Manager."
 msgstr ""
+"Herfra kan regnskapsfører godkjenne eller avvise utlegg som er verifisert av"
+" HR-leder."
 
 #. module: hr_expense
 #: model:ir.actions.server,name:hr_expense.hr_expense_entry_action_server
@@ -339,9 +633,15 @@ msgid "Group By"
 msgstr "Grupper etter"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.actions.report.xml,name:hr_expense.action_report_hr_expense
 msgid "HR Expense"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Have a wonderful day,<br/>- The Odoo Team"
+msgstr "Ha en herlig dag, <br/>- Odoo-teamet"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
@@ -352,7 +652,7 @@ msgstr "HR utgifter."
 #: model:product.product,name:hr_expense.hotel_rent
 #: model:product.template,name:hr_expense.hotel_rent_product_template
 msgid "Hotel Accommodation"
-msgstr ""
+msgstr "Hotellovernatting"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_expense_refuse_wizard
@@ -396,16 +696,51 @@ msgid "Last Updated on"
 msgstr "Sist oppdatert"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.actions.act_window,name:hr_expense.expense_all
 #: model:ir.ui.menu,name:hr_expense.menu_expense_all
+=======
+#: model:res.groups,name:hr_expense.group_hr_expense_manager
+msgid "Manager"
+msgstr "Leder"
+
+#. module: hr_expense
+#. openerp-web
+#: code:addons/hr_expense/static/src/js/tour.js:41
+#, python-format
+msgid "Managers can get all reports to approve from this menu."
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_communication
+msgid "Memo"
+msgstr "Notat"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "My Expenses"
 msgstr "Mine utgifter."
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "My Expenses to Submit"
+msgstr "Utlegg å sende inn"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_my_all
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
+msgid "My Reports"
+msgstr "Rapportene mine"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 msgid "My Team Expenses"
-msgstr ""
+msgstr "Utlegg fra mitt team"
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
@@ -439,7 +774,7 @@ msgstr ""
 #: code:addons/hr_expense/models/hr_expense.py:244
 #, python-format
 msgid "No Home Address found for the employee %s, please configure one."
-msgstr ""
+msgstr "Ingen hjemmeadresse funnet for ansatt %s, vennligst legg en til"
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:240
@@ -448,35 +783,141 @@ msgid "No credit account found for the %s journal, please configure one."
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Not Refused"
+msgstr "Ikke avvist"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "Notes..."
-msgstr ""
+msgstr "Notater..."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_attachment_number
 msgid "Number of Attachments"
-msgstr ""
+msgstr "Antall vedlegg"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.actions.act_window,help:hr_expense.action_request_approve_expense
 #: model:ir.actions.act_window,help:hr_expense.expense_all
+=======
+#: model:res.groups,name:hr_expense.group_hr_expense_user
+msgid "Officer"
+msgstr "Offiser"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "Once approved, your expense report, goes to the accounting,"
+msgstr ""
+"Utleggsrapporten din går til regnskapsavdelingen så snart den er godkjent,"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+msgid "Once approved, your expenses report goes to the accounting,"
+msgstr ""
+"Utleggsrapporten din går til regnskapsavdelingen så snart den er godkjent,"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_all
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_approve
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_pay
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_post
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_my_all
+#: model:ir.actions.act_window,help:hr_expense.action_request_approve_expense_sheet
+#: model:ir.actions.act_window,help:hr_expense.action_request_to_pay_expense_sheet
+#: model:ir.actions.act_window,help:hr_expense.action_request_to_post_expense_sheet
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "Once you have created your expense, submit it to your manager who will "
 "validate it."
 msgstr ""
+"Når du har opprettet utlegget, send det til lederen din for godkjenning."
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: selection:hr.expense,state:0
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid ""
+"Once your email gateway is configured, come back to this screen\n"
+"                            to setup the next steps."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:537
+#, python-format
+msgid "Only HR Officers can approve expenses"
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:528
+#, python-format
+msgid "Only HR Officers can refuse expenses"
+msgstr ""
+
+#. module: hr_expense
+#: selection:hr.expense.sheet,state:0
+#: model:mail.message.subtype,name:hr_expense.mt_expense_paid
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Paid"
 msgstr "Betalt."
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_amount
+msgid "Payment Amount"
+msgstr "Betalingsbeløp"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_payment_mode
 msgid "Payment By"
+msgstr "Betaling innen"
+
+#. module: hr_expense
+<<<<<<< HEAD
+#: code:addons/hr_expense/models/hr_expense.py:280
+=======
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_payment_date
+msgid "Payment Date"
+msgstr "Betalingsdato"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_journal_id
+msgid "Payment Method"
+msgstr "Betalings metode."
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_register_payment_wizard_payment_method_id
+msgid "Payment Type"
+msgstr "Betalingstype"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "Periodically, you submit expenses report to your manager,"
 msgstr ""
 
 #. module: hr_expense
-#: code:addons/hr_expense/models/hr_expense.py:280
+#: model:ir.model,name:hr_expense.model_web_planner
+msgid "Planner"
+msgstr "Planlegger"
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:255
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "Please configure Default Expense account for Product expense: "
@@ -533,13 +974,24 @@ msgstr "Nekt."
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_refuse_wizard_action
 msgid "Refuse Expense"
-msgstr ""
+msgstr "Avvis utlegg"
 
 #. module: hr_expense
 #: selection:hr.expense,state:0
 #: model:mail.message.subtype,name:hr_expense.mt_expense_refused
 msgid "Refused"
+<<<<<<< HEAD
 msgstr "Avvist."
+=======
+msgstr "Avvist"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses_refused
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Refused Expenses"
+msgstr "Avviste utlegg"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.ui.menu,name:hr_expense.menu_hr_expense
@@ -547,6 +999,7 @@ msgid "Reporting"
 msgstr "Rapportering"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:web.tip,description:hr_expense.expense_tip_1
 msgid "Select the lines you want to submit to be reimbursed."
 msgstr ""
@@ -563,11 +1016,84 @@ msgstr ""
 #: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
 msgid "Set to Draft"
 msgstr "Sett som utkast."
+=======
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Report"
+msgstr "Rapport"
+
+#. module: hr_expense
+#: selection:hr.expense,state:0
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
+msgid "Reported"
+msgstr "Rapportert"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_reports
+msgid "Reports"
+msgstr "Rapporter"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_request_approve_expense_sheet
+msgid "Reports to Approve"
+msgstr "Rapporter til godkjenning"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_request_to_pay_expense_sheet
+msgid "Reports to Pay"
+msgstr "Til utbetaling"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_request_to_post_expense_sheet
+msgid "Reports to Post"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+msgid "Resubmit"
+msgstr "Send på nytt"
+
+#. module: hr_expense
+#. openerp-web
+#: code:addons/hr_expense/static/src/js/tour.js:25
+#, python-format
+msgid ""
+"Save the report, your manager will receive a notification by email to "
+"approve it."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:88
+#, python-format
+msgid ""
+"Selected Unit of Measure does not belong to the same category as the product"
+" Unit of Measure"
+msgstr ""
+
+#. module: hr_expense
+#: model:web.planner,tooltip_planner:hr_expense.planner_hr_expense
+msgid "Send receipts by email to create expenses efficiently."
+msgstr "Send kvitteringer på epost for effektiv oppretting av utlegg."
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_global_settings
+msgid "Settings"
+msgstr "Innstillinger"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Setup"
+msgstr "Oppsett"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_configuration
+msgid "Setup your domain alias"
+msgstr "Sett opp et domenealias"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_product_template_can_be_expensed
 msgid "Specify whether the product can be selected in an HR expense."
-msgstr ""
+msgstr "Spesifiser om produktet kan velges i HR utlegg."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_state
@@ -575,6 +1101,19 @@ msgid "Status"
 msgstr "Status"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_state
+msgid "Status of the expense."
+msgstr "Utleggsstatus."
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "Subject:"
+msgstr "Emne"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.server,name:hr_expense.hr_expense_submit_action_server
 msgid "Submit Expenses"
 msgstr ""
@@ -589,7 +1128,7 @@ msgstr "Send inn til leder."
 #. module: hr_expense
 #: selection:hr.expense,state:0
 msgid "Submitted"
-msgstr ""
+msgstr "Sendt inn"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_untaxed_amount
@@ -612,9 +1151,19 @@ msgid "The journal used when the expense is done."
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_bank_journal_id
+=======
+#: code:addons/hr_expense/wizard/hr_expense_register_payment.py:35
+#, python-format
+msgid "The payment amount must be strictly positive."
+msgstr "Betalingsbeløpet må være positivt."
+
+#. module: hr_expense
+#: model:ir.model.fields,help:hr_expense.field_hr_expense_sheet_bank_journal_id
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "The payment method used when the expense is paid by the company."
-msgstr ""
+msgstr "Betalingsmetoden som brukes når utlegget dekkes av firmaet."
 
 #. module: hr_expense
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
@@ -622,9 +1171,20 @@ msgid "This document must be dated and signed for reimbursement."
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.menu,name:hr_expense.menu_expense_to_approve
 #: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_filter
 #: model:mail.message.subtype,name:hr_expense.mt_expense_confirmed
+=======
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "The steps to process expenses are:"
+msgstr "Stegene for behandling av utlegg er:"
+
+#. module: hr_expense
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_to_approve
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_filter
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "To Approve"
 msgstr "Til Godkjenning."
 
@@ -639,6 +1199,22 @@ msgid "To Submit"
 msgstr "Til innsending"
 
 #. module: hr_expense
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid ""
+"To create expenses by email, take photos of your\n"
+"                            receipts and send them by email with the following\n"
+"                            information:"
+msgstr ""
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "To:"
+msgstr "Til:"
+
+#. module: hr_expense
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_total_amount
 msgid "Total"
 msgstr "Total"
@@ -661,6 +1237,7 @@ msgid "Unit of Measure"
 msgstr "Enhet"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:hr_expense.report_expense
 msgid "UoM"
 msgstr ""
@@ -687,6 +1264,36 @@ msgid ""
 " If the accountant genrate the accounting entries for the expense request, "
 "the status is 'Waiting Payment'."
 msgstr ""
+=======
+#: model:ir.actions.act_window,name:hr_expense.action_approved_expense
+msgid "Unreported Expenses"
+msgstr "Urapporterte utlegg"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_register_payment_view_form
+msgid "Validate"
+msgstr "Valider"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet_responsible_id
+msgid "Validation By"
+msgstr "Validering av"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_expenses_tree
+msgid "View Attached Documents"
+msgstr "Se vedlagte dokumenter"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+msgid "View Attachments"
+msgstr "Se vedlegg"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
+msgid "View Report"
+msgstr "Se rapport"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:111
@@ -695,7 +1302,17 @@ msgid "You can only delete draft or refused expenses!"
 msgstr ""
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: code:addons/hr_expense/models/hr_expense.py:206
+=======
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "We hope this feature helped you manage your expenses efficiently."
+msgstr ""
+"Vi håper denne funksjonen hjelper deg med effektiv administrasjon av utlegg."
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:508
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "You can only generate accounting entry for approved expense(s)."
 msgstr ""
@@ -703,8 +1320,13 @@ msgstr ""
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:117
 #, python-format
+<<<<<<< HEAD
 msgid "You can only submit draft expenses!"
 msgstr ""
+=======
+msgid "You cannot add expense lines of another employee."
+msgstr "Du kan ikke legge til utleggslinjer fra en annen ansatt."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:128
@@ -726,6 +1348,7 @@ msgid "or"
 msgstr "eller"
 
 #. module: hr_expense
+<<<<<<< HEAD
 #: model:ir.model,name:hr_expense.model_report_hr_expense_report_expense
 msgid "report.hr_expense.report_expense"
 msgstr ""
@@ -738,6 +1361,35 @@ msgstr ""
 
 #~ msgid "Followers"
 #~ msgstr "Følgere."
+=======
+#: code:addons/hr_expense/models/hr_expense.py:106
+#, python-format
+msgid "You cannot report expenses for different employees in the same report!"
+msgstr "Du kan ikke ha utlegg fra forskjellige ansatte i samme rapport!"
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:605
+#, python-format
+msgid "You cannot report expenses with different payment modes."
+msgstr ""
+
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:105
+#, python-format
+msgid "You cannot report twice the same line!"
+msgstr "Du kan ikke rapportere den samme linjen to ganger!"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_all
+msgid "You record expenses"
+msgstr "Du registrerer utlegg"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,help:hr_expense.action_hr_expense_refused_expenses
+#: model:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
+msgid "You record expenses,"
+msgstr "Du registrerer utlegg,"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "If checked new messages require your attention."
 #~ msgstr "Hvis det er merket nye meldinger så krever dette din oppmerksomhet."
@@ -745,6 +1397,7 @@ msgstr ""
 #~ msgid "Last Message Date"
 #~ msgstr "Siste meldingsdato"
 
+<<<<<<< HEAD
 #~ msgid "Messages"
 #~ msgstr "Meldinger."
 
@@ -753,6 +1406,22 @@ msgstr ""
 
 #~ msgid "Number of Actions"
 #~ msgstr "Antall handlinger"
+=======
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
+msgid "e.g. Lunch"
+msgstr "for eksempel Lunsj"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_form_view
+msgid "e.g. Lunch with Customer"
+msgstr "for eksempel Lunsj med kunde"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
+msgid "e.g. Trip to NY"
+msgstr "for eksempel Tur til New York"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Number of messages which requires an action"
 #~ msgstr "Antall meldinger som krever handling"
@@ -760,6 +1429,7 @@ msgstr ""
 #~ msgid "Number of unread messages"
 #~ msgstr "Antall uleste meldinger"
 
+<<<<<<< HEAD
 #~ msgid "Unread Messages"
 #~ msgstr "Uleste meldinger."
 
@@ -768,3 +1438,20 @@ msgstr ""
 
 #~ msgid "Website communication history"
 #~ msgstr "Historikk for kommuniksjon på nettsted"
+=======
+#. module: hr_expense
+#: code:addons/hr_expense/models/hr_expense.py:305
+#, python-format
+msgid "or send receipts by email to %s."
+msgstr "eller send kvitteringer på epost til %s."
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "send us an email"
+msgstr "send oss en epostmelding"
+
+#. module: hr_expense
+#: model:ir.ui.view,arch_db:hr_expense.hr_expense_planner
+msgid "to describe<br/> your experience or to suggest improvements!"
+msgstr "for å beskrive <br/>dine erfaringer eller foreslå forbedringer!"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

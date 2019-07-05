@@ -5,6 +5,7 @@
 #
 # Translators:
 # Kaloyan Naumov <kaloyan@lumnus.net>, 2016
+<<<<<<< HEAD
 # #-#-#-#-#  bg.po (Odoo 9.0)  #-#-#-#-#
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
@@ -12,16 +13,28 @@
 #
 # Translators:
 #, fuzzy
+=======
+# Martin Trigaux, 2016
+# Maria Boyadjieva <marabo2000@gmail.com>, 2016
+# kalatchev, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-05-10 21:17+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Bulgarian (http://www.transifex.com/odoo/odoo-9/language/"
 "bg/)\n"
 "Language: bg\n"
+=======
+"POT-Creation-Date: 2016-09-19 12:36+0000\n"
+"PO-Revision-Date: 2016-09-19 12:36+0000\n"
+"Last-Translator: kalatchev, 2016\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -36,18 +49,57 @@ msgid ""
 "<span class=\"col-xs-6 text-right text-muted\" title=\"Delivery will be "
 "updated after choosing a new delivery method\"> Delivery:</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span class=\"col-xs-6 text-right text-muted\" title=\"Доставните условия ще "
 "се променят, слад като изберете метод за доставка\"> Доставка:</span>"
+=======
+"<span class=\"col-xs-6 text-right text-muted\" title=\"Доставните условия ще"
+" се променят, слад като изберете метод за доставка\"> Доставка:</span>"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_description
+msgid ""
+"A description of the Product that you want to communicate to your customers."
+" This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr ""
+"Описание на продукта, който искате да предоставите на клиентите си. Това "
+"описание ще бъде копирано на всяка поръчка за продажба, поръчка за доставка "
+"и клиентска фактура/кредитно известие"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
+msgid ""
+"Accessories show up when the customer reviews the cart before paying (cross-"
+"sell strategy, e.g. for computers: mouse, keyboard, etc.). An algorithm "
+"figures out a list of accessories based on all the products added to cart."
+msgstr ""
+"Аксесоарите се появяват, когато клиентът преглежда количката преди да плати "
+"(стратегия за кръстосани продажби, напр. за компютри: мишка, клавиатура и "
+"др.). Алгоритъмът представя списък с аксесоари, въз основа на всички "
+"продукти, добавени в количката."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_accessory_product_ids
 msgid "Accessory Products"
-msgstr "Аксесоари"
+msgstr "Продукти за аксесоари"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alternative_product_ids
 msgid "Appear on the product page"
 msgstr "Appear on the product page"
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_availability
+msgid "Adds an availability status on the web product page."
+msgstr "Добавя състояние на наличност на страницата на уебпродукта."
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid "Alternative Products"
+msgstr "Алтернативни продукти"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_accessory_product_ids
@@ -55,9 +107,15 @@ msgid "Appear on the shopping cart"
 msgstr "Appear on the shopping cart"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_available_in_pos
 msgid "Available in the Point of Sale"
 msgstr "Видим в ПОС"
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_availability_warning
+msgid "Availability Warning"
+msgstr "Предупреждение за наличност"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model,name:website_sale_delivery.model_delivery_carrier
@@ -67,6 +125,7 @@ msgstr "Превозвач"
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_to_weight
 msgid ""
+<<<<<<< HEAD
 "Check if the product should be weighted using the hardware scale integration"
 msgstr "Отбележи, ако продукта трябва да бъде премерен с кантар"
 
@@ -74,11 +133,23 @@ msgstr "Отбележи, ако продукта трябва да бъде п�
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_available_in_pos
 msgid "Check if you want this product to appear in the Point of Sale"
 msgstr "Изберете, ако искате продукта да се вижда в ПОС"
+=======
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+"Категориите могат да бъдат публикувани на страницата на магазина (онлайн "
+"каталожна мрежа), за да са в помощ на клиентите да откриват всички артикули "
+"в дадена категория. За да ги публикувате, отидете в страницата на магазина, "
+"натиснете 'Персонализирайте' и включете *Продуктови категории*. Даден "
+"продукт може да принадлежи на няколко категории."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.ui.view,arch_db:website_sale_delivery.payment_delivery
 msgid "Choose your Delivery Method"
-msgstr "Изберете начин за доставка"
+msgstr "Изберете метода си за доставка"
 
 #. module: website_sale_delivery
 #: model:ir.ui.view,arch_db:website_sale_delivery.country_state_shipping
@@ -93,32 +164,49 @@ msgstr ""
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_sale_order_amount_delivery
 msgid "Delivery Amount"
-msgstr "Сума на доставката"
+msgstr "Количество на доставка"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:website_sale_delivery.menu_ecommerce_delivery
+msgid "Delivery Methods"
+msgstr "Методи на доставка"
+
+#. module: website_sale_delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_form_website_delivery
 msgid "Description"
 msgstr "Описание"
 
 #. module: website_sale_delivery
 #: model:ir.ui.view,arch_db:website_sale_delivery.view_delivery_carrier_form_website_delivery
+<<<<<<< HEAD
 msgid "Description displayed on the eCommerce and on the Online Quotations."
 msgstr "Описание за показване в eCommerce и он-лайн Оферти"
+=======
+msgid "Description displayed on the eCommerce and on online quotations."
+msgstr "Описание, изложено в електронната търговия и онлайн офертите."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_description
 msgid "Description for Online Quotations"
-msgstr "Описание за он-лайн оферти"
+msgstr "Описание на онлайн оферти"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_quote_description
 msgid "Description for the quote"
-msgstr "Описание за офертата"
+msgstr "Описание на офертата"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_website_sequence
 msgid "Determine the display order in the Website E-commerce"
+<<<<<<< HEAD
 msgstr "Determine the display order in the Website E-commerce"
+=======
+msgstr "Определете реда за показване в електронния магазин"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_split_method
@@ -129,6 +217,11 @@ msgid ""
 "By Weight : Cost will be divided depending on its weight.\n"
 "By Volume : Cost will be divided depending on its volume."
 msgstr ""
+"Равен: Разходът ще бъде разделен по равно.\n"
+"По количество: Разходът ще бъде разделен според количеството продукт.\n"
+"По настоящ разход: Разходът ще бъде разделен според текущия разход на продукта.\n"
+"По тегло: Разходът ще бъде разделен според собственото си тегло.\n"
+"По обем: Разходът ще бъде разделен според собствения си обем."
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_attachment_count
@@ -138,7 +231,7 @@ msgstr ""
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_sale_order_has_delivery
 msgid "Has an order line set for delivery"
-msgstr "Има отбелязан ред за доставка в поръчката"
+msgstr "Притежава пореден ред за доставка"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_sale_order_has_delivery
@@ -146,6 +239,14 @@ msgid "Has delivery"
 msgstr "Има доставка"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_product_image_ids
+msgid "Images"
+msgstr "Изображения"
+
+#. module: website_sale_delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_intrastat_id
 msgid "Intrastat code"
 msgstr "Интрастат код"
@@ -172,18 +273,32 @@ msgid ""
 "No shipping method is available for your current order and shipping address. "
 "Please contact us for more information."
 msgstr ""
-"Няма възможен метод за доставка за техущата ви поръчка и адрес. Моля "
-"свържете се с нас за допълнителна информация."
+"Няма на разположение шипинг метод за техущата Ви поръчка и адрес за шипинг. "
+"Моля свържете се с нас за допълнителна информация."
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_optional_product_ids
 msgid "Optional Products"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_pos_categ_id
 msgid "Point of Sale Category"
 msgstr "ПОС Категория"
+=======
+msgstr "Незадължителти продукти"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_optional_product_ids
+msgid ""
+"Optional Products are suggested whenever the customer hits *Add to Cart* "
+"(cross-sell strategy, e.g. for computers: warranty, software, etc.)."
+msgstr ""
+"Незадължителни продукти се предлагат всеки път, когато клиентът натисне * "
+"Добавете в количката * (стратегия за кръстосани продажби, например за "
+"компютри: гаранция, софтуер и т.н.)."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_purchase_requisition
@@ -208,6 +323,7 @@ msgstr "Ред от поръчка за покупка"
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_ids
 msgid "Rating"
+<<<<<<< HEAD
 msgstr "Rating"
 
 #. module: website_sale_delivery
@@ -242,6 +358,29 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_sequence
 msgid "Sequence"
 msgstr "Последователност"
+=======
+msgstr "Оценяване"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_last_value
+msgid "Rating Last Value"
+msgstr "Оценяване последна стойност"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_rating_count
+msgid "Rating count"
+msgstr "Брой оценявания"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_rating_last_value
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "Оценяване стойност: 0=Несполучлив, 10=Сполучлив"
+
+#. module: website_sale_delivery
+#: model:ir.model,name:website_sale_delivery.model_sale_order
+msgid "Sales Order"
+msgstr "Поръчка за продажби"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_size_x
@@ -257,7 +396,7 @@ msgstr "Size Y"
 #: code:addons/website_sale_delivery/models/sale_order.py:137
 #, python-format
 msgid "Sorry, we are unable to ship your order"
-msgstr "Съжелявам, не можем да изпратим вашата поръчка"
+msgstr "Съжаляваме, не можем да превозим Вашата поръчка."
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_split_method
@@ -270,9 +409,19 @@ msgid "Styles"
 msgstr "Стилове"
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_alternative_product_ids
 msgid "Suggested Products"
 msgstr "Suggested Products"
+=======
+#: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_alternative_product_ids
+msgid ""
+"Suggest more expensive alternatives to your customers (upsell strategy). "
+"Those products show up on the product page."
+msgstr ""
+"Предлагайте по-скъпи варианти на клиентите си (стратегия за ъпселинг). Тези "
+"продукти се излагат в продуктовата страница."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,help:website_sale_delivery.field_sale_order_amount_delivery
@@ -280,6 +429,7 @@ msgid "The amount without tax."
 msgstr "Сумата без данък."
 
 #. module: website_sale_delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_public_categ_ids
 msgid "Those categories are used to group similar products for e-commerce."
 msgstr "Those categories are used to group similar products for e-commerce."
@@ -288,6 +438,16 @@ msgstr "Those categories are used to group similar products for e-commerce."
 #: model:ir.model.fields,help:website_sale_delivery.field_delivery_carrier_pos_categ_id
 msgid "Those categories are used to group similar products for point of sale."
 msgstr "Тези категории се използват за групиране на продукти в ПОС."
+=======
+#: model:ir.ui.view,arch_db:website_sale_delivery.shipping_tracking
+msgid "Tracking:"
+msgstr "Проследяване:"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_published
+msgid "Visible in Website"
+msgstr "Видим в уебсайта"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_to_weight
@@ -302,21 +462,37 @@ msgstr ""
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_public_categ_ids
 msgid "Website Product Category"
-msgstr "Категория продукти в Уебсайт"
+msgstr "Продуктова категория в уебсайт"
+
+#. module: website_sale_delivery
+<<<<<<< HEAD
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_description
+msgid "Website meta description"
+msgstr "Website meta description"
+=======
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_sequence
+msgid "Website Sequence"
+msgstr "Уебсайт последователност"
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_description
 msgid "Website meta description"
-msgstr "Website meta description"
+msgstr "Мета описание на уебсайт"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_keywords
 msgid "Website meta keywords"
+<<<<<<< HEAD
 msgstr "Website meta keywords"
+=======
+msgstr "Мета ключови думи на уебсайт"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale_delivery
 #: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_meta_title
 msgid "Website meta title"
+<<<<<<< HEAD
 msgstr "Website meta title"
 
 #~ msgid ""
@@ -337,3 +513,16 @@ msgstr "Website meta title"
 
 #~ msgid "Website URL"
 #~ msgstr "URL на Уебсайта"
+=======
+msgstr "Мета заглавие на уебсайт"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_price
+msgid "Website price"
+msgstr "Цена на уебсайт"
+
+#. module: website_sale_delivery
+#: model:ir.model.fields,field_description:website_sale_delivery.field_delivery_carrier_website_public_price
+msgid "Website public price"
+msgstr "Общодостъпна цена на уебсайт"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

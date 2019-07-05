@@ -641,8 +641,32 @@ msgid ""
 "Policy to post a message on the document using the mailgateway.\n"
 "- everyone: everyone can post\n"
 "- partners: only authenticated partners\n"
+<<<<<<< HEAD
 "- followers: only followers of the related document or members of following "
 "channels\n"
+=======
+"- followers: only followers of the related document or members of following channels\n"
+msgstr ""
+"Πολιτική για τη αποστολή μηνύματος στο έγγραφο χρησιμοποιώντας το mailgateway.\n"
+"- όλοι: ο καθένας μπορεί να αποστείλει\n"
+"- συνεργάτες: μόνο οι επικυρωμένοι συνεργάτες \n"
+"- ακόλουθοι: μόνο οι ακόλουθοι του σχετικού εγγράφου ή μέλη των παρακάτω καναλιών\n"
+
+#. module: maintenance
+#: selection:maintenance.request,maintenance_type:0
+msgid "Preventive"
+msgstr "Προληπτικά"
+
+#. module: maintenance
+#: code:addons/maintenance/models/maintenance.py:210
+#, python-format
+msgid "Preventive Maintenance - %s"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Preventive Maintenance Frequency"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 "Πολιτική για να δημοσιεύσετε ένα μήνυμα σχετικά με το έγγραφο "
 "χρησιμοποιώντας το mailgateway.\n"
@@ -703,7 +727,7 @@ msgstr ""
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_stage_done
 msgid "Request Done"
-msgstr ""
+msgstr "Αίτηση Ολοκλήρωσης"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_config_settings_view_form
@@ -936,10 +960,28 @@ msgid ""
 "requests."
 msgstr ""
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model,name:hr_equipment.model_hr_equipment_config_settings
 msgid "hr.equipment.config.settings"
 msgstr ""
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "days"
+msgstr "ημέρες"
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "for"
+msgstr "για"
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "hours"
+msgstr "ώρες"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_tree

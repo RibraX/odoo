@@ -3,10 +3,20 @@
 # * sale_stock
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# ExcaliberX <excaliberx@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Yihya Hugirat <hugirat@gmail.com>, 2017
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
+# hed shefetr <hed@laylinetech.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2015-10-01 09:22+0000\n"
 "Last-Translator: Martin Trigaux\n"
@@ -18,12 +28,38 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: sale_stock
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:29+0000\n"
+"Last-Translator: hed shefetr <hed@laylinetech.com>, 2019\n"
+"Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#. module: sale_stock
+#: model:ir.ui.view,arch_db:sale_stock.report_delivery_document_inherit_sale_stock
+msgid "<strong>Customer Reference:</strong>"
+msgstr "<strong>הפניית לקוח:</strong>"
+
+#. module: sale_stock
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:sale_stock.report_invoice_document_inherit_sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.report_saleorder_document_inherit_sale_stock
 msgid "<strong>Incoterms:</strong>"
-msgstr ""
+msgstr "<strong>תנאי שילוח בינלאומיים:</strong>"
 
 #. module: sale_stock
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:sale_stock.menu_aftersale
+msgid "After-Sale"
+msgstr "לאחר המכירה"
+
+#. module: sale_stock
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: selection:sale.config.settings,module_delivery:0
 msgid "Allow adding shipping costs"
 msgstr ""
@@ -56,22 +92,22 @@ msgstr ""
 #. module: sale_stock
 #: selection:sale.order,picking_policy:0
 msgid "Deliver all products at once"
-msgstr ""
+msgstr "ספק את כל המוצרים בבת אחת"
 
 #. module: sale_stock
 #: selection:sale.order,picking_policy:0
 msgid "Deliver each product when available"
-msgstr ""
+msgstr "ספק כל מוצר כאשר הוא זמין"
 
 #. module: sale_stock
 #: model:ir.ui.view,arch_db:sale_stock.view_order_form_inherit_sale_stock
 msgid "Delivery"
-msgstr ""
+msgstr "משלוח"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_delivery_count
 msgid "Delivery Orders"
-msgstr ""
+msgstr "משלוח הזמנות"
 
 #. module: sale_stock
 #: selection:sale.config.settings,group_mrp_properties:0
@@ -81,7 +117,7 @@ msgstr ""
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_route_so_lines
 msgid "Enable Route on Sales Order Line"
-msgstr ""
+msgstr "לאפשר מסלול על שורת הזמנת"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_product_product_expense_policy
@@ -100,7 +136,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_stock.field_account_invoice_incoterms_id
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_incoterm
 msgid "Incoterms"
-msgstr ""
+msgstr "מונחי סחר בינלאומיים "
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_account_invoice_incoterms_id
@@ -109,6 +145,8 @@ msgid ""
 "costs and responsibilities between buyer and seller and reflect state-of-the-"
 "art transportation practices."
 msgstr ""
+"Incoterms הם סדרה של תנאי המכירה. הם משמשים לחלק את עלויות השילוח ואחריות "
+"בין הקונה לבין המוכר ומשקפים שיטות תחבורה החדישות ביותר."
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_sale_order_incoterm
@@ -116,6 +154,8 @@ msgid ""
 "International Commercial Terms are a series of predefined commercial terms "
 "used in international transactions."
 msgstr ""
+"תנאים מסחריים בינלאומיים הם סדרה של מונחים מסחריים מוגדרים מראש המשמשים "
+"בעסקאות בינלאומיות."
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_location_route
@@ -139,6 +179,9 @@ msgid ""
 "for procurement and delivery that many days earlier than the actual promised "
 "date, to cope with unexpected delays in the supply chain."
 msgstr ""
+"מרווח טעות לתאריכים שהובטחו ללקוחות. המוצרים יהיו מסודרים לרכישה ימים רבים "
+"מוקדם יותר מאשר התאריך המובטחת בפועל, כדי להתמודד עם עיכובים בלתי צפויים "
+"בשרשרת האספקה."
 
 #. module: sale_stock
 #: selection:sale.config.settings,group_route_so_lines:0
@@ -154,7 +197,7 @@ msgstr ""
 #: code:addons/sale_stock/sale_stock.py:156
 #, python-format
 msgid "Not enough inventory!"
-msgstr ""
+msgstr "אין מספיק מלאי!"
 
 #. module: sale_stock
 #: code:addons/sale_stock/res_config.py:42
@@ -171,7 +214,7 @@ msgstr ""
 #: code:addons/sale_stock/sale_stock.py:167
 #, python-format
 msgid "Ordered quantity decreased!"
-msgstr ""
+msgstr "הכמות שהוזמנה ירדה!"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line_product_packaging
@@ -205,9 +248,17 @@ msgid "Properties on SO Lines"
 msgstr ""
 
 #. module: sale_stock
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:sale_stock.model_stock_return_picking
+msgid "Return Picking"
+msgstr "החזר בחירה"
+
+#. module: sale_stock
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line_route_id
 msgid "Route"
-msgstr ""
+msgstr "מסלול"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_stock_picking_sale_id
@@ -237,12 +288,12 @@ msgstr "נתונים על מכירות"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_res_company_security_lead
 msgid "Sales Safety Days"
-msgstr ""
+msgstr "זמן בטיחות של מכירות"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_stock_location_route_sale_selectable
 msgid "Selectable on Sales Order Line"
-msgstr ""
+msgstr "ניתן לבחירה על שורת הזמנה"
 
 #. module: sale_stock
 #: selection:sale.config.settings,default_picking_policy:0
@@ -268,17 +319,31 @@ msgstr "פרטי משלוח"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_picking_policy
 msgid "Shipping Policy"
-msgstr ""
+msgstr "מדיניות המשלוח"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move
 msgid "Stock Move"
-msgstr ""
+msgstr "תנועת מלאי"
 
 #. module: sale_stock
 #: code:addons/sale_stock/sale_stock.py:213
 #, python-format
+<<<<<<< HEAD
 msgid "This product is packaged by %s %s. You should sell %s %s."
+=======
+msgid "This product is packaged by %.2f %s. You should sell %.2f %s."
+msgstr "מוצר זה נארוז על ידי %.2f %s. אתה צריך למכור %.2f %s."
+
+#. module: sale_stock
+#: model:ir.model.fields,field_description:sale_stock.field_stock_return_picking_line_to_refund_so
+msgid "To Refund"
+msgstr ""
+
+#. module: sale_stock
+#: model:ir.model.fields,field_description:sale_stock.field_stock_move_to_refund_so
+msgid "To Refund in SO"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: sale_stock
@@ -305,6 +370,7 @@ msgid ""
 "You are decreasing the ordered quantity! Do not forget to manually update "
 "the delivery order if needed."
 msgstr ""
+"אתה מפחית את כמות ההזמנה! אל תשכח לעדכן ידנית את סדר המשלוח במידת הצורך."
 
 #. module: sale_stock
 #: code:addons/sale_stock/sale_stock.py:157

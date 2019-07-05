@@ -419,10 +419,38 @@ PaymentScreenWidget.include({
                 var response = self.pos.decodeMercuryResponse(data);
                 response.journal_id = parsed_result.journal_id;
 
+<<<<<<< HEAD
                 if (response.status === 'Approved') {
                     // AP* indicates a duplicate request, so don't add anything for those
                     if (response.message === "AP*" && self._does_credit_payment_line_exist(response.authorize, decodedMagtek['number'],
                                                                                         response.card_type, decodedMagtek['name'])) {
+=======
+                    order.selected_paymentline.paid = true;
+                    order.selected_paymentline.mercury_swipe_pending = false;
+                    order.selected_paymentline.mercury_amount = response.authorize;
+                    order.selected_paymentline.set_amount(response.authorize);
+                    order.selected_paymentline.mercury_card_number = decodedMagtek['number'];
+                    order.selected_paymentline.mercury_card_brand = response.card_type;
+                    order.selected_paymentline.mercury_card_owner_name = decodedMagtek['name'];
+                    order.selected_paymentline.mercury_ref_no = response.ref_no;
+                    order.selected_paymentline.mercury_record_no = response.record_no;
+                    order.selected_paymentline.mercury_invoice_no = response.invoice_no;
+                    order.selected_paymentline.mercury_auth_code = response.auth_code;
+                    order.selected_paymentline.mercury_data = response; // used to reverse transactions
+                    order.selected_paymentline.set_credit_card_name();
+
+                    self.order_changes();
+                    self.reset_input();
+                    self.render_paymentlines();
+                    order.trigger('change', order); // needed so that export_to_JSON gets triggered
+
+                    if (response.message === "PARTIAL AP") {
+                        def.resolve({
+                            message: _t("Partially approved"),
+                            auto_close: false,
+                        });
+                    } else {
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                         def.resolve({
                             message: lookUpCodeTransaction["Approved"][response.error],
                             auto_close: true,

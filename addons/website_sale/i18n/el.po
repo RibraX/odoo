@@ -6,15 +6,28 @@
 # Kostas Goutoudis <goutoudis@gmail.com>, 2015-2016
 # Kostas Goutoudis <goutoudis@gmail.com>, 2016
 # Martin Trigaux, 2016
+<<<<<<< HEAD
+=======
+# Stefanos Nikou <stefanos.nikou@gmail.com>, 2016
+# Giota Dandidou <giotadandidou@gmail.com>, 2017
+# George Tarasidis <george_tarasidis@yahoo.com>, 2017
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-03-22 14:49+0000\n"
 "Last-Translator: Kostas Goutoudis <goutoudis@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/odoo/odoo-9/language/el/)\n"
 "Language: el\n"
+=======
+"POT-Creation-Date: 2017-11-30 14:34+0000\n"
+"PO-Revision-Date: 2017-11-30 14:34+0000\n"
+"Last-Translator: George Tarasidis <george_tarasidis@yahoo.com>, 2017\n"
+"Language-Team: Greek (https://www.transifex.com/odoo/teams/41243/el/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -58,6 +71,8 @@ msgid ""
 "                                <small>(don't forget to apply the changes)</"
 "small>"
 msgstr ""
+"<br/>\n"
+"<strong>Κατάσταση Πληρωμής:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -66,13 +81,26 @@ msgid ""
 "                                <small>(you'll have to subscribe directly on "
 "each of the payment companies' websites)</small>"
 msgstr ""
+"<br/>\n"
+"π.χ. για υπολογιστές:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
 msgid ""
+<<<<<<< HEAD
 "<br/>\n"
 "                                <strong>Payment Status:</strong>"
 msgstr ""
+=======
+"<i class=\"fa fa-3x fa-credit-card text-muted\" aria-hidden=\"true\"/><br/>\n"
+"                                                Are you sure you want to pay with this card: <br/>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "<i class=\"fa fa-check\"/> Ship to this address"
+msgstr "<i class=\"fa fa-check\"/> Αποστολή σε αυτήν την διεύθυνση"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
@@ -81,8 +109,13 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<i class=\"fa fa-comment-o\"/> Website Live Chat on"
 msgstr ""
+=======
+msgid "<i class=\"fa fa-envelope-o\"/> Ask Our Experts"
+msgstr "<i class=\"fa fa-envelope-o\"/> Ρωτήστε τους ειδικούς μας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -92,13 +125,40 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<i class=\"fa fa-print\"/> Print"
-msgstr ""
+msgstr "<i class=\"fa fa-print\"/> Εκτύπωση"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.header
 msgid ""
 "<i class=\"fa fa-shopping-cart\"/>\n"
+<<<<<<< HEAD
 "              My cart"
+=======
+"                    My cart"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"<small class=\"text-muted pull-right\">Source: https://termsfeed.com/blog"
+"/sample-terms-and-conditions-template</small>"
+msgstr ""
+"<small class=\"text-muted pull-right\">Πηγή: https://termsfeed.com/blog"
+"/sample-terms-and-conditions-template</small>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_lines
+msgid "<small><i class=\"fa fa-trash-o\"/> Remove</small>"
+msgstr "<small><i class=\"fa fa-trash-o\"/> Αφαίρεση</small>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid ""
+"<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>Next </span><span class=\"fa fa-long-arrow-right\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 "<i class=\"fa fa-shopping-cart\"/>\n"
 "Καλάθι"
@@ -144,6 +204,8 @@ msgid ""
 "                        At cost price is a good option for heavy or "
 "oversized packages."
 msgstr ""
+"<span class=\"fa fa-lightbulb-o fa-2x\"/>\n"
+"Όλα είναι επεξεργάσιμα στον Odoo ιστότοπο σας. Μπορείτε να επεξεργαστείτε οποιονδήποτε τίτλο σελίδας, ετικέτα πεδίου ή κουμπιού. Απλώς πατήστε * Επεξεργασία * στην επάνω δεξιά γωνία για να ξεκινήσετε την επεξεργασία της σελίδας."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -153,6 +215,8 @@ msgid ""
 "minimum number of items should drive up your average order value and help to "
 "compensate for the delivery costs."
 msgstr ""
+"<span class=\"fa fa-lightbulb-o fa-2x\"/>\n"
+"Προσφέροντας δωρεάν παράδοση με ελάχιστο ποσό ή ελάχιστο αριθμό ειδών πρέπει να αυξήσει τη μέση τιμή παραγγελίας σας και να σας βοηθήσει να αντισταθμίσετε τα έξοδα αποστολής."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -161,20 +225,37 @@ msgid ""
 "                        You can also create different rates based on order "
 "amount ranges, for example 10€ up to a 50€ order, then 5€ after."
 msgstr ""
+"<span class=\"fa fa-lightbulb-o fa-2x\"/>\n"
+"Μπορείτε να δημιουργήσετε διαφορετικές χρεώσεις με βάση τα ποσά των παραγγελιών (π.χ. 10€ μέχρι μια παραγγελία των 50€ και στη συνέχεια 5€ και μετά)."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.continue_shopping
 msgid ""
+<<<<<<< HEAD
 "<span class=\"fa fa-long-arrow-left\"/> <span class=\"hidden-xs\">Continue "
 "Shopping</span><span class=\"visible-xs-inline\">Continue</span>"
 msgstr ""
 "<span class=\"fa fa-long-arrow-left\"/> <span class=\"hidden-xs\">Συνέχεια "
 "Αγορών</span><span class=\"visible-xs-inline\">Συνέχεια</span>"
+=======
+"<span class=\"fa fa-long-arrow-left\"/>\n"
+"                <span class=\"hidden-xs\">Continue Shopping</span>\n"
+"                <span class=\"visible-xs-inline\">Continue</span>"
+msgstr ""
+"<span class=\"fa fa-long-arrow-left\"/>\n"
+"                <span class=\"hidden-xs\">Συνέχιση αγορών</span>\n"
+"                <span class=\"visible-xs-inline\">Συνέχεια</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span class=\"fa fa-long-arrow-left\"/> Back"
+msgstr "<span class=\"fa fa-long-arrow-left\"/> Επιστροφή"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "<span class=\"fa fa-long-arrow-left\"/> Return to Cart"
-msgstr ""
+msgstr "<span class=\"fa fa-long-arrow-left\"/> Επιστροφή στο καλάθι"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart
@@ -194,6 +275,9 @@ msgid ""
 "accessories, services\n"
 "                        </span>"
 msgstr ""
+"<span class=\"panel-title\">\n"
+"<strong> Διασταυρούμενες πωλήσεις</strong>\n"
+"</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -213,10 +297,115 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "<span class=\"panel-title\">\n"
+<<<<<<< HEAD
 "                            <span class=\"fa fa-tag\"/>\n"
 "                            <strong> 1. On Product pages:</strong> Show "
 "suggested products\n"
 "                        </span>"
+=======
+"                                        <strong>Average baskets are &gt; 5 items?</strong><br/>\n"
+"                                            <span class=\"small\"/>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+" <strong>Μέσος όρος τεμαχίων στον καλάθι &gt; 5 ;</strong><br/>\n"
+"<span class=\"small\"/>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Destination-based</strong><br/>\n"
+"                                            <span class=\"small\">Most common</span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Origin-based</strong><br/>\n"
+"                                        <span class=\"small\">in some US states, etc.</span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Several Prices</strong>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"<strong>Αρκετές Τιμές</strong>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Unique Price</strong>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"<strong>Μοναδική Τιμή</strong>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Upselling</strong>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"<strong>Αύξηση Πωλήσεων</strong>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>You are in the US?</strong><br/>                                        \n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>You have a broad catalog?</strong><br/>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"<strong>Έχετε έναν ευρύ κατάλογο;</strong><br/>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                    <span class=\"fa fa-check-square-o\"/>\n"
+"                                    <strong>Customize you product catalog</strong><br/>\n"
+"                                        <span class=\"small\"/>\n"
+"                                </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"<span class=\"fa fa-check-square-o\"/>\n"
+"<strong>Προσαρμόστε τον κατάλογο των προϊόντων σας</strong><br/>\n"
+"<span class=\"small\"/>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                    <span class=\"fa fa-check-square-o\"/>\n"
+"                                    <strong>Included vs. excluded in product prices</strong><br/>\n"
+"                                        <span class=\"small\"/>\n"
+"                                </span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
@@ -232,6 +421,11 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-credit-card\"/><strong> "
 "Ogone, Adyen, Authorize.net, Buckaroo...</strong></span>"
 msgstr ""
+"<span class=\"panel-title\">\n"
+"<span class=\"fa fa-check-square-o\"/>\n"
+" <strong>Προσαρμόστε τη διαδικασία πληρωμής</strong><br/>\n"
+"<span class=\"small\"/>\n"
+"</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -239,6 +433,9 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-lock\"/><strong>Wire "
 "transfer</strong> (Slow and inefficient)</span>"
 msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-cc-paypal\"/><strong> Paypal</strong>\n"
+"<span class=\"small\">Συνιστάται για Αρχάριους</span>\n"
+"</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -246,6 +443,8 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-pencil-square-o\"/><strong> "
 "Web-Services</strong><br/>scripts development</span>"
 msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-credit-card\"/><strong> "
+"Authorize.net, Ingenico, κτλ.</strong></span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -253,8 +452,13 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-shopping-cart\"/><strong> At "
 "cost price</strong> (customer pay what you pay)</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span class=\"panel-title\"><span class=\"fa fa-shopping-cart\"/><strong> Σε "
 "τιμή κόστους</strong> (Ο πελάτης πληρώνει ό, τι πληρώνεις)</span>"
+=======
+"<span class=\"panel-title\"><span class=\"fa fa-"
+"lock\"/><strong>Έμβασμα</strong> (αργή και αναποτελεσματική)</span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -262,6 +466,9 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-sitemap\"/><strong> "
 "Importation</strong><br/>by using a CSV file</span>"
 msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-shopping-cart\"/><strong> Στην τιμή κόστους</strong> (ο πελάτης πληρώνει αυτό που πληρώνετε και εσείς)<br/>\n"
+"<span class=\"small\">Συν εάν τα πακέτα σας ποικίλλουν σε μέγεθος / βάρος και/ή εάν τα αποστείλετε εκτός χώρας</span>\n"
+"</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -269,13 +476,30 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-smile-o\"/><strong> Free "
 "delivery</strong> (risky, but has best potential)</span>"
 msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-smile-o\"/><strong> Δωρεάν μεταφορικά</strong><br/>\n"
+"</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
+<<<<<<< HEAD
 "<span class=\"panel-title\"><span class=\"fa fa-table\"/><strong> Flat "
 "rates</strong> (everybody pays the same)</span>"
 msgstr ""
+=======
+"<span class=\"panel-title\"><span class=\"fa fa-table\"/><strong> Flat rates</strong> (everybody pays the same)<br/>\n"
+"                            <span class=\"small\">Advised if you target a local audience</span>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-table\"/><strong> Σταθερή τιμή</strong> (όλοι πληρώνουν το ίδιο)<br/>\n"
+"<span class=\"small\">Συμβουλή εάν στοχεύετε σε ένα τοπικό κοινό</span>\n"
+"</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span>Next </span><span class=\"fa fa-long-arrow-right\"/>"
+msgstr "<span>Επόμενη </span><span class=\"fa fa-long-arrow-right\"/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -285,12 +509,12 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.suggested_products_list
 msgid "<strong>Add to Cart</strong>"
-msgstr ""
+msgstr "<strong>Προσθήκη στο Καλάθι</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Bonuses:</strong> what you get on top of the offer"
-msgstr ""
+msgstr "<strong>Μπόνους:</strong> ότι πάρετε από την αρχή της προσφοράς"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -298,11 +522,13 @@ msgid ""
 "<strong>Call to action</strong> short and clear: (Add to Cart, Ask for "
 "quote,...)"
 msgstr ""
+"<strong>Έκκληση για δράση</strong> σύντομη και καθαρή: Προσθήκη στο καλάθι, "
+"Ζητήστε προσφορά, κλπ."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Cons:</strong>"
-msgstr ""
+msgstr "<strong>Μειονεκτήματα:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -310,6 +536,8 @@ msgid ""
 "<strong>Cons:</strong> The delivery cost may be discouraging for your "
 "cheapest items."
 msgstr ""
+"<strong>Μειονεκτήματα:</strong> οι πελάτες θα πρέπει να ολοκληρώσουν την "
+"αγορά για να μάθουν την τιμή παράδοσης."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -317,6 +545,8 @@ msgid ""
 "<strong>Cons:</strong> customers have to wait until checkout to find out the "
 "delivery price."
 msgstr ""
+"<strong>Μειονεκτήματα:</strong> μπορεί να είναι απογοητευτικό για τα φθηνά "
+"είδη σας"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -324,6 +554,8 @@ msgid ""
 "<strong>Cons:</strong> will require you to either absorb the cost or "
 "slightly increase your prices to cover it."
 msgstr ""
+"<strong>Μειονεκτήματα:</strong> θα χρειαστεί είτε να απορροφήσετε το κόστος "
+"είτε να αυξήσετε ελαφρά τις τιμές σας για να το καλύψετε."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -335,7 +567,12 @@ msgstr "<strong>Επικοινωνήστε μαζί μας τώρα:</strong><br
 msgid ""
 "<strong>Customers review:</strong> what do the customers think of the product"
 msgstr ""
+<<<<<<< HEAD
 "<strong>Κριτική πελατών:</strong> τι σκέφτονται οι πελάτες για το προϊόν"
+=======
+"<strong>Χαρακτηριστικά και πλεονεκτήματα:</strong> τι κάνει το προϊόν και "
+"γιατί είναι καλό"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -343,11 +580,18 @@ msgid ""
 "<strong>Features and benefits:</strong> what the product does and why that "
 "is good"
 msgstr ""
+"<strong>Για πολύπλοκες εισαγωγές</strong> (&gt;5000 τεμάχια, προϊόντα με "
+"παραλλαγές, εικόνες, κτλ.):"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>High-quality picture</strong>"
 msgstr ""
+=======
+msgid "<strong>High-quality pictures</strong>"
+msgstr "<strong>Υψηλής ποιότητας εικόνες</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -356,11 +600,13 @@ msgid ""
 "                            Recommended for at least for your top products, "
 "because it can have a big impact on your sales and conversion rates."
 msgstr ""
+"<strong>Βασικά χαρακτηριστικά, συναισθηματικό και εμπορικό περιεχόμενο</strong><br/>\n"
+"Συνιστάται τουλάχιστον για τα κορυφαία προϊόντα σας, επειδή μπορεί να έχει μεγάλο αντίκτυπο στις τιμές πωλήσεων και στις μετατροπές."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Mandatory content</strong><br/>"
-msgstr ""
+msgstr "<strong>Υποχρεωτικό περιεχόμενο</strong><br/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -375,7 +621,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<strong>Order Details:</strong>"
-msgstr ""
+msgstr "<strong>Λεπτομέρειες Παραγγελίας:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -402,6 +648,7 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "<strong>Product variants</strong><br/>\n"
 "                            Product variants are used to offer variations of "
@@ -409,11 +656,15 @@ msgid ""
 "                            For example, the customer choose a T-shirt and "
 "then select its size or color."
 msgstr ""
+=======
+msgid "<strong>Product/Service name</strong>"
+msgstr "<strong>Περιγραφή Προϊόντος/Υπηρεσίας</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Pros:</strong>"
-msgstr ""
+msgstr "<strong>Πλεονεκτήματα:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -421,6 +672,8 @@ msgid ""
 "<strong>Pros:</strong> being transparent about your charges can win you the "
 "trust of your customers."
 msgstr ""
+"<strong>Πλεονεκτήματα:</strong> το να είστε διαφανείς σχετικά με τις "
+"χρεώσεις σας θα σας βοηθήσει να κερδίσετε την εμπιστοσύνη των πελατών σας."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -428,11 +681,18 @@ msgid ""
 "<strong>Pros:</strong> gives you a significant advantage over any "
 "competitors that don't offer the same perk."
 msgstr ""
+"<strong>Πλεονεκτήματα:</strong> σας προσφέρει ένα σημαντικό πλεονέκτημα "
+"έναντι των ανταγωνιστών που δεν προσφέρουν το ίδιο προνόμιο."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>Pros:</strong> simple for your customers to understand."
 msgstr ""
+=======
+msgid "<strong>Pros:</strong> simple to understand"
+msgstr "<strong>Πλεονεκτήματα:</strong> απλό και κατανοητό"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -446,6 +706,7 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>Recommended action:</strong>"
 msgstr ""
 
@@ -458,11 +719,21 @@ msgstr "<strong>Προτεινόμενες δράσεις:</strong>"
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>See it in action</strong><br/>"
 msgstr ""
+=======
+msgid "<strong>See it in action in Odoo</strong><br/>"
+msgstr "<strong>Δείτε το στην πράξη στο Odoo</strong><br/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "<strong>Short description</strong>"
+msgstr "<strong>Σύντομη περιγραφή</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Short description</strong> of the product or service"
 msgstr ""
+"<strong>Τεχνικές πληροφορίες:</strong> τι παίρνετε και πώς λειτουργεί;"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -481,11 +752,73 @@ msgid ""
 "<strong>Value proposition:</strong> what’s the end-benefit of this product "
 "and who is it for?"
 msgstr ""
+"<strong>Πρόταση με αξία:</strong> ποιο είναι το τελικό όφελος από αυτό το "
+"προϊόν και ποιο είναι αυτό το όφελος;"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>Variants</strong> of the product like size or color (see below)"
+=======
+msgid "<strong>Variants</strong> like size or color"
+msgstr "<strong>Παραλλαγές</strong> όπως χρώμα ή μέγεθος"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"A <b>Governing Law</b> will inform users which laws govern the agreement. "
+"This should the country in which your company is headquartered or the "
+"country from which you operate your web site and mobile app."
 msgstr ""
+"Ο <b>Κυβερνητικός νόμος</b> θα ενημερώνει τους χρήστες σχετικά με τους "
+"νόμους που διέπουν τη συμφωνία. Αυτή θα πρέπει να είναι η χώρα στην οποία "
+"εδρεύει η εταιρεία σας ή η χώρα από την οποία λειτουργεί η ιστοσελίδα σας "
+"και την εφαρμογή για κινητά."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"A <b>Limit What Users Can Do</b> clause can inform users that by agreeing to"
+" use your service, they’re also agreeing to not do certain things. This can "
+"be part of a very long and thorough list in your Terms and Conditions "
+"agreements so as to encompass the most amount of negative uses."
+msgstr ""
+"Μια ρήτρα <b>Περιορισμός στο τι μπορούν να κάνουν οι χρήστες</b> μπορεί να "
+"ενημερώσει τους χρήστες ότι συμφωνώντας να χρησιμοποιήσουν την υπηρεσία σας,"
+" συμφωνούν επίσης να μην κάνουν κάποια πράγματα. Αυτό μπορεί να είναι μέρος "
+"μιας πολύ μακράς και εμπεριστατωμένης λίστας των συμφωνιών σας για τους "
+"Όρους και τις Προϋποθέσεις, ώστε να καλύπτει το μεγαλύτερο μέρος των "
+"αρνητικών χρήσεων."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"A <b>Links To Other Web Sites</b> clause will inform users that you are not "
+"responsible for any third party web sites that you link to. This kind of "
+"clause will generally inform users that they are responsible for reading and"
+" agreeing (or disagreeing) with the Terms and Conditions or Privacy Policies"
+" of these third parties."
+msgstr ""
+"Το <b>Σύνδεσμοι σε άλλες ιστοσελίδες</b> θα ενημερώνει τους χρήστες ότι δεν "
+"είστε υπεύθυνοι για οποιεσδήποτε ιστοσελίδες τρίτων μερών στις οποίες "
+"συνδέεστε. Αυτή η ρήτρα γενικά θα ενημερώνει τους χρήστες ότι είναι "
+"υπεύθυνοι για την ανάγνωση και τη συμφωνία (ή διαφωνία) με τους Όρους και "
+"τις Προϋποθέσεις ή τις Πολιτικές Απορρήτου αυτών των τρίτων."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"A <b>Termination</b> clause will inform that users’ accounts on your website"
+" and mobile app or users’ access to your website and mobile (if users can’t "
+"have an account with you) can be terminated in case of abuses or at your "
+"sole discretion."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+msgstr ""
+"Μια ρήτρα <b>Τερματισμός</b> θα ενημερώνει ότι οι λογαριασμοί χρηστών στον "
+"ιστότοπό και εφαρμογών για κινητά, ή η πρόσβαση των χρηστών στον ιστότοπό "
+"σας και μέσω εφαρμογών για κινητά (αν δεν μπορούν να έχουν λογαριασμό σε "
+"εσάς) θα μπορούν να τερματιστούν σε περίπτωση κατάχρησης ή κατά τη "
+"διακριτική σας ευχέρεια."
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_accessory_product_ids
@@ -497,16 +830,27 @@ msgstr "Βοηθητικά Προϊόντα"
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Activate 'Suggested products' from the 'Customize' menu."
 msgstr ""
+"Με λίγη έκπτωση % μπορείτε να φέρετε δύο φορές περισσότερους πελάτες! Εδώ "
+"είναι μερικά είδη εκπτώσεων για να ενισχύσετε τις πωλήσεις σας:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Activate the 'Support multiple variants per products' option in"
 msgstr ""
+"Τα αξεσουάρ εμφανίζονται όταν ο πελάτης εξετάζει το καλάθι πριν από την "
+"πληρωμή (στρατηγική διασταυρούμενων πωλήσεων π.χ. για υπολογιστές: ποντίκι, "
+"πληκτρολόγιο κ.λπ.). Ένας αλγόριθμος παρουσιάζει μια λίστα αξεσουάρ με βάση "
+"όλα τα είδη που προστίθενται στο καλάθι."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Activate the payment options you want to use"
 msgstr ""
+=======
+msgid "Accessories: screen, mouse"
+msgstr "Αξεσουάρ: οθόνη, ποντίκι"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -514,6 +858,8 @@ msgid ""
 "Add as many variants as you need from 3 different types: radio buttons, drop-"
 "down menu or color buttons."
 msgstr ""
+"Προσθέστε ένα βήμα για να ζητήσετε κάποια επιπλέον δεδομένα από τους πελάτες"
+" (προτιμήσεις επιλογής κλπ.)"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product
@@ -521,6 +867,31 @@ msgid "Add to Cart"
 msgstr "Προσθήκη στο Καλάθι"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Add to Cart button"
+msgstr "Κουμπί για Προσθήκη στο Καλάθι"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Address"
+msgstr "Διεύθυνση"
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_delivery_carrier_availability
+#: model:ir.model.fields,help:website_sale.field_product_product_availability
+#: model:ir.model.fields,help:website_sale.field_product_template_availability
+msgid "Adds an availability status on the web product page."
+msgstr ""
+
+#. module: website_sale
+#: selection:website.config.settings,sale_pricelist_setting_split_2:0
+msgid "Advanced pricing based on formulas (discounts, margins, rounding)"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.option_collapse_products_categories
 #: model:ir.ui.view,arch_db:website_sale.products_categories
 msgid "All Products"
@@ -529,6 +900,7 @@ msgstr "Όλα τα Προϊόντα"
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_website_pricelist_selectable
 msgid "Allow the end user to choose this price list"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: website_sale
@@ -536,6 +908,33 @@ msgstr ""
 #: model:ir.model.fields,help:website_sale.field_product_template_alternative_product_ids
 msgid "Appear on the product page"
 msgstr "Εμφάνιση στην σελίδα του προϊόντος"
+=======
+msgstr "Επιτρέπει στον τελικό χρήστη να επιλέξει αυτό τον τιμοκατάλογο"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_sale_pricelist_form_view
+msgid "Allow to use on"
+msgstr "Επιτρέπεται η χρήση σε"
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_website_config_settings_group_sale_pricelist
+msgid ""
+"Allows to manage different prices based on rules per category of customers.\n"
+"                Example: 10% for retailers, promotion of 5 EUR on this product, etc."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_alternative_product_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_product_alternative_product_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_template_alternative_product_ids
+msgid "Alternative Products"
+msgstr "Εναλλακτικά προϊόντα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.recommended_products
+msgid "Alternative Products:"
+msgstr "Εναλλακτικά Προϊόντα:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_product_accessory_product_ids
@@ -549,6 +948,28 @@ msgid "Apply"
 msgstr "Εφαρμογή"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Apply multi-currencies"
+msgstr "Εφαρμογή πολλών νομισμάτων"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability
+msgid "Availability"
+msgstr "Διαθεσιμότητα"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability_warning
+msgid "Availability Warning"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:product.pricelist,name:website_sale.list_benelux
 msgid "Benelux Pricelist"
 msgstr ""
@@ -561,8 +982,13 @@ msgstr "Πληρωμή σε:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
+<<<<<<< HEAD
 msgid "Billing Information"
 msgstr "Πληροφορίες χρέωσης"
+=======
+msgid "Billing Address"
+msgstr "Διεύθυνση Χρέωσης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
@@ -573,6 +999,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Can take up to several days for you to receive the money"
 msgstr ""
+"Μπορεί να χρειαστούν έως και αρκετές ημέρες για να εισπραχθούν τα χρήματα"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_cart_quantity
@@ -580,6 +1007,7 @@ msgid "Cart Quantity"
 msgstr "Ποσότητα Καλαθιού"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.actions.act_window,help:website_sale.product_public_category_action
 msgid ""
 "Categories are used to browse your products through the\n"
@@ -592,6 +1020,56 @@ msgstr ""
 #, python-format
 msgid "Change the price"
 msgstr "Αλλαγή τιμής"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Cash amount or percentage discounts"
+msgstr "Το ποσό μετρητών ή ποσοστιαίες εκπτώσεις"
+
+#. module: website_sale
+#: model:ir.ui.menu,name:website_sale.menu_catalog
+msgid "Catalog"
+msgstr "Κατάλογος"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: decreasing order"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: increasing order"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.actions.act_window,help:website_sale.product_public_category_action
+msgid ""
+"Categories are used to browse your products through the\n"
+"            touchscreen interface."
+msgstr ""
+"Οι κατηγορίες χρησιμοποιούνται για την περιήγηση στα προϊόντα σας μέσω της\n"
+" διεπαφής της οθόνης αφής."
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_delivery_carrier_public_categ_ids
+#: model:ir.model.fields,help:website_sale.field_product_product_public_categ_ids
+#: model:ir.model.fields,help:website_sale.field_product_template_public_categ_ids
+msgid ""
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+"Μπορείτε να δημοσιεύσετε κατηγορίες στη σελίδα του καταστήματος (online "
+"πλέγμα καταλόγων) για να βοηθήσετε τους πελάτες να βρουν όλα τα είδη μιας "
+"κατηγορίας. Για να τις δημοσιεύσετε, μεταβείτε στη σελίδα του καταστήματος, "
+"πατήστε Προσαρμογή και ενεργοποιήστε τις *Κατηγορίες Ειδών*. Ένα είδος "
+"μπορεί να ανήκει σε διάφορες κατηγορίες."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Change"
+msgstr "Αλλαγή"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_child_id
@@ -621,8 +1099,13 @@ msgstr "Επιλέξτε όνομα"
 
 #. module: website_sale
 #: model:product.pricelist,name:website_sale.list_christmas
+<<<<<<< HEAD
 msgid "Christmas Pricelist"
 msgstr ""
+=======
+msgid "Christmas"
+msgstr "Χριστούγεννα"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -630,11 +1113,20 @@ msgid "City"
 msgstr "Πόλη"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:25
 #, python-format
 msgid "Click here to add a new product."
 msgstr "Κάντε κλικ εδώ για να προσθέσετε ένα νέο προϊόν."
+=======
+#: model:ir.ui.view,arch_db:website_sale.products
+msgid ""
+"Click <i>'New'</i> in the top-right corner to create your first product."
+msgstr ""
+"Κάντε κλικ στο <i>'Νέο'</i> στην επάνω δεξιά γωνία για να δημιουργήσετε το "
+"πρώτο σας προϊόν."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
@@ -645,6 +1137,14 @@ msgstr ""
 "Κάντε κλικ εδώ για να ορίσετε μια εικόνα η οποία περιγράφει το προϊόν σας."
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Click here to unfold a Good Product Page"
+msgstr "Κάντε κλικ εδώ για να ξεδιπλώσετε μία καλή Σελίδα για Προϊόν"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:47
 #, python-format
@@ -664,6 +1164,7 @@ msgstr ""
 #, python-format
 msgid "Click on <em>Save</em> to add the image to the product description."
 msgstr ""
+"Κάντε κλικ σε αυτό το κουμπί, ώστε οι πελάτες σας να μπορούν να το δουν."
 
 #. module: website_sale
 #: model:ir.actions.act_window,help:website_sale.product_public_category_action
@@ -683,14 +1184,28 @@ msgid "Color"
 msgstr "Χρώμα"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Community &amp; Enterprise users:"
+msgstr "Community &amp; Enterprise χρήστες:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Company Name"
 msgstr "Όνομα Εταιρείας"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Configure your bank account(s)"
 msgstr ""
+=======
+msgid "Configure your delivery methods (pricing, destinations)"
+msgstr "Διαμορφώστε τις τρόπους παράδοσης (τιμολόγηση, προορισμοί)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -773,6 +1288,7 @@ msgid "Create Product"
 msgstr "Δημιουργία Προϊόντος"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:31
 #, python-format
@@ -792,6 +1308,11 @@ msgstr "Δημιουργήστε ένα προϊόν"
 #, python-format
 msgid "Create your first product"
 msgstr "Δημιουργήστε το πρώτο προϊόν σας"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Create your product items"
+msgstr "Δημιουργήστε τα προϊόντα σας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_create_uid
@@ -809,8 +1330,23 @@ msgstr "Δημιουργήθηκε στις"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Customize your Payment message"
 msgstr ""
+=======
+msgid "Currencies"
+msgstr "Νομίσματα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Customer Segments"
+msgstr "Τμήματα Πελατών"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Customers review:"
+msgstr "Κριτική Πελατών:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery_dhl
@@ -835,14 +1371,19 @@ msgstr "Προεπιλεγμένη Ομάδα Πωλήσεων"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "Default Salesperson"
-msgstr ""
+msgstr "Προεπιλεγμένος Πωλητής"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "Defining a good delivery strategy is difficult: you don't want to cut into "
 "your margins, but you want to be attractive to customers."
 msgstr ""
+=======
+msgid "Default mode"
+msgstr "Προεπιλεγμένη λειτουργία"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -866,9 +1407,20 @@ msgid "Determine the display order in the Website E-commerce"
 msgstr "Καθορίστε τη σειρά εμφάνισης στην ιστοσελίδα του E-commerce"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_line_discounted_price
 msgid "Discounted price"
 msgstr ""
+=======
+#: model:product.public.category,name:website_sale.devices
+msgid "Devices"
+msgstr "Συσκευές"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Discount % or amounts, margins, roundings, periods, etc."
+msgstr "Έκπτωση % ή ποσά, περιθώρια, στρογγυλοποιήσεις, περιόδους κλπ."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_display_name
@@ -894,9 +1446,10 @@ msgstr "Σύρετε αυτό το πλαίσιο ιστότοπου και απ
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_pricelist_code
 msgid "E-commerce Promotional Code"
-msgstr ""
+msgstr "Κωδικός προσφοράς eshop"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:60
 #, python-format
@@ -910,6 +1463,16 @@ msgid ""
 "process. This means your customers will be less likely to drop out before "
 "the payment, resulting in a higher conversion rate at the end."
 msgstr ""
+=======
+#: model:product.pricelist,name:website_sale.list_europe
+msgid "EUR"
+msgstr "EUR"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Ease the product browsing with:"
+msgstr "Διευκολύνετε την περιήγηση στα προϊόντα με:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -924,15 +1487,23 @@ msgid "Enter a name for your new product"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Enter their identification credentials"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Edit this address"
+msgstr "Επεξεργασία της διεύθυνσης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Enter your existing products into this CSV file, respecting its structure."
 msgstr ""
+"Επεξεργαστείτε τις πολιτικές πληρωμής και την ασφάλεια για να καθ ησυχάσετε "
+"τους επισκέπτες σας"
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_product_split_method
@@ -953,14 +1524,23 @@ msgstr "Λάθος! Δεν μπορείτε να δημιουργήσετε πη
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Example of Good Product Page"
 msgstr ""
+"Το Email που θα αποσταλεί στον πελάτη στο τέλος της διαδικασίας αγοράς"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Example: you sell T-shirts in the US only. You can offer free delivery "
 "because your items are medium priced and the delivery costs are limited and "
 "well defined."
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:19
+#, python-format
+msgid "Enter a name for your new product"
+msgstr "Εισαγάγετε ένα όνομα για το νέο σας προϊόν"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -988,12 +1568,16 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.extra_info_option
 #, fuzzy
 msgid "Extra Info<span class=\"chevron\"/>"
+<<<<<<< HEAD
 msgstr "Επιβεβαίωση<span class=\"chevron\"/>"
+=======
+msgstr "Επιπλέον Πληροφορίες<span class=\"chevron\"/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Extra Step"
-msgstr ""
+msgstr "Επιπλέον Βήμα"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery_fedex
@@ -1006,6 +1590,7 @@ msgid "Field 1"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Field 3"
 msgstr ""
@@ -1014,6 +1599,16 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Field not custom"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Free and no setup"
+msgstr "Δωρεάν και χωρίς ρύθμιση"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Free delivery (see Delivery Strategy section)"
+msgstr "Δωρεάν παράδοση (ανατρέξτε στην ενότητα Στρατηγική παράδοσης)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -1022,8 +1617,13 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
+<<<<<<< HEAD
 msgid "Field required"
 msgstr ""
+=======
+msgid "Give us your feedback..."
+msgstr "Δώστε μας το σχόλιό σας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1051,6 +1651,8 @@ msgstr "Δίνει την σειρά κατάταξης όταν εμφανίζ�
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Go to the"
 msgstr ""
+"Πραγματοποιήστε όλη τη διαδικασία της πληρωμής και βεβαιωθείτε ότι κάθε βήμα"
+" είναι προσαρμοσμένο στη δραστηριότητά σας:"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_style_html_class
@@ -1076,6 +1678,8 @@ msgstr "Έχετε ένα κωδικό κουπονιού; Συμπληρώστ�
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Here are <strong>some pros and cons</strong> to help you decide:"
 msgstr ""
+"Εδώ είναι <strong>μερικά πλεονεκτήματα και μειονεκτήματα</strong> για να σας"
+" βοηθήσουμε να αποφασίσετε: <br/>"
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_attribute_value_html_color
@@ -1093,6 +1697,15 @@ msgid "Hidden"
 msgstr "Κρυφό"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "I agree to the"
+msgstr "Συμφωνώ με το"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_image_id
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_id
 #: model:ir.model.fields,field_description:website_sale.field_product_style_id
 #: model:ir.model.fields,field_description:website_sale.field_website_pricelist_id_11000
@@ -1115,6 +1728,22 @@ msgid "Image"
 msgstr "Εικόνα"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Image Name"
+msgstr "Όνομα Εικόνας"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_product_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_template_product_image_ids
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+msgid "Images"
+msgstr "Εικόνες"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Imagine a new customer who comes to your website, finds the product they "
@@ -1125,6 +1754,10 @@ msgid ""
 "price seems little expensive, and the customer leaves your website "
 "disappointed."
 msgstr ""
+"Φανταστείτε ότι ένας νέος πελάτης προσθέτει ένα προϊόν στο καλάθι και "
+"εγκαταλείπει τον ιστότοπό σας εξαιτίας των εξόδων αποστολής... Ο ορισμός "
+"μιας καλής στρατηγικής παράδοσης είναι δύσκολος. Δεν θέλετε να περικόψετε τα"
+" περιθώρια σας, αλλά θέλετε να παραμείνετε ανταγωνιστικοί στις τιμές."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1144,10 +1777,15 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "Increase your average cart amount by proposing complementary products to "
 "your visitors."
 msgstr ""
+=======
+msgid "Install Optional Products (cross-selling)"
+msgstr "Εγκατάσταση προαιρετικών προϊόντων (διασταυρούμενες πωλήσεις)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1158,7 +1796,7 @@ msgstr ""
 #: code:addons/website_sale/controllers/main.py:567
 #, python-format
 msgid "Invalid Email! Please enter a valid email address."
-msgstr ""
+msgstr "Μη έγκυρο Email! Παρακαλώ εισάγετε μια έγκυρη διεύθυνση Email"
 
 #. module: website_sale
 #: code:addons/website_sale/models/sale_order.py:86
@@ -1205,6 +1843,56 @@ msgid "Last Updated on"
 msgstr "Τελευταία Ενημέρωση στις"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Legal Name"
+msgstr "Νομικό όνομα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Let them buy straight from catalog with:"
+msgstr "Αφήστε τους να αγοράσουν απευθείας από τον κατάλογο με:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "List displaying"
+msgstr "Εμφανίζεται η λίστα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Log In"
+msgstr "Σύνδεση"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Logo"
+msgstr "Λογότυπο"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Main Currency"
+msgstr "Βασικό Νόμισμα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"Make sure your customers can go through the shopping process in a very short"
+" time, otherwise they will leave your website. Here are some actions to "
+"tailor the process to your business."
+msgstr ""
+"Εξασφαλίστε ότι οι πελάτες σας μπορούν να ολοκληρώσουν τη διαδικασία της "
+"αγοράς μέσα σε πολύ σύντομο χρονικό διάστημα, διαφορετικά θα εγκαταλείψουν "
+"τον ιστότοπο σας. Ακολουθούν ορισμένες ενέργειες για να προσαρμόσετε τη "
+"διαδικασία στην επιχείρησή σας."
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery
+msgid "Manage shipping internally"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_image_medium
 msgid "Medium-sized image"
 msgstr "Μεσαίου μεγέθους εικόνα"
@@ -1226,6 +1914,7 @@ msgid "Merchant Connectors"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale.field_product_product_purchase_line_warn_msg
 msgid "Message for Purchase Order Line"
 msgstr ""
@@ -1234,13 +1923,37 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_sale.field_product_product_sale_line_warn_msg
 msgid "Message for Sales Order Line"
 msgstr "Μήνυμα για Γραμμή Παραγγελίας"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Min. qty or period"
+msgstr "Ελάχιστη ποσότητα ή περίοδο"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
+msgid "More Info"
+msgstr "Περισσότερες Πληροφορίες"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_group_website_multiimage
+msgid "Multi Images"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"Multi-buy offers (2 products sold together for less than their individual "
+"price)"
+msgstr ""
+"Προσφορές πολλαπλών αγορών (2 προϊόντα πωλούνται μαζί λιγότερο από την ότι "
+"το καθένα χωριστά)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale.js:15
 #, python-format
 msgid "My Cart"
-msgstr ""
+msgstr "Το Καλάθι μου"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_complete_name
@@ -1272,7 +1985,7 @@ msgstr "Δημιουργήθηκε νέο προϊόν"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "No monthly fees for standard offer"
-msgstr ""
+msgstr "Δεν υπάρχουν μηνιαίες χρεώσεις για την τυπική προσφορά"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.products
@@ -1280,9 +1993,25 @@ msgid "No product defined."
 msgstr "Δεν ορίστηκε κανένα προϊόν."
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Now you can also <strong>import your existing products:</strong>"
 msgstr ""
+=======
+#: selection:website.config.settings,sale_delivery_settings:0
+msgid "No shipping management on website"
+msgstr "Δεν υπάρχει διαχείριση αποστολών στον ιστότοπο"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "No, choose another method"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_sale_pricelist_form_view
+msgid "None website"
+msgstr "Δεν υπάρχει ιστότοπος"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
@@ -1292,9 +2021,17 @@ msgid "OK"
 msgstr "OK"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Odoo offers an importation service to handle the whole process for you!"
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:52
+#, python-format
+msgid "Once you click on <b>Save</b>, your product is updated."
+msgstr "Μόλις κάνετε κλικ στο <b>Αποθήκευση</b>, το προϊόν σας θα ενημερωθεί."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1311,21 +2048,48 @@ msgid ""
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:98
 #, python-format
 msgid "Once you click on <em>Save</em>, your product is updated."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Online users: we do it for you!"
+msgstr "Online χρήστες: το κάνουμε για εσάς!"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_only_services
 msgid "Only Services"
-msgstr ""
+msgstr "Μόνο Υπηρεσίες"
+
+#. module: website_sale
+<<<<<<< HEAD
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "Order"
+msgstr "Εντολή"
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_website_sale_options
+msgid "Optional Products"
+msgstr "Προαιρετικά Προϊόντα"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Options: warranty, software"
+msgstr "Επιλογές: εγγύηση, λογισμικό"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "Order"
-msgstr "Εντολή"
+msgstr "Παραγγελία"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_order_mail_template
+msgid "Order Confirmation Email"
+msgstr "Email Επιβεβαίωσης Παραγγελίας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_website_order_line
@@ -1384,15 +2148,39 @@ msgid "Payment Methods"
 msgstr "Τρόποι Πληρωμής"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model,name:website_sale.model_payment_transaction
 msgid "Payment Transaction"
 msgstr "Συναλλαγή Πληρωμής"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Payment must be reconciled manually"
+msgstr "Η πληρωμή πρέπει να συμφωνηθεί χειροκίνητα"
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/main.py:758
+#, python-format
+msgid "Payment transaction (%s) failed : <%s>"
+msgstr ""
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/main.py:755
+#, python-format
+msgid "Payment transaction failed (%s)"
+msgstr "Η συναλλαγή πληρωμής απέτυχε (%s)"
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/main.py:759
+#, python-format
+msgid "Payment transaction failed (Contact Administrator)"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info_option
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Payment<span class=\"chevron\"/>"
-msgstr ""
+msgstr "Πληρωμή<span class=\"chevron\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -1400,11 +2188,38 @@ msgid "Phone"
 msgstr "Τηλέφωνο"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Pictures gallery:"
+msgstr "Γκαλερί φωτογραφιών:"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.cart
 msgid "Policies"
 msgstr "Πολιτικές"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Populate Your Catalog"
+msgstr "Συμπληρώστε τον Κατάλογο σας"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Prefered by some customers"
+msgstr "Προτιμάται από ορισμένους πελάτες"
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/backend.py:65
+#, python-format
+msgid "Previous Sales"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
 #: model:ir.ui.view,arch_db:website_sale.payment
 msgid "Price"
@@ -1413,7 +2228,7 @@ msgstr "Τιμή"
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_website_pricelist_ids
 msgid "Price list available for this Ecommerce/Website"
-msgstr ""
+msgstr "Τιμοκατάλογος διαθέσιμος για αυτό το eshop/ιστότοπο"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_pricelist
@@ -1427,6 +2242,26 @@ msgid "Pricelist Name"
 msgstr "Ονομασία Τιμοκαταλόγου"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Pricing &amp; Discounts"
+msgstr "Τιμές &amp; Εκπτώσεις"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_sale_pricelist_setting_split_1
+msgid "Pricing Strategy"
+msgstr ""
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.printer
+msgid "Printer"
+msgstr "Εκτυπωτής"
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/xml/website_sale_dashboard.xml:29
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:website_sale.model_product_product
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
 #: model:ir.ui.view,arch_db:website_sale.payment
@@ -1439,6 +2274,15 @@ msgid "Product Attribute"
 msgstr "Χαρακτηριστικό προϊόντων"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Product Images"
+msgstr "Εικόνες Προϊόντων"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.product
 msgid "Product Name"
 msgstr "Όνομα Προϊόντος"
@@ -1461,8 +2305,23 @@ msgstr "Πρότυπο Προϊόντος"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Product detail form"
 msgstr ""
+=======
+msgid "Product attributes filter"
+msgstr "Φίλτρο χαρακτηριστικών προϊόντος"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Product categories list"
+msgstr "Λίστα Κατηγοριών Προϊόντων"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Product descriptions"
+msgstr "Περιγραφές προϊόντων"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product
@@ -1543,7 +2402,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "Qty:"
-msgstr ""
+msgstr "Ποσ:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
@@ -1554,8 +2413,16 @@ msgstr "Ποσότητα"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
+=======
+msgid "Quantity-based discounts (B2B)"
+msgstr "Εκπτώσεις βάσει ποσοτήτων (B2B)"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Quick and easy to set up"
-msgstr ""
+msgstr "Γρήγορη και εύκολη ρύθμιση"
 
 #. module: website_sale
 #: selection:product.attribute,type:0
@@ -1569,9 +2436,27 @@ msgid "Rating"
 msgstr "Αξιολόγηση"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Read the"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_last_value
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_last_value
+msgid "Rating Last Value"
+msgstr "Τελευταία Τιμή Βαθμολογίας"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_count
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_count
+msgid "Rating count"
+msgstr "Αριθμός Αξιολογήσεων"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_image_product_tmpl_id
+msgid "Related Product"
+msgstr "Σχετικό προϊόν"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.404
@@ -1584,6 +2469,14 @@ msgid "Review Order<span class=\"chevron\"/>"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Review your catalog"
+msgstr "Ελέγξτε τον κατάλογό σας"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.products_item
 msgid "Sale"
 msgstr "Πώληση"
@@ -1617,6 +2510,7 @@ msgid "Salesperson"
 msgstr "Πωλητής"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:83
 #, python-format
@@ -1627,6 +2521,104 @@ msgstr "Αποθήκευση"
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Save and import the modified CSV file from the 'More' menu of the"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Save my payment data"
+msgstr "Αποθήκευση των δεδομένων πληρωμής μου"
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.Screen
+msgid "Screen"
+msgstr "Οθόνη"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart
+msgid "Secure Payment"
+msgstr "Ασφαλείς Συναλλαγές"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure delivery methods and shipping connectors"
+msgstr ""
+"Δείτε πώς να διαμορφώσετε τις τρόπους παράδοσης και την σύνδεση με τους "
+"παρόχους αποστολών"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure payment methods"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure pricing &amp; discounts"
+msgstr "Δείτε πώς μπορείτε να διαμορφώσετε τις τιμές και τις εκπτώσεις"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to customize your catalog page"
+msgstr "Δείτε πώς να προσαρμόσετε τη σελίδα του καταλόγου σας"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to do it"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to set tax-included prices"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See which tax rate applies in your city"
+msgstr ""
+
+#. module: website_sale
+#: selection:product.attribute,type:0
+msgid "Select"
+msgstr "Επιλογή"
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:15
+#, python-format
+msgid ""
+"Select <b>New Product</b> to create it and manage its properties to boost "
+"your sales."
+msgstr ""
+"Επιλέξτε <b>Νέο Είδος</b> για να το δημιουργήσετε και να διαχειριστείτε τις "
+"ιδιότητές του για να αυξήσετε τις πωλήσεις σας."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Select this address"
+msgstr "Επιλογή αυτής της διεύθυνσης"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Select your pricing preference and allow discounts"
+msgstr "Επιλέξτε τις προτιμητέες τιμές και επιτρέψτε τις εκπτώσεις"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Select your shipping management policy"
+msgstr "Επιλέξτε την πολιτική διαχείρισης αποστολών"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_pricelist_selectable
+msgid "Selectable"
+msgstr "Επιλέξιμο"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Sell"
+msgstr "Πώληση"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Sell More"
+msgstr "Πώληση Περισσότερων"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
@@ -1653,6 +2645,8 @@ msgid ""
 "Select <em>New Product</em> to create it and manage its properties to boost "
 "your sales."
 msgstr ""
+"Ορίστε εναλλακτικές είδη, εξαρτήματα και επιλογές στη φόρμα λεπτομερειών του"
+" είδους (στην καρτέλα Πωλήσεις)"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1705,6 +2699,7 @@ msgstr "Αποστολή στην ίδια διεύθυνση"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
+<<<<<<< HEAD
 msgid "Shipping"
 msgstr "Αποστολή"
 
@@ -1712,6 +2707,10 @@ msgstr "Αποστολή"
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Shipping &amp;"
 msgstr ""
+=======
+msgid "Shipping Address"
+msgstr "Διεύθυνση Παράδοσης"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
@@ -1719,9 +2718,15 @@ msgid "Shipping Connectors"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Shipping Information"
 msgstr "Πληροφορίες αποστολής"
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_sale_delivery_settings
+msgid "Shipping Management"
+msgstr "Διαχείριση Αποστολών"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.products
@@ -1755,16 +2760,27 @@ msgid "Sign in"
 msgstr "Σύνδεση"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Simply add one or more products as an <strong>'Accessory Product'</strong>."
 msgstr ""
+=======
+#: model:res.groups,name:website_sale.group_website_multi_image
+msgid "Show multi image on eCommerce"
+msgstr "Εμφάνιση πολλαπλών εικόνων στο eshop"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Simply add the product you want as an <strong>'Optional Product'</strong>"
 msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Sign Up"
+msgstr "Εγγραφή"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
@@ -1810,12 +2826,14 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Some customers prefer to pay this way"
 msgstr ""
+"Μερικοί αποδέκτες πληρωμής, όπως το Authorize.net και το Ingenico, μπορούν "
+"να χρησιμοποιηθούν ως πύλες πληρωμών με τον δικό σας επεξεργαστή πληρωμών."
 
 #. module: website_sale
 #: code:addons/website_sale/controllers/main.py:589
 #, python-format
 msgid "Some required fields are empty."
-msgstr ""
+msgstr "Ορισμένα υποχρεωτικά πεδία είναι κενά."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.404
@@ -1828,11 +2846,19 @@ msgid "Split Method"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:19
 #, python-format
 msgid "Start Tutorial"
 msgstr "Έναρξη Εκμάθησης"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Start your online shop by creating 3 products pages.<br/>"
+msgstr ""
+"Ξεκινήστε το ηλεκτρονικό σας κατάστημα δημιουργώντας 3 σελίδες "
+"προϊόντων.<br/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -1845,9 +2871,15 @@ msgid "State / Province..."
 msgstr "Νομός/Πολιτεία/Επαρχία..."
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Street"
 msgstr "Οδός"
+=======
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Street <span class=\"hidden-xs\"> and Number</span>"
+msgstr "Οδός <span class=\"hidden-xs\"> και Αριθμός</span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_style_name
@@ -1867,6 +2899,7 @@ msgid "Subtotal"
 msgstr "Μερικό σύνολο"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale.field_product_product_alternative_product_ids
 #: model:ir.model.fields,field_description:website_sale.field_product_template_alternative_product_ids
 msgid "Suggested Products"
@@ -1881,6 +2914,64 @@ msgstr "Προτεινόμενες εναλλακτικές λύσεις:"
 #: model:ir.ui.view,arch_db:website_sale.suggested_products_list
 msgid "Suggested products:"
 msgstr "Προτεινόμενα προϊόντα:"
+=======
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "Subtotal:"
+msgstr "Μερικό σύνολο:"
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_delivery_carrier_alternative_product_ids
+#: model:ir.model.fields,help:website_sale.field_product_product_alternative_product_ids
+#: model:ir.model.fields,help:website_sale.field_product_template_alternative_product_ids
+msgid ""
+"Suggest more expensive alternatives to your customers (upsell strategy). "
+"Those products show up on the product page."
+msgstr ""
+"Προτείνετε πιο ακριβές εναλλακτικές λύσεις για τους πελάτες σας (στρατηγική "
+"upsell). Αυτά τα είδη εμφανίζονται στη σελίδα του είδους."
+
+#. module: website_sale
+#: selection:website.config.settings,module_website_sale_options:0
+msgid ""
+"Suggest optional products when adding to cart (e.g. for a computer: "
+"warranty, software, etc.)"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Suggest options and accessories"
+msgstr "Προτείνετε επιλογές και αξεσουάρ"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Suggest pricier alternatives"
+msgstr "Προτείνετε ακριβότερες εναλλακτικές λύσεις"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.suggested_products_list
+msgid "Suggested Accessories:"
+msgstr "Προτεινόμενα Αξεσουάρ:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "Summary"
+msgstr "Περίληψη"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "TIN / VAT"
+msgstr "ΑΦΜ"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Tax ID"
+msgstr "Α.Φ.Μ."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Taxes"
+msgstr "Φόροι"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -1890,7 +2981,21 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery_temando
 msgid "Temando integration"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Σύνδεση με Temando"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Terms &amp; Conditions"
+msgstr "Όροι &amp; Προϋποθέσεις"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid "Terms &amp;amp; Conditions"
+msgstr "Όροι &amp;amp; Προϋποθέσεις"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -1898,6 +3003,20 @@ msgid "Thank you for your order."
 msgstr "Σας ευχαριστούμε για την παραγγελία σας."
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"The <b>Intellectual Property</b> disclosure will inform users that the "
+"contents, logo and other visual media you created is your property and is "
+"protected by copyright laws."
+msgstr ""
+"Η παράθεση <b>πνευματικής ιδιοκτησίας</b> θα ενημερώνει τους χρήστες ότι το "
+"περιεχόμενο, το λογότυπο και άλλα οπτικά μέσα που δημιουργήσατε, είναι "
+"ιδιοκτησία σας και προστατεύονται από νόμους περί πνευματικών δικαιωμάτων."
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "The best way to start your online shop is by creating 3 products pages "
@@ -1905,6 +3024,10 @@ msgid ""
 "                        To help you, here are some guidelines that will "
 "convert customers:"
 msgstr ""
+"Το πρώτο βήμα είναι να  ορίσετε τα στοιχεία της εταιρίας σας. Αυτά "
+"χρησιμοποιούνται σε διάφορα μέρη: στη σελίδα Επικοινωνίας, στην επικεφαλίδα "
+"του ιστότοπου &amp; στο υποσέλιδο, στα εκτυπωμένα εταιρικά έγγραφα όπως στις"
+" παραγγελίες και στα τιμολόγια κλπ."
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_product_website_url
@@ -1918,6 +3041,21 @@ msgid "The payment seems to have been canceled."
 msgstr "Η πληρωμή φαίνεται να έχει ακυρωθεί."
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "There are two strategies to sell more to a customer:"
+msgstr "Υπάρχουν δύο στρατηγικές για την πώληση περισσότερων σε έναν πελάτη:"
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/xml/website_sale_dashboard.xml:23
+#, python-format
+msgid "There is no recent online sale."
+msgstr "Δεν υπάρχει πρόσφατη διαδικτυακή πώληση."
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
 msgid "There seems to be an error with your request."
 msgstr "Φαίνεται να υπάρχει ένα σφάλμα στο αίτημά σας."
@@ -1942,20 +3080,27 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.reduction_code
 msgid "This promo code is not available"
-msgstr ""
+msgstr "Αυτός ο κωδικός προσφοράς δεν είναι διαθέσιμος"
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_product_public_categ_ids
 #: model:ir.model.fields,help:website_sale.field_product_template_public_categ_ids
 msgid "Those categories are used to group similar products for e-commerce."
 msgstr ""
+<<<<<<< HEAD
 "Αυτές οι κατηγορίες χρησιμοποιούνται για την ομαδοποίηση παρόμοιων προϊόντων "
 "για το ηλεκτρονικό εμπόριο."
+=======
+"Για να συλλέξετε τις πληρωμές, μπορείτε είτε να ζητήσετε από τους πελάτες σας να το επεξεργαστούν με μη αυτόματο τρόπο (μεταφορά μέσω τραπεζικού λογαριασμού κ.λπ.) είτε να τους ανακατευθύνει σε αποδέκτες πληρωμής.<br/>\n"
+"Η χρήση των αποδεκτών πληρωμών κοστίζει χρήματα, οπότε αφιερώστε λίγο χρόνο για να τα συγκρίνετε."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "To use them:"
 msgstr ""
+"Για να το κάνετε αυτό, εκμεταλλευτείτε στο έπακρο τις <strong>επιλογές "
+"τιμολόγησης</strong> του Odoo:<br/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
@@ -2014,9 +3159,17 @@ msgid ""
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "VAT Number"
 msgstr "ΑΦΜ"
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Use our import templates to get your catalog ready in no time!"
+msgstr ""
+"Χρησιμοποιήστε τα δικά μας πρότυπα εισαγωγής και έτσι θα έχετε έτοιμο τον "
+"κατάλογο σας σε ελάχιστο χρόνο!"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.payment
@@ -2026,7 +3179,7 @@ msgstr "Επικύρωση Παραγγελίας"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "View Cart ("
-msgstr ""
+msgstr "Προβολή Καλαθιού ("
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_published
@@ -2095,7 +3248,18 @@ msgstr "Κατηγορία Προϊόντος για Ιστότοπο"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product_public_category_form_view
 msgid "Website Public Categories"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Δημόσιες Κατηγορίες Ιστότοπου"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_website_sequence
+#: model:ir.model.fields,field_description:website_sale.field_product_product_website_sequence
+#: model:ir.model.fields,field_description:website_sale.field_product_template_website_sequence
+msgid "Website Sequence"
+msgstr "Ακολουθία ιστοτόπου"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.actions.act_url,name:website_sale.action_open_website
@@ -2147,6 +3311,7 @@ msgid "You have to reconcile the payment manually"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:18
 #, python-format
@@ -2157,6 +3322,16 @@ msgstr ""
 "Έχετε εγκαταστήσει με επιτυχία το ηλεκτρονικό κατάστημα. Αυτός ο οδηγός θα "
 "σας βοηθήσει να δημιουργήσετε το προϊόν σας και να προωθήσετε τις πωλήσεις "
 "σας."
+=======
+#: model:ir.actions.act_window,help:website_sale.action_orders_ecommerce
+msgid "You don't have any confirmed order from the website."
+msgstr "Δεν έχετε καμία επιβεβαιωμένη παραγγελία από τον ιστότοπο."
+
+#. module: website_sale
+#: model:ir.actions.act_window,help:website_sale.action_unpaid_orders_ecommerce
+msgid "You don't have any unpaid order from the website."
+msgstr "Δεν έχετε καμία απλήρωτη παραγγελία από τον Ιστότοπο."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -2164,9 +3339,24 @@ msgid "Your Address"
 msgstr "Η διεύθυνσή σας"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Your Name"
 msgstr "Το Όνομά σας"
+=======
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid ""
+"Your Address\n"
+"                                        <small> or </small>"
+msgstr ""
+"Η διεύθυνσή σας\n"
+"                                        <small> ή </small>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Your Company"
+msgstr "Η Εταιρία σας"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -2201,14 +3391,20 @@ msgid "Your transaction is waiting confirmation."
 msgstr "Η συναλλαγή σας αναμένει επιβεβαίωση."
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Zip / Postal Code"
+=======
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Zip Code"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr "Ταχυδρομικός Κώδικας"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "and fill in one or more <strong>'Suggested Products'</strong>."
 msgstr ""
+"φωτογραφισμένες από όλες τις γωνίες, λεπτομερής προβολή, συσκευασία κλπ"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.reduction_code
@@ -2233,12 +3429,26 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "eCommerce"
+<<<<<<< HEAD
 msgstr "ηλεκτρονικό Εμπόριο"
+=======
+msgstr "Ηλεκτρονικό Εμπόριο"
+
+#. module: website_sale
+#: model:ir.actions.act_window,name:website_sale.action_orders_ecommerce
+msgid "eCommerce Orders"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.search count
+msgid "found)"
+msgstr "βρέθηκαν)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "items)"
-msgstr ""
+msgstr "είδη)"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -2251,21 +3461,36 @@ msgid "or"
 msgstr "ή"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.products
 msgid "pagination form-inline"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "product's availability (In Stock, Not Available, etc.)"
+msgstr "διαθεσιμότητα των προϊόντων (Σε Απόθεμα, Μη Διαθέσιμο, κλπ)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_attribute_value
 msgid "product.attribute.value"
-msgstr ""
+msgstr "product.attribute.value"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:website_sale.model_product_image
+msgid "product.image"
+msgstr "product.image"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:website_sale.model_product_style
 msgid "product.style"
-msgstr ""
+msgstr "product.style"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "select..."
 msgstr "επιλέξτε..."
@@ -2274,6 +3499,21 @@ msgstr "επιλέξτε..."
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "using one or several of the strategies above"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "set company logo"
+msgstr "ορίσετε το λογότυπο της εταιρίας"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "terms &amp; conditions"
+msgstr "όροι &amp; προϋποθέσεις"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "use Odoo API to import through scripts"
+msgstr "χρησιμοποιήστε το API του Odoo για εισαγωγή μέσω πρωτοτύπων "
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_website_config_settings
@@ -2281,6 +3521,14 @@ msgid "website.config.settings"
 msgstr "website.config.settings"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "what do the customers think of the product"
+msgstr "τι σκέφτονται οι πελάτες για το προϊόν"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.cart
 msgid "☑ 256 bit encryption"
 msgstr "☑ κρυπτογράφηση 256 bit"

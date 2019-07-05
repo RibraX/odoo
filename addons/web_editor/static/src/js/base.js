@@ -47,9 +47,23 @@ function getExtraContext(context) {
     }, context || {});
 }
 
+<<<<<<< HEAD
 return {
     get: getContext,
     getExtra: getExtraContext,
+=======
+// todo: remove and load a bundle of translated templates
+var all_ready;
+data.ready = function () {
+    if (!all_ready) {
+        all_ready = dom_ready;
+        if (!odoo._modules) {
+            all_ready = all_ready.then(translations);
+        }
+    }
+    // also load new templates since previous ready call
+    return $.when(all_ready, ajax.loadXML());
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 };
 });
 

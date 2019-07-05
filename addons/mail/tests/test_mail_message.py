@@ -17,7 +17,7 @@ class TestMailMessage(TestMail):
             'reply_to': 'test.reply@example.com',
             'email_from': 'test.from@example.com',
         })
-        self.assertIn('-private', msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
+        self.assertIn('-private', msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, 'test.reply@example.com')
         self.assertEqual(msg.email_from, 'test.from@example.com')
 
@@ -25,7 +25,7 @@ class TestMailMessage(TestMail):
         self.env['ir.config_parameter'].search([('key', '=', 'mail.catchall.domain')]).unlink()
 
         msg = self.env['mail.message'].sudo(self.user_employee).create({})
-        self.assertIn('-private', msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
+        self.assertIn('-private', msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
@@ -35,7 +35,7 @@ class TestMailMessage(TestMail):
         self.env['ir.config_parameter'].search([('key', '=', 'mail.catchall.alias')]).unlink()
 
         msg = self.env['mail.message'].sudo(self.user_employee).create({})
-        self.assertIn('-private', msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
+        self.assertIn('-private', msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
@@ -46,7 +46,7 @@ class TestMailMessage(TestMail):
         self.env['ir.config_parameter'].set_param('mail.catchall.alias', alias_catchall)
 
         msg = self.env['mail.message'].sudo(self.user_employee).create({})
-        self.assertIn('-private', msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
+        self.assertIn('-private', msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, '%s <%s@%s>' % (self.env.user.company_id.name, alias_catchall, alias_domain))
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
@@ -57,7 +57,11 @@ class TestMailMessage(TestMail):
             'model': 'mail.test',
             'res_id': self.test_pigs.id
         })
+<<<<<<< HEAD
         self.assertIn('-openerp-%d-mail.test' % self.test_pigs.id, msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
+=======
+        self.assertIn('-openerp-%d-mail.channel' % self.group_pigs.id, msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         self.assertEqual(msg.reply_to, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
@@ -70,8 +74,13 @@ class TestMailMessage(TestMail):
             'model': 'mail.test',
             'res_id': self.test_pigs.id
         })
+<<<<<<< HEAD
         self.assertIn('-openerp-%d-mail.test' % self.test_pigs.id, msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, '%s %s <%s@%s>' % (self.env.user.company_id.name, self.test_pigs.name, self.test_pigs.alias_name, alias_domain))
+=======
+        self.assertIn('-openerp-%d-mail.channel' % self.group_pigs.id, msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
+        self.assertEqual(msg.reply_to, '%s %s <%s@%s>' % (self.env.user.company_id.name, self.group_pigs.name, self.group_pigs.alias_name, alias_domain))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
     def test_mail_message_values_document_alias_catchall(self):
@@ -84,8 +93,13 @@ class TestMailMessage(TestMail):
             'model': 'mail.test',
             'res_id': self.test_pigs.id
         })
+<<<<<<< HEAD
         self.assertIn('-openerp-%d-mail.test' % self.test_pigs.id, msg.message_id, 'mail_message: message_id for a void message should be a "private" one')
         self.assertEqual(msg.reply_to, '%s %s <%s@%s>' % (self.env.user.company_id.name, self.test_pigs.name, self.test_pigs.alias_name, alias_domain))
+=======
+        self.assertIn('-openerp-%d-mail.channel' % self.group_pigs.id, msg.message_id.split('@')[0], 'mail_message: message_id for a void message should be a "private" one')
+        self.assertEqual(msg.reply_to, '%s %s <%s@%s>' % (self.env.user.company_id.name, self.group_pigs.name, self.group_pigs.alias_name, alias_domain))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         self.assertEqual(msg.email_from, '%s <%s>' % (self.user_employee.name, self.user_employee.email))
 
     def test_mail_message_values_no_auto_thread(self):
@@ -94,9 +108,15 @@ class TestMailMessage(TestMail):
             'res_id': self.test_pigs.id,
             'no_auto_thread': True,
         })
+<<<<<<< HEAD
         self.assertIn('reply_to', msg.message_id)
         self.assertNotIn('mail.test', msg.message_id)
         self.assertNotIn('-%d-' % self.test_pigs.id, msg.message_id)
+=======
+        self.assertIn('reply_to', msg.message_id.split('@')[0])
+        self.assertNotIn('mail.channel', msg.message_id.split('@')[0])
+        self.assertNotIn('-%d-' % self.group_pigs.id, msg.message_id.split('@')[0])
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     def test_mail_message_notify_from_mail_mail(self):
         # Due ot post-commit hooks, store send emails in every step

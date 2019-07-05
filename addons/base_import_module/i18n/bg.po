@@ -3,17 +3,32 @@
 # * base_import_module
 #
 # Translators:
+<<<<<<< HEAD
 #, fuzzy
+=======
+# Martin Trigaux, 2016
+# kalatchev, 2016
+# Boris Stefanov <borkata@gmail.com>, 2018
+# Maria Boyadjieva <marabo2000@gmail.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2015-09-07 16:37+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Bulgarian (http://www.transifex.com/odoo/odoo-9/language/"
 "bg/)\n"
 "Language: bg\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:17+0000\n"
+"Last-Translator: Maria Boyadjieva <marabo2000@gmail.com>, 2018\n"
+"Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,12 +40,26 @@ msgstr ""
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Cancel"
+<<<<<<< HEAD
 msgstr "Откажи"
+=======
+msgstr "Отменете"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Close"
+<<<<<<< HEAD
 msgstr "Затвори"
+=======
+msgstr "Затворете"
+
+#. module: base_import_module
+#: code:addons/base_import_module/controllers/main.py:31
+#, python-format
+msgid "Could not select database '%s'"
+msgstr "Не можахте да изберете база данни '%s'"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_create_uid
@@ -45,39 +74,41 @@ msgstr "Създадено на"
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_display_name
 msgid "Display Name"
-msgstr "Име за показване"
+msgstr "Покажете име"
 
 #. module: base_import_module
 #: code:addons/base_import_module/models/ir_module.py:94
 #, python-format
 msgid "File '%s' exceed maximum allowed file size"
-msgstr ""
+msgstr "Файл, '%s' който надхвърля максимално разрешения размер"
 
 #. module: base_import_module
 #: code:addons/base_import_module/models/ir_module.py:86
 #, python-format
 msgid "File is not a zip file!"
-msgstr ""
+msgstr "Това не е zip файл!"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_force
 msgid "Force init"
-msgstr ""
+msgstr "Ускорете инициализация"
 
 #. module: base_import_module
 #: model:ir.model.fields,help:base_import_module.field_base_import_module_force
 msgid "Force init mode even if installed. (will update `noupdate='1'` records)"
 msgstr ""
+"Ускорете режима на инициализация дори да е инсталиран. (ще актуализира "
+"записите `noupdate='1'`)"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_id
 msgid "ID"
-msgstr "ID"
+msgstr "ИН"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import App"
-msgstr ""
+msgstr "Въведете приложение "
 
 #. module: base_import_module
 #: model:ir.actions.act_window,name:base_import_module.action_view_base_module_import
@@ -85,37 +116,37 @@ msgstr ""
 #: model:ir.ui.menu,name:base_import_module.menu_view_base_module_import
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import Module"
-msgstr "Импортиране на модул"
+msgstr "Въведете модул"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_import_message
 msgid "Import message"
-msgstr ""
+msgstr "Въведете съобщение"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Import module"
-msgstr "Вмъкни модул"
+msgstr "Въведете модул"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_ir_module_module_imported
 msgid "Imported Module"
-msgstr ""
+msgstr "Въведен модул"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module___last_update
 msgid "Last Modified on"
-msgstr "Последно променено на"
+msgstr "Последно коригирано на"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_write_uid
 msgid "Last Updated by"
-msgstr "Последно обновено от"
+msgstr "Последно актуализирано от"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_write_date
 msgid "Last Updated on"
-msgstr "Последно обновено на"
+msgstr "Последно актуализирано на"
 
 #. module: base_import_module
 #: model:ir.model,name:base_import_module.model_ir_module_module
@@ -125,35 +156,55 @@ msgstr "Модул"
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_module_file
 msgid "Module .ZIP file"
-msgstr "Модул в .zip формат"
+msgstr "Модул .zip файл"
+
+#. module: base_import_module
+<<<<<<< HEAD
+=======
+#: code:addons/base_import_module/models/ir_module.py:86
+#, python-format
+msgid "No file sent."
+msgstr "Не е изпратен файл."
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
+msgid "Note: you can only import data modules (.xml files and static assets)"
+msgstr ""
+
+#. module: base_import_module
+#: code:addons/base_import_module/controllers/main.py:25
+#, python-format
+msgid "Only administrators can upload a module"
+msgstr "Само администраторите могат да качват модул в системата"
+
+#. module: base_import_module
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+#: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Open Modules"
-msgstr "Отваряне на модули"
+msgstr "Отворете модули"
 
 #. module: base_import_module
 #: model:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Select module package to import (.zip file):"
-msgstr "Изберете пакета на модула за инсталация (.zip file):"
+msgstr "Изберете пакета модули за въвеждане (.zip файл):"
 
 #. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module_state
 msgid "Status"
-msgstr "Състояние"
+msgstr "Статус"
 
 #. module: base_import_module
 #: code:addons/base_import_module/models/ir_module.py:33
 #, python-format
 msgid "Unmet module dependencies: %s"
-msgstr ""
+msgstr "Незадоволени изисквания на модула: %s"
 
 #. module: base_import_module
 #: selection:base.import.module,state:0
 msgid "done"
-msgstr "готово"
+msgstr "извършен"
 
 #. module: base_import_module
 #: selection:base.import.module,state:0
 msgid "init"
-msgstr ""
+msgstr "инициализация"

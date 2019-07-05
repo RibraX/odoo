@@ -97,6 +97,13 @@ class Inventory(models.Model):
         else:
             self.total_qty = 0
 
+    @api.multi
+    def unlink(self):
+        for inventory in self:
+            if inventory.state == 'done':
+                raise UserError(_('You cannot delete a validated inventory adjustement.'))
+        return super(Inventory, self).unlink()
+
     @api.model
     def _selection_filter(self):
         """ Get the list of filter allowed according to the options checked
@@ -206,7 +213,7 @@ class Inventory(models.Model):
     def _get_inventory_lines_values(self):
         # TDE CLEANME: is sql really necessary ? I don't think so
         locations = self.env['stock.location'].search([('id', 'child_of', [self.location_id.id])])
-        domain = ' location_id in %s'
+        domain = ' location_id in %s AND active = TRUE'
         args = (tuple(locations.ids),)
 
         vals = []
@@ -247,6 +254,8 @@ class Inventory(models.Model):
 
         self.env.cr.execute("""SELECT product_id, sum(quantity) as product_qty, location_id, lot_id as prod_lot_id, package_id, owner_id as partner_id
             FROM stock_quant
+            LEFT JOIN product_product
+            ON product_product.id = stock_quant.product_id
             WHERE %s
             GROUP BY product_id, location_id, lot_id, package_id, partner_id """ % domain, args)
 
@@ -325,7 +334,7 @@ class InventoryLine(models.Model):
     # TDE FIXME: necessary ? -> replace by location_id
     prodlot_name = fields.Char(
         'Serial Number Name',
-        related='prod_lot_id.name', store=True)
+        related='prod_lot_id.name', store=True, readonly=True)
     company_id = fields.Many2one(
         'res.company', 'Company', related='inventory_id.company_id',
         index=True, readonly=True, store=True)
@@ -364,10 +373,11 @@ class InventoryLine(models.Model):
             self._compute_theoretical_qty()
             self.product_qty = self.theoretical_qty
 
-    @api.model
+    @api.multi
     def write(self, values):
         values.pop('product_name', False)
         res = super(InventoryLine, self).write(values)
+        return res
 
     @api.model
     def create(self, values):
@@ -385,7 +395,8 @@ class InventoryLine(models.Model):
         if existings:
             raise UserError(_("You cannot have two inventory adjustements in state 'in Progess' with the same product"
                               "(%s), same location(%s), same package, same owner and same lot. Please first validate"
-                              "the first inventory adjustement with this product before creating another one.") % (res.product_id.name, res.location_id.name))
+                              "the first inventory adjustement with this product before creating another one.") %
+                            (res.product_id.display_name, res.location_id.display_name))
         return res
 
     @api.constrains('product_id')
@@ -441,8 +452,30 @@ class InventoryLine(models.Model):
                 continue
             diff = line.theoretical_qty - line.product_qty
             if diff < 0:  # found more than expected
+<<<<<<< HEAD
                 vals = line._get_move_values(abs(diff), line.product_id.property_stock_inventory.id, line.location_id.id, False)
             else:
                 vals = line._get_move_values(abs(diff), line.location_id.id, line.product_id.property_stock_inventory.id, True)
             moves |= self.env['stock.move'].create(vals)
+=======
+                vals = line._get_move_values(abs(diff), line.product_id.property_stock_inventory.id, line.location_id.id)
+            else:
+                vals = line._get_move_values(abs(diff), line.location_id.id, line.product_id.property_stock_inventory.id)
+            move = moves.create(vals)
+
+            if diff > 0:
+                domain = [('qty', '>', 0.0), ('package_id', '=', line.package_id.id), ('lot_id', '=', line.prod_lot_id.id), ('location_id', '=', line.location_id.id)]
+                preferred_domain_list = [[('reservation_id', '=', False)], [('reservation_id.inventory_id', '!=', line.inventory_id.id)]]
+                quants = Quant.quants_get_preferred_domain(move.product_qty, move, domain=domain, preferred_domain_list=preferred_domain_list)
+                Quant.quants_reserve(quants, move)
+            elif line.package_id:
+                move.action_done()
+                move.quant_ids.write({'package_id': line.package_id.id})
+                quants = Quant.search([('qty', '<', 0.0), ('product_id', '=', move.product_id.id),
+                                       ('location_id', '=', move.location_dest_id.id), ('package_id', '!=', False)], limit=1)
+                if quants:
+                    for quant in move.quant_ids:
+                        if quant.location_id.id == move.location_dest_id.id:  #To avoid we take a quant that was reconcile already
+                            quant._quant_reconcile_negative(move)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return moves

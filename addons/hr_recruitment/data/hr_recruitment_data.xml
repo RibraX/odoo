@@ -10,10 +10,17 @@
     <!-- Templates for interest / refusing applicants -->
     <record id="email_template_data_applicant_refuse" model="mail.template">
         <field name="name">Applicant: Refuse</field>
+<<<<<<< HEAD
         <field name="subject">Your Job Application: ${object.job_id.name | safe}</field>
         <field name="email_to">${(not object.partner_id and object.email_from or '') | safe}</field>
         <field name="partner_to">${object.partner_id.id or ''}</field>
         <field name="lang">${object.partner_id.lang or ''}</field>
+=======
+        <field name="subject">Application refused</field>
+        <field name="email_to">${object.email_from | safe}</field>
+        <field name="partner_to">${object.partner_id and object.partner_id.id or ''}</field>
+        <field name="lang">${object.partner_id and object.partner_id.lang or ''}</field>
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
         <field name="user_signature" eval="False"/>
         <field name="body_html"><![CDATA[
@@ -99,10 +106,17 @@
 
     <record id="email_template_data_applicant_interest" model="mail.template">
         <field name="name">Applicant: Interest</field>
+<<<<<<< HEAD
         <field name="subject">Your Application: ${object.job_id.name | safe}</field>
         <field name="email_to">${(not object.partner_id and object.email_from or '') | safe}</field>
         <field name="partner_to">${object.partner_id.id or ''}</field>
         <field name="lang">${object.partner_id.lang or ''}</field>
+=======
+        <field name="subject">Application approved</field>
+        <field name="email_to">${object.email_from | safe}</field>
+        <field name="partner_to">${object.partner_id and object.partner_id.id or ''}</field>
+        <field name="lang">${object.partner_id and object.partner_id.lang or ''}</field>
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
         <field name="user_signature" eval="False"/>
         <field name="body_html"><![CDATA[

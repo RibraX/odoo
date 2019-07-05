@@ -3,6 +3,7 @@
 # * sales_team
 # 
 # Translators:
+<<<<<<< HEAD
 # liAnGjiA <liangjia@qq.com>, 2017
 # Gary Wei <Gary.wei@elico-corp.com>, 2017
 # waveyeung <waveyeung@qq.com>, 2017
@@ -16,13 +17,25 @@
 # Liping Wang <lynn.config@gmail.com>, 2017
 # 苏州远鼎 <tiexinliu@126.com>, 2017
 # Jeff Yu - Elico Corp <jeff.yu@elico-corp.com>, 2017
+=======
+# Jeffery CHEN Fan <jeffery9@gmail.com>, 2016
+# 广州救火 <7017511@qq.com>, 2018
+# liAnGjiA <liangjia@qq.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Jeff Yu - Elico Corp <jeff.yu@elico-corp.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:29+0000\n"
+"Last-Translator: liAnGjiA <liangjia@qq.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,9 +131,27 @@ msgid "Contact"
 msgstr "联系人"
 
 #. module: sales_team
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_dashboard_graph_model
 msgid "Content"
 msgstr "内容"
+=======
+#: model:ir.ui.menu,name:sales_team.menu_country_partner
+msgid "Countries"
+msgstr "国家"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_group
+msgid "Country Group"
+msgstr "国家群组"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:215
+#, python-format
+msgid "Create a few opportunities in it."
+msgstr "创建新商机"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_create_uid
@@ -214,9 +245,15 @@ msgstr "ID"
 #: model:ir.model.fields,help:sales_team.field_res_partner_team_id
 #: model:ir.model.fields,help:sales_team.field_res_users_team_id
 msgid ""
+<<<<<<< HEAD
 "If set, this sales channel will be used for sales and assignations related "
 "to this partner"
 msgstr "如果设置了，这种销售渠道将用于销售和合作伙伴的相关矩阵"
+=======
+"If set, sale team used notably for sales and assignations related to this "
+"partner"
+msgstr "如果设置了，这种销售将用于销售和合作伙伴的相关矩阵"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sales_team
 #: model:ir.model.fields,help:sales_team.field_crm_team_active
@@ -277,8 +314,27 @@ msgstr "月"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
+<<<<<<< HEAD
 msgid "My Favorites"
 msgstr "我的收藏夹"
+=======
+msgid "My Salesteams"
+msgstr "我的销售团队"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:50
+#, python-format
+msgid "Next 7 days"
+msgstr "未来7天"
+
+#. module: sales_team
+#. openerp-web
+#: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:38
+#, python-format
+msgid "Next Actions"
+msgstr "下一行动"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sales_team
 #: code:addons/sales_team/models/crm_team.py:255
@@ -320,9 +376,15 @@ msgstr "销售渠道"
 #. module: sales_team
 #: model:ir.model.fields,help:sales_team.field_res_users_sale_team_id
 msgid ""
+<<<<<<< HEAD
 "Sales Channel the user is member of. Used to compute the members of a sales "
 "channel through the inverse one2many"
 msgstr "销售渠道用户是会员。用于计算一个销售渠道成员通过逆one2many"
+=======
+"Sales Team the user is member of. Used to compute the members of a sales "
+"team through the inverse one2many"
+msgstr "用户所属的销售团队。用于通过反向one2many计算销售团队的成员"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: sales_team
 #: model:ir.actions.act_window,name:sales_team.crm_team_salesteams_act

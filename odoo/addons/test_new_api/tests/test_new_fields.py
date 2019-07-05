@@ -61,6 +61,19 @@ class TestFields(common.TransactionCase):
         self.assertTrue(field.store)
         self.assertTrue(field.readonly)
 
+    def test_10_computed_custom(self):
+        """ check definition of custom computed fields """
+        self.env['ir.model.fields'].create({
+            'name': 'x_bool_false_computed',
+            'model_id': self.env.ref('test_new_api.model_test_new_api_message').id,
+            'field_description': 'A boolean computed to false',
+            'compute': "for r in self: r['x_bool_false_computed'] = False",
+            'store': False,
+            'ttype': 'boolean'
+        })
+        field = self.env['test_new_api.message']._fields['x_bool_false_computed']
+        self.assertFalse(field.depends)
+
     def test_10_non_stored(self):
         """ test non-stored fields """
         # a field declared with store=False should not have a column
@@ -196,11 +209,12 @@ class TestFields(common.TransactionCase):
         self.assertEqual(c.display_name, 'B / C')
         self.assertEqual(d.display_name, 'B / C / D')
 
-        b.name = 'X'
+        # rename several records to trigger several recomputations at once
+        (d + c + b).write({'name': 'X'})
         self.assertEqual(a.display_name, 'A')
         self.assertEqual(b.display_name, 'X')
-        self.assertEqual(c.display_name, 'X / C')
-        self.assertEqual(d.display_name, 'X / C / D')
+        self.assertEqual(c.display_name, 'X / X')
+        self.assertEqual(d.display_name, 'X / X / X')
 
         # delete b; both c and d are deleted in cascade; c should also be marked
         # to recompute, but recomputation should not fail...
@@ -233,6 +247,13 @@ class TestFields(common.TransactionCase):
         self.assertEqual(ewan.parent, cath)
         self.assertEqual(ewan.name, "Erwan")
 
+        # write on non-stored inverse field on severals records
+        foo1 = Category.create({'name': 'Foo'})
+        foo2 = Category.create({'name': 'Foo'})
+        (foo1 + foo2).write({'display_name': 'Bar'})
+        self.assertEqual(foo1.name, 'Bar')
+        self.assertEqual(foo2.name, 'Bar')
+
         record = self.env['test_new_api.compute.inverse']
 
         # create/write on 'foo' should only invoke the compute method
@@ -260,6 +281,16 @@ class TestFields(common.TransactionCase):
         self.assertEqual(record.foo, 'Ho')
         self.assertEqual(record.bar, 'Ho')
         self.assertEqual(record.counts, {'compute': 0, 'inverse': 1})
+
+    def test_13_inverse_access(self):
+        """ test access rights on inverse fields """
+        foo = self.env['test_new_api.category'].create({'name': 'Foo'})
+        user = self.env['res.users'].create({'name': 'Foo', 'login': 'foo'})
+        self.assertFalse(user.has_group('base.group_system'))
+        # add group on non-stored inverse field
+        self.patch(type(foo).display_name, 'groups', 'base.group_system')
+        with self.assertRaises(AccessError):
+            foo.sudo(user).display_name = 'Forbidden'
 
     def test_14_search(self):
         """ test search on computed fields """
@@ -557,6 +588,10 @@ class TestFields(common.TransactionCase):
         self.env['ir.property'].create({'name': 'foo', 'fields_id': field.id,
                                         'value': 'default', 'type': 'char'})
 
+        # assumption: users don't have access to 'ir.property'
+        accesses = self.env['ir.model.access'].search([('model_id.model', '=', 'ir.property')])
+        accesses.write(dict.fromkeys(['perm_read', 'perm_write', 'perm_create', 'perm_unlink'], False))
+
         # create/modify a record, and check the value for each user
         record = self.env['test_new_api.company'].create({'foo': 'main'})
         record.invalidate_cache()
@@ -568,6 +603,19 @@ class TestFields(common.TransactionCase):
         record.invalidate_cache()
         self.assertEqual(record.sudo(user0).foo, 'main')
         self.assertEqual(record.sudo(user1).foo, 'alpha')
+        self.assertEqual(record.sudo(user2).foo, 'default')
+
+        record.sudo(user1).foo = False
+        record.invalidate_cache()
+        self.assertEqual(record.sudo(user0).foo, 'main')
+        self.assertEqual(record.sudo(user1).foo, False)
+        self.assertEqual(record.sudo(user2).foo, 'default')
+
+        # set field with 'force_company' in context
+        record.sudo(user0).with_context(force_company=company1.id).foo = 'beta'
+        record.invalidate_cache()
+        self.assertEqual(record.sudo(user0).foo, 'main')
+        self.assertEqual(record.sudo(user1).foo, 'beta')
         self.assertEqual(record.sudo(user2).foo, 'default')
 
         # create company record and attribute
@@ -589,6 +637,63 @@ class TestFields(common.TransactionCase):
         self.assertEqual(attribute_record.bar, 'DEFDEF')
         self.assertFalse(self.env.has_todo())
 
+<<<<<<< HEAD
+=======
+        # add group on company-dependent field
+        self.assertFalse(user0.has_group('base.group_system'))
+        self.patch(type(record).foo, 'groups', 'base.group_system')
+        with self.assertRaises(AccessError):
+            record.sudo(user0).foo = 'forbidden'
+
+        user0.write({'groups_id': [(4, self.env.ref('base.group_system').id)]})
+        record.sudo(user0).foo = 'yes we can'
+
+        # add ir.rule to prevent access on record
+        self.assertTrue(user0.has_group('base.group_user'))
+        model_id = self.env['ir.model'].search([('model', '=', record._name)]).id
+        rule = self.env['ir.rule'].create({
+            'model_id': model_id,
+            'groups': [self.env.ref('base.group_user').id],
+            'domain_force': str([('id', '!=', record.id)]),
+        })
+        with self.assertRaises(AccessError):
+            record.sudo(user0).foo = 'forbidden'
+
+    def test_28_sparse(self):
+        """ test sparse fields. """
+        record = self.env['test_new_api.sparse'].create({})
+        self.assertFalse(record.data)
+
+        partner = self.env.ref('base.main_partner')
+        values = [
+            ('boolean', True),
+            ('integer', 42),
+            ('float', 3.14),
+            ('char', 'John'),
+            ('selection', 'two'),
+            ('partner', partner.id),
+        ]
+        for n, (key, val) in enumerate(values):
+            record.write({key: val})
+            self.assertEqual(record.data, dict(values[:n+1]))
+
+        for key, val in values[:-1]:
+            self.assertEqual(record[key], val)
+        self.assertEqual(record.partner, partner)
+
+        for n, (key, val) in enumerate(values):
+            record.write({key: False})
+            self.assertEqual(record.data, dict(values[n+1:]))
+
+        # check reflection of sparse fields in 'ir.model.fields'
+        names = [name for name, _ in values]
+        domain = [('model', '=', 'test_new_api.sparse'), ('name', 'in', names)]
+        fields = self.env['ir.model.fields'].search(domain)
+        self.assertEqual(len(fields), len(names))
+        for field in fields:
+            self.assertEqual(field.serialization_field_id.name, 'data')
+
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     def test_30_read(self):
         """ test computed fields as returned by read(). """
         discussion = self.env.ref('test_new_api.discussion_0')

@@ -3,6 +3,7 @@
 # * website_sale
 #
 # Translators:
+<<<<<<< HEAD
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -12,6 +13,29 @@ msgstr ""
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Swedish (http://www.transifex.com/odoo/odoo-9/language/sv/)\n"
 "Language: sv\n"
+=======
+# Jonathan S <jonathan.c.strom@gmail.com>, 2016
+# Zou Haojun <haojunzou84@gmail.com>, 2016
+# Daniel Forslund <daniel.forslund@gmail.com>, 2016
+# Robin Chatfield <robin.chatfield@gmail.com>, 2016
+# Patrik Lermon <patrik.lermon@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Kristoffer Grundström <hamnisdude@gmail.com>, 2016
+# Martin Wilderoth <martin.wilderoth@linserv.se>, 2017
+# Egils Verkstad <egils@riseup.net>, 2017
+# Anders Wallenquist <anders.wallenquist@vertel.se>, 2017
+# Chrille Hedberg <hedberg.chrille@gmail.com>, 2018
+# Kim Asplund <kim.asplund@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-30 14:34+0000\n"
+"PO-Revision-Date: 2016-09-07 09:34+0000\n"
+"Last-Translator: Kim Asplund <kim.asplund@gmail.com>, 2019\n"
+"Language-Team: Swedish (https://www.transifex.com/odoo/teams/41243/sv/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -44,6 +68,9 @@ msgid ""
 "                    Free Shipping in U.S.<br/>\n"
 "                    Buy now, get in 2 days"
 msgstr ""
+"30-dagar pengarna tillbaka garanti<br/>\n"
+"                              Fri Leverans i Sverige<br/>\n"
+"                              Köp nu, få om 2 dagar"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -64,9 +91,20 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
 msgid ""
+<<<<<<< HEAD
 "<br/>\n"
 "                                <strong>Payment Status:</strong>"
 msgstr ""
+=======
+"<i class=\"fa fa-3x fa-credit-card text-muted\" aria-hidden=\"true\"/><br/>\n"
+"                                                Are you sure you want to pay with this card: <br/>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "<i class=\"fa fa-check\"/> Ship to this address"
+msgstr "<i class=\"fa fa-check\"/> Skicka till den här adressen"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
@@ -86,7 +124,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<i class=\"fa fa-print\"/> Print"
-msgstr ""
+msgstr "<i class=\"fa fa-print\"/> Skriv ut"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.header
@@ -452,7 +490,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<strong>Total:</strong>"
-msgstr ""
+msgstr "<strong>Totalt:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -604,9 +642,15 @@ msgid "Christmas Pricelist"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "City"
 msgstr "Stad"
+=======
+#: model:ir.ui.view,arch_db:website_sale.recommended_products
+msgid "Alternative Products:"
+msgstr "Alternativprodukter:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
@@ -616,6 +660,7 @@ msgid "Click here to add a new product."
 msgstr "Klicka här för att lägga till en ny produkt."
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:67
 #, python-format
@@ -627,6 +672,137 @@ msgstr "Klicka här för att välja en bild som beskriver produkten."
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:47
 #, python-format
 msgid "Click on <em>Continue</em> to create the product."
+=======
+#: model:ir.ui.view,arch_db:website_sale.reduction_code
+msgid "Apply"
+msgstr "Ansök"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Apply multi-currencies"
+msgstr "Lägg på flervaluta"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability
+msgid "Availability"
+msgstr "Tillgänglighet"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability_warning
+msgid "Availability Warning"
+msgstr ""
+
+#. module: website_sale
+#: model:product.pricelist,name:website_sale.list_benelux
+msgid "Benelux"
+msgstr ""
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/xml/website_sale_dashboard.xml:21
+#, python-format
+msgid "Best Sellers"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.bill_to
+msgid "Bill To:"
+msgstr "Fakturera:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "Billing Address"
+msgstr "Fakturerings Adress"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Billing<span class=\"chevron\"/>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Can take up to several days to receive the money"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_sale_order_cart_quantity
+msgid "Cart Quantity"
+msgstr "Antal i kundvagnen"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Cash amount or percentage discounts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.menu,name:website_sale.menu_catalog
+msgid "Catalog"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: decreasing order"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: increasing order"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.actions.act_window,help:website_sale.product_public_category_action
+msgid ""
+"Categories are used to browse your products through the\n"
+"            touchscreen interface."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_delivery_carrier_public_categ_ids
+#: model:ir.model.fields,help:website_sale.field_product_product_public_categ_ids
+#: model:ir.model.fields,help:website_sale.field_product_template_public_categ_ids
+msgid ""
+"Categories can be published on the Shop page (online catalog grid) to help "
+"customers find all the items within a category. To publish them, go to the "
+"Shop page, hit Customize and turn *Product Categories* on. A product can "
+"belong to several categories."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Change"
+msgstr "Byt"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_public_category_child_id
+msgid "Children Categories"
+msgstr "Underordnade Kategorier"
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:37
+#, python-format
+msgid "Choose an image from the library."
+msgstr "Välj en bild från biblioteket."
+
+#. module: website_sale
+#: model:product.pricelist,name:website_sale.list_christmas
+msgid "Christmas"
+msgstr "Jul"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "City"
+msgstr "Stad"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.products
+msgid ""
+"Click <i>'New'</i> in the top-right corner to create your first product."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
@@ -812,7 +988,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "Default Salesperson"
-msgstr ""
+msgstr "Standard Försäljare"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -874,11 +1050,17 @@ msgid "E-commerce Promotional Code"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:60
 #, python-format
 msgid "Edit the price of this product by clicking on the amount."
 msgstr "Ändra priset på denna produkt genom att klicka på summan."
+=======
+#: model:product.pricelist,name:website_sale.list_europe
+msgid "EUR"
+msgstr "EUR"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -901,9 +1083,15 @@ msgid "Enter a name for your new product"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Enter their identification credentials"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Edit this address"
+msgstr "Ändra den här adressen"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -992,9 +1180,15 @@ msgid "Field not custom"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Field not required"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.view_sales_order_filter_ecommerce
+msgid "From Website"
+msgstr "Från Websida"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -1068,6 +1262,15 @@ msgid "Hidden"
 msgstr "Dold"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "I agree to the"
+msgstr "Jag godkänner"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_image_id
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_id
 #: model:ir.model.fields,field_description:website_sale.field_product_style_id
 #: model:ir.model.fields,field_description:website_sale.field_website_pricelist_id_11000
@@ -1090,6 +1293,22 @@ msgid "Image"
 msgstr "Bild"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Image Name"
+msgstr "Bild Namn"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_product_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_template_product_image_ids
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+msgid "Images"
+msgstr "Bilder"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Imagine a new customer who comes to your website, finds the product they "
@@ -1180,6 +1399,52 @@ msgid "Last Updated on"
 msgstr "Senast uppdaterad"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Legal Name"
+msgstr "Juridiska namn"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Let them buy straight from catalog with:"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "List displaying"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Log In"
+msgstr "Logga In"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Logo"
+msgstr "Logotyp"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Main Currency"
+msgstr "Huvudsaklig valuta"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"Make sure your customers can go through the shopping process in a very short"
+" time, otherwise they will leave your website. Here are some actions to "
+"tailor the process to your business."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery
+msgid "Manage shipping internally"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_image_medium
 msgid "Medium-sized image"
 msgstr "Mediumstorlek på bild"
@@ -1215,7 +1480,7 @@ msgstr "Meddelande för kundorderrad"
 #: code:addons/website_sale/static/src/js/website_sale.js:15
 #, python-format
 msgid "My Cart"
-msgstr ""
+msgstr "Min Kundvagn"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_complete_name
@@ -1298,6 +1563,19 @@ msgid "Only Services"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_website_sale_options
+msgid "Optional Products"
+msgstr "Alternativa Produkter"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Options: warranty, software"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "Order"
 msgstr "Order"
@@ -1387,7 +1665,7 @@ msgstr "Pris"
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_website_pricelist_ids
 msgid "Price list available for this Ecommerce/Website"
-msgstr ""
+msgstr "Prislista tillgänglig för Ecommerce/Websida"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_pricelist
@@ -1413,6 +1691,15 @@ msgid "Product Attribute"
 msgstr "Produktattribut"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Product Images"
+msgstr "Produkt Bilder"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.product
 msgid "Product Name"
 msgstr "Produktnamn"
@@ -1426,7 +1713,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.product_public_category_tree_view
 #, fuzzy
 msgid "Product Public Categories"
+<<<<<<< HEAD
 msgstr "Produktkategorier"
+=======
+msgstr "Offentliga Produkt Kategorier"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_template
@@ -1517,7 +1808,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "Qty:"
-msgstr ""
+msgstr "Ant:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
@@ -1543,9 +1834,27 @@ msgid "Rating"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Read the"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_last_value
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_last_value
+msgid "Rating Last Value"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_count
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_count
+msgid "Rating count"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_image_product_tmpl_id
+msgid "Related Product"
+msgstr "Relaterade Produkter"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.404
@@ -1588,6 +1897,7 @@ msgstr "Säljteam"
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_salesperson_id
 #: model:ir.model.fields,field_description:website_sale.field_website_salesperson_id
 msgid "Salesperson"
+<<<<<<< HEAD
 msgstr "Salesperson"
 
 #. module: website_sale
@@ -1596,6 +1906,98 @@ msgstr "Salesperson"
 #, python-format
 msgid "Save"
 msgstr "Spara"
+=======
+msgstr "Säljare"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Save my payment data"
+msgstr ""
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.Screen
+msgid "Screen"
+msgstr "Skärm"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart
+msgid "Secure Payment"
+msgstr "Säker betalning"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure delivery methods and shipping connectors"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure payment methods"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure pricing &amp; discounts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to customize your catalog page"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to do it"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to set tax-included prices"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See which tax rate applies in your city"
+msgstr ""
+
+#. module: website_sale
+#: selection:product.attribute,type:0
+msgid "Select"
+msgstr "Välj"
+
+#. module: website_sale
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:15
+#, python-format
+msgid ""
+"Select <b>New Product</b> to create it and manage its properties to boost "
+"your sales."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Select this address"
+msgstr "Välj den här adressen"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Select your pricing preference and allow discounts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Select your shipping management policy"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_pricelist_selectable
+msgid "Selectable"
+msgstr "Valbara"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Sell"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1682,6 +2084,7 @@ msgstr "Leverera till samma adress"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
+<<<<<<< HEAD
 msgid "Shipping"
 msgstr "Leverans"
 
@@ -1689,6 +2092,10 @@ msgstr "Leverans"
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Shipping &amp;"
 msgstr ""
+=======
+msgid "Shipping Address"
+msgstr "Leveransadress"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
@@ -1741,6 +2148,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Simply add the product you want as an <strong>'Optional Product'</strong>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Sign Up"
 msgstr ""
 
 #. module: website_sale
@@ -1885,7 +2297,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_product_website_url
 msgid "The full URL to access the document through the website."
-msgstr ""
+msgstr "Den fullständiga URL för åtkomst av dokument via webbplatsen."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
@@ -2204,7 +2616,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "eCommerce"
-msgstr ""
+msgstr "E-handel"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover

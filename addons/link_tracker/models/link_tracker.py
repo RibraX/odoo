@@ -244,6 +244,7 @@ class link_tracker_click(models.Model):
         again = self.search_count([('link_id', '=', code_rec.link_id.id), ('ip', '=', ip)])
 
         if not again:
+<<<<<<< HEAD
             self.create(
                 self._get_click_values_from_route(dict(
                     code=code,
@@ -262,3 +263,26 @@ class link_tracker_click(models.Model):
             'ip': route_values['ip'],
             'country_id': country.id,
         }
+=======
+            country_record = self.env['res.country'].search([('code', '=', country_code)], limit=1)
+
+            vals = {
+                'link_id': code_rec.link_id.id,
+                'ip': ip,
+                'country_id': country_record.id,
+            }
+
+            if stat_id:
+                mail_stat = self.env['mail.mail.statistics'].search([('id', '=', stat_id)])
+                # It could happen that the related ID is no longer available, but we still want the link to work
+                if mail_stat.exists():
+                    vals['mail_stat_id'] = stat_id
+
+                    if mail_stat.mass_mailing_campaign_id:
+                        vals['mass_mailing_campaign_id'] = mail_stat.mass_mailing_campaign_id.id
+
+                    if mail_stat.mass_mailing_id:
+                        vals['mass_mailing_id'] = mail_stat.mass_mailing_id.id
+
+            self.create(vals)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -3,15 +3,41 @@
 # * purchase
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Christelle Wehbe <libanon_cristelle@hotmail.com>, 2016
+# Leif Persson <leifpz54@gmail.com>, 2016
+# lasch a <bmail440@gmail.com>, 2016
+# Jonathan S <jonathan.c.strom@gmail.com>, 2016
+# Daniel Forslund <daniel.forslund@gmail.com>, 2016
+# Kristoffer Grundström <hamnisdude@gmail.com>, 2016
+# Robert Frykelius <robert.frykelius@linserv.se>, 2016
+# Haojun Zou <apollo_zhj@msn.com>, 2016
+# Martin Trigaux, 2016
+# Martin Wilderoth <martin.wilderoth@linserv.se>, 2017
+# lynnliuying <lynn.liu1971@gmail.com>, 2017
+# Egils Verkstad <egils@riseup.net>, 2017
+# Patrik Lermon <patrik.lermon@gmail.com>, 2017
+# Kim Asplund <kim.asplund@gmail.com>, 2017
+# Anders Wallenquist <anders.wallenquist@vertel.se>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-22 09:11+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Swedish (http://www.transifex.com/odoo/odoo-9/language/sv/)\n"
 "Language: sv\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:27+0000\n"
+"Last-Translator: Anders Wallenquist <anders.wallenquist@vertel.se>, 2018\n"
+"Language-Team: Swedish (https://www.transifex.com/odoo/teams/41243/sv/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -171,6 +197,7 @@ msgid "Advance bidding process"
 msgstr "Avancerat budförfarande"
 
 #. module: purchase
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_group_advance_purchase_requisition
 msgid "Advanced Calls for Tenders"
 msgstr ""
@@ -184,17 +211,34 @@ msgstr ""
 #: selection:purchase.config.settings,module_stock_dropshipping:0
 msgid "Allow suppliers to deliver directly to your customers"
 msgstr ""
+=======
+#: selection:purchase.config.settings,group_warning_purchase:0
+msgid "All the products and the customers can be used in purchase orders"
+msgstr "Alla produkter och kunder kan användas på inköpsordern"
+
+#. module: purchase
+#: selection:purchase.config.settings,module_stock_dropshipping:0
+msgid "Allow suppliers to deliver directly to your customers"
+msgstr "Tillåter leveranser från din leverantör direkt till din kund"
+
+#. module: purchase
+#: selection:res.company,po_lock:0
+msgid "Allow to edit purchase orders"
+msgstr "Möjlighet att ändra inköpsorder"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.config.settings,group_manage_vendor_price:0
 msgid "Allow using and importing vendor pricelists"
-msgstr ""
+msgstr "Använd och importera leverantörsprislistor"
 
 #. module: purchase
 #: selection:purchase.config.settings,module_purchase_requisition:0
 msgid ""
 "Allow using call for tenders to get quotes from multiple suppliers (advanced)"
 msgstr ""
+"Tillåter anbudsförfarande för att få offerter från många leverantörer "
+"(avancerat)"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_config_settings_group_costing_method
@@ -215,6 +259,17 @@ msgid ""
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:purchase.config.settings,group_warning_purchase:0
+msgid ""
+"An informative or blocking warning can be set on a product or a customer"
+msgstr ""
+"Ett informativt blockeringsmeddelande kan konfigureras på en produkt eller "
+"kund."
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_account_analytic_id
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_account_analytic_id
 msgid "Analytic Account"
@@ -226,6 +281,19 @@ msgid "Analytic Accounting for Purchases"
 msgstr "Objektredovisning för inköp"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_line_analytic_tag_ids
+msgid "Analytic Tags"
+msgstr "Objektetiketter"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_account_config_settings_group_analytic_account_for_purchases
+msgid "Analytic accounting for purchases"
+msgstr "Objektredovisning för inköp"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.view_purchase_configuration
 msgid "Apply"
 msgstr "Verkställ"
@@ -268,7 +336,40 @@ msgid "Billed Qty"
 msgstr ""
 
 #. module: purchase
+<<<<<<< HEAD
 #: code:addons/purchase/purchase.py:717 code:addons/purchase/stock.py:75
+=======
+#: code:addons/purchase/models/purchase.py:581
+#, python-format
+msgid "Billed Quantity"
+msgstr ""
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
+msgid "Billing Status"
+msgstr ""
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
+msgid "Bills"
+msgstr "Kvitton"
+
+#. module: purchase
+#: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
+#: selection:purchase.order,invoice_status:0
+msgid "Bills Received"
+msgstr ""
+
+#. module: purchase
+#: selection:product.template,purchase_line_warn:0
+#: selection:res.partner,purchase_warn:0
+msgid "Blocking Message"
+msgstr "Spärrmeddelande"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:796
+#: code:addons/purchase/models/stock.py:81
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:stock.location.route,name:purchase.route_warehouse0_buy
 #, python-format
 msgid "Buy"
@@ -287,7 +388,7 @@ msgstr "Kalendervy"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_module_purchase_requisition
 msgid "Calls for Tenders"
-msgstr ""
+msgstr "Anbudsförfarande"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_config_settings_module_purchase_requisition
@@ -298,6 +399,8 @@ msgid ""
 "one vendor or if you want a Call for Tenders to compare offers from several "
 "vendors."
 msgstr ""
+"Anbudsförfarande används när du önskar skapa inköpsförfrågan till flera leverantörer för ett givet antal produkter. \n"
+"Du kan konfigurera detta per produkt om du till tillämpa anbudsförfarande med en leverantör eller om du vill jämföra anbud från flera."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_product_product_purchase_ok
@@ -389,7 +492,7 @@ msgstr "Bolag"
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_company_id
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Company"
-msgstr "Företag"
+msgstr "Bolag"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:254
@@ -416,9 +519,17 @@ msgstr "Bekräfta order"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Confirm purchase orders in one step"
-msgstr ""
+msgstr "Bekräfta inköp i ett steg"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: selection:res.company,po_lock:0
+msgid "Confirmed purchase orders are not editable"
+msgstr "Bekräftade inköpsordrar kan inte ändras i efterhand"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.menu,name:purchase.menu_purchase_control
 msgid "Control"
 msgstr ""
@@ -432,7 +543,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_group_costing_method
 msgid "Costing Methods"
-msgstr ""
+msgstr "Kostprisberäkning"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_create_uid
@@ -518,17 +629,23 @@ msgstr "Klar"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company_po_double_validation_amount
 msgid "Double validation amount"
-msgstr ""
+msgstr "Inköpsvärde som kräver tvåstegsbekräftelse "
 
 #. module: purchase
+<<<<<<< HEAD
 #: selection:purchase.order,state:0
 msgid "Draft PO"
 msgstr "Preleminär PO"
+=======
+#: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_po_double_validation_amount
+msgid "Double validation amount *"
+msgstr "Inköpsvärde som kräver tvåstegsbekräftelse *"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: selection:purchase.report,state:0
 msgid "Draft RFQ"
-msgstr ""
+msgstr "OFF i utkast"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_dest_address_id
@@ -538,7 +655,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_module_stock_dropshipping
 msgid "Dropshipping"
-msgstr ""
+msgstr "Direktleverans"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_mail_compose_message
@@ -573,7 +690,7 @@ msgstr "Skatteregion"
 #. module: purchase
 #: selection:res.company,po_double_validation:0
 msgid "Get 2 levels of approvals to confirm a purchase order"
-msgstr ""
+msgstr "Bekräfta inköpsorder i två steg"
 
 #. module: purchase
 #: model:web.tip,description:purchase.purchase_tip_3
@@ -733,12 +850,12 @@ msgstr ""
 #. module: purchase
 #: model:res.groups,name:purchase.group_manage_vendor_price
 msgid "Manage Vendor Price"
-msgstr ""
+msgstr "Administrera leverantörspriser"
 
 #. module: purchase
 #: selection:purchase.config.settings,group_manage_vendor_price:0
 msgid "Manage vendor price on the product form"
-msgstr ""
+msgstr "Administrera leverantörspriser på produktformuläret"
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_purchase_manager
@@ -761,7 +878,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_double_validation_amount
 msgid "Minimum amount for which a double validation is required"
-msgstr ""
+msgstr "Minsta inköpsvärde för vilket det krävs bekräftelse i två steg"
 
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_monthly_purchases
@@ -861,6 +978,21 @@ msgid "Order of Day"
 msgstr "Dagens ordrar"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: code:addons/purchase/models/purchase.py:578
+#, python-format
+msgid "Ordered Quantity"
+msgstr "Beställt antal"
+
+#. module: purchase
+#: code:addons/purchase/models/purchase.py:816
+#, python-format
+msgid "Ordered quantity decreased!"
+msgstr ""
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Orders"
 msgstr "Ordrar"
@@ -876,6 +1008,14 @@ msgid "PO_${(object.name or '').replace('/','_')}"
 msgstr "IO_${(object.name or '').replace('/','_')}"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
+msgid "Packaging"
+msgstr "Förpackning"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:purchase.model_res_partner
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_partner_id
 msgid "Partner"
@@ -884,7 +1024,11 @@ msgstr "Företag"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_country_id
 msgid "Partner Country"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "Företagets land"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_search
@@ -893,7 +1037,11 @@ msgstr ""
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_payment_term_id
+<<<<<<< HEAD
 msgid "Payment Term"
+=======
+msgid "Payment Terms"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr "Betalningsvillkor"
 
 #. module: purchase
@@ -906,7 +1054,7 @@ msgstr "Prisskillnadskonto"
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_price_per_supplier
 msgid "Price Per Vendor"
-msgstr ""
+msgstr "Pris per leverantör"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_config_pricelist
@@ -994,11 +1142,13 @@ msgid ""
 "Products can have several attributes, defining variants (Example: size, "
 "color,...)"
 msgstr ""
+"Produkter kan ha flera attribut, som definierar varianter (exempel: storlek,"
+" färg,...)"
 
 #. module: purchase
 #: selection:purchase.config.settings,group_uom:0
 msgid "Products have only one unit of measure (easier)"
-msgstr ""
+msgstr "Produkter kan endast ha en enhet (enklare)"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_double_validation
@@ -1100,6 +1250,7 @@ msgstr "Beställningar som inkluderar rader som inte är fakturerade."
 msgid ""
 "Purchase propositions trigger draft purchase orders to a single supplier"
 msgstr ""
+"Inköpsförfrågan skapar ett utkast till inköpsorder för en enskild leverantör"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_stock_warehouse_buy_to_resupply
@@ -1189,7 +1340,7 @@ msgstr "Ta emot produkter"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_received
 msgid "Received Qty"
-msgstr "Received Qty"
+msgstr "Mottaget antal"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_open_picking
@@ -1279,7 +1430,7 @@ msgstr "Skicka OFF per e-post"
 #. module: purchase
 #: selection:purchase.config.settings,group_costing_method:0
 msgid "Set a fixed cost price on each product"
-msgstr ""
+msgstr "Välj ett fast kostpris för varje produkt"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1312,7 +1463,7 @@ msgstr ""
 #: selection:purchase.config.settings,group_uom:0
 msgid ""
 "Some products may be sold/puchased in different units of measure (advanced)"
-msgstr ""
+msgstr "Vissa produkter kan säljas/köpas i olika enheter (avancerat)"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_origin
@@ -1355,7 +1506,7 @@ msgstr "Leverantörsprislista"
 #. module: purchase
 #: selection:purchase.config.settings,module_stock_dropshipping:0
 msgid "Suppliers always deliver to your warehouse(s)"
-msgstr ""
+msgstr "Leverantörer levererar alltid till ditt/dina lager"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_price_tax
@@ -1516,7 +1667,7 @@ msgstr "Belopp ex. moms"
 #. module: purchase
 #: selection:purchase.config.settings,group_costing_method:0
 msgid "Use a 'Fixed', 'Real' or 'Average' price costing method"
-msgstr ""
+msgstr "Välj 'fast', 'verkligt' eller 'medel'-pris som kostpris"
 
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.action_invoice_pending
@@ -1575,9 +1726,17 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_group_manage_vendor_price
 msgid "Vendor Price"
-msgstr ""
+msgstr "Leverantörspriser"
 
 #. module: purchase
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
+msgid "Vendor Pricelists"
+msgstr "Leverantörsprislistor"
+
+#. module: purchase
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_partner_ref
 msgid "Vendor Reference"
 msgstr ""
@@ -1590,6 +1749,9 @@ msgid ""
 "                    you receive from your vendor according to the draft\n"
 "                    document in Odoo."
 msgstr ""
+"Leverantörsfakturor kan förskapas med inköpen och kvitton som underlag. "
+"Detta gör det enkelt att granska leverantörsfakturorna enligt underlaget du "
+"har i Odoo."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_volume

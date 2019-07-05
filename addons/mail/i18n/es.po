@@ -3,6 +3,7 @@
 # * mail
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Pedro M. Baeza <pedro.baeza@gmail.com>, 2017
 # Daniel Santibáñez Polanco <dansanti@gmail.com>, 2017
@@ -10,6 +11,26 @@
 # Ivan Nieto <ivan.n.s@tuta.io>, 2017
 # RGB Consulting <odoo@rgbconsulting.com>, 2017
 # Rick Hunter <rick_hunter_ec@yahoo.com>, 2017
+=======
+# Galileo Sanchez <galileopy@gmail.com>, 2016
+# Ivan Nieto <ivan.n.s@tuta.io>, 2016
+# Mateo Tibaquirá Palacios <nestormateo@gmail.com>, 2016
+# Carles Antoli <carlesantoli@hotmail.com>, 2016
+# Sergio Flores <vitavitae1@gmail.com>, 2016
+# Ana Juaristi <ajuaristio@gmail.com>, 2016
+# David Perez <david@closemarketing.es>, 2016
+# José Vicente <txusev@gmail.com>, 2016
+# Javier Ramirez <elbomba887@gmail.com>, 2016
+# Daniel Santibáñez Polanco <dansanti@gmail.com>, 2016
+# Inigo Zuluaga <inigo_zuluaga@yahoo.es>, 2016
+# Leonardo Chianea <noamixcontenidos@gmail.com>, 2016
+# oihane <oihanecruce@gmail.com>, 2016
+# Antonio Trueba, 2016
+# Martin Trigaux, 2016
+# Gelo Joga Landoo <gj@landoo.es>, 2016
+# Miguel Orueta <mo@landoo.es>, 2016
+# Jesus Zapata <jesus@vauxoo.com>, 2016
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 # José Antonio Cuello <inactive+Yopli2k@transifex.com>, 2017
 # Gelo Joga Landoo <gj@landoo.es>, 2017
 # Antonio Trueba <atgayol@gmail.com>, 2017
@@ -34,14 +55,29 @@
 # David de León <leceda09@gmail.com>, 2017
 # maitaoriana <maitaoriana@gmail.com>, 2017
 # Cristian Salamea <ovnicraft@gmail.com>, 2017
+<<<<<<< HEAD
 # e2f_es_ t6 <e2f_es_t6@outlook.com>, 2017
+=======
+# RGB Consulting <odoo@rgbconsulting.com>, 2017
+# Jesús Alan Ramos Rodríguez <alan.ramos@jarsa.com.mx>, 2017
+# Luis M. Ontalba <luis.martinez@tecnativa.com>, 2017
+# Pedro M. Baeza <pedro.baeza@gmail.com>, 2018
+# Rick Hunter <rick_hunter_ec@yahoo.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:25+0000\n"
 "PO-Revision-Date: 2017-10-02 11:25+0000\n"
 "Last-Translator: e2f_es_ t6 <e2f_es_t6@outlook.com>, 2017\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:53+0000\n"
+"PO-Revision-Date: 2016-09-07 09:22+0000\n"
+"Last-Translator: Rick Hunter <rick_hunter_ec@yahoo.com>, 2019\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -277,7 +313,23 @@ msgstr ""
 "            Puedes insertar respuestas enlatadas tecleando <b>:shortcut</b>.<br>"
 
 #. module: mail
+<<<<<<< HEAD
 #: code:addons/mail/models/mail_channel.py:584
+=======
+#: code:addons/mail/models/mail_channel.py:475
+#, python-format
+msgid ""
+"<div class=\"o_mail_notification\">%(author)s invited %(new_partner)s to <a "
+"href=\"#\" class=\"o_channel_redirect\" data-oe-"
+"id=\"%(channel_id)s\">#%(channel_name)s</a></div>"
+msgstr ""
+"<div class=\"o_mail_notification\">%(author)s le invitó %(new_partner)s a <a"
+" href=\"#\" class=\"o_channel_redirect\" data-oe-"
+"id=\"%(channel_id)s\">#%(channel_name)s</a></div>"
+
+#. module: mail
+#: code:addons/mail/models/mail_channel.py:550
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "<div class=\"o_mail_notification\">created <a href=\"#\" "
@@ -1039,7 +1091,7 @@ msgstr "Canales/socios"
 #: model:ir.actions.client,name:mail.mail_channel_action_client_chat
 #, python-format
 msgid "Chat"
-msgstr "Charla"
+msgstr "Chat"
 
 #. module: mail
 #: selection:mail.channel,channel_type:0
@@ -1685,8 +1737,8 @@ msgid ""
 "found and replaces the author_id field in the chatter."
 msgstr ""
 "Dirección de correo del remitente. Este campo se establece cuando no se "
-"encuentra ningún socio coincidente y reemplaza el campo author_id en la "
-"charla."
+"encuentra ninguna empresa coincidente y reemplaza el campo author_id en el "
+"chat."
 
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
@@ -2858,7 +2910,11 @@ msgstr "Conversación en directo"
 #: model:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
 msgid "Log"
+<<<<<<< HEAD
 msgstr "Registro"
+=======
+msgstr "Registrar"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mail
 #. openerp-web

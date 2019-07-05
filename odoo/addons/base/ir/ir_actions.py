@@ -10,13 +10,31 @@ from odoo.http import request
 
 from collections import defaultdict
 import datetime
-import dateutil
 import logging
 import time
 
+<<<<<<< HEAD
 from pytz import timezone
+=======
+import odoo
+from odoo import api, fields, models, tools, workflow, _
+from odoo.exceptions import MissingError, UserError, ValidationError
+from odoo.report.report_sxw import report_sxw, report_rml
+from odoo.tools.safe_eval import safe_eval, test_python_expr
+from odoo.tools.misc import wrap_module
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 _logger = logging.getLogger(__name__)
+
+# build dateutil helper, starting with the relevant *lazy* imports
+import dateutil
+import dateutil.parser
+import dateutil.relativedelta
+import dateutil.rrule
+import dateutil.tz
+mods = {'parser', 'relativedelta', 'rrule', 'tz'}
+attribs = {atr for m in mods for atr in getattr(dateutil, m).__all__}
+dateutil = wrap_module(dateutil, mods | attribs)
 
 
 class IrActions(models.Model):
@@ -83,9 +101,99 @@ class IrActions(models.Model):
     def get_bindings(self, model_name):
         """ Retrieve the list of actions bound to the given model.
 
+<<<<<<< HEAD
            :return: a dict mapping binding types to a list of dict describing
                     actions, where the latter is given by calling the method
                     ``read`` on the action record.
+=======
+class IrActionsReportXml(models.Model):
+    _name = 'ir.actions.report.xml'
+    _inherit = 'ir.actions.actions'
+    _table = 'ir_act_report_xml'
+    _sequence = 'ir_actions_id_seq'
+    _order = 'name'
+
+    name = fields.Char(translate=True)
+    type = fields.Char(default='ir.actions.report.xml')
+
+    model = fields.Char(required=True)
+    report_type = fields.Selection([('qweb-pdf', 'PDF'),
+                                    ('qweb-html', 'HTML'),
+                                    ('controller', 'Controller'),
+                                    ('pdf', 'RML pdf (deprecated)'),
+                                    ('sxw', 'RML sxw (deprecated)'),
+                                    ('webkit', 'Webkit (deprecated)')],
+                                   required=True, default="pdf",
+                                   help="HTML will open the report directly in your browser, PDF will use wkhtmltopdf to render the HTML into a PDF file and let you download it, Controller allows you to define the url of a custom controller outputting any kind of report.")
+    report_name = fields.Char(string='Template Name', required=True,
+                              help="For QWeb reports, name of the template used in the rendering. The method 'render_html' of the model 'report.template_name' will be called (if any) to give the html. For RML reports, this is the LocalService name.")
+    groups_id = fields.Many2many('res.groups', 'res_groups_report_rel', 'uid', 'gid', string='Groups')
+    ir_values_id = fields.Many2one('ir.values', string='More Menu entry', readonly=True,
+                                   help='More menu entry.', copy=False)
+
+    # options
+    multi = fields.Boolean(string='On Multiple Doc.', help="If set to true, the action will not be displayed on the right toolbar of a form view.")
+    attachment_use = fields.Boolean(string='Reload from Attachment', help='If you check this, then the second time the user prints with same attachment name, it returns the previous report.')
+    attachment = fields.Char(string='Save as Attachment Prefix',
+                             help='This is the filename of the attachment used to store the printing result. Keep empty to not save the printed reports. You can use a python expression with the object and time variables.')
+
+    # Deprecated rml stuff
+    header = fields.Boolean(string='Add RML Header', default=True, help="Add or not the corporate RML header")
+    parser = fields.Char(string='Parser Class')
+    auto = fields.Boolean(string='Custom Python Parser', default=True)
+
+    report_xsl = fields.Char(string='XSL Path')
+    report_xml = fields.Char(string='XML Path')
+
+    report_rml = fields.Char(string='Main Report File Path/controller', help="The path to the main report file/controller (depending on Report Type) or empty if the content is in another data field")
+    report_file = fields.Char(related='report_rml', string='Report File', required=False, readonly=False, store=True,
+                              help="The path to the main report file (depending on Report Type) or empty if the content is in another field")
+
+    report_sxw = fields.Char(compute='_compute_report_sxw', string='SXW Path')
+    report_sxw_content_data = fields.Binary(string='SXW Content')
+    report_rml_content_data = fields.Binary(string='RML Content')
+    report_sxw_content = fields.Binary(compute='_compute_report_sxw_content', inverse='_inverse_report_sxw_content', string='SXW Content')
+    report_rml_content = fields.Binary(compute='_compute_report_rml_content', inverse='_inverse_report_rml_content', string='RML Content')
+
+    @api.depends('report_rml')
+    def _compute_report_sxw(self):
+        for report in self:
+            if report.report_rml:
+                report.report_sxw = report.report_rml.replace('.rml', '.sxw')
+
+    def _report_content(self, name):
+        data = self[name + '_content_data']
+        if not data and self[name]:
+            try:
+                with tools.file_open(self[name], mode='rb') as fp:
+                    data = fp.read()
+            except Exception:
+                data = False
+        return data
+
+    @api.depends('report_sxw', 'report_sxw_content_data')
+    def _compute_report_sxw_content(self):
+        for report in self:
+            report.report_sxw_content = report._report_content('report_sxw')
+
+    @api.depends('report_rml', 'report_rml_content_data')
+    def _compute_report_rml_content(self):
+        for report in self:
+            report.report_rml_content = report._report_content('report_rml')
+
+    def _inverse_report_sxw_content(self):
+        for report in self:
+            report.report_sxw_content_data = report.report_sxw_content
+
+    def _inverse_report_rml_content(self):
+        for report in self:
+            report.report_rml_content_data = report.report_rml_content
+
+    @api.model_cr
+    def _lookup_report(self, name):
+        """
+        Look up a report definition.
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         """
         cr = self.env.cr
         query = """ SELECT a.id, a.type, a.binding_type
@@ -227,9 +335,17 @@ class IrActionsActWindow(models.Model):
         existing = self.filtered(lambda rec: rec.id in ids)
         if len(existing) < len(self):
             # mark missing records in cache with a failed value
+<<<<<<< HEAD
             exc = MissingError(_("Record does not exist or has been deleted."))
             for record in (self - existing):
                 record._cache.set_failed(self._fields, exc)
+=======
+            exc = MissingError(
+                _("Record does not exist or has been deleted.")
+                + '\n\n({} {}, {} {})'.format(_('Records:'), (self - existing).ids[:6], _('User:'), self._uid)
+            )
+            (self - existing)._cache.update(fields.FailedValue(exc))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return existing
 
     @api.model
@@ -253,7 +369,7 @@ class IrActionsActWindowView(models.Model):
     _name = 'ir.actions.act_window.view'
     _table = 'ir_act_window_view'
     _rec_name = 'view_id'
-    _order = 'sequence'
+    _order = 'sequence,id'
 
     sequence = fields.Integer()
     view_id = fields.Many2one('ir.ui.view', string='View')
@@ -442,7 +558,31 @@ class IrActionsServer(models.Model):
         for exp in action.fields_lines:
             res[exp.col1.name] = exp.eval_value(eval_context=eval_context)[exp.id]
 
+<<<<<<< HEAD
         self.env[action.model_id.model].browse(self._context.get('active_id')).write(res)
+=======
+        if action.use_write == 'current':
+            model = action.model_id.model
+            ref_id = self._context.get('active_id')
+        elif action.use_write == 'other':
+            model = action.crud_model_id.model
+            ref_id = action.ref_object.id
+        elif action.use_write == 'expression':
+            model = action.crud_model_id.model
+            ref = safe_eval(action.write_expression, eval_context)
+            if isinstance(ref, models.BaseModel):
+                ref_id = ref.id
+            else:
+                ref_id = int(ref)
+
+        if self._context.get('onchange_self'):
+            record_cached = self._context['onchange_self']
+            for field, new_value in res.iteritems():
+                record_cached[field] = new_value
+        else:
+            self.env[model].browse(ref_id).write(res)
+
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @api.model
     def run_action_object_create(self, action, eval_context=None):
@@ -537,6 +677,8 @@ class IrActionsServer(models.Model):
 
             elif hasattr(self, 'run_action_%s' % action.state):
                 active_id = self._context.get('active_id')
+                if not active_id and self._context.get('onchange_self'):
+                    active_id = self._context['onchange_self']._origin.id
                 active_ids = self._context.get('active_ids', [active_id] if active_id else [])
                 for active_id in active_ids:
                     # run context dedicated to a particular active_id
@@ -709,3 +851,11 @@ class IrActionsActClient(models.Model):
         for record in self:
             params = record.params
             record.params_store = repr(params) if isinstance(params, dict) else params
+
+    def _get_default_form_view(self):
+        doc = super(IrActionsActClient, self)._get_default_form_view()
+        params = doc.find(".//field[@name='params']")
+        params.getparent().remove(params)
+        params_store = doc.find(".//field[@name='params_store']")
+        params_store.getparent().remove(params_store)
+        return doc

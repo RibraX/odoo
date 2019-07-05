@@ -172,8 +172,15 @@ class WebsiteBlog(http.Controller):
     def blog_feed(self, blog, limit='15'):
         v = {}
         v['blog'] = blog
+<<<<<<< HEAD
         v['base_url'] = request.env['ir.config_parameter'].sudo().get_param('web.base.url')
         v['posts'] = request.env['blog.post'].search([('blog_id','=', blog.id)], limit=min(int(limit), 50))
+=======
+        v['base_url'] = request.env['ir.config_parameter'].get_param('web.base.url')
+        v['posts'] = request.env['blog.post'].search([('blog_id','=', blog.id)],
+            limit=min(int(limit), 50),
+            order="post_date DESC")
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         v['html2plaintext'] = html2plaintext
         r = request.render("website_blog.blog_feed", v, headers=[('Content-Type', 'application/atom+xml')])
         return r

@@ -4,11 +4,16 @@
 import logging
 import time
 from os import listdir
+<<<<<<< HEAD
 from os.path import join
 try:
     from queue import Queue, Empty
 except ImportError:
     from Queue import Queue, Empty # pylint: disable=deprecated-module
+=======
+from os.path import join, isdir
+from Queue import Queue, Empty
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 from select import select
 from threading import Thread, Lock
 
@@ -124,7 +129,7 @@ class Scanner(Thread):
             if not evdev:
                 return []
 
-            if not os.path.isdir(self.input_dir):
+            if not isdir(self.input_dir):
                 return []
 
             new_devices = [device for device in listdir(self.input_dir)

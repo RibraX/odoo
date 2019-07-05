@@ -16,6 +16,7 @@
                              <field name="code" placeholder="code"/>
                              <field name="name"/>
                              <field name="user_type_id" widget="selection"/>
+<<<<<<< HEAD
                              <field name="tax_ids" widget="many2many_tags"/>
                              <field name="tag_ids" widget="many2many_tags" domain="[('applicability', '!=', 'taxes')]" context="{'default_applicability': 'accounts'}" options="{'no_create_edit': True}"/>
                              <field name="group_id"/>
@@ -24,6 +25,16 @@
                              <field name="internal_type" invisible="1" readonly="1"/>
                              <label for="reconcile"/>
                              <div>
+=======
+                             <field name="tax_ids" widget="many2many_tags" domain="[('company_id','=',company_id)]"/>
+                             <field name="tag_ids" widget="many2many_tags" domain="[('applicability', '!=', 'taxes')]" context="{'default_applicability': 'accounts'}" options="
+                             {'no_create_edit': True}"/>
+                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                             <field name="currency_id" options="{'no_create': True}" groups="base.group_multi_currency"/>
+                             <field name="internal_type" invisible="1" readonly="1"/>
+                             <label for="reconcile" attrs="{'invisible': [('internal_type','=','liquidity')]}"/>
+                             <div attrs="{'invisible': [('internal_type','=','liquidity')]}">
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                                 <field name="reconcile"/>
                                 <button name="action_open_reconcile" class="oe_link" type="object" string=" -> Reconcile" attrs="{'invisible': [('reconcile', '=', False)]}"/>
                              </div>
@@ -632,9 +643,14 @@
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" name="button_journal_entries"
                                 string="Journal Entries" type="object"
+<<<<<<< HEAD
                                 attrs="{'invisible':[('move_line_count','=', 0)]}" icon="fa-bars" />
                         <field name="move_line_count" invisible="1"/>
 
+=======
+                                attrs="{'invisible':[('move_line_ids','=',[])]}" icon="fa-bars"/>
+                        <field name="move_line_ids" invisible="1" readonly="1"/>
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                     </div>
                     <div class="oe_title oe_inline">
                         <label for="name" class="oe_edit_only"/>

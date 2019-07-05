@@ -3,6 +3,7 @@
 # * event
 # 
 # Translators:
+<<<<<<< HEAD
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
 # digitouch UAB <digitouchagencyeur@gmail.com>, 2017
@@ -11,19 +12,39 @@
 # Antanas Muliuolis <an.muliuolis@gmail.com>, 2017
 # UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2017
 # Anatolij <an@cq.lt>, 2017
+=======
+# Martin Trigaux, 2016
+# UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2016
+# Audrius Palenskis <audrius.palenskis@gmail.com>, 2016
+# Rolandas <info@paninfo.lt>, 2016
+# Anatolij, 2016
+# Šarūnas Ažna <sarunas.azna@gmail.com>, 2016
+# Arminas Grigonis <arminas@versada.lt>, 2016
+# Monika Raciunaite <monika.raciunaite@gmail.com>, 2016
+# Antanas Muliuolis <an.muliuolis@gmail.com>, 2017
+# digitouch UAB <digitouchagencyeur@gmail.com>, 2017
+# Silvija Butko <silvija.butko@gmail.com>, 2018
+# Linas Versada <paulius.sladkevicius@gmail.com>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Anatolij <an@cq.lt>, 2017\n"
+=======
+"POT-Creation-Date: 2016-10-10 08:43+0000\n"
+"PO-Revision-Date: 2016-10-10 08:43+0000\n"
+"Last-Translator: Linas Versada <paulius.sladkevicius@gmail.com>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. module: event
 #: model:mail.template,body_html:event.event_subscription
@@ -367,6 +388,12 @@ msgid ""
 "<p>If you have any questions, please let us know.</p>\n"
 "<p>Best regards,</p>"
 msgstr ""
+"\n"
+"<p>Gerb., ${object.name},</p>\n"
+"<p>Dėkojame už Jūsų užklausą.</p>\n"
+"<p>Čia Jūsų įvykio požymis ${object.event_id.name}.</p>\n"
+"<p>Kreipkitės, jei iškils klausimų.</p>\n"
+"<p>Linkėjimai,</p>"
 
 #. module: event
 #: model:mail.template,subject:event.event_reminder
@@ -386,6 +413,8 @@ msgid ""
 "<em>(Chamber Works reserves the right to cancel, re-name or re-locate<br>the"
 " event or change the dates on which it is held.)</em>"
 msgstr ""
+"<em>(Chamber Works pasilieka teisę įvykį atšaukti, pervadinti arba pakeisti "
+"jo vietą<br>arba pakeisti laiką, kuriuo jis vyks.)</em>"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -411,6 +440,8 @@ msgid ""
 "<font style=\"font-size: 24px;\">to learn <i>business applications "
 "development</i></font>"
 msgstr ""
+"<font style=\"font-size: 24px;\">išmokti <i>verslo programų "
+"kūrimo</i></font>"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
@@ -427,7 +458,7 @@ msgstr ""
 #: model:event.event,description:event.event_3
 msgid ""
 "<i>You will be able to create dynamic page interacting with the ORM.</i>"
-msgstr ""
+msgstr "<i>Galėsite sukurti dinamini puslapį, susietą su ORM.</i>"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -437,6 +468,8 @@ msgid ""
 "<i>You will be able to develop a full application with backend and user "
 "interface.</i>"
 msgstr ""
+"<i>Galėsite sukurti pilną programą, nuo vidinės dalies iki vartotojo "
+"sąsajos.</i>"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -445,6 +478,7 @@ msgstr ""
 msgid ""
 "<i>You will be able to develop simple dynamic components in HTML pages.</i>"
 msgstr ""
+"<i>Galėsite kurti paprastus dinaminius komponentus HTML puslapiuose.</i>"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.event_event_report_template_badge
@@ -477,11 +511,15 @@ msgid ""
 "development </strong>process. This course is for new developers or for IT "
 "professionals eager to learn more about technical aspects.</span>"
 msgstr ""
+"<span style=\"text-align: -webkit-center; \">Šis kursas yra skirtas "
+"programuotojams, kurie nori įsigilinti į <strong>verslo programų kūrimo "
+"</strong>procesą. Šis kursas skirtas jauniems programuotojams arba IT "
+"profesionalams, kurie apie techninius aspektus nori sužinoti daugiau.</span>"
 
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "<strong>Conference on Business Apps</strong>"
-msgstr ""
+msgstr "<strong>Verslo programų konferencija</strong>"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -651,12 +689,12 @@ msgstr "Pažymėjimo priekis"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_badge_innerleft
 msgid "Badge Inner Left"
-msgstr ""
+msgstr "Ženklelio kairė"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_badge_innerright
 msgid "Badge Inner Right"
-msgstr ""
+msgstr "Ženklelio vidus dešinėje"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_res_config_settings_module_event_barcode
@@ -731,7 +769,7 @@ msgstr "Kategorija"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Chamber Works 60, Rosewood Court Detroit, MI 48212 (United States)"
-msgstr ""
+msgstr "Chamber Works 60, Rosewood Court Detroit, MI 48212 (United States)"
 
 #. module: event
 #: model:ir.actions.act_window,help:event.act_event_registration_from_event
@@ -747,7 +785,7 @@ msgstr "Paspauskite, norėdami pridėti naują įvykį"
 #: code:addons/event/models/event.py:264
 #, python-format
 msgid "Closing Date cannot be set before Beginning Date."
-msgstr ""
+msgstr "Uždarymo data negali būti nurodyta prieš Pradžios datą."
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_type_form
@@ -774,7 +812,7 @@ msgstr "Konferencija"
 #. module: event
 #: model:event.event,name:event.event_2
 msgid "Conference on Business Apps"
-msgstr ""
+msgstr "Verslo programų konferencija"
 
 #. module: event
 #: model:ir.ui.menu,name:event.menu_event_configuration
@@ -833,7 +871,7 @@ msgstr "Kontaktas"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Controllers and Views"
-msgstr ""
+msgstr "Kontroleriai ir rodiniai"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_country_id
@@ -959,6 +997,8 @@ msgid ""
 "During this conference, our team will give a detailed overview of our "
 "business applications. You’ll know all the benefits of using it."
 msgstr ""
+"Šios konferencijos metu mūsų komanda plačiai apžvelgs mūsų verslo programas."
+" Sužinosite visus jų naudojimo privalumus."
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration_email
@@ -969,7 +1009,7 @@ msgstr "El. paštas"
 #: model:ir.ui.view,arch_db:event.view_event_form
 #: model:ir.ui.view,arch_db:event.view_event_type_form
 msgid "Email Schedule"
-msgstr ""
+msgstr "El. laiškų planavimas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_template_id
@@ -985,7 +1025,7 @@ msgstr "Pabaigos data"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_date_end_located
 msgid "End Date Located"
-msgstr ""
+msgstr "Aptikta pabaigos data"
 
 #. module: event
 #: model:ir.model,name:event.model_event_event
@@ -1045,12 +1085,12 @@ msgstr "Įvykio logotipas"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_mail_form
 msgid "Event Mail Scheduler"
-msgstr ""
+msgstr "Įvykio laiškų planuoklis"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_mail_tree
 msgid "Event Mail Schedulers"
-msgstr ""
+msgstr "Įvykio laiškų planuokliai"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_name
@@ -1061,7 +1101,7 @@ msgstr "Įvykio pavadinimas"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_calendar
 msgid "Event Organization"
-msgstr ""
+msgstr "Įvykio organizavimas"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_registration_calendar
@@ -1110,14 +1150,20 @@ msgstr "Įvykio analizė"
 #. module: event
 #: model:ir.actions.act_window,name:event.action_event_mail
 msgid "Events Mail Schedulers"
-msgstr ""
+msgstr "Įvykių pašto planuokliai"
 
 #. module: event
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:event.view_event_type_form
 msgid ""
 "Events and registrations will automatically be confirmed\n"
 "                                            upon creation, easing the flow for simple events."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:event.view_event_search
+msgid "Events in New state"
+msgstr "Įvykiai naujoje būsenoje"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_type_auto_confirm
@@ -1144,7 +1190,7 @@ msgstr "Numatoma"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_kanban
 msgid "Expected attendees"
-msgstr ""
+msgstr "Planuojami dalyviai"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
@@ -1162,6 +1208,8 @@ msgid ""
 "For each event you can define a maximum registration of seats(number of "
 "attendees), above this numbers the registrations are not accepted."
 msgstr ""
+"Kiekvienam įvykiui galite nustatyti rezervuojamu vietų maksimumą (dalyvių "
+"kiekį), viršijus šį skaičių, registracijos nebus priimamos."
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_event_seats_min
@@ -1170,6 +1218,9 @@ msgid ""
 "attendees), if it does not reach the mentioned registrations the event can "
 "not be confirmed (keep 0 to ignore this rule)"
 msgstr ""
+"Kiekvienam įvykiui galite nustatyti rezervuojamu vietų minimumą (dalyvių "
+"kiekį), jei šis registracijų skaičius nebus pasiektas, įvykio nebus galima "
+"patvirtinti (palikite \"0\", jei norite nepaisyti šios taisyklės)."
 
 #. module: event
 #: model:event.event,name:event.event_1
@@ -1179,7 +1230,7 @@ msgstr "Funkcinis internetinis seminaras"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Functional flow of the main applications;"
-msgstr ""
+msgstr "Pagrindinių programų funkcinis procesas;"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1197,7 +1248,7 @@ msgstr "Grupuoti pagal"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Having attended this conference, participants should be able to:"
-msgstr ""
+msgstr "Dalyvavę šioje konferencijoje turėtų galėti:"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1227,6 +1278,8 @@ msgid ""
 "I did not expect such a great learning experience. I feel like I can develop"
 " anything now."
 msgstr ""
+"Nesitikėjau tokių gerų mokymosi įspūdžių. jaučiuosi, kad dabar galėčiau "
+"sukurti bet ką."
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_confirm_id
@@ -1247,12 +1300,17 @@ msgid ""
 " status is set to 'Done'. If event is cancelled the status is set to "
 "'Cancelled'."
 msgstr ""
+"Jei įvykis yra sukurtas, jo būsena yra \"juodraštis\". Jei įvykis yra "
+"patvirtintas konkrečiomis datomis, jo būsena nustatoma kaip "
+"\"patvirtintas\". Jei įvykis baigiasi, jo būsena nustatoma kaip "
+"\"Atliktas\". Jei įvykis yra atšauktas, jo būsena yra nustatoma kaip "
+"\"atšauktas\"."
 
 #. module: event
 #: selection:event.mail,interval_unit:0
 #: selection:event.type.mail,interval_unit:0
 msgid "Immediately"
-msgstr ""
+msgstr "Skubiai"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1298,22 +1356,24 @@ msgstr "Įvadas į QWeb"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Introduction, CRM, Sales Management"
-msgstr ""
+msgstr "Įvadas, CRM, pardavimų valdymas"
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_type_default_registration_max
 msgid "It will select this default maximum value when you choose this event"
 msgstr ""
+"Kai pasirenkate šį įvykį, tai parinks šią numatytąją maksimalią reikšmę"
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_type_default_registration_min
 msgid "It will select this default minimum value when you choose this event"
 msgstr ""
+"Kai pasirenkate šį įvykį, tai parinks šią numatytąją minimalią reikšmę"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_color
 msgid "Kanban Color Index"
-msgstr ""
+msgstr "Kanban spalvos indeksas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_confirm___last_update
@@ -1374,7 +1434,7 @@ msgstr "Ciklai"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Luigi Roni, Senior Event Manager"
-msgstr ""
+msgstr "Luigi Roni, vyr. renginių vadybininkas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_mail_registration_ids
@@ -1385,17 +1445,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:event.field_event_event_event_mail_ids
 #: model:ir.model.fields,field_description:event.field_event_type_event_type_mail_ids
 msgid "Mail Schedule"
-msgstr ""
+msgstr "Pašto planas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_registration_scheduler_id
 msgid "Mail Scheduler"
-msgstr ""
+msgstr "Pašto planuoklis"
 
 #. module: event
 #: model:ir.ui.menu,name:event.menu_event_mail_schedulers
 msgid "Mail Schedulers"
-msgstr ""
+msgstr "Pašto planuokliai"
 
 #. module: event
 #: model:ir.model,name:event.model_event_type_mail
@@ -1405,12 +1465,12 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_registration_mail_sent
 msgid "Mail Sent"
-msgstr ""
+msgstr "Laiškas išsiųstas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_mail_sent
 msgid "Mail Sent on Event"
-msgstr ""
+msgstr "Laiškas išsiųstas įvykiui"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.res_config_settings_view_form
@@ -1487,7 +1547,7 @@ msgstr "Galimų vietų šiam įvykiui nėra."
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_seats_expected
 msgid "Number of Expected Attendees"
-msgstr ""
+msgstr "Planuojamas dalyvių skaičius"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event_seats_used
@@ -1521,6 +1581,9 @@ msgid ""
 "    track registrations and participations, automate the confirmation emails,\n"
 "    sell tickets, etc."
 msgstr ""
+"\"Odoo\" padeda jums planuoti ir efektyviai organizuoti savo įvykius:\n"
+"sekti registracijas ir dalyvius, automatizuoti patvirtinimo laiškus,\n"
+"parduoti bilietus ir t.t."
 
 #. module: event
 #: model:event.type,name:event.event_type_data_online
@@ -1576,6 +1639,8 @@ msgid ""
 "Participants are expected to have some knowledge in programming. A basic "
 "knowledge of the Python programming is recommended."
 msgstr ""
+"Iš dalyvių tikimasi pradinių programavimo žinių. Rekomenduojami Python "
+"programavimo pagrindai."
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1606,17 +1671,17 @@ msgstr ""
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Point of Sale (POS), Introduction to report customization."
-msgstr ""
+msgstr "Pardavimo taškas (POS), įvadas į ataskaitų personalizavimą."
 
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Project management, Human resources, Contract management."
-msgstr ""
+msgstr "Projekto valdymas, žmogiškieji ištekliai, kontraktų valdymas."
 
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Purchase, Sales &amp; Purchase management, Financial accounting."
-msgstr ""
+msgstr "Pirkimas, Pardavimų ir pirkimų valdymas, Finansai."
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -1630,7 +1695,7 @@ msgstr "Python objektai"
 #: model:event.event,description:event.event_1
 #: model:event.event,description:event.event_3
 msgid "Read Great Contents"
-msgstr ""
+msgstr "Skaityti gerą turinį"
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_registration_origin
@@ -1642,7 +1707,7 @@ msgstr ""
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_form
 msgid "Register with this event"
-msgstr ""
+msgstr "Registruotis su šiuo įvykiu"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.res_config_settings_view_form
@@ -1676,12 +1741,12 @@ msgstr "Registracijos ID"
 #. module: event
 #: model:ir.model,name:event.model_event_mail_registration
 msgid "Registration Mail Scheduler"
-msgstr ""
+msgstr "Registracijos pašto planuoklis"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_mail_form
 msgid "Registration Mails"
-msgstr ""
+msgstr "Registracijos laiškai"
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_registration_search
@@ -1741,7 +1806,7 @@ msgstr ""
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_scheduled_date
 msgid "Scheduled Sent Mail"
-msgstr ""
+msgstr "Suplanuotas išsiųstas laiškas"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_registration_scheduled_date
@@ -1847,13 +1912,15 @@ msgid ""
 "This course help me build my first application within a month. Definetly "
 "worth its price."
 msgstr ""
+"Šis kursas leido man sukurti savo pirmąją programą per mėnesį. Jis tikrai "
+"vertas savo kainos."
 
 #. module: event
 #: model:ir.model.fields,help:event.field_event_mail_template_id
 #: model:ir.model.fields,help:event.field_event_type_mail_template_id
 msgid ""
 "This field contains the template of the mail that will be automatically sent"
-msgstr ""
+msgstr "Šiame lauke yra laiško, kuris bus automatiškai išsiųstas, šablonas."
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_res_config_settings_module_event_sale
@@ -1876,7 +1943,7 @@ msgstr "Gauti daugiau informacijos, apsilankykite"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_res_config_settings_module_website_event_track
 msgid "Tracks and Agenda"
-msgstr ""
+msgstr "Sekimas ir planas"
 
 #. module: event
 #: model:event.type,name:event.event_type_4
@@ -1934,7 +2001,7 @@ msgstr "Supraskite tobulėjimo konceptą ir architektūrą;"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Understand the various modules;"
-msgstr ""
+msgstr "Suprasti įvairius modulius;"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail_interval_unit
@@ -1961,7 +2028,7 @@ msgstr "Ateinantis"
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_search
 msgid "Upcoming events from today"
-msgstr ""
+msgstr "Artimiausi renginiai nuo šiandien"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_type_use_hashtag
@@ -1993,7 +2060,7 @@ msgstr "Matomumas"
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "Warehouse management, Manufacturing (MRP) &amp; Sales, Import/Export."
-msgstr ""
+msgstr "Sandėlio valdymas, gamyba (MRP) ir pardavimai, importas/exportas."
 
 #. module: event
 #: model:ir.ui.view,arch_db:event.view_event_confirm
@@ -2001,6 +2068,8 @@ msgid ""
 "Warning: This Event has not reached its Minimum Registration Limit. Are you "
 "sure you want to confirm it?"
 msgstr ""
+"Įspėjimas: šis įvykis nepasiekė savo maksimalaus registracijų limito. Ar "
+"tikrai norite patvirtinti jį?"
 
 #. module: event
 #: selection:event.mail,interval_unit:0
@@ -2044,17 +2113,17 @@ msgstr ""
 #. module: event
 #: model:mail.template,subject:event.event_registration_mail_template_badge
 msgid "Your badge for ${object.event_id.name}"
-msgstr ""
+msgstr "Jūsų ženklelis, skirtas ${object.event_id.name}"
 
 #. module: event
 #: model:mail.template,subject:event.event_subscription
 msgid "Your registration at ${object.event_id.name}"
-msgstr ""
+msgstr "Jūsų registracija į ${object.event_id.name}"
 
 #. module: event
 #: model:mail.template,report_name:event.event_registration_mail_template_badge
 msgid "badge_of_${(object.event_id.name or '').replace('/','_')}"
-msgstr ""
+msgstr "badge_of_${(object.event_id.name or '').replace('/','_')}"
 
 #. module: event
 #: model:event.event,description:event.event_0
@@ -2069,9 +2138,15 @@ msgid "event.confirm"
 msgstr ""
 
 #. module: event
+<<<<<<< HEAD
 #: model:event.event,description:event.event_2
 msgid "events@odoo.com"
 msgstr ""
+=======
+#: model:ir.model,name:event.model_event_confirm
+msgid "event.confirm"
+msgstr "event.confirm"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event
 #: code:addons/event/models/event.py:497

@@ -3,16 +3,32 @@
 # * base_import
 #
 # Translators:
+<<<<<<< HEAD
 # Arma Gedonsky <armagedonsky@hot.ee>, 2016
+=======
+# Martin Trigaux, 2017
+# Arma Gedonsky <armagedonsky@hot.ee>, 2017
+# Rivo Zängov <eraser@eraser.ee>, 2017
+# Wanradt Koell <wanradt@gmail.com>, 2017
+# Eneli Õigus <enelioigus@gmail.com>, 2017
+# Egon Raamat <egon@avalah.ee>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-03-12 19:28+0000\n"
 "Last-Translator: Arma Gedonsky <armagedonsky@hot.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/odoo/odoo-9/language/et/)\n"
 "Language: et\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Egon Raamat <egon@avalah.ee>, 2018\n"
+"Language-Team: Estonian (https://www.transifex.com/odoo/teams/41243/et/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -23,7 +39,7 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import.js:474
 #, python-format
 msgid "(%d more)"
-msgstr ""
+msgstr "(%d rohkem)"
 
 #. module: base_import
 #. openerp-web
@@ -33,6 +49,7 @@ msgid ""
 "A single column was found in the file, this often means the file separator "
 "is incorrect"
 msgstr ""
+"Failist leiti üks veerg, mis tihtipeale tähendab, et faili eraldaja on vale"
 
 #. module: base_import
 #. openerp-web
@@ -165,22 +182,33 @@ msgstr "Loobu"
 #: code:addons/base_import/static/src/js/import.js:205
 #: code:addons/base_import/static/src/js/import.js:216
 #, python-format
+<<<<<<< HEAD
 msgid "Comma"
 msgstr ""
+=======
+msgid "Column %s contains incorrect values (value: %s)"
+msgstr "Veerg %s sisaldab ebakorrektseid väärtusi (väärtus: %s)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:159
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Country/Database \n"
 "                        ID: 21"
 msgstr ""
+=======
+msgid "Column %s contains incorrect values. Error in line %d: %s"
+msgstr "Veeg %s sisaldab mittekorrektseid väärtusi. Viga real %d: %s"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:153
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Country/Database ID: the unique Odoo ID for a \n"
 "                        record, defined by the ID postgresql column"
@@ -217,6 +245,10 @@ msgstr ""
 #, python-format
 msgid "Country: the name or code of the country"
 msgstr ""
+=======
+msgid "Comma"
+msgstr "Koma"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_create_uid
@@ -255,17 +287,44 @@ msgid "Created on"
 msgstr "Loodud"
 
 #. module: base_import
+<<<<<<< HEAD
+=======
+#: code:addons/base_import/models/base_import.py:152
+#: code:addons/base_import/models/base_import.py:157
+#, python-format
+msgid "Database ID"
+msgstr "Andmebaasi ID"
+
+#. module: base_import
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:244
 #, python-format
+<<<<<<< HEAD
 msgid "Customers and their respective contacts"
 msgstr ""
+=======
+msgid "Date Format:"
+msgstr "Kuupäeva formaat"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: code:addons/base_import/models.py:149 code:addons/base_import/models.py:155
 #, python-format
+<<<<<<< HEAD
 msgid "Database ID"
 msgstr ""
+=======
+msgid "Datetime Format:"
+msgstr "Kuupäev/kellaaeg formaat:"
+
+#. module: base_import
+#. openerp-web
+#: code:addons/base_import/static/src/js/base_import.js:128
+#, python-format
+msgid "Decimal Separator:"
+msgstr "Kümnendkohtade eraldaja:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_display_name
@@ -290,27 +349,49 @@ msgstr "Näidatav nimi"
 #: code:addons/base_import/static/src/js/import.js:321
 #, python-format
 msgid "Don't import"
-msgstr ""
+msgstr "Ära impordi"
 
 #. module: base_import
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/base_import/static/src/js/import.js:91
+=======
+#: code:addons/base_import/static/src/js/base_import.js:264
+#: code:addons/base_import/static/src/js/base_import.js:282
+#, python-format
+msgid "Dot"
+msgstr "Punkt"
+
+#. module: base_import
+#. openerp-web
+#: code:addons/base_import/static/src/js/base_import.js:120
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Encoding:"
 msgstr "Kodeering:"
 
 #. module: base_import
+<<<<<<< HEAD
 #: code:addons/base_import/models.py:228
+=======
+#: code:addons/base_import/models/base_import.py:621
+#, python-format
+msgid "Error Parsing Date [%s:L%d]: %s"
+msgstr "Viga kuupäeva liigendamisel [%s:L%d]: %s"
+
+#. module: base_import
+#: code:addons/base_import/models/base_import.py:234
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "Error cell found while reading XLS/XLSX file: %s"
-msgstr ""
+msgstr "Leitud vigane element XLS/XLSX faili lugemisel: %s"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:451
 #, python-format
 msgid "Everything seems valid."
-msgstr ""
+msgstr "Kõik tundub õige."
 
 #. module: base_import
 #. openerp-web
@@ -350,7 +431,7 @@ msgstr "Failinimi"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_file_type
 msgid "File Type"
-msgstr ""
+msgstr "Failitüüp"
 
 #. module: base_import
 #. openerp-web
@@ -363,6 +444,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_import.field_base_import_import_file
 msgid "File to check and/or import, raw binary (not base64)"
 msgstr ""
+"Kontrollimist ja/või importimist vajav fail, raw binary (mitte base64)"
 
 #. module: base_import
 #. openerp-web
@@ -376,12 +458,13 @@ msgstr "Fail:"
 #: code:addons/base_import/static/src/xml/import.xml:384
 #, python-format
 msgid "For CSV files, the issue could be an incorrect encoding."
-msgstr ""
+msgstr "CSV-failide puhul võib probleem olla vales kodeeringus."
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:149
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "For example, to \n"
 "                        reference the country of a contact, Odoo proposes \n"
@@ -415,6 +498,10 @@ msgstr ""
 #, python-format
 msgid "Frequently Asked Questions"
 msgstr ""
+=======
+msgid "Get all possible values"
+msgstr "Hankige kõik võimalikud väärtused"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
@@ -428,14 +515,14 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import.js:485
 #, python-format
 msgid "Here are the possible values:"
-msgstr ""
+msgstr "Siin on võimalikud väärtused"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:385
 #, python-format
 msgid "Here is the start of the file we could not import:"
-msgstr ""
+msgstr "Siin on faili algus, mida meil ei õnnestunud importida:"
 
 #. module: base_import
 #. openerp-web
@@ -538,6 +625,10 @@ msgid ""
 "                field corresponding to the column. This makes imports\n"
 "                simpler especially when the file has many columns."
 msgstr ""
+"Kui fail sisaldab\n"
+"                veeru nimesid, siis Odoo saab automaatselt tuvastada\n"
+"                välja, mis vastab veerule. See teeb importimise\n"
+"                lihtsamaks, eriti kui failis on palju veerge."
 
 #. module: base_import
 #. openerp-web
@@ -578,6 +669,10 @@ msgid ""
 "filter \n"
 "                        settings' > Save)."
 msgstr ""
+"Kui mudel kasutab openchatterit, siis ajaloo jälgimine"
+"                             seadistab tellimuse ja saadab teavitusi"
+"                             impordi käigus, kuid muudab impordi "
+"aeglasemaks."
 
 #. module: base_import
 #. openerp-web
@@ -646,14 +741,14 @@ msgstr "Impordi"
 #: code:addons/base_import/static/src/js/import.js:147
 #, python-format
 msgid "Import a File"
-msgstr ""
+msgstr "Impordi fail"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:383
 #, python-format
 msgid "Import preview failed due to:"
-msgstr ""
+msgstr "Impordi eelvaate ebaõnnestumise põhjus:"
 
 #. module: base_import
 #. openerp-web
@@ -731,19 +826,29 @@ msgstr "Viimati uuendatud"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:37
 #, python-format
+<<<<<<< HEAD
 msgid "Map your data to Odoo"
 msgstr ""
+=======
+msgid "Load File"
+msgstr "Lae fail"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:130
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Microsoft Excel will allow \n"
 "                        you to modify only the encoding when saving \n"
 "                        (in 'Save As' dialog box > click 'Tools' dropdown \n"
 "                        list > Encoding tab)."
 msgstr ""
+=======
+msgid "Map your columns to import"
+msgstr "Kaardista oma imporditavad veerud"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_res_model
@@ -759,20 +864,26 @@ msgstr "Nimi"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:63
 #, python-format
+<<<<<<< HEAD
 msgid "Need to import data from an other application?"
 msgstr ""
+=======
+msgid "No file chosen..."
+msgstr "Faili pole valitud ..."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:369
 #, python-format
 msgid "Normal Fields"
-msgstr ""
+msgstr "Tavalised väljad"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:111
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Note that if your CSV file \n"
 "                        has a tabulation as separator, Odoo will not \n"
@@ -782,11 +893,15 @@ msgid ""
 "application. \n"
 "                        See the following question."
 msgstr ""
+=======
+msgid "Options…"
+msgstr "Valikud ..."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview_othervalue
 msgid "Other Variable"
-msgstr ""
+msgstr "Muu muutuja"
 
 #. module: base_import
 #. openerp-web
@@ -799,50 +914,80 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:93
 #, python-format
+<<<<<<< HEAD
 msgid "Quoting:"
 msgstr "Pakkumus:"
+=======
+msgid "Relation Fields"
+msgstr "Seose väljad"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:370
 #, python-format
+<<<<<<< HEAD
 msgid "Relation Fields"
 msgstr ""
+=======
+msgid "Reload File"
+msgstr "Laadi fail uuesti"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:17
 #, python-format
+<<<<<<< HEAD
 msgid "Reload data to check changes."
 msgstr "Lae andmed uuesti, et tuvastada muutused."
+=======
+msgid "Select a CSV or Excel file to import."
+msgstr "Vali importimiseks CSV või Exceli fail."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:9
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Select the file to import. If you need a sample importable file, you\n"
 "            can use the export tool to generate one."
 msgstr ""
+=======
+msgid "Semicolon"
+msgstr "Semikoolon"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:206
 #, python-format
+<<<<<<< HEAD
 msgid "Semicolon"
 msgstr ""
+=======
+msgid "Separator:"
+msgstr "Eraldaja:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:92
 #, python-format
+<<<<<<< HEAD
 msgid "Separator:"
 msgstr ""
+=======
+msgid "Show fields of relation fields (advanced)"
+msgstr "Näita seotud väljade välju (täpsem)"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview_somevalue
 msgid "Some Value"
-msgstr ""
+msgstr "Mingi väärtus"
 
 #. module: base_import
 #. openerp-web
@@ -865,14 +1010,14 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import.js:208
 #, python-format
 msgid "Space"
-msgstr ""
+msgstr "Tühik"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:207
 #, python-format
 msgid "Tab"
-msgstr ""
+msgstr "Tabeldus"
 
 #. module: base_import
 #. openerp-web
@@ -947,6 +1092,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:260
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "This feature \n"
 "                        allows you to use the Import/Export tool of Odoo "
@@ -955,6 +1101,10 @@ msgid ""
 "spreadsheet \n"
 "                        application."
 msgstr ""
+=======
+msgid "Text Delimiter:"
+msgstr "Teksti eraldaja"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
@@ -966,11 +1116,14 @@ msgid ""
 "in \n"
 "                        PSQL:"
 msgstr ""
+"Esimene rida\n"
+"                 sisaldab veeru märgist"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:291
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "To manage relations between tables, \n"
 "                        you can use the \"External ID\" facilities of "
@@ -985,13 +1138,17 @@ msgid ""
 "or \n"
 "                        table. (like 'company_1', 'person_1' instead of '1')"
 msgstr ""
+=======
+msgid "Thousands Separator:"
+msgstr "Tuhande eraldaja"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:43
 #, python-format
 msgid "Track history during import"
-msgstr ""
+msgstr "Jälgi impordi käigus ajalugu"
 
 #. module: base_import
 #: code:addons/base_import/models.py:195
@@ -999,6 +1156,8 @@ msgstr ""
 msgid ""
 "Unable to load \"{extension}\" file: requires Python module \"{modname}\""
 msgstr ""
+"Faili \"{extension}\" laadimine ei õnnestu: nõuab Pythoni moodulit "
+"\"{modname}\""
 
 #. module: base_import
 #: code:addons/base_import/models.py:196
@@ -1006,6 +1165,8 @@ msgstr ""
 msgid ""
 "Unsupported file format \"{}\", import only supports CSV, ODS, XLS and XLSX"
 msgstr ""
+"Toetamata failiformaat \"{}\", import toetab ainult CSV, ODS, XLS ja XLSX "
+"formaate"
 
 #. module: base_import
 #. openerp-web
@@ -1143,83 +1304,84 @@ msgstr "Sa pead seadistama vähemalt ühe välja, et importida"
 #: code:addons/base_import/static/src/js/import.js:468
 #, python-format
 msgid "at row %d"
-msgstr ""
+msgstr "real %d"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_import
 msgid "base_import.import"
-msgstr ""
+msgstr "base_import.import"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char
 msgid "base_import.tests.models.char"
-msgstr ""
+msgstr "base_import.tests.models.char"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_noreadonly
 msgid "base_import.tests.models.char.noreadonly"
-msgstr ""
+msgstr "base_import.tests.models.char.noreadonly"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_readonly
 msgid "base_import.tests.models.char.readonly"
-msgstr ""
+msgstr "base_import.tests.models.char.readonly"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_required
 msgid "base_import.tests.models.char.required"
-msgstr ""
+msgstr "base_import.tests.models.char.required"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_states
 msgid "base_import.tests.models.char.states"
-msgstr ""
+msgstr "base_import.tests.models.char.states"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_stillreadonly
 msgid "base_import.tests.models.char.stillreadonly"
-msgstr ""
+msgstr "base_import.tests.models.char.stillreadonly"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o
 msgid "base_import.tests.models.m2o"
-msgstr ""
+msgstr "base_import.tests.models.m2o"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_related
 msgid "base_import.tests.models.m2o.related"
-msgstr ""
+msgstr "base_import.tests.models.m2o.related"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required
 msgid "base_import.tests.models.m2o.required"
-msgstr ""
+msgstr "base_import.tests.models.m2o.required"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required_related
 msgid "base_import.tests.models.m2o.required.related"
-msgstr ""
+msgstr "base_import.tests.models.m2o.required.related"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m
 msgid "base_import.tests.models.o2m"
-msgstr ""
+msgstr "base_import.tests.models.o2m"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m_child
 msgid "base_import.tests.models.o2m.child"
-msgstr ""
+msgstr "base_import.tests.models.o2m.child"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_preview
 msgid "base_import.tests.models.preview"
-msgstr ""
+msgstr "base_import.tests.models.preview"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import.js:470
 #, python-format
 msgid "between rows %d and %d"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: base_import
@@ -1358,3 +1520,6 @@ msgid ""
 "                        later, it's thus good practice to specify it\n"
 "                        whenever possible"
 msgstr ""
+=======
+msgstr "ridade %d ja %d vahel"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

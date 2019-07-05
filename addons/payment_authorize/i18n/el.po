@@ -18,16 +18,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,cancel_msg:payment_authorize.payment_acquirer_authorize
 msgid "<span><i>Cancel,</i> Your payment has been cancelled.</span>"
 msgstr "<span><i>Άκυρο,</i> Η πληρωμή σας έχει ακυρωθεί.</span>"
 
 #. module: payment_authorize
 #: model:payment.acquirer,done_msg:payment_authorize.payment_acquirer_authorize
+=======
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
+msgid "API Login Id"
+msgstr "API Login Id"
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
+msgid "API Transaction Key"
+msgstr "API Transaction Key"
+
+#. module: payment_authorize
+#: code:addons/payment_authorize/models/authorize_request.py:66
+#, python-format
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 "<span><i>Done,</i> Your online payment has been successfully processed. "
 "Thank you for your order.</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span><i>Ολοκληρώθηκε,</i> Η Online πληρωμή σας έχει διεκπεραιωθεί επιτυχώς. "
 "Ευχαριστούμε για την παραγγελία σας.</span>"
 
@@ -42,6 +58,15 @@ msgstr ""
 "διάρκεια της συναλλαγής. Η παραγγελία έχει επιβεβαιωθεί, αλλά δεν θα μπορεί "
 "να πληρωθεί. Μην διστάσετε να επικοινωνήσετε μαζί μας αν έχετε απορίες "
 "σχετικά με την κατάσταση της παραγγελίας σας.</span>"
+=======
+"Authorize.net Μηνύματα Λάθους:\n"
+" %s"
+
+#. module: payment_authorize
+#: model:ir.model.fields,field_description:payment_authorize.field_payment_token_authorize_profile
+msgid "Authorize.net Profile ID"
+msgstr "Authorize.net Αναγνωριστικό Προφίλ"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:payment.acquirer,pending_msg:payment_authorize.payment_acquirer_authorize
@@ -49,6 +74,7 @@ msgid ""
 "<span><i>Pending,</i> Your online payment has been successfully processed. "
 "But your order is not validated yet.</span>"
 msgstr ""
+<<<<<<< HEAD
 "<span><i>Εν αναμονή,</i> Η Online πληρωμή σας έχει διεκπεραιωθεί επιτυχώς. "
 "Αλλά η παραγγελία σας δεν έχει επικυρωθεί ακόμη.</span>"
 
@@ -56,6 +82,15 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
 msgid "API Login Id"
 msgstr ""
+=======
+"Authorize: λήφθησαν δεδομένα με ελλειπή αναφορά (%s) ή trans_id (%s) ή "
+"fingerprint  (%s)"
+
+#. module: payment_authorize
+#: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
+msgid "CVC"
+msgstr "CVC"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
@@ -85,8 +120,29 @@ msgid "Payment Transaction"
 msgstr "Συναλλαγή Πληρωμής"
 
 #. module: payment_authorize
+<<<<<<< HEAD
 #: model:payment.acquirer,pre_msg:payment_authorize.payment_acquirer_authorize
 msgid ""
 "You will be redirected to the Authorize website after clicking on the "
 "payment button."
 msgstr ""
+=======
+#: code:addons/payment_authorize/models/payment.py:347
+#, python-format
+msgid "The Customer Profile creation in Authorize.NET failed."
+msgstr "Η δημιουργία του Προφίλ Πελάτη στο Authorize.NET απέτυχε."
+
+#. module: payment_authorize
+#: model:ir.model.fields,help:payment_authorize.field_payment_token_authorize_profile
+msgid ""
+"This contains the unique reference for this partner/payment token "
+"combination in the Authorize.net backend"
+msgstr ""
+"Αυτό περιέχει τη μοναδική αναφορά αυτού του συνδυασμού αναγνωριστικών "
+"συνεργάτη/πληρωμής στο σύστημα του Authorize.net"
+
+#. module: payment_authorize
+#: model:ir.model,name:payment_authorize.model_payment_token
+msgid "payment.token"
+msgstr "payment.token"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -14,7 +14,14 @@ List of contributors:
 
 Aarón Henríquez ahenriquez@eficent.com https://github.com/aheficent
 Lois Rilo lois.rilo@eficent.com https://github.com/lreficent
+<<<<<<< HEAD
 Roser Garcia roser.garcia@eficent.com https://github.com/rgarnau
 Miquel Raich miquel.raich@eficent.com https://github.com/mreficent
 Jordi Ballester jordi.ballester@eficent.com https://github.com/jbeficent
 Hector Villarreal hector.villarreal@eficent.com https://github.com/hveficent
+=======
+Miquel Raich miquel.raich@eficent.com https://github.com/mreficent
+Jordi Ballester jordi.ballester@eficent.com https://github.com/jbeficent
+Hector Villarreal hector.villarreal@eficent.com https://github.com/hveficent
+Roser Garcia roser.garcia@eficent.com https://github.com/rgarnau (up to 2018-05-01)
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

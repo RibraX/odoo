@@ -3,6 +3,7 @@
 # * account_asset
 # 
 # Translators:
+<<<<<<< HEAD
 # Gab_Odoo <gab@odoo.com>, 2017
 # Tina Rittmüller <tr@ife.de>, 2017
 # Martin Trigaux <mat@odoo.com>, 2017
@@ -20,13 +21,39 @@
 # Fabian Liesch <fabian.liesch@gmail.com>, 2017
 # darenkster <inactive+darenkster@transifex.com>, 2017
 # Philipp Hug <philipp@hug.cx>, 2017
+=======
+# Fabian Liesch <fabian.liesch@gmail.com>, 2016
+# Anja Funk <anja.funk@afimage.de>, 2016
+# darenkster <inactive+darenkster@transifex.com>, 2016
+# Wolfgang Taferner, 2016
+# Renzo Meister, 2016
+# Philipp Hug <philipp@hug.cx>, 2016
+# Rudolf Schnapka <rs@techno-flex.de>, 2016
+# Ralf Hilgenstock <rh@dialoge.info>, 2016
+# JackTheHunter <Maximilian.N98@gmail.com>, 2016
+# Henry Mineehen <info@mineehen.de>, 2016
+# Tina Rittmüller <tr@ife.de>, 2016
+# Martin Trigaux, 2016
+# Thorsten Vocks <thorsten.vocks@openbig.org>, 2016
+# Dejan Dinic, 2016
+# Ermin Trevisan <trevi@twanda.com>, 2017
+# Gab_Odoo <gab@odoo.com>, 2017
+# Bülent Tiknas <btiknas@googlemail.com>, 2017
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Philipp Hug <philipp@hug.cx>, 2017\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Bülent Tiknas <btiknas@googlemail.com>, 2017\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -795,6 +822,11 @@ msgid "Next Period Depreciation"
 msgstr "Nächste Abschreibungsperiode"
 
 #. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
 msgid "Note"
 msgstr "Notiz"
@@ -1005,12 +1037,23 @@ msgstr ""
 "vollständig abschreibt."
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/models/account_invoice.py:52
 #, python-format
 msgid ""
 "The number of depreciations or the period length of your asset category "
 "cannot be null."
 msgstr ""
+=======
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid ""
+"This depreciation is already linked to a journal entry! Please post or "
+"delete it."
+msgstr ""
+"Diese Abschreibung ist bereits mit einem Journal verknüpft! Bitte buchen "
+"oder löschen Sie es."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_depreciation_confirmation_wizard

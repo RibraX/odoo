@@ -1486,6 +1486,11 @@ msgid "Adjustment Tax"
 msgstr ""
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_adjustment_type
+msgid "Adjustment Type"
+msgstr ""
+
+#. module: account
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 msgid "Advanced Options"
@@ -1878,6 +1883,24 @@ msgid "Applicability"
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: selection:tax.adjustments.wizard,adjustment_type:0
+msgid "Applied on credit journal item"
+msgstr ""
+
+#. module: account
+#: selection:tax.adjustments.wizard,adjustment_type:0
+msgid "Applied on debit journal item"
+msgstr ""
+
+#. module: account
+#: model:ir.ui.view,arch_db:account.view_account_config_settings
+msgid "Apply"
+msgstr ""
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:account.field_account_fiscal_position_auto_apply
 #: model:ir.model.fields,help:account.field_account_fiscal_position_template_auto_apply
 msgid "Apply automatically this fiscal position."
@@ -2149,6 +2172,12 @@ msgid "Bank Statement"
 msgstr ""
 
 #. module: account
+#: code:addons/account/models/account_bank_statement.py:935
+#, python-format
+msgid "Bank Statement %s"
+msgstr ""
+
+#. module: account
 #: model:ir.model,name:account.model_account_bank_statement_line
 msgid "Bank Statement Line"
 msgstr ""
@@ -2163,6 +2192,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 #: model:ir.ui.view,arch_db:account.view_account_bank_journal_form
 msgid "Bank Statements"
+msgstr ""
+
+#. module: account
+#: selection:account.journal,bank_statements_source:0
+msgid "Bank Synchronization"
 msgstr ""
 
 #. module: account
@@ -3473,6 +3507,12 @@ msgid "Currency exchange rate difference"
 msgstr ""
 
 #. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid "Currency field should only be set if the journal's currency is different from the company's. Leave the field blank to use company currency."
+msgstr ""
+
+#. module: account
 #: model:account.account.type,name:account.data_account_type_current_assets
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Current Assets"
@@ -3639,8 +3679,20 @@ msgid "Day(s) after the invoice date"
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Deactivate setup bar on the dashboard"
+=======
+#: model:res.company,overdue_msg:base.main_company
+msgid "Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: account
@@ -9221,6 +9273,12 @@ msgid "The last line's computation type should be \"Balance\" to ensure that the
 msgstr ""
 
 #. module: account
+#: code:addons/account/models/company.py:80
+#, python-format
+msgid "The lock date for advisors is irreversible and can't be removed."
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_move_line_move_id
 msgid "The move of this entry line."
 msgstr ""
@@ -9238,6 +9296,7 @@ msgid "The name that will be used on account move lines"
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
 #: model:ir.model.fields,help:account.field_account_journal_refund_sequence_number_next
 msgid "The next sequence number will be used for the next credit note."
 msgstr ""
@@ -9245,6 +9304,11 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal_sequence_number_next
 msgid "The next sequence number will be used for the next invoice."
+=======
+#: code:addons/account/models/company.py:84
+#, python-format
+msgid "The new lock date for advisors must be set after the previous lock date."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: account
@@ -10358,11 +10422,20 @@ msgstr ""
 
 #. module: account
 #: sql_constraint:account.move.line:0
-msgid "Wrong credit or debit value in accounting entry !"
+msgid "Wrong credit or debit value in accounting entry! Credit and debit should be positive."
 msgstr ""
 
 #. module: account
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry! Credit or debit should be zero."
+msgstr ""
+
+#. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account_move.py:1002
+=======
+#: code:addons/account/models/account_move.py:931
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "You are trying to reconcile some entries that are already reconciled!"
 msgstr ""
@@ -10431,7 +10504,17 @@ msgid "You cannot cancel an invoice which is partially paid. You need to unrecon
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account.py:235
+=======
+#: code:addons/account/models/company.py:118
+#, python-format
+msgid "You cannot change the currency of the company since some journal items already exist"
+msgstr ""
+
+#. module: account
+#: code:addons/account/models/account.py:180
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "You cannot change the owner company of an account that already contains journal items."
 msgstr ""
@@ -10499,6 +10582,21 @@ msgid "You cannot have a receivable/payable account that is not reconciliable. (
 msgstr ""
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: code:addons/account/models/company.py:95
+#, python-format
+msgid "You cannot lock a period that is not finished yet. Please make sure that the lock date for advisors is not set after the last day of the previous month."
+msgstr ""
+
+#. module: account
+#: code:addons/account/models/account_payment.py:132
+#, python-format
+msgid "You cannot mix customer invoices and vendor bills in a single payment."
+msgstr ""
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/account/static/src/js/reconciliation/reconciliation_model.js:673
 #, python-format
@@ -10921,3 +11019,8 @@ msgstr ""
 msgid "→ Count"
 msgstr ""
 
+#. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid "Currency field should only be set if the journal's currency is different from the company's. Leave the field blank to use company currency."
+msgstr ""

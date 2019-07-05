@@ -4,10 +4,15 @@ import logging
 import os.path
 import re
 import traceback
+<<<<<<< HEAD
 
 from collections import OrderedDict, Sized, Mapping, defaultdict
 from functools import reduce
 from itertools import tee, count
+=======
+from itertools import count
+from psycopg2.extensions import TransactionRollbackError
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 from textwrap import dedent
 
 import itertools
@@ -30,6 +35,13 @@ try:
 except ImportError:
     astor = None
 
+<<<<<<< HEAD
+=======
+import logging
+
+from odoo.tools.parse_version import parse_version
+
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 unsafe_eval = eval
 
 _logger = logging.getLogger(__name__)
@@ -175,7 +187,7 @@ class QWebException(Exception):
         return str(self)
 
 # Avoid DeprecationWarning while still remaining compatible with werkzeug pre-0.9
-escape = (lambda text: _escape(text, quote=True)) if getattr(werkzeug, '__version__', '0.0') < '0.9.0' else _escape
+escape = (lambda text: _escape(text, quote=True)) if parse_version(getattr(werkzeug, '__version__', '0.0')) < parse_version('0.9.0') else _escape
 
 def foreach_iterator(base_ctx, enum, name):
     ctx = base_ctx.copy()
@@ -338,8 +350,13 @@ class QWeb(object):
             new = self.default_values()
             new.update(values)
             try:
+<<<<<<< HEAD
                 return compiled(self, append, new, options, log)
             except QWebException as e:
+=======
+                return compiled(self, append, values, options, log)
+            except (QWebException, TransactionRollbackError) as e:
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
                 raise e
             except Exception as e:
                 path = log['last_path_node']

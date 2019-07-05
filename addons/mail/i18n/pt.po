@@ -3,20 +3,40 @@
 # * mail
 #
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux, 2015
 # Ricardo Correia <rcorreiavv@gmail.com>, 2015
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2015-2016
 # Vitor Fernandes <vmlf01@gmail.com>, 2015
+=======
+# José Gomes <jg@opencloud.pro>, 2016
+# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
+# Vitor Fernandes <vmlf01@gmail.com>, 2016
+# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2016
+# Ricardo Correia <rcorreiavv@gmail.com>, 2016
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Martin Trigaux, 2016
+# MS <manuelarodsilva@gmail.com>, 2018
+# Diogo Fonseca <dsf@thinkopensolutions.pt>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2016-07-23 09:04+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Portuguese (http://www.transifex.com/odoo/odoo-9/language/"
 "pt/)\n"
 "Language: pt\n"
+=======
+"POT-Creation-Date: 2016-11-14 15:53+0000\n"
+"PO-Revision-Date: 2016-09-07 09:22+0000\n"
+"Last-Translator: Diogo Fonseca <dsf@thinkopensolutions.pt>, 2018\n"
+"Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -222,6 +242,15 @@ msgid ""
 msgstr ""
 
 #. module: mail
+<<<<<<< HEAD
+=======
+#: code:addons/mail/models/mail_channel.py:639
+#, python-format
+msgid " This channel is private. People must be invited to join it."
+msgstr "Este canal é privado. As pessoas devem ser convidadas para aderirem."
+
+#. module: mail
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:mail.template,subject:mail.mail_template_data_notification_email_default
 msgid ""
 "${object.subject or (object.record_name and 'Re: %s' % object.record_name) "
@@ -300,8 +329,21 @@ msgstr ""
 "\"o_channel_redirect\" data-oe-id=\"%s\">#%s</a></div>"
 
 #. module: mail
+<<<<<<< HEAD
 #: code:addons/mail/models/mail_channel.py:460
 #: code:addons/mail/models/mail_channel.py:513
+=======
+#: code:addons/mail/models/mail_channel.py:475
+#, python-format
+msgid ""
+"<div class=\"o_mail_notification\">%(author)s invited %(new_partner)s to <a "
+"href=\"#\" class=\"o_channel_redirect\" data-oe-"
+"id=\"%(channel_id)s\">#%(channel_name)s</a></div>"
+msgstr ""
+
+#. module: mail
+#: code:addons/mail/models/mail_channel.py:550
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "<div class=\"o_mail_notification\">joined <a href=\"#\" class="
@@ -710,8 +752,16 @@ msgid ""
 "Attachments are linked to a document through model / res_id and to the "
 "message through this field."
 msgstr ""
+<<<<<<< HEAD
 "Os anexos são ligados ao documento através do model / res_id e à mensagem "
 "através deste campo."
+=======
+
+#. module: mail
+#: selection:mail.alias,alias_contact:0
+msgid "Authenticated Employees"
+msgstr "Funcionários autenticados"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mail
 #: selection:mail.alias,alias_contact:0
@@ -3538,7 +3588,11 @@ msgstr "Canais privados"
 #: code:addons/mail/static/src/js/client_action.js:138
 #, fuzzy, python-format
 msgid "Public Channels"
+<<<<<<< HEAD
 msgstr "Canais privados"
+=======
+msgstr "Canais Públicos"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mail
 #: code:addons/mail/wizard/mail_compose_message.py:180
@@ -4078,7 +4132,7 @@ msgstr ""
 "A operação solicitada não pode ser concluída devido a restrições de "
 "segurança. Entre em contato com o administrador do sistema. \n"
 "\n"
-"(Tipo de documento:% s, Operação:% s)"
+"(Tipo de documento: %s, Operação: %s)"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_shortcode_source
@@ -4468,8 +4522,20 @@ msgid "Users"
 msgstr "Utilizadores"
 
 #. module: mail
+<<<<<<< HEAD
 #: code:addons/mail/models/mail_thread.py:671
 #: code:addons/mail/models/mail_thread.py:673
+=======
+#: code:addons/mail/models/mail_channel.py:676
+#, python-format
+msgid "Users in this channel: %s %s and you."
+msgstr "Utilizadores neste canal: %s %s e você."
+
+#. module: mail
+#: code:addons/mail/models/mail_thread.py:672
+#: code:addons/mail/models/mail_thread.py:674
+#: model:ir.ui.view,arch_db:mail.message_user_assigned
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "View"
 msgstr "Ver"
@@ -4541,6 +4607,27 @@ msgid "You added <b>%s</b> to the conversation."
 msgstr "Adicionou <b>%s</b> à conversa."
 
 #. module: mail
+<<<<<<< HEAD
+=======
+#: code:addons/mail/models/mail_channel.py:673
+#, python-format
+msgid "You are alone in this channel."
+msgstr ""
+
+#. module: mail
+#: code:addons/mail/models/mail_channel.py:642
+#, python-format
+msgid "You are in a private conversation with <b>@%s</b>."
+msgstr ""
+
+#. module: mail
+#: code:addons/mail/models/mail_channel.py:637
+#, python-format
+msgid "You are in channel <b>#%s</b>."
+msgstr "Está no canal <b>#%s</b>."
+
+#. module: mail
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/mail/static/src/xml/thread.xml:29
 #, python-format
@@ -4683,6 +4770,33 @@ msgid "mention(s) marked as read."
 msgstr ""
 
 #. module: mail
+<<<<<<< HEAD
+=======
+#: code:addons/mail/models/mail_thread.py:943
+#, python-format
+msgid "model %s does not accept document creation"
+msgstr ""
+
+#. module: mail
+#: code:addons/mail/models/mail_thread.py:938
+#, python-format
+msgid "model %s does not accept document update"
+msgstr "modelo %s não aceita atualização de documento"
+
+#. module: mail
+#: code:addons/mail/models/mail_thread.py:931
+#, python-format
+msgid ""
+"model %s does not accept document update, fall back on document creation"
+msgstr ""
+
+#. module: mail
+#: model:ir.ui.view,arch_db:mail.message_origin_link
+msgid "modified"
+msgstr ""
+
+#. module: mail
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:mail.view_general_configuration_mail_alias_domain
 msgid "mycompany.odoo.com"
 msgstr "mycompany.odoo.com"

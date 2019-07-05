@@ -92,8 +92,23 @@ msgid ""
 msgstr ""
 
 #. module: rating_project
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:rating_project.field_project_project_is_visible_happy_customer
 msgid "Customer Satisfaction"
+=======
+#: model:ir.actions.act_window,name:rating_project.rating_rating_action_project
+#: model:ir.actions.act_window,name:rating_project.rating_rating_action_task
+#: model:ir.ui.menu,name:rating_project.rating_rating_menu_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
+msgid "Customer Ratings"
+msgstr "Αξιολογήσεις Πελατών"
+
+#. module: rating_project
+#: model:ir.actions.act_window,help:rating_project.rating_rating_action_task
+msgid ""
+"Customer ratings on tasks. If you have no rating, change your project "
+"Settings to activate it."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: rating_project
@@ -105,7 +120,63 @@ msgstr ""
 
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_form
+<<<<<<< HEAD
 msgid "On tasks"
+=======
+msgid ""
+"Edit project's stages and set an email template\n"
+"                            on the stages on which you want to activate the rating."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_project
+msgid "Happy % on Project"
+msgstr "Ευχαριστημένοι % σε Έργο"
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_task
+msgid "Happy % on Task"
+msgstr "Ευχαριστημένοι % σε Εργασία"
+
+#. module: rating_project
+#: model:ir.model.fields,help:rating_project.field_project_project_rating_status
+msgid ""
+"How to get the customer's feedbacks?\n"
+"- Rating when changing stage: Email will be sent when a task/issue is pulled in another stage\n"
+"- Periodical Rating: Email will be sent periodically\n"
+"\n"
+"Don't forget to set up the mail templates on the stages for which you want to get the customer's feedbacks."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Higly Dissatisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Not Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status:0
+msgid "No rating"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
+msgid "No rating yet"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Once a Month"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: rating_project
@@ -144,3 +215,21 @@ msgstr "Εργασία"
 #: model:ir.model,name:rating_project.model_project_task_type
 msgid "Task Stage"
 msgstr "Στάδιο Εργασίας"
+<<<<<<< HEAD
+=======
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Twice a Month"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Weekly"
+msgstr "Εβδομαδιαία"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Yearly"
+msgstr "Ετήσιο"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

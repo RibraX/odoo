@@ -118,6 +118,7 @@ class StockPicking(models.Model):
 
     @api.multi
     def put_in_pack(self):
+<<<<<<< HEAD
         if self.carrier_id and self.carrier_id.delivery_type not in ['base_on_rule', 'fixed']:
             view_id = self.env.ref('delivery.choose_delivery_package_view_form').id
             return {
@@ -134,6 +135,20 @@ class StockPicking(models.Model):
             }
         else:
             return self._put_in_pack()
+=======
+        # TDE FIXME: work in batch, please
+        self.ensure_one()
+        package = super(StockPicking, self).put_in_pack()
+
+        current_package_carrier_type = self.carrier_id.delivery_type if self.carrier_id.delivery_type not in ['base_on_rule', 'fixed'] else 'none'
+        count_packaging = self.env['product.packaging'].search_count([('package_carrier_type', '=', current_package_carrier_type)])
+        if not count_packaging:
+            return package
+        # By default, sum the weights of all package operations contained in this package
+        pack_operation_ids = self.env['stock.pack.operation'].search([('result_package_id', '=', package.id)])
+        package_weight = sum([x.qty_done * x.product_id.weight for x in pack_operation_ids])
+        package.shipping_weight = package_weight
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     @api.multi
     def action_send_confirmation_email(self):

@@ -5,6 +5,7 @@ var core = require('web.core');
 var mixins = require('web.mixins');
 var rpc = require('web.rpc');
 var Session = require('web.Session');
+var PosBaseWidget = require('point_of_sale.BaseWidget');
 
 var QWeb = core.qweb;
 var _t = core._t;
@@ -190,11 +191,15 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
             // try harder when we remember a good proxy url
             found_url = this.try_hard_to_connect(localStorage.hw_proxy_url, options)
                 .then(null,function(){
-                    return self.find_proxy(options);
+                    if (window.location.protocol != 'https:'){
+                        return self.find_proxy(options);
+                    }
                 });
         }else{
             // just find something quick
-            found_url = this.find_proxy(options);
+            if (window.location.protocol != 'https:'){
+                found_url = this.find_proxy(options);
+            }
         }
 
         success = found_url.then(function(url){
@@ -246,16 +251,17 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
     // try several time to connect to a known proxy url
     try_hard_to_connect: function(url,options){
         options   = options || {};
-        var port  = ':' + (options.port || '8069');
+        var protocol = window.location.protocol;
+        var port = ( !options.port && protocol == "https:") ? ':443' : ':' + (options.port || '8069');
 
         this.set_connection_status('connecting');
 
         if(url.indexOf('//') < 0){
-            url = 'http://'+url;
+            url = protocol + '//' + url;
         }
 
         if(url.indexOf(':',5) < 0){
-            url = url+port;
+            url = url + port;
         }
 
         // try real hard to connect to url, with a 1sec timeout and up to 'retries' retries
@@ -271,11 +277,11 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
             .done(function(){
                 done.resolve(url);
             })
-            .fail(function(){
+            .fail(function(resp){
                 if(retries > 0){
                     try_real_hard_to_connect(url,retries-1,done);
                 }else{
-                    done.reject();
+                    done.reject(resp.statusText, url);
                 }
             });
             return done;
@@ -441,6 +447,7 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
 
     print_sale_details: function() {
         var self = this;
+<<<<<<< HEAD
         rpc.query({
                 model: 'report.point_of_sale.report_saledetails',
                 method: 'get_sale_details',
@@ -477,6 +484,22 @@ var ProxyDevice  = core.Class.extend(mixins.PropertiesMixin,{
             return this.message("test_ownership", {});
         }
         return null;
+=======
+        new Model('report.point_of_sale.report_saledetails').call('get_sale_details').then(function(result){
+            var env = {
+                widget: new PosBaseWidget(self),
+                company: self.pos.company,
+                pos: self.pos,
+                products: result.products,
+                payments: result.payments,
+                taxes: result.taxes,
+                total_paid: result.total_paid,
+                date: (new Date()).toLocaleString(),
+            };
+            var report = QWeb.render('SaleDetailsReport', env);
+            self.print_receipt(report);
+        })
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     },
 
     // asks the proxy to log some information, as with the debug.log you can provide several arguments.

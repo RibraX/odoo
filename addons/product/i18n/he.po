@@ -3,11 +3,24 @@
 # * product
 #
 # Translators:
+<<<<<<< HEAD
 # ilan kl <ilan@qaroads.co.il>, 2016
+=======
+# ExcaliberX <excaliberx@gmail.com>, 2017
+# Leandro Noijovich <eliel.sorcerer@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Moshe Flam <pashute@gmail.com>, 2017
+# Yihya Hugirat <hugirat@gmail.com>, 2017
+# hed shefetr <hed@laylinetech.com>, 2019
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
+# ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-07-23 18:14+0000\n"
 "Last-Translator: ilan kl <ilan@qaroads.co.il>\n"
@@ -17,6 +30,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:26+0000\n"
+"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019\n"
+"Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: product
 #: selection:product.pricelist.item,applied_on:0
@@ -300,7 +324,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:product.product_normal_form_view
 #: model:ir.ui.view,arch_db:product.product_pricelist_view
 msgid "Applicable On"
-msgstr ""
+msgstr "חלים על"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_applied_on
@@ -663,6 +687,8 @@ msgid ""
 "Conversion between Units of Measure can only occur if they belong to the "
 "same category. The conversion will be made based on the ratios."
 msgstr ""
+"המרה בין יחידות מידה יכולה להתרחש רק אם הם שייכים לאותה קטגוריה. ההמרה תיעשה"
+" על בסיס יחסי."
 
 #. module: product
 #: code:addons/product/product.py:122
@@ -700,6 +726,24 @@ msgid "Cost-plus Contract"
 msgstr ""
 
 #. module: product
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:product.model_res_country_group
+msgid "Country Group"
+msgstr "קבוצת מדינות"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_pricelist_country_group_ids
+msgid "Country Groups"
+msgstr "קבוצות מדינות"
+
+#. module: product
+#: model:ir.model.fields,field_description:product.field_product_attribute_create_variant
+msgid "Create variant"
+msgstr "צור שינוי במוצר"
+
+#. module: product
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:product.field_product_attribute_create_uid
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_create_uid
 #: model:ir.model.fields,field_description:product.field_product_attribute_price_create_uid
@@ -1350,12 +1394,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_default_code
 #: model:ir.model.fields,field_description:product.field_product_template_default_code
 msgid "Internal Reference"
-msgstr ""
+msgstr "הפניה פנימית"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_barcode
 msgid "International Article Number used for product identification."
-msgstr ""
+msgstr "מספר זיהוי בינלאומי המשמש להגדרת המוצר."
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
@@ -1519,7 +1563,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_base_config_settings_group_product_variant
 #: model:res.groups,name:product.group_product_variant
 msgid "Manage Product Variants"
-msgstr ""
+msgstr "נהל וריאנט מוצר"
 
 #. module: product
 #: model:res.groups,name:product.group_mrp_properties
@@ -2626,13 +2670,13 @@ msgstr ""
 #: model:ir.model.fields,help:product.field_product_product_volume
 #: model:ir.model.fields,help:product.field_product_template_volume
 msgid "The volume in m3."
-msgstr ""
+msgstr "הנפח במטר מעוקב."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_weight
 #: model:ir.model.fields,help:product.field_product_template_weight
 msgid "The weight of the contents in Kg, not including any packaging, etc."
-msgstr ""
+msgstr "משקל התכנים בק\"ג, לא כולל אריזות וכו'."
 
 #. module: product
 #: model:product.product,website_description:product.product_product_4

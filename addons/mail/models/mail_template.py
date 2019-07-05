@@ -63,7 +63,7 @@ def format_amount(env, amount, currency):
     lang = env['res.lang']._lang_get(env.context.get('lang') or 'en_US')
 
     formatted_amount = lang.format(fmt, currency.round(amount), grouping=True, monetary=True)\
-        .replace(r' ', u'\N{NO-BREAK SPACE}').replace(r'-', u'\u2011')
+        .replace(r' ', u'\N{NO-BREAK SPACE}').replace(r'-', u'-\N{ZERO WIDTH NO-BREAK SPACE}')
 
     pre = post = u''
     if currency.position == 'before':
@@ -252,17 +252,28 @@ class MailTemplate(models.Model):
     def unlink_action(self):
         for template in self:
             if template.ref_ir_act_window:
+<<<<<<< HEAD
                 template.ref_ir_act_window.sudo().unlink()
+=======
+                template.ref_ir_act_window.unlink()
+            if template.ref_ir_value:
+                template.ref_ir_value.unlink()
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return True
 
     @api.multi
     def create_action(self):
+<<<<<<< HEAD
         ActWindowSudo = self.env['ir.actions.act_window'].sudo()
+=======
+        ActWindow = self.env['ir.actions.act_window']
+        IrValues = self.env['ir.values']
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         view = self.env.ref('mail.email_compose_message_wizard_form')
 
         for template in self:
             button_name = _('Send Mail (%s)') % template.name
-            action = ActWindowSudo.create({
+            action = ActWindow.create({
                 'name': button_name,
                 'type': 'ir.actions.act_window',
                 'res_model': 'mail.compose.message',
@@ -274,7 +285,19 @@ class MailTemplate(models.Model):
                 'target': 'new',
                 'binding_model_id': template.model_id.id,
             })
+<<<<<<< HEAD
             template.write({'ref_ir_act_window': action.id})
+=======
+            ir_value = IrValues.create({
+                'name': button_name,
+                'model': src_obj,
+                'key2': 'client_action_multi',
+                'value': "ir.actions.act_window,%s" % action.id})
+            template.write({
+                'ref_ir_act_window': action.id,
+                'ref_ir_value': ir_value.id,
+            })
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
         return True
 

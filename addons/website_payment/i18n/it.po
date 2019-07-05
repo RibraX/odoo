@@ -5,15 +5,29 @@
 # Translators:
 # Paolo Valier, 2016
 # Simone Bernini <simone@aperturelabs.it>, 2016
+<<<<<<< HEAD
+=======
+# Martin Trigaux, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# Sergio Zanchetta <primes2h@gmail.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-03-12 08:56+0000\n"
 "Last-Translator: Paolo Valier\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:33+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -22,17 +36,17 @@ msgstr ""
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.confirm
 msgid "<i class=\"fa fa-arrow-circle-right\"/> Back to My Account"
-msgstr "<i class=\"fa fa-arrow-circle-right\"/> Torna al tuo profilo"
+msgstr "<i class=\"fa fa-arrow-circle-right\"/> Ritornare al profilo"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay_methods
 msgid "Acquirer"
-msgstr "Acquirente"
+msgstr "Servizio"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay_methods
 msgid "Add a new payment method:"
-msgstr "Aggiungi un nuovo metodo di pagamento:"
+msgstr "Aggiungere un nuovo metodo di pagamento:"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.confirm
@@ -43,12 +57,16 @@ msgstr "Importo"
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.website_settings_payment
 msgid "Configure payment acquirers"
-msgstr "Configura gli acquirenti del pagamento"
+msgstr "Configura servizi di pagamento"
 
 #. module: website_payment
 #: model:ir.model.fields,field_description:website_payment.field_account_config_settings_default_acquirer
 msgid "Default Acquirer"
+<<<<<<< HEAD
 msgstr "Acquirente di default"
+=======
+msgstr "Servizio predefinito"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_payment
 #: model:ir.model.fields,help:website_payment.field_account_config_settings_default_acquirer
@@ -56,23 +74,28 @@ msgid ""
 "Default payment acquirer for website payments; your provider needs to be "
 "visible in the website."
 msgstr ""
+<<<<<<< HEAD
 "Acquirente di default per i pagamento del sito; il fornitore deve essere "
 "visibile sul sito web."
+=======
+"Servizio di pagamento predefinito del sito, il fornitore deve essere "
+"visibile nel sito web."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay_methods
 msgid "Delete <span class=\"fa fa-long-arrow-right\"/>"
-msgstr "Rimuovi <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Elimina <span class=\"fa fa-long-arrow-right\"/>"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay_methods
 msgid "Delete a payment method:"
-msgstr "Rimuovi un metodo di pagamento:"
+msgstr "Eliminare un metodo di pagamento:"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.website_settings_payment
 msgid "E-Commerce"
-msgstr "E-Commerce"
+msgstr "E-commerce"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.confirm
@@ -82,18 +105,25 @@ msgstr "Da"
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay_meth_link
 msgid "Manage your payment methods"
-msgstr "Gestisci i tuoi metodi di pagamento"
+msgstr "Gestisci i metodi di pagamento"
 
 #. module: website_payment
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_payment.pay_methods
 msgid "My Account"
 msgstr "Il mio Account"
+=======
+#: code:addons/website_payment/controllers/main.py:82
+#, python-format
+msgid "Oops! There was a problem with your payment."
+msgstr "Attenzione, rilevato un problema con il pagamento."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_payment
 #: code:addons/website_payment/controllers/main.py:43
 #, python-format
 msgid "Pay Now"
-msgstr "Paga Ora"
+msgstr "Paga ora"
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.confirm
@@ -104,7 +134,11 @@ msgstr "Pagamento"
 #. module: website_payment
 #: model:ir.model,name:website_payment.model_payment_acquirer
 msgid "Payment Acquirer"
+<<<<<<< HEAD
 msgstr "Acquirente del pagamento"
+=======
+msgstr "Servizio di pagamento"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.header_footer_custom_payment
@@ -130,14 +164,27 @@ msgstr "Riferimento"
 #. module: website_payment
 #: model:ir.ui.view,arch_db:website_payment.pay
 msgid "This transaction will be processed by"
-msgstr "La transazione verrà elaborata da"
+msgstr "Questa transazione verrà elaborata da"
 
 #. module: website_payment
 #: model:ir.model,name:website_payment.model_website
 msgid "Website"
-msgstr "Sito Web"
+msgstr "Sito web"
 
 #. module: website_payment
+<<<<<<< HEAD
+=======
+#: code:addons/website_payment/controllers/main.py:82
+#, python-format
+msgid ""
+"Your payment was successful! It may take some time to be validated on our "
+"end."
+msgstr ""
+"Il pagamento è andato a buon fine. Potrebbe impiegare del tempo per essere "
+"confermata da parte nostra."
+
+#. module: website_payment
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:website_payment.model_account_config_settings
 msgid "account.config.settings"
 msgstr "account.config.settings"

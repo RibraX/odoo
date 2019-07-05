@@ -3,6 +3,7 @@
 # * website_sale
 #
 # Translators:
+<<<<<<< HEAD
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -16,6 +17,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+=======
+# Martin Trigaux, 2016
+# Hamid Darabi, 2016
+# Faraz Sadri Alamdari <ifarazir@gmail.com>, 2016
+# Morovat Guivi <tarjomac@gmail.com>, 2016
+# Sahar Daraye <sahar.daraye.1369@gmail.com>, 2016
+# Zahed Alfak <tamass4116@gmail.com>, 2016
+# Arash Tarighati <arash.tgi@gmail.com>, 2016
+# hamid hvbnet <hvbnet@yahoo.com>, 2016
+# mehdi samadi <mehsamadi@gmail.com>, 2016
+# Sahand Hashemi <sahand.twastica@gmail.com>, 2017
+# Hamed Mohammadi <hamed@dehongi.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-30 14:34+0000\n"
+"PO-Revision-Date: 2017-11-30 14:34+0000\n"
+"Last-Translator: Hamed Mohammadi <hamed@dehongi.com>, 2017\n"
+"Language-Team: Persian (https://www.transifex.com/odoo/teams/41243/fa/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fa\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.payment
@@ -52,6 +79,8 @@ msgid ""
 "                                <small>(don't forget to apply the changes)</"
 "small>"
 msgstr ""
+"<br/>\n"
+"                                <strong>وضعیت پرداخت:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -60,13 +89,26 @@ msgid ""
 "                                <small>(you'll have to subscribe directly on "
 "each of the payment companies' websites)</small>"
 msgstr ""
+"<br/>\n"
+"                                برای مثال کامپیوترها:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
 msgid ""
+<<<<<<< HEAD
 "<br/>\n"
 "                                <strong>Payment Status:</strong>"
 msgstr ""
+=======
+"<i class=\"fa fa-3x fa-credit-card text-muted\" aria-hidden=\"true\"/><br/>\n"
+"                                                Are you sure you want to pay with this card: <br/>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "<i class=\"fa fa-check\"/> Ship to this address"
+msgstr "<i class=\"fa fa-check\"/> ارسال به این آدرس"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
@@ -75,6 +117,7 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<i class=\"fa fa-comment-o\"/> Website Live Chat on"
 msgstr ""
 
@@ -82,17 +125,51 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<i class=\"fa fa-envelope-o\"/> Email Our Website Expert"
 msgstr ""
+=======
+msgid "<i class=\"fa fa-envelope-o\"/> Ask Our Experts"
+msgstr "<i class=\"fa fa-envelope-o\"/> از متخصصین ما بپرسید"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "<i class=\"fa fa-plus-square\" aria-hidden=\"true\"/> Add an address"
+msgstr "<i class=\"fa fa-plus-square\" aria-hidden=\"true\"/> افزودن یک نشانی"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<i class=\"fa fa-print\"/> Print"
-msgstr ""
+msgstr "<i class=\"fa fa-print\"/> چاپ"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.header
 msgid ""
 "<i class=\"fa fa-shopping-cart\"/>\n"
+<<<<<<< HEAD
 "              My cart"
+=======
+"                    My cart"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid ""
+"<small class=\"text-muted pull-right\">Source: https://termsfeed.com/blog"
+"/sample-terms-and-conditions-template</small>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_lines
+msgid "<small><i class=\"fa fa-trash-o\"/> Remove</small>"
+msgstr "<small><i class=\"fa fa-trash-o\"/> حذف</small>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid ""
+"<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>Next </span><span class=\"fa fa-long-arrow-right\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
@@ -106,11 +183,13 @@ msgid ""
 "<span class=\"col-xs-6 text-right text-muted\" title=\"Taxes may be updated "
 "after providing shipping address\"> Taxes:</span>"
 msgstr ""
+"<span class=\"col-xs-6 text-right text-muted\" title=\"Taxes may be updated "
+"after providing shipping address\"> مالیاتها:</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.total
 msgid "<span class=\"col-xs-6 text-right text-muted\">Subtotal:</span>"
-msgstr ""
+msgstr "<span class=\"col-xs-6 text-right text-muted\">زیر جمع:</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.payment
@@ -121,11 +200,15 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "<span class=\"fa fa-arrow-right\"/> change"
 msgstr ""
+"<span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">قبلیs</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<span class=\"fa fa-comment-o\"/> Website Live Chat on"
 msgstr ""
+"<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">بعدی</span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -155,14 +238,29 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.continue_shopping
 msgid ""
+<<<<<<< HEAD
 "<span class=\"fa fa-long-arrow-left\"/> <span class=\"hidden-xs\">Continue "
 "Shopping</span><span class=\"visible-xs-inline\">Continue</span>"
 msgstr ""
+=======
+"<span class=\"fa fa-long-arrow-left\"/>\n"
+"                <span class=\"hidden-xs\">Continue Shopping</span>\n"
+"                <span class=\"visible-xs-inline\">Continue</span>"
+msgstr ""
+"<span class=\"fa fa-long-arrow-left\"/>\n"
+"                <span class=\"hidden-xs\">ادامه خرید</span>\n"
+"                <span class=\"visible-xs-inline\">ادامه</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span class=\"fa fa-long-arrow-left\"/> Back"
+msgstr "<span class=\"fa fa-long-arrow-left\"/> بازگشت"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "<span class=\"fa fa-long-arrow-left\"/> Return to Cart"
-msgstr ""
+msgstr "<span class=\"fa fa-long-arrow-left\"/> برگشت به سبد خرید"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart
@@ -200,6 +298,9 @@ msgid ""
 "suggested products\n"
 "                        </span>"
 msgstr ""
+"<span class=\"panel-title\">\n"
+"                                        <strong> قوانین و فرمولها</strong>\n"
+"                                    </span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -211,8 +312,51 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
+<<<<<<< HEAD
 "<span class=\"panel-title\"><span class=\"fa fa-credit-card\"/><strong> "
 "Ogone, Adyen, Authorize.net, Buckaroo...</strong></span>"
+=======
+"<span class=\"panel-title\">\n"
+"                                        <strong>Destination-based</strong><br/>\n"
+"                                            <span class=\"small\">Most common</span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Origin-based</strong><br/>\n"
+"                                        <span class=\"small\">in some US states, etc.</span>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Several Prices</strong>\n"
+"                                    </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Unique Price</strong>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>قیمت یکتا</strong>\n"
+"                                    </span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<span class=\"panel-title\">\n"
+"                                        <strong>Upselling</strong>\n"
+"                                    </span>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
@@ -235,6 +379,11 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-shopping-cart\"/><strong> At "
 "cost price</strong> (customer pay what you pay)</span>"
 msgstr ""
+"<span class=\"panel-title\">\n"
+"                                    <span class=\"fa fa-check-square-o\"/>\n"
+"                                    <strong>سفارشی کردن کاتالوگ شما</strong><br/>\n"
+"                                        <span class=\"small\"/>\n"
+"                                </span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -256,6 +405,11 @@ msgid ""
 "<span class=\"panel-title\"><span class=\"fa fa-table\"/><strong> Flat "
 "rates</strong> (everybody pays the same)</span>"
 msgstr ""
+"<span class=\"panel-title\">\n"
+"                                <span class=\"fa fa-check-square-o\"/>\n"
+"                                <strong>سفارشی کردن پروسه نهایی کردن خرید</strong><br/>\n"
+"                                    <span class=\"small\"/>\n"
+"                            </span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -283,20 +437,61 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Cons:</strong>"
 msgstr ""
+"<span class=\"panel-title\"><span class=\"fa fa-smile-o\"/><strong> تحویل رایگان</strong><br/>\n"
+"                            </span>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
+<<<<<<< HEAD
 "<strong>Cons:</strong> The delivery cost may be discouraging for your "
 "cheapest items."
+=======
+"<span class=\"panel-title\"><span class=\"fa fa-table\"/><strong> Flat rates</strong> (everybody pays the same)<br/>\n"
+"                            <span class=\"small\">Advised if you target a local audience</span>\n"
+"                            </span>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span>Next </span><span class=\"fa fa-long-arrow-right\"/>"
+msgstr "<span>بعدی </span><span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid ""
+"<span>Sort by</span>\n"
+"                    <span class=\"caret\"/>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.suggested_products_list
+msgid "<strong>Add to Cart</strong>"
+msgstr "<strong>افزودن به سبد</strong>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "<strong>Bonuses:</strong> what you get on top of the offer"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
+<<<<<<< HEAD
 "<strong>Cons:</strong> customers have to wait until checkout to find out the "
 "delivery price."
 msgstr ""
+=======
+"<strong>Call-to-action</strong> short and clear: Add to Cart, Ask for quote,"
+" etc."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "<strong>Cons:</strong>"
+msgstr "<strong>معایب:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -330,11 +525,16 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "<strong>Key features, emotional and commercial content</strong><br/>\n"
 "                            Recommended for at least for your top products, "
 "because it can have a big impact on your sales and conversion rates."
 msgstr ""
+=======
+msgid "<strong>High-quality pictures</strong>"
+msgstr "<strong>تصاویر با کیفیت بالا</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -348,13 +548,18 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>Need help to import your products?</strong>"
 msgstr ""
+=======
+msgid "<strong>Next actions:</strong>"
+msgstr "<strong>اقدامات بعدی:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "<strong>Order Details:</strong>"
-msgstr ""
+msgstr "<strong>جزئیات سفارش:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -377,10 +582,11 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Price</strong> with currency"
-msgstr ""
+msgstr "<strong>قیمت</strong> با ارز"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "<strong>Product variants</strong><br/>\n"
 "                            Product variants are used to offer variations of "
@@ -388,11 +594,15 @@ msgid ""
 "                            For example, the customer choose a T-shirt and "
 "then select its size or color."
 msgstr ""
+=======
+msgid "<strong>Product/Service name</strong>"
+msgstr "<strong>نام محصول/خدمت</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>Pros:</strong>"
-msgstr ""
+msgstr "<strong>مزایا:</strong>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -425,6 +635,7 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "<strong>Recommended action:</strong>"
 msgstr ""
 
@@ -437,6 +648,35 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "<strong>See it in action</strong><br/>"
 msgstr ""
+=======
+msgid "<strong>See it in action in Odoo</strong><br/>"
+msgstr "<strong>در عمل آن را در اودو ببین</strong><br/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "<strong>Short description</strong>"
+msgstr "<strong>توضیحات کوتاه</strong>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<strong>Technical information:</strong> what do you get and how does it "
+"work?"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"<strong>Tip for B2B users:</strong> you can create new manually-processed "
+"payment methods (check, purchase order, etc.) by renaming 'Wire Transfer' or"
+" duplicating it."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "<strong>Total:</strong>"
+msgstr "<strong>کل:</strong>"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -470,7 +710,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_sale.field_product_product_accessory_product_ids
 #: model:ir.model.fields,field_description:website_sale.field_product_template_accessory_product_ids
 msgid "Accessory Products"
-msgstr ""
+msgstr "محصولات لوازم جانبی"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -478,9 +718,15 @@ msgid "Activate 'Suggested products' from the 'Customize' menu."
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Activate the 'Support multiple variants per products' option in"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.product
+msgid "Add to Cart"
+msgstr "افزودن به سبد"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -511,6 +757,7 @@ msgid "Allow the end user to choose this price list"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,help:website_sale.field_product_product_alternative_product_ids
 #: model:ir.model.fields,help:website_sale.field_product_template_alternative_product_ids
 msgid "Appear on the product page"
@@ -521,6 +768,18 @@ msgstr ""
 #: model:ir.model.fields,help:website_sale.field_product_template_accessory_product_ids
 msgid "Appear on the shopping cart"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_alternative_product_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_product_alternative_product_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_template_alternative_product_ids
+msgid "Alternative Products"
+msgstr "محصولات جایگزین"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.recommended_products
+msgid "Alternative Products:"
+msgstr "محصولات جایگزین:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.reduction_code
@@ -528,20 +787,58 @@ msgid "Apply"
 msgstr "اعمال"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Apply multi-currencies"
+msgstr "اعمال چند ارزی"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability
+msgid "Availability"
+msgstr "موجودی"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_product_availability_warning
+#: model:ir.model.fields,field_description:website_sale.field_product_template_availability_warning
+msgid "Availability Warning"
+msgstr "اخطار دسترسی"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:product.pricelist,name:website_sale.list_benelux
 msgid "Benelux Pricelist"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 #: model:ir.ui.view,arch_db:website_sale.payment
+=======
+#. openerp-web
+#: code:addons/website_sale/static/src/xml/website_sale_dashboard.xml:21
+#, python-format
+msgid "Best Sellers"
+msgstr "بیشترین فروشها"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.bill_to
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Bill To:"
-msgstr ""
+msgstr "صورتحساب به:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
+<<<<<<< HEAD
 msgid "Billing Information"
 msgstr ""
+=======
+msgid "Billing Address"
+msgstr "آدرس صورتحساب"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
@@ -559,6 +856,29 @@ msgid "Cart Quantity"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Cash amount or percentage discounts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.menu,name:website_sale.menu_catalog
+msgid "Catalog"
+msgstr "کاتالوگ"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: decreasing order"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Catalog price: increasing order"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.actions.act_window,help:website_sale.product_public_category_action
 msgid ""
 "Categories are used to browse your products through the\n"
@@ -575,7 +895,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_child_id
 msgid "Children Categories"
-msgstr ""
+msgstr "طبقه بندی‌های فرزند"
 
 #. module: website_sale
 #. openerp-web
@@ -589,7 +909,7 @@ msgstr ""
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:73
 #, python-format
 msgid "Choose an image from the library."
-msgstr ""
+msgstr "یک عکس از کتابخانه انتخاب کن."
 
 #. module: website_sale
 #. openerp-web
@@ -600,8 +920,13 @@ msgstr ""
 
 #. module: website_sale
 #: model:product.pricelist,name:website_sale.list_christmas
+<<<<<<< HEAD
 msgid "Christmas Pricelist"
 msgstr ""
+=======
+msgid "Christmas"
+msgstr "کریسمس"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -633,20 +958,30 @@ msgstr ""
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:106
 #, python-format
+<<<<<<< HEAD
 msgid "Click on <em>Publish</em> your product so your customers can see it."
 msgstr ""
+=======
+msgid "Click on <em>Continue</em> to create the product."
+msgstr "برای ایجاد محصول روی  <em>ادامه</em> کلیک کنید."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:84
 #, python-format
+<<<<<<< HEAD
 msgid "Click on <em>Save</em> to add the image to the product description."
 msgstr ""
+=======
+msgid "Click on this button so your customers can see it."
+msgstr "روی این دکمه کلیک کنید، سپس مشتریان شما این را می‌بینند."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.actions.act_window,help:website_sale.product_public_category_action
 msgid "Click to define a new category."
-msgstr ""
+msgstr "برای ایجاد طبقه بندی جدید کلیک کنید."
 
 #. module: website_sale
 #. openerp-web
@@ -661,34 +996,66 @@ msgid "Color"
 msgstr "رنگ"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Community &amp; Enterprise users:"
+msgstr "اجتماع و کاربران سازمانی:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Company Name"
 msgstr "نام شرکت"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:product.public.category,name:website_sale.Components
+msgid "Components"
+msgstr "اجزا"
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.Computer_all_in_one
+msgid "Computer all-in-one"
+msgstr "کامپیوتر کامل یکجا"
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.sub_computers
+msgid "Computers"
+msgstr "رایانه‌ها"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Configure your bank account(s)"
 msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Configure your delivery prices"
 msgstr ""
+=======
+msgid "Configure your pricelists"
+msgstr "پیکربندی لیست قیمت شما"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Confirm <span class=\"fa fa-long-arrow-right\"/>"
-msgstr ""
+msgstr "تایید <span class=\"fa fa-long-arrow-right\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.payment
 msgid "Confirm Order <span class=\"fa fa-long-arrow-right\"/>"
-msgstr ""
+msgstr "تایید سفارش <span class=\"fa fa-long-arrow-right\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Confirmation<span class=\"chevron\"/>"
-msgstr ""
+msgstr "تایید کردن<span class=\"chevron\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -735,7 +1102,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Country..."
-msgstr ""
+msgstr "کشور..."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.reduction_code
@@ -750,6 +1117,7 @@ msgid "Create Product"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:31
 #, python-format
@@ -769,6 +1137,11 @@ msgstr ""
 #, python-format
 msgid "Create your first product"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Create your product items"
+msgstr "ایجاد آیتمهای محصول شما"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_create_uid
@@ -786,8 +1159,23 @@ msgstr "ایجاد شده در"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "Customize your Payment message"
 msgstr ""
+=======
+msgid "Currencies"
+msgstr "ارزها"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Customer Segments"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Customers review:"
+msgstr "نظرات مشتری:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery_dhl
@@ -797,12 +1185,12 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_currency_id
 msgid "Default Currency"
-msgstr ""
+msgstr "ارز پیشفرض"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_pricelist_id
 msgid "Default Pricelist"
-msgstr ""
+msgstr "لیست قیمت پیشفرض"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
@@ -812,19 +1200,24 @@ msgstr "تیم فروش اصلی"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "Default Salesperson"
-msgstr ""
+msgstr "فروشنده پیشفرض"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid ""
 "Defining a good delivery strategy is difficult: you don't want to cut into "
 "your margins, but you want to be attractive to customers."
 msgstr ""
+=======
+msgid "Default mode"
+msgstr "حالت پیشفرض"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Delivery Strategy"
-msgstr ""
+msgstr "استراتژی تحویل"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_quote_description
@@ -901,9 +1294,15 @@ msgid "Enter a name for your new product"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Enter their identification credentials"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Edit this address"
+msgstr "ویرایش این نشانی"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -927,6 +1326,7 @@ msgid "Error ! You cannot create recursive categories."
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Example of Good Product Page"
 msgstr ""
@@ -960,15 +1360,34 @@ msgid ""
 "Export the 3 products you have already created by checking them and choosing "
 "'Export' from the 'Action' menu"
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:19
+#, python-format
+msgid "Enter a name for your new product"
+msgstr "نامی برای محصول جدید خود وارد کنید"
+
+#. module: website_sale
+#: code:addons/website_sale/models/product.py:89
+#, python-format
+msgid "Error ! You cannot create recursive categories."
+msgstr "خطا! شما نمی‌توانید طبقه بندی بازگشتی ایجاد کنید."
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.External_Hard_Drive
+msgid "External Hard Drive"
+msgstr "درایو سخت خارجی"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info_option
 msgid "Extra Info<span class=\"chevron\"/>"
-msgstr ""
+msgstr "اطلاعات اضافی<span class=\"chevron\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Extra Step"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: website_sale
@@ -980,6 +1399,9 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Field 1"
 msgstr ""
+=======
+msgstr "گام اضافی"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -992,9 +1414,15 @@ msgid "Field not custom"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.extra_info
 msgid "Field not required"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Free and no setup"
+msgstr "مجانی و بدون نصب"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.extra_info
@@ -1002,11 +1430,17 @@ msgid "Field required"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Focus on adding content and improving the pages for your best-selling "
 "products: don't try to create complete pages for all your products at first!"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_sale.view_sales_order_filter_ecommerce
+msgid "From Website"
+msgstr "از وبسایت"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1031,12 +1465,12 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_style_html_class
 msgid "HTML Classes"
-msgstr ""
+msgstr "کلاسهای HTML"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_attribute_value_html_color
 msgid "HTML Color Index"
-msgstr ""
+msgstr "شاخص رنگ HTML"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_ir_http
@@ -1049,6 +1483,14 @@ msgid "Have a coupon code? Fill in this field and apply."
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:product.public.category,name:website_sale.Headset
+msgid "Headset"
+msgstr "هدست"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Here are <strong>some pros and cons</strong> to help you decide:"
 msgstr ""
@@ -1063,7 +1505,16 @@ msgstr ""
 #. module: website_sale
 #: selection:product.attribute,type:0
 msgid "Hidden"
+<<<<<<< HEAD
 msgstr "مخفی"
+=======
+msgstr "پنهان"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "I agree to the"
+msgstr "من موافقم با"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_id
@@ -1088,6 +1539,22 @@ msgid "Image"
 msgstr "تصویر"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Image Name"
+msgstr "نام تصویر"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_product_product_image_ids
+#: model:ir.model.fields,field_description:website_sale.field_product_template_product_image_ids
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+msgid "Images"
+msgstr "تصاپیر"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Imagine a new customer who comes to your website, finds the product they "
@@ -1131,7 +1598,7 @@ msgstr ""
 #: code:addons/website_sale/controllers/main.py:567
 #, python-format
 msgid "Invalid Email! Please enter a valid email address."
-msgstr ""
+msgstr "ایمیل نامعتبر! لطفا یک ایمیل معتبر وارد کنید."
 
 #. module: website_sale
 #: code:addons/website_sale/models/sale_order.py:86
@@ -1147,9 +1614,20 @@ msgid ""
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale.field_product_product_landed_cost_ok
 msgid "Landed Costs"
 msgstr ""
+=======
+#: model:product.public.category,name:website_sale.Keyboard_Mouse
+msgid "Keyboard / Mouse"
+msgstr "کیبورد / موس"
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.laptops
+msgid "Laptops"
+msgstr "لب تابها"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category___last_update
@@ -1178,6 +1656,52 @@ msgid "Last Updated on"
 msgstr "آخرین به روز رسانی در"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Legal Name"
+msgstr "نام قانونی"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Let them buy straight from catalog with:"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "List displaying"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Log In"
+msgstr "ورود"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Logo"
+msgstr "نشان"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Main Currency"
+msgstr "ارز اصلی"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid ""
+"Make sure your customers can go through the shopping process in a very short"
+" time, otherwise they will leave your website. Here are some actions to "
+"tailor the process to your business."
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery
+msgid "Manage shipping internally"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_image_medium
 msgid "Medium-sized image"
 msgstr "تصویر با اندازه متوسط"
@@ -1210,7 +1734,7 @@ msgstr ""
 #: code:addons/website_sale/static/src/js/website_sale.js:15
 #, python-format
 msgid "My Cart"
-msgstr ""
+msgstr "سبد من"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_public_category_complete_name
@@ -1230,7 +1754,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.content_new_product
 #, python-format
 msgid "New Product"
-msgstr ""
+msgstr "محصول جدید"
 
 #. module: website_sale
 #. openerp-web
@@ -1247,12 +1771,28 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.products
 msgid "No product defined."
-msgstr ""
+msgstr "هیچ محصولی تعریف نشده است."
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Now you can also <strong>import your existing products:</strong>"
 msgstr ""
+=======
+#: selection:website.config.settings,sale_delivery_settings:0
+msgid "No shipping management on website"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "No, choose another method"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_sale_pricelist_form_view
+msgid "None website"
+msgstr "هیچکدام از وبسایت"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #. openerp-web
@@ -1290,14 +1830,35 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_only_services
 msgid "Only Services"
+msgstr "فقط سرویسها"
+
+#. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_website_sale_options
+msgid "Optional Products"
+msgstr "محصولات اختیاری"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Options: warranty, software"
 msgstr ""
 
 #. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "Order"
 msgstr "سفارش"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_order_mail_template
+msgid "Order Confirmation Email"
+msgstr "ایمیل تایید سفارش"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_website_order_line
 msgid "Order Lines displayed on Website"
 msgstr ""
@@ -1324,17 +1885,17 @@ msgstr "همکار"
 #: code:addons/website_sale/controllers/main.py:859
 #, python-format
 msgid "Pay Now"
-msgstr ""
+msgstr "اکنون بپرداز"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.payment
 msgid "Pay Now <span class=\"fa fa-long-arrow-right\"/>"
-msgstr ""
+msgstr "اکنون بپرداز <span class=\"fa fa-long-arrow-right\"/>"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_sale_order_payment_acquirer_id
 msgid "Payment Acquirer"
-msgstr ""
+msgstr "دریافت کننده پرداخت"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
@@ -1360,7 +1921,7 @@ msgstr "تراکنش پرداخت"
 #: model:ir.ui.view,arch_db:website_sale.extra_info_option
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Payment<span class=\"chevron\"/>"
-msgstr ""
+msgstr "پرداخت<span class=\"chevron\"/>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -1390,9 +1951,31 @@ msgid "Pricelist"
 msgstr "لیست قیمت"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:website_sale.field_website_pricelist_name
 msgid "Pricelist Name"
 msgstr "نام لیست قیمت"
+=======
+#: model:ir.actions.act_window,name:website_sale.website_product_pricelist3
+#: model:ir.ui.menu,name:website_sale.menu_catalog_pricelists
+msgid "Pricelists"
+msgstr "لیست های قیمت"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Pricing &amp; Discounts"
+msgstr "قیمت گذاری و تخفیفات"
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_sale_pricelist_setting_split_1
+msgid "Pricing Strategy"
+msgstr ""
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.printer
+msgid "Printer"
+msgstr "چاپگر"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_product
@@ -1407,6 +1990,15 @@ msgid "Product Attribute"
 msgstr "مشخصه محصول"
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.product_template_form_view
+#: model:ir.ui.view,arch_db:website_sale.view_product_image_form
+msgid "Product Images"
+msgstr "تصاویر محصول"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.product
 msgid "Product Name"
 msgstr "نام محصول"
@@ -1414,12 +2006,12 @@ msgstr "نام محصول"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Product Pages"
-msgstr ""
+msgstr "صفحات محصول"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product_public_category_tree_view
 msgid "Product Public Categories"
-msgstr ""
+msgstr "طبقه‌بندی‌های عمومی محصول"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_product_template
@@ -1440,7 +2032,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.404
 msgid "Product not found!"
-msgstr ""
+msgstr "محصول یافت نشد!"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
@@ -1461,7 +2053,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Promote"
-msgstr ""
+msgstr "ترویج"
 
 #. module: website_sale
 #. openerp-web
@@ -1473,7 +2065,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_rating_rating_website_published
 msgid "Published"
-msgstr ""
+msgstr "منتشر شده"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_purchase_line_warn
@@ -1483,22 +2075,22 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Push down"
-msgstr ""
+msgstr "پایین کشیدن"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Push to bottom"
-msgstr ""
+msgstr "کشیدن به ته"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Push to top"
-msgstr ""
+msgstr "کشیدن با اول"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Push up"
-msgstr ""
+msgstr "بالا کشیدن"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1510,7 +2102,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "Qty:"
-msgstr ""
+msgstr "تعداد:"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
@@ -1527,23 +2119,41 @@ msgstr ""
 #. module: website_sale
 #: selection:product.attribute,type:0
 msgid "Radio"
-msgstr ""
+msgstr "رادیو"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_rating_rating
 #: model:ir.model.fields,field_description:website_sale.field_product_product_rating_ids
 msgid "Rating"
-msgstr ""
+msgstr "رتبه دهی"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Read the"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_last_value
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_last_value
+msgid "Rating Last Value"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_rating_count
+#: model:ir.model.fields,field_description:website_sale.field_product_product_rating_count
+msgid "Rating count"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_image_product_tmpl_id
+msgid "Related Product"
+msgstr "محصول مرتبط"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.404
 msgid "Return to the product list."
-msgstr ""
+msgstr "برگشت به لیست محصول."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
@@ -1551,6 +2161,14 @@ msgid "Review Order<span class=\"chevron\"/>"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Review your catalog"
+msgstr "مرور کاتالوگ ما"
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.products_item
 msgid "Sale"
 msgstr "فروش"
@@ -1566,10 +2184,16 @@ msgid "Sales Order"
 msgstr "سفارش فروش"
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.model,name:website_sale.model_sale_order_line
 #: model:ir.model.fields,field_description:website_sale.field_product_product_sale_line_warn
 msgid "Sales Order Line"
 msgstr "سطر سفارش‌فروش"
+=======
+#: model:ir.model.fields,field_description:website_sale.field_website_config_settings_sale_pricelist_setting_split_2
+msgid "Sales Price"
+msgstr "قیمت فروش"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_salesteam_id
@@ -1584,11 +2208,47 @@ msgid "Salesperson"
 msgstr "فروشنده"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:83
 #, python-format
 msgid "Save"
 msgstr "ذخیره"
+=======
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Save my payment data"
+msgstr ""
+
+#. module: website_sale
+#: model:product.public.category,name:website_sale.Screen
+msgid "Screen"
+msgstr "صفحه نمایش"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart
+msgid "Secure Payment"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure delivery methods and shipping connectors"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure payment methods"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to configure pricing &amp; discounts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "See how to customize your catalog page"
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -1671,9 +2331,15 @@ msgid "Ship to the same address"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Shipping"
 msgstr "حمل"
+=======
+#: model:ir.ui.view,arch_db:website_sale.bill_to
+msgid "Ship To:"
+msgstr "ارسال به:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
@@ -1731,6 +2397,11 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid ""
 "Simply add the product you want as an <strong>'Optional Product'</strong>"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Sign Up"
 msgstr ""
 
 #. module: website_sale
@@ -1801,7 +2472,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "State / Province"
-msgstr ""
+msgstr "ایالت / استان"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
@@ -1848,8 +2519,13 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.confirmation
+<<<<<<< HEAD
 msgid "Taxes"
 msgstr ""
+=======
+msgid "Taxes:"
+msgstr "مالیاتها:"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_delivery_temando
@@ -1857,6 +2533,19 @@ msgid "Temando integration"
 msgstr ""
 
 #. module: website_sale
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_sale.website_planner
+msgid "Terms &amp; Conditions"
+msgstr "شرایط و ضوابط"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.terms
+msgid "Terms &amp;amp; Conditions"
+msgstr ""
+
+#. module: website_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:website_sale.confirmation
 msgid "Thank you for your order."
 msgstr ""
@@ -1989,12 +2678,12 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_published
 msgid "Visible in Website"
-msgstr ""
+msgstr "قابل دید در وبسایت"
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_rating_rating_website_published
 msgid "Visible on the website as a comment"
-msgstr ""
+msgstr "قابل دید در وبسایت به عنوان کامنت"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -2063,28 +2752,52 @@ msgstr ""
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_url
 msgid "Website URL"
-msgstr ""
+msgstr "URL وبسایت"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_meta_description
 msgid "Website meta description"
-msgstr ""
+msgstr "توضیحات متا وبسایت"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_meta_keywords
 msgid "Website meta keywords"
-msgstr ""
+msgstr "کلیدواژه‌های متا وبسایت"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_product_website_meta_title
 msgid "Website meta title"
-msgstr ""
+msgstr "عنوان متا وبسایت"
 
 #. module: website_sale
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_sale/static/src/js/website_sale_tour_shop.js:17
 #, python-format
 msgid "Welcome to your shop"
+=======
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_website_price
+#: model:ir.model.fields,field_description:website_sale.field_product_product_website_price
+#: model:ir.model.fields,field_description:website_sale.field_product_template_website_price
+msgid "Website price"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_website_public_price
+#: model:ir.model.fields,field_description:website_sale.field_product_product_website_public_price
+#: model:ir.model.fields,field_description:website_sale.field_product_template_website_public_price
+msgid "Website public price"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_crm_team_website_ids
+msgid "Websites"
+msgstr "وبسایتها"
+
+#. module: website_sale
+#: model:ir.model.fields,help:website_sale.field_crm_team_website_ids
+msgid "Websites using this sales team"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: website_sale
@@ -2126,7 +2839,7 @@ msgstr "نام"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.checkout
 msgid "Your Order"
-msgstr ""
+msgstr "سفارش شما"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_lines
@@ -2141,6 +2854,14 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
+<<<<<<< HEAD
+=======
+msgid "Your payment has been authorized."
+msgstr "این پرداخت مجاز است."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.order_state_message
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Your payment has been received."
 msgstr ""
 
@@ -2172,12 +2893,12 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product_comment
 msgid "comment"
-msgstr ""
+msgstr "کامنت"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.product_comment
 msgid "comments"
-msgstr ""
+msgstr "کامنتها"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_module_sale_ebay
@@ -2187,7 +2908,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_config_settings_view_form
 msgid "eCommerce"
-msgstr ""
+msgstr "تجارت الکترونیکی"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
@@ -2226,8 +2947,18 @@ msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
+<<<<<<< HEAD
 msgid "using one or several of the strategies above"
 msgstr ""
+=======
+msgid "use Odoo API to import through scripts"
+msgstr ""
+
+#. module: website_sale
+#: model:ir.model.fields,field_description:website_sale.field_product_pricelist_website_id
+msgid "website"
+msgstr "وبسایت"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_website_config_settings

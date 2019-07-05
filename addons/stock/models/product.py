@@ -4,7 +4,11 @@
 from odoo import api, fields, models, _
 from odoo.addons import decimal_precision as dp
 from odoo.exceptions import UserError
+<<<<<<< HEAD
 from odoo.tools import pycompat
+=======
+from odoo.osv import expression
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 from odoo.tools.float_utils import float_round
 from datetime import datetime
 import operator as py_operator
@@ -245,7 +249,9 @@ class Product(models.Model):
 
         # TODO: Still optimization possible when searching virtual quantities
         ids = []
-        for product in self.search([]):
+        # Order the search on `id` to prevent the default order on the product name which slows
+        # down the search because of the join on the translation table to get the translated names.
+        for product in self.search([], order='id'):
             if OPERATORS[operator](product[field], value):
                 ids.append(product.id)
         return [('id', 'in', ids)]
@@ -350,6 +356,7 @@ class Product(models.Model):
     def action_view_routes(self):
         return self.mapped('product_tmpl_id').action_view_routes()
 
+<<<<<<< HEAD
     def action_view_stock_move_lines(self):
         self.ensure_one()
         action = self.env.ref('stock.stock_move_line_action').read()[0]
@@ -363,10 +370,28 @@ class Product(models.Model):
         action['context'] = {'default_product_id': self.id}
         return action
 
+=======
+    @api.model
+    def search(self, args, offset=0, limit=None, order=None, count=False):
+        # ONLY FOR 10.0 UP TO SAAS-15
+        # ignore dummy fields used for search context²
+        for index in range(len(args or [])):
+            if args[index][0] in ('location_id', 'warehouse_id'):
+                args[index] = expression.TRUE_LEAF
+        return super(Product, self).search(args, offset=offset, limit=limit, order=order, count=count)
+
+    @api.multi
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     def write(self, values):
         res = super(Product, self).write(values)
-        if 'active' in values and not values['active'] and self.mapped('orderpoint_ids').filtered(lambda r: r.active):
-            raise UserError(_('You still have some active reordering rules on this product. Please archive or delete them first.'))
+        if 'active' in values and not values['active']:
+            products = self.mapped('orderpoint_ids').filtered(lambda r: r.active).mapped('product_id')
+            if products:
+                msg = _('You still have some active reordering rules on this product. Please archive or delete them first.')
+                msg += '\n\n'
+                for product in products:
+                    msg += '- %s \n' % product.display_name
+                raise UserError(msg)
         return res
 
 class ProductTemplate(models.Model):
@@ -419,9 +444,16 @@ class ProductTemplate(models.Model):
         relation="stock.location.route", string="Category Routes",
         related='categ_id.total_route_ids')
 
+<<<<<<< HEAD
     def _is_cost_method_standard(self):
         return True
 
+=======
+    @api.depends(
+        'product_variant_ids',
+        'product_variant_ids.stock_quant_ids',
+    )
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     def _compute_quantities(self):
         res = self._compute_quantities_dict()
         for template in self:
@@ -493,6 +525,19 @@ class ProductTemplate(models.Model):
     def onchange_tracking(self):
         return self.mapped('product_variant_ids').onchange_tracking()
 
+<<<<<<< HEAD
+=======
+    @api.model
+    def search(self, args, offset=0, limit=None, order=None, count=False):
+        # ONLY FOR 10.0 UP TO SAAS-15
+        # ignore dummy fields used for search context
+        for index in range(len(args or [])):
+            if args[index][0] in ('location_id', 'warehouse_id'):
+                args[index] = expression.TRUE_LEAF
+        return super(ProductTemplate, self).search(args, offset=offset, limit=limit, order=order, count=count)
+
+    @api.multi
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     def write(self, vals):
         if 'uom_id' in vals:
             new_uom = self.env['product.uom'].browse(vals['uom_id'])
@@ -500,6 +545,7 @@ class ProductTemplate(models.Model):
             done_moves = self.env['stock.move'].search([('product_id', 'in', updated.mapped('product_variant_ids').ids)], limit=1)
             if done_moves:
                 raise UserError(_("You can not change the unit of measure of a product that has already been used in a done stock move. If you need to change the unit of measure, you may deactivate this product."))
+<<<<<<< HEAD
         if any('type' in vals and vals['type'] != prod_tmpl.type for prod_tmpl in self):
             existing_move_lines = self.env['stock.move.line'].search([
                 ('product_id', 'in', self.mapped('product_variant_ids').ids),
@@ -507,6 +553,10 @@ class ProductTemplate(models.Model):
             ])
             if existing_move_lines:
                 raise UserError(_("You can not change the type of a product that is currently reserved on a stock move. If you need to change the type, you should first unreserve the stock move."))
+=======
+        if 'type' in vals and vals['type'] != 'product' and sum(self.mapped('nbr_reordering_rules')) != 0:
+            raise UserError(_('You still have some active reordering rules on this product. Please archive or delete them first.'))
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
         return super(ProductTemplate, self).write(vals)
 
     def action_view_routes(self):

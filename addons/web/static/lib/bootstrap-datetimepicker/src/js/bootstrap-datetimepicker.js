@@ -1575,6 +1575,7 @@
             if (typeof newFormat !== 'string') {
                 throw new TypeError('dayViewHeaderFormat() expects a string parameter');
             }
+<<<<<<< HEAD
 
             options.dayViewHeaderFormat = newFormat;
             return picker;
@@ -1583,6 +1584,16 @@
         picker.extraFormats = function (formats) {
             if (arguments.length === 0) {
                 return options.extraFormats;
+=======
+            // ODOO change so week starting not on sunday/monday have correct
+            // day name. This is solved in saas-15 by using new library version
+            var startDay = moment().localeData()._week.dow;
+            if (startDay === undefined) {
+                startDay = 1;
+            }
+            for (i = startDay; i < startDay + 7; i++) {
+                html.append('<th class="dow">' + weekdaysMin[i % 7] + '</th>');
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             }
 
             if (formats !== false && !(formats instanceof Array)) {

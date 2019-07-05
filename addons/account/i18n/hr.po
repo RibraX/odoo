@@ -4,6 +4,7 @@
 # * account
 #
 # Translators:
+<<<<<<< HEAD
 # Bole <bole@dajmi5.com>, 2016
 # Dalibor Ružić <Dalibor.Ruzic@storm.hr>, 2015
 # Bole <bole@dajmi5.com>, 2015
@@ -41,6 +42,33 @@ msgstr ""
 "Last-Translator: Davor Bojkić <davor.bojkic@storm.hr>\n"
 "Language-Team: Croatian (http://www.transifex.com/odoo/odoo-9/language/hr/)\n"
 "Language: hr\n"
+=======
+# Dalibor Ružić <Dalibor.Ruzic@storm.hr>, 2016
+# Marko Carević <marko.carevic@live.com>, 2016
+# Ana-Maria Olujić <ana-maria.olujic@slobodni-programi.hr>, 2016
+# Mario Jureša <mario.juresa@uvid.hr>, 2016
+# storm_mpildek <matija.pildek@storm.hr>, 2016
+# Đurđica Žarković <durdica.zarkovic@storm.hr>, 2016
+# Stjepan Lovasić <stjepan.lovasic@storm.hr>, 2016
+# Davor Bojkić <davor.bojkic@storm.hr>, 2016
+# Karolina Tonković <karolina.tonkovic@storm.hr>, 2016
+# Jasmina Otročak <jasmina@uvid.hr>, 2016
+# Vladimir Olujić <olujic.vladimir@storm.hr>, 2016
+# Martin Trigaux, 2016
+# Bole <bole@dajmi5.com>, 2017
+# Ivica Dimjašević <ivica.dimjasevic@storm.hr>, 2017
+# Ivan Marijanović <ivanm101@yahoo.com>, 2018
+# Tina Milas, 2018
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-26 08:44+0000\n"
+"PO-Revision-Date: 2016-09-07 09:15+0000\n"
+"Last-Translator: Tina Milas, 2018\n"
+"Language-Team: Croatian (https://www.transifex.com/odoo/teams/41243/hr/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -998,7 +1026,17 @@ msgid "A selected move line was already reconciled."
 msgstr "Odabrane stavke temeljnica su već proknjižene."
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account_bank_statement.py:226
+=======
+#: code:addons/account/models/account_bank_statement.py:883
+#, python-format
+msgid "A selected statement line was already reconciled with an account move."
+msgstr "Odabrana stavka izvoda je već zatvorena s transakcijom računa."
+
+#. module: account
+#: code:addons/account/models/account_bank_statement.py:218
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid "A statement cannot be canceled when its lines are reconciled."
 msgstr "Izjava ne može biti otkazana kada su njene linije usklađene."
@@ -1479,6 +1517,19 @@ msgid "Address"
 msgstr "Adresa"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_tax_id
+msgid "Adjustment Tax"
+msgstr "Prilagodba poreza"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_adjustment_type
+msgid "Adjustment Type"
+msgstr "Vrsta prilagodbe"
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 msgid "Advanced Options"
@@ -2124,6 +2175,12 @@ msgstr "Zadana postavka zatvaranja izvoda banke"
 #: model:ir.ui.view,arch_db:account.view_bank_statement_search
 msgid "Bank Statement"
 msgstr "Izvod banke"
+
+#. module: account
+#: code:addons/account/models/account_bank_statement.py:935
+#, python-format
+msgid "Bank Statement %s"
+msgstr "Izvod banke%s"
 
 #. module: account
 #: model:ir.model,name:account.model_account_bank_statement_line
@@ -3464,6 +3521,27 @@ msgstr "Dana nakon datuma računa"
 #: selection:account.payment.term.line,option:0
 msgid "Day(s) after the invoice date"
 msgstr "Dana nakon datuma računa"
+
+#. module: account
+#: model:res.company,overdue_msg:base.main_company
+msgid ""
+"Dear Sir/Madam,\n"
+"\n"
+"Our records indicate that some payments on your account are still due. Please find details below.\n"
+"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
+"If you have any queries regarding your account, Please contact us.\n"
+"\n"
+"Thank you in advance for your cooperation.\n"
+"Best Regards,"
+msgstr ""
+"Poštovani Gospodine/Gospođo,\n"
+"\n"
+"Naša evidencija pokazuje da ima nepodmiranih dugovanja. Molimo ispunite sljedeće podatke.\n"
+"Ukoliko je iznos već plaćen, molimo zanemarite ovu obavijest, u protivnom, molimo da uplatite ukupan navedeni iznos.\n"
+"Ukoliko imate pitanja vezanih za Vaš račun, molimo da nas kontaktirate.\n"
+"\n"
+"Unaprijed zahvaljujemo na suradnji.\n"
+"Srdačan pozdrav,"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_debit
@@ -5487,6 +5565,14 @@ msgid "June"
 msgstr "Lipanj"
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard_reason
+msgid "Justification"
+msgstr "Opravdanje"
+
+#. module: account
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:account.field_account_journal_kanban_dashboard
 msgid "Kanban dashboard"
 msgstr "Kanban kontrolna ploča"
@@ -10106,7 +10192,19 @@ msgstr ""
 "stavke zatvaranja."
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account.py:162
+=======
+#: code:addons/account/models/company.py:118
+#, python-format
+msgid ""
+"You cannot change the currency of the company since some journal items "
+"already exist"
+msgstr ""
+
+#. module: account
+#: code:addons/account/models/account.py:180
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
 msgid ""
 "You cannot change the owner company of an account that already contains "
@@ -10667,6 +10765,7 @@ msgstr "wizard.multi.charts.accounts"
 msgid "→ Count"
 msgstr "→ Prebroji"
 
+<<<<<<< HEAD
 #~ msgid ""
 #~ "\n"
 #~ "<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-"
@@ -10905,3 +11004,12 @@ msgstr "→ Prebroji"
 
 #~ msgid "Website communication history"
 #~ msgstr "Povijest komunikacije Web stranice"
+=======
+#. module: account
+#: code:addons/account/models/account.py:309
+#, python-format
+msgid ""
+"Currency field should only be set if the journal's currency is different "
+"from the company's. Leave the field blank to use company currency."
+msgstr ""
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

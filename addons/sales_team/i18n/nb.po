@@ -3,17 +3,37 @@
 # * sales_team
 #
 # Translators:
+<<<<<<< HEAD
 # Mari Løken <mari@tinderbox.no>, 2015
+=======
+# Joachim Flottorp (Joachim flottorp) <joachimflottorp@gmail.com>, 2016
+# Aleksander, 2016
+# Mari Løken <inactive+mari123@transifex.com>, 2016
+# Roy Edvard Ellingsen <roy@royedvard.com>, 2016
+# Martin Trigaux, 2016
+# Eirik Halvorsen <eirik386@gmail.com>, 2017
+# Viktor Basso <viktor@voit.no>, 2017
+# Jorunn D. Newth, 2017
+# Marius Stedjan <marius@stedjan.com>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-04-30 18:51+0000\n"
 "Last-Translator: Mari Løken <mari@tinderbox.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/odoo/odoo-9/"
 "language/nb/)\n"
 "Language: nb\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:29+0000\n"
+"Last-Translator: Marius Stedjan <marius@stedjan.com>, 2018\n"
+"Language-Team: Norwegian Bokmål (https://www.transifex.com/odoo/teams/41243/nb/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -92,7 +112,7 @@ msgstr ""
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:182
 #, python-format
 msgid "Click to set"
-msgstr ""
+msgstr "Klikk for å sette"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_code
@@ -111,6 +131,45 @@ msgid "Company"
 msgstr "Firma"
 
 #. module: sales_team
+<<<<<<< HEAD
+=======
+#: model:ir.ui.menu,name:sales_team.menu_sale_config
+msgid "Configuration"
+msgstr "Konfigurasjon"
+
+#. module: sales_team
+#: model:ir.actions.act_window,name:sales_team.action_sale_config
+#: model:ir.ui.view,arch_db:sales_team.view_sale_config_settings
+msgid "Configure Sales"
+msgstr "Konfigurasjons salgs"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_partner_category_form
+msgid "Contact Tags"
+msgstr "Kontakt-tagger"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_partner_title_contact
+msgid "Contact Titles"
+msgstr "Kontakttitler"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_config_address_book
+msgid "Contacts"
+msgstr "Kontakter"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_partner
+msgid "Countries"
+msgstr "Land"
+
+#. module: sales_team
+#: model:ir.ui.menu,name:sales_team.menu_country_group
+msgid "Country Group"
+msgstr "Land-gruppe"
+
+#. module: sales_team
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #. openerp-web
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:215
 #, python-format
@@ -134,7 +193,7 @@ msgstr "Opprettet den"
 #: model:ir.ui.menu,name:sales_team.menu_sales_team_act
 #, python-format
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
 #. module: sales_team
 #: model:crm.team,name:sales_team.team_sales_department
@@ -152,6 +211,8 @@ msgid ""
 "Follow this salesteam to automatically track the events associated to users "
 "of this team."
 msgstr ""
+"Følg denne salgskanalen for automatisk tracking av hendelser knyttet til "
+"brukere av kanalen."
 
 #. module: sales_team
 #. openerp-web
@@ -206,7 +267,7 @@ msgstr "Sist oppdatert "
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:188
 #, python-format
 msgid "Last Month"
-msgstr ""
+msgstr "Siste måned"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_write_uid
@@ -242,7 +303,7 @@ msgstr ""
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:216
 #, python-format
 msgid "My Pipeline"
-msgstr ""
+msgstr "Salgstrakten min"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
@@ -268,7 +329,7 @@ msgstr "Neste handling."
 #: code:addons/sales_team/static/src/js/sales_team_dashboard.js:84
 #, python-format
 msgid "Only Integer Value should be valid."
-msgstr ""
+msgstr "Kun heltall er gyldig verdi"
 
 #. module: sales_team
 #: model:ir.model,name:sales_team.model_res_partner
@@ -280,7 +341,7 @@ msgstr "Partner"
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:102
 #, python-format
 msgid "Performance"
-msgstr ""
+msgstr "Ytelse"
 
 #. module: sales_team
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_reply_to
@@ -324,12 +385,12 @@ msgstr ""
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_view_form
 msgid "Salesteam name..."
-msgstr ""
+msgstr "Salgskanalnavn"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_search
 msgid "Salesteams Search"
-msgstr ""
+msgstr "Salgskanalsøk"
 
 #. module: sales_team
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
@@ -377,7 +438,7 @@ msgstr ""
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:102
 #, python-format
 msgid "This Month"
-msgstr ""
+msgstr "Denne måneden"
 
 #. module: sales_team
 #: model:ir.model.fields,help:sales_team.field_res_users_property_product_pricelist
@@ -441,7 +502,7 @@ msgstr ""
 #: code:addons/sales_team/static/src/xml/sales_team_dashboard.xml:13
 #, python-format
 msgid "To do"
-msgstr ""
+msgstr "Å gjøre"
 
 #. module: sales_team
 #. openerp-web
@@ -461,6 +522,19 @@ msgid ""
 msgstr ""
 
 #. module: sales_team
+<<<<<<< HEAD
+=======
+#: model:res.groups,name:sales_team.group_sale_salesman_all_leads
+msgid "User: All Documents"
+msgstr "Bruker: Alle dokumenter"
+
+#. module: sales_team
+#: model:res.groups,name:sales_team.group_sale_salesman
+msgid "User: Own Documents Only"
+msgstr "Bruker: Bare egne dokumenter"
+
+#. module: sales_team
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:sales_team.model_res_users
 msgid "Users"
 msgstr "Brukere"
@@ -496,8 +570,18 @@ msgstr ""
 #~ msgid "Action Needed"
 #~ msgstr "Handling"
 
+<<<<<<< HEAD
 #~ msgid "Date of the last message posted on the record."
 #~ msgstr "Dato for siste melding på denne posten."
+=======
+#. module: sales_team
+#: model:res.groups,comment:sales_team.group_sale_salesman_all_leads
+msgid ""
+"the user will have access to all records of everyone in the sales "
+"application."
+msgstr ""
+"brukeren vil ha tilgang til alle oppføringer fra alle i salgsapplikasjonen"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #~ msgid "Followers"
 #~ msgstr "Følgere."

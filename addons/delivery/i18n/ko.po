@@ -3,15 +3,37 @@
 # * delivery
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Spike Lee <rurouni24@gmail.com>, 2017
+# Youngsoo Jung <youngsoo.j@gmail.com>, 2017
+# 방상우 <mrroom@gmail.com>, 2017
+# 종현 엄 <whd5367@naver.com>, 2017
+# Hwang, Geon Gu <under_09@naver.com>, 2017
+# Goh Gangtai <gangtai.goh@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Linda Stockelova <stockeloval@btlnet.com>, 2018
+# Link Up링크업 <linkup.way@gmail.com>, 2018
+# Linkup <link-up@naver.com>, 2018
+# JH CHOI <hwangtog@gmail.com>, 2019
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-02-11 10:34+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "Language: ko\n"
+=======
+"POT-Creation-Date: 2016-09-07 08:56+0000\n"
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: JH CHOI <hwangtog@gmail.com>, 2019\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -60,19 +82,19 @@ msgstr "파생 상품의 #"
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_quant_package_form_save
 msgid "<span>kg</span>"
-msgstr ""
+msgstr "<span>kg</span>"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.report_delivery_document2
 #: model:ir.ui.view,arch_db:delivery.report_shipping2
 msgid "<strong>Carrier</strong>"
-msgstr ""
+msgstr "<strong>운송 회사</strong>"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.report_delivery_document2
 #: model:ir.ui.view,arch_db:delivery.report_shipping2
 msgid "<strong>Weight</strong>"
-msgstr ""
+msgstr "<strong>무게</strong>"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_product_type
@@ -108,11 +130,36 @@ msgid ""
 msgstr "상품의 상세한 설명, 내부 정보용으로만 사용됩니다."
 
 #. module: delivery
-#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction
-msgid "Action Needed"
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_product_type
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_type
+msgid ""
+"A stockable product is a product for which you manage stock. The \"Inventory\" app has to be installed.\n"
+"A consumable product, on the other hand, is a product for which stock is not managed.\n"
+"A service is a non-material product you provide.\n"
+"A digital content is a non-material product you sell online. The files attached to the products are the one that are sold on the e-commerce such as e-books, music, pictures,... The \"Digital Product\" module has to be installed."
 msgstr ""
+"재고가있는 제품은 재고를 관리하는 제품입니다. '재고'앱을 설치해야합니다.\n"
+"반면에 소모품은 재고가 관리되지 않는 제품입니다.\n"
+"서비스는 귀하가 제공 한 무형 제품입니다.\n"
+"디지털 컨텐츠는 온라인으로 판매되는 무형 제품입니다. 제품에 첨부 된 파일은 전자 서적, 음악, 그림 등 전자 상거래에서 판매되는 파일입니다. \"디지털 제품\"모듈을 설치해야합니다."
 
 #. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction
+msgid "Action Needed"
+msgstr "필요한 조치"
+
+#. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_integration_level
+msgid "Action while validating Delivery Orders"
+msgstr "배송 주문 확인 중 작업"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_active
 msgid "Active"
 msgstr "활성"
@@ -137,7 +184,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_asset_category_id
 msgid "Asset Type"
-msgstr ""
+msgstr "자산 종류"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_attribute_value_ids
@@ -188,7 +235,7 @@ msgstr "계산용 기준 가격. 카탈로그 가격이라고도 불리웁니다
 #. module: delivery
 #: selection:delivery.carrier,delivery_type:0
 msgid "Based on Rules"
-msgstr ""
+msgstr "기준 규칙"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_image
@@ -203,7 +250,7 @@ msgstr "재료 명세서"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_weight_bulk
 msgid "Bulk Weight"
-msgstr ""
+msgstr "벌크 무게"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_ok
@@ -251,7 +298,7 @@ msgstr "운송회사"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_route_from_categ_ids
 msgid "Category Routes"
-msgstr ""
+msgstr "카테고리 경로"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_membership
@@ -288,7 +335,7 @@ msgstr "조건"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_method
 msgid "Control Purchase Bills"
-msgstr ""
+msgstr "구매 청구서 관리"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_standard_price
@@ -403,7 +450,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_deferred_revenue_category_id
 msgid "Deferred Revenue Type"
-msgstr ""
+msgstr "유예 수익 종류"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_delivery_count
@@ -414,14 +461,23 @@ msgstr "배송"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_search
+<<<<<<< HEAD
 msgid "Delivery Carrier Search"
 msgstr ""
+=======
+msgid "Delivery Carrier"
+msgstr "배송 회사"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_picking_withcarrier_out_form
 #, fuzzy
 msgid "Delivery Information"
+<<<<<<< HEAD
 msgstr "운송회사 정보"
+=======
+msgstr "배송 정보"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_res_partner_property_delivery_carrier_id
@@ -439,7 +495,7 @@ msgstr "운송 방법"
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_price_rule
 msgid "Delivery Price Rules"
-msgstr ""
+msgstr "배송 가격 규칙"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_product_id
@@ -462,7 +518,7 @@ msgstr "설명"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_description_picking
 msgid "Description on Picking"
-msgstr ""
+msgstr "선별시 설명"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
@@ -502,6 +558,8 @@ msgid ""
 "attached\n"
 "                to each method."
 msgstr ""
+"각 운송업체(예 : UPS)는 각 배송 방법에 일련의 가격 규칙이 포함된 여러 가지 배송 방법(예 : UPS Express, UPS "
+"Standard)을 가질 수 있습니다."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_prod_environment
@@ -511,7 +569,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_sale_order_delivery_price
 msgid "Estimated Delivery Price"
-msgstr ""
+msgstr "예상 배송 가격"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_event_ok
@@ -559,6 +617,7 @@ msgid "Expense Account"
 msgstr "비용 계정"
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_expense_policy
 msgid "Expense Invoice Policy"
 msgstr ""
@@ -567,6 +626,18 @@ msgstr ""
 #: model:ir.model.fields,help:delivery.field_sale_order_carrier_id
 msgid "Fill this field if you plan to invoice the shipping based on picking."
 msgstr ""
+=======
+#: model:ir.model.fields,help:delivery.field_sale_order_carrier_id
+msgid "Fill this field if you plan to invoice the shipping based on picking."
+msgstr "선적된 실제 수량을 기준으로 송장을 작성하려면 이 필드를 채우십시오."
+
+#. module: delivery
+#: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
+msgid ""
+"Filling this form allows you to filter delivery carriers according to the "
+"delivery address of your customer."
+msgstr "이 양식을 작성하면 고객의 배달 주소에 따라 배송 업체를 필터링할 수 있습니다."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: selection:delivery.carrier,delivery_type:0
@@ -615,7 +686,7 @@ msgstr ""
 #: model:delivery.carrier,name:delivery.free_delivery_carrier
 #: model:product.product,name:delivery.free_delivery_carrier_product_product
 msgid "Free delivery charges"
-msgstr ""
+msgstr "배송 요금 무료"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_free_if_more_than
@@ -623,6 +694,19 @@ msgid "Free if Order total is more than"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: selection:delivery.carrier,integration_level:0
+msgid "Get Rate"
+msgstr "요율"
+
+#. module: delivery
+#: selection:delivery.carrier,integration_level:0
+msgid "Get Rate and Create Shipment"
+msgstr "요율 가져오기 및 적하물 작성"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_packaging_ids
 msgid ""
 "Gives the different ways to package the same product. This has no impact on "
@@ -654,7 +738,7 @@ msgstr "무게"
 #. module: delivery
 #: sql_constraint:product.packaging:0
 msgid "Height must be positive"
-msgstr ""
+msgstr "높이는 양수여야 합니다"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_id
@@ -670,7 +754,7 @@ msgstr "선택하면 새로운 메시지를 주목할 필요가 있습니다."
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "만약 선택하였으면, 새 메시지에 주의를 기울여야 합니다."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_property_valuation
@@ -712,6 +796,8 @@ msgid ""
 "It is automatically resized as a 1024x1024px image, with aspect ratio "
 "preserved."
 msgstr ""
+"제품 종류 이미지(false일 경우, 제품 템플릿의 대형 이미지). 가로세로비는 그대로 유지되고 1024x1024px 크기로 자동 "
+"조정됩니다."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_image_medium
@@ -738,6 +824,19 @@ msgid "Incoming"
 msgstr "입고"
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
+msgid "Install more Providers"
+msgstr "더 많은 공급업체 설치"
+
+#. module: delivery
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_integration_level
+msgid "Integration Level"
+msgstr "통합 수준"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_categ_id
 msgid "Internal Category"
 msgstr "내부 분류"
@@ -766,7 +865,7 @@ msgstr "재고 평가"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_sale_order_invoice_shipping_on_delivery
 msgid "Invoice Shipping on Delivery"
-msgstr ""
+msgstr "배송 시 송장 발송"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_state
@@ -776,12 +875,12 @@ msgstr "송장 상태"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_policy
 msgid "Invoicing Policy"
-msgstr ""
+msgstr "송장 정책"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "팔로워입니다"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_sale_order_line_is_delivery
@@ -825,12 +924,12 @@ msgstr "최근 갱신 날짜"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_product_packaging_length
 msgid "Length"
-msgstr ""
+msgstr "길이"
 
 #. module: delivery
 #: sql_constraint:product.packaging:0
 msgid "Length must be positive"
-msgstr ""
+msgstr "길이는 양수여야 합니다"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_location_id
@@ -857,6 +956,9 @@ msgid ""
 "Create a task and track hours: Create a task on the sale order validation "
 "and track the work hours."
 msgstr ""
+"주문 수량 수동 설정 : 분석계정을 만들지 않고 직접 입력 한 수량을 기반으로 한 송장.\n"
+"계약시 작업 표 : 관련 출퇴근 시간 기록표와 추적 시간을 기준으로 한 송장.\n"
+"작업 만들기 및 시간 추적 : 판매 주문 유효성 검사에 대한 작업을 만들고 작업 시간을 추적합니다."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_produce_delay
@@ -882,18 +984,22 @@ msgstr "이익 마감일"
 #. module: delivery
 #: sql_constraint:delivery.carrier:0
 msgid "Margin cannot be lower than -100%"
-msgstr ""
+msgstr "이윤은 -100%보다 낮을 수 없습니다"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_product_packaging_max_weight
 #, fuzzy
 msgid "Max Weight"
+<<<<<<< HEAD
 msgstr "무게"
+=======
+msgstr "최대 중량"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: sql_constraint:product.packaging:0
 msgid "Max Weight must be positive"
-msgstr ""
+msgstr "무게는 양수여야 합니다"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_max_value
@@ -903,7 +1009,7 @@ msgstr "최대 가치"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_product_packaging_max_weight
 msgid "Maximum weight shippable in this packaging"
-msgstr ""
+msgstr "이 포장으로 수송할 수 있는 최대 중량"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_image_medium
@@ -946,7 +1052,11 @@ msgstr "이름"
 #: selection:product.packaging,package_carrier_type:0
 #, fuzzy
 msgid "No carrier integration"
+<<<<<<< HEAD
 msgstr "운송회사 정보"
+=======
+msgstr "운송 회사 통합 없음"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: code:addons/delivery/models/sale_order.py:63
@@ -958,7 +1068,7 @@ msgstr ""
 #: code:addons/delivery/models/sale_order.py:72
 #, python-format
 msgid "No carrier set for this order."
-msgstr ""
+msgstr "이 주문에 설정된 운송회사가 없습니다."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_normal_cost
@@ -974,12 +1084,12 @@ msgstr "기본 원가 - 총 원가"
 #: model:delivery.carrier,name:delivery.normal_delivery_carrier
 #: model:product.product,name:delivery.normal_delivery_carrier_product_product
 msgid "Normal Delivery Charges"
-msgstr ""
+msgstr "일반 배송료"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "작업 횟수"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_number_of_packages
@@ -989,12 +1099,12 @@ msgstr "패키지 수"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "조치가 필요한 메시지 수"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "읽지 않은 메시지 수"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_method
@@ -1002,6 +1112,8 @@ msgid ""
 "On ordered quantities: Invoice this product based on ordered quantities.\n"
 "On received quantities: Invoice this product based on received quantity."
 msgstr ""
+"주문 수량 : 주문 수량을 기준으로 청구서 대조 .\n"
+"수신 된 수량 : 수신 된 수량을 기준으로 청구서를 관리합니다."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_operator
@@ -1016,6 +1128,8 @@ msgid ""
 "Reinvoice Costs: Invoice with some additional charges (product transfer, "
 "labour charges,...)"
 msgstr ""
+"주문된 수량 : 송장에 고객이 주문한 수량을 반영합니다.\n"
+"납품된 수량 : 송장에 공급업체가 납품한 수량을 반영합니다.(시간 또는 납품)"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_outgoing_qty
@@ -1032,14 +1146,22 @@ msgstr "꾸러미"
 #: model:ir.model.fields,field_description:delivery.field_product_packaging_shipper_package_code
 #, fuzzy
 msgid "Package Code"
+<<<<<<< HEAD
 msgstr "꾸러미"
+=======
+msgstr "묶음 상품 코드"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: code:addons/delivery/models/stock_picking.py:35
 #: code:addons/delivery/models/stock_picking.py:128
 #, fuzzy, python-format
 msgid "Package Details"
+<<<<<<< HEAD
 msgstr "꾸러미"
+=======
+msgstr "묶음 상품 내용"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_package_ids
@@ -1090,7 +1212,7 @@ msgstr "가격 차이 계정"
 #: model:ir.ui.view,arch_db:delivery.view_delivery_price_rule_form
 #: model:ir.ui.view,arch_db:delivery.view_delivery_price_rule_tree
 msgid "Price Rules"
-msgstr ""
+msgstr "가격 규칙"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_pricelist_id
@@ -1105,12 +1227,12 @@ msgstr ""
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
 msgid "Pricing"
-msgstr ""
+msgstr "가격책정"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_price_rule_ids
 msgid "Pricing Rules"
-msgstr ""
+msgstr "가격 책정 규칙"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_property_stock_procurement
@@ -1237,6 +1359,14 @@ msgstr ""
 "그렇지 않으면, '내부' 유형으로 어떤 재고 위치를 떠나는 상품을 포함합니다."
 
 #. module: delivery
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:delivery.field_delivery_carrier_expense_policy
+msgid "Re-Invoice Expenses"
+msgstr "송장 재발행 비용"
+
+#. module: delivery
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_reception_count
 msgid "Receipt"
 msgstr "수령"
@@ -1259,7 +1389,7 @@ msgstr "경로"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_list_base_price
 msgid "Sale Base Price"
-msgstr ""
+msgstr "기본 판매 가격"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_description_sale
@@ -1320,7 +1450,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_picking_withcarrier_out_form
 msgid "Send to Shipper"
-msgstr ""
+msgstr "선적업체에 보내기"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_sequence
@@ -1336,7 +1466,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_prod_environment
 msgid "Set to True if your credentials are certified for production."
-msgstr ""
+msgstr "자격 증명이 프로덕션에 대해 인증된 경우 True로 설정합니다."
 
 #. module: delivery
 #: code:addons/delivery/models/stock_picking.py:147
@@ -1349,12 +1479,12 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_carrier_price
 msgid "Shipping Cost"
-msgstr ""
+msgstr "선적 비용"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_quant_package_shipping_weight
 msgid "Shipping Weight"
-msgstr ""
+msgstr "선적 무게"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_shipping_enabled
@@ -1454,15 +1584,28 @@ msgid "Sum of Quantity in Vendor Bills"
 msgstr ""
 
 #. module: delivery
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_name_template
 msgid "Template Name"
 msgstr "서식 이름"
+=======
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_pricelist_id
+msgid ""
+"Technical field. Used for searching on pricelists, not stored in database."
+msgstr ""
+
+#. module: delivery
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_move_ids
+#: model:ir.model.fields,help:delivery.field_delivery_carrier_stock_quant_ids
+msgid "Technical: used to compute quantities."
+msgstr "기술 : 수량 계산에 사용됩니다."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:delivery.carrier,name:delivery.delivery_carrier
 #: model:product.product,name:delivery.delivery_carrier_product_product
 msgid "The Poste"
-msgstr ""
+msgstr "게시물"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_delay
@@ -1503,6 +1646,8 @@ msgid ""
 "the\n"
 "                quotation) or the invoice (based on the delivery orders)."
 msgstr ""
+"판매 주문(따옴표 기준) 또는 송장(배송 주문 기준)을 기준으로 하는 방법을 사용하면 설정에 따라 배송 가격을 자동으로 계산할 수 "
+"있습니다. "
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_property_account_expense_id
@@ -1545,7 +1690,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_margin
 msgid "This percentage will be added to the shipping price."
-msgstr ""
+msgstr "이 비율로 선적 비용에 추가됩니다."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_property_stock_production
@@ -1597,7 +1742,7 @@ msgstr "총 이익 * 100 / 회전율"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_track_service
 msgid "Track Service"
-msgstr ""
+msgstr "서비스 추적"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_tracking
@@ -1609,7 +1754,11 @@ msgstr "추적"
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_carrier_tracking_ref
 #, fuzzy
 msgid "Tracking Reference"
+<<<<<<< HEAD
 msgstr "내부 참조"
+=======
+msgstr "추적 참조"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_stock_picking
@@ -1702,7 +1851,7 @@ msgstr "파생 그림"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_supplier_taxes_id
 msgid "Vendor Taxes"
-msgstr ""
+msgstr "공급 업체 세금"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_seller_ids
@@ -1759,7 +1908,7 @@ msgstr "무게 + 체적"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_shipping_weight
 msgid "Weight for Shipping"
-msgstr ""
+msgstr "선적 중량"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_alert_time
@@ -1834,7 +1983,7 @@ msgstr ""
 #. module: delivery
 #: sql_constraint:product.packaging:0
 msgid "Width must be positive"
-msgstr ""
+msgstr "폭은 양수여야 합니다"
 
 #. module: delivery
 #: code:addons/delivery/models/stock_picking.py:187
@@ -1843,6 +1992,8 @@ msgid ""
 "You are shipping different packaging types in the same shipment.\n"
 "Packaging Types: %s"
 msgstr ""
+"동일한 발송물에 다른 상품 포장 유형으로 선적하고 있습니다.\n"
+"상품 포장 유형 : %s"
 
 #. module: delivery
 #: code:addons/delivery/models/stock_picking.py:163
@@ -1850,21 +2001,22 @@ msgstr ""
 msgid ""
 "Your delivery method has no redirect on courier provider's website to track "
 "this order."
-msgstr ""
+msgstr "이 배송 방법은 이 주문을 추적하기 위해 택배 회사 웹 사이트로 연결되지 않습니다."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_zip_from
 msgid "Zip From"
-msgstr ""
+msgstr "발송지 우편번호"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_zip_to
 msgid "Zip To"
-msgstr ""
+msgstr "도착지 우편번호"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
 msgid "e.g. UPS Express"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: delivery
@@ -1883,3 +2035,6 @@ msgstr "알 수 없음"
 
 #~ msgid "Status"
 #~ msgstr "상태"
+=======
+msgstr "예 : UPS Express"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

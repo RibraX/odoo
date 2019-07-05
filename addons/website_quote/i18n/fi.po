@@ -3,6 +3,7 @@
 # * website_quote
 # 
 # Translators:
+<<<<<<< HEAD
 # Martin Trigaux <mat@odoo.com>, 2017
 # Veikko Väätäjä <veikko.vaataja@gmail.com>, 2017
 # Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2017
@@ -13,13 +14,32 @@
 # Jussi Lehto <jussi@gulfeo.com>, 2017
 # Miku Laitinen <miku.laitinen@gmail.com>, 2017
 # Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2017
+=======
+# Marko Happonen <marko.happonen@sprintit.fi>, 2016
+# Mikko Salmela <salmemik@gmail.com>, 2016
+# Kari Lindgren <kari.lindgren@emsystems.fi>, 2016
+# Pekko Tuomisto <pekko.tuomisto@web-veistamo.fi>, 2016
+# Martin Trigaux, 2016
+# Miku Laitinen <miku.laitinen@gmail.com>, 2016
+# Atte Isopuro <atte.isopuro@web-veistamo.fi>, 2017
+# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2018
+# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2018
+# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2017-10-02 11:26+0000\n"
 "PO-Revision-Date: 2017-10-02 11:26+0000\n"
 "Last-Translator: Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2017\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:28+0000\n"
+"PO-Revision-Date: 2016-09-07 09:33+0000\n"
+"Last-Translator: Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2018\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "Language-Team: Finnish (https://www.transifex.com/odoo/teams/41243/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -188,6 +208,27 @@ msgid ""
 msgstr ""
 
 #. module: website_quote
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_quote.quotations
+msgid ""
+"<span class=\"label label-default\"><i class=\"fa fa-fw fa-clock-o\"/> "
+"Expired</span>"
+msgstr ""
+"<span class=\"label label-default\"><i class=\"fa fa-fw fa-clock-o\"/> "
+"Vanhentunut</span>"
+
+#. module: website_quote
+#: model:ir.ui.view,arch_db:website_quote.quotations
+msgid ""
+"<span class=\"label label-default\"><i class=\"fa fa-fw fa-remove\"/> "
+"Cancelled</span>"
+msgstr ""
+"<span class=\"label label-default\"><i class=\"fa fa-fw fa-remove\"/> "
+"Peruttu</span>"
+
+#. module: website_quote
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:product.product,quote_description:website_quote.product_product_quote_2
 #: model:product.template,quote_description:website_quote.product_product_quote_2_product_template
 #: model:product.template,quote_description:website_quote.product_template_quote_2
@@ -325,10 +366,15 @@ msgstr "Tietoa meistä"
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_1
+<<<<<<< HEAD
 msgid ""
 "Access to an Account Manager at Odoo SA to discuss strategic, sales and "
 "service issues"
 msgstr ""
+=======
+msgid "A Strong Demand"
+msgstr "Kova kysyntä"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_1
@@ -375,6 +421,8 @@ msgstr "Summa ennen alennusta"
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_1
 msgid "An Odoo official partner commits to:"
 msgstr ""
+"Järjestelmän ylläpitäjä voi asettaa yrityksen asetuksista oletusarvot oston "
+"ehdoille."
 
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.view_sale_quote_template_search
@@ -496,7 +544,7 @@ msgstr ""
 #. module: website_quote
 #: model:ir.actions.act_window,help:website_quote.action_sale_quotation_template
 msgid "Click here to create your template."
-msgstr ""
+msgstr "Paina tästä luodaksesi mallin."
 
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.view_sale_quote_template_form
@@ -786,7 +834,7 @@ msgstr ""
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation
 msgid "Incl. tax)"
-msgstr ""
+msgstr "sis. alv)"
 
 #. module: website_quote
 #: model:product.product,quote_description:website_quote.product_product_quote_2
@@ -1023,19 +1071,33 @@ msgid "Order paid by %s. Transaction: %s. Amount: %s."
 msgstr "Tilaus maksettu %s toimesta. Transaktio: %s. Summa: %s."
 
 #. module: website_quote
+<<<<<<< HEAD
+=======
+#: code:addons/website_quote/controllers/main.py:90
+#, python-format
+msgid "Order signed by %s"
+msgstr "Tilauksen allekirjoittaja: %s"
+
+#. module: website_quote
+#: model:ir.ui.view,arch_db:website_quote.view_sale_quote_template_form
+msgid "Other Settings"
+msgstr "Muut asetukset"
+
+#. module: website_quote
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_default
 msgid "Our Offer"
-msgstr ""
+msgstr "Tarjoomamme"
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_default
 msgid "Our Quality"
-msgstr ""
+msgstr "Meidän laatumme"
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_default
 msgid "Our Service"
-msgstr ""
+msgstr "Meidän palvelumme"
 
 #. module: website_quote
 #: model:product.product,quote_description:website_quote.product_product_quote_2
@@ -1411,6 +1473,8 @@ msgid ""
 "This e-mail template will be sent on confirmation. Leave empty to send "
 "nothing."
 msgstr ""
+"Tämä sähköpostipohja lähetetään hyväksynnästä. Jätä tyhjäksi, jos et halua "
+"lähettää mitään."
 
 #. module: website_quote
 #: model:sale.quote.template,website_description:website_quote.website_quote_template_default
@@ -1627,7 +1691,7 @@ msgstr "Viitteenne:"
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation
 msgid "Your advantage:"
-msgstr ""
+msgstr "Etusi:"
 
 #. module: website_quote
 #: model:product.product,quote_description:website_quote.product_product_quote_1
@@ -1635,7 +1699,7 @@ msgstr ""
 #: model:product.template,quote_description:website_quote.product_template_quote_1
 #: model:sale.quote.line,website_description:website_quote.website_sale_order_line_1
 msgid "Your advantages"
-msgstr ""
+msgstr "Etusi"
 
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation

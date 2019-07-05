@@ -96,12 +96,28 @@ class StockQuant(models.Model):
         return 'fifo'
 
     @api.model
+<<<<<<< HEAD
     def _get_removal_strategy_order(self, removal_strategy):
         if removal_strategy == 'fifo':
             return 'in_date, id'
         elif removal_strategy == 'lifo':
             return 'in_date desc, id desc'
         raise UserError(_('Removal strategy %s not implemented.') % (removal_strategy,))
+=======
+    def read_group(self, domain, fields, groupby, offset=0, limit=None, orderby=False, lazy=True):
+        " Overwrite the read_group in order to sum the function field 'inventory_value' in group by "
+        # TDE NOTE: WHAAAAT ??? is this because inventory_value is not stored ?
+        # TDE FIXME: why not storing the inventory_value field ? company_id is required, stored, and should not create issues
+        res = super(Quant, self).read_group(domain, fields, groupby, offset=offset, limit=limit, orderby=orderby, lazy=lazy)
+        if 'inventory_value' in fields:
+            for line in res:
+                lines = self.search(line.get('__domain', domain))
+                inv_value = 0.0
+                for line2 in lines:
+                    inv_value += line2.inventory_value
+                line['inventory_value'] = inv_value
+        return res
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     def _gather(self, product_id, location_id, lot_id=None, package_id=None, owner_id=None, strict=False):
         removal_strategy = self._get_removal_strategy(product_id, location_id)
@@ -326,7 +342,23 @@ class QuantPackage(models.Model):
     current_picking_move_line_ids = fields.One2many('stock.move.line', compute="_compute_current_picking_info")
     current_picking_id = fields.Boolean(compute="_compute_current_picking_info")
 
+<<<<<<< HEAD
     @api.depends('quant_ids.package_id', 'quant_ids.location_id', 'quant_ids.company_id', 'quant_ids.owner_id')
+=======
+    @api.one
+    @api.depends('parent_id', 'children_ids')
+    def _compute_ancestor_ids(self):
+        self.ancestor_ids = self.env['stock.quant.package'].search([('id', 'parent_of', self.id)]).ids
+
+    @api.multi
+    @api.depends('parent_id', 'children_ids', 'quant_ids.package_id')
+    def _compute_children_quant_ids(self):
+        for package in self:
+            if package.id:
+                package.children_quant_ids = self.env['stock.quant'].search([('package_id', 'child_of', package.id)]).ids
+
+    @api.depends('quant_ids.package_id', 'quant_ids.location_id', 'quant_ids.company_id', 'quant_ids.owner_id', 'ancestor_ids')
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
     def _compute_package_info(self):
         for package in self:
             values = {'location_id': False, 'company_id': self.env.user.company_id.id, 'owner_id': False}

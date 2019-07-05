@@ -73,6 +73,7 @@ msgstr ""
 #: model:mail.template,subject:rating_project.rating_project_request_email_template
 msgid "${object.res_name}"
 msgstr ""
+"${object.project_id.company_id.name}: Pedido de Classificação do Serviço"
 
 #. module: rating_project
 #: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_project
@@ -110,8 +111,55 @@ msgstr ""
 
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_form
+<<<<<<< HEAD
 msgid "On tasks"
 msgstr ""
+=======
+msgid ""
+"Edit project's stages and set an email template\n"
+"                            on the stages on which you want to activate the rating."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_project
+msgid "Happy % on Project"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,field_description:rating_project.field_project_project_percentage_satisfaction_task
+msgid "Happy % on Task"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.model.fields,help:rating_project.field_project_project_rating_status
+msgid ""
+"How to get the customer's feedbacks?\n"
+"- Rating when changing stage: Email will be sent when a task/issue is pulled in another stage\n"
+"- Periodical Rating: Email will be sent periodically\n"
+"\n"
+"Don't forget to set up the mail templates on the stages for which you want to get the customer's feedbacks."
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Higly Dissatisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Not Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
+msgid "Latest Rating: Satisfied"
+msgstr ""
+
+#. module: rating_project
+#: selection:project.project,rating_status:0
+msgid "No rating"
+msgstr "Sem classificação"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.view_project_project_rating_kanban
@@ -149,3 +197,21 @@ msgstr "Tarefa"
 #: model:ir.model,name:rating_project.model_project_task_type
 msgid "Task Stage"
 msgstr "Etapa da Tarefa"
+<<<<<<< HEAD
+=======
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Twice a Month"
+msgstr "Duas vezes por Mês"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Weekly"
+msgstr "Semanalmente"
+
+#. module: rating_project
+#: selection:project.project,rating_status_period:0
+msgid "Yearly"
+msgstr "Anualmente"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

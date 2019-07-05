@@ -3,15 +3,30 @@
 # * payment_transfer
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2016
+# RGB Consulting <odoo@rgbconsulting.com>, 2016
+# Martin Trigaux, 2016
+# Quim - eccit <quim@eccit.com>, 2017
+# Lluís Dalmau <lluis.dalmau@guifi.net>, 2018
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-29 09:15+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Catalan (http://www.transifex.com/odoo/odoo-9/language/ca/)\n"
 "Language: ca\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2017-06-23 13:27+0000\n"
+"Last-Translator: Lluís Dalmau <lluis.dalmau@guifi.net>, 2018\n"
+"Language-Team: Catalan (https://www.transifex.com/odoo/teams/41243/ca/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -21,13 +36,13 @@ msgstr ""
 #: code:addons/payment_transfer/models/payment_acquirer.py:68
 #, python-format
 msgid "; multiple order found"
-msgstr ""
+msgstr "; diverses comandes trobades"
 
 #. module: payment_transfer
 #: code:addons/payment_transfer/models/payment_acquirer.py:66
 #, python-format
 msgid "; no order found"
-msgstr ""
+msgstr "; ordre no trobada"
 
 #. module: payment_transfer
 #: model:payment.acquirer,cancel_msg:payment_transfer.payment_acquirer_transfer
@@ -40,6 +55,8 @@ msgid ""
 "<span><i>Done,</i> Your online payment has been successfully processed. "
 "Thank you for your order.</span>"
 msgstr ""
+"<div> <h3>Utilitzeu les següents dades</h3> <h4>%(bank_title)s</h4>  %(bank_accounts)s  <h4>Comunicació</h4> <p>Utilitzeu el nom de l'ordre com a referència comunicada.</p>\n"
+"</div>"
 
 #. module: payment_transfer
 #: model:payment.acquirer,error_msg:payment_transfer.payment_acquirer_transfer
@@ -110,4 +127,4 @@ msgstr ""
 #: code:addons/payment_transfer/models/payment_acquirer.py:64
 #, python-format
 msgid "received data for reference %s"
-msgstr ""
+msgstr "rebudes dades per referència %s"

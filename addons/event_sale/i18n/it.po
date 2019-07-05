@@ -3,15 +3,36 @@
 # * event_sale
 #
 # Translators:
+<<<<<<< HEAD
+=======
+# Maurizio Schiavo <inactive+MaurizioSchiavo@transifex.com>, 2016
+# p_amoruso <p.amoruso@elvenstudio.it>, 2016
+# Alessandro Forte <a.forte1010@gmail.com>, 2016
+# Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2016
+# Francesco Garganese <francesco.garganese@aeromnia.aero>, 2016
+# Martin Trigaux, 2016
+# Luca Tralli, 2016
+# Paolo Valier, 2018
+# Léonie Bouchat <lbo@odoo.com>, 2018
+# mymage <stefano.consolaro@mymage.it>, 2018
+# 
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-07-22 09:47+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Italian (http://www.transifex.com/odoo/odoo-9/language/it/)\n"
 "Language: it\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:27+0000\n"
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>, 2018\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -42,7 +63,7 @@ msgstr "Partecipante"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_availability
 msgid "Available Seat"
-msgstr ""
+msgstr "Posto disponibile"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_available
@@ -52,7 +73,7 @@ msgstr "Posti disponibili"
 #. module: event_sale
 #: model:ir.ui.view,arch_db:event_sale.view_event_registration_editor_form
 msgid "Before confirming"
-msgstr ""
+msgstr "Prima di confermare"
 
 #. module: event_sale
 #: model:ir.model.fields,help:event_sale.field_sale_order_line_event_id
@@ -104,6 +125,9 @@ msgid ""
 "you will not be able to sell tickets anymore. Set 0 to ignore this rule set "
 "as unlimited."
 msgstr ""
+"Numero di biglietti disponibili. Se ci sono troppe iscrizioni non sarà "
+"possibile vendere altri biglietti. Impostare a 0 per ignorare la regola "
+"(biglietti illimitati). "
 
 #. module: event_sale
 #: model:ir.model.fields,help:event_sale.field_product_product_event_ok
@@ -125,7 +149,7 @@ msgstr "Visualizza Nome"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_editor_id
 msgid "Editor id"
-msgstr ""
+msgstr "ID Editor"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_email
@@ -150,8 +174,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:event_sale.field_product_template_event_ok
 #: model:product.product,name:event_sale.product_product_event
 #: model:product.template,name:event_sale.product_product_event_product_template
+<<<<<<< HEAD
 msgid "Event Subscription"
 msgstr "Iscrizione evento"
+=======
+msgid "Event Registration"
+msgstr "Registrazione Evento"
+
+#. module: event_sale
+#: model:ir.actions.act_window,name:event_sale.action_sale_order_event_registration
+msgid "Event Registrations"
+msgstr "Iscrizioni evento"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_event_event_ticket
@@ -168,9 +202,15 @@ msgid "Event Tickets"
 msgstr "Biglietti evento"
 
 #. module: event_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:event_sale.field_sale_order_line_event_type_id
 msgid "Event Type"
 msgstr "Tipo di evento"
+=======
+#: model:ir.ui.view,arch_db:event_sale.event_ticket_form_view
+msgid "Event's Ticket"
+msgstr "Biglietti dell'evento"
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: event_sale
 #: model:product.product,name:event_sale.event_1_product
@@ -236,13 +276,13 @@ msgstr "Nome"
 #: code:addons/event_sale/models/event.py:131
 #, python-format
 msgid "No more available seats for the ticket"
-msgstr ""
+msgstr "Non ci sono posti disponibili per il biglietto"
 
 #. module: event_sale
 #: code:addons/event_sale/models/event.py:153
 #, python-format
 msgid "No more available seats for this ticket"
-msgstr ""
+msgstr "Non ci sono posti disponibili per questo biglietto"
 
 #. module: event_sale
 #: model:product.product,name:event_sale.event_0_product
@@ -258,7 +298,7 @@ msgstr "Origine"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_registration_id
 msgid "Original Registration"
-msgstr ""
+msgstr "Iscrizione originale"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line_phone
@@ -276,6 +316,14 @@ msgid "Price Reduce"
 msgstr "Prezzo ridotto"
 
 #. module: event_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_price_reduce_taxinc
+msgid "Price Reduce Tax inc"
+msgstr "Prezzo ridotto tasse incluse"
+
+#. module: event_sale
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model,name:event_sale.model_product_product
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_product_id
 msgid "Product"
@@ -299,7 +347,7 @@ msgstr "Registrazioni"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_event_registration_ids
 msgid "Registrations to Edit"
-msgstr ""
+msgstr "Iscrizioni da esaminare"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_event_ticket_seats_reserved
@@ -427,14 +475,14 @@ msgstr ""
 #. module: event_sale
 #: model:ir.ui.view,arch_db:event_sale.view_event_registration_editor_form
 msgid "please give details about the registrations"
-msgstr ""
+msgstr "inserire i dettagli dell'iscrizione"
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_registration_editor
 msgid "registration.editor"
-msgstr ""
+msgstr "registration.editor"
 
 #. module: event_sale
 #: model:ir.model,name:event_sale.model_registration_editor_line
 msgid "registration.editor.line"
-msgstr ""
+msgstr "registration.editor.line"

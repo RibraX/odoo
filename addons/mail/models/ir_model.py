@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
+<<<<<<< HEAD
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 from odoo.tools import pycompat
+=======
+from odoo import models
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 
 class IrModel(models.Model):
     _inherit = 'ir.model'
+<<<<<<< HEAD
     _order = 'is_mail_thread DESC, name ASC'
 
     is_mail_thread = fields.Boolean(
@@ -45,12 +50,15 @@ class IrModel(models.Model):
             parents = [parents] if isinstance(parents, pycompat.string_types) else parents
             model_class._inherit = parents + ['mail.thread']
         return model_class
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
     def unlink(self):
         # Delete followers for models that will be unlinked.
         query = "DELETE FROM mail_followers WHERE res_model IN %s"
         self.env.cr.execute(query, [tuple(self.mapped('model'))])
         return super(IrModel, self).unlink()
+<<<<<<< HEAD
 
 
 class IrModelField(models.Model):
@@ -71,3 +79,5 @@ class IrModelField(models.Model):
         if field_data.get('track_visibility'):
             attrs['track_visibility'] = field_data['track_visibility']
         return attrs
+=======
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

@@ -744,6 +744,11 @@ msgid "Next Period Depreciation"
 msgstr ""
 
 #. module: account_asset
+#: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_note
 msgid "Note"
 msgstr ""
@@ -948,9 +953,15 @@ msgid "The number of depreciations needed to depreciate your asset"
 msgstr ""
 
 #. module: account_asset
+<<<<<<< HEAD
 #: code:addons/account_asset/models/account_invoice.py:52
 #, python-format
 msgid "The number of depreciations or the period length of your asset category cannot be null."
+=======
+#: code:addons/account_asset/models/account_asset.py:477
+#, python-format
+msgid "This depreciation is already linked to a journal entry! Please post or delete it."
+>>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgstr ""
 
 #. module: account_asset
