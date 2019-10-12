@@ -4,20 +4,31 @@
 #
 # Translators:
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Daniel C Santos <dcs@thinkopensolutions.pt>, 2015
 # Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2015
 =======
 # MS, 2016
 # Martin Trigaux, 2016
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+=======
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 # Vitor Fernandes <vmlf01@gmail.com>, 2016
-# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
-# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2016
 # Daniel Reis, 2016
+# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2016
+# Martin Trigaux, 2016
 # Tiago Baptista, 2017
+# Manuela Silva <manuelarodsilva@gmail.com>, 2017
 # Nuno Silva <nuno.silva@arxi.pt>, 2018
 # Diogo Fonseca <dsf@thinkopensolutions.pt>, 2018
+<<<<<<< HEAD
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+# Pedro Castro Silva <pedrocs@exo.pt>, 2019
+# 
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
@@ -31,8 +42,8 @@ msgstr ""
 "Language: pt\n"
 =======
 "POT-Creation-Date: 2017-06-23 13:27+0000\n"
-"PO-Revision-Date: 2017-06-23 13:27+0000\n"
-"Last-Translator: Diogo Fonseca <dsf@thinkopensolutions.pt>, 2018\n"
+"PO-Revision-Date: 2016-09-07 09:23+0000\n"
+"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>, 2019\n"
 "Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -1167,9 +1178,62 @@ msgid "Master Data"
 msgstr "Dados Principais"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_product_produce_mode
 msgid "Mode"
 msgstr "Modo"
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_config_settings_module_mrp_mps
+msgid "Master Production Schedule"
+msgstr "Calendário de Produção Principal"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_message_message
+#: model:ir.ui.view,arch_db:mrp.mrp_message_view_tree
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: mrp
+#: model:ir.actions.act_window,help:mrp.mrp_message_action_main
+msgid ""
+"Messages can be configured to appear during any operation: receptions, delivery orders,\n"
+"                manufacturing orders, work orders, etc."
+msgstr ""
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_bom_form_view
+#: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
+#: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
+msgid "Miscellaneous"
+msgstr "Diversos"
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
+#: model:ir.ui.view,arch_db:mrp.stock_production_type_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "Mais <i class=\"fa fa-caret-down\"/>"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_stock_move_lots_move_id
+msgid "Move"
+msgstr "Movimento"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_stock_move_lots_done_move
+msgid "Move Done"
+msgstr ""
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_move_raw_ids
+#: model:ir.ui.view,arch_db:mrp.mrp_unbuild_form_view
+msgid "Moves"
+msgstr "Movimentos"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_move_lot_ids
+msgid "Moves to Track"
+msgstr ""
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_workcenter_search

@@ -14,9 +14,9 @@
 # Stefan Stieranka <stieranka@itec.sk>, 2017
 # Matus Krnac <matus.krnac@gmail.com>, 2017
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2017
-# gebri <gebri@inmail.sk>, 2018
 # Jan Prokop, 2019
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2019
+# gebri <gebri@inmail.sk>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2019-01-23 16:30+0000\n"
 "PO-Revision-Date: 2016-09-07 09:14+0000\n"
-"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2019\n"
+"Last-Translator: gebri <gebri@inmail.sk>, 2019\n"
 "Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12289,12 +12289,13 @@ msgstr "Pole `%(field_name)s` neexistuje"
 msgid ""
 "Field names can only contain characters, digits and underscores (up to 63)."
 msgstr ""
+"Názvy polí môožu obsahovať iba znaky, čísla a podčiarknutia (až do 63)"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:307
 #, python-format
 msgid "Field names must be unique per model."
-msgstr ""
+msgstr "Názvy poľa musia byt jedinečné v modeli."
 
 #. module: base
 #: code:addons/model.py:148
@@ -12886,6 +12887,25 @@ msgid "Grenada"
 msgstr "Grenada"
 
 #. module: base
+<<<<<<< HEAD
+=======
+#: selection:ir.actions.act_window.view,view_mode:0
+#: selection:ir.ui.view,type:0
+msgid "Grid"
+msgstr "Mriežka"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_grid
+msgid "Grid View"
+msgstr "Mriežkový Pohľad"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_timesheet_grid
+msgid "Grid View for Timesheets"
+msgstr ""
+
+#. module: base
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:base.field_ir_model_access_group_id
 #: model:ir.ui.view,arch_db:base.ir_access_view_search
 #: model:ir.ui.view,arch_db:base.view_groups_search
@@ -13001,6 +13021,14 @@ msgid "Guyana"
 msgstr "Guyana"
 
 #. module: base
+<<<<<<< HEAD
+=======
+#: model:ir.module.module,shortdesc:base.module_hr_maintenance
+msgid "HR - Equipments"
+msgstr "ĽZ - Vybavenia"
+
+#. module: base
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.module.module,shortdesc:base.module_hr_gamification
 msgid "HR Gamification"
 msgstr "HR gamifikácia"
@@ -13050,8 +13078,18 @@ msgstr "Hardvérový ovládač pre ESC/POS tlačiarne a pokladničné zásuvky"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_scale
+<<<<<<< HEAD
 msgid "Hardware Driver for Weighting Scales"
 msgstr "Hardvérový ovládač pre stupnice váh"
+=======
+msgid "Hardware Driver for Weighing Scales"
+msgstr "Hardvérový Ovládač pre Váhy"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_hardware_drivers
+msgid "Hardware Drivers"
+msgstr "Hardvérové ovládače"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_proxy
@@ -13081,15 +13119,35 @@ msgid "Help with Python expressions."
 msgstr "Pomoc s Python výrazmi."
 
 #. module: base
+<<<<<<< HEAD
+=======
+#: model:ir.module.category,name:base.module_category_helpdesk
+#: model:ir.module.module,shortdesc:base.module_helpdesk
+msgid "Helpdesk"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk_forum
+msgid "Helpdesk: Knowledge Base"
+msgstr "Helpdesk: Vedomostná Základňa"
+
+#. module: base
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.module.category,description:base.module_category_point_of_sale
 msgid ""
 "Helps you get the most out of your points of sales with fast sale encoding, "
 "simplified payment mode encoding, automatic picking lists generation and "
 "more."
 msgstr ""
+<<<<<<< HEAD
 "Pomáha vám získať čo najviac z vašich predajných miest s rýchlym kódovaním "
 "predaja, zjednodušeným kódovaním režimu platby, automatické generovanie "
 "zoznamy výberov  a ďalšie."
+=======
+"Pomáha vám získať čo najviac z vašich pokladní, s rýchlym zápisom predaja, "
+"zjednodušeným zápisom platby, automatickým generovaním výberových zoznamov a"
+" ďalším."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_accounting_and_finance
@@ -13109,7 +13167,27 @@ msgstr "Pomáha vám zvládnuť svoje kvóty, predajné objednávky a fakturáci
 #: model:ir.module.category,description:base.module_category_lead_automation
 msgid "Helps you manage lead of your marketing campaigns step by step."
 msgstr ""
+<<<<<<< HEAD
 "Pomáha vám spravovať iniciatívy vašich marketingových kampaní krok za krokom."
+=======
+"Pomáha vám spravovať iniciatívy vašich marketingových kampaní krok za "
+"krokom."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_hr_attendance
+msgid "Helps you manage the attendances."
+msgstr "Pomáha vám spravovať dochádzky."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_hr_gamification
+msgid "Helps you manage the gamification process."
+msgstr "Pomáha vám spravovať proces gamifikácie."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_hr_timesheet
+msgid "Helps you manage the timesheets."
+msgstr "Pomáha vám spravovať časové rozvrhy."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_event_management
@@ -13117,10 +13195,30 @@ msgid "Helps you manage your Events."
 msgstr "Pomáha vám spravovať vaše udalosti."
 
 #. module: base
+<<<<<<< HEAD
 #: model:ir.module.category,description:base.module_category_human_resources
 msgid ""
 "Helps you manage your human resources by encoding your employees structure, "
 "generating work sheets, tracking attendance and more."
+=======
+#: model:ir.module.category,description:base.module_category_hr_appraisal
+msgid "Helps you manage your appraisals."
+msgstr "Pomáha vám spravovať vaše odhady."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_human_resources
+msgid "Helps you manage your employees."
+msgstr "Pomáha vám spravovať vašich zamestnancov."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_hr_expense
+msgid "Helps you manage your expenses."
+msgstr "Pomáha vám spravovať vaše výdavky."
+
+#. module: base
+#: model:ir.module.category,description:base.module_category_hr_holidays
+msgid "Helps you manage your holidays."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgstr ""
 "Pomáha vám spravovať svoje ľudské zdroje zakódovaním svojej štruktúry "
 "zamestnancov, vytvára pracovné listy, sledovanie dochádzky a ďalšie."
@@ -13153,6 +13251,14 @@ msgstr ""
 "profesionálnych e-mailov a opätovné využitie šablón."
 
 #. module: base
+<<<<<<< HEAD
+=======
+#: model:ir.module.category,description:base.module_category_hr_payroll
+msgid "Helps you manage your payrolls."
+msgstr "Pomáha vám spravovať vaše mzdy."
+
+#. module: base
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.module.category,description:base.module_category_project_management
 msgid ""
 "Helps you manage your projects and tasks by tracking them, generating "
@@ -13171,6 +13277,14 @@ msgstr ""
 "cenové ponuky, dodávateľské účty, atď ..."
 
 #. module: base
+<<<<<<< HEAD
+=======
+#: model:ir.module.category,description:base.module_category_hr_recruitment
+msgid "Helps you manage your recruitments."
+msgstr "Pomáha vám spravovať vašé nábory."
+
+#. module: base
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.module.category,description:base.module_category_survey
 msgid "Helps you manage your survey for review of different-different users."
 msgstr "Pomáha vám spravovať prehľad na preskúmanie rôznych užívateľov."
@@ -13257,9 +13371,20 @@ msgid "How to define a computed field"
 msgstr "Ako definovať vypočítané pole"
 
 #. module: base
+<<<<<<< HEAD
 #: model:ir.module.category,name:base.module_category_human_resources
 msgid "Human Resources"
 msgstr "Ľudské zdroje"
+=======
+#: model:ir.module.module,shortdesc:base.module_hr_recruitment_survey
+msgid "Hr Recruitment Interview Forms"
+msgstr "Ľz Formuláre na Prijímanie do Zamestnania"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_human_resources_survey
+msgid "Human Resources Survey"
+msgstr "Prieskum Ľudských Zdrojov"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hu

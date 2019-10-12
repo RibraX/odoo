@@ -14,6 +14,7 @@
 # Ivan Ivanov, 2017
 # Albena Mincheva <albena_vicheva@abv.bg>, 2018
 # Maria Boyadjieva <marabo2000@gmail.com>, 2018
+# Igor Sheludko <igor.sheludko@gmail.com>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -30,7 +31,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2017-06-23 13:27+0000\n"
 "PO-Revision-Date: 2016-09-07 09:25+0000\n"
-"Last-Translator: Maria Boyadjieva <marabo2000@gmail.com>, 2018\n"
+"Last-Translator: Igor Sheludko <igor.sheludko@gmail.com>, 2019\n"
 "Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -1608,7 +1609,18 @@ msgstr ""
 
 #. module: point_of_sale
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1181
+=======
+#: code:addons/point_of_sale/static/src/js/models.js:135
+#, python-format
+msgid "HTTPS connection to IoT Box failed"
+msgstr ""
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:1322
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "Hardware Events"
 msgstr "Хардуерни събития"
@@ -2017,6 +2029,15 @@ msgstr ""
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_payment
 msgid "Make Payment"
 msgstr "Осъществете плащане"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/models.js:137
+#, python-format
+msgid ""
+"Make sure you are using IoT Box v18.12 or higher. Navigate to %s to accept "
+"the certificate of your IoT Box."
+msgstr ""
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_sale_config_settings_form_pos
@@ -4271,10 +4292,14 @@ msgstr "ДДС:"
 #, python-format
 msgid "Validate"
 <<<<<<< HEAD
+<<<<<<< HEAD
 msgstr "Потвърждаване"
 =======
 msgstr "Валидирайте"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+msgstr "Валидирай"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_session_form

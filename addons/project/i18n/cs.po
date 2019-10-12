@@ -301,13 +301,15 @@ msgid ""
 "<b>Assign the task</b> to someone. <i>You can create and invite a new user "
 "on the fly.</i>"
 msgstr ""
+"<b>Přiřadit úkol</b> někomu. <i>Můžete vytvořit a pozvat nového uživatele za"
+" chodu.</i>"
 
 #. module: project
 #. openerp-web
 #: code:addons/project/static/src/js/tour.js:83
 #, python-format
 msgid "<b>Click the save button</b> to apply your changes to the task."
-msgstr ""
+msgstr "<b>Klepnutím na tlačítko Uložit</b> provedete změny v úkolu."
 
 #. module: project
 #. openerp-web
@@ -1243,6 +1245,9 @@ msgid ""
 "displayed for the state instead\n"
 "                            of the default labels."
 msgstr ""
+"V každé fázi mohou zaměstnanci zablokovat nebo připravit úkol / problém na další fázi.\n"
+"Zde můžete definovat štítky, které se místo toho zobrazí pro daný stav\n"
+"namísto výchozích štítků."
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
@@ -1388,6 +1393,8 @@ msgstr ""
 "Choose a <b>project name</b>. (e.g. Website Launch, Product Development, "
 "Office Party, etc.)"
 msgstr ""
+"Vyberte <b>název projektu.</b> (např. spuštění webových stránek, vývoj "
+"produktů, kancelářská párty atd.)"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_project_view_form_simplified
@@ -2096,8 +2103,13 @@ msgstr ""
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type_fold
+<<<<<<< HEAD
 msgid "Folded in Tasks Pipeline"
 msgstr ""
+=======
+msgid "Folded in Kanban"
+msgstr "Složený v Kanbanu"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.edit_project

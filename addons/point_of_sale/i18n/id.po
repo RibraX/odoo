@@ -27,7 +27,7 @@
 # Deddy Ddr <deddy.ddr@gmail.com>, 2016
 # Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2016
 # rtfm pliz <rtfmpliz@gmail.com>, 2016
-# oon arfiandwi (OonID) <oon.arfiandwi@gmail.com>, 2016
+# oon arfiandwi <oon.arfiandwi@gmail.com>, 2016
 # William Surya Permana <zarambie_game@yahoo.com>, 2016
 # firman firman <firman.olxbpn@gmail.com>, 2016
 # dimas indra <dprahastra@gmail.com>, 2016
@@ -1638,7 +1638,18 @@ msgstr ""
 
 #. module: point_of_sale
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1369
+=======
+#: code:addons/point_of_sale/static/src/js/models.js:135
+#, python-format
+msgid "HTTPS connection to IoT Box failed"
+msgstr ""
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:1322
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "Hardware Events"
 msgstr "Hardware Acara"
@@ -2004,6 +2015,7 @@ msgid "Make Payment"
 msgstr "Lakukan Pembayaran"
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_available_pricelist_ids
 msgid ""
 "Make several pricelists available in the Point of Sale. You can also apply a"
@@ -2017,6 +2029,20 @@ msgstr ""
 #: model:pos.config,customer_facing_display_html:point_of_sale.pos_config_main
 msgid "Malibu Drink"
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/models.js:137
+#, python-format
+msgid ""
+"Make sure you are using IoT Box v18.12 or higher. Navigate to %s to accept "
+"the certificate of your IoT Box."
+msgstr ""
+
+#. module: point_of_sale
+#: model:ir.ui.view,arch_db:point_of_sale.view_sale_config_settings_form_pos
+msgid "Manage loyalty program with points and rewards for customers"
+msgstr "Mengelola program loyalitas dengan points dan rewards untuk pelanggan"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: point_of_sale
 #: model:res.groups,name:point_of_sale.group_pos_manager

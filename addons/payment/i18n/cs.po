@@ -179,7 +179,7 @@ msgstr "Ref. Odběratele"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_acquirer_reference
 msgid "Acquirer Reference"
-msgstr ""
+msgstr "Odkaz na příjemce platby"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_method_active
@@ -350,7 +350,7 @@ msgstr "Provedeno"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_done_msg
 msgid "Done Message"
-msgstr ""
+msgstr "Zpráva o dokončení"
 
 #. module: payment
 #: selection:payment.transaction,state:0
@@ -486,7 +486,7 @@ msgstr "Nechte zákazníka rozhodnout"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: model:ir.model.fields,help:payment.field_payment_acquirer_website_published
 msgid "Make this payment acquirer available (Customer invoices, etc.)"
-msgstr ""
+msgstr "Zpřístupnit tohoto příjemce platby (faktury zákazníka atd.)"
 
 #. module: payment
 <<<<<<< HEAD
@@ -521,17 +521,17 @@ msgstr "Zpráva"
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_post_msg
 msgid "Message displayed after having done the payment process."
-msgstr ""
+msgstr "Zpráva zobrazená po provedení platebního procesu."
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_pre_msg
 msgid "Message displayed to explain and help the payment process."
-msgstr ""
+msgstr "Zobrazí se zpráva, která vysvětluje a pomáhá platebnímu procesu."
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_error_msg
 msgid "Message displayed, if error is occur during the payment process."
-msgstr ""
+msgstr "Zobrazí se zpráva, pokud během procesu platby dojde k chybě."
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_cancel_msg
@@ -545,6 +545,8 @@ msgid ""
 "Message displayed, if order is done successfully after having done the "
 "payment process."
 msgstr ""
+"Zobrazí se zpráva, pokud je po úspěšném provedení platby úspěšně provedena "
+"objednávka."
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_pending_msg
@@ -569,9 +571,15 @@ msgid "Name"
 msgstr "Název"
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,help:payment.field_payment_method_name
 msgid "Name of the payment method"
 msgstr ""
+=======
+#: model:ir.model.fields,help:payment.field_payment_token_name
+msgid "Name of the payment token"
+msgstr "Název tokenu platby"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: payment
 #: selection:payment.acquirer,auto_confirm:0
@@ -581,7 +589,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_account_config_settings_module_payment_ogone
 msgid "Ogone"
-msgstr ""
+msgstr "Ogone"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_auto_confirm
@@ -598,9 +606,18 @@ msgstr "Kontakt"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction_partner_name
 msgid "Partner Name"
-msgstr ""
+msgstr "Název partnera"
 
 #. module: payment
+<<<<<<< HEAD
+=======
+#: model:payment.acquirer,name:payment.payment_acquirer_payu
+#: selection:payment.acquirer,provider:0
+msgid "PayUmoney"
+msgstr "PayUmoney"
+
+#. module: payment
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model,name:payment.model_payment_acquirer
 #: model:ir.ui.view,arch_db:payment.acquirer_form
 msgid "Payment Acquirer"
@@ -729,7 +746,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:payment.payment_method_action
 #: model:ir.ui.menu,name:payment.payment_method_menu
 msgid "Saved Payment Data"
-msgstr ""
+msgstr "Uložená platební data"
 
 #. module: payment
 <<<<<<< HEAD
@@ -741,7 +758,7 @@ msgstr "Uložený platební token"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_token_implemented
 msgid "Saving Card Data supported"
-msgstr ""
+msgstr "Podporováno uložení karetních dat"
 
 #. module: payment
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
@@ -803,7 +820,7 @@ msgstr "Test"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_post_msg
 msgid "Thanks Message"
-msgstr ""
+msgstr "Zpráva poděkování"
 
 #. module: payment
 #: constraint:payment.transaction:0
@@ -850,7 +867,17 @@ msgid "Visible in Portal / Website"
 msgstr ""
 
 #. module: payment
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:payment.field_account_config_settings_module_payment_transfer
+=======
+#: model:ir.ui.view,arch_db:payment.transaction_form
+msgid "Void Transaction"
+msgstr "Zrušená transakce"
+
+#. module: payment
+#: model:payment.acquirer,name:payment.payment_acquirer_transfer
+#: selection:payment.acquirer,provider:0
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Wire Transfer"
 msgstr ""
 
@@ -977,7 +1004,7 @@ msgstr ""
 #. module: payment
 #: model:ir.ui.view,arch_db:payment.acquirer_form
 msgid "tx_values: transaction values"
-msgstr ""
+msgstr "tx_values: transakční hodnoty"
 
 #. module: payment
 #: model:ir.ui.view,arch_db:payment.acquirer_form

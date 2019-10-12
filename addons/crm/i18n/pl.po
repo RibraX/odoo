@@ -17,22 +17,27 @@
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2017
 =======
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2016
-# zbik2607 <darek@krokus.com.pl>, 2016
-# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2016
-# Martin Trigaux, 2016
-# Piotr Szlązak <szlazakpiotr@gmail.com>, 2016
-# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2016
-# Jakobus Buntownikus <buntownix@gmail.com>, 2016
-# Mariusz, 2016
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2016
 # Zdzisław Krajewski <zdzichucb@gmail.com>, 2016
+# Jakobus Buntownikus <buntownix@gmail.com>, 2016
 # Maciej Wichowski <maciej.wichowski@openglobe.pl>, 2016
+# Mariusz, 2016
 # zieloo <zieloo@gmail.com>, 2016
+<<<<<<< HEAD
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2017
+# Piotr Szlązak <szlazakpiotr@gmail.com>, 2017
+# Martin Trigaux, 2017
+# Dariusz Żbikowski <darek@krokus.com.pl>, 2017
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 # Monika Grzelak <m.e.grzelak@gmail.com>, 2017
-# Tomasz Leppich <t.leppich@gmail.com>, 2018
-# Paweł Wodyński <pw@myodoo.pl>, 2018
+# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2017
 # Maja Stawicka <mjstwck@wp.pl>, 2018
+# Paweł Wodyński <pw@myodoo.pl>, 2018
+# Karol Rybak <karolrybak85@gmail.com>, 2019
+# Tomasz Leppich <t.leppich@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -43,9 +48,14 @@ msgstr ""
 "Last-Translator: Monika Grzelak <m.e.grzelak@gmail.com>, 2017\n"
 =======
 "POT-Creation-Date: 2017-06-23 13:26+0000\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2017-06-23 13:26+0000\n"
 "Last-Translator: Maja Stawicka <mjstwck@wp.pl>, 2018\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+"PO-Revision-Date: 2016-09-07 09:18+0000\n"
+"Last-Translator: Tomasz Leppich <t.leppich@gmail.com>, 2019\n"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 "Language-Team: Polish (https://www.transifex.com/odoo/teams/41243/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -697,7 +707,7 @@ msgstr "<strong>Etapy sprzedaży</strong>"
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_planner
 msgid "<strong>Sales objectives</strong>:"
-msgstr ""
+msgstr "<strong>Cele sprzedażowe</strong>:"
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_planner
@@ -1216,13 +1226,14 @@ msgid ""
 "Click here to <b>create your first opportunity</b> and add it to your "
 "pipeline."
 msgstr ""
+"Kliknij tutaj, aby <b>utworzyć pierwszą szansę</b> i dodać ją do lejka."
 
 #. module: crm
 #. openerp-web
 #: code:addons/crm/static/src/js/tour.js:53
 #, python-format
 msgid "Click on an opportunity to zoom to it."
-msgstr ""
+msgstr "Kliknij szansę, aby zobaczyć szczegóły."
 
 #. module: crm
 #: code:addons/crm/models/crm_lead.py:908
@@ -1248,7 +1259,7 @@ msgstr "Kliknij, aby dodać nową etykietę sprzedaży."
 #. module: crm
 #: model:ir.actions.act_window,help:crm.crm_stage_action
 msgid "Click to set a new stage in your opportunity pipeline."
-msgstr ""
+msgstr "Kliknij, aby dodać etap w lejku szans."
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.base_partner_merge_automatic_wizard_form
@@ -1333,7 +1344,7 @@ msgstr ""
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_planner
 msgid "Configure the stages of your sales pipeline"
-msgstr ""
+msgstr "Skonfiguruj etapy procesu sprzedaży"
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_planner
@@ -1810,6 +1821,8 @@ msgid ""
 "Each product has only one price.\n"
 "                                        <br/>"
 msgstr ""
+"Każdy produkt ma tylko jedną cenę.\n"
+"                                        <br/>"
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_case_kanban_view_leads
@@ -3279,6 +3292,21 @@ msgstr ""
 "(np. projekt (parent_model) i zadanie (model))"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:crm.field_crm_activity_parent_id
+msgid ""
+"Parent subtype, used for automatic subscription. This field is not correctly"
+" named. For example on a project, the parent_id of project subtypes refers "
+"to task-related subtypes."
+msgstr ""
+"Podtyp macierzysty, używany do automatycznej subskrypcji. To pole nie jest "
+"poprawnie nazwane. Na przykład w projekcie, parent_id podtypów projektu "
+"odnosi się do podtypów związanych z zadaniem."
+
+#. module: crm
+#: model:ir.model,name:crm.model_res_partner
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_partner_id
 #: model:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
 msgid "Partner"
@@ -3438,7 +3466,7 @@ msgstr "Priorytet"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_stage_legend_priority
 msgid "Priority Management Explanation"
-msgstr ""
+msgstr "Wyjaśnienie zarządzania priorytetami "
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_activity_report_probability
@@ -3555,6 +3583,19 @@ msgid "Reason for loosing leads"
 msgstr "Powód utraty Szans"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:crm.field_crm_activity_log_recommended_activity_id
+msgid "Recommended Activities"
+msgstr "Rekomendowane aktywności"
+
+#. module: crm
+#: model:ir.model.fields,field_description:crm.field_crm_activity_recommended_activity_ids
+msgid "Recommended Next Activities"
+msgstr "Rekomendowane kolejne działania"
+
+#. module: crm
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:crm.field_crm_team_alias_force_thread_id
 msgid "Record Thread ID"
 msgstr "ID wątku rekordu"
@@ -3676,11 +3717,27 @@ msgstr ""
 "menu Ulubione."
 
 #. module: crm
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/crm/static/src/js/tour.js:40
 #, python-format
 msgid "Schedule an activity by clicking here"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:crm.crm_activity_log_view_form_schedule
+msgid "Schedule Activity"
+msgstr "Planowane akywności"
+
+#. module: crm
+#: model:ir.ui.view,arch_db:crm.crm_activity_log_view_form_schedule
+msgid "Schedule Next Activity"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_activity_schedule_action
+msgid "Schedule an Activity"
+msgstr "Zaplanuj czynność"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
@@ -3873,6 +3930,8 @@ msgid ""
 "Some examples of lost reasons: \"We don't have people/skill\", \"Price too "
 "high\""
 msgstr ""
+"Kilka przykładów przyczyn porażki: \"Nie mamy ludzi / umiejętności\", \"Cena"
+" za wysoka\""
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_source_id
@@ -4053,7 +4112,7 @@ msgstr "Terytorium"
 #: code:addons/crm/static/src/js/web_planner_crm.js:19
 #, python-format
 msgid "The customer came back to you to discuss your quotation"
-msgstr ""
+msgstr "Klient wrócił do Ciebie, aby omówić swoją ofertę"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team_alias_id
@@ -4220,6 +4279,8 @@ msgid ""
 "This stage is folded in the kanban view when there are no records in that "
 "stage to display."
 msgstr ""
+"Ten etap jest zwinięty w widoku kanban, kiedy nie ma rekordów do "
+"wyświetlenia w tym etapie."
 
 #. module: crm
 #: code:addons/crm/models/crm_lead.py:1052
@@ -4375,7 +4436,7 @@ msgstr ""
 #. module: crm
 #: model:ir.actions.act_window,help:crm.crm_lost_reason_action
 msgid "Use lost reasons to explain why an opportunity is lost."
-msgstr ""
+msgstr "Użyj powodów porażki, aby wyjaśnić, dlaczego utracono szansę."
 
 #. module: crm
 #: model:ir.actions.act_window,help:crm.relate_partner_opportunities
@@ -4822,8 +4883,13 @@ msgstr "na przykład Umowa z klientem"
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_case_form_view_oppor
+<<<<<<< HEAD
 msgid "e.g. Product Pricing"
 msgstr "np. Wycena produktu"
+=======
+msgid "e.g. Discuss proposal"
+msgstr "np. Propozycja dyskusji"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.crm_case_form_view_leads

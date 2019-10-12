@@ -39,6 +39,7 @@
 # Tri Bui <tribd@trobz.com>, 2018
 # fanha99 <fanha99@hotmail.com>, 2018
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2018
+# Dung Nguyen Thi <dungnt@trobz.com>, 2019
 # Duy BQ <duybq86@gmail.com>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
@@ -383,8 +384,13 @@ msgstr "<span><strong>Địa Chỉ Giao Hàng</strong></span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_picking
+<<<<<<< HEAD
 msgid "<span><strong>Partner Address:</strong></span>"
 msgstr ""
+=======
+msgid "<span><strong>Vendor Address:</strong></span>"
+msgstr "<span><strong>Địa chỉ nhà cung cấp:</strong></span>"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_picking
@@ -536,6 +542,14 @@ msgid "<strong>Location</strong>"
 msgstr "<strong>Địa điểm</strong>"
 
 #. module: stock
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:stock.report_picking
+msgid "<strong>Lot/Serial Number</strong>"
+msgstr "<strong>Số lô/sê-ri</strong>"
+
+#. module: stock
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid ""
 "<strong>Make to Order:</strong> the product is acquired only as demand "
@@ -2819,6 +2833,14 @@ msgstr ""
 "nhỏ hoặc xe tải tại các sự kiện công cộng."
 
 #. module: stock
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:stock.field_stock_quant_name
+msgid "Identifier"
+msgstr "Nhận dạng"
+
+#. module: stock
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
 msgid ""
 "If a product is not at the right place, set the checked quantity to 0 and "
@@ -5025,6 +5047,15 @@ msgid "Preferred Packaging"
 msgstr "Kiện hàng ưu tiên"
 
 #. module: stock
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:stock.field_make_procurement_route_ids
+#: model:ir.model.fields,field_description:stock.field_procurement_order_route_ids
+msgid "Preferred Routes"
+msgstr "Lộ trình ưu tiên"
+
+#. module: stock
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,help:stock.field_stock_move_route_ids
 msgid "Preferred route"
 msgstr ""
@@ -6627,6 +6658,10 @@ msgid ""
 "picking confirmation (when costing method used is 'average price' or "
 "'real'). Value given in company currency and in product uom."
 msgstr ""
+"Trường kỹ thuật đã được sử dụng để ghi nhận giá vốn sản phẩm trong suốt quá "
+"trình xác nhận phiếu giao nhận (khi phương thức tính giá vốn là 'Trung Bình'"
+" hoặc 'Thực tế'. Giá trị sẽ dựa trên đơn vị tiền tệ của công ty và đơn vị "
+"tính trong sản phẩm."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move_line_produce_line_ids
@@ -6788,6 +6823,8 @@ msgid ""
 <<<<<<< HEAD
 =======
 msgstr ""
+"Địa điểm kho cha bao gồm địa điểm kho này. Ví dụ: 'Dispatch Zone' là địa "
+"điểm cha của 'Gate 1'."
 
 #. module: stock
 #: code:addons/stock/models/stock_picking.py:795

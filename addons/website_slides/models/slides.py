@@ -498,8 +498,16 @@ class Slide(models.Model):
     def _fetch_data(self, base_url, data, content_type=False, extra_params=False):
         result = {'values': dict()}
         try:
+<<<<<<< HEAD
             response = requests.get(base_url, params=data)
             response.raise_for_status()
+=======
+            if data:
+                sep = '?' if not extra_params else '&'
+                base_url = base_url + '%s%s' % (sep, urlencode(data))
+            req = urllib2.Request(base_url)
+            content = urllib2.urlopen(req, timeout=3).read()
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
             if content_type == 'json':
                 result['values'] = response.json()
             elif content_type in ('image', 'pdf'):

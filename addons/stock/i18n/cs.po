@@ -1724,12 +1724,12 @@ msgstr "PŘIJATÝ V TERMINÁLU"
 #. module: stock
 #: model:stock.incoterms,name:stock.incoterm_DDP
 msgid "DELIVERED DUTY PAID"
-msgstr ""
+msgstr "ZAPLACENÉ CLO"
 
 #. module: stock
 #: model:stock.incoterms,name:stock.incoterm_DDU
 msgid "DELIVERED DUTY UNPAID"
-msgstr ""
+msgstr "NEZAPLACENÉ CLO"
 
 #. module: stock
 #: model:stock.incoterms,name:stock.incoterm_DEQ
@@ -2838,7 +2838,7 @@ msgstr "Příchozí zásilky"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_incoterms_code
 msgid "Incoterm Standard Code"
-msgstr ""
+msgstr "Standardní kód Incoterm"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_incoterms_tree
@@ -2856,6 +2856,9 @@ msgid ""
 "costs and responsibilities between buyer and seller and reflect state-of-the-"
 "art transportation practices."
 msgstr ""
+"Incoterms je řada prodejních podmínek. Používají se k rozdělení transakčních"
+" nákladů a odpovědnosti mezi kupujícím a prodávajícím a odrážejí "
+"nejmodernější převodní postupy."
 
 #. module: stock
 #: code:addons/stock/stock.py:2217
@@ -3494,8 +3497,13 @@ msgstr "Produktové / Seriové číslo"
 #: code:addons/stock/models/stock_pack_operation.py:198
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #, python-format
+<<<<<<< HEAD
 msgid "Lot Details"
 msgstr ""
+=======
+msgid "Lot/Serial Number Details"
+msgstr "Detaily šarže / sériového čísla"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_inventory_tree
@@ -5632,9 +5640,16 @@ msgstr "Sekvenční balení"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: stock
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_line_prodlot_name
 msgid "Serial Number Name"
 msgstr ""
+=======
+#: code:addons/stock/models/stock_warehouse.py:661
+#, python-format
+msgid "Sequence picking"
+msgstr "Sekvenční vychystávání"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_production_lot_form
@@ -6287,7 +6302,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_pack_operation_picking_id
 msgid "The stock operation where the packing has been made"
-msgstr ""
+msgstr "Skladová operace, kde bylo provedeno balení"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_procurement_rule_warehouse_id
@@ -6647,7 +6662,7 @@ msgstr "Přesuny"
 #. module: stock
 #: selection:stock.location,usage:0
 msgid "Transit Location"
-msgstr ""
+msgstr "tranzitní umístění"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.quant_search_view

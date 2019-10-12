@@ -288,6 +288,9 @@ msgid ""
 "are indexed automatically,\n"
 "                so that you can easily search through their content."
 msgstr ""
+"Žadatelé a přiložený životopis se vytvoří automaticky při odeslání e-mailu.\n"
+"Pokud nainstalujete moduly správy dokumentů, budou všechny životopisy automaticky indexovány,\n"
+"abyste mohli snadno vyhledávat jejich obsah."
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.crm_case_categ0_act_job
@@ -441,10 +444,15 @@ msgstr ""
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_config
+<<<<<<< HEAD
 msgid ""
 "Click here to create a new job. You can remove the \"In Recruitment\" filter "
 "to display all the job positions."
 msgstr ""
+=======
+msgid "Click here to create a new job position."
+msgstr "Klikněte zde pro vytvoření nové pracovní pozice"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_no_employee
@@ -551,7 +559,7 @@ msgstr "Vytvořit pracovní pozici"
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.hr_recruitment_source_tree
 msgid "Create alias"
-msgstr ""
+msgstr "Vytvořit zástupce"
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,help:hr_recruitment.action_hr_job_sources
@@ -1002,12 +1010,12 @@ msgstr "Pracovní pozice"
 #. module: hr_recruitment
 #: model:mail.message.subtype,name:hr_recruitment.mt_department_new
 msgid "Job Position Created"
-msgstr ""
+msgstr "Pracovní pozice vytvořena"
 
 #. module: hr_recruitment
 #: model:mail.message.subtype,name:hr_recruitment.mt_job_new
 msgid "Job Position created"
-msgstr ""
+msgstr "Pracovní pozice vytvořena"
 
 #. module: hr_recruitment
 #: model:ir.actions.act_window,name:hr_recruitment.action_hr_job
@@ -1798,6 +1806,16 @@ msgid "Use template"
 msgstr "Použít šablonu"
 
 #. module: hr_recruitment
+<<<<<<< HEAD
+=======
+#. openerp-web
+#: code:addons/hr_recruitment/static/src/js/tour.js:25
+#, python-format
+msgid "Use the breadcrumbs to <b>go back to the dashboard</b>."
+msgstr "Použít navigační drobečky pro <b>přechod na dashboard</b>."
+
+#. module: hr_recruitment
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_recruitment_report_user_id
 msgid "User"
 msgstr "Uživatel"
@@ -1810,7 +1828,7 @@ msgstr "uživatelský e-mail"
 #. module: hr_recruitment
 #: selection:hr.applicant,priority:0 selection:hr.recruitment.report,priority:0
 msgid "Very Good"
-msgstr ""
+msgstr "Velmi dobrý"
 
 #. module: hr_recruitment
 #: model:survey.label,value:hr_recruitment.rcol_3_1_4
@@ -1855,7 +1873,16 @@ msgstr ""
 #. module: hr_recruitment
 #: model:ir.ui.view,arch_db:hr_recruitment.crm_case_form_view_job
 msgid "e.g. Call for interview"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "např. požádat o pohovor"
+
+#. module: hr_recruitment
+#: model:ir.ui.view,arch_db:hr_recruitment.hr_job_simple_form
+msgid "e.g. Sales Manager"
+msgstr "např. Manažer prodeje"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_recruitment
 #: model:ir.model,name:hr_recruitment.model_hr_recruitment_config_settings

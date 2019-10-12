@@ -9,8 +9,9 @@
 # p_amoruso <p.amoruso@elvenstudio.it>, 2016
 # Martin Trigaux, 2016
 # Giovanni Perteghella <giovanni@perteghella.org>, 2016
-# Paolo Valier, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2019
+# Sergio Zanchetta <primes2h@gmail.com>, 2019
+# Paolo Valier, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -26,7 +27,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2016-09-29 14:00+0000\n"
 "PO-Revision-Date: 2016-09-07 09:27+0000\n"
-"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
+"Last-Translator: Paolo Valier, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -139,7 +140,7 @@ msgstr "ID"
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_id
 msgid "Identifier of the rated object"
-msgstr ""
+msgstr "Identificativo dell'oggetto che è stato valutato"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
@@ -172,7 +173,7 @@ msgstr "Ultima modifica il"
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_message_id
 msgid "Linked message"
-msgstr ""
+msgstr "Messaggio collegato"
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_model
@@ -192,7 +193,7 @@ msgstr ""
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rated_partner_id
 msgid "Owner of the rated resource"
-msgstr ""
+msgstr "Proprietario della risorsa valutata"
 
 #. module: rating
 #: model:ir.model.fields,field_description:rating.field_rating_rating_rated_partner_id
@@ -200,6 +201,14 @@ msgid "Rated Partner"
 msgstr ""
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Rated User"
+msgstr "Utente con valutazione"
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.actions.act_window,name:rating.action_view_rating
 #: model:ir.model,name:rating.model_rating_rating
 #: model:ir.model.fields,field_description:rating.field_mail_channel_rating_ids
@@ -216,7 +225,7 @@ msgstr "Valutazione"
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_graph
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_pivot
 msgid "Rating Average"
-msgstr ""
+msgstr "Media valutazioni"
 
 #. module: rating
 <<<<<<< HEAD
@@ -249,8 +258,13 @@ msgstr "Conteggio delle Valutazioni"
 #. module: rating
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: sql_constraint:rating.rating:0
+<<<<<<< HEAD
 msgid "Rating should be between -1 to 10"
 msgstr ""
+=======
+msgid "Rating should be between 0 to 10"
+msgstr "La valutazione deve essere tra 0 e 10"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rating
@@ -293,6 +307,7 @@ msgid "Security Token"
 msgstr "Token di Sicurezza"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Sorry you have already voted !"
 msgstr ""
@@ -301,16 +316,26 @@ msgstr ""
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Thanks for voting !"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Send Feedback"
+msgstr "Invia opinione"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Thanks! We appreciate your feedback."
+msgstr "Grazie! Apprezziamo la sua opinione."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_name
 msgid "The name of the rated resource."
-msgstr ""
+msgstr "Il nome della risorsa valutata."
 
 #. module: rating
 #: model:ir.actions.act_window,help:rating.action_view_rating
 msgid "There is no rating for this object at the moment."
-msgstr ""
+msgstr "Ancora nessuna valutazione per questo oggetto."
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -318,17 +343,63 @@ msgid "Unhappy"
 msgstr ""
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "We appreciate your feedback!"
+msgstr "Apprezziamo la sua opinione!"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Would be great if you can provide more information:"
+msgstr "Le saremmo grati se ci potesse fornire maggiori informazioni:"
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Year"
 msgstr "Anno"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Your vote has been taken into account."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Your rating has been submitted."
+msgstr "La tua valutazione è stata inviata."
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "by"
+msgstr "da"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:21
+#, python-format
+msgid "highly dissatisfied"
+msgstr "molto insoddisfatto"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:20
+#, python-format
+msgid "not satisfied"
+msgstr "non soddisfatto"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: code:addons/rating/models/rating.py:57
 #, python-format
+<<<<<<< HEAD
 msgid "rated it"
 msgstr ""
+=======
+msgid "satisfied"
+msgstr "soddisfatto"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "you are"
+msgstr "Lei è"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f

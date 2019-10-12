@@ -8,7 +8,8 @@
 # Borut Jures, 2016
 # Martin Trigaux, 2016
 # Vida Potočnik <vida.potocnik@mentis.si>, 2016
-# Matjaž Mozetič <m.mozetic@matmoz.si>, 2019
+# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# Jasmina Macur <jasmina@hbs.si>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -25,7 +26,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2016-11-14 15:53+0000\n"
 "PO-Revision-Date: 2016-09-07 09:21+0000\n"
-"Last-Translator: Matjaž Mozetič <m.mozetic@matmoz.si>, 2019\n"
+"Last-Translator: Jasmina Macur <jasmina@hbs.si>, 2019\n"
 "Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -232,9 +233,108 @@ msgid "Employee attendances"
 msgstr "Prisotnost zaposlenih"
 
 #. module: hr_attendance
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance_error_end_date
 msgid "Ending Date"
 msgstr "Končni datum"
+=======
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
+#: model:ir.ui.view,arch_db:hr_attendance.view_employee_kanban_inherit_hr_attendance
+msgid "Employee's Name"
+msgstr "Ime zaposlenega"
+
+#. module: hr_attendance
+#: model:ir.actions.act_window,name:hr_attendance.hr_employee_attendance_action_kanban
+#: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_employees_kanban
+msgid "Employees"
+msgstr "Kadri"
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid ""
+"Employees do not need to enter their PIN to check in manually in the \"Kiosk"
+" Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: selection:base.config.settings,group_attendance_use_pin:0
+msgid "Employees must enter their PIN to check in manually in the \"Kiosk Mode\"."
+msgstr ""
+
+#. module: hr_attendance
+#: model:res.groups,name:hr_attendance.group_hr_attendance_use_pin
+msgid "Enable PIN use"
+msgstr ""
+
+#. module: hr_attendance
+#: model:ir.model.fields,help:hr_attendance.field_base_config_settings_group_attendance_use_pin
+msgid "Enable or disable employee PIN identification at check in"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/my_attendances.js:29
+#, python-format
+msgid "Error : Could not find employee linked to user"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:35
+#, python-format
+msgid "Error : Could not find employee linked to user."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/xml/attendance.xml:81
+#, python-format
+msgid "Error: could not find corresponding employee."
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:70
+#, python-format
+msgid "First come, first served"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:85
+#, python-format
+msgid "Glad to have you back, it's been a while!"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:76
+#, python-format
+msgid "Good afternoon"
+msgstr "Dober dan"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:78
+#, python-format
+msgid "Good evening"
+msgstr "Dober večer"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:73
+#, python-format
+msgid "Good morning"
+msgstr "Dobro jutro"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:64
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:80
+#, python-format
+msgid "Good night"
+msgstr ""
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_attendance
 #: constraint:hr.attendance:0
@@ -244,10 +344,45 @@ msgstr "Napaka: Prijava (odnosno Odjava) mora slediti Odjavi (odnosno Prijavi)"
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
 msgid "Group By"
+<<<<<<< HEAD
 msgstr "Združeno po"
 
 #. module: hr_attendance
 #: model:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_filter
+=======
+msgstr "Združi po"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:120
+#, python-format
+msgid "Have a good afternoon"
+msgstr "Lepo popoldne"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:111
+#, python-format
+msgid "Have a good day!"
+msgstr ""
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:125
+#, python-format
+msgid "Have a good evening"
+msgstr "Lep večer"
+
+#. module: hr_attendance
+#. openerp-web
+#: code:addons/hr_attendance/static/src/js/greeting_message.js:113
+#, python-format
+msgid "Have a nice lunch!"
+msgstr ""
+
+#. module: hr_attendance
+#: model:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Hr Attendance Search"
 msgstr "Iskanje prisotnosti kadrov"
 

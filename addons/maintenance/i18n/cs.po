@@ -50,12 +50,12 @@ msgstr ""
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_view_kanban
 msgid "<b>Model Number:</b>"
-msgstr ""
+msgstr "<b>Modelové číslo:</b>"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_kanban
 msgid "<b>Request to:</b>"
-msgstr ""
+msgstr "<b>Požadavek na:</b>"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_view_kanban
@@ -140,10 +140,18 @@ msgstr "Majetek"
 msgid "Asset Category"
 msgstr "Kategorie majetku"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_name
 msgid "Asset Name"
 msgstr ""
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+msgid "Assign To User"
+msgstr "Přiřadit k uživateli"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_category_view_tree
@@ -275,10 +283,17 @@ msgstr "Počítače"
 msgid "Configuration"
 msgstr "Nastavení"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.actions.act_window,name:hr_equipment.action_hr_equipment_configuration
 msgid "Configure Equipments"
 msgstr ""
+=======
+#. module: maintenance
+#: selection:maintenance.request,maintenance_type:0
+msgid "Corrective"
+msgstr "Opravný"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_config_settings_view_form
@@ -340,7 +355,7 @@ msgstr "Nástěnka"
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_next_action_date
 msgid "Date of the next preventive maintenance"
-msgstr ""
+msgstr "Datum další preventivní údržby"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_request_request_date
@@ -362,7 +377,7 @@ msgstr ""
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_period
 msgid "Days between each preventive maintenance"
-msgstr ""
+msgstr "Dnů mezi každou preventivní údržbou"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_defaults
@@ -439,19 +454,35 @@ msgstr "Zařízení"
 #: model:mail.message.subtype,name:hr_equipment.mt_cat_mat_assign
 #: model:mail.message.subtype,name:hr_equipment.mt_mat_assign
 msgid "Equipment Assigned"
-msgstr ""
+msgstr "Zařízení přiřazeno"
 
 #. module: hr_equipment
 #: model:ir.actions.act_window,name:hr_equipment.hr_equipment_category_action
 #: model:ir.ui.menu,name:hr_equipment.menu_equipment_cat
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_category_view_form
 msgid "Equipment Categories"
-msgstr ""
+msgstr "Kategorie vybavení"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_view_form
+=======
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_id_3424
+msgid "Equipment Category"
+msgstr "Kategorie zařízení"
+
+#. module: maintenance
+#: model:res.groups,name:maintenance.group_equipment_manager
+msgid "Equipment Manager"
+msgstr "Správce zařízení"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_name
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Equipment Name"
-msgstr ""
+msgstr "Název zařízení"
 
 #. module: hr_equipment
 #: model:ir.actions.act_window,name:hr_equipment.hr_equipment_action
@@ -583,20 +614,40 @@ msgstr "Nízké"
 msgid "Maintenance"
 msgstr "Údržba"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_form
+=======
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_request_calendar
+msgid "Maintenance Calendar"
+msgstr "Kalendář údržby"
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Maintenance Duration"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_maintenance_duration
+msgid "Maintenance Duration in minutes and seconds."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Maintenance Request"
 msgstr "Požadavek na údržbu"
 
 #. module: hr_equipment
 #: model:mail.message.subtype,name:hr_equipment.mt_cat_req_created
 msgid "Maintenance Request Created"
-msgstr ""
+msgstr "Vytvořen požadavek na údržbu"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_stage_view_tree
 msgid "Maintenance Request Stage"
-msgstr ""
+msgstr "Stav požadavku údržby"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_stage_view_search
@@ -606,7 +657,7 @@ msgstr ""
 #. module: hr_equipment
 #: model:mail.message.subtype,description:hr_equipment.mt_req_created
 msgid "Maintenance Request created"
-msgstr ""
+msgstr "Vytvořen požadavek na údržbu"
 
 #. module: hr_equipment
 #: model:ir.actions.act_window,name:hr_equipment.hr_equipment_request_action
@@ -620,16 +671,46 @@ msgstr "Žádosti o údržbu"
 #. module: hr_equipment
 #: model:ir.model,name:hr_equipment.model_hr_equipment_stage
 msgid "Maintenance Stage"
-msgstr ""
+msgstr "Stav údržby"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_form
 msgid "Maintenance Subject"
 msgstr ""
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_category_maintenance_ids
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_maintenance_ids
+=======
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_team_id
+#: model:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+#: model:ir.ui.view,arch_db:maintenance.maintenance_team_view_tree
+msgid "Maintenance Team"
+msgstr "Údržbářský tým"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.maintenance_dashboard_action
+#: model:ir.model,name:maintenance.model_maintenance_team
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_teams
+msgid "Maintenance Teams"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_maintenance_type
+msgid "Maintenance Type"
+msgstr "Typ údržby"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_duration
+msgid "Maintenance duration"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_maintenance_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_ids
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Maintenance ids"
 msgstr ""
 
@@ -663,7 +744,7 @@ msgstr "Název"
 #. module: hr_equipment
 #: model:hr.equipment.stage,name:hr_equipment.stage_0
 msgid "New Request"
-msgstr ""
+msgstr "Nový požadavek"
 
 <<<<<<< HEAD
 #. module: hr_equipment
@@ -696,8 +777,23 @@ msgstr ""
 "připojeny, i když na ně nebylo zodpovězeno. Je-li nastaveno, zcela zakáže "
 "vytváření nových záznamů."
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_category_alias_user_id
+=======
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_m_reports_oee
+msgid "Overall Equipment Effectiveness (OEE)"
+msgstr "Celková účinnost zařízení (OEE)"
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_owner_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_technician_user_id
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Owner"
 msgstr "Vlastník"
 
@@ -734,8 +830,18 @@ msgid ""
 "channels\n"
 msgstr ""
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:hr.equipment.category,name:hr_equipment.hr_equipment_printer
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Preventive Maintenance Frequency"
+msgstr "Četnost preventivní údržby"
+
+#. module: maintenance
+#: model:maintenance.equipment.category,name:maintenance.equipment_printer
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Printers"
 msgstr "Tiskárny"
 
@@ -759,10 +865,17 @@ msgstr "Připraveno na další fázi"
 msgid "Record Thread ID"
 msgstr "ID vlákna záznamu"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_form
 msgid "Repair Responsible"
 msgstr ""
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Reopen Request"
+msgstr "Znovu otevřít požadavek"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_equipment
 #: model:hr.equipment.stage,name:hr_equipment.stage_3
@@ -777,12 +890,12 @@ msgstr "Požadavek"
 #. module: hr_equipment
 #: model:mail.message.subtype,name:hr_equipment.mt_req_created
 msgid "Request Created"
-msgstr ""
+msgstr "Požadavek vytvořen"
 
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_request_request_date
 msgid "Request Date"
-msgstr ""
+msgstr "Datum požadavku"
 
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_stage_done
@@ -794,10 +907,17 @@ msgstr ""
 msgid "Requests Alias"
 msgstr ""
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_form
 msgid "Reset Request"
 msgstr ""
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "Requested By"
+msgstr "Požadováno od"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_category_user_id
@@ -889,7 +1009,7 @@ msgstr "Předmět"
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_request_name
 msgid "Subjects"
-msgstr ""
+msgstr "Předměty"
 
 <<<<<<< HEAD
 #. module: hr_equipment
@@ -909,10 +1029,20 @@ msgstr "Týmy"
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_technician_user_id
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid "Technician"
-msgstr ""
+msgstr "Technik"
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,help:hr_equipment.field_hr_equipment_category_alias_model_id
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+msgid "Technicians"
+msgstr "Technici"
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_model_id
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid ""
 "The model (Odoo Document Kind) to which this alias corresponds. Any incoming "
 "email that does not reply to an existing record will cause the creation of a "
@@ -1018,7 +1148,7 @@ msgstr "Nepřiřazeno"
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_view_search
 msgid "Under Maintenance"
-msgstr ""
+msgstr "V údržbě"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_kanban
@@ -1032,10 +1162,17 @@ msgstr "Nepřečtené zprávy"
 msgid "Use the following alias to report internal equipment issue"
 msgstr ""
 
+<<<<<<< HEAD
 #. module: hr_equipment
 #: model:ir.model.fields,field_description:hr_equipment.field_hr_equipment_equipment_assign_to
 msgid "Used By"
 msgstr ""
+=======
+#. module: maintenance
+#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Used in location"
+msgstr "Použito na místě"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_search
@@ -1092,7 +1229,7 @@ msgstr "pro"
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_tree
 msgid "maintenance Request"
-msgstr ""
+msgstr "Požadavek na údržbu"
 
 #. module: hr_equipment
 #: model:ir.ui.view,arch_db:hr_equipment.hr_equipment_request_view_search

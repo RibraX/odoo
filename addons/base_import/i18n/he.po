@@ -7,6 +7,8 @@
 =======
 # ExcaliberX <excaliberx@gmail.com>, 2017
 # Martin Trigaux, 2017
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
+# Amit Spilman <amit@laylinetech.com>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -26,7 +28,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2017-06-23 13:27+0000\n"
 "PO-Revision-Date: 2016-09-07 09:17+0000\n"
-"Last-Translator: Martin Trigaux, 2017\n"
+"Last-Translator: Amit Spilman <amit@laylinetech.com>, 2019\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +51,7 @@ msgstr ""
 msgid ""
 "A single column was found in the file, this often means the file separator "
 "is incorrect"
-msgstr ""
+msgstr "נמצא עמודה אחת בקובץ, פירוש הדבר לעתים קרובות שמפריד הקבצים שגוי"
 
 #. module: base_import
 #. openerp-web
@@ -182,22 +184,33 @@ msgstr "בטל"
 #: code:addons/base_import/static/src/js/import.js:205
 #: code:addons/base_import/static/src/js/import.js:216
 #, python-format
+<<<<<<< HEAD
 msgid "Comma"
 msgstr ""
+=======
+msgid "Column %s contains incorrect values (value: %s)"
+msgstr "עמודה %s מכיל ערכים שגויים (ערך: %s)"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:159
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Country/Database \n"
 "                        ID: 21"
 msgstr ""
+=======
+msgid "Column %s contains incorrect values. Error in line %d: %s"
+msgstr "עמודה %s מכיל ערכים שגויים. שגיאה בשורה %d: %s"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:153
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Country/Database ID: the unique Odoo ID for a \n"
 "                        record, defined by the ID postgresql column"
@@ -234,6 +247,10 @@ msgstr ""
 #, python-format
 msgid "Country: the name or code of the country"
 msgstr ""
+=======
+msgid "Comma"
+msgstr "פסיק"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_create_uid
@@ -272,17 +289,44 @@ msgid "Created on"
 msgstr "נוצר ב-"
 
 #. module: base_import
+<<<<<<< HEAD
+=======
+#: code:addons/base_import/models/base_import.py:152
+#: code:addons/base_import/models/base_import.py:157
+#, python-format
+msgid "Database ID"
+msgstr "מזהה מסד נתונים"
+
+#. module: base_import
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:244
 #, python-format
+<<<<<<< HEAD
 msgid "Customers and their respective contacts"
 msgstr ""
+=======
+msgid "Date Format:"
+msgstr "פורמט תאריך:"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #: code:addons/base_import/models.py:149 code:addons/base_import/models.py:155
 #, python-format
+<<<<<<< HEAD
 msgid "Database ID"
 msgstr ""
+=======
+msgid "Datetime Format:"
+msgstr "פורמט תאריך ושעה:"
+
+#. module: base_import
+#. openerp-web
+#: code:addons/base_import/static/src/js/base_import.js:128
+#, python-format
+msgid "Decimal Separator:"
+msgstr "מפריד עשרוני:"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_display_name
@@ -307,11 +351,23 @@ msgstr "השם המוצג"
 #: code:addons/base_import/static/src/js/import.js:321
 #, python-format
 msgid "Don't import"
-msgstr ""
+msgstr "שלא לייבוא"
 
 #. module: base_import
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/base_import/static/src/js/import.js:91
+=======
+#: code:addons/base_import/static/src/js/base_import.js:264
+#: code:addons/base_import/static/src/js/base_import.js:282
+#, python-format
+msgid "Dot"
+msgstr "נקודה"
+
+#. module: base_import
+#. openerp-web
+#: code:addons/base_import/static/src/js/base_import.js:120
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "Encoding:"
 msgstr "קידוד:"
@@ -327,7 +383,7 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import.js:451
 #, python-format
 msgid "Everything seems valid."
-msgstr ""
+msgstr "הכל נראה תקף."
 
 #. module: base_import
 #. openerp-web
@@ -367,7 +423,7 @@ msgstr "שם קובץ"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_file_type
 msgid "File Type"
-msgstr ""
+msgstr "סוג קובץ"
 
 #. module: base_import
 #. openerp-web
@@ -399,11 +455,16 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:149
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "For example, to \n"
 "                        reference the country of a contact, Odoo proposes \n"
 "                        you 3 different fields to import:"
 msgstr ""
+=======
+msgid "Get all possible values"
+msgstr "קבל את כל הערכים האפשריים"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #. openerp-web
@@ -445,14 +506,14 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import.js:485
 #, python-format
 msgid "Here are the possible values:"
-msgstr ""
+msgstr "אלה הערכים האפשריים:"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:385
 #, python-format
 msgid "Here is the start of the file we could not import:"
-msgstr ""
+msgstr "הנה תחילת הקובץ שאיננו יכולים לייבא:"
 
 #. module: base_import
 #. openerp-web
@@ -663,14 +724,14 @@ msgstr "ייבוא"
 #: code:addons/base_import/static/src/js/import.js:147
 #, python-format
 msgid "Import a File"
-msgstr ""
+msgstr "ייבוא קובץ"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:383
 #, python-format
 msgid "Import preview failed due to:"
-msgstr ""
+msgstr "התצוגה המקדימה של הייבוא נכשלה בשל:"
 
 #. module: base_import
 #. openerp-web
@@ -748,19 +809,29 @@ msgstr "עודכן לאחרונה על"
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:37
 #, python-format
+<<<<<<< HEAD
 msgid "Map your data to Odoo"
 msgstr ""
+=======
+msgid "Load File"
+msgstr "טען קובץ"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:130
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Microsoft Excel will allow \n"
 "                        you to modify only the encoding when saving \n"
 "                        (in 'Save As' dialog box > click 'Tools' dropdown \n"
 "                        list > Encoding tab)."
 msgstr ""
+=======
+msgid "Map your columns to import"
+msgstr "למפות את העמודות לייבוא"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import_res_model
@@ -837,10 +908,15 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_import/static/src/xml/import.xml:9
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Select the file to import. If you need a sample importable file, you\n"
 "            can use the export tool to generate one."
 msgstr ""
+=======
+msgid "Select a CSV or Excel file to import."
+msgstr "ייבא מקובץ csv או excel"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: base_import
 #. openerp-web

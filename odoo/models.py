@@ -4181,7 +4181,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
 =======
             exc = MissingError(
                 _("Record does not exist or has been deleted.")
-                + '\n\n({} {}, {} {})'.format(_('Records:'), (self - existing).ids[:6], _('User:'), self._uid)
+                + u'\n\n({} {}, {} {})'.format(_('Records:'), (self - existing).ids[:6], _('User:'), self._uid)
             )
             (self - existing)._cache.update(FailedValue(exc))
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09

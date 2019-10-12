@@ -650,7 +650,7 @@ msgstr "عنوان الشحن المباشر"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_config_settings_module_stock_dropshipping
 msgid "Dropshipping"
-msgstr ""
+msgstr "بيع عبر سلسلة التجزئة"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_mail_compose_message
@@ -1580,7 +1580,7 @@ msgstr "الضرائب"
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_default_location_dest_id_usage
 msgid "Technical field used to display the Drop Ship Address"
-msgstr ""
+msgstr "حقل تقني يستخدم لعرض عنوان الشحن"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_notes
@@ -1730,8 +1730,14 @@ msgstr "نقل"
 #: code:addons/purchase/purchase.py:300
 #, python-format
 msgid ""
+<<<<<<< HEAD
 "Unable to cancel purchase order %s as some receptions have already been done."
 msgstr ""
+=======
+"Unable to cancel purchase order %s as some receptions have already been "
+"done."
+msgstr "تعذّر إلغاء أمر الشراء %s لأن بعض الاستلامات قد تمت بالفعل."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:303
@@ -1929,7 +1935,7 @@ msgstr ""
 #: code:addons/purchase/purchase.py:335
 #, python-format
 msgid "You must set a Vendor Location for this partner %s"
-msgstr ""
+msgstr "يجب أن تحدد مكان مورد لهذا الشريك %s"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_purchase_config_settings

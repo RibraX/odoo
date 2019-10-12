@@ -171,10 +171,19 @@ database
     specified `template database`_. Defaults to ``template1``.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. option:: --no-database-list
 
     Suppresses the ability to list databases available on the system
 =======
+=======
+.. option:: --pg_path </path/to/postgresql/binaries>
+
+    Path to the PostgreSQL binaries that are used by the database manager to
+    dump and restore databases. You have to specify this option only if these
+    binaries are located in a non-standard directory.
+
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 .. _reference/cmdline/server/internationalisation:
 
 Internationalisation

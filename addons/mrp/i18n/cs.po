@@ -79,7 +79,7 @@ msgstr "# Výrobní příkazy"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_workorder_ready_count
 msgid "# Read Work Orders"
-msgstr ""
+msgstr "počet přečtených pracovních příkazů"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_workorder_count
@@ -260,7 +260,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "<strong>Source Document:</strong><br/>"
-msgstr ""
+msgstr "<strong>Zdrojový dokument:</strong><br/>"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.report_mrporder
@@ -342,6 +342,51 @@ msgid "Approve"
 msgstr "Potvrdit"
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:mrp.mrp_routing_search_view
+#: model:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
+#: model:ir.ui.view,arch_db:mrp.view_mrp_workcenter_search
+msgid "Archived"
+msgstr "Archivováno"
+
+#. module: mrp
+#: model:product.product,name:mrp.product_assembly
+#: model:product.template,name:mrp.product_assembly_product_template
+msgid "Assembly Service Cost"
+msgstr "Náklady na sestavení"
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_bom.py:258
+#, python-format
+msgid "Attachments"
+msgstr "Přílohy"
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_message_view_tree
+msgid "Author"
+msgstr "Autor"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_availability
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_production_availability
+#: selection:mrp.workcenter.productivity.loss,loss_type:0
+msgid "Availability"
+msgstr "Dostupnost"
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.oee_search_view
+msgid "Availability Losses"
+msgstr "Ztráty dostupnosti"
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.view_mrp_production_workcenter_form_view_filter
+#: selection:mrp.production,availability:0
+msgid "Available"
+msgstr "Dostupné"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,help:mrp.field_product_product_produce_delay
 #: model:ir.model.fields,help:mrp.field_product_template_produce_delay
 msgid ""
@@ -507,9 +552,15 @@ msgid "BoM Type"
 msgstr "Druh kusovníku"
 
 #. module: mrp
+<<<<<<< HEAD
 #: selection:mrp.product.produce,tracking:0
 msgid "By Lots"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:mrp.mrp_bom_line_view_form
+msgid "BoM details"
+msgstr "detaily kusovníku"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 <<<<<<< HEAD
@@ -600,9 +651,15 @@ msgid "Capacity Information"
 msgstr "Informace o kapacitě"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity_per_cycle
 msgid "Capacity per Cycle"
 msgstr "Kapacita na cykl"
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_check_to_done
+msgid "Check Produced Qty"
+msgstr "Zkontrolovat vyrobené množství"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 <<<<<<< HEAD
@@ -923,12 +980,22 @@ msgstr "Popis"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter_note
+<<<<<<< HEAD
 msgid ""
 "Description of the Work Center. Explain here what's a cycle according to "
 "this Work Center."
 msgstr ""
 "Popis výrobního střediska. Uveďte zde, jak vypadá cyklus tohoto výrobního "
 "střediska."
+=======
+msgid "Description of the Work Center."
+msgstr ""
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_workcenter_view
+msgid "Description of the work center..."
+msgstr "Popis pracovního centra ..."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
@@ -1573,8 +1640,13 @@ msgstr "Výrobní příkazy, které jsou momentálně zpracovávány."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
+<<<<<<< HEAD
 msgid "Manufacturing Orders which are ready to start production."
 msgstr "Výrobní příkazy připravené na započetí výroby."
+=======
+msgid "Manufacturing Orders which are in confirmed state."
+msgstr "Výrobní zakázky, které jsou v potvrzeném stavu."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
@@ -1902,7 +1974,7 @@ msgstr "Celková účinnost zařízení"
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter_oee
 msgid "Overall Equipment Effectiveness, based on the last month"
-msgstr ""
+msgstr "Celková účinnost zařízení na základě posledního měsíce"
 
 #. module: mrp
 #: model:ir.actions.act_window,help:mrp.mrp_workcenter_productivity_report
@@ -1913,7 +1985,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_config_settings_module_mrp_plm
 msgid "PLM"
-msgstr ""
+msgstr "PLM"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line_bom_id
@@ -2170,9 +2242,15 @@ msgid "Production Started"
 msgstr "Výroba začala"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Production Work Centers"
 msgstr "Výrobní střediska"
+=======
+#: selection:mrp.workcenter.productivity.loss,loss_type:0
+msgid "Productive"
+msgstr "Výrobní"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_progress
@@ -2369,7 +2447,7 @@ msgstr ""
 #: code:addons/mrp/static/src/js/mrp.js:24
 #, python-format
 msgid "Ready to produce"
-msgstr ""
+msgstr "Připraveno k výrobě"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_duration
@@ -2389,9 +2467,20 @@ msgstr "Záznam výroby"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 
 #. module: mrp
+<<<<<<< HEAD
 #: selection:mrp.production,state:0
 msgid "Ready to Produce"
 msgstr "Připraveno k výrobě"
+=======
+#: code:addons/mrp/models/mrp_bom.py:131
+#, python-format
+msgid ""
+"Recursion error!  A product with a Bill of Material should not have itself "
+"in its BoM or child BoMs!"
+msgstr ""
+"Chyba rekurze! Výrobek s kusovníkem by se sám neměl nacházet v jeho "
+"kusovníku nebo v podřízených kusovnících."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_code
@@ -2666,12 +2755,18 @@ msgid "Stock value"
 msgstr "Hodnota zásob"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model,name:mrp.model_report_mrp_inout
 #: model:ir.ui.view,arch_db:mrp.view_report_in_out_picking_form
 #: model:ir.ui.view,arch_db:mrp.view_report_in_out_picking_graph
 #: model:ir.ui.view,arch_db:mrp.view_report_in_out_picking_tree
 msgid "Stock value variation"
 msgstr "Změna hodnoty zásob"
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line_child_bom_id
+msgid "Sub BoM"
+msgstr "Podřízený kusovník"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_stock_move_consumed_for
@@ -2708,6 +2803,8 @@ msgstr ""
 #: model:ir.model.fields,help:mrp.field_mrp_production_check_to_done
 msgid "Technical Field to see if we can show 'Mark as Done' button"
 msgstr ""
+"Technické pole, abychom zjistili, zda můžeme zobrazit tlačítko „Označit jako"
+" hotovo“"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_stock_move_lots_done_wo
@@ -2734,12 +2831,12 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workorder_production_availability
 msgid "Technical: used in views and domains only."
-msgstr ""
+msgstr "Technické: používá se pouze v pohledech a doménách."
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workorder_working_state
 msgid "Technical: used in views only"
-msgstr ""
+msgstr "Technické: používá se pouze v zobrazení"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workorder_product_id
@@ -2824,7 +2921,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workorder_qty_produced
 msgid "The number of products already handled by this work order"
-msgstr ""
+msgstr "Počet produktů již zpracovaných touto zakázkou"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_bom_line_operation_id
@@ -2937,8 +3034,32 @@ msgid "To Consume"
 msgstr "Ke spotřebě"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_cost
 msgid "Total Cost"
+=======
+#: model:ir.model.fields,field_description:mrp.field_stock_move_lots_quantity
+#: model:ir.ui.view,arch_db:mrp.stock_production_type_kanban
+#: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
+msgid "To Do"
+msgstr "Úkoly"
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
+msgid "To Launch"
+msgstr ""
+
+#. module: mrp
+#: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
+#: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
+msgid "To Produce"
+msgstr "K výrobě"
+
+#. module: mrp
+#: model:ir.actions.act_window,help:mrp.mrp_workcenter_kanban_action
+msgid ""
+"To create a new work center, Go to <b><i> Master Data/Work Centers. </i></b>"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgstr ""
 
 #. module: mrp
@@ -2953,10 +3074,16 @@ msgid "Total Cycles"
 msgstr "Celkem cyklů"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_hour_total
 #: model:ir.ui.view,arch_db:mrp.mrp_production_tree_view
 msgid "Total Hours"
 msgstr "Celkem hodin"
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_workorder_late_count
+msgid "Total Late Orders"
+msgstr "Celkový počet pozdních objednávek"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_tree_view
@@ -3092,10 +3219,16 @@ msgid "Valid From Date by Month"
 msgstr "Platné ode dne v měsíci"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
 #: model:ir.ui.view,arch_db:mrp.view_mrp_bom_line_filter
 msgid "Valid From Month"
 msgstr "Platné od měsíce"
+=======
+#: selection:ir.attachment,priority:0
+msgid "Very High"
+msgstr "Velmi vysoko"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_date_stop
@@ -3246,8 +3379,21 @@ msgid ""
 msgstr ""
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model,name:mrp.model_mrp_production_workcenter_line
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_workcenter_line_name
+=======
+#: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
+msgid "Work Instruction"
+msgstr "Pracovní instrukce"
+
+#. module: mrp
+#: model:ir.model,name:mrp.model_mrp_workorder
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_workorder_id
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_name
+#: model:ir.model.fields,field_description:mrp.field_stock_move_lots_workorder_id
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap_workorder_id
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Work Order"
 msgstr "Pracovní příkaz"
 
@@ -3335,7 +3481,7 @@ msgstr ""
 =======
 #: model:ir.ui.view,arch_db:mrp.oee_search_view
 msgid "Workcenter"
-msgstr ""
+msgstr "Pracovní centrum"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.oee_form_view
@@ -3355,7 +3501,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:mrp.oee_loss_form_view
 #: model:ir.ui.view,arch_db:mrp.oee_loss_tree_view
 msgid "Workcenter Productivity Loss"
-msgstr ""
+msgstr "Ztráta produktivity pracovního centra"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban

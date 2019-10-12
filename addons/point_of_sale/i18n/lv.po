@@ -11,6 +11,8 @@
 # Arnis Putniņš <arnis@allegro.lv>, 2017
 # InfernalLV <karlisdreizis@gmail.com>, 2018
 # Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019
+# ievaputnina <ievai.putninai@gmail.com>, 2019
+# Artjoms Ustinovs <artyom.ustinov2010@yandex.ru>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -26,7 +28,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2017-06-23 13:27+0000\n"
 "PO-Revision-Date: 2016-09-07 09:25+0000\n"
-"Last-Translator: Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019\n"
+"Last-Translator: Artjoms Ustinovs <artyom.ustinov2010@yandex.ru>, 2019\n"
 "Language-Team: Latvian (https://www.transifex.com/odoo/teams/41243/lv/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -617,6 +619,19 @@ msgid "Cash control can only be applied to cash journals."
 msgstr ""
 
 #. module: point_of_sale
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:point_of_sale.model_account_cashbox_line
+msgid "CashBox Line"
+msgstr "Kases Rinda"
+
+#. module: point_of_sale
+#: model:ir.ui.view,arch_db:point_of_sale.view_pos_config_form
+msgid "Cashbox"
+msgstr "Seifs"
+
+#. module: point_of_sale
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_iface_cashdrawer
 msgid "Cashdrawer"
 msgstr ""
@@ -1416,7 +1431,18 @@ msgstr ""
 
 #. module: point_of_sale
 #. openerp-web
+<<<<<<< HEAD
 #: code:addons/point_of_sale/static/src/xml/pos.xml:1181
+=======
+#: code:addons/point_of_sale/static/src/js/models.js:135
+#, python-format
+msgid "HTTPS connection to IoT Box failed"
+msgstr ""
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:1322
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "Hardware Events"
 msgstr ""
@@ -1719,7 +1745,7 @@ msgstr ""
 #: code:addons/point_of_sale/static/src/xml/pos.xml:38
 #, python-format
 msgid "Loading"
-msgstr ""
+msgstr "Notiek ielāde"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order_location_id
@@ -1750,9 +1776,18 @@ msgid "Make Payment"
 msgstr "Veikt Maksājumu"
 
 #. module: point_of_sale
+<<<<<<< HEAD
 #: model:product.product,name:point_of_sale.malibu
 #: model:product.template,name:point_of_sale.malibu_product_template
 msgid "Malibu"
+=======
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/models.js:137
+#, python-format
+msgid ""
+"Make sure you are using IoT Box v18.12 or higher. Navigate to %s to accept "
+"the certificate of your IoT Box."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgstr ""
 
 #. module: point_of_sale

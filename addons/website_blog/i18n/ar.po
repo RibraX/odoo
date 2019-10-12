@@ -58,6 +58,9 @@ msgid ""
 "to\n"
 "                    the superior technologies of the SME.\""
 msgstr ""
+"\"أخيرًا، أُطلقت التقنية الأحدث للجماهير.\n"
+"                        سوف تكون نقطة تحوّل لأكبر مزودي الخدمات للحاق\n"
+"                        بتقنيات إدارة المؤسسات الصغيرة والمتوسطة الرائدة.\""
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
@@ -72,6 +75,14 @@ msgid ""
 "                compete at this level due to the technology currently\n"
 "                employed by most industry providers.\""
 msgstr ""
+"\"تتنافس أودو حاليًا على عدة جبهات، ولا توجد مؤسسة أخرى\n"
+"                    قادرة على زحزحتها عن المركز الأول.\n"
+"                    بإطلاق أودو نظام إدارة المحتوى المتكامل ونظام المتجر الإلكتروني،\n"
+"                    رفع هذا من شأنها كإحدى المؤسسات الرائدة\n"
+"                    في ثورة المنصات مفتوحة المصدر. ولن تتمكن أية مؤسسة أخرى قبل 5 سنوات\n"
+"                    على الأقل من منافستها على هذا المستوى\n"
+"                    بسبب التقنيات التي يستخدمها حاليًا\n"
+"                    أغلب مزودي خدمات تخطيط موارد المؤسسات وإدارة المحتوى.\""
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
@@ -85,15 +96,38 @@ msgid ""
 "                enterprise to compete at a level of functionality and\n"
 "                performance previously reserved for the big IT investors.\""
 msgstr ""
+"\"سوف تسمح أحدث خدمات أودو للمؤسسات بالبدء من الصفر\n"
+"                    والانطلاق نحو البيع الإلكتروني أسرع من أي وقت مضى،\"\n"
+"                    هكذا يشرح ستيورات ماكينتوش، خبير النظم مفتوحة المصدر\n"
+"                    وأحد شركاء نظام أودو المتكامل، ونظام OpusVL. ويكمل:\n"
+"                    \"لقد ساهمت أودو في تخفيض تكلفة إقامة نظام إدارة أعمال مؤتمت بالكامل تخفيضًا كبيرًا،\n"
+"                    مما يساعد المؤسسات الصغيرة والمتوسطة على التنافس في مستوى من العملية ودقة الأداء\n"
+"                    كانا من قبل مقتصرين على مستثمري تكنولوجيا المعلومات الكبار فقط.\""
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
 msgid ""
 "\"This is another clever and highly disruptive move by\n"
+<<<<<<< HEAD
 "                Odoo,which will force other technology providers to\n"
 "                take another look at the value they are providing to ensure\n"
 "                that their 'solutions' can still compete.\""
 msgstr ""
+=======
+"                    Odoo,which will force other technology providers to\n"
+"                    take another look at the value they are providing to ensure\n"
+"                    that their 'solutions' can still compete.\""
+msgstr ""
+"\"هذه خطوة أخرى ذكية وقاصمة من أودو،\n"
+"                    وسوف تجبر مزودي خدمات التقنية الآخرين على\n"
+"                    إعادة النظر لقيمة الخدمات التي يوفرونها للتأكد\n"
+"                    ما إن كانت 'حلولهم' لا تزال قادرة على التنافس.\""
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.blog_post_short
+msgid "&amp;mdash;"
+msgstr "&amp;mdash;"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.latest_blogs
@@ -103,20 +137,73 @@ msgstr " & أوقات"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_feed
 msgid "&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;"
-msgstr ""
+msgstr "&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;"
 
 #. module: website_blog
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:website_blog.view_blog_blog_form
+msgid ""
+"(Un)archiving a blog automatically (un)archives its posts. Do you want to "
+"proceed?"
+msgstr ""
+"تؤدي أرشفة (أو إلغاء أرشفة) المدونة لأرشفة مقالاتها تلقائيًا. هل تود "
+"الاستمرار؟"
+
+#. module: website_blog
+#. openerp-web
+#: code:addons/website_blog/static/src/js/website.tour.blog.js:53
+#, python-format
+msgid "<b>Click on Save</b> to record your changes."
+msgstr "<b>اضغط على حفظ</b> لتسجيل التغييرات."
+
+#. module: website_blog
+#. openerp-web
+#: code:addons/website_blog/static/src/js/website.tour.blog.js:69
+#, python-format
+msgid "<b>Publish your blog post</b> to make it visible to your visitors."
+msgstr "<b>انشر مقال مدونتك</b> ليظهر لزوارك."
+
+#. module: website_blog
+#. openerp-web
+#: code:addons/website_blog/static/src/js/website.tour.blog.js:73
+#, python-format
+msgid ""
+"<b>That's it, your blog post is published!</b> Discover more features "
+"through the <i>Customize</i> menu."
+msgstr ""
+"<b>هذا كل شيء، تم نشر مقال مدونتك!</b> اكتشف خصائص أخرى من قائمة "
+"<i>تخصيص</i>."
+
+#. module: website_blog
+#. openerp-web
+#: code:addons/website_blog/static/src/js/website.tour.blog.js:44
+#, python-format
+msgid ""
+"<b>Write your story here.</b> Use the top toolbar to style your text: add an"
+" image or table, set bold or italic, etc. Drag and drop building blocks for "
+"more graphical blogs."
+msgstr ""
+"<b>اكتب قصتك هنا.</b> استخدم شريط الأدوات العلوي لتنسيق نصك: أضف صورة أو "
+"جدول، واجعل النص سميكًا أو مائلًا، إلخ. قم بسحب وإسقاط عناصر البناء لإضافة "
+"مدونات رسومية أكثر."
+
+#. module: website_blog
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:blog.post,content:website_blog.blog_post_1
 msgid ""
 "A mix of push &amp; pull: Today, people\n"
 "                    are victims of what others decide to push to them.\n"
 "                    Odoo differentiates:"
 msgstr ""
+"مزيج من السحب والإسقاط، يعاني الناس\n"
+"                        لأن غيرهم يتخذون لهم القرارات.\n"
+"                        أودو تختلف عن الآخرين:"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "A new post"
-msgstr ""
+msgstr "مشاركة جديدة"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_about_us
@@ -126,7 +213,7 @@ msgstr "من نحن"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "Access post"
-msgstr ""
+msgstr "الوصول للمشاركة"
 
 #. module: website_blog
 #. openerp-web
@@ -138,7 +225,7 @@ msgstr "أضف محتوى"
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
 msgid "Adding to industry leading technology"
-msgstr ""
+msgstr "إضافة للتقنية الرائدة في الصناعة"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_history
@@ -154,6 +241,10 @@ msgid ""
 "                integrated with many web tools and works across all devices\n"
 "                by default."
 msgstr ""
+"عند التثبيت، يأتي الموقع بشكل افتراضي مبني على Bootstrap 3،\n"
+"وهي الأحدث في تقنيات التطوير السريع للمواقع المتوافقة مع أجهزة\n"
+"متنوعة وهذه التقنية مدعومة من تويتر. تؤهلك Bootstrap لربط موقعك\n"
+"مباشرة مع العديد من أدوات ويب وتعمل على كافة الأجهزة بشكل افتراضي."
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -163,11 +254,15 @@ msgid ""
 "                the biggest wastes of time in companies, we have to fix\n"
 "                this."
 msgstr ""
+"في أودو، نصنع أدوات لتحسين إنتاجية\n"
+"                    المؤسسات. الرسائل الإلكترونية والتدفق المعلوماتي هما أحد\n"
+"                    أكثر مضيعات الوقت في المؤسسات، ولهذا علينا\n"
+"                    معالجة ذلك."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "Atom Feed"
-msgstr ""
+msgstr "Atom Feed"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_author_id
@@ -208,7 +303,7 @@ msgstr "مقال المدونة"
 #: code:addons/website_blog/models/website_blog.py:287
 #, python-format
 msgid "Blog Post <b>%s</b> seems to have a link to this page !"
-msgstr ""
+msgstr "يبدو أن مقال المدونة <b>%s</b> يحتوي على رابط لهذه الصفحة!"
 
 #. module: website_blog
 #. openerp-web
@@ -277,13 +372,19 @@ msgstr "تغيير الغلاف"
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:54
 #, python-format
+<<<<<<< HEAD
 msgid "Change and customize your blog post cover."
 msgstr ""
+=======
+msgid "Choose an image from the library."
+msgstr "اختر صورة من المكتبة."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:108
 #, python-format
+<<<<<<< HEAD
 msgid "Check Mobile Preview"
 msgstr "معاينة واجهة الموبايل"
 
@@ -300,6 +401,10 @@ msgstr ""
 #, python-format
 msgid "Choose an image from the library."
 msgstr ""
+=======
+msgid "Click here to change your post cover."
+msgstr "اضغط هنا لتغيير غلاف مشاركتك."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -312,11 +417,13 @@ msgstr "انقر \"المحتوى\" في القائمة العلوية لإنش�
 #, python-format
 msgid "Click on '<em>Save</em>' button to record changes on the page."
 msgstr ""
+"انقر على \"صفحة جديدة\" في الزاوية العليا اليمنى لكتابة أول مقال على مدونتك."
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:77
 #, python-format
+<<<<<<< HEAD
 msgid "Click on '<em>Save</em>' to set the picture as cover."
 msgstr ""
 
@@ -328,6 +435,10 @@ msgid ""
 "Click on the mobile icon to preview how your blog post will be displayed on "
 "a mobile device."
 msgstr ""
+=======
+msgid "Click on <b>Save</b> to set the picture as cover."
+msgstr "اضغط على <b>حفظ</b> لاستخدام الصورة كغلاف."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.actions.act_window,help:website_blog.action_blog_post
@@ -377,7 +488,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_cover_properties
 msgid "Cover Properties"
-msgstr ""
+msgstr "خصائص الغلاف"
 
 #. module: website_blog
 #. openerp-web
@@ -426,16 +537,27 @@ msgid "Duplicate"
 msgstr "استنساخ"
 
 #. module: website_blog
+<<<<<<< HEAD
 #: model:ir.model,name:website_blog.model_mail_compose_message
 msgid "Email composition wizard"
 msgstr ""
+=======
+#: model:blog.post,content:website_blog.blog_post_1
+msgid "Emails are broken."
+msgstr "رسائل البريد الإلكتروني معطلة."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_survey_mail_compose_message
 msgid "Email composition wizard for Survey"
 msgstr ""
+"البريد الإلكتروني يضيع وقتي. لكنني أحتاجه.\n"
+"                    نظرًا لأهمية البريد الإلكتروني في حياتنا،\n"
+"                    من المدهش أنه أحد المجالات التقنية القليلة\n"
+"                    التي لم تتطور على مدار الـ20 عامًا الماضية!"
 
 #. module: website_blog
+<<<<<<< HEAD
 #: model:blog.post,content:website_blog.blog_post_1
 msgid "Emails are broken."
 msgstr ""
@@ -448,6 +570,16 @@ msgid ""
 "                it's incredible it's still one of the only software\n"
 "                areas that did not evolve in the past 20 years!"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_blog.website_blog
+msgid "Filter Color"
+msgstr "لون الفلتر"
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.website_blog
+msgid "Filter Intensity"
+msgstr "شدة الفلتر"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -459,6 +591,11 @@ msgid ""
 "                    (signatures are on the profile of a contact, not in\n"
 "                    every message)"
 msgstr ""
+"التركيز على المحتوى: يتم تلخيص كل شيء\n"
+"                        لإبراز الرسالة الحقيقية. لا مزيد من المقدمات،\n"
+"                        أو التحيات، أو التوقيعات، أو الملاحظات القانونية.\n"
+"                        نحن نوحد مخطط كافة الرسائل.\n"
+"                        (نحتفظ بالتوقيعات في الملف الشخصي لجهة الاتصال، لا في كل رسالة)"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -469,6 +606,11 @@ msgid ""
 "                    created with one click. Every group should have it's\n"
 "                    own email address."
 msgstr ""
+"المجلدات والقوائم البريدية أدوات رائعة لكنها معقدة للغاية\n"
+"                        في منصات البريد التقليدية. في أودو،\n"
+"                        يمكن إنشاء مجموعة جهات اتصال تشترك معًا في مناقشة\n"
+"                        بنقرة واحدة. يجب أن يكون لكل مجموعة\n"
+"                        عنوانًا بريديًا خاصًا بهم."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
@@ -478,7 +620,7 @@ msgstr "تابعنا"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Full Screen"
-msgstr ""
+msgstr "شاشة كاملة"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -489,11 +631,16 @@ msgid ""
 "                    actions. Every inbox should be empty after having\n"
 "                    been processed; no more overload of information."
 msgstr ""
+"أنهي مهامك: صندوق الوارد هو قائمة أعمال.\n"
+"                       ينبغي أن تتمكن من معالجة محتوياته بالكامل (لا تقرأها وحسب)\n"
+"                       كما ينبغي أن تتمكن بسهولة من تمييز الرسائل للإجراءات المستقبلية.\n"
+"                       يجب أن يكون صندوق الوارد فارغًا بعد الانتهاء من معالجته؛\n"
+"                       لا مزيد من المعلومات الزائدة عن الحاجة."
 
 #. module: website_blog
 #: model:blog.blog,subtitle:website_blog.blog_blog_1
 msgid "Get in touch with us"
-msgstr ""
+msgstr "تواصل معنا"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -508,7 +655,7 @@ msgstr "تجميع حسب"
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
 msgid "Here are the ideas behind the Odoo communication tools:"
-msgstr ""
+msgstr "هذه الأفكار هي ما ألهمت أدوات التواصل التي تطورها أودو:"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -524,6 +671,11 @@ msgid ""
 "                it updates the product database in real time, providing a\n"
 "                true self-service window into the business."
 msgstr ""
+"لكن على عكس أنظمة إدارة المحتوى الأخرى،\n"
+"                    ترتبط أودو ارتباطًا كاملًا بقاعدة البيانات في جهة الموقع النهائية. مما يعني\n"
+"                    أنك عندما تقوم بتحرير وصف منتج، أو صورته، أو سعره،\n"
+"                    تقوم أودو بتحديث قاعدة بيانات المنتج في الوقت الحقيقي، مما يوفر\n"
+"                    نافذة خدمية تلقائية تساعدك على إدارة أعمالك."
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog_id
@@ -535,7 +687,7 @@ msgstr "المعرف"
 #. module: website_blog
 #: model:blog.post,subtitle:website_blog.blog_post_1
 msgid "Ideas behind the Odoo communication tools."
-msgstr ""
+msgstr "الأفكار التي ألهمت أدوات التواصل التي تطورها أودو."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.latest_blogs
@@ -545,7 +697,7 @@ msgstr ""
 #. module: website_blog
 #: model:blog.post,name:website_blog.blog_post_2
 msgid "Integrating your CMS and E-Commerce"
-msgstr ""
+msgstr "الربط ما بين نظام إدارة المحتوى ومتجرك الإلكتروني"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -555,6 +707,10 @@ msgid ""
 "                    should follow/unfollow any kind of information in one\n"
 "                    click."
 msgstr ""
+"تحكم في اختيار ما تريد استلامه وما لا تريد استلامه.\n"
+"                        لا ينبغي أن تصلك رسائل مزعجة.\n"
+"                        يمكنك متابعة أو إلغاء متابعتك لأية معلومات\n"
+"                        بنقرة واحدة."
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_write_uid
@@ -601,6 +757,9 @@ msgid ""
 "                content in-line, enabling you to see exactly what you are\n"
 "                changing and ensure your changes suit the context."
 msgstr ""
+"كالعديد من محررات الويب الحديثة، يمكنك من خلال أودو تحرير\n"
+"                    محتواك موضعيًا، مما يمكنك من رؤية ما تغيره بدقة\n"
+"                    ويضمن أن تناسب تغييراتك سياق المحتوى."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -626,6 +785,11 @@ msgid ""
 "                            of your daily emails. Use the \"To: me\" menu\n"
 "                            for these."
 msgstr ""
+"رسائل \"إجراءات\": وهي رسائل\n"
+"                                تحتاج لتدخلك الفوري وتحتاج\n"
+"                                لتصفحها جميعها. ينطبق هذا على 10%\n"
+"                                من الرسائل التي تردك يوميًا. استخدم قائمة \"إلى: أنا\"\n"
+"                                للتعامل مع هذه الرسائل."
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -637,13 +801,25 @@ msgid ""
 "                            to follow.This accounts for 90% of your daily\n"
 "                            emails.Use the \"Inbox\" menu for these."
 msgstr ""
+"رسائل \"معلومات\":\n"
+"                                يمكنك تصفحهم عندما تحتاج لمعلومات معينة،\n"
+"                                لست مضطرًا لقراءتهم كل يوم. ولن تستلم منهم\n"
+"                                سوى ما تقرر أنت متابعته. ينطبق هذا على 90%\n"
+"                                من الرسائل التي تردك يوميًا.\n"
+"                                استخدم قائمة \"صندوق الوارد\" للتعامل مع هذه الرسائل."
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:101
 #, python-format
 msgid "Mobile Preview"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_blog.website_blog
+msgid "Mid screen"
+msgstr "بمنتصف الشاشة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag_name
@@ -668,7 +844,7 @@ msgstr "مقال مدونة جديدة"
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
 msgid "New Features Launched"
-msgstr ""
+msgstr "تم إطلاق خصائص جديدة"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.header_footer_custom
@@ -678,7 +854,7 @@ msgstr "أخبارنا"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 msgid "No Cover"
-msgstr ""
+msgstr "بدون غلاف"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -714,21 +890,32 @@ msgid ""
 "                building your company's website and selling your products\n"
 "                online easy'. So how true is this statement?"
 msgstr ""
+"تدعي أودو أنها 'المنصة التقنية مفتوحة المصدر التي تمكنك\n"
+"                    بسهولة من إنشاء موقع مؤسستك وبيع منتجاتك\n"
+"                    إلكترونيًا'. ما مدى صحة هذا؟"
 
 #. module: website_blog
 #: model:blog.post,website_meta_keywords:website_blog.blog_post_1
 msgid "Odoo, email"
-msgstr ""
+msgstr "أودو، البريد الإلكتروني"
 
 #. module: website_blog
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Opacity"
 msgstr ""
+=======
+#. openerp-web
+#: code:addons/website_blog/static/src/js/website.tour.blog.js:63
+#, python-format
+msgid "Once you have reviewed the content on mobile, close the preview."
+msgstr "بمجرد أن تراجع المحتوى على الهاتف المحمول، أغلق شاشة المعاينة."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:blog.blog,name:website_blog.blog_blog_1
 msgid "Our Blog"
-msgstr ""
+msgstr "مدونتنا"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_blogs
@@ -774,6 +961,10 @@ msgid ""
 "                    to read a thread. Reading a full thread, replying,\n"
 "                    attaching documents is super fast."
 msgstr ""
+"الإنتاجية هي الحل: باستخدام واجهة مستخدمنا الذكية\n"
+"                        لن تحتاج للضغط على كل رسالة لتقرأ المناقشة.\n"
+"                        يمكنك قراءة المناقشة كاملةً، والرد بإرفاق مستندات\n"
+"                        بأقصى سرعة."
 
 #. module: website_blog
 #: code:addons/website_blog/controllers/main.py:268
@@ -789,17 +980,36 @@ msgid "Published"
 msgstr "منشور"
 
 #. module: website_blog
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_published_date
+msgid "Published Date"
+msgstr "تاريخ النشر"
+
+#. module: website_blog
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:mail.message.subtype,description:website_blog.mt_blog_blog_published
 #: model:mail.message.subtype,name:website_blog.mt_blog_blog_published
 msgid "Published Post"
 msgstr "مقال منشور"
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:116
 #, python-format
 msgid "Publishing status"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_post_date
+msgid "Published date"
+msgstr ""
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.view_blog_post_form
+msgid "Publishing Options"
+msgstr "خيارات النشر"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -814,7 +1024,7 @@ msgstr "الترتيب"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_complete
 msgid "Read Next <span class=\"fa fa-long-arrow-right\"/>"
-msgstr ""
+msgstr "قراءة التالي <span class=\"fa fa-long-arrow-right\"/>"
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -828,6 +1038,13 @@ msgid ""
 "                answer from me. With a good tool, I could have done\n"
 "                my job in 10 minutes!"
 msgstr ""
+"قراءة رسائل صندوق الوارد هي أكثر مهمة غير مثمرة أقوم بها\n"
+"                    يوميًا. أحتاج لقضاء ساعة كاملة كل يوم\n"
+"                    لتصفح الرسائل. كافة الرسائل المزعجة غير المرغوب فيها،\n"
+"                    وكل المعلومات غير الهامة في نفس صندوق الوارد،\n"
+"                    اقتباسات من اقتباسات، إلخ. في نهاية الساعة،\n"
+"                    أكتشف أنني لم أكن بحاجة للرد سوى على 10 رسائل فقط.\n"
+"                    باستخدام أداة جيدة، كان بإمكاني إنهاء هذه المهمة في 10 دقائق!"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -838,6 +1055,7 @@ msgstr "أحمر"
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:76
 #, python-format
+<<<<<<< HEAD
 msgid "Save"
 msgstr "حفظ"
 
@@ -854,13 +1072,22 @@ msgstr ""
 #, python-format
 msgid "Scroll to check rendering and then close the mobile preview."
 msgstr ""
+=======
+msgid "Select this menu item to create a new blog post."
+msgstr "اختر هذا العنصر من القائمة لإنشاء مقال مدونة جديد."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:61
 #, python-format
+<<<<<<< HEAD
 msgid "Select this menu item to change blog cover."
 msgstr ""
+=======
+msgid "Set a blog post <b>cover</b>."
+msgstr "تعيين <b>غلاف</b> لمقال المدونة."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #. openerp-web
@@ -892,8 +1119,13 @@ msgstr "تجاوز"
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:19
 #, python-format
+<<<<<<< HEAD
 msgid "Start Tutorial"
 msgstr "ابدأ الدرس"
+=======
+msgid "Start writing here..."
+msgstr "ابدأ الكتابة من هنا..."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #. openerp-web
@@ -904,11 +1136,17 @@ msgid "Start writing here..."
 msgstr ""
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:85
 #, python-format
 msgid "Start writing your story here."
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
+msgid "Stay updated :"
+msgstr "ابقَ على إطلاع:"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_subtitle
@@ -942,6 +1180,19 @@ msgid "Tags"
 msgstr "الوسوم"
 
 #. module: website_blog
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_teaser
+msgid "Teaser"
+msgstr "العرض التشويقي"
+
+#. module: website_blog
+#: model:ir.model.fields,field_description:website_blog.field_blog_post_teaser_manual
+msgid "Teaser Content"
+msgstr "محتوى العرض التشويقي"
+
+#. module: website_blog
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:website_blog.view_blog_post_form
 msgid "Technical"
 msgstr "تقني"
@@ -949,7 +1200,7 @@ msgstr "تقني"
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
 msgid "The Communication Mechanism of Odoo"
-msgstr ""
+msgstr "آلية التواصل من خلال أودو"
 
 #. module: website_blog
 #: model:blog.post,name:website_blog.blog_post_1
@@ -972,6 +1223,8 @@ msgid ""
 "                   You can review titles, keywords and descriptions of all "
 "blogs at once."
 msgstr ""
+"هذه الصفحة مفيدة لتحسين <strong>نظام محركات البحث</strong> الخاص بك;\n"
+"                   يمكنك مراجعة العناوين، والكلمات الدلالية، والوصف الموجودين بكافة المدونات في نفس الوقت."
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_2
@@ -990,6 +1243,9 @@ msgid ""
 "this page, go to the upper left customize menu. You can also add some cool "
 "content with your text in the edit mode with the upper right button."
 msgstr ""
+"يوفر هذا مصدر واحد للبيانات لمؤسستك ويخلصك\n"
+"                    من الحاجة لإنشاء نظام مزامنة بدون إنترنت بين\n"
+"                    الموقع وقاعدة بيانات المنتج."
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_name
@@ -1004,18 +1260,33 @@ msgid ""
 "                    or WMS) has been developed and a beta release is\n"
 "                    available from today, 31st January 2014."
 msgstr ""
+"لإضافة مجموعة خصائص شاملة جديدة من أودو،\n"
+"                قمنا بتطوير نظام لإدارة محتوى المواقع وأتحنا نسخة تجريبيبة\n"
+"                بدءً من اليوم، 31 يناير 2014."
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
 msgid ""
 "To disrupt emails, you need more than just another user\n"
+<<<<<<< HEAD
 "                interface. We need to rethink the whole communication flow."
 msgstr ""
+=======
+"                    interface. We need to rethink the whole communication flow."
+msgstr ""
+"لتعطيل رسائل البريد الإلكتروني، تحتاج لما هو أكثر من مجرد واجهة مستخدم أخرى.\n"
+"                    نحتاج لإعادة النظر في نظام التواصل بالكامل."
+
+#. module: website_blog
+#: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_status
+msgid "Unpublished"
+msgstr "غير منشور"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "Untitled Post"
-msgstr ""
+msgstr "مشاركة غير مسماة"
 
 #. module: website_blog
 #. openerp-web
@@ -1025,11 +1296,13 @@ msgid ""
 "Use this button to create a new blog post like any other document (page, "
 "menu, products, event, ...)."
 msgstr ""
+"استخدم هذه الأيقونة لمعاينة كيف يبدو مقال مدونتك على <b>أجهزة الهاتف "
+"المحمول</b>."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_tag_form
 msgid "Used in:"
-msgstr ""
+msgstr "مستخدم في:"
 
 #. module: website_blog
 #: model:ir.model.fields,help:website_blog.field_mail_compose_message_path
@@ -1053,7 +1326,7 @@ msgstr "الموقع"
 #. module: website_blog
 #: model:ir.actions.act_url,name:website_blog.action_open_website
 msgid "Website Blogs"
-msgstr ""
+msgstr "مدونات الموقع"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_website_message_ids
@@ -1078,13 +1351,15 @@ msgid ""
 "Write a small text here for when <b>new visitors</b> find your website\n"
 "            through your <b>blog entries</b>, referenced in Google."
 msgstr ""
+"اكتب نص قصير هنا من أجل <b>الزوار الجدد</b> عندما يجدون موقعك\n"
+"            من خلال <b>منشورات المدونة</b>، المذكورة في جوجل."
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:46
 #, python-format
 msgid "Write a title, the subtitle is optional."
-msgstr ""
+msgstr "اكتب عنوانًا، العنوان الفرعي اختياري."
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -1099,11 +1374,14 @@ msgid ""
 "                   <span class=\"text-muted\">This box will not be visible "
 "to your visitors.</span>"
 msgstr ""
+"ينبغي <strong>إضافة بانر بالأعلى</strong> فالزوار الجدد يترددون كثيرًا على هذه الصفحة.\n"
+"                   <span class=\"text-muted\">لن يظهر هذا الصندوق لزوارك.</span>"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 #, fuzzy
 msgid "blog. Click here to access the blog :"
+<<<<<<< HEAD
 msgstr "انقر للوصول إلى المقال."
 
 #. module: website_blog
@@ -1112,6 +1390,9 @@ msgstr "انقر للوصول إلى المقال."
 #, python-format
 msgid "by"
 msgstr "بواسطة"
+=======
+msgstr "مدونة. اضغط هنا للوصول للمدونة:"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1126,9 +1407,17 @@ msgid "comments"
 msgstr "تعليقات"
 
 #. module: website_blog
+<<<<<<< HEAD
+=======
+#: model:blog.tag,name:website_blog.blog_tag_1
+msgid "functional"
+msgstr "عملي"
+
+#. module: website_blog
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "has been published on the"
-msgstr ""
+msgstr "تم نشره على"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1142,16 +1431,22 @@ msgid "pull-right"
 msgstr "pull-right"
 
 #. module: website_blog
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:29
 #, python-format
 msgid "to comment."
 msgstr "للتعليق"
+=======
+#: model:ir.ui.view,arch_db:website_blog.blog_post_short
+msgid "unpublished"
+msgstr "غير منشور"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "view"
-msgstr ""
+msgstr "عرض"
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short

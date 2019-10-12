@@ -1190,7 +1190,11 @@ msgstr "Prideliť tieto príležitosti"
 #: model:ir.ui.view,arch_db:crm.view_crm_lead2opportunity_partner
 #, fuzzy
 msgid "Assign this opportunity to"
+<<<<<<< HEAD
 msgstr "Prideliť tieto príležitosti"
+=======
+msgstr "Prideliť túto príležitost"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_opening_date
@@ -1388,7 +1392,29 @@ msgstr ""
 "tréning, služba"
 
 #. module: crm
+<<<<<<< HEAD
 #: code:addons/crm/crm_lead.py:870
+=======
+#. openerp-web
+#: code:addons/crm/static/src/js/tour.js:23
+#, python-format
+msgid ""
+"Click here to <b>create your first opportunity</b> and add it to your "
+"pipeline."
+msgstr ""
+"Klikni pre <b>vytvorenie svojej prvej príležitosti</b> a pridaj ju k svojmu "
+"reťazovému spracovaniu."
+
+#. module: crm
+#. openerp-web
+#: code:addons/crm/static/src/js/tour.js:54
+#, python-format
+msgid "Click on an opportunity to zoom to it."
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/models/crm_lead.py:867
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "Click to add a new opportunity"
 msgstr "Kliknite pre pridanie novej príležitosti"
@@ -1438,8 +1464,13 @@ msgstr "Dátum uzavretia"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead_date_closed
+<<<<<<< HEAD
 msgid "Closed"
 msgstr "Uzavreté"
+=======
+msgid "Closed Date"
+msgstr "Dátum uzavretia"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: code:addons/crm/wizard/crm_lead_to_opportunity.py:90
@@ -1608,6 +1639,20 @@ msgid "Create a new customer"
 msgstr "Vytvoriť nového zákazníka"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.actions.act_window,name:crm.create_opportunity_simplified
+#: model:ir.ui.view,arch_db:crm.view_create_opportunity_simplified
+msgid "Create an Opportunity"
+msgstr "Vytvoriť príležitosť"
+
+#. module: crm
+#: model:ir.ui.view,arch_db:crm.crm_planner
+msgid "Create and combine rules:<br/>"
+msgstr ""
+
+#. module: crm
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:crm.crm_planner
 msgid ""
 "Create sleek and attractive event pages. Sell online and organize on site."
@@ -2064,6 +2109,14 @@ msgid "Expected Closing"
 msgstr "Očakávané zavretie"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
+msgid "Expected Closing Date"
+msgstr "Dátum očakávaného zavretia"
+
+#. module: crm
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:crm.field_crm_activity_log_planned_revenue
 #: model:ir.model.fields,field_description:crm.field_crm_lead_planned_revenue
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_expected_revenue
@@ -2992,7 +3045,11 @@ msgstr "Moje Príležitosti"
 #: model:ir.ui.menu,name:crm.menu_crm_opportunities
 #, fuzzy
 msgid "My Pipeline"
+<<<<<<< HEAD
 msgstr "Reťazové spracovanie"
+=======
+msgstr "Moje reťazové spracovania"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_base_partner_merge_automatic_wizard_group_by_name
@@ -3043,7 +3100,21 @@ msgstr "Zhrnutie ďalšej aktivity"
 #: code:addons/crm/wizard/crm_activity_log.py:56
 #, fuzzy, python-format
 msgid "Next activity"
+<<<<<<< HEAD
 msgstr "Ďalšia aktivita"
+=======
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead,kanban_state:0
+msgid "Next activity is planned"
+msgstr "Ďalšia aktivita je naplánovaná"
+
+#. module: crm
+#: selection:crm.lead,kanban_state:0
+msgid "Next activity late"
+msgstr "Ďalšia aktivita oneskorená"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: code:addons/crm/crm_lead.py:966
@@ -3055,7 +3126,16 @@ msgstr "Bez predmetu"
 #: model:ir.ui.view,arch_db:crm.crm_activity_log_view_form_schedule
 #, fuzzy
 msgid "No activity"
+<<<<<<< HEAD
 msgstr "Ďalšia aktivita"
+=======
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead,kanban_state:0
+msgid "No next activity planned"
+msgstr "Zatiaľ žiadna ďalšia plánovaná aktivita."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
@@ -3072,7 +3152,7 @@ msgstr "Normálna"
 #. module: crm
 #: model:crm.lost.reason,name:crm.lost_reason_3
 msgid "Not enough stock"
-msgstr ""
+msgstr "Nedostatok na sklade"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_activity_log_note
@@ -3308,6 +3388,14 @@ msgid "Opportunity Stage Changed"
 msgstr "Fáza príležitosti zmenená"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:crm.view_create_opportunity_simplified
+msgid "Opportunity Title"
+msgstr "Názov príležitosti"
+
+#. module: crm
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:mail.message.subtype,name:crm.mt_lead_won
 #: model:mail.message.subtype,name:crm.mt_salesteam_lead_won
 msgid "Opportunity Won"
@@ -3355,6 +3443,14 @@ msgid "Overdue Activities"
 msgstr "Oneskorené aktivity"
 
 #. module: crm
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
+msgid "Overdue Opportunities"
+msgstr "Zmeškané príležitosti"
+
+#. module: crm
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_delay_expected
 msgid "Overpassed Deadline"
 msgstr "Prekročená uzávierka"
@@ -4316,12 +4412,17 @@ msgstr ""
 
 #. module: crm
 #: model:ir.actions.act_window,help:crm.crm_opportunity_report_action_lead
+<<<<<<< HEAD
 msgid ""
 "This report analyses the source of your leads\n"
 "(including those converted into opportunities)."
 msgstr ""
 "Tento výkaz analyzuje zdroj vašich iniciatív\n"
 "(vrátane tých prekonvertovaných na príležitosti)."
+=======
+msgid "This report analyses the source of your leads."
+msgstr "Tento výkaz analyzuje zdroj vašich iniciatív"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_stage_fold
@@ -4364,7 +4465,7 @@ msgstr "Dnešné aktivity"
 #. module: crm
 #: model:crm.lost.reason,name:crm.lost_reason_1
 msgid "Too expensive"
-msgstr ""
+msgstr "Pridrahé"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_opportunity_report_total_revenue
@@ -4814,7 +4915,11 @@ msgid ""
 "                opportunities, convert them into quotations, attach related\n"
 "                documents, track all discussions, and much more."
 msgstr ""
+<<<<<<< HEAD
 "Budete mať možnosť plánovať stretnutia a telefonické hovory z\n"
+=======
+"Budete mať možnosť plánovať stretnutia a telefonáty z\n"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 "príležitosti, konvertovať ich na ponuky, pripojiť súvisiace\n"
 "dokumenty, sledovať všetky diskusie, a mnoho ďalšieho."
 

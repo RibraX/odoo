@@ -49,12 +49,134 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+<<<<<<< HEAD
 "#-#-#-#-#  ar.po (Odoo 9.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "#-#-#-#-#  ar.po (Odoo 9.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+=======
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: website_crm_partner_assign
+#: model:mail.template,body_html:website_crm_partner_assign.email_template_lead_forward_mail
+msgid ""
+"\n"
+"<p>Hello,</p>\n"
+"\n"
+"\n"
+"<p>We have been contacted by those prospects that are in your region. Thus, the following leads have been assigned to ${ctx['partner_id'].name}:</p>\n"
+"\n"
+"<ol>\n"
+"% for lead in ctx['partner_leads']:\n"
+"     <li><a href=\"${lead.lead_link}\">${lead.lead_id.name or 'Subject Undefined'}</a>, ${lead.lead_id.partner_name or lead.lead_id.contact_name or 'Contact Name Undefined'}, ${lead.lead_id.country_id and lead.lead_id.country_id.name or 'Country Undefined' }, ${lead.lead_id.email_from or 'Email Undefined'}, ${lead.lead_id.phone or ''} </li></br>\n"
+"% endfor\n"
+"</ol>\n"
+"\n"
+"% if ctx.get('partner_in_portal'):\n"
+"<p>Please connect to your <a href=\"${object.get_portal_url()}\">Partner Portal</a> to get details. On each lead are two buttons on the top left corner that you should press after having contacted the lead: \"I'm interested\" & \"I'm not interested\".</p>\n"
+"% else:\n"
+"<p>\n"
+"    You do not have yet a portal access to our database. Please contact \n"
+"    ${ctx['partner_id'].user_id and ctx['partner_id'].user_id.email and 'your account manager %s (%s)' % (ctx['partner_id'].user_id.name,ctx['partner_id'].user_id.email) or 'us'}.\n"
+"</p>\n"
+"% endif\n"
+"<p>The lead will be sent to another partner if you do not contact the lead before 20 days.</p>\n"
+"\n"
+"<p>Thanks,</p>\n"
+"\n"
+"${ctx['partner_id'].user_id and ctx['partner_id'].user_id.signature or '' | safe}\n"
+"\n"
+"% if not ctx['partner_id'].user_id:\n"
+"PS: It looks like you do not have an account manager assigned to you, please contact us.\n"
+"% endif\n"
+"            "
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_nbr_cases
+msgid "# of Cases"
+msgstr "الحالات"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_partner_report_assign_nbr_opportunities
+msgid "# of Opportunity"
+msgstr "عدد الفرص"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "&amp;times;"
+msgstr " & أوقات"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "<i class=\"fa fa-file-text-o\"/> I'm interested"
+msgstr "<i class=\"fa fa-file-text-o\"/> أنا مهتم"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "<i class=\"fa fa-fw fa-times\"/> I'm not interested"
+msgstr "<i class=\"fa fa-fw fa-times\"/> لست مهتمًا"
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:192
+#, python-format
+msgid "<p>I am interested by this lead.</p>"
+msgstr "انا مهتم بالمقترح "
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_lead_geo_assign_form
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_opportunity_geo_assign_form
+msgid ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&lt;=',0)]}\">N </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_latitude','&gt;=',0)]}\">S </span>"
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_lead_geo_assign_form
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_crm_opportunity_geo_assign_form
+msgid ""
+"<span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&lt;=',0)]}\">E </span>\n"
+"                                <span class=\"oe_grey\" attrs=\"{'invisible':[('partner_longitude','&gt;=',0)]}\">W </span>\n"
+"                                <span class=\"oe_grey\">) </span>"
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid ""
+"<span class=\"text-danger error_partner_assign_desinterested\" "
+"style=\"display:none;\">You need to fill up the next action and contact the "
+"customer before accepting the lead</span>"
+msgstr ""
+"<span class=\"text-danger error_partner_assign_desinterested\" "
+"style=\"display:none;\">تحتاج إلى ملء الإجراء التالي والاتصال بالعميل قبل "
+"قبول الترشيح</span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid ""
+"<span class=\"text-danger error_partner_assign_interested\" "
+"style=\"display:none;\">You need to fill up the next action and contact the "
+"customer before accepting the lead</span>"
+msgstr ""
+"<span class=\"text-danger error_partner_assign_desinterested\" "
+"style=\"display:none;\">تحتاج إلى ملء الإجراء التالي والاتصال بالعميل قبل "
+"قبول الترشيح</span>"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "<span>at </span>"
+msgstr ""
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "<strong>Message and communication history</strong>"
+msgstr "<strong>رسالة وتاريخ الاتصالات</strong>"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_crm_partner_assign
 #: code:addons/website_crm_partner_assign/controllers/main.py:60
@@ -86,7 +208,7 @@ msgstr "المحتويات"
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
 msgid "Countries..."
-msgstr ""
+msgstr "الدول..."
 
 #. module: website_crm_partner_assign
 #: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_report_assign_country_id
@@ -167,8 +289,12 @@ msgstr "تأخير الإغلاق"
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
 msgid "Details Next Activity"
+<<<<<<< HEAD
 msgstr ""
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+msgstr "تفاصيل النشاط التالي"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
@@ -181,6 +307,7 @@ msgid "Looking For a Local Store?"
 msgstr "أتبحث عن وكيل محلي؟"
 
 #. module: website_crm_partner_assign
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.index
 msgid "No result found"
 msgstr "لا توجد نتائج"
@@ -189,6 +316,16 @@ msgstr "لا توجد نتائج"
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.partner
 msgid "Our Partners"
 msgstr "شركاؤنا"
+=======
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Edit Contact"
+msgstr "تحرير جهة الاتصال"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Edit Opportunity"
+msgstr "تحرير الفرصة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: website_crm_partner_assign
 #: model:ir.ui.view,arch_db:website_crm_partner_assign.grade_in_detail
@@ -242,8 +379,15 @@ msgstr "res.partner.grade"
 #~ msgid "Visible in Website"
 #~ msgstr "مرئي في الموقع"
 
+<<<<<<< HEAD
 #~ msgid "Website URL"
 #~ msgstr "رابط الموقع"
+=======
+#. module: website_crm_partner_assign
+#: model:mail.template,subject:website_crm_partner_assign.email_template_lead_forward_mail
+msgid "Fwd: Lead: ${ctx['partner_id'].name}"
+msgstr "إرسال: ترشيح: ${ctx['partner_id'].name}"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "# of Cases"
 #~ msgstr "الحالات"
@@ -270,11 +414,25 @@ msgstr "res.partner.grade"
 #~ msgid "Assign Date"
 #~ msgstr "تاريخ الإسناد"
 
+<<<<<<< HEAD
 #~ msgid "Assign Month"
 #~ msgstr "تعيين الشهر"
 
 #~ msgid "Assign salesman of assigned partner"
 #~ msgstr "تعيين مندوب مبيعات كشريك"
+=======
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:203
+#, python-format
+msgid "I am not interested by this lead. I contacted the lead."
+msgstr "لست مهتمًا بهذا الترشيح. تواصلت مع العميل المرشح."
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/models/crm_lead.py:205
+#, python-format
+msgid "I am not interested by this lead. I have not contacted the lead."
+msgstr "لست مهتمًا بهذا الترشيح. لم أتواصل مع العميل المرشح."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Assignation Date"
 #~ msgstr "تاريخ التخصيص"
@@ -285,8 +443,15 @@ msgstr "res.partner.grade"
 #~ msgid "Assigned Opportunities"
 #~ msgstr "الفرص المخصصة"
 
+<<<<<<< HEAD
 #~ msgid "Assigned Partner"
 #~ msgstr "تخصيص شريك"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_partner_report_assign_date
+msgid "Invoice Account Date"
+msgstr "تاريخ حساب الفاتورة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Automatic Assignation"
 #~ msgstr "تعيين ألي"
@@ -306,8 +471,15 @@ msgstr "res.partner.grade"
 #~ msgid "CRM Partner Report"
 #~ msgstr "تقرير الشركاء"
 
+<<<<<<< HEAD
 #~ msgid "Cancel"
 #~ msgstr "إلغاء"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "Lead -"
+msgstr "الترشيح -"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Categorization"
 #~ msgstr "التصنيف"
@@ -333,11 +505,25 @@ msgstr "res.partner.grade"
 #~ msgid "Contents"
 #~ msgstr "المحتويات"
 
+<<<<<<< HEAD
 #~ msgid "Country"
 #~ msgstr "الدولة"
 
 #~ msgid "Create Date"
 #~ msgstr "تاريخ الإنشاء"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_name
+msgid "Level Name"
+msgstr "اسم المستوى"
+
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_grade_partner_weight
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner_partner_weight
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_users_partner_weight
+msgid "Level Weight"
+msgstr "وزن المستوى"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Created by"
 #~ msgstr "أنشئ بواسطة"
@@ -375,14 +561,28 @@ msgstr "res.partner.grade"
 #~ msgid "Do you have contacted the customer?"
 #~ msgstr "هل قمت بالاتصال بالعميل"
 
+<<<<<<< HEAD
 #~ msgid "Email Template"
 #~ msgstr "قالب البريد"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Next Activity Date"
+msgstr "تاريخ النشاط التالي"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Expected Revenues"
 #~ msgstr "الأرباح المتوقعة"
 
+<<<<<<< HEAD
 #~ msgid "Extended Filters..."
 #~ msgstr "الفلاتر التفصيلية..."
+=======
+#. module: website_crm_partner_assign
+#: model:crm.lead.tag,name:website_crm_partner_assign.tag_portal_lead_partner_unavailable
+msgid "No more partner available"
+msgstr "غير متاح شركاء آخرون"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Forward Leads To"
 #~ msgstr "التقدم يؤدي الى"
@@ -420,8 +620,16 @@ msgstr "res.partner.grade"
 #~ msgid "I'm interested"
 #~ msgstr "مهتم"
 
+<<<<<<< HEAD
 #~ msgid "I'm not interested"
 #~ msgstr "انا لا اهتم "
+=======
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/controllers/main.py:98
+#, python-format
+msgid "Overdue Activities"
+msgstr "المستحقات المتأخرة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "ID"
 #~ msgstr "المعرف"
@@ -450,8 +658,15 @@ msgstr "res.partner.grade"
 #~ msgid "Latest Partner Review"
 #~ msgstr "آخر مراجعة للشريك"
 
+<<<<<<< HEAD
 #~ msgid "Lead"
 #~ msgstr "الترشيح"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.model.fields,field_description:website_crm_partner_assign.field_crm_lead_partner_declined_ids
+msgid "Partner not interested"
+msgstr "الشريك غير مهتم"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Lead  Single Links"
 #~ msgstr "روابط مفرده للمرشح "
@@ -474,14 +689,28 @@ msgstr "res.partner.grade"
 #~ msgid "Leads & Opportunities"
 #~ msgstr "الفرص والفرص المحتملة"
 
+<<<<<<< HEAD
 #~ msgid "Leads Analysis"
 #~ msgstr "تحليل المصادر"
+=======
+#. module: website_crm_partner_assign
+#: model:res.partner.grade,name:website_crm_partner_assign.res_partner_grade_platinium
+msgid "Platinum"
+msgstr "بلاتنيوم"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Level"
 #~ msgstr "مستوى"
 
+<<<<<<< HEAD
 #~ msgid "Low"
 #~ msgstr "منخفض"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "Priority:"
+msgstr "الأولوية:"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Max Probability"
 #~ msgstr "الاحتمالية القصوى"
@@ -537,14 +766,28 @@ msgstr "ضع البريد الالكتروني للعميل %s"
 #~ msgid "Partner Activation"
 #~ msgstr "تفعيل شريك"
 
+<<<<<<< HEAD
 #~ msgid "Partner Activations"
 #~ msgstr "تنشيطات الشريك"
+=======
+#. module: website_crm_partner_assign
+#: model:crm.lead.tag,name:website_crm_partner_assign.tag_portal_lead_is_spam
+msgid "Spam"
+msgstr "البريد غير المرغوب فيه"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Partner Assignation"
 #~ msgstr "تخصيص الشريك"
 
+<<<<<<< HEAD
 #~ msgid "Partner Level"
 #~ msgstr "مستوى الشريك"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "States..."
+msgstr "المحافظات..."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Partner Location"
 #~ msgstr "موقع الشريك"
@@ -564,6 +807,7 @@ msgstr "ضع البريد الالكتروني للعميل %s"
 #~ msgid "Partnership Analysis"
 #~ msgstr "تحليل الشراكة"
 
+<<<<<<< HEAD
 #~ msgid "Partnership Date"
 #~ msgstr "تاريخ الشراكة"
 
@@ -575,6 +819,28 @@ msgstr "ضع البريد الالكتروني للعميل %s"
 
 #~ msgid "Priority"
 #~ msgstr "الأولوية"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_leads
+msgid "There are no leads."
+msgstr "لا توجد ترشيحات."
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunities
+msgid "There are no opportunities."
+msgstr "لا توجد فرص."
+
+#. module: website_crm_partner_assign
+#: code:addons/website_crm_partner_assign/controllers/main.py:96
+#, python-format
+msgid "This Week Activities"
+msgstr "أنشطة هذا الأسبوع"
+
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_lead
+msgid "This lead is a spam"
+msgstr "هذا الترشيح غير مرغوب فيه"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 <<<<<<< HEAD
 #~ msgid "Probable Revenue"
@@ -617,8 +883,15 @@ msgstr "نشاطات اليوم"
 #~ msgid "The Forward Email Template is not in the database"
 #~ msgstr "نموذج البريد الإلكتروني إلى الأمام ليس في قاعدة البيانات "
 
+<<<<<<< HEAD
 #~ msgid "The Portal group cannot be found"
 #~ msgstr "لا يمكن العثور على مجموعة البوابة "
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.portal_my_opportunity
+msgid "YYYY-MM-DD"
+msgstr "يوم/شهر/سنة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "The lead has been contacted"
 #~ msgstr "وقد اتصلت بالمرشح "
@@ -635,8 +908,15 @@ msgstr "نشاطات اليوم"
 #~ msgid "Type is used to separate Leads and Opportunities"
 #~ msgstr "أُستخدمت العلامة لفصل المصادر والفرص"
 
+<<<<<<< HEAD
 #~ msgid "User"
 #~ msgstr "المستخدم"
+=======
+#. module: website_crm_partner_assign
+#: model:ir.ui.view,arch_db:website_crm_partner_assign.view_partner_grade_form
+msgid "e.g. Gold Partner"
+msgstr "مثلًا: شريك ذهبي"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #~ msgid "Very High"
 #~ msgstr "مرتفع جداً"

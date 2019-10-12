@@ -9,7 +9,12 @@
 # fanha99 <fanha99@hotmail.com>, 2016
 # Martin Trigaux, 2016
 # Duy BQ <duybq86@gmail.com>, 2018
+<<<<<<< HEAD
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+# Chinh Chinh <trinhttp@trobz.com>, 2019
+# 
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.saas~18\n"
@@ -20,9 +25,14 @@ msgstr ""
 "Last-Translator: fanha99 <fanha99@hotmail.com>, 2017\n"
 =======
 "POT-Creation-Date: 2016-09-07 08:57+0000\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2016-09-07 08:57+0000\n"
 "Last-Translator: Duy BQ <duybq86@gmail.com>, 2018\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
+=======
+"PO-Revision-Date: 2016-09-07 09:24+0000\n"
+"Last-Translator: Chinh Chinh <trinhttp@trobz.com>, 2019\n"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,12 +43,12 @@ msgstr ""
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_login
 msgid "API Login Id"
-msgstr ""
+msgstr "Id đăng nhập API"
 
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_acquirer_authorize_transaction_key
 msgid "API Transaction Key"
-msgstr ""
+msgstr "Khóa giao dịch API"
 
 #. module: payment_authorize
 #: code:addons/payment_authorize/models/authorize_request.py:67
@@ -51,7 +61,7 @@ msgstr ""
 #. module: payment_authorize
 #: model:ir.model.fields,field_description:payment_authorize.field_payment_token_authorize_profile
 msgid "Authorize.net Profile ID"
-msgstr ""
+msgstr "ID hồ sơ ủy quyền"
 
 #. module: payment_authorize
 #: code:addons/payment_authorize/models/payment.py:167
@@ -60,16 +70,18 @@ msgid ""
 "Authorize: received data with missing reference (%s) or trans_id (%s) or "
 "fingerprint (%s)"
 msgstr ""
+"Ủy quyền: dữ liệu nhận được với tham chiếu bị thiếu () hoặc trans_id () hoặc"
+" dấu vân tay ()"
 
 #. module: payment_authorize
 #: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
 msgid "CVC"
-msgstr ""
+msgstr "CVC"
 
 #. module: payment_authorize
 #: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
 msgid "Card number"
-msgstr ""
+msgstr "Số thẻ"
 
 #. module: payment_authorize
 #: model:ir.ui.view,arch_db:payment_authorize.authorize_s2s_form
@@ -115,7 +127,7 @@ msgstr ""
 #: code:addons/payment_authorize/models/payment.py:372
 #, python-format
 msgid "The Customer Profile creation in Authorize.NET failed."
-msgstr ""
+msgstr "Việc tạo hồ sơ khách hàng trong Authorize.NET không thành công."
 
 #. module: payment_authorize
 #: model:ir.model.fields,help:payment_authorize.field_payment_token_authorize_profile
@@ -123,6 +135,8 @@ msgid ""
 "This contains the unique reference for this partner/payment token "
 "combination in the Authorize.net backend"
 msgstr ""
+"Điều này chứa tham chiếu duy nhất cho kết hợp mã thông báo đối tác / thanh "
+"toán này trong phần phụ trợ Authorize.net"
 
 #. module: payment_authorize
 #: model:ir.model.fields,help:payment_authorize.field_payment_token_save_token

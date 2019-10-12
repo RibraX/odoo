@@ -3,16 +3,36 @@
 # * pos_restaurant
 #
 # Translators:
+<<<<<<< HEAD
 #, fuzzy
+=======
+# Fahad Alqahtani <fahad@cloudland.sa>, 2016
+# amrnegm <amrnegm.01@gmail.com>, 2016
+# Ali zuaby <ali@zuaby.net>, 2016
+# hoxhe Aits <hoxhe0@gmail.com>, 2016
+# Osama Ahmaro <osamaahmaro@gmail.com>, 2016
+# Martin Trigaux, 2016
+# Shaima Safar <shaima.safar@open-inside.com>, 2017
+# Yihya Hugirat <hugirat@gmail.com>, 2017
+# Mustafa Rawi <mustafa@cubexco.com>, 2019
+# 
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2016-08-18 14:06+0000\n"
 "PO-Revision-Date: 2015-10-13 05:46+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Arabic (http://www.transifex.com/odoo/odoo-9/language/ar/)\n"
 "Language: ar\n"
+=======
+"POT-Creation-Date: 2017-06-23 13:26+0000\n"
+"PO-Revision-Date: 2016-09-07 09:26+0000\n"
+"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
+"Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -28,7 +48,7 @@ msgstr ""
 msgid ""
 "A background image used to display a floor layout in the point of sale "
 "interface"
-msgstr ""
+msgstr "صورة خلفية تستخدم لعرض مخطط الأرضية في واجهة نقطة البيع"
 
 #. module: pos_restaurant
 #: model:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
@@ -37,6 +57,8 @@ msgid ""
 "where you can\n"
 "                define and position the tables."
 msgstr ""
+"تمثل أرضية المطعم المكان الذي يتم فيه خدمة العملاء، وهو المكان الذي يمكنك فيه\n"
+"                تحديد وتنظيم أماكن الطاولات."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table_active
@@ -281,9 +303,15 @@ msgstr "المعرف"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_active
 msgid ""
+<<<<<<< HEAD
 "If false, the table is deactivated and will not be available in the point of "
 "sale"
 msgstr ""
+=======
+"If false, the table is deactivated and will not be available in the point of"
+" sale"
+msgstr "إذا كانت قيمته خطأ، تُلغى الطاولة ولن تكون متاحة في نقطة البيع"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor___last_update
@@ -363,11 +391,13 @@ msgid ""
 "                order updates in the kitchen/bar when the waiter updates the "
 "order."
 msgstr ""
+"تستخدم طابعات الطلبات في المطاعم والحانات لطباعة\n"
+"                تحديثات الطلبات في المطبخ/الحانة عندما يقوم النادل بتحديث الطلب."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config_iface_orderline_notes
 msgid "Orderline Notes"
-msgstr ""
+msgstr "ملاحظات بنود الطلب"
 
 #. module: pos_restaurant
 #: model:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer_form
@@ -533,24 +563,24 @@ msgstr "عنوان IP أو اسم المضيف لبروكسي الطابعة"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order_customer_count
 msgid "The amount of customers that have been served by this order."
-msgstr ""
+msgstr "عدد العملاء المقدم لهم هذا الطلب."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor_background_color
 msgid ""
 "The background color of the floor layout, (must be specified in a html-"
 "compatible format)"
-msgstr ""
+msgstr "لون خلفية مخطط الأرضية، (يجب تحديده بصيغة متوافقة مع لغة html)"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_seats
 msgid "The default number of customer served at this table."
-msgstr ""
+msgstr "عدد العملاء الافتراضي المقدم لهم خدمة على هذه الطاولة."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor_table_ids
 msgid "The list of tables in this floor"
-msgstr ""
+msgstr "قائمة طاولات هذا الطابق"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_pos_order_ids
@@ -565,42 +595,54 @@ msgstr ""
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order_table_id
 msgid "The table where this order was served"
-msgstr ""
+msgstr "الطاولة التي قدم عليها هذا الطلب"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_color
+<<<<<<< HEAD
 msgid "The table's color, expressed as a valid 'background' CSS property value"
 msgstr ""
+=======
+msgid ""
+"The table's color, expressed as a valid 'background' CSS property value"
+msgstr "لون الطاولة، معبرًا عنه كقيمة خاصية CSS 'خلفية' صحيحة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_height
 msgid "The table's height in pixels"
-msgstr ""
+msgstr "طول الطاولة بالبيكسل"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_position_h
 msgid ""
+<<<<<<< HEAD
 "The table's horizontal position from the left side to the table's center, in "
 "pixels"
 msgstr ""
+=======
+"The table's horizontal position from the left side to the table's center, in"
+" pixels"
+msgstr "الوضع الأفقي للطاولة من الجانب الأيسر لمركز الطاولة، بالبيكسل"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_position_v
 msgid ""
 "The table's vertical position from the top to the table's center, in pixels"
-msgstr ""
+msgstr "الوضع الرأسي للطاولة من القمة لمركز الطاولة، بالبيكسل"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table_width
 msgid "The table's width in pixels"
-msgstr ""
+msgstr "عرض الطاولة بالبيكسل"
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:102
 #, python-format
 msgid "This floor has no tables yet, use the"
-msgstr ""
+msgstr "لا توجد طاولات في هذا الطابق بعد، استخدم الـ"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -612,7 +654,7 @@ msgstr ""
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor_sequence
 msgid "Used to sort Floors"
-msgstr ""
+msgstr "يستخدم لترتيب الطوابق"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -658,7 +700,7 @@ msgstr ""
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:103
 #, python-format
 msgid "button in the editing toolbar to create new tables."
-msgstr ""
+msgstr "زر في قائمة أدوات التحرير لإنشاء طاولات جديدة."
 
 #. module: pos_restaurant
 #. openerp-web

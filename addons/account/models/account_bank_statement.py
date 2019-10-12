@@ -298,9 +298,15 @@ class AccountBankStatement(models.Model):
         st_lines_left = self.env['account.bank.statement.line'].browse([line.get('id') for line in self.env.cr.dictfetchall()])
 
         #try to assign partner to bank_statement_line
+<<<<<<< HEAD
         stl_to_assign = st_lines_left.filtered(lambda stl: not stl.partner_id)
         refs = set(stl_to_assign.mapped('name'))
         if stl_to_assign and refs\
+=======
+        stl_to_assign_partner = [stl.id for stl in st_lines_left if not stl.partner_id]
+        refs = list(set([st.name for st in st_lines_left if not st.partner_id]))
+        if st_lines_left and stl_to_assign_partner and refs\
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
            and st_lines_left[0].journal_id.default_credit_account_id\
            and st_lines_left[0].journal_id.default_debit_account_id:
 

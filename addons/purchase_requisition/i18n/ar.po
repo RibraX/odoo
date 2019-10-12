@@ -99,6 +99,7 @@ msgid "<strong>Vendor </strong>"
 msgstr "‏<strong>المورد </strong>"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
 msgid ""
 "A Call for Tenders is a procedure for generating competing offers from\n"
@@ -124,11 +125,42 @@ msgstr ""
 #: model:ir.actions.act_window,name:purchase_requisition.action_bid_line_qty
 msgid "Bid Line Qty"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_date_end
+msgid "Agreement Deadline"
+msgstr "الموعد النهائي للاتفاقية"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_name
+msgid "Agreement Reference"
+msgstr "رقم إشارة الاتفاقية"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type_exclusive
+msgid "Agreement Selection Type"
+msgstr "نوع اختيار الاتفاقية"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type_id_10833
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type_name
+#: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_form
+msgid "Agreement Type"
+msgstr "نوع الاتفاقية"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: selection:purchase.requisition,state:0
 msgid "Bid Selection"
+<<<<<<< HEAD
 msgstr ""
+=======
+msgstr "اختيار العطاء"
+
+#. module: purchase_requisition
+#: model:purchase.requisition.type,name:purchase_requisition.type_single
+msgid "Blanket Order"
+msgstr "عقد شامل"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.actions.report.xml,name:purchase_requisition.action_report_purchase_requisitions
@@ -185,6 +217,7 @@ msgstr "ملغي"
 #. module: purchase_requisition
 #: code:addons/purchase_requisition/purchase_requisition.py:302
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "Cancelled by the call for tenders associated to this request for quotation."
 msgstr ""
@@ -216,6 +249,10 @@ msgstr ""
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
 msgid "Choose product lines"
 msgstr ""
+=======
+msgid "Cancelled by the agreement associated to this quotation."
+msgstr "تم إلغاؤه من قبل الاتفاقية المرتبطة بعرض السعر هذا."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
@@ -294,7 +331,7 @@ msgstr ""
 =======
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_form
 msgid "Data for new quotations"
-msgstr ""
+msgstr "بيانات عروض الأسعار الجديدة"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_schedule_date
@@ -316,6 +353,15 @@ msgid "Display Name"
 msgstr "اسم العرض"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
+=======
+#: selection:purchase.requisition.type,line_copy:0
+msgid "Do not create RfQ lines automatically"
+msgstr "عدم إنشاء بنود طلبات عروض الأسعار تلقائيًا"
+
+#. module: purchase_requisition
+#: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
 msgid "Done"
 msgstr "منتهي"
@@ -331,11 +377,28 @@ msgid "End Month"
 msgstr "شهر نهاية العضوية"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #. openerp-web
 #: code:addons/purchase_requisition/static/src/xml/purchase_requisition.xml:5
 #, python-format
 msgid "Generate PO"
+=======
+#: model:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
+msgid ""
+"Example of purchase agreements include call for tenders and blanket orders."
+msgstr "تتضمن أمثلة اتفاقيات الشراء طلبات المناقصات والعقود الشاملة."
+
+#. module: purchase_requisition
+#: model:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
+msgid ""
+"For a blanket order, you can record an agreement for a specifc period\n"
+"            (e.g. a year) and you order products within this agreement, benefiting\n"
+"            from the negociated prices."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgstr ""
+"في العقود الشاملة، يمكنك تسجيل اتفاقية لفترة محددة\n"
+"            (سنة مثلًا) ويمكنك طلب منتجات من خلال هذه الاتفاقية، مستفيدًا\n"
+"            من الأسعار المتفاوض عليها."
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
@@ -351,7 +414,28 @@ msgid "ID"
 msgstr "المعرف"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase_requisition.field_bid_line_qty___last_update
+=======
+#: model:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
+msgid ""
+"In a call for tenders, you can record the products you need to buy\n"
+"            and generate the creation of RfQs to vendors. Once the tenders have\n"
+"            been registered, you can review and compare them and you can\n"
+"            validate some and cancel others."
+msgstr ""
+"في طلبات المناقصات، يمكنك تسجيل المنتجات التي تريد شراؤها\n"
+"            وإنشاء طلبات عروض الأسعار للموردين. بمجرد تسجيل المناقصات\n"
+"            يمكنك مراجعتهم والمقارنة بينهم ويمكنك\n"
+"            اعتماد بعضهم وإلغاء البعض الآخر."
+
+#. module: purchase_requisition
+#: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
+msgid "In negotiation"
+msgstr "في مرحلة التفاوض"
+
+#. module: purchase_requisition
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition___last_update
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line___last_update
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_partner___last_update
@@ -391,6 +475,7 @@ msgstr "العديد من طلبات الشراء"
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
+<<<<<<< HEAD
 msgid "New"
 msgstr "جديد"
 
@@ -398,6 +483,10 @@ msgstr "جديد"
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "New Call for Tenders"
 msgstr ""
+=======
+msgid "New Agreements"
+msgstr "اتفاقيات جديدة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
@@ -405,6 +494,7 @@ msgid "Order Date"
 msgstr "تاريخ الأمر"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "Ordering Date"
 msgstr ""
@@ -413,6 +503,16 @@ msgstr ""
 #: selection:purchase.requisition,state:0
 msgid "PO Created"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_order_count
+msgid "Number of Orders"
+msgstr "عدد الأوامر"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line_qty_ordered
+msgid "Ordered Quantities"
+msgstr "الكميات المطلوبة"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_picking_type_id
@@ -473,7 +573,7 @@ msgstr "اقترح مناقصة"
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_order_requisition_id
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line_requisition_id
 msgid "Purchase Agreement"
-msgstr ""
+msgstr "اتفاقية الشراء"
 
 #. module: purchase_requisition
 #: model:ir.model,name:purchase_requisition.model_purchase_requisition_type
@@ -486,7 +586,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_form
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_tree
 msgid "Purchase Agreement Types"
-msgstr ""
+msgstr "أنواع اتفاقية الشراء"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.action_purchase_requisition
@@ -569,9 +669,15 @@ msgid "Quantity"
 msgstr "الكمية"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_order_line_quantity_tendered
 msgid "Quantity Tendered"
 msgstr ""
+=======
+#: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
+msgid "RFQs/Orders"
+msgstr "طلبات عروض الأسعار/الأوامر"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: code:addons/purchase_requisition/purchase_requisition.py:201
@@ -580,9 +686,15 @@ msgid "RFQ created"
 msgstr ""
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
 msgid "RFQs/Bids"
 msgstr ""
+=======
+#: model:ir.actions.act_window,name:purchase_requisition.action_purchase_requisition_list
+msgid "Request for Quotations"
+msgstr "طلب عروض الأسعار"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
@@ -633,8 +745,13 @@ msgstr ""
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
+<<<<<<< HEAD
 msgid "Search Call for Tenders"
 msgstr ""
+=======
+msgid "Search Purchase Agreements"
+msgstr "البحث في اتفاقيات الشراء"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: selection:purchase.requisition,exclusive:0
@@ -654,11 +771,25 @@ msgid ""
 "Select multiple RFQ:  It allows to have multiple purchase orders.On "
 "confirmation of a purchase order it does not cancel the remaining orders"
 msgstr ""
+"تحديد طلب عرض سعر واحد فقط (حصري): عند تأكيد أمر شراء، سيتم إلغاء بقية أوامر الشراء.\n"
+"                    \n"
+"تحديد عدة طلبات عروض أسعار: يسمح بعدو أوامر شراء. عند تأكيد أمر، لا تُلغى بقية الأوامر"
 
 #. module: purchase_requisition
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
 msgid "Send RFQ by Email"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type_sequence
+msgid "Sequence"
+msgstr "المسلسل"
+
+#. module: purchase_requisition
+#: selection:purchase.requisition.type,quantity_copy:0
+msgid "Set quantities manually"
+msgstr "تحديد الكميات يدويًا"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
@@ -718,10 +849,37 @@ msgstr "غير مسند"
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "Unassigned  Requisition"
+<<<<<<< HEAD
 msgstr ""
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.purchase_order_line_tree_tender
+=======
+msgstr "مناقصة غير مسندة"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line_price_unit
+msgid "Unit Price"
+msgstr "سعر الوحده "
+
+#. module: purchase_requisition
+#: selection:purchase.requisition.type,line_copy:0
+msgid "Use lines of agreement"
+msgstr "استخدام بنود الاتفاقية"
+
+#. module: purchase_requisition
+#: selection:purchase.requisition.type,quantity_copy:0
+msgid "Use quantities of agreement"
+msgstr "استخدام كميات الاتفاقية"
+
+#. module: purchase_requisition
+#: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
+msgid "Validate"
+msgstr "تحقق"
+
+#. module: purchase_requisition
+#: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_vendor_id
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Vendor"
 msgstr "المورّد"
 
@@ -751,6 +909,7 @@ msgstr "لقد قمت بانشاء أمر الشراء (أوامر الشراء)
 #: code:addons/purchase_requisition/purchase_requisition.py:198
 #, python-format
 msgid ""
+<<<<<<< HEAD
 "You have already one %s purchase order for this partner, you must cancel "
 "this purchase order to create a new quotation."
 msgstr ""
@@ -760,6 +919,11 @@ msgstr ""
 #, python-format
 msgid "You have no line selected for buying."
 msgstr ""
+=======
+"You have to cancel or validate every RfQ before closing the purchase "
+"requisition."
+msgstr "ينبغي إلغاء كافة طلبات عروض الأسعار أو اعتمادهم قبل إغلاق طلب الشراء."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: purchase_requisition
 #: model:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form

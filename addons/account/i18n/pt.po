@@ -33,10 +33,11 @@
 # Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
 # Martin Trigaux, 2017
-# Joao Felix <jrmfelix@gmail.com>, 2018
 # Nuno Silva <nuno.silva@arxi.pt>, 2018
-# MS <manuelarodsilva@gmail.com>, 2018
+# Manuela Silva <manuelarodsilva@gmail.com>, 2018
 # Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2018
+# Pedro Castro Silva <pedrocs@exo.pt>, 2019
+# Joao Felix <jrmfelix@gmail.com>, 2019
 # 
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 msgid ""
@@ -53,7 +54,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2017-05-26 08:44+0000\n"
 "PO-Revision-Date: 2016-09-07 09:15+0000\n"
-"Last-Translator: Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2018\n"
+"Last-Translator: Joao Felix <jrmfelix@gmail.com>, 2019\n"
 "Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 "MIME-Version: 1.0\n"
@@ -839,6 +840,9 @@ msgid ""
 "<strong>Reduced data entry:</strong> no need to manually create invoices, "
 "register bank statements, and send payment follow-ups."
 msgstr ""
+"<strong>Entrada de dados reduzida:</strong> não há necessidade de criar "
+"facturas manualmente, registar extractos bancários, e enviar notas de "
+"valores em dívida,"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_invoice_document
@@ -1034,7 +1038,19 @@ msgid "A selected move line was already reconciled."
 msgstr "A linha de movimento selecionada já foi reconciliada."
 
 #. module: account
+<<<<<<< HEAD
 #: code:addons/account/models/account_bank_statement.py:226
+=======
+#: code:addons/account/models/account_bank_statement.py:883
+#, python-format
+msgid "A selected statement line was already reconciled with an account move."
+msgstr ""
+"A linha de extrato selecionada já foi reconciliada com um movimento "
+"contabilístico."
+
+#. module: account
+#: code:addons/account/models/account_bank_statement.py:218
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid "A statement cannot be canceled when its lines are reconciled."
 msgstr ""
@@ -5562,7 +5578,16 @@ msgstr "Diário e Parceiro"
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 msgid "Journal invoices with period in current year"
+<<<<<<< HEAD
 msgstr "Diário de faturas com período no ano em curso"
+=======
+msgstr "Faturas do diário com período no ano em curso"
+
+#. module: account
+#: model:ir.ui.view,arch_db:account.view_account_move_line_filter
+msgid "Journal items where matching number isn't set"
+msgstr "Itens de diário onde não está definido o número correspondente"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_journal_form
@@ -9123,6 +9148,19 @@ msgid "The sequence of journal %s is deactivated."
 msgstr "A sequência do diário %s está desactivado."
 
 #. module: account
+<<<<<<< HEAD
+=======
+#: code:addons/account/models/company.py:89
+#, python-format
+msgid ""
+"There are still unposted entries in the period you want to lock. You should "
+"either post or delete them."
+msgstr ""
+"Encontram-se ainda lançamentos por publicar no período que pretende fechar. "
+"Deve publicá-los ou eliminá-los."
+
+#. module: account
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: code:addons/account/models/account_bank_statement.py:172
 #, python-format
 msgid ""
@@ -9904,6 +9942,8 @@ msgid ""
 "Used to hold the reference of the external mean that created this statement "
 "(name of imported file, reference of online synchronization...)"
 msgstr ""
+"Usado para manter a referência do meio externo que criou este extrato (nome "
+"do ficheiro importado, referência de sincronização online...)"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal_sequence

@@ -95,11 +95,32 @@ msgid "Document Model"
 msgstr "Model dokumentu"
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:rating.field_rating_rating_consumed
+msgid "Enabled if the rating has been filled."
+msgstr "Povolené, ak je hodnotenie vyplnené."
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:rating.field_rating_rating_feedback
 msgid "Feedback reason"
 msgstr "Dovôd spätnej väzby"
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:rating.field_rating_rating_consumed
+msgid "Filled Rating"
+msgstr "Vyplnené hodnotenie"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "Go to our website"
+msgstr "Choďte na našu stránku"
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Group By"
 msgstr "Zoskupiť podľa"
@@ -193,6 +214,14 @@ msgstr "Mesiac"
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+<<<<<<< HEAD
+=======
+msgid "My Ratings"
+msgstr "Moje hodnotenia"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 msgid "Okay"
 msgstr "OK"
 
@@ -208,6 +237,14 @@ msgid "Rated Partner"
 msgstr "Hodnotený partner"
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:rating.view_rating_rating_search
+msgid "Rated User"
+msgstr "Hodnotiteľ"
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.actions.act_window,name:rating.action_view_rating
 #: model:ir.model,name:rating.model_rating_rating
 #: model:ir.model.fields,field_description:rating.field_mail_channel_rating_ids
@@ -257,13 +294,23 @@ msgstr "Počet hodnotení"
 #. module: rating
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
 #: sql_constraint:rating.rating:0
+<<<<<<< HEAD
 msgid "Rating should be between -1 to 10"
 msgstr "Hodnotenie by malo byť medzi -1 do 10"
+=======
+msgid "Rating should be between 0 to 10"
+msgstr "Hodnotenie by malo byť medzi 1 až 10"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_rating
+<<<<<<< HEAD
 msgid "Rating value"
 msgstr "Hodnota hodnotenia"
+=======
+msgid "Rating value: 0=Unhappy, 10=Happy"
+msgstr "Hodnotenie: 0=nešťastný, 10=šťastný"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
@@ -296,6 +343,7 @@ msgid "Security Token"
 msgstr "Bezpečnostný token"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Sorry you have already voted !"
 msgstr "Ľutujeme, už ste hlasovali!"
@@ -304,6 +352,16 @@ msgstr "Ľutujeme, už ste hlasovali!"
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Thanks for voting !"
 msgstr "Ďakujeme za hlasovanie!"
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Send Feedback"
+msgstr "Zaslať spätnú väzbu"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Thanks! We appreciate your feedback."
+msgstr "Ďakujeme! Veľmi si vážime vašu spätnú väzbu."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: model:ir.model.fields,help:rating.field_rating_rating_res_name
@@ -322,17 +380,63 @@ msgid "Unhappy"
 msgstr "Nespokojný"
 
 #. module: rating
+<<<<<<< HEAD
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_view
+msgid "We appreciate your feedback!"
+msgstr "Veľmi si vážime vašu spätnú väzbu!"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Would be great if you can provide more information:"
+msgstr "Veľmi by nám pomohlo, ak uvediete viac informácií:"
+
+#. module: rating
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:rating.view_rating_rating_search
 msgid "Year"
 msgstr "Rok"
 
 #. module: rating
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:rating.rating_external_page_view
 msgid "Your vote has been taken into account."
 msgstr "Vaše hlasovanie bolo vzané do úvahy."
+=======
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "Your rating has been submitted."
+msgstr "Vaše hodnotenie bolo odoslané."
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "by"
+msgstr " by"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:21
+#, python-format
+msgid "highly dissatisfied"
+msgstr "Veľmi nespokojný"
+
+#. module: rating
+#: code:addons/rating/controllers/main.py:20
+#, python-format
+msgid "not satisfied"
+msgstr "nespokojný"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: rating
 #: code:addons/rating/models/rating.py:57
 #, python-format
+<<<<<<< HEAD
 msgid "rated it"
 msgstr "ohodnotili"
+=======
+msgid "satisfied"
+msgstr "spokojný"
+
+#. module: rating
+#: model:ir.ui.view,arch_db:rating.rating_external_page_submit
+msgid "you are"
+msgstr "ste"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f

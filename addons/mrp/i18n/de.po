@@ -911,7 +911,16 @@ msgstr "Erstellt von"
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_create_date
 #: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild_create_date
 msgid "Created on"
+<<<<<<< HEAD
 msgstr "Erstellt am"
+=======
+msgstr "Angelegt am"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_final_lot_id
+msgid "Current Lot"
+msgstr "Aktuelle Lot"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
@@ -1406,9 +1415,15 @@ msgid "Is a Blocking Reason"
 msgstr "Ist ein Sperrgrund"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:mrp.view_mrp_workcenter_productivity_loss_kanban
 msgid "Is a Blocking Reason?"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder_is_produced
+msgid "Is produced"
+msgstr "ist Produziert"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document_public
@@ -1617,6 +1632,29 @@ msgid "Manage Work Order Operations"
 msgstr "Arbeitsauftrag-Vorgänge verwalten"
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: selection:mrp.config.settings,module_mrp_plm:0
+msgid "Manage engineering changes, versions and documents"
+msgstr "Verwalten Sie technische Änderungen, Versionen und Dokumente"
+
+#. module: mrp
+#: selection:mrp.config.settings,group_mrp_routings:0
+msgid "Manage production by manufacturing orders"
+msgstr "Verwalten Sie die Produktion nach Fertigungsaufträgen"
+
+#. module: mrp
+#: selection:mrp.config.settings,group_mrp_routings:0
+msgid "Manage production by work orders"
+msgstr "Verwalten der Produktion nach Arbeitsaufträgen"
+
+#. module: mrp
+#: selection:mrp.config.settings,module_quality_mrp:0
+msgid "Manage quality control points, checks and measures"
+msgstr "Verwalten Sie Qualitätskontrollpunkte, Kontrollen und Maßnahmen"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:res.groups,name:mrp.group_mrp_manager
 msgid "Manager"
 msgstr "Manager"
@@ -1667,9 +1705,15 @@ msgid "Manufacturing Lead Time"
 msgstr "Durchlaufzeit der Fertigung"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse_manu_type_id
 msgid "Manufacturing Operation Type"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_config_settings_manufacturing_lead
+msgid "Manufacturing Lead Time *"
+msgstr "Durchlaufzeit der Fertigung *"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_change_production_qty_mo_id
@@ -1716,6 +1760,14 @@ msgid "Manufacturing Orders which are in confirmed state."
 msgstr "Bestätigte Fertigungsaufträge"
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_manu_type_id
+msgid "Manufacturing Picking Type"
+msgstr "Typ der Kommissionierung in der Fertigung"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_ready_to_produce
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_form_view
 msgid "Manufacturing Readiness"
@@ -1782,9 +1834,19 @@ msgid "Message"
 msgstr "Nachricht"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_document_mimetype
 msgid "Mime Type"
 msgstr "Mime Typ"
+=======
+#: model:ir.actions.act_window,help:mrp.mrp_message_action_main
+msgid ""
+"Messages can be configured to appear during any operation: receptions, delivery orders,\n"
+"                manufacturing orders, work orders, etc."
+msgstr ""
+"Nachrichten können so konfiguriert werden, dass sie während eines Vorgangs angezeigt werden: Empfänge, Zustellaufträge,\n"
+"Fertigungsaufträge, Fertigungsaufträge usw."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -1892,6 +1954,14 @@ msgid "No Routing"
 msgstr "Kein Arbeitsplan"
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: selection:mrp.config.settings,module_mrp_byproduct:0
+msgid "No by-products in bills of materials (A + B --> C)"
+msgstr "Keine Nebenprodukte in Stücklisten (A + B -> C)"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.actions.act_window,help:mrp.action_mrp_routing_time
 #: model:ir.actions.act_window,help:mrp.mrp_workorder_delta_report
 msgid ""
@@ -1902,6 +1972,25 @@ msgstr ""
 "Arbeitsauftragsdauer in Bezug auf diesen Arbeitsplan."
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: selection:mrp.config.settings,module_mrp_maintenance:0
+msgid "No maintenance machine and work centers"
+msgstr "Keine Wartungsmaschine und Arbeitsplätze"
+
+#. module: mrp
+#: selection:mrp.config.settings,module_mrp_mps:0
+msgid ""
+"No need for Master Production Schedule as products have short lead times"
+msgstr ""
+
+#. module: mrp
+#: selection:mrp.config.settings,module_mrp_plm:0
+msgid "No product lifecycle management"
+msgstr "Keine Produktlebenszyklusverwaltung"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.actions.act_window,help:mrp.mrp_workcenter_productivity_loss_action
 msgid "No productivity loss defined."
 msgstr "Kein Produktivitätsverlust definiert."
@@ -1912,6 +2001,19 @@ msgid "No productivity loss for this equipment."
 msgstr "Kein Produktivitätsrückgang für dieses Inventar."
 
 #. module: mrp
+<<<<<<< HEAD
+=======
+#: selection:mrp.config.settings,module_quality_mrp:0
+msgid "No quality control"
+msgstr " Keine Qualitätskontrolle"
+
+#. module: mrp
+#: selection:mrp.config.settings,group_product_variant:0
+msgid "No variants on products"
+msgstr "Keine Produktvarianten"
+
+#. module: mrp
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #: model:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
 msgid ""
 "No workorder currently in progress. Click to mark work center as blocked."
@@ -2150,6 +2252,8 @@ msgstr "Planung"
 #, python-format
 msgid "Please enter a lot or serial number for %s !"
 msgstr ""
+"Bitte geben Sie die von Ihnen produzierte Menge in das Feld Aktuelle Menge "
+"ein. Es kann nicht 0 sein!"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:288
@@ -2531,9 +2635,15 @@ msgid "Repair"
 msgstr "Reparieren"
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid "Repair products and invoice the repair orders"
 msgstr ""
+=======
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_procurement_ids
+msgid "Related Procurements"
+msgstr "Verwandte Beschaffungen"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_reporting
@@ -2789,7 +2899,7 @@ msgstr "Einstellungen"
 #. module: mrp
 #: selection:mrp.bom,type:0
 msgid "Ship this product as a set of components (kit)"
-msgstr ""
+msgstr "Versenden Sie dieses Produkt als eine Reihe von Komponenten (Kit)"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_unbuild.py:89
@@ -2799,6 +2909,7 @@ msgstr ""
 "Sollte über ein Fertigungslos für das fertiggestellte Produkt verfügen."
 
 #. module: mrp
+<<<<<<< HEAD
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_show_final_lots
 msgid "Show Final Lots"
 msgstr ""
@@ -2808,6 +2919,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Show all records which has next action date is before today"
 msgstr ""
+=======
+#: model:product.product,description:mrp.product_product_computer_desk
+#: model:product.template,description:mrp.product_product_computer_desk_product_template
+msgid "Solid wood computer desk."
+msgstr "Massivholz-Computertisch."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:product.product,description:mrp.product_product_computer_desk_head
@@ -3237,8 +3354,13 @@ msgstr "Gesamtkosten"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_cost_report
+<<<<<<< HEAD
 msgid "Total Cost of Components"
 msgstr ""
+=======
+msgid "Total Cost of Raw Materials"
+msgstr "Gesamtkosten der Rohstoffe"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_workorder_late_count
@@ -3778,27 +3900,53 @@ msgstr ""
 "laufen. Bitte schließen Sie die entsprechenden Fertigungsaufträge zuerst."
 
 #. module: mrp
+<<<<<<< HEAD
 #: code:addons/mrp/models/stock_move.py:134
+=======
+#: code:addons/mrp/models/stock_move.py:40
+#, python-format
+msgid "You can only produce 1.0 %s for products with unique serial number."
+msgstr ""
+
+#. module: mrp
+#: code:addons/mrp/models/stock_move.py:135
+#, python-format
+msgid "You cannot cancel a move move having already consumed material"
+msgstr ""
+"Sie können keine Umbuchung abbrechen wofür ein Material bereits verwendet "
+"wurde"
+
+#. module: mrp
+#: code:addons/mrp/models/stock_move.py:40
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 #, python-format
 msgid ""
 "You cannot cancel a manufacturing order if you have already consumed "
 "material.             If you want to cancel this MO, please change the "
 "consumed quantities to 0."
 msgstr ""
+"Sie können dieselbe Seriennummer nicht in zwei verschiedenen Zeilen "
+"verwenden."
 
 #. module: mrp
 #: code:addons/mrp/wizard/mrp_product_produce.py:204
 #, python-format
+<<<<<<< HEAD
 msgid ""
 "You cannot consume the same serial number twice. Please correct the serial "
 "numbers encoded."
 msgstr ""
+=======
+msgid "You don't have in the stock the lot %s."
+msgstr "Sie haben das Losnummer nicht auf Lager %s."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: code:addons/mrp/wizard/change_production_qty.py:44
 #, python-format
 msgid "You have already processed %d. Please input a quantity higher than %d "
 msgstr ""
+"Sie haben nicht die erforderliche Los- / Seriennummer für auf Lager%s ."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
@@ -3854,8 +4002,13 @@ msgstr "Sie müssen für das fertige Produkt ein Fertigungslos angeben."
 #. module: mrp
 #: code:addons/mrp/wizard/mrp_product_produce.py:94
 #, python-format
+<<<<<<< HEAD
 msgid "You should at least produce some quantity"
 msgstr ""
+=======
+msgid "You need to supply a lot/serial number."
+msgstr "Sie müssen eine Los- / Seriennummer angeben."
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:314
@@ -3871,8 +4024,13 @@ msgstr "Sie sollten wenigstens eine gewisse Menge fertigen."
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:291
 #, python-format
+<<<<<<< HEAD
 msgid "You should provide a lot/serial number for the final product"
 msgstr ""
+=======
+msgid "You should provide a lot for a component"
+msgstr "Sie sollten eine Losnummer für eine Komponente angeben"
+>>>>>>> 98a137e4b1f631a10d46b5e0cb21bb83ed7e861f
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_unbuild.py:95

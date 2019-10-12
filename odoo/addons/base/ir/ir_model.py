@@ -1201,7 +1201,7 @@ class IrModelAccess(models.Model):
             _logger.info('Access Denied by ACLs for operation: %s, uid: %s, model: %s', mode, self._uid, model)
 =======
                 msg_params = (model_name,)
-            msg_tail += ' - ({} {}, {} {})'.format(_('Operation:'), mode, _('User:'), self._uid)
+            msg_tail += u' - ({} {}, {} {})'.format(_('Operation:'), mode, _('User:'), self._uid)
             _logger.info('Access Denied by ACLs for operation: %s, uid: %s, model: %s', mode, self._uid, model_name)
 >>>>>>> 24b677a3597beaf0e0509fd09d8f71c7803d8f09
             msg = '%s %s' % (msg_heads[mode], msg_tail)
